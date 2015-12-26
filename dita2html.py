@@ -20,6 +20,9 @@ base_name = str(os.path.basename(sys.argv[1]))
 base_dir = full_path[0:len(full_path) - len(base_name)]
 
 ditavals = {}
+keydefs = {}
+
+keys = ''
 
 
 def parse_ditaval(tree):
@@ -27,7 +30,7 @@ def parse_ditaval(tree):
     for nd in tree.childNodes:
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'val':
             parse_ditaval(nd)
-        if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'prop':
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'prop':
             att = None
             val = None
             if nd.hasAttribute('att'):
@@ -37,9 +40,7 @@ def parse_ditaval(tree):
             if att is not None and val is not None:
                 # print(att, val, file=sys.stderr)
                 ditavals[att] = val
-        elif nd.nodeType == nd.TEXT_NODE:
-            pass
-        elif nd.nodeType == nd.COMMENT_NODE:
+        elif nd.nodeType != nd.ELEMENT_NODE:
             pass
         else:
             print('parse_ditaval - unhandled:', nd, file=sys.stderr)
@@ -48,9 +49,27 @@ def parse_ditaval(tree):
 ditaval_tree = parse(sys.argv[2])
 parse_ditaval(ditaval_tree)
 
-print(ditavals, file=sys.stderr)
+print('ditavals:', ditavals, file=sys.stderr)
 
 root_tree = parse(full_path)
+
+
+def expand_keydef(nd):
+    key = nd.attributes['keyref'].value
+    if key in keydefs:
+        val = keydefs[key]
+        if 'text' in val:
+            echo(val['text'], end='')
+        else:
+            fmt = val['format']
+            if fmt == 'image':
+                echo('<img src="', base_dir + val['href'], '" alt="', key, '"/>', sep='', end='')
+            elif fmt == 'mail':
+                echo('<a href="mailto:', val['href'], '">', val['href'], '</a>', sep='', end='')
+            elif fmt == 'html':
+                echo('<a href="', val['href'], '">', val['href'], '</a>', sep='', end='')
+            else:
+                print('expand_keydef - format:', fmt, file=sys.stderr)
 
 
 def echo(*args, **kwargs):
@@ -71,14 +90,32 @@ def filter_val(nd):
         val = ditavals[att]
         if nd.hasAttribute(att):
             vals = nd.attributes[att].value.split(' ')
+            # print(vals, val, file=sys.stderr)
             if val not in vals:
                 return True
     return False
 
 
+def parse_fig(depth, tree, **kwargs):
+    for nd in tree.childNodes:
+        if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'title':
+            echo('<p>', indent=depth)
+            parse_conbody(depth, nd, **kwargs)
+            echo('</p>', start='\n', indent=depth)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'image':
+            if nd.hasAttribute('keyref'):
+                expand_keydef(nd)
+            else:
+                url = nd.attributes['href'].value
+                echo('<img src="', base_dir + url, '" alt="', url, '"/>', sep='', end='')
+        elif nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print('parse_fig - unhandled:', nd, file=sys.stderr)
+
+
 def parse_conbody(depth, tree, **kwargs):
     global index_stack, column_stack
-    # html = kwargs['html'] if 'html' in kwargs else False
     for nd in tree.childNodes:
         if nd.nodeType == nd.TEXT_NODE:
             text = nd.nodeValue.replace('\n', '')
@@ -87,10 +124,21 @@ def parse_conbody(depth, tree, **kwargs):
         elif nd.nodeType == nd.ELEMENT_NODE:
             if filter_val(nd):
                 return
-            elif nd.nodeName == 'p':
+            if nd.nodeName == 'p':
                 echo('<p>', indent=depth)
                 parse_conbody(depth, nd, **kwargs)
                 echo('</p>', start='\n', indent=depth)
+            elif nd.nodeName == 'keyword':
+                expand_keydef(nd)
+            elif nd.nodeName == 'xref':
+                if nd.hasAttribute('href'):
+                    echo('<a href="#TODO-', nd.attributes['href'].value, '">', sep='', end='')
+                    parse_conbody(depth, nd, **kwargs)
+                    echo('</a>', end='')
+                else:
+                    expand_keydef(nd)
+            elif nd.nodeName == 'fig':
+                parse_fig(depth, nd, **kwargs)
             elif nd.nodeName == 'ph':
                 parse_conbody(depth, nd, **kwargs)
             elif nd.nodeName == 'codeph':
@@ -154,7 +202,7 @@ def parse_conbody(depth, tree, **kwargs):
             else:
                 print(kwargs['file_name'], 'parse_conbody - unhandled Element:', nd, file=sys.stderr)
 
-        elif nd.nodeType == nd.COMMENT_NODE:
+        elif nd.nodeType in [nd.COMMENT_NODE, nd.DOCUMENT_TYPE_NODE]:
             pass
         else:
             print(kwargs['file_name'], 'parse_conbody - unhandled NodeType:', nd, file=sys.stderr)
@@ -165,15 +213,25 @@ def parse_concept(depth, tree, **kwargs):
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'title':
             echo('<h' + str(depth) + '>', indent=depth)
             echo(html.escape(nd.firstChild.data), indent=depth)
-            print('</h' + str(depth) + '>')
-        if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'conbody':
+            echo('</h' + str(depth) + '>')
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'conbody':
             parse_conbody(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'shortdesc':
+            parse_conbody(depth, nd, **kwargs)
+        elif nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print(kwargs['file_name'], 'parse_concept - unhandled:', nd, file=sys.stderr)
 
 
 def parse_topicref_href(depth, tree, **kwargs):
     for nd in tree.childNodes:
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'concept':
             parse_concept(depth + 1, nd, **kwargs)
+        elif nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print(kwargs['file_name'], 'parse_topicref_href - unhandled:', nd, file=sys.stderr)
 
 
 def parse_topicref(depth, tree, **kwargs):
@@ -184,19 +242,97 @@ def parse_topicref(depth, tree, **kwargs):
     for nd in tree.childNodes:
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'topicref':
             parse_topicref(depth + 1, nd, **kwargs)
+        elif nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print(kwargs['file_name'], 'parse_topicref - unhandled:', nd, file=sys.stderr)
+
+
+def parse_mapref(depth, tree, **kwargs):
+    file_name = tree.attributes['href'].value
+    kwargs['file_name'] = file_name
+    echo('<!-- ' + file_name + ' -->')
+    parse_map(depth, parse(base_dir + file_name), **kwargs)
+    for nd in tree.childNodes:
+        if nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print(kwargs['file_name'], 'parse_mapref - unhandled:', nd, file=sys.stderr)
+
+
+def parse_keydef(depth, tree, **kwargs):
+    global keys, keydefs
+    if tree.nodeName == 'keyword':
+        val = '';
+        for nd in tree.childNodes:
+            if nd.nodeType == nd.TEXT_NODE:
+                text = nd.nodeValue.replace('\n', '')
+                text = ' '.join(re.split('\s+', text))
+                val += html.escape(text)
+        keydefs[keys] = {'text': val}
+    if tree.nodeName == 'keydef':
+        keys = tree.attributes['keys'].value
+        if tree.hasAttribute('format'):
+            fmt = tree.attributes['format'].value
+            href = tree.attributes['href'].value
+            keydefs[keys] = {'format': fmt, 'href': href}
+    for nd in tree.childNodes:
+        if nd.nodeType == nd.ELEMENT_NODE:
+            parse_keydef(depth, nd, **kwargs)
 
 
 def parse_map(depth, tree, **kwargs):
     for nd in tree.childNodes:
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'topicref':
             parse_topicref(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'mapref':
+            parse_mapref(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'map':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'keydef':
+            if not filter_val(nd):
+                parse_keydef(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'title':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'topicmeta':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'searchtitle':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'prodname':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'prodinfo':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'vrmlist':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'vrm':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'keyword':
+            parse_map(depth, nd, **kwargs)
+        elif nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print(kwargs['file_name'], 'parse_map - unhandled:', nd, file=sys.stderr)
 
 
 def parse_root(depth, tree, **kwargs):
     for nd in tree.childNodes:
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'map':
             parse_map(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'mapref':
+            if filter_val(nd):
+                return
+            file_name = tree.attributes['href'].value
+            kwargs['file_name'] = file_name
+            echo('<!-- ' + file_name + ' -->')
+            parse_map(depth, parse(base_dir + file_name), **kwargs)
+        elif nd.nodeType != nd.ELEMENT_NODE:
+            pass
+        else:
+            print('<root>', 'parse_root - unhandled:', nd, file=sys.stderr)
 
 echo('<!DOCTYPE html>', '<html>', '<head>', '<meta charset="UTF-8">', '</head>', '<body>')
 parse_root(0, root_tree, file_name=base_name)
 echo('</body>', '</html>')
+
+print(keydefs, file=sys.stderr)
+

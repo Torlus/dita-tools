@@ -1,4 +1,11 @@
 <!DOCTYPE html> <html> <head> <meta charset="UTF-8"> </head> <body>
+<!-- tla1441965696194.ditamap -->
+<!-- tla1437576678558.ditamap -->
+<!-- tla1440491525474.ditamap -->
+<!-- tla1441895196710.ditamap -->
+<!-- tla1429082188905.ditamap -->
+<!-- tla1429082208715.ditamap -->
+<!-- tla1429082228307.ditamap -->
 <!-- tla1412687664291.xml -->
 <h1>
 Historique du document
@@ -380,7 +387,7 @@ Pour toute question technique ou demande d&#x27;assistance, nos services sont di
 par téléphone au : 
   </td>
    <td>
-  depuis la France,  <p>
+ 0 811 708 709 depuis la France,  <p>
 
   </p>
  
@@ -395,7 +402,7 @@ par téléphone au :
 
   </td>
    <td>
- depuis l&#x27;étranger,  <p>
++33 567 223 329 depuis l&#x27;étranger,  <p>
 
   </p>
   <p>
@@ -413,7 +420,7 @@ par téléphone au :
 par e-mail :
   </td>
    <td>
-
+<a href="mailto:support@payzen.eu">support@payzen.eu</a>
   </td>
  
  </tr>
@@ -1003,7 +1010,10 @@ La procédure d’un paiement en ligne s’appréhende de manière différente d
   <p>
 Le diagramme ci-dessous présente la cinématique des échanges du point de vue de l&#x27;acheteur.
  </p>
-   <ol>
+  <p>
+Cinématique des échanges – Vue acheteur
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1406022174130.image" alt="DiagrammeFluxAcheteur"/>  <ol>
    <li>
 L’acheteur valide son panier.
   </li>
@@ -1011,7 +1021,10 @@ L’acheteur valide son panier.
 Le site marchand redirige l’acheteur vers la plateforme de paiement. 
   </li>
    <li>
-La plateforme de paiement, après vérification des paramètres et de leur signature, présente la page de sélection du moyen de paiement.    <p>
+La plateforme de paiement, après vérification des paramètres et de leur signature, présente la page de sélection du moyen de paiement.   <p>
+Sélection du moyen de paiement
+  </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437748433397.image" alt="ChoixMoyenPaiement"/>   <p>
 Si le moyen de paiement a été spécifié dans le formulaire, l’acheteur passe directement à l’étape 6.
   </p>
 
@@ -1024,7 +1037,10 @@ Il clique sur
 <b>Valider</b>.
   </li>
    <li>
-Il renseigne le numéro et la date d&#x27;expiration de sa carte.   
+Il renseigne le numéro et la date d&#x27;expiration de sa carte.    <p>
+Saisie des informations du moyen de paiement
+  </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437748495407.image" alt="SaisieDonneesBancaires"/> 
   </li>
    <li>
 Il confirme sa saisie en cliquant sur 
@@ -1044,17 +1060,26 @@ Un bouton permettant un retour à la boutique est proposé.
   </li>
  
  </ol>
-   <p>
+  <p>
+Récapitulatif de la transaction
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437748545920.image" alt="DetailPaiement"/>  <p>
 En cas d’échec, un message s’affiche. L’acheteur est informé du refus de la demande de paiement. Un bouton permettant d’annuler et de retourner à la boutique est proposé.
  </p>
-  <!-- tla1406029892365.xml -->
+  <p>
+Page de résumé en cas d’échec de la transaction
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437748588430.image" alt="PageResumePaiementEchec"/> <!-- tla1406029892365.xml -->
  <h2>
  Définir les étapes d&#x27;un paiement - Vue marchand
 </h2>
   <p>
 Le paiement en ligne, côté marchand, se déroule de la manière suivante:
  </p>
-   <p>
+  <p>
+Cinématique des échanges – Vue marchand
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437748633530.image" alt="DiagrammeFluxMarchand"/>  <p>
   <ol>
    <li>
 L’acheteur valide son panier.
@@ -1064,7 +1089,7 @@ Le site marchand construit le formulaire à partir des données du panier de l�
   </li>
    <li>
 Le site marchand redirige l’acheteur vers la plateforme de paiement. Cette redirection se fait sous la forme d&#x27;un formulaire HTML POST en HTTPS. Les paramètres qui le composent sont décrits dans le chapitre 
-<b></b>.
+<b><a href="#TODO-emm1405083451541.xml">Générer un formulaire de paiement</a></b>.
   </li>
    <li>
 Après saisie des données du moyen de paiement par l’acheteur, la plateforme procède au paiement.
@@ -1107,7 +1132,7 @@ Dans tous les schémas suivants, la légende suivante est adoptée :
    <h4>
    Cycle de vie d’une transaction de paiement comptant immédiat
 </h4>
-     <p>
+ <img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1415956040247.image" alt="tla1415956040247.image"/>    <p>
 Suite à la demande de paiement, plusieurs contrôles sont automatiquement mis en oeuvre : 
    </p>
     <p>
@@ -1167,11 +1192,11 @@ La demande d’autorisation est automatiquement effectuée :
 fonctionnement par défaut : le jour de la date de remise en banque souhaitée,
     </li>
      <li>
-fonctionnement avec autorisation anticipée : selon le moyen de paiement sélectionné, à J-Δ (voir  illustrant la validité d&#x27;une autorisation) avant la date de remise en banque souhaitée.     <p>
+fonctionnement avec autorisation anticipée : selon le moyen de paiement sélectionné, à J-Δ (voir <a href="#TODO-tla1415949281462.xml">tableau</a> illustrant la validité d&#x27;une autorisation) avant la date de remise en banque souhaitée.     <p>
 Le mode par autorisation anticipée doit faire l&#x27;objet d&#x27;une demande auprès du Service Client. 
     </p>
     <p>
-En cas de refus de type non frauduleux (voir ), l&#x27;autorisation sera réitérée chaque jour jusqu&#x27;à J-2 avant la date de remise en banque
+En cas de refus de type non frauduleux (voir <a href="#TODO-tla1408548356588.xml">tableau</a>), l&#x27;autorisation sera réitérée chaque jour jusqu&#x27;à J-2 avant la date de remise en banque
     </p>
 Dans l’attente, le marchand peut annuler la transaction ou en modifier le montant (à la baisse uniquement) et/ou la date de remise. 
     </li>
@@ -1185,7 +1210,7 @@ Dans l’attente, le marchand peut annuler la transaction ou en modifier le mont
     <p>
 Le diagramme suivant résume les différents statuts pouvant être pris par ce type de transaction (cas d&#x27;une demande d&#x27;autorisation non rejouée) : 
    </p>
-  <!-- tla1415950704803.xml -->
+ <img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1415956296508.image" alt="tla1415956296508.image"/> <!-- tla1415950704803.xml -->
    <h4>
    Cycle de vie d’une transaction de paiement en plusieurs fois
 </h4>
@@ -1202,7 +1227,7 @@ Les demandes d’autorisation des échéances suivantes sont automatiquement eff
 fonctionnement par défaut : le jour de la date de remise en banque souhaitée,
     </li>
      <li>
-fonctionnement avec autorisation anticipée : selon le moyen de paiement sélectionné, à J-Δ (voir  illustrant la validité d&#x27;une autorisation) avant la date de remise en banque souhaitée. 
+fonctionnement avec autorisation anticipée : selon le moyen de paiement sélectionné, à J-Δ (voir <a href="#TODO-tla1415949281462.xml">tableau</a> illustrant la validité d&#x27;une autorisation) avant la date de remise en banque souhaitée. 
     </li>
  
    </ul>
@@ -1217,7 +1242,7 @@ Les échéances ultérieures suivent le diagramme d’état suivant (cas d&#x27;
     <p>
 
    </p>
-     <p>
+ <img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1415956443007.image" alt="tla1415956443007.image"/>    <p>
 L’annulation d’une échéance n’implique en aucun cas l’annulation des échéances suivantes restant à remettre en banque. 
    </p>
  <!-- tla1415950960317.xml -->
@@ -1287,7 +1312,7 @@ Dès lors qu’une transaction est validée, elle passe en statut
 Il peut également annuler la transaction si nécessaire. La transaction prend alors le statut 
 <b>Annulé</b>.
    </p>
-  <!-- tla1415951388962.xml -->
+ <img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1415956574473.image" alt="tla1415956574473.image"/> <!-- tla1415951388962.xml -->
    <h4>
    Cycle de vie d’une transaction de paiement comptant différé 
 </h4>
@@ -1314,7 +1339,7 @@ Dans l’attente de la remise, le marchand peut annuler la transaction ou en mod
     <p>
 Ces transactions suivent le diagramme d’état suivant : 
    </p>
-  <!-- tla1415951699874.xml -->
+ <img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1415983511186.image" alt="tla1415983511186.image"/> <!-- tla1415951699874.xml -->
    <h4>
    Cycle de vie d’une transaction de paiement en plusieurs fois 
 </h4>
@@ -1335,7 +1360,7 @@ Les échéances suivantes sont par défaut positionnées en statut
     <p>
 
    </p>
-  <!-- tla1415951899582.xml -->
+ <img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1415983766360.image" alt="tla1415983766360.image"/> <!-- tla1415951899582.xml -->
   <h3>
   Spécificités liées aux autorisations anticipées
 </h3>
@@ -1358,7 +1383,7 @@ des échéances, autres que la première, pour le paiement en plusieurs fois.
 Le déclenchement de l&#x27;autorisation s&#x27;effectuera à J-Δ (voir durée de validité d&#x27;une autorisation pour chaque moyen de paiement) avant la date de remise en banque souhaitée.
   </p>
    <p>
-En cas de refus par le serveur d&#x27;autorisation de la banque de l&#x27;acheteur, exclusivement pour un motif non frauduleux (voir ), un processus réitère automatiquement les demandes d&#x27;autorisation jusqu&#x27;à J-2.
+En cas de refus par le serveur d&#x27;autorisation de la banque de l&#x27;acheteur, exclusivement pour un motif non frauduleux (voir <a href="#TODO-tla1408548356588.xml">tableau</a>), un processus réitère automatiquement les demandes d&#x27;autorisation jusqu&#x27;à J-2.
   </p>
      <p>
 En cas de refus pour un motif frauduleux la transaction est considérée comme définitivement refusée.
@@ -1378,7 +1403,7 @@ Le choix du mode
 <b>TEST</b> ou 
 <b>PRODUCTION</b> s&#x27;effectue en utilisant le champ 
 <b>vads_ctx_mode</b> (Voir chapitre 
-<b></b>).
+<b><a href="#TODO-emm1405083451541.xml">Générer un formulaire de paiement</a></b>).
  </p>
   <p>
   <ul>
@@ -1393,7 +1418,10 @@ Les transactions de TEST sont visibles dans le Back Office depuis le menu
 <b>Gestion</b> &gt; 
 <b>Transactions de Test</b>
   </p>
- 
+   <p>
+Visualiser les transactions de test
+  </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437559365689.image" alt="MenuTransactionTest"/>
   </li>
    <li>
 Le mode 
@@ -1512,7 +1540,10 @@ Le marchand peut paramétrer dans le Back Office les URL de retour &quot;par dé
   <p>
 
  </p>
-   <p>
+  <p>
+Spécification des URL de retour
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437559683519.image" alt="URLRetourV2.3"/>  <p>
 Il peut configurer une URL de retour à la boutique différente en fonction du mode.
  </p>
   <p>
@@ -1566,8 +1597,8 @@ Le dialogue entre la plateforme de paiement et le site marchand s’effectue par
   </p>
    <p>
 Un formulaire contient une liste de champs spécifiques (voir 
-<b></b>) utilisés pour calculer sa signature numérique (voir chapitre 
-<b></b>).
+<b><a href="#TODO-emm1405083451541.xml">Générer un formulaire de paiement</a></b>) utilisés pour calculer sa signature numérique (voir chapitre 
+<b><a href="#TODO-emm1405088305497.xml">Calculer la signature</a></b>).
   </p>
    <p>
 Le résultat de ce calcul doit être envoyé dans le champ 
@@ -1607,7 +1638,10 @@ SHA1( &quot; a &quot;) = 86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
    <p>
 
   </p>
-   <ol>
+  <p>
+Diagramme mécanisme de sécurité
+  </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437748696912.image" alt="DiagrammeSignature"/>   <ol>
     <li>
 Le site marchand récolte les données du formulaire et calcule la signature.
    </li>
@@ -1769,7 +1803,7 @@ de répondre aux spécificités liées au langage de programmation utilisé.
 <h1>
 Paramétrer les notifications
 </h1>
- <p>
+  <p>
 Le Back Office permet de gérer les événements qui génèreront un appel vers le site marchand et de configurer l’URL de la page à contacter.
 </p>
  <p>
@@ -1789,7 +1823,10 @@ La légende adoptée pour chacun est la suivante :
  Notifications des différents statuts pour un paiement comptant
 		immédiat
 </h2>
-   <p>
+  <p>
+Diagramme de flux - Paiement comptant immédiat
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437643182518.image" alt="tla1437643182518.image"/>  <p>
 
  </p>
   <p>
@@ -1854,7 +1891,10 @@ URL de notification à la fin du paiement
  Notifications des différents statuts pour un paiement comptant
 		différé
 </h2>
-   <p>
+  <p>
+Diagramme de flux - Paiement comptant différé
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437643280219.image" alt="tla1437643280219.image"/>  <p>
 Δ : durée de validité d&#x27;autorisation.
  </p>
   <p>
@@ -1940,7 +1980,10 @@ URL de notification sur autorisation par batch
  Notifications des différents statuts pour les échéances d&#x27;un paiement en
 		plusieurs fois
 </h2>
-   <p>
+  <p>
+Diagramme de flux - Echéances d&#x27;un paiement en plusieurs fois
+ </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1437643349015.image" alt="tla1437643349015.image"/>  <p>
 Δ : durée de validité d&#x27;autorisation.
  </p>
   <p>
@@ -2001,12 +2044,15 @@ Pour accéder à la gestion des règles de notification :
   <p>
   <ol>
    <li>
-Connectez-vous à : .
+Connectez-vous à : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>.
   </li>
    <li>
 Allez dans le menu : 
 <b>Paramétrage</b> &gt; 
-<b>Règles de notifications</b>. 
+<b>Règles de notifications</b>.   <p>
+Règles de notification
+  </p>
+<img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1425653374072.image" alt="ListeURLNotification"/><img src="/Users/greg/Projects/dita-tools/data/dita/content/authoring/tla1444725978675.image" alt="ListeURLNotificationSepaAll"/>
   </li>
  
  </ol>
@@ -2059,7 +2105,7 @@ method=&quot;POST&quot;
  </li>
   <li>
 L’attribut  <code>
-action=&quot;&quot;
+action=&quot;<a href="https://secure.payzen.eu/vads-payment/">https://secure.payzen.eu/vads-payment/</a>&quot;
  </code>
  qui spécifie où envoyer les données du formulaire.
  </li>
@@ -2201,7 +2247,7 @@ A la fin du paiement, l’acheteur a la possibilité de revenir sur le site marc
   <p>
 A ne pas confondre avec l’
 <b>URL de notification instantanée (également appelée IPN)</b> (voir chapitre 
-<b></b>). 
+<b><a href="#TODO-emm1405084980499.xml">Gérer le dialogue vers le site marchand</a></b>). 
  </p>
  <!-- tla1406110787965.xml -->
   <h3>
@@ -2275,7 +2321,7 @@ le libellé du bouton
  </p>
   <p>
 En souscrivant à l&#x27;option 
-<b>personnalisation avancée</b>, vous pourrez modifier la page de paiement afin de la rendre visuellement proche de votre site marchand. Ceci aura pour effet de conforter l’acheteur et d’instaurer une confiance lors de la redirection pour procéder au paiement. Référez-vous au &quot;manuel utilisateur de la personnalisation avancée&quot; disponible sur le site documentaire .
+<b>personnalisation avancée</b>, vous pourrez modifier la page de paiement afin de la rendre visuellement proche de votre site marchand. Ceci aura pour effet de conforter l’acheteur et d’instaurer une confiance lors de la redirection pour procéder au paiement. Référez-vous au &quot;manuel utilisateur de la personnalisation avancée&quot; disponible sur le site documentaire <a href="https://www.payzen.eu/support/integration-payzen/">https://www.payzen.eu/support/integration-payzen/</a>.
  </p>
  <!-- tla1406118103194.xml -->
 <!-- tla1406125668071.xml -->
@@ -2305,7 +2351,7 @@ Son navigateur doit transmettre les données du formulaire de paiement.
 L’URL de la plateforme de paiement est la suivante :  <table>
       <tr>
     <td>
-
+<a href="https://secure.payzen.eu/vads-payment/">https://secure.payzen.eu/vads-payment/</a>
    </td>
  
   </tr>
@@ -2375,7 +2421,7 @@ l’ensemble des champs contenus dans le formulaire.
  
  </p>
   <p>
-La FAQ est disponible à cette adresse : 
+La FAQ est disponible à cette adresse : <a href="https://secure.payzen.eu/html/error_code/">https://secure.payzen.eu/html/error_code/</a>
  </p>
  <!-- emm1405088484151.xml -->
 <h1>
@@ -3009,7 +3055,7 @@ Différents cas de paiements peuvent être simulés en utilisant les numéros de
 Toutes les transactions réalisées en mode test sont consultables par les personnes habilitées à utiliser le Back Office à l’adresse suivante : <table>
       <tr>
     <td>
-
+<a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>
    </td>
  
   </tr>
@@ -3203,4 +3249,2569 @@ Une FAQ est disponible sur le
  <p>
 Elle répertorie les questions fréquemment posées au sujet des codes d’erreurs retournés lors de l’envoi du formulaire de paiement.
 </p>
- </body> </html>
+ <!-- tla1405002308026.ditamap -->
+<!-- tla1408546261318.xml -->
+<h1>
+Dictionnaire de données
+</h1>
+ <p>
+Le dictionnaire de données présente la liste complète des champs pouvant être utilisés dans le formulaire de paiement.
+</p>
+ <p>
+Il détaille tout d&#x27;abord les principales catégories (telles que les informations techniques, les informations sur la commande...). L&#x27;ensemble des champs appartenant à une catégorie sont présentés. 
+</p>
+ <p>
+Ces tableaux sont présentés de la manière suivante :
+</p>
+ <p>
+ <ul>
+  <li>
+
+<b>Nom du champ</b> : nom du paramètre, tel qu&#x27;il sera utilisé dans une requête HTTP.
+ </li>
+  <li>
+
+<b>Format</b> : format des données, selon la codification suivante: <table>
+        <tr>
+    <td>
+Notation
+   </td>
+    <td>
+Description
+   </td>
+ 
+  </tr>
+     <tr>
+    <td>
+a
+   </td>
+    <td>
+Caractères alphabétiques (de ‘A’ à ‘Z’ et de ‘a’ à ‘z’)
+   </td>
+ 
+  </tr>
+   <tr>
+    <td>
+n
+   </td>
+    <td>
+Caractères numériques
+   </td>
+ 
+  </tr>
+   <tr>
+    <td>
+s
+   </td>
+    <td>
+Caractères spéciaux
+   </td>
+ 
+  </tr>
+   <tr>
+    <td>
+an
+   </td>
+    <td>
+Caractères alphanumériques
+   </td>
+ 
+  </tr>
+   <tr>
+    <td>
+ans
+   </td>
+    <td>
+Caractères alphanumériques et spéciaux
+   </td>
+ 
+  </tr>
+   <tr>
+    <td>
+3
+   </td>
+    <td>
+Longueur fixe de 3 caractères
+   </td>
+ 
+  </tr>
+   <tr>
+    <td>
+..12
+   </td>
+    <td>
+Longueur variable jusqu’à 12 caractères
+   </td>
+ 
+  </tr>
+   
+ </table>
+
+ </li>
+  <li>
+
+<b>Description</b> : description du champ.
+ </li>
+
+</ul>
+ 
+</p>
+ <p>
+
+</p>
+ <p>
+
+</p>
+ <p>
+
+</p>
+ <p>
+Le dictionnaire de données présente ensuite le détail pour chacun des champs. Chaque champ est décrit de la manière suivante :
+</p>
+ <p>
+ <ul>
+  <li>
+
+<b>Description</b> : description du champ.
+ </li>
+  <li>
+
+<b>Format</b> : format des données (voir tableau 
+<b>Liste champs et formats</b> ci-dessus).
+ </li>
+  <li>
+
+<b>Valeurs possibles</b> : valeurs attendues lorsque le champ doit être valorisé avec des valeurs spécifiques.
+ </li>
+  <li>
+
+<b>Exemple</b> : exemple de codage correct des données. 
+ </li>
+  <li>
+
+<b>Code erreur</b> : en cas d’erreur dans l’interfaçage entre le site marchand et la plateforme de paiement, cette dernière indiquera par un code numérique le paramètre fautif dans le champ 
+<b>vads_extra_result</b>.
+ </li>
+  <li>
+
+<b>Remarque</b> : information complémentaire, précision.
+ </li>
+  <li>
+
+<b>Catégorie</b> : catégorie à laquelle est affilié le champ. <p>
+
+ </p>
+
+ </li>
+ 
+</ul>
+ 
+</p>
+ <p>
+Précisions sur les 
+<b>codes erreur :</b>
+</p>
+ <p>
+
+<b>Code erreur</b> correspond au numéro de l’erreur lors de la soumission d’un formulaire de paiement incorrect. 
+</p>
+ <ul>
+  <li>
+ En mode test ce code sera affiché sur la page de paiement.
+ </li>
+  <li>
+ En mode production un e-mail d’alerte sera envoyé en précisant le code erreur et le nom du paramètre incorrect.
+ </li>
+ 
+</ul>
+ <p>
+
+</p>
+ <p>
+
+<b>
+<u>Exemple</u> :</b>
+<b> Erreur 09 correspond à une erreur sur le montant. Le montant envoyé ne respecte donc pas le format requis</b>
+</p>
+ <!-- tla1410350807080.xml -->
+ <h2>
+ Visualiser les paramètres classés par catégorie
+</h2>
+  <p>
+Référez-vous à la catégorie souhaitée pour obtenir la liste des paramètres sous-jacents.
+ </p>
+  <p>
+  <ul>
+   <li>
+<a href="#TODO-tla1410351589465.xml">Informations sur l&#x27;authentification 3DS</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1411025757958.xml">Informations sur l&#x27;abonnement</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1410534868650.xml">Informations sur l&#x27;acheteur</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1410533143029.xml">Informations sur le moyen de paiement</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1410525874342.xml">Informations sur la commande</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1410522989073.xml">Informations sur la livraison</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1411030317713.xml">Informations techniques</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1411031267607.xml">Informations sur la transaction</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1416328457246.xml">Informations sur les transactions de don</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1410518407791.xml">Personnalisation de la page de la page de paiement</a>.
+  </li>
+   <li>
+<a href="#TODO-tla1410514133139.xml">Redirection automatique</a>.
+  </li>
+ 
+ </ul>
+ 
+ </p>
+ <!-- tla1411030317713.xml -->
+  <h3>
+  Informations techniques
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408640166705.xml">signature</a></b>
+    </td>
+     <td>
+an40
+    </td>
+     <td>
+Permet de vérifier l’intégrité des requêtes. 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1405002307652.xml">vads_action_mode</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Définit le mode d&#x27;acquisition des informations de la carte.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408607954033.xml">vads_contrib</a></b>
+    </td>
+     <td>
+ans..128
+    </td>
+     <td>
+Indique le nom de la contribution utilisée lors du paiement (Joomla, osCommerce...). 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408608221796.xml">vads_ctx_mode</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Mode de communication de la plateforme de paiement
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408624287246.xml">vads_extra_result</a></b>
+    </td>
+     <td>
+n2
+    </td>
+     <td>
+Code complémentaire de réponse. Sa signification dépend de la valeur renseignée dans 
+<b>vads_result</b>.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408625090595.xml">vads_hash</a></b>
+    </td>
+     <td>
+an64
+    </td>
+     <td>
+     <p>
+Clé unique renvoyée uniquement à l’URL de notification (IPN).
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408626371544.xml">vads_page_action</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Définit l&#x27;opération à réaliser.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1415014254111.xml">
+<b>vads_payment_error</b></a>
+    </td>
+     <td>
+n..3
+    </td>
+     <td>
+Codes d&#x27;erreur sur un paiement refusé.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408628157713.xml">vads_result</a></b>
+    </td>
+     <td>
+n2
+    </td>
+     <td>
+Code retour général du résultat du paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408636137772.xml">vads_site_id</a></b>
+    </td>
+     <td>
+n8
+    </td>
+     <td>
+Identifiant du site.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408638807307.xml">
+<b>vads_url_check</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dans le paramétrage des règles de notification.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408638858037.xml">
+<b>vads_url_check_src</b></a>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Ce paramètre définit l’origine de l’appel URL de notification (IPN Server).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408639900969.xml">
+<b>vads_version</b></a>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Version du protocole d’échange avec la plateforme de paiement.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410525874342.xml -->
+  <h3>
+  Informations sur la commande
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408624169447.xml">vads_ext_info</a></b>
+    </td>
+     <td>
+ans
+    </td>
+     <td>
+Champs personnalisables permettant d&#x27;ajouter des données supplémentaires dans l&#x27;e-mail de confirmation envoyé au marchand et dans l&#x27;URL de notification.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1411125541878.xml">
+<b>vads_nb_products</b></a>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Détail du panier. Nombre d’articles.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408626141983.xml">vads_order_id</a></b>
+    </td>
+     <td>
+an..32
+    </td>
+     <td>
+Numéro de commande.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408626234577.xml">vads_order_info</a></b>
+    </td>
+     <td>
+an..255
+    </td>
+     <td>
+Description de la commande.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408626308005.xml">vads_order_info2</a></b>
+    </td>
+     <td>
+an..255
+    </td>
+     <td>
+Description de la commande.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408626336653.xml">vads_order_info3</a></b>
+    </td>
+     <td>
+an..255
+    </td>
+     <td>
+Description de la commande.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1411126075812.xml">
+<b>vads_product_amountN</b></a>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Détail du panier. Montant de l’article N
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1411125732485.xml">
+<b>vads_product_labelN</b></a>
+    </td>
+     <td>
+an..255
+    </td>
+     <td>
+Détail du panier. Libellé de l’article N.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1411126555396.xml">
+<b>vads_product_qtyN</b></a>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Détail du panier. Quantité d’article N.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1411126454471.xml">
+<b>vads_product_refN</b></a>
+    </td>
+     <td>
+an..64
+    </td>
+     <td>
+Détail du panier. Référence de l’article N.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1411126340153.xml">
+<b>vads_product_typeN</b></a>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Détail du panier. Type de l’article N.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1433941223778.xml">
+<b>vads_product_vatN</b></a>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Détail du panier. Montant de la TVA de l&#x27;article N.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410534868650.xml -->
+  <h3>
+  Informations sur l&#x27;acheteur
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408608603787.xml">vads_cust_address</a></b>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+Adresse postale.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408608675071.xml">vads_cust_address_number</a></b>
+    </td>
+     <td>
+an..5
+    </td>
+     <td>
+Numéro de rue.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408608769950.xml">vads_cust_cell_phone</a></b>
+    </td>
+     <td>
+an..32
+    </td>
+     <td>
+Numéro de téléphone mobile.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408614379476.xml">vads_cust_city</a></b>
+    </td>
+     <td>
+an..128
+    </td>
+     <td>
+Ville.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408614445899.xml">vads_cust_country</a></b>
+    </td>
+     <td>
+a2
+    </td>
+     <td>
+Code pays suivant la norme ISO 3166.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408614742379.xml">vads_cust_district</a></b>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Quartier.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408614926108.xml">vads_cust_email</a></b>
+    </td>
+     <td>
+ans..150
+    </td>
+     <td>
+Adresse e-mail de l’acheteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615025768.xml">vads_cust_first_name</a></b>
+    </td>
+     <td>
+an..63
+    </td>
+     <td>
+Prénom.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615118352.xml">vads_cust_id</a></b>
+    </td>
+     <td>
+an..63
+    </td>
+     <td>
+Référence de l’acheteur sur le site marchand.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615176997.xml">vads_cust_last_name</a></b>
+    </td>
+     <td>
+an..63
+    </td>
+     <td>
+Nom.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1423825610581.xml">
+<b>vads_cust_legal_name</b></a>
+    </td>
+     <td>
+an..100
+    </td>
+     <td>
+Raison sociale de l&#x27;acheteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408615260331.xml">vads_cust_name</a>
+    </td>
+     <td>
+an..127
+    </td>
+     <td>
+Déprécié.     <p>
+Utilisez 
+<b>vads_cust_first_name</b> et 
+<b>vads_cust_last_name</b>.
+    </p>
+
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1440084630860.xml">
+<b>vads_cust_national_id</b></a>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+Identifiant national.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615340066.xml">vads_cust_phone</a></b>
+    </td>
+     <td>
+an..32
+    </td>
+     <td>
+Numéro de téléphone.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615396958.xml">vads_cust_state</a></b>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Etat / Région.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615475409.xml">vads_cust_status</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Statut (particulier / entreprise).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408615888267.xml">vads_cust_title</a></b>
+    </td>
+     <td>
+an..63
+    </td>
+     <td>
+Civilité de l’acheteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408616006014.xml">vads_cust_zip</a></b>
+    </td>
+     <td>
+an..64
+    </td>
+     <td>
+Code postal.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410522989073.xml -->
+  <h3>
+  Informations sur la livraison
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408631826813.xml">vads_ship_to_city</a></b>
+    </td>
+     <td>
+an..128
+    </td>
+     <td>
+Ville.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408632458704.xml">vads_ship_to_country</a></b>
+    </td>
+     <td>
+a2
+    </td>
+     <td>
+Code pays suivant la norme ISO 3166.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408632679858.xml">vads_ship_to_delivery_company_name</a></b>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Nom du transporteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408632864028.xml">vads_ship_to_district</a></b>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Quartier.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408634336065.xml">vads_ship_to_first_name</a></b>
+    </td>
+     <td>
+ans..63
+    </td>
+     <td>
+Prénom.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408634522824.xml">vads_ship_to_last_name</a></b>
+    </td>
+     <td>
+ans..63
+    </td>
+     <td>
+Nom.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1423827002789.xml">
+<b>vads_ship_to_legal_name</b></a>
+    </td>
+     <td>
+an..100
+    </td>
+     <td>
+Raison sociale de lieu de livraison.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408634587110.xml">vads_ship_to_name</a></b>
+    </td>
+     <td>
+ans..63
+    </td>
+     <td>
+Nom de l’acheteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408634698739.xml">vads_ship_to_phone_num</a></b>
+    </td>
+     <td>
+ans..32
+    </td>
+     <td>
+Numéro de téléphone.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408634757367.xml">vads_ship_to_speed</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Mode de livraison
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635009448.xml">vads_ship_to_state</a></b>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Etat / Région.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408634859538.xml">vads_ship_to_status</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Statut (particulier / entreprise).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635091649.xml">vads_ship_to_street</a></b>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+Adresse postale.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635487312.xml">vads_ship_to_street_number</a></b>
+    </td>
+     <td>
+an..5
+    </td>
+     <td>
+Numéro de rue.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635139472.xml">vads_ship_to_street2</a></b>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+Deuxième ligne d’adresse.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635578322.xml">vads_ship_to_type</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Type de livraison.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635663652.xml">vads_ship_to_user_info</a></b>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+Informations acheteur (Identifant légal CPF/CNPJ).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408635725582.xml">vads_ship_to_zip</a></b>
+    </td>
+     <td>
+an..64
+    </td>
+     <td>
+Code postal.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410533143029.xml -->
+  <h3>
+  Informations sur le moyen de paiement
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408550019475.xml">vads_bank_code</a></b>
+    </td>
+     <td>
+n5
+    </td>
+     <td>
+Code banque associé à la banque émettrice.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408550125294.xml">vads_bank_product</a></b>
+    </td>
+     <td>
+an..3
+    </td>
+     <td>
+Code produit de la carte utilisée pour le paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408550840170.xml">vads_birth_day</a></b>
+    </td>
+     <td>
+n..2
+    </td>
+     <td>
+Jour de naissance du porteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408551247542.xml">vads_birth_month</a></b>
+    </td>
+     <td>
+n..2
+    </td>
+     <td>
+Mois de naissance du porteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408551527515.xml">vads_birth_year</a></b>
+    </td>
+     <td>
+n4
+    </td>
+     <td>
+Année de naissance du porteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408606602420.xml">vads_card_brand</a></b>
+    </td>
+     <td>
+an..127
+    </td>
+     <td>
+Type de carte utilisé pour le paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408607272456.xml">vads_card_country</a></b>
+    </td>
+     <td>
+ISO 3166
+    </td>
+     <td>
+Code pays de la carte utilisée pour le paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408607355172.xml">vads_card_number</a></b>
+    </td>
+     <td>
+n..36
+    </td>
+     <td>
+Numéro de carte masqué.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408616066204.xml">vads_cvv</a></b>
+    </td>
+     <td>
+n..4
+    </td>
+     <td>
+Code de sécurité de la carte à 3 ou 4 chiffres.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408624003656.xml">vads_expiry_month</a></b>
+    </td>
+     <td>
+n..2
+    </td>
+     <td>
+Mois d&#x27;expiration de la carte utilisée pour le paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408624118504.xml">vads_expiry_year</a></b>
+    </td>
+     <td>
+n4
+    </td>
+     <td>
+Année d&#x27;expiration de la carte utilisée pour le paiement.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1411031267607.xml -->
+  <h3>
+  Informations sur la transaction
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408546768429.xml">vads_amount</a></b>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Montant de la transaction exprimé dans la plus petite unité de la devise (le centime pour l&#x27;euro) 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408547832760.xml">vads_auth_mode</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Spécifie de quelle manière est réalisée la demande d’autorisation. 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408547832760.xml">vads_auth_number</a></b>
+    </td>
+     <td>
+an..6
+    </td>
+     <td>
+Numéro d&#x27;autorisation retourné par le serveur bancaire.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408548356588.xml">vads_auth_result</a></b>
+    </td>
+     <td>
+n2
+    </td>
+     <td>
+Code retour de la demande d&#x27;autorisation retournée par la banque émettrice.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408604690440.xml">vads_capture_delay</a></b>
+    </td>
+     <td>
+n..3
+    </td>
+     <td>
+Délai en nombre de jours avant remise en banque.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1447857764792.xml">
+<b>vads_change_rate</b></a>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Taux de change utilisé pour calculer le montant réél du paiement (paiement multi-devise).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408607837994.xml">vads_contract_used</a></b>
+    </td>
+     <td>
+ans..250
+    </td>
+     <td>
+Contrat commerçant utilisé.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408607561985.xml">vads_contracts</a></b>
+    </td>
+     <td>
+RESEAU1=contrat1;    <p>
+RESEAU2=contrat2
+    </p>
+
+    </td>
+     <td>
+Contrat commerçant à utiliser.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1406044948454.xml">vads_currency</a></b>
+    </td>
+     <td>
+n3
+    </td>
+     <td>
+Code numérique de la monnaie à utiliser pour le paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408616823195.xml">vads_effective_amount</a></b>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Montant du paiement exprimé dans la plus petite unité de la devise utilisée pour effectuer la remise en banque(le centime pour l&#x27;euro) 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408623011853.xml">vads_effective_creation_date</a></b>
+    </td>
+     <td>
+n14
+    </td>
+     <td>
+Date d&#x27;enregistrement de la transaction, dans le fuseau UTC (ou GMT+0) au format horaire 24h (AAAAMMJJHHMMSS).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408625891261.xml">vads_operation_type</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Permet de différencier une opération de débit ou de crédit (remboursement).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1406099131711.xml">vads_payment_cards </a></b>
+    </td>
+     <td>
+type1;type2
+    </td>
+     <td>
+Liste des moyens de paiement à proposer à l’acheteur.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408626891430.xml">vads_payment_certificate</a></b>
+    </td>
+     <td>
+an40
+    </td>
+     <td>
+Champ valorisé par la plateforme de paiement dans le cas où l’autorisation a été réalisée 
+<b>avec succès</b>.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408627002482.xml">vads_payment_config</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Type du paiement : comptant ou en plusieurs fois.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1415797825296.xml">vads_payment_option_code</a></b>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Permet de définir le code de l&#x27;option utilisée.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1424076095539.xml">
+<b>vads_payment_seq</b></a>
+    </td>
+     <td>
+json
+    </td>
+     <td>
+Décrit la séquence d&#x27;un paiement fractionné.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408627133271.xml">vads_payment_src</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Origine du paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1413811527238.xml">
+<b>vads_risk_analyzer_result</b></a>
+    </td>
+     <td>
+ans
+    </td>
+     <td>
+Retourne le résultat de l&#x27;analyse de fraude effectué par un système externe (ClearSale, CyberSource,...).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1436276953870.xml">vads_risk_assessment_result</a></b>
+    </td>
+     <td>
+ans
+    </td>
+     <td>
+Retourne le résultat de l&#x27;analyse de gestion des risques avancée effectuée par la plateforme de paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1409751437465.xml">vads_risk_control</a></b>
+    </td>
+     <td>
+contrôle1=resultat1;    <p>
+contrôle2=resultat2
+    </p>
+
+    </td>
+     <td>
+Résultat des contrôles associés à la fraude.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408631717602.xml">vads_sequence_number</a></b>
+    </td>
+     <td>
+n
+    </td>
+     <td>
+Numéro de séquence de la transaction (numéro d&#x27;échéance).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638544413.xml">vads_trans_date</a></b>
+    </td>
+     <td>
+n14
+    </td>
+     <td>
+     <p>
+Date et heure, dans le fuseau UTC (ou GMT+0) au format horaire 24h (AAAAMMJJHHMMSS).
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638607923.xml">vads_trans_id</a></b>
+    </td>
+     <td>
+n6
+    </td>
+     <td>
+Identifiant unique d&#x27;une transaction.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638657026.xml">vads_trans_status</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Statut de la transaction.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1432730650747.xml">vads_trans_uuid</a></b>
+    </td>
+     <td>
+ans32
+    </td>
+     <td>
+Référence unique de la transaction générée par la plateforme de paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408639754479.xml">vads_validation_mode</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Mode de validation de la transaction.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408639995934.xml">vads_warranty_result</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410351589465.xml -->
+  <h3>
+  Authentification 3DS
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408636944655.xml">vads_threeds_cavv</a></b>
+    </td>
+     <td>
+ans..28
+    </td>
+     <td>
+    <p>
+Désigne la vérification de l’authentification du porteur par l’ACS.
+    </p>
+Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’acheteur s’est correctement authentifié (vads_threeds_status vaut « Y » ou « A »).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408637038608.xml">vads_threeds_cavvAlgorithm</a></b>
+    </td>
+     <td>
+n1
+    </td>
+     <td>
+     <p>
+Algorithme utilisé par l’ACS pour générer la valeur du cavv.
+    </p>
+     <p>
+Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’acheteur s’est correctement authentifié (vads_threeds_status vaut « Y » ou « A »).
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408637200153.xml">vads_threeds_eci</a></b>
+    </td>
+     <td>
+n..2
+    </td>
+     <td>
+    <p>
+Désigne l’Indicateur de Commerce Electronique.
+    </p>
+Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’acheteur s’est correctement authentifié (vads_threeds_status vaut « Y » ou « A »).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408637262343.xml">vads_threeds_enrolled</a></b>
+    </td>
+     <td>
+a1
+    </td>
+     <td>
+    <p>
+Désigne le statut de l’enrôlement du porteur.
+    </p>
+Il est valorisé par les serveurs VISA et MASTERCARD (DS) durant le processus 3D Secure
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408637376020.xml">vads_threeds_exit_status</a></b>
+    </td>
+     <td>
+n..2
+    </td>
+     <td>
+     <p>
+Désigne le statut final du processus 3D Secure.
+    </p>
+     <p>
+Il est valorisé par la plateforme de paiement.
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638075046.xml">vads_threeds_mpi</a></b>
+    </td>
+     <td>
+n1
+    </td>
+     <td>
+Active / désactive le processus 3DS lors d’un paiement e-commerce
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638234029.xml">vads_threeds_sign_valid</a></b>
+    </td>
+     <td>
+n1
+    </td>
+     <td>
+    <p>
+Désigne la validité de la signature du message PARes.
+    </p>
+Il est valorisé par la plateforme de paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638341396.xml">vads_threeds_status</a></b>
+    </td>
+     <td>
+a1
+    </td>
+     <td>
+     <p>
+Désigne le statut de l’authentification du porteur.
+    </p>
+     <p>
+Il est valorisé par le serveur d’authentification 3DS (ACS) durant le processus 3D Secure.
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408638445416.xml">vads_threeds_xid</a></b>
+    </td>
+     <td>
+ans..28
+    </td>
+     <td>
+    <p>
+Désigne la référence unique de la transaction 3DS.
+    </p>
+Il est valorisé par le serveur d’authentification (ACS) durant le processus 3D Secure.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1416328457246.xml -->
+  <h3>
+  Information sur les transactions de don
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1416319402112.xml">vads_ext_info_donation</a></b>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Montant du don exprimé dans la plus petite unité de la monnaie ou devise(le centime pour l&#x27;euro) 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1416320032761.xml">vads_ext_info_donation_contribution</a></b>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Montant en centimes de la contribution exprimé dans la plus petite unité de la monnaie ou devise (le centime pour l&#x27;euro) 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1416319856371.xml">vads_ext_info_donation_merchant</a></b>
+    </td>
+     <td>
+n8
+    </td>
+     <td>
+Identifiant de la boutique sur laquelle le don est effectué.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1416319586041.xml">vads_ext_info_donation_recipient</a></b>
+    </td>
+     <td>
+n..20
+    </td>
+     <td>
+Identifiant HelloAsso de l&#x27;association qui a reçu le don.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1416319785868.xml">vads_ext_info_donation_recipient_name</a></b>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Nom de l&#x27;association qui a reçu le don.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1416242779600.xml">vads_risk_primery_warranty</a></b>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Permet de surcharger la configuration du contrôle de risque 
+<b>Contrôle du transfert de responsabilité de la transaction primaire</b>.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410518407791.xml -->
+  <h3>
+  Personnalisation de la page de paiement
+</h3>
+   <p>
+
+  </p>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+<a href="#TODO-tla1406127047143.xml">
+<b>vads_available_languages</b></a>
+    </td>
+     <td>
+langue1;langue2;langue3
+    </td>
+     <td>
+Permet de spécifier les langues disponibles sur la page de paiement sous forme de liste.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1406125864809.xml">
+<b>vads_language</b></a>
+    </td>
+     <td>
+a2
+    </td>
+     <td>
+Définit la langue dans laquelle est affichée la page de paiement (norme ISO 639-1).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408635796483.xml">
+<b>vads_shop_name</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Permet de définir le nom de la boutique qui apparait dans les e-mails de confirmation de paiement et sur le récapitulatif de la transaction.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408635865701.xml">
+<b>vads_shop_url</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+Permet de surcharger l&#x27;URL de la boutique qui apparait sur la page de paiement et les e-mails de confirmation de paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408636286614.xml">
+<b>vads_theme_config</b></a>
+    </td>
+     <td>
+code1=valeur1;code2=valeur2
+    </td>
+     <td>
+Permet de personnaliser certains éléments de la page de paiement.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1410514133139.xml -->
+  <h3>
+  Redirection vers le site marchand
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+
+<b><a href="#TODO-tla1408627821400.xml">vads_redirect_error_message</a></b>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+     <p>
+
+<u>Redirection automatique</u> :
+    </p>
+     <p>
+Message affiché sur la page de paiement avant redirection vers le site marchand dans le cas d&#x27;un paiement refusé / accepté.
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408627924375.xml">vads_redirect_error_timeout</a></b>
+    </td>
+     <td>
+n..3
+    </td>
+     <td>
+     <p>
+
+<u>Redirection automatique</u> :
+    </p>
+     <p>
+Délai ( en secondes ) avant redirection vers le site marchand après un paiement refusé / accepté. 
+    </p>
+ 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408627992082.xml">vads_redirect_success_message</a></b>
+    </td>
+     <td>
+ans..255
+    </td>
+     <td>
+    <p>
+
+<u>Redirection automatique</u> :
+    </p>
+Spécifie le message à la fin d’un paiement accepté dans le cas d’une redirection automatique vers le site marchand.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1408628074901.xml">vads_redirect_success_timeout</a></b>
+    </td>
+     <td>
+n..3
+    </td>
+     <td>
+    <p>
+
+<u>Redirection automatique</u> :
+    </p>
+Délai en secondes avant redirection vers le site marchand à la fin d’un paiement accepté. Sa valeur est comprise entre 0 et 600s.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1406116003851.xml">vads_return_mode</a></b>
+    </td>
+     <td>
+GET/POST/    <p>
+NONE
+    </p>
+
+    </td>
+     <td>
+Permet de spécifier le mode de transmission des données aux URLs de retour vers le site marchand.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408638742584.xml">
+<b>vads_url_cancel</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL où sera redirigé l’acheteur si celui-ci appuie sur &quot; annuler et retourner à la boutique &quot; avant d&#x27;avoir procédé au paiement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408638807307.xml">
+<b>vads_url_check</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dans le paramétrage des règles de notification.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408638858037.xml">
+<b>vads_url_check_src</b></a>
+    </td>
+     <td>
+string (enum)
+    </td>
+     <td>
+Ce paramètre définit l&#x27;évènement déclencheur de la notification instantanée (aussi appelée IPN ou URL de notification).
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408639045339.xml">
+<b>vads_url_error</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL où sera redirigé l’acheteur en cas d&#x27;erreur de traitement interne.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408639165197.xml">
+<b>vads_url_refused</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL où sera redirigé l’acheteur en cas de refus 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408639224559.xml">
+<b>vads_url_return</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL par défaut où sera redirigé l&#x27;acheteur si celui-ci appuie sur &quot;retourner à la boutique&quot;.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1408639383258.xml">
+<b>vads_url_success</b></a>
+    </td>
+     <td>
+ans..127
+    </td>
+     <td>
+URL où sera redirigé l’acheteur en cas de succès.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1411025757958.xml -->
+  <h3>
+  Informations sur l&#x27;abonnement
+</h3>
+   <p>
+   <table>
+          <tr>
+     <td>
+Nom du champ
+    </td>
+     <td>
+Format
+    </td>
+     <td>
+Description
+    </td>
+ 
+   </tr>
+      <tr>
+     <td>
+<a href="#TODO-tla1411481213747.xml">
+<b>vads_identifier_status</b></a>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Statut de l&#x27;enregistrement du mandat.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+<a href="#TODO-tla1447863204383.xml">
+<b>vads_recurrence_number</b></a>
+    </td>
+     <td>
+n
+    </td>
+     <td>
+Numéro de l&#x27;échéance de l&#x27;abonnement.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411481506331.xml">vads_recurrence_status</a></b>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Statut de la création d&#x27;une récurrence.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411026103849.xml">vads_sub_amount</a></b>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Montant des échéances de l’abonnement pour toutes les échéances, hormis celles éventuellement définies par 
+<b>vads_sub_init_amount_number</b>
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411026347617.xml">vads_sub_currency</a></b>
+    </td>
+     <td>
+n3
+    </td>
+     <td>
+Code numérique de la monnaie à utiliser pour l’abonnement, selon la norme ISO 4217.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411026999130.xml">vads_sub_desc</a></b>
+    </td>
+     <td>
+string
+    </td>
+     <td>
+Règle de récurrence à appliquer suivant la spécification iCalendar RFC5545.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411025901698.xml">vads_sub_effect_date</a></b>
+    </td>
+     <td>
+n8
+    </td>
+     <td>
+Date d&#x27;effet de l&#x27;abonnement. 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411026602462.xml">vads_sub_init_amount</a></b>
+    </td>
+     <td>
+n..12
+    </td>
+     <td>
+Montant des échéances de l’abonnement pour les 
+<u>premières échéances</u>. 
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411026836617.xml">vads_sub_init_amount_number</a></b>
+    </td>
+     <td>
+n..3
+    </td>
+     <td>
+Nombre d’échéances auxquelles il faudra appliquer le montant 
+<b>vads_sub_init_amount</b>.
+    </td>
+ 
+   </tr>
+    <tr>
+     <td>
+
+<b><a href="#TODO-tla1411025356421.xml">vads_subscription</a></b>
+    </td>
+     <td>
+ans..50
+    </td>
+     <td>
+Identifiant de l&#x27;abonnement à créer.
+    </td>
+ 
+   </tr>
+   
+  </table>
+ 
+  </p>
+ <!-- tla1408640166705.xml -->
+<!-- tla1405002307652.xml -->
+<!-- tla1408546768429.xml -->
+<!-- tla1408547056236.xml -->
+<!-- tla1408547832760.xml -->
+<!-- tla1408548356588.xml -->
+<!-- tla1406127047143.xml -->
+<!-- tla1408550019475.xml -->
+<!-- tla1408550125294.xml -->
+<!-- tla1408550840170.xml -->
+<!-- tla1408551247542.xml -->
+<!-- tla1408551527515.xml -->
+<!-- tla1408604690440.xml -->
+<!-- tla1408606602420.xml -->
+<!-- tla1408607272456.xml -->
+<!-- tla1408607355172.xml -->
+<!-- tla1447857764792.xml -->
+<!-- tla1408607561985.xml -->
+<!-- tla1408607837994.xml -->
+<!-- tla1408607954033.xml -->
+<!-- tla1408607954033.xml -->
+<!-- tla1408608221796.xml -->
+<!-- tla1408608221796.xml -->
+<!-- tla1406044948454.xml -->
+<!-- tla1408608603787.xml -->
+<!-- tla1408608675071.xml -->
+<!-- tla1408608769950.xml -->
+<!-- tla1408614379476.xml -->
+<!-- tla1408614445899.xml -->
+<!-- tla1408614742379.xml -->
+<!-- tla1408614926108.xml -->
+<!-- tla1408615025768.xml -->
+<!-- tla1408615118352.xml -->
+<!-- tla1408615176997.xml -->
+<!-- tla1423825610581.xml -->
+<!-- tla1408615260331.xml -->
+<!-- tla1440084630860.xml -->
+<!-- tla1408615340066.xml -->
+<!-- tla1408615396958.xml -->
+<!-- tla1408615475409.xml -->
+<!-- tla1408615888267.xml -->
+<!-- tla1408616006014.xml -->
+<!-- tla1408616066204.xml -->
+<!-- tla1408616823195.xml -->
+<!-- tla1408623011853.xml -->
+<!-- tla1408624003656.xml -->
+<!-- tla1408624118504.xml -->
+<!-- tla1408624169447.xml -->
+<!-- tla1418032860506.xml -->
+<!-- tla1418036120946.xml -->
+<!-- tla1418033120031.xml -->
+<!-- tla1418032336492.xml -->
+<!-- tla1418037434548.xml -->
+<!-- tla1418032955977.xml -->
+<!-- tla1418033253071.xml -->
+<!-- tla1418032770788.xml -->
+<!-- tla1416319402112.xml -->
+<!-- tla1416319586041.xml -->
+<!-- tla1416319785868.xml -->
+<!-- tla1416319856371.xml -->
+<!-- tla1416320032761.xml -->
+<!-- tla1408624287246.xml -->
+<!-- tla1408625090595.xml -->
+<!-- tla1408625202233.xml -->
+<!-- tla1411481213747.xml -->
+<!-- tla1412321830815.xml -->
+<!-- tla1406125864809.xml -->
+<!-- tla1411125541878.xml -->
+<!-- tla1408625891261.xml -->
+<!-- tla1408626141983.xml -->
+<!-- tla1408626234577.xml -->
+<!-- tla1408626308005.xml -->
+<!-- tla1408626336653.xml -->
+<!-- tla1408626371544.xml -->
+<!-- tla1406099131711.xml -->
+<!-- tla1408626891430.xml -->
+<!-- tla1408626891430.xml -->
+<!-- tla1408627002482.xml -->
+<!-- tla1408627002482.xml -->
+<!-- tla1415014254111.xml -->
+<!-- tla1415797825296.xml -->
+<!-- tla1424076095539.xml -->
+<!-- tla1408627133271.xml -->
+<!-- tla1408627517688.xml -->
+<!-- tla1411642615770.xml -->
+<!-- tla1411126075812.xml -->
+<!-- tla1411125732485.xml -->
+<!-- tla1411126555396.xml -->
+<!-- tla1411126454471.xml -->
+<!-- tla1411126340153.xml -->
+<!-- tla1433941223778.xml -->
+<!-- tla1447863204383.xml -->
+<!-- tla1411481506331.xml -->
+<!-- tla1408627821400.xml -->
+<!-- tla1408627821400.xml -->
+<!-- tla1408627924375.xml -->
+<!-- tla1408627992082.xml -->
+<!-- tla1408628074901.xml -->
+<!-- tla1408628157713.xml -->
+<!-- tla1406116003851.xml -->
+<!-- tla1413811527238.xml -->
+<!-- tla1436276953870.xml -->
+<!-- tla1409751437465.xml -->
+<!-- tla1416242779600.xml -->
+<!-- tla1408631717602.xml -->
+<!-- tla1408631826813.xml -->
+<!-- tla1408632458704.xml -->
+<!-- tla1408632679858.xml -->
+<!-- tla1408632864028.xml -->
+<!-- tla1408634336065.xml -->
+<!-- tla1408634522824.xml -->
+<!-- tla1423827002789.xml -->
+<!-- tla1423827002789.xml -->
+<!-- tla1408634587110.xml -->
+<!-- tla1408634698739.xml -->
+<!-- tla1408634757367.xml -->
+<!-- tla1408634859538.xml -->
+<!-- tla1408635009448.xml -->
+<!-- tla1408635091649.xml -->
+<!-- tla1408635091649.xml -->
+<!-- tla1408635139472.xml -->
+<!-- tla1408635487312.xml -->
+<!-- tla1408635578322.xml -->
+<!-- tla1408635663652.xml -->
+<!-- tla1408635725582.xml -->
+<!-- tla1412321271132.xml -->
+<!-- tla1408635796483.xml -->
+<!-- tla1408635865701.xml -->
+<!-- tla1408636137772.xml -->
+<!-- tla1411025356421.xml -->
+<!-- tla1411026103849.xml -->
+<!-- tla1411026347617.xml -->
+<!-- tla1411026999130.xml -->
+<!-- tla1411025901698.xml -->
+<!-- tla1411026602462.xml -->
+<!-- tla1411026836617.xml -->
+<!-- tla1412321592265.xml -->
+<!-- tla1408636286614.xml -->
+<!-- tla1408636944655.xml -->
+<!-- tla1408637038608.xml -->
+<!-- tla1408637200153.xml -->
+<!-- tla1408637262343.xml -->
+<!-- tla1408637376020.xml -->
+<!-- tla1408638075046.xml -->
+<!-- tla1408638234029.xml -->
+<!-- tla1408638341396.xml -->
+<!-- tla1408638445416.xml -->
+<!-- tla1408638544413.xml -->
+<!-- tla1408638607923.xml -->
+<!-- tla1408638657026.xml -->
+<!-- tla1432730650747.xml -->
+<!-- tla1408638742584.xml -->
+<!-- tla1408638807307.xml -->
+<!-- tla1408638858037.xml -->
+<!-- tla1408639045339.xml -->
+<!-- tla1408639045339.xml -->
+<!-- tla1408639119392.xml -->
+<!-- tla1408639165197.xml -->
+<!-- tla1408639224559.xml -->
+<!-- tla1408639383258.xml -->
+<!-- tla1408639681161.xml -->
+<!-- tla1408639754479.xml -->
+<!-- tla1408639900969.xml -->
+<!-- tla1408639995934.xml -->
+</body> </html>
