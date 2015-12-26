@@ -108,10 +108,12 @@ def parse_fig(depth, tree, **kwargs):
             else:
                 url = nd.attributes['href'].value
                 echo('<img src="', base_dir + url, '" alt="', url, '"/>', sep='', end='')
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'p':
+            pass
         elif nd.nodeType != nd.ELEMENT_NODE:
             pass
         else:
-            print('parse_fig - unhandled:', nd, file=sys.stderr)
+            print(kwargs['file_name'], 'parse_fig - unhandled:', nd, file=sys.stderr)
 
 
 def parse_conbody(depth, tree, **kwargs):
@@ -128,6 +130,22 @@ def parse_conbody(depth, tree, **kwargs):
                 echo('<p>', indent=depth)
                 parse_conbody(depth, nd, **kwargs)
                 echo('</p>', start='\n', indent=depth)
+            elif nd.nodeName == 'title':
+                pass
+            elif nd.nodeName == 'codeblock':
+                echo('<code>', indent=depth)
+                parse_conbody(depth, nd, **kwargs)
+                echo('</code>', start='\n', indent=depth)
+            elif nd.nodeName == 'itemgroup':
+                echo('<p>', indent=depth)
+                parse_conbody(depth, nd, **kwargs)
+                echo('</p>', start='\n', indent=depth)
+            elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'image':
+                if nd.hasAttribute('keyref'):
+                    expand_keydef(nd)
+                else:
+                    url = nd.attributes['href'].value
+                    echo('<img src="', base_dir + url, '" alt="', url, '"/>', sep='', end='')
             elif nd.nodeName == 'keyword':
                 expand_keydef(nd)
             elif nd.nodeName == 'xref':
@@ -153,6 +171,10 @@ def parse_conbody(depth, tree, **kwargs):
                 echo('<b>', start=' ', end='')
                 parse_conbody(depth, nd, **kwargs)
                 echo('</b>', end='')
+            elif nd.nodeName == 'i':
+                echo('<i>', start=' ', end='')
+                parse_conbody(depth, nd, **kwargs)
+                echo('</i>', end='')
             elif nd.nodeName == 'ul':
                 echo('<ul>', indent=depth)
                 index_stack[depth + 1] = 0
@@ -199,6 +221,54 @@ def parse_conbody(depth, tree, **kwargs):
                 column_stack[depth] += 1
                 parse_conbody(depth, nd, **kwargs)
                 echo('</td>', start='\n', indent=depth)
+            # Task-related stuff
+            elif nd.nodeName == 'context':
+                parse_conbody(depth, nd, **kwargs)
+            elif nd.nodeName == 'steps':
+                echo('<ol>', indent=depth)
+                index_stack[depth + 1] = 1
+                parse_conbody(depth + 1, nd, **kwargs)
+                index_stack[depth + 1] = 0
+                echo('</ol>', start='\n', indent=depth)
+            elif nd.nodeName == 'step':
+                index = index_stack[depth]
+                echo('<li>', indent=depth)
+                if index > 0:
+                    index_stack[depth] = index + 1
+                parse_conbody(depth, nd, **kwargs)
+                echo('</li>', start='\n', indent=depth)
+            elif nd.nodeName == 'choices':
+                echo('<ul>', indent=depth)
+                index_stack[depth + 1] = 0
+                parse_conbody(depth + 1, nd, **kwargs)
+                index_stack[depth + 1] = 0
+                echo('</ul>', start='\n', indent=depth)
+            elif nd.nodeName == 'choice':
+                index = index_stack[depth]
+                echo('<li>', indent=depth)
+                if index > 0:
+                    index_stack[depth] = index + 1
+                parse_conbody(depth, nd, **kwargs)
+                echo('</li>', start='\n', indent=depth)
+            elif nd.nodeName == 'cmd':
+                echo('<p>', indent=depth)
+                parse_conbody(depth, nd, **kwargs)
+                echo('</p>', start='\n', indent=depth)
+            elif nd.nodeName == 'info':
+                echo('<p>', indent=depth)
+                parse_conbody(depth, nd, **kwargs)
+                echo('</p>', start='\n', indent=depth)
+            elif nd.nodeName == 'result':
+                echo('<p>', indent=depth)
+                parse_conbody(depth, nd, **kwargs)
+                echo('</p>', start='\n', indent=depth)
+            elif nd.nodeName == 'postreq':
+                echo('<p>', indent=depth)
+                parse_conbody(depth, nd, **kwargs)
+                echo('</p>', start='\n', indent=depth)
+            # Reference-related stuff
+            elif nd.nodeName == 'section':
+                parse_conbody(depth, nd, **kwargs)
             else:
                 print(kwargs['file_name'], 'parse_conbody - unhandled Element:', nd, file=sys.stderr)
 
@@ -216,6 +286,10 @@ def parse_concept(depth, tree, **kwargs):
             echo('</h' + str(depth) + '>')
         elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'conbody':
             parse_conbody(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'taskbody':
+            parse_conbody(depth, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'refbody':
+            parse_conbody(depth, nd, **kwargs)
         elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'shortdesc':
             parse_conbody(depth, nd, **kwargs)
         elif nd.nodeType != nd.ELEMENT_NODE:
@@ -227,6 +301,10 @@ def parse_concept(depth, tree, **kwargs):
 def parse_topicref_href(depth, tree, **kwargs):
     for nd in tree.childNodes:
         if nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'concept':
+            parse_concept(depth + 1, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'task':
+            parse_concept(depth + 1, nd, **kwargs)
+        elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'reference':
             parse_concept(depth + 1, nd, **kwargs)
         elif nd.nodeType != nd.ELEMENT_NODE:
             pass
@@ -334,5 +412,5 @@ echo('<!DOCTYPE html>', '<html>', '<head>', '<meta charset="UTF-8">', '</head>',
 parse_root(0, root_tree, file_name=base_name)
 echo('</body>', '</html>')
 
-print(keydefs, file=sys.stderr)
+# print(keydefs, file=sys.stderr)
 
