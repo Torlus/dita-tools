@@ -15,10 +15,12 @@ title: chap-3
 Un paiement est considéré comme 
 <b>comptant immédiat</b> si :
 <ul>
-  <li>
+ 
+ <li>
 le montant est débité en une seule fois,
  </li>
-  <li>
+ 
+ <li>
 le délai de remise en banque est de 0 jour.
  </li>
   
@@ -42,10 +44,12 @@ Un paiement est considéré comme
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 le montant est débité en une seule fois,
  </li>
-  <li>
+ 
+ <li>
 le délai de remise en banque est strictement supérieur à 0 jour.
  <p>
 La date de remise ne peut être supérieure à 12 mois après la date d’enregistrement du paiement.
@@ -68,7 +72,8 @@ Il existe deux types de paiements comptants différés :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>Délai de remise inférieur à la durée de validité de l&#x27;autorisation</b> (voir section 
 <b>Validité d&#x27;une autorisation</b> présentée plus bas)
@@ -85,7 +90,8 @@ Une demande d&#x27;autorisation pour le montant global est effectuée. Sans modi
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>Délai de remise supérieur à la durée de validité de l&#x27;autorisation</b> (voir section 
 <b>Validité d&#x27;une autorisation</b> présentée plus bas)
@@ -160,422 +166,562 @@ Certains émetteurs de carte prépayées ou d&#x27;origine espagnole et canadien
 <p>
 Ci-dessous la liste des moyens de paiement dont la validité de l&#x27;autorisation est supérieure à 0 jour. 
 <table>
-        <tr>
-   <td>
+       
+ <tr>
+ 
+  <td>
 Moyen de paiement
   </td>
-   <td>
+ 
+  <td>
 Type de cartes (vads_payment_cards)
   </td>
-   <td>
+ 
+  <td>
 Réseau
   </td>
-   <td>
+ 
+  <td>
 Durée de validité d&#x27;une autorisation (en jours)
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 American Express
   </td>
-   <td>
+ 
+  <td>
 AMEX
   </td>
-   <td>
+ 
+  <td>
 AMEX
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Aurore
   </td>
-   <td>
+ 
+  <td>
 AURORE-MULTI
   </td>
-   <td>
+ 
+  <td>
 AURORE
   </td>
-   <td>
+ 
+  <td>
 29
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Cora
   </td>
-   <td>
+ 
+  <td>
 CORA_BLANCHE
   </td>
-   <td>
+ 
+  <td>
 AURORE
   </td>
-   <td>
+ 
+  <td>
 29
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Cora Premium
   </td>
-   <td>
+ 
+  <td>
 CORA_PREM
   </td>
-   <td>
+ 
+  <td>
 AURORE
   </td>
-   <td>
+ 
+  <td>
 29
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Cora Visa
   </td>
-   <td>
+ 
+  <td>
 CORA_VISA
   </td>
-   <td>
+ 
+  <td>
 AURORE
   </td>
-   <td>
+ 
+  <td>
 29
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Visa
   </td>
-   <td>
+ 
+  <td>
 VISA
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 MasterCard
   </td>
-   <td>
+ 
+  <td>
 MASTERCARD
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Maestro
   </td>
-   <td>
+ 
+  <td>
 MAESTRO
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Bancontact Mistercash
   </td>
-   <td>
+ 
+  <td>
 BANCONTACT
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Visa Electron
   </td>
-   <td>
+ 
+  <td>
 VISA_ELECTRON
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 E-carte bleue
   </td>
-   <td>
+ 
+  <td>
 E-CARTEBLEUE
   </td>
-   <td>
+ 
+  <td>
 CB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Privilège
   </td>
-   <td>
+ 
+  <td>
 CDGP
   </td>
-   <td>
+ 
+  <td>
 CDGP
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte cadeau Truffaut
   </td>
-   <td>
+ 
+  <td>
 TRUFFAUT_CDX
   </td>
-   <td>
+ 
+  <td>
 CERIDIAN
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 3 fois CB Cofinoga
   </td>
-   <td>
+ 
+  <td>
 COF3XCB
   </td>
-   <td>
+ 
+  <td>
 COF3XCB
   </td>
-   <td>
+ 
+  <td>
 21
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Be Smart
   </td>
-   <td>
+ 
+  <td>
 COFINOGA
   </td>
-   <td>
+ 
+  <td>
 COFINOGA
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Soficarte
   </td>
-   <td>
+ 
+  <td>
 SOFICARTE
   </td>
-   <td>
+ 
+  <td>
 COFINOGA
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Sygma
   </td>
-   <td>
+ 
+  <td>
 SYGMA
   </td>
-   <td>
+ 
+  <td>
 COFINOGA
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte Diners Club
   </td>
-   <td>
+ 
+  <td>
 DINERS
   </td>
-   <td>
+ 
+  <td>
 GATECONEX
   </td>
-   <td>
+ 
+  <td>
 3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Bancontact Mistercash
   </td>
-   <td>
+ 
+  <td>
 BANCONTACT
   </td>
-   <td>
+ 
+  <td>
 GATECONEX
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Carte JCB
   </td>
-   <td>
+ 
+  <td>
 JCB
   </td>
-   <td>
+ 
+  <td>
 JCB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Bancontact Mistercash
   </td>
-   <td>
+ 
+  <td>
 BANCONTACT
   </td>
-   <td>
+ 
+  <td>
 GICC
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Paylib
   </td>
-   <td>
+ 
+  <td>
 PAYLIB
   </td>
-   <td>
+ 
+  <td>
 PAYLIB
   </td>
-   <td>
+ 
+  <td>
 7
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 PayPal
   </td>
-   <td>
+ 
+  <td>
 PAYPAL
   </td>
-   <td>
+ 
+  <td>
 PAYPAL
   </td>
-   <td>
+ 
+  <td>
 3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 POSTFINANCE
   </td>
-   <td>
+ 
+  <td>
 POSTFINANCE
   </td>
-   <td>
+ 
+  <td>
 POSTFINANCE
   </td>
-   <td>
+ 
+  <td>
 1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Virement SEPA
   </td>
-   <td>
+ 
+  <td>
 SCT
   </td>
-   <td>
+ 
+  <td>
 SEPA
   </td>
-   <td>
+ 
+  <td>
 13
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Prélèvement SEPA
   </td>
-   <td>
+ 
+  <td>
 SDD
   </td>
-   <td>
+ 
+  <td>
 SEPA
   </td>
-   <td>
+ 
+  <td>
 13
   </td>
  

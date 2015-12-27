@@ -24,10 +24,12 @@ Cinématique des échanges – Vue acheteur
 </p>
 <img src="/docs_img/tla1406022174130.image" alt="DiagrammeFluxAcheteur"/> 
 <ol>
-  <li>
+ 
+ <li>
 L’acheteur valide son panier.
  </li>
-  <li>
+ 
+ <li>
 Le site marchand redirige l’acheteur vers la plateforme de paiement. 
  <p>
 Cette redirection s&#x27;effectue sous la forme d&#x27;un formulaire HTML POST en HTTPS. 
@@ -39,7 +41,8 @@ Les paramètres qui le composent sont décrits dans le chapitre
  </p>
 
  </li>
-  <li>
+ 
+ <li>
 La plateforme de paiement, après vérification des paramètres et de leur signature, présente la page de sélection du moyen de paiement. 
  <p>
 Sélection du moyen de paiement
@@ -50,14 +53,17 @@ Si le moyen de paiement a été spécifié dans le formulaire, l’acheteur pass
  </p>
 
  </li>
-  <li>
+ 
+ <li>
 L’acheteur sélectionne son moyen de paiement.
  </li>
-  <li>
+ 
+ <li>
 Il clique sur 
 <b>Valider</b>.
  </li>
-  <li>
+ 
+ <li>
 Il renseigne le numéro et la date d&#x27;expiration de sa carte. 
  <p>
 Si la carte possède un cryptogramme visuel, ce dernier doit obligatoirement être renseigné.
@@ -68,17 +74,21 @@ Saisie des informations du moyen de paiement
  </p>
 <img src="/docs_img/tla1437748495407.image" alt="SaisieDonneesBancaires"/> 
  </li>
-  <li>
+ 
+ <li>
 Il confirme sa saisie en cliquant sur 
 <b>Valider</b>.
  </li>
-  <li>
+ 
+ <li>
 Si le marchand et la carte de l’acheteur sont enrôlés dans le programme 3D Secure, une authentification 3D Secure a lieu.
  </li>
-  <li>
+ 
+ <li>
 Une demande d&#x27;autorisation est effectuée auprès de la banque de l’acheteur, l’émetteur, en plus des contrôles de fraudes internes de la plateforme de paiement.
  </li>
-  <li>
+ 
+ <li>
 En cas de succès, une page de résumé est présentée à l’acheteur récapitulant les informations de la transaction. 
  <p>
 Un bouton permettant un retour à la boutique est proposé.
@@ -115,30 +125,38 @@ Cinématique des échanges – Vue marchand
 <p>
  
 <ol>
-  <li>
+ 
+ <li>
 L’acheteur valide son panier.
  </li>
-  <li>
+ 
+ <li>
 Le site marchand construit le formulaire à partir des données du panier de l’acheteur.
  </li>
-  <li>
+ 
+ <li>
 Le site marchand redirige l’acheteur vers la plateforme de paiement. Cette redirection se fait sous la forme d&#x27;un formulaire HTML POST en HTTPS. Les paramètres qui le composent sont décrits dans le chapitre 
 <b><a href="#TODO-emm1405083451541.xml">Générer un formulaire de paiement</a></b>.
  </li>
-  <li>
+ 
+ <li>
 Après saisie des données du moyen de paiement par l’acheteur, la plateforme procède au paiement.
  </li>
-  <li>
+ 
+ <li>
 En fonction du paramétrage de la boutique (voir chapitre 
 <b>Paramétrer les notifications</b>), un appel est automatiquement réalisé afin de transmettre le résultat au site marchand. 
  </li>
-  <li>
+ 
+ <li>
 Le site marchand analyse et traite le résultat du paiement. 
  </li>
-  <li>
+ 
+ <li>
 Il met à jour la base de données (état de la commande, état du stock etc…).
  </li>
-  <li>
+ 
+ <li>
 L’acheteur est informé du résultat du paiement sur la plateforme. S’il décide de retourner sur le site marchand, ce dernier le remercie et lui affiche l’état de sa commande.
  </li>
  
@@ -177,13 +195,16 @@ Suite à la demande de paiement, plusieurs contrôles sont automatiquement mis e
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 L’authentification 3D Secure.
    </li>
-    <li>
+ 
+   <li>
 Différents contrôles locaux réalisés directement par la plateforme de paiement (ceux-ci incluent potentiellement les contrôles liés à la souscription au service additionnel de contrôles anti-fraude).
    </li>
-    <li>
+ 
+   <li>
 Une demande d’autorisation est également effectuée auprès de la banque de l&#x27;acheteur, le jour même de la date de paiement, quelle que soit la date de remise en banque demandée. 
    <p>
 Si l’un de ces contrôles échoue, la demande de paiement n’est pas acceptée. L&#x27;acheteur est informé du refus à l’écran. Dans le Back Office, la transaction est consultable avec le statut 
@@ -239,10 +260,12 @@ La demande d’autorisation est automatiquement effectuée :
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 fonctionnement par défaut : le jour de la date de remise en banque souhaitée,
    </li>
-    <li>
+ 
+   <li>
 fonctionnement avec autorisation anticipée : selon le moyen de paiement sélectionné, à J-Δ (voir <a href="#TODO-tla1415949281462.xml">tableau</a> illustrant la validité d&#x27;une autorisation) avant la date de remise en banque souhaitée. 
    <p>
 Le mode par autorisation anticipée doit faire l&#x27;objet d&#x27;une demande auprès du Service Client. 
@@ -282,10 +305,12 @@ Les échéances suivantes sont par défaut positionnées en statut
   <p>
 Les demandes d’autorisation des échéances suivantes sont automatiquement effectuées comme une transaction de paiement différé, donc avec deux dates possibles : 
   <ul>
-    <li>
+ 
+   <li>
 fonctionnement par défaut : le jour de la date de remise en banque souhaitée,
    </li>
-    <li>
+ 
+   <li>
 fonctionnement avec autorisation anticipée : selon le moyen de paiement sélectionné, à J-Δ (voir <a href="#TODO-tla1415949281462.xml">tableau</a> illustrant la validité d&#x27;une autorisation) avant la date de remise en banque souhaitée. 
    </li>
  
@@ -328,7 +353,8 @@ Suite à la demande de paiement, des contrôles sont automatiquement mis en oeuv
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 L’authentification 3D Secure.
    </li>
  
@@ -339,7 +365,8 @@ L’authentification 3D Secure.
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Différents contrôles locaux réalisés directement par la plateforme de paiement (ceux-ci incluent potentiellement les contrôles liés à la souscription au service additionnel du contrôle des risques).
    </li>
  
@@ -350,7 +377,8 @@ Différents contrôles locaux réalisés directement par la plateforme de paieme
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Une demande d’autorisation est effectuée auprès de la banque de l&#x27;acheteur.
    </li>
  
@@ -462,10 +490,12 @@ Pour activer les autorisations anticipées, veuillez contacter le service client
  <p>
 Ce processus s&#x27;applique uniquement pour les demandes d’autorisation : 
  <ul>
-   <li>
+ 
+  <li>
 du paiement comptant différé, 
   </li>
-   <li>
+ 
+  <li>
 des échéances, autres que la première, pour le paiement en plusieurs fois. 
   </li>
  

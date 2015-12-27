@@ -12,16 +12,20 @@ Ce chapitre vous détaille de quelle manière vous pouvez :
 </p>
  
 <ul>
- <li>
+ 
+<li>
 Générer le certificat de production.
 </li>
- <li>
+ 
+<li>
 Basculer votre site marchand en production.
 </li>
- <li>
+ 
+<li>
 Réaliser un premier paiement en production.
 </li>
- <li>
+ 
+<li>
 Régénérer le certificat de production (en cas de problème).
 </li>
  
@@ -55,12 +59,14 @@ Un e-mail est envoyé à l&#x27;interlocuteur en charge du dossier (responsable 
 <p>
  
 <ol>
-  <li>
+ 
+ <li>
 Valorisez le champ 
 <b>vads_ctx_mode</b> à 
 <b>PRODUCTION</b>.
  </li>
-  <li>
+ 
+ <li>
 Modifiez la valeur du certificat de test avec la valeur de votre certificat de production pour calculer la signature.
  <p>
 Vous trouverez cette valeur depuis le menu 
@@ -70,7 +76,8 @@ Vous trouverez cette valeur depuis le menu
  </p>
 
  </li>
-  <li>
+ 
+ <li>
 Renseignez correctement l&#x27;URL de notification de paiement instantanée (URL server à la fin du paiement) en mode PRODUCTION depuis le menu 
 <b>Paramétrage</b> &gt; 
 <b>Règles de notification</b>.
@@ -91,7 +98,8 @@ Nous vous conseillons de vérifier les deux points suivants :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Le bon fonctionnement en environnement de production de bout-en-bout. 
  <p>
 Pour ce faire, effectuez une transaction réelle.
@@ -113,7 +121,8 @@ Cette transaction pourra être annulée par la suite depuis le Back Office via l
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Le bon fonctionnement de l&#x27;URL de notification de paiement instantanée (Url de notification à la fin du paiement) renseignée dans le Back Office. 
  <p>
 Pour ce faire, ne cliquez pas sur le bouton 
@@ -134,8 +143,10 @@ Affichez le détail de la transaction dans le Back Office et vérifiez que le st
 <h2>
 14.4. Regénérer le certificat de production
 </h2>
- En cas de perte ou de corruption du certificat de production, le marchand a la possibilité de générer un nouveau certificat depuis son Back Office. Pour cela: <ol>
-  <li>
+ En cas de perte ou de corruption du certificat de production, le marchand a la possibilité de générer un nouveau certificat depuis son Back Office. Pour cela: 
+<ol>
+ 
+ <li>
  
  <p>
 Dans le Back Office, sélectionnez 
@@ -144,7 +155,8 @@ Dans le Back Office, sélectionnez
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Cliquez sur 

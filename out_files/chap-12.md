@@ -18,10 +18,12 @@ Néanmoins si le champ
 </p>
  
 <ul>
- <li>
+ 
+<li>
 soit en GET : données présentes dans l’url sous la forme : ?param1=valeur1&amp;param2=valeur2.
 </li>
- <li>
+ 
+<li>
 soit en POST : données envoyées dans un formulaire POST.
 </li>
  

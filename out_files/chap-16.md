@@ -22,82 +22,108 @@ Ces tableaux sont présentés de la manière suivante :
 <p>
  
 <ul>
- <li>
+ 
+<li>
 
 <b>Nom du champ</b> : nom du paramètre, tel qu&#x27;il sera utilisé dans une requête HTTP.
 </li>
- <li>
+ 
+<li>
 
 <b>Format</b> : format des données, selon la codification suivante:
 <table>
-       <tr>
-   <td>
+      
+ <tr>
+ 
+  <td>
 Notation
   </td>
-   <td>
+ 
+  <td>
 Description
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 a
   </td>
-   <td>
+ 
+  <td>
 Caractères alphabétiques (de ‘A’ à ‘Z’ et de ‘a’ à ‘z’)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 n
   </td>
-   <td>
+ 
+  <td>
 Caractères numériques
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 s
   </td>
-   <td>
+ 
+  <td>
 Caractères spéciaux
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 an
   </td>
-   <td>
+ 
+  <td>
 Caractères alphanumériques
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 ans
   </td>
-   <td>
+ 
+  <td>
 Caractères alphanumériques et spéciaux
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 3
   </td>
-   <td>
+ 
+  <td>
 Longueur fixe de 3 caractères
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 ..12
   </td>
-   <td>
+ 
+  <td>
 Longueur variable jusqu’à 12 caractères
   </td>
  
@@ -106,7 +132,8 @@ Longueur variable jusqu’à 12 caractères
 </table>
 
 </li>
- <li>
+ 
+<li>
 
 <b>Description</b> : description du champ.
 </li>
@@ -134,33 +161,40 @@ Le dictionnaire de données présente ensuite le détail pour chacun des champs.
 <p>
  
 <ul>
- <li>
+ 
+<li>
 
 <b>Description</b> : description du champ.
 </li>
- <li>
+ 
+<li>
 
 <b>Format</b> : format des données (voir tableau 
 <b>Liste champs et formats</b> ci-dessus).
 </li>
- <li>
+ 
+<li>
 
 <b>Valeurs possibles</b> : valeurs attendues lorsque le champ doit être valorisé avec des valeurs spécifiques.
 </li>
- <li>
+ 
+<li>
 
 <b>Exemple</b> : exemple de codage correct des données. 
 </li>
- <li>
+ 
+<li>
 
 <b>Code erreur</b> : en cas d’erreur dans l’interfaçage entre le site marchand et la plateforme de paiement, cette dernière indiquera par un code numérique le paramètre fautif dans le champ 
 <b>vads_extra_result</b>.
 </li>
- <li>
+ 
+<li>
 
 <b>Remarque</b> : information complémentaire, précision.
 </li>
- <li>
+ 
+<li>
 
 <b>Catégorie</b> : catégorie à laquelle est affilié le champ.
 <p>
@@ -184,10 +218,12 @@ Précisions sur les
 </p>
  
 <ul>
- <li>
+ 
+<li>
  En mode test ce code sera affiché sur la page de paiement.
 </li>
- <li>
+ 
+<li>
  En mode production un e-mail d’alerte sera envoyé en précisant le code erreur et le nom du paramètre incorrect.
 </li>
  
@@ -215,37 +251,48 @@ Référez-vous à la catégorie souhaitée pour obtenir la liste des paramètres
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410351589465.xml">Informations sur l&#x27;authentification 3DS</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1411025757958.xml">Informations sur l&#x27;abonnement</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410534868650.xml">Informations sur l&#x27;acheteur</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410533143029.xml">Informations sur le moyen de paiement</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410525874342.xml">Informations sur la commande</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410522989073.xml">Informations sur la livraison</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1411030317713.xml">Informations techniques</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1411031267607.xml">Informations sur la transaction</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1416328457246.xml">Informations sur les transactions de don</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410518407791.xml">Personnalisation de la page de la page de paiement</a>.
  </li>
-  <li>
+ 
+ <li>
 <a href="#TODO-tla1410514133139.xml">Redirection automatique</a>.
  </li>
  
@@ -260,93 +307,121 @@ Référez-vous à la catégorie souhaitée pour obtenir la liste des paramètres
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408640166705.xml">signature</a></b>
    </td>
-    <td>
+ 
+   <td>
 an40
    </td>
-    <td>
+ 
+   <td>
 Permet de vérifier l’intégrité des requêtes. 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1405002307652.xml">vads_action_mode</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Définit le mode d&#x27;acquisition des informations de la carte.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408607954033.xml">vads_contrib</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..128
    </td>
-    <td>
+ 
+   <td>
 Indique le nom de la contribution utilisée lors du paiement (Joomla, osCommerce...). 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408608221796.xml">vads_ctx_mode</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Mode de communication de la plateforme de paiement
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408624287246.xml">vads_extra_result</a></b>
    </td>
-    <td>
+ 
+   <td>
 n2
    </td>
-    <td>
+ 
+   <td>
 Code complémentaire de réponse. Sa signification dépend de la valeur renseignée dans 
 <b>vads_result</b>.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408625090595.xml">vads_hash</a></b>
    </td>
-    <td>
+ 
+   <td>
 an64
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 Clé unique renvoyée uniquement à l’URL de notification (IPN).
@@ -355,93 +430,121 @@ Clé unique renvoyée uniquement à l’URL de notification (IPN).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408626371544.xml">vads_page_action</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Définit l&#x27;opération à réaliser.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1415014254111.xml">
 <b>vads_payment_error</b></a>
    </td>
-    <td>
+ 
+   <td>
 n..3
    </td>
-    <td>
+ 
+   <td>
 Codes d&#x27;erreur sur un paiement refusé.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408628157713.xml">vads_result</a></b>
    </td>
-    <td>
+ 
+   <td>
 n2
    </td>
-    <td>
+ 
+   <td>
 Code retour général du résultat du paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408636137772.xml">vads_site_id</a></b>
    </td>
-    <td>
+ 
+   <td>
 n8
    </td>
-    <td>
+ 
+   <td>
 Identifiant du site.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408638807307.xml">
 <b>vads_url_check</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dans le paramétrage des règles de notification.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408638858037.xml">
 <b>vads_url_check_src</b></a>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Ce paramètre définit l’origine de l’appel URL de notification (IPN Server).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408639900969.xml">
 <b>vads_version</b></a>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Version du protocole d’échange avec la plateforme de paiement.
    </td>
  
@@ -458,170 +561,222 @@ Version du protocole d’échange avec la plateforme de paiement.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408624169447.xml">vads_ext_info</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans
    </td>
-    <td>
+ 
+   <td>
 Champs personnalisables permettant d&#x27;ajouter des données supplémentaires dans l&#x27;e-mail de confirmation envoyé au marchand et dans l&#x27;URL de notification.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411125541878.xml">
 <b>vads_nb_products</b></a>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Nombre d’articles.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408626141983.xml">vads_order_id</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..32
    </td>
-    <td>
+ 
+   <td>
 Numéro de commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408626234577.xml">vads_order_info</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..255
    </td>
-    <td>
+ 
+   <td>
 Description de la commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408626308005.xml">vads_order_info2</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..255
    </td>
-    <td>
+ 
+   <td>
 Description de la commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408626336653.xml">vads_order_info3</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..255
    </td>
-    <td>
+ 
+   <td>
 Description de la commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411126075812.xml">
 <b>vads_product_amountN</b></a>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Montant de l’article N
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411125732485.xml">
 <b>vads_product_labelN</b></a>
    </td>
-    <td>
+ 
+   <td>
 an..255
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Libellé de l’article N.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411126555396.xml">
 <b>vads_product_qtyN</b></a>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Quantité d’article N.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411126454471.xml">
 <b>vads_product_refN</b></a>
    </td>
-    <td>
+ 
+   <td>
 an..64
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Référence de l’article N.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411126340153.xml">
 <b>vads_product_typeN</b></a>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Type de l’article N.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1433941223778.xml">
 <b>vads_product_vatN</b></a>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Détail du panier. Montant de la TVA de l&#x27;article N.
    </td>
  
@@ -638,169 +793,221 @@ Détail du panier. Montant de la TVA de l&#x27;article N.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408608603787.xml">vads_cust_address</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
 Adresse postale.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408608675071.xml">vads_cust_address_number</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..5
    </td>
-    <td>
+ 
+   <td>
 Numéro de rue.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408608769950.xml">vads_cust_cell_phone</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..32
    </td>
-    <td>
+ 
+   <td>
 Numéro de téléphone mobile.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408614379476.xml">vads_cust_city</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..128
    </td>
-    <td>
+ 
+   <td>
 Ville.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408614445899.xml">vads_cust_country</a></b>
    </td>
-    <td>
+ 
+   <td>
 a2
    </td>
-    <td>
+ 
+   <td>
 Code pays suivant la norme ISO 3166.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408614742379.xml">vads_cust_district</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Quartier.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408614926108.xml">vads_cust_email</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..150
    </td>
-    <td>
+ 
+   <td>
 Adresse e-mail de l’acheteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615025768.xml">vads_cust_first_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..63
    </td>
-    <td>
+ 
+   <td>
 Prénom.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615118352.xml">vads_cust_id</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..63
    </td>
-    <td>
+ 
+   <td>
 Référence de l’acheteur sur le site marchand.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615176997.xml">vads_cust_last_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..63
    </td>
-    <td>
+ 
+   <td>
 Nom.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1423825610581.xml">
 <b>vads_cust_legal_name</b></a>
    </td>
-    <td>
+ 
+   <td>
 an..100
    </td>
-    <td>
+ 
+   <td>
 Raison sociale de l&#x27;acheteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408615260331.xml">vads_cust_name</a>
    </td>
-    <td>
+ 
+   <td>
 an..127
    </td>
-    <td>
+ 
+   <td>
 Déprécié. 
    <p>
 Utilisez 
@@ -811,80 +1018,104 @@ Utilisez
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1440084630860.xml">
 <b>vads_cust_national_id</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
 Identifiant national.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615340066.xml">vads_cust_phone</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..32
    </td>
-    <td>
+ 
+   <td>
 Numéro de téléphone.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615396958.xml">vads_cust_state</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Etat / Région.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615475409.xml">vads_cust_status</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Statut (particulier / entreprise).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408615888267.xml">vads_cust_title</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..63
    </td>
-    <td>
+ 
+   <td>
 Civilité de l’acheteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408616006014.xml">vads_cust_zip</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..64
    </td>
-    <td>
+ 
+   <td>
 Code postal.
    </td>
  
@@ -901,248 +1132,324 @@ Code postal.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408631826813.xml">vads_ship_to_city</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..128
    </td>
-    <td>
+ 
+   <td>
 Ville.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408632458704.xml">vads_ship_to_country</a></b>
    </td>
-    <td>
+ 
+   <td>
 a2
    </td>
-    <td>
+ 
+   <td>
 Code pays suivant la norme ISO 3166.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408632679858.xml">vads_ship_to_delivery_company_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Nom du transporteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408632864028.xml">vads_ship_to_district</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Quartier.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408634336065.xml">vads_ship_to_first_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..63
    </td>
-    <td>
+ 
+   <td>
 Prénom.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408634522824.xml">vads_ship_to_last_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..63
    </td>
-    <td>
+ 
+   <td>
 Nom.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1423827002789.xml">
 <b>vads_ship_to_legal_name</b></a>
    </td>
-    <td>
+ 
+   <td>
 an..100
    </td>
-    <td>
+ 
+   <td>
 Raison sociale de lieu de livraison.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408634587110.xml">vads_ship_to_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..63
    </td>
-    <td>
+ 
+   <td>
 Nom de l’acheteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408634698739.xml">vads_ship_to_phone_num</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..32
    </td>
-    <td>
+ 
+   <td>
 Numéro de téléphone.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408634757367.xml">vads_ship_to_speed</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Mode de livraison
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635009448.xml">vads_ship_to_state</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Etat / Région.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408634859538.xml">vads_ship_to_status</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Statut (particulier / entreprise).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635091649.xml">vads_ship_to_street</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
 Adresse postale.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635487312.xml">vads_ship_to_street_number</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..5
    </td>
-    <td>
+ 
+   <td>
 Numéro de rue.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635139472.xml">vads_ship_to_street2</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
 Deuxième ligne d’adresse.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635578322.xml">vads_ship_to_type</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Type de livraison.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635663652.xml">vads_ship_to_user_info</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
 Informations acheteur (Identifant légal CPF/CNPJ).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408635725582.xml">vads_ship_to_zip</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..64
    </td>
-    <td>
+ 
+   <td>
 Code postal.
    </td>
  
@@ -1159,157 +1466,205 @@ Code postal.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408550019475.xml">vads_bank_code</a></b>
    </td>
-    <td>
+ 
+   <td>
 n5
    </td>
-    <td>
+ 
+   <td>
 Code banque associé à la banque émettrice.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408550125294.xml">vads_bank_product</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..3
    </td>
-    <td>
+ 
+   <td>
 Code produit de la carte utilisée pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408550840170.xml">vads_birth_day</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..2
    </td>
-    <td>
+ 
+   <td>
 Jour de naissance du porteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408551247542.xml">vads_birth_month</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..2
    </td>
-    <td>
+ 
+   <td>
 Mois de naissance du porteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408551527515.xml">vads_birth_year</a></b>
    </td>
-    <td>
+ 
+   <td>
 n4
    </td>
-    <td>
+ 
+   <td>
 Année de naissance du porteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408606602420.xml">vads_card_brand</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..127
    </td>
-    <td>
+ 
+   <td>
 Type de carte utilisé pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408607272456.xml">vads_card_country</a></b>
    </td>
-    <td>
+ 
+   <td>
 ISO 3166
    </td>
-    <td>
+ 
+   <td>
 Code pays de la carte utilisée pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408607355172.xml">vads_card_number</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..36
    </td>
-    <td>
+ 
+   <td>
 Numéro de carte masqué.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408616066204.xml">vads_cvv</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..4
    </td>
-    <td>
+ 
+   <td>
 Code de sécurité de la carte à 3 ou 4 chiffres.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408624003656.xml">vads_expiry_month</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..2
    </td>
-    <td>
+ 
+   <td>
 Mois d&#x27;expiration de la carte utilisée pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408624118504.xml">vads_expiry_year</a></b>
    </td>
-    <td>
+ 
+   <td>
 n4
    </td>
-    <td>
+ 
+   <td>
 Année d&#x27;expiration de la carte utilisée pour le paiement.
    </td>
  
@@ -1326,322 +1681,418 @@ Année d&#x27;expiration de la carte utilisée pour le paiement.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408546768429.xml">vads_amount</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Montant de la transaction exprimé dans la plus petite unité de la devise (le centime pour l&#x27;euro) 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408547832760.xml">vads_auth_mode</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Spécifie de quelle manière est réalisée la demande d’autorisation. 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408547832760.xml">vads_auth_number</a></b>
    </td>
-    <td>
+ 
+   <td>
 an..6
    </td>
-    <td>
+ 
+   <td>
 Numéro d&#x27;autorisation retourné par le serveur bancaire.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408548356588.xml">vads_auth_result</a></b>
    </td>
-    <td>
+ 
+   <td>
 n2
    </td>
-    <td>
+ 
+   <td>
 Code retour de la demande d&#x27;autorisation retournée par la banque émettrice.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408604690440.xml">vads_capture_delay</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..3
    </td>
-    <td>
+ 
+   <td>
 Délai en nombre de jours avant remise en banque.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1447857764792.xml">
 <b>vads_change_rate</b></a>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Taux de change utilisé pour calculer le montant réél du paiement (paiement multi-devise).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408607837994.xml">vads_contract_used</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..250
    </td>
-    <td>
+ 
+   <td>
 Contrat commerçant utilisé.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408607561985.xml">vads_contracts</a></b>
    </td>
-    <td>
+ 
+   <td>
 RESEAU1=contrat1;
    <p>
 RESEAU2=contrat2
    </p>
 
    </td>
-    <td>
+ 
+   <td>
 Contrat commerçant à utiliser.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1406044948454.xml">vads_currency</a></b>
    </td>
-    <td>
+ 
+   <td>
 n3
    </td>
-    <td>
+ 
+   <td>
 Code numérique de la monnaie à utiliser pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408616823195.xml">vads_effective_amount</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement exprimé dans la plus petite unité de la devise utilisée pour effectuer la remise en banque(le centime pour l&#x27;euro) 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408623011853.xml">vads_effective_creation_date</a></b>
    </td>
-    <td>
+ 
+   <td>
 n14
    </td>
-    <td>
+ 
+   <td>
 Date d&#x27;enregistrement de la transaction, dans le fuseau UTC (ou GMT+0) au format horaire 24h (AAAAMMJJHHMMSS).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408625891261.xml">vads_operation_type</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Permet de différencier une opération de débit ou de crédit (remboursement).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1406099131711.xml">vads_payment_cards </a></b>
    </td>
-    <td>
+ 
+   <td>
 type1;type2
    </td>
-    <td>
+ 
+   <td>
 Liste des moyens de paiement à proposer à l’acheteur.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408626891430.xml">vads_payment_certificate</a></b>
    </td>
-    <td>
+ 
+   <td>
 an40
    </td>
-    <td>
+ 
+   <td>
 Champ valorisé par la plateforme de paiement dans le cas où l’autorisation a été réalisée 
 <b>avec succès</b>.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627002482.xml">vads_payment_config</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Type du paiement : comptant ou en plusieurs fois.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1415797825296.xml">vads_payment_option_code</a></b>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Permet de définir le code de l&#x27;option utilisée.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1424076095539.xml">
 <b>vads_payment_seq</b></a>
    </td>
-    <td>
+ 
+   <td>
 json
    </td>
-    <td>
+ 
+   <td>
 Décrit la séquence d&#x27;un paiement fractionné.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627133271.xml">vads_payment_src</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Origine du paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1413811527238.xml">
 <b>vads_risk_analyzer_result</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans
    </td>
-    <td>
+ 
+   <td>
 Retourne le résultat de l&#x27;analyse de fraude effectué par un système externe (ClearSale, CyberSource,...).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1436276953870.xml">vads_risk_assessment_result</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans
    </td>
-    <td>
+ 
+   <td>
 Retourne le résultat de l&#x27;analyse de gestion des risques avancée effectuée par la plateforme de paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1409751437465.xml">vads_risk_control</a></b>
    </td>
-    <td>
+ 
+   <td>
 contrôle1=resultat1;
    <p>
 contrôle2=resultat2
    </p>
 
    </td>
-    <td>
+ 
+   <td>
 Résultat des contrôles associés à la fraude.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408631717602.xml">vads_sequence_number</a></b>
    </td>
-    <td>
+ 
+   <td>
 n
    </td>
-    <td>
+ 
+   <td>
 Numéro de séquence de la transaction (numéro d&#x27;échéance).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638544413.xml">vads_trans_date</a></b>
    </td>
-    <td>
+ 
+   <td>
 n14
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 Date et heure, dans le fuseau UTC (ou GMT+0) au format horaire 24h (AAAAMMJJHHMMSS).
@@ -1650,67 +2101,87 @@ Date et heure, dans le fuseau UTC (ou GMT+0) au format horaire 24h (AAAAMMJJHHMM
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638607923.xml">vads_trans_id</a></b>
    </td>
-    <td>
+ 
+   <td>
 n6
    </td>
-    <td>
+ 
+   <td>
 Identifiant unique d&#x27;une transaction.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638657026.xml">vads_trans_status</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Statut de la transaction.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1432730650747.xml">vads_trans_uuid</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans32
    </td>
-    <td>
+ 
+   <td>
 Référence unique de la transaction générée par la plateforme de paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408639754479.xml">vads_validation_mode</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Mode de validation de la transaction.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408639995934.xml">vads_warranty_result</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 
    </td>
  
@@ -1727,27 +2198,35 @@ string (enum)
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408636944655.xml">vads_threeds_cavv</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..28
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 Désigne la vérification de l’authentification du porteur par l’ACS.
@@ -1756,15 +2235,19 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’achet
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408637038608.xml">vads_threeds_cavvAlgorithm</a></b>
    </td>
-    <td>
+ 
+   <td>
 n1
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 Algorithme utilisé par l’ACS pour générer la valeur du cavv.
@@ -1777,15 +2260,19 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’achet
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408637200153.xml">vads_threeds_eci</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..2
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 Désigne l’Indicateur de Commerce Electronique.
@@ -1794,15 +2281,19 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’achet
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408637262343.xml">vads_threeds_enrolled</a></b>
    </td>
-    <td>
+ 
+   <td>
 a1
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 Désigne le statut de l’enrôlement du porteur.
@@ -1811,15 +2302,19 @@ Il est valorisé par les serveurs VISA et MASTERCARD (DS) durant le processus 3D
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408637376020.xml">vads_threeds_exit_status</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..2
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 Désigne le statut final du processus 3D Secure.
@@ -1832,28 +2327,36 @@ Il est valorisé par la plateforme de paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638075046.xml">vads_threeds_mpi</a></b>
    </td>
-    <td>
+ 
+   <td>
 n1
    </td>
-    <td>
+ 
+   <td>
 Active / désactive le processus 3DS lors d’un paiement e-commerce
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638234029.xml">vads_threeds_sign_valid</a></b>
    </td>
-    <td>
+ 
+   <td>
 n1
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 Désigne la validité de la signature du message PARes.
@@ -1862,15 +2365,19 @@ Il est valorisé par la plateforme de paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638341396.xml">vads_threeds_status</a></b>
    </td>
-    <td>
+ 
+   <td>
 a1
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 Désigne le statut de l’authentification du porteur.
@@ -1883,15 +2390,19 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) durant le process
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408638445416.xml">vads_threeds_xid</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..28
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 Désigne la référence unique de la transaction 3DS.
@@ -1912,92 +2423,120 @@ Il est valorisé par le serveur d’authentification (ACS) durant le processus 3
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1416319402112.xml">vads_ext_info_donation</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Montant du don exprimé dans la plus petite unité de la monnaie ou devise(le centime pour l&#x27;euro) 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1416320032761.xml">vads_ext_info_donation_contribution</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Montant en centimes de la contribution exprimé dans la plus petite unité de la monnaie ou devise (le centime pour l&#x27;euro) 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1416319856371.xml">vads_ext_info_donation_merchant</a></b>
    </td>
-    <td>
+ 
+   <td>
 n8
    </td>
-    <td>
+ 
+   <td>
 Identifiant de la boutique sur laquelle le don est effectué.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1416319586041.xml">vads_ext_info_donation_recipient</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..20
    </td>
-    <td>
+ 
+   <td>
 Identifiant HelloAsso de l&#x27;association qui a reçu le don.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1416319785868.xml">vads_ext_info_donation_recipient_name</a></b>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Nom de l&#x27;association qui a reçu le don.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1416242779600.xml">vads_risk_primery_warranty</a></b>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Permet de surcharger la configuration du contrôle de risque 
 <b>Contrôle du transfert de responsabilité de la transaction primaire</b>.
    </td>
@@ -2019,79 +2558,103 @@ Permet de surcharger la configuration du contrôle de risque
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1406127047143.xml">
 <b>vads_available_languages</b></a>
    </td>
-    <td>
+ 
+   <td>
 langue1;langue2;langue3
    </td>
-    <td>
+ 
+   <td>
 Permet de spécifier les langues disponibles sur la page de paiement sous forme de liste.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1406125864809.xml">
 <b>vads_language</b></a>
    </td>
-    <td>
+ 
+   <td>
 a2
    </td>
-    <td>
+ 
+   <td>
 Définit la langue dans laquelle est affichée la page de paiement (norme ISO 639-1).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408635796483.xml">
 <b>vads_shop_name</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Permet de définir le nom de la boutique qui apparait dans les e-mails de confirmation de paiement et sur le récapitulatif de la transaction.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408635865701.xml">
 <b>vads_shop_url</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 Permet de surcharger l&#x27;URL de la boutique qui apparait sur la page de paiement et les e-mails de confirmation de paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408636286614.xml">
 <b>vads_theme_config</b></a>
    </td>
-    <td>
+ 
+   <td>
 code1=valeur1;code2=valeur2
    </td>
-    <td>
+ 
+   <td>
 Permet de personnaliser certains éléments de la page de paiement.
    </td>
  
@@ -2108,27 +2671,35 @@ Permet de personnaliser certains éléments de la page de paiement.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627821400.xml">vads_redirect_error_message</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 
@@ -2142,15 +2713,19 @@ Message affiché sur la page de paiement avant redirection vers le site marchand
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627924375.xml">vads_redirect_error_timeout</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..3
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 
@@ -2164,15 +2739,19 @@ Délai ( en secondes ) avant redirection vers le site marchand après un paiemen
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627992082.xml">vads_redirect_success_message</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..255
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 
@@ -2182,15 +2761,19 @@ Spécifie le message à la fin d’un paiement accepté dans le cas d’une redi
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408628074901.xml">vads_redirect_success_timeout</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..3
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 
@@ -2200,110 +2783,142 @@ Délai en secondes avant redirection vers le site marchand à la fin d’un paie
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1406116003851.xml">vads_return_mode</a></b>
    </td>
-    <td>
+ 
+   <td>
 GET/POST/
    <p>
 NONE
    </p>
 
    </td>
-    <td>
+ 
+   <td>
 Permet de spécifier le mode de transmission des données aux URLs de retour vers le site marchand.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408638742584.xml">
 <b>vads_url_cancel</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL où sera redirigé l’acheteur si celui-ci appuie sur &quot; annuler et retourner à la boutique &quot; avant d&#x27;avoir procédé au paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408638807307.xml">
 <b>vads_url_check</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dans le paramétrage des règles de notification.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408638858037.xml">
 <b>vads_url_check_src</b></a>
    </td>
-    <td>
+ 
+   <td>
 string (enum)
    </td>
-    <td>
+ 
+   <td>
 Ce paramètre définit l&#x27;évènement déclencheur de la notification instantanée (aussi appelée IPN ou URL de notification).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408639045339.xml">
 <b>vads_url_error</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL où sera redirigé l’acheteur en cas d&#x27;erreur de traitement interne.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408639165197.xml">
 <b>vads_url_refused</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL où sera redirigé l’acheteur en cas de refus 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408639224559.xml">
 <b>vads_url_return</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL par défaut où sera redirigé l&#x27;acheteur si celui-ci appuie sur &quot;retourner à la boutique&quot;.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1408639383258.xml">
 <b>vads_url_success</b></a>
    </td>
-    <td>
+ 
+   <td>
 ans..127
    </td>
-    <td>
+ 
+   <td>
 URL où sera redirigé l’acheteur en cas de succès.
    </td>
  
@@ -2320,147 +2935,191 @@ URL où sera redirigé l’acheteur en cas de succès.
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Format
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1411481213747.xml">
 <b>vads_identifier_status</b></a>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Statut de l&#x27;enregistrement du mandat.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 <a href="#TODO-tla1447863204383.xml">
 <b>vads_recurrence_number</b></a>
    </td>
-    <td>
+ 
+   <td>
 n
    </td>
-    <td>
+ 
+   <td>
 Numéro de l&#x27;échéance de l&#x27;abonnement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411481506331.xml">vads_recurrence_status</a></b>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Statut de la création d&#x27;une récurrence.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411026103849.xml">vads_sub_amount</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Montant des échéances de l’abonnement pour toutes les échéances, hormis celles éventuellement définies par 
 <b>vads_sub_init_amount_number</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411026347617.xml">vads_sub_currency</a></b>
    </td>
-    <td>
+ 
+   <td>
 n3
    </td>
-    <td>
+ 
+   <td>
 Code numérique de la monnaie à utiliser pour l’abonnement, selon la norme ISO 4217.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411026999130.xml">vads_sub_desc</a></b>
    </td>
-    <td>
+ 
+   <td>
 string
    </td>
-    <td>
+ 
+   <td>
 Règle de récurrence à appliquer suivant la spécification iCalendar RFC5545.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411025901698.xml">vads_sub_effect_date</a></b>
    </td>
-    <td>
+ 
+   <td>
 n8
    </td>
-    <td>
+ 
+   <td>
 Date d&#x27;effet de l&#x27;abonnement. 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411026602462.xml">vads_sub_init_amount</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..12
    </td>
-    <td>
+ 
+   <td>
 Montant des échéances de l’abonnement pour les 
 <u>premières échéances</u>. 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411026836617.xml">vads_sub_init_amount_number</a></b>
    </td>
-    <td>
+ 
+   <td>
 n..3
    </td>
-    <td>
+ 
+   <td>
 Nombre d’échéances auxquelles il faudra appliquer le montant 
 <b>vads_sub_init_amount</b>.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1411025356421.xml">vads_subscription</a></b>
    </td>
-    <td>
+ 
+   <td>
 ans..50
    </td>
-    <td>
+ 
+   <td>
 Identifiant de l&#x27;abonnement à créer.
    </td>
  
@@ -2475,12 +3134,15 @@ Identifiant de l&#x27;abonnement à créer.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire.
   <p>
 Permet de vérifier l’intégrité des requêtes transmises. 
@@ -2493,10 +3155,12 @@ Sa valeur est calculée :
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 par le site marchand lors de la demande de paiement
    </li>
-    <li>
+ 
+   <li>
 par la plateforme de paiement lors de la réponse.
    </li>
  
@@ -2507,22 +3171,28 @@ par la plateforme de paiement lors de la réponse.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an40
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>00 - signature</b> lorsque la valeur de ce champ est incorrecte. 
   <p>
@@ -2542,19 +3212,24 @@ an40
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Les différents champs du formulaire n&#x27;ont pas été encodés en UTF-8. 
    </li>
-    <li>
+ 
+   <li>
 Le MODE (test ou production) ou le CERTIFICAT utilisé est incorrect. 
    </li>
-    <li>
+ 
+   <li>
 Retour à la ligne et/ou retour chariot postés dans le formulaire. 
    </li>
-    <li>
+ 
+   <li>
 Caractère guillemets [&quot;] posté dans le formulaire. 
    </li>
-    <li>
+ 
+   <li>
 La signature envoyée ne répond pas à la régle de calcul de signature. 
    </li>
  
@@ -2565,12 +3240,15 @@ La signature envoyée ne répond pas à la régle de calcul de signature.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -2583,12 +3261,15 @@ Informations techniques.
 </h2>
   
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Paramètre obligatoire.
@@ -2601,32 +3282,41 @@ Mode d’acquisition des informations de la carte.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 47
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 
@@ -2641,12 +3331,15 @@ string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -2659,12 +3352,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Montant de la transaction exprimé dans la plus petite unité de la monnaie ou devise (le centime pour l&#x27;euro) 
@@ -2673,32 +3369,41 @@ Exemple : pour une transaction de 10 euros
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 09
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -2711,12 +3416,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Spécifie de quelle manière est réalisée la demande d’autorisation. 
@@ -2725,18 +3433,23 @@ Spécifie de quelle manière est réalisée la demande d’autorisation.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -2744,7 +3457,8 @@ string (enum)
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 
@@ -2767,12 +3481,15 @@ Valeur utilisée dans le cas d&#x27;un paiement différé, si la durée séparan
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -2785,12 +3502,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Numéro d&#x27;autorisation retourné par le serveur bancaire, si disponible (sinon vide).
@@ -2799,22 +3519,28 @@ Numéro d&#x27;autorisation retourné par le serveur bancaire, si disponible (si
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..6
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -2827,12 +3553,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Code retour de la demande d&#x27;autorisation retournée par la banque émettrice, si disponible.
@@ -2841,600 +3570,783 @@ Code retour de la demande d&#x27;autorisation retournée par la banque émettric
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
  
   <table>
-            <tr>
-     <td>
+         
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
-     <td>
+ 
+    <td>
 Motif frauduleux
     </td>
-     <td>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
-     <td>
+ 
+    <td>
 Motif frauduleux
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>00</b>
     </td>
-     <td>
+ 
+    <td>
 Transaction approuvée ou traitée avec succès.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>38</b>
     </td>
-     <td>
+ 
+    <td>
 Date de validité de la carte dépassée.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>02</b>
     </td>
-     <td>
+ 
+    <td>
 Contacter l’émetteur de carte.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>41</b>
     </td>
-     <td>
+ 
+    <td>
 Carte perdue.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>03</b>
     </td>
-     <td>
+ 
+    <td>
 Accepteur invalide.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>43</b>
     </td>
-     <td>
+ 
+    <td>
 Carte volée.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>04</b>
     </td>
-     <td>
+ 
+    <td>
 Conserver la carte.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>51</b>
     </td>
-     <td>
+ 
+    <td>
 Provision insuffisante ou crédit dépassé.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>05</b>
     </td>
-     <td>
+ 
+    <td>
 Ne pas honorer.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>54</b>
     </td>
-     <td>
+ 
+    <td>
 Date de validité de la carte dépassée.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>07</b>
     </td>
-     <td>
+ 
+    <td>
 Conserver la carte, conditions spéciales.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>55</b>
     </td>
-     <td>
+ 
+    <td>
 Code confidentiel erroné.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>08</b>
     </td>
-     <td>
+ 
+    <td>
 Approuver après identification.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>56</b>
     </td>
-     <td>
+ 
+    <td>
 Carte absente du fichier.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>12</b>
     </td>
-     <td>
+ 
+    <td>
 Transaction invalide.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>57</b>
     </td>
-     <td>
+ 
+    <td>
 Transaction non permise à ce porteur.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>13</b>
     </td>
-     <td>
+ 
+    <td>
 Montant invalide
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>58</b>
     </td>
-     <td>
+ 
+    <td>
 Transaction non permise à ce porteur.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>14</b>
     </td>
-     <td>
+ 
+    <td>
 Numéro de porteur invalide.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>59</b>
     </td>
-     <td>
+ 
+    <td>
 Suspicion de fraude.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>15</b>
     </td>
-     <td>
+ 
+    <td>
 Emetteur de carte inconnu.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>60</b>
     </td>
-     <td>
+ 
+    <td>
 L’accepteur de carte doit contacter l’acquéreur.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>17</b>
     </td>
-     <td>
+ 
+    <td>
 Annulation acheteur.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>61</b>
     </td>
-     <td>
+ 
+    <td>
 Montant de retrait hors limite.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>19</b>
     </td>
-     <td>
+ 
+    <td>
 Répéter la transaction ultérieurement.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>63</b>
     </td>
-     <td>
+ 
+    <td>
 Règles de sécurité non respectées.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>20</b>
     </td>
-     <td>
+ 
+    <td>
 Réponse erronée (erreur dans le domaine serveur).
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>68</b>
     </td>
-     <td>
+ 
+    <td>
 Réponse non parvenue ou reçue trop tard.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>24</b>
     </td>
-     <td>
+ 
+    <td>
 Mise à jour de fichier non supportée
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>75</b>
     </td>
-     <td>
+ 
+    <td>
 Nombre d’essais code confidentiel dépassé.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>25</b>
     </td>
-     <td>
+ 
+    <td>
 Impossible de localiser l’enregistrement dans le fichier.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>76</b>
     </td>
-     <td>
+ 
+    <td>
 Porteur déjà en opposition, ancien enregistrement conservé.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>26</b>
     </td>
-     <td>
+ 
+    <td>
 Enregistrement dupliqué, ancien enregistrement remplacé.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>90</b>
     </td>
-     <td>
+ 
+    <td>
 Arrêt momentané du système.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>27</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur en « edit » sur champ de liste à jour fichier.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>91</b>
     </td>
-     <td>
+ 
+    <td>
 Émetteur de cartes inaccessible.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>28</b>
     </td>
-     <td>
+ 
+    <td>
 Accès interdit au fichier.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>94</b>
     </td>
-     <td>
+ 
+    <td>
 Transaction dupliquée.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>29</b>
     </td>
-     <td>
+ 
+    <td>
 Mise à jour impossible.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>96</b>
     </td>
-     <td>
+ 
+    <td>
 Mauvais fonctionnement du système.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>30</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur de format.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>97</b>
     </td>
-     <td>
+ 
+    <td>
 Échéance de la temporisation de surveillance globale.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>31</b>
     </td>
-     <td>
+ 
+    <td>
 Identifiant de l’organisme acquéreur inconnu.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>98</b>
     </td>
-     <td>
+ 
+    <td>
 Serveur indisponible routage réseau demandé à nouveau.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>33</b>
     </td>
-     <td>
+ 
+    <td>
 Date de validité de la carte dépassée.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
 <b>99</b>
     </td>
-     <td>
+ 
+    <td>
 Incident domaine initiateur.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>34</b>
     </td>
-     <td>
+ 
+    <td>
 Suspicion de fraude.
     </td>
-     <td>
+ 
+    <td>
 OUI
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
@@ -3447,12 +4359,15 @@ OUI
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -3467,12 +4382,15 @@ Informations sur la transaction.
 <p>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Permet de spécifier les langues disponibles sur la page de paiement sous forme de liste. 
@@ -3489,28 +4407,36 @@ Est matérialisé par l’affichage de drapeaux sur la page de paiement .
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 langue1;langue2;langue3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 71
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -3518,175 +4444,232 @@ langue1;langue2;langue3
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Langue
     </td>
-     <td>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Drapeau affiché par défaut
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Allemand
     </td>
-     <td>
+ 
+    <td>
 de
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Anglais
     </td>
-     <td>
+ 
+    <td>
 en
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Chinois
     </td>
-     <td>
+ 
+    <td>
 zh
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Espagnol
     </td>
-     <td>
+ 
+    <td>
 es
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Français
     </td>
-     <td>
+ 
+    <td>
 fr
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Italien
     </td>
-     <td>
+ 
+    <td>
 it
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Japonais
     </td>
-     <td>
+ 
+    <td>
 ja
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Néerlandais
     </td>
-     <td>
+ 
+    <td>
 nl
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Polonais
     </td>
-     <td>
+ 
+    <td>
 pl
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Portugais
     </td>
-     <td>
+ 
+    <td>
 pt
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Russe
     </td>
-     <td>
+ 
+    <td>
 ru
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Suédois
     </td>
-     <td>
+ 
+    <td>
 sv
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Turc
     </td>
-     <td>
+ 
+    <td>
 tr
     </td>
-     <td>
+ 
+    <td>
 x
     </td>
  
@@ -3703,12 +4686,15 @@ Exemple : pour afficher les drapeaux des langues français et anglais, il faut p
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Personnalisation de la page de paiement.
   </td>
  
@@ -3725,12 +4711,15 @@ Personnalisation de la page de paiement.
 <p>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -3743,22 +4732,28 @@ Code banque associé à la banque émettrice.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n5
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -3773,12 +4768,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -3791,449 +4789,583 @@ Code produit de la carte utilisée pour le paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 
 <b>VISA</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Désignation</b>
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>A</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Traditional
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>B</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Traditional Rewards
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>C</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Signature
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>D</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Signature Preferred
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>E</b>
     </td>
-     <td>
+ 
+    <td>
 Proprietary ATM
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>F</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Classic
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>G</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Business
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>G1</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Signature Business
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>G2</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>G3</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Business Enhanced
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>H</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>I</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Infinite
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>J</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>J1</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>J2</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>J3</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Healthcare
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>J4</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>K</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Corporate T&amp;E
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>K1</b>
     </td>
-     <td>
+ 
+    <td>
 Visa GSA Corporate T&amp;E
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>L</b>
     </td>
-     <td>
+ 
+    <td>
 Electron
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>N</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Platinium
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>N1</b>
     </td>
-     <td>
+ 
+    <td>
 TBA
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>P</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Gold
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>Q</b>
     </td>
-     <td>
+ 
+    <td>
 Private Label
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>Q1</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>R</b>
     </td>
-     <td>
+ 
+    <td>
 Proprietary
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Purchasing
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S1</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Purchasing
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S2</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Purchasing
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S3</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Purchasing
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S4</b>
     </td>
-     <td>
+ 
+    <td>
 Government Services Loan
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S5</b>
     </td>
-     <td>
+ 
+    <td>
 Commercial Transport EBT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S6</b>
     </td>
-     <td>
+ 
+    <td>
 Business Loan
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>S7</b>
     </td>
-     <td>
+ 
+    <td>
 Visa Distribution
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>T</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>U</b>
     </td>
-     <td>
+ 
+    <td>
 Visa TravelMoney
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>V</b>
     </td>
-     <td>
+ 
+    <td>
 Visa VPay
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>W</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>X</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>Y</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>Z</b>
     </td>
-     <td>
+ 
+    <td>
 Reserved
     </td>
  
@@ -4250,526 +5382,682 @@ Reserved
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
  
     <p>
 MASTERCARD
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 
 <b>Désignation</b>
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>MPN</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEBIT STANDARD-INSURANCE
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPO</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEBIT STANDARD-OTHER
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPP</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPR</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEBIT STANDARD-TRAVEL
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPT</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEBIT STANDARD-TEEN
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPV</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEBIT STANDARD-VERNMENT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPW</b>
     </td>
-     <td>
+ 
+    <td>
 DEBIT MASTERCARD BUSINESS CARD PREPAID WORK B2B
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPX</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEBIT STANDARD-FLEX BENEFIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPY</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID DEB STANDARD-EMPLOYEE INCENTIVE
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MRG</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MRH</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD UNKNOWN PRODUCT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MRW</b>
     </td>
-     <td>
+ 
+    <td>
 PREPAID MASTERCARD BUSINESS CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MSG</b>
     </td>
-     <td>
+ 
+    <td>
 PREPAID MAESTRO CONSUMER RELOADABLE CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MSI</b>
     </td>
-     <td>
+ 
+    <td>
 MAESTRO CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MWB</b>
     </td>
-     <td>
+ 
+    <td>
 WORLD MASTERCARD FOR BUSINESS CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MWE</b>
     </td>
-     <td>
+ 
+    <td>
 WORLD ELITE MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>DLS</b>
     </td>
-     <td>
+ 
+    <td>
 DEBIT MASTERCARD CARD-DELAYED DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCB</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD BUSINESSCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCC</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD CREDIT CARD (MIXED BIN)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MVOIR</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD FLEET CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCG</b>
     </td>
-     <td>
+ 
+    <td>
 LD MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCO</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD CORPORATE CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCP</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PURCHASING CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCS</b>
     </td>
-     <td>
+ 
+    <td>
 STANDARD MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MCW</b>
     </td>
-     <td>
+ 
+    <td>
 WORLD MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MDG</b>
     </td>
-     <td>
+ 
+    <td>
 LD DEBIT MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MDH</b>
     </td>
-     <td>
+ 
+    <td>
 WORLD DEBIT EMBOSSED MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MDP</b>
     </td>
-     <td>
+ 
+    <td>
 PLATINUM DEBIT MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MDS</b>
     </td>
-     <td>
+ 
+    <td>
 DEBIT MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MIU</b>
     </td>
-     <td>
+ 
+    <td>
 DEBIT MASTERCARD UNEMBOSSED
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MNW</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD WORLD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MOC</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD UNKNOWN PRODUCT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPG</b>
     </td>
-     <td>
+ 
+    <td>
 DEBIT MASTERCARD STANDARD PREPAID-GENERAL SPEND
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPL</b>
     </td>
-     <td>
+ 
+    <td>
 PLATINUM MASTERCARD CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MPP</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MRG</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD PREPAID CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MRO</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD REWARDS ONLY
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MRW</b>
     </td>
-     <td>
+ 
+    <td>
 PREPAID MASTERCARD BUSINESS CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MSB</b>
     </td>
-     <td>
+ 
+    <td>
 MAESTRO SMALL BUSINESS CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MSI</b>
     </td>
-     <td>
+ 
+    <td>
 MAESTRO CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MSO</b>
     </td>
-     <td>
+ 
+    <td>
 MAESTRO PREPAID OTHER CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MSW</b>
     </td>
-     <td>
+ 
+    <td>
 PREPAID MAESTRO CORPORATE CARD
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>OLS</b>
     </td>
-     <td>
+ 
+    <td>
 MAESTRO-DELAYED DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TCB</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD BUSINESS CARD-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TCC</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD (MIXED BIN)-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TCG</b>
     </td>
-     <td>
+ 
+    <td>
 LD MASTERCARD CARD-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TCS</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD STANDARD CARD-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TCW</b>
     </td>
-     <td>
+ 
+    <td>
 WORLD SIGNIA MASTERCARD CARD-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TNW</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD NEW WORLD-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>TPL</b>
     </td>
-     <td>
+ 
+    <td>
 PLATINUM MASTERCARD-IMMEDIATE DEBIT
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>WBE</b>
     </td>
-     <td>
+ 
+    <td>
 MASTERCARD UNKNOWN PRODUCT
     </td>
  
@@ -4782,58 +6070,76 @@ MASTERCARD UNKNOWN PRODUCT
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 
 <b>CB</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Désignation</b>
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 Carte nationale de retrait
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 2
     </td>
-     <td>
+ 
+    <td>
 Carte nationale de retrait et de paiement
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 3
     </td>
-     <td>
+ 
+    <td>
 Carte nationale de paiement
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 4
     </td>
-     <td>
+ 
+    <td>
 Carte nationale de paiement et de retrait à autorisation systématique
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 5
     </td>
-     <td>
+ 
+    <td>
 Carte nationale de paiement à autorisation systématique
     </td>
  
@@ -4846,12 +6152,15 @@ Carte nationale de paiement à autorisation systématique
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -4864,42 +6173,54 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Jour de naissance du porteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 76
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -4912,42 +6233,54 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Mois de naissance du porteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 76
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -4960,42 +6293,54 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Année de naissance du porteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n4
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 78
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -5008,12 +6353,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Indique le délai en nombre de jours avant remise en banque. 
   <p>
 Si ce paramètre n’est pas transmis, alors la valeur par défaut définie dans le Back Office sera utilisée. Cette dernière est paramétrable dans le Back Office par toutes les personnes dûment habilitées.
@@ -5022,32 +6370,41 @@ Si ce paramètre n’est pas transmis, alors la valeur par défaut définie dans
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 06
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -5060,12 +6417,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -5078,22 +6438,28 @@ La valeur est issue des fichiers de plages de BIN.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Se référer au paramètre <a href="#TODO-tla1406099131711.xml">
@@ -5107,12 +6473,15 @@ La valeur CB sera renvoyée pour les cartes CB cobrandées Visa ou Mastercard.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -5125,12 +6494,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -5139,22 +6511,28 @@ Code pays de la carte utilisée pour le paiement à la norme ISO 3166.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ISO 3166
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -5167,12 +6545,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 
@@ -5191,10 +6572,12 @@ Numéro de carte en clair (cas du paiement silencieux).
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Numéro de carte masqué. Contient les 6 premiers chiffres du numéro, suivi par “XXXXXX” et enfin les 4 derniers numéros. 
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 IBAN et BIC utilisés pour le paiement, séparés par un « _ » dans le cas d’un paiement par prélèvement.
@@ -5209,32 +6592,41 @@ IBAN et BIC utilisés pour le paiement, séparés par un « _ » dans le cas d�
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..36
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 40
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -5247,12 +6639,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -5265,22 +6660,28 @@ Taux de change utilisé pour calculer le montant réél du paiement (lors d&#x27
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -5293,12 +6694,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Permet de spécifier, pour chaque réseau d’acceptation, le contrat commerçant à utiliser sous forme de liste. 
@@ -5307,293 +6711,389 @@ Permet de spécifier, pour chaque réseau d’acceptation, le contrat commerçan
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 RESEAU1=contrat1;RESEAU2=contrat2;RESEAU3=contrat3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 62
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 Les différents réseaux possibles sont:
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur 
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 ACCORD
     </td>
-     <td>
+ 
+    <td>
 réseau Banque Accord (cartes cadeau et privatives)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ACCORD_SANDBOX
     </td>
-     <td>
+ 
+    <td>
 réseau Banque Accord (cartes cadeau et privatives) - mode sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 AMEX
     </td>
-     <td>
+ 
+    <td>
 American Express
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 AURORE
     </td>
-     <td>
+ 
+    <td>
 réseau Cetelem Aurore (cartes Enseignes et carte Aurore universelle)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CB
     </td>
-     <td>
+ 
+    <td>
 réseau CB (Visa, Mastercard, CB, eCB, Maestro, Visa Electron)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CDGP
     </td>
-     <td>
+ 
+    <td>
 réseau CDGP (carte Privilège)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CERIDIAN
     </td>
-     <td>
+ 
+    <td>
 réseau Céridian (carte cadeau)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COF3XCB
     </td>
-     <td>
+ 
+    <td>
 réseau 3xCB Cofinoga
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COF3XCB_SB
     </td>
-     <td>
+ 
+    <td>
 réseau 3xCB Cofinoga - mode sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COFINOGA
     </td>
-     <td>
+ 
+    <td>
 réseau Cofinoga (carte Be Smart et enseignes)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 E_CV
     </td>
-     <td>
+ 
+    <td>
 réseau ANCV
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GATECONEX
     </td>
-     <td>
+ 
+    <td>
 réseau Gateconex (Visa, Mastercard, CB, Maestro, Visa Electron, Diners)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GICC_MAESTRO
     </td>
-     <td>
+ 
+    <td>
 réseau GICC (carte maestro)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GICC_MASTERCARD
     </td>
-     <td>
+ 
+    <td>
 réseau GICC (carte mastercard)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GICC_VISA
     </td>
-     <td>
+ 
+    <td>
 réseau GICC (carte visa)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GIROPAY
     </td>
-     <td>
+ 
+    <td>
 réseau Giropay
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 IDEAL
     </td>
-     <td>
+ 
+    <td>
 réseau IDEAL 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 JCB
     </td>
-     <td>
+ 
+    <td>
 réseau JCB
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 KLARNA
     </td>
-     <td>
+ 
+    <td>
 réseau Klarna
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ONEY
     </td>
-     <td>
+ 
+    <td>
 réseau Oney
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ONEY_SANDBOX
     </td>
-     <td>
+ 
+    <td>
 réseau Oney - mode sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYPAL
     </td>
-     <td>
+ 
+    <td>
 réseau PayPal
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYPAL_SB
     </td>
-     <td>
+ 
+    <td>
 réseau PayPal - mode sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYSAFECARD
     </td>
-     <td>
+ 
+    <td>
 réseau paysafecard
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 POSTFINANCE
     </td>
-     <td>
+ 
+    <td>
 réseau Postfinance
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SEPA
     </td>
-     <td>
+ 
+    <td>
 réseau SEPA (SDD et SCT)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SOFORT
     </td>
-     <td>
+ 
+    <td>
 réseau Sofort
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 WIRECARD
     </td>
-     <td>
+ 
+    <td>
 réseau WIRECARD
     </td>
  
@@ -5660,12 +7160,15 @@ vads_contracts=CB=12312312;AMEX=949400444000
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -5679,22 +7182,28 @@ Ce champ définit la valeur du contrat associé à la transaction. Il est valori
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..250
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -5707,12 +7216,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Information complémentaire facultative destinée à indiquer le nom de la contribution utilisée lors du paiement (Joomla, osCommerce...). Si vous utilisez une implémentation propriétaire, ce champ peut accueillir votre numéro de version interne du module que vous avez développé par exemple.
@@ -5721,32 +7233,41 @@ Information complémentaire facultative destinée à indiquer le nom de la contr
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..128
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 31
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -5759,12 +7280,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Information complémentaire facultative destinée à indiquer le nom de la contribution utilisée lors du paiement (Joomla, osCommerce...). Si vous utilisez une implémentation propriétaire, ce champ peut accueillir votre numéro de version interne du module que vous avez développé par exemple.
@@ -5773,32 +7297,41 @@ Information complémentaire facultative destinée à indiquer le nom de la contr
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..128
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 31
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -5811,12 +7344,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Paramètre obligatoire.
@@ -5837,22 +7373,28 @@ Si vous créez un nouveau site marchand (ou disposez d’un environnement de rec
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 11
   <p>
 
@@ -5862,13 +7404,16 @@ string (enum)
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Le mode n&#x27;a pas été envoyé à la plateforme de paiement.
    </li>
-    <li>
+ 
+   <li>
 Ne pas coder PROD à la place de PRODUCTION
    </li>
-    <li>
+ 
+   <li>
 Ne pas coder la valeur en minuscules (test ou production). Ce champ attend exclusivement des valeurs en majuscules et sans abréviation.
    </li>
  
@@ -5879,24 +7424,30 @@ Ne pas coder la valeur en minuscules (test ou production). Ce champ attend exclu
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>TEST</b>, 
 <b>PRODUCTION</b>
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -5909,12 +7460,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Paramètre obligatoire.
@@ -5935,22 +7489,28 @@ Si vous créez un nouveau site marchand (ou disposez d’un environnement de rec
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 11
   <p>
 
@@ -5960,13 +7520,16 @@ string (enum)
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Le mode n&#x27;a pas été envoyé à la plateforme de paiement.
    </li>
-    <li>
+ 
+   <li>
 Ne pas coder PROD à la place de PRODUCTION
    </li>
-    <li>
+ 
+   <li>
 Ne pas coder la valeur en minuscules (test ou production). Ce champ attend exclusivement des valeurs en majuscules et sans abréviation.
    </li>
  
@@ -5977,24 +7540,30 @@ Ne pas coder la valeur en minuscules (test ou production). Ce champ attend exclu
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>TEST</b>, 
 <b>PRODUCTION</b>
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -6009,12 +7578,15 @@ Informations techniques.
 <p>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Code numérique de la monnaie à utiliser pour le paiement, selon la norme ISO 4217 (code numérique).
@@ -6023,28 +7595,36 @@ Pour utiliser une devise différente de l’euro (978), il est nécessaire de de
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 10
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -6052,292 +7632,388 @@ n3
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-          <tr>
-     <td>
+       
+   <tr>
+ 
+    <td>
 Devise
     </td>
-     <td>
+ 
+    <td>
 Codification ISO 4217
     </td>
-     <td>
+ 
+    <td>
 Devise
     </td>
-     <td>
+ 
+    <td>
 Codification ISO 4217
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Baht thailandais
     </td>
-     <td>
+ 
+    <td>
 764
     </td>
-     <td>
+ 
+    <td>
 Moroccan Dirham
     </td>
-     <td>
+ 
+    <td>
 504
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Couronne danoise
     </td>
-     <td>
+ 
+    <td>
 208
     </td>
-     <td>
+ 
+    <td>
 Nouveau dollar de Taïwan
     </td>
-     <td>
+ 
+    <td>
 901
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Couronne islandaise
     </td>
-     <td>
+ 
+    <td>
 352
     </td>
-     <td>
+ 
+    <td>
 Nouvelle Livre turque
     </td>
-     <td>
+ 
+    <td>
 949
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Couronne norvégienne
     </td>
-     <td>
+ 
+    <td>
 578
     </td>
-     <td>
+ 
+    <td>
 Kuwaiti Dinar
     </td>
-     <td>
+ 
+    <td>
 414
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Couronne suédoise
     </td>
-     <td>
+ 
+    <td>
 752
     </td>
-     <td>
+ 
+    <td>
 Dinar Tunisien 
     </td>
-     <td>
+ 
+    <td>
 788
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Couronne tchèque
     </td>
-     <td>
+ 
+    <td>
 203
     </td>
-     <td>
+ 
+    <td>
 Peso argentin
     </td>
-     <td>
+ 
+    <td>
 032
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Dollar australien
     </td>
-     <td>
+ 
+    <td>
 036
     </td>
-     <td>
+ 
+    <td>
 Peso mexicain
     </td>
-     <td>
+ 
+    <td>
 484
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Dollar canadien
     </td>
-     <td>
+ 
+    <td>
 124
     </td>
-     <td>
+ 
+    <td>
 Peso philippin
     </td>
-     <td>
+ 
+    <td>
 608
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Dollar de Hong Kong
     </td>
-     <td>
+ 
+    <td>
 344
     </td>
-     <td>
+ 
+    <td>
 Rand sud-africain
     </td>
-     <td>
+ 
+    <td>
 710
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Dollar de Singapour
     </td>
-     <td>
+ 
+    <td>
 702
     </td>
-     <td>
+ 
+    <td>
 Real de Brésil
     </td>
-     <td>
+ 
+    <td>
 986
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Dollar des États-Unis
     </td>
-     <td>
+ 
+    <td>
 840
     </td>
-     <td>
+ 
+    <td>
 Renminbi yuan chinois
     </td>
-     <td>
+ 
+    <td>
 156
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Dollar néo-zélandais
     </td>
-     <td>
+ 
+    <td>
 554
     </td>
-     <td>
+ 
+    <td>
 Ringgit malais
     </td>
-     <td>
+ 
+    <td>
 458
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Euro
     </td>
-     <td>
+ 
+    <td>
 978
     </td>
-     <td>
+ 
+    <td>
 Rouble russe
     </td>
-     <td>
+ 
+    <td>
 643
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Forint hongrois
     </td>
-     <td>
+ 
+    <td>
 348
     </td>
-     <td>
+ 
+    <td>
 Rupiah indonésienne
     </td>
-     <td>
+ 
+    <td>
 360
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Franc CFP
     </td>
-     <td>
+ 
+    <td>
 953
     </td>
-     <td>
+ 
+    <td>
 Won de Corée du Sud
     </td>
-     <td>
+ 
+    <td>
 410
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Franc suisse
     </td>
-     <td>
+ 
+    <td>
 756
     </td>
-     <td>
+ 
+    <td>
 Yen
     </td>
-     <td>
+ 
+    <td>
 392
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Indian rupee
     </td>
-     <td>
+ 
+    <td>
 356
     </td>
-     <td>
+ 
+    <td>
 Zloty polonais
     </td>
-     <td>
+ 
+    <td>
 985
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Livre sterling
     </td>
-     <td>
+ 
+    <td>
 826
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
     </td>
  
@@ -6360,12 +8036,15 @@ Livre sterling
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Adresse postale de l’acheteur.
@@ -6374,12 +8053,15 @@ Adresse postale de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   <p>
 
@@ -6399,32 +8081,41 @@ ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 19
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6437,12 +8128,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Numéro de rue de l’acheteur.
@@ -6451,32 +8145,41 @@ Numéro de rue de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..5
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 112
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6489,12 +8192,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Numéro de téléphone mobile de l’acheteur.
@@ -6503,32 +8209,41 @@ Numéro de téléphone mobile de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..32
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 77
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6541,12 +8256,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Ville de l’acheteur.
@@ -6555,42 +8273,54 @@ Ville de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..128
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 21
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6603,12 +8333,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Permet de spécifier le code du pays de l’acheteur à la norme ISO 3166. 
@@ -6617,113 +8350,149 @@ Permet de spécifier le code du pays de l’acheteur à la norme ISO 3166.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 a2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 22
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemples de valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Pays
     </td>
-     <td>
+ 
+    <td>
 Code
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 BRESIL
     </td>
-     <td>
+ 
+    <td>
 BR
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CORSE
     </td>
-     <td>
+ 
+    <td>
 FR
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 FRANCE
     </td>
-     <td>
+ 
+    <td>
 FR
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GUADELOUPE
     </td>
-     <td>
+ 
+    <td>
 GP
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 MARTINIQUE
     </td>
-     <td>
+ 
+    <td>
 MQ
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 NOUVELLE-CALÉDONIE
     </td>
-     <td>
+ 
+    <td>
 NC
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ST-PIERRE-ET-MIQUELON
     </td>
-     <td>
+ 
+    <td>
 PM
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 POLYNESIE FRANCAISE
     </td>
-     <td>
+ 
+    <td>
 PF
     </td>
  
@@ -6736,22 +8505,28 @@ PF
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6764,42 +8539,54 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Quartier de l’acheteur. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 113
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6812,12 +8599,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Adresse e-mail de l’acheteur, 
 <b>nécessaire si vous souhaitez que la plateforme de paiement envoie un e-mail à l’acheteur</b>.
   <p>
@@ -6827,32 +8617,41 @@ Pour que l&#x27;acheteur reçoive un e-mail, n&#x27;oubliez pas de poster ce par
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..150
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 15
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6865,52 +8664,67 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Prénom de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 104
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6923,42 +8737,54 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Identifiant de l’acheteur chez le marchand.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 16
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -6971,52 +8797,67 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Nom de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 105
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7029,42 +8870,54 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Raison sociale de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..100
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 121
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7077,12 +8930,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Nom de l’acheteur.
   <p>
 Ce champ est déprécié. Il est remplacé par les champs 
@@ -7093,32 +8949,41 @@ Ce champ est déprécié. Il est remplacé par les champs
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 18
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7131,12 +8996,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Identifiant national. 
   <p>
 Permet d&#x27;identifier de façon unique chaque citoyen au sein d&#x27;un pays.
@@ -7149,22 +9017,28 @@ Par exemple, au Brésil, ClearSale impose que ce champ soit valorisé avec le CP
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7177,52 +9051,67 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Numéro de téléphone de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..32
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 23
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7235,42 +9124,54 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Etat/ Région de l’acheteur
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 88
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7283,54 +9184,69 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Type d’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 92
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>PRIVATE</b>, 
 <b>COMPANY</b>
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7343,32 +9259,41 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Civilité de l’acheteur (Exemple Mr, Mme, Melle).
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 17
   </td>
  
@@ -7381,52 +9306,67 @@ an..63
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Code postal de l’acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..64
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 20
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Remarque</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire pour 3xCB Cofinoga. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7439,12 +9379,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
 <u>Dans la demande de paiement</u>
   <p>
@@ -7471,32 +9414,41 @@ Sa longueur peut varier entre 3 ou 4 chiffres en fonction du type de carte.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..4
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 43
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -7509,12 +9461,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ renvoyé dans la réponse.
   <p>
 Montant du paiement dans la devise réellement utilisée pour effectuer la remise en banque.
@@ -7523,31 +9478,40 @@ Montant du paiement dans la devise réellement utilisée pour effectuer la remis
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemples</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>EXEMPLE POUR UNE BOUTIQUE OU LA REMISE EST EFFECTUÉE EN EURO</b>
   <p>
@@ -7558,12 +9522,15 @@ n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -7576,12 +9543,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -7590,22 +9560,28 @@ Date d&#x27;enregistrement de la transaction, dans le fuseau UTC (ou GMT+0) au f
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n14
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -7618,42 +9594,54 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Mois d’expiration de la carte utilisée pour le paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 41
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -7666,42 +9654,54 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Année d’expiration de la carte utilisée pour le paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n4
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 42
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur le moyen de paiement.
   </td>
  
@@ -7714,12 +9714,15 @@ Informations sur le moyen de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Permet d’ajouter un champ supplémentaire qui sera visible dans l&#x27;e-mail de confirmation de paiement à l’attention du marchand. 
@@ -7739,32 +9742,41 @@ vads_ext_info_
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 91
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -7777,12 +9789,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -7795,22 +9810,28 @@ Permet de préciser un complément d&#x27;adresse pour la facturation.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..250
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7823,12 +9844,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -7841,22 +9865,28 @@ Permet de préciser le délai de livraison en jour (N jours).
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -7869,12 +9899,15 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -7891,22 +9924,28 @@ Format : yyyy-mm-ddThh:mm:ss)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 Datetime
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7919,12 +9958,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -7937,22 +9979,28 @@ Permet de préciser sur la facture si l&#x27;acheteur est un homme ou une femme.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -7965,12 +10013,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -7983,14 +10034,16 @@ Identifiant unique de session.
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Soit cet identifiant de session est généré par la plateforme de paiement
    <p>
 Dans ce cas, ce paramètre ne doit pas être renseigné.
    </p>
 
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Soit cet identifiant de session est généré par le site marchand
@@ -8009,12 +10062,15 @@ Dans ce cas, ce paramètre doit être renseigné avec la valeur de l’identifia
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   <p>
 Codé sur 128 octets, peut être composé de majuscules ou de minuscules, chiffres ou tiret ([A-Z] [a-z], 0-9, _, -).
@@ -8023,12 +10079,15 @@ Codé sur 128 octets, peut être composé de majuscules ou de minuscules, chiffr
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -8041,12 +10100,15 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -8059,22 +10121,28 @@ Permet de préciser un complément d&#x27;adresse pour la livraison.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..250
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -8087,12 +10155,15 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -8105,22 +10176,28 @@ Permet de préciser pour la livraison la date de naissance de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 Datetime
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur livraison.
   </td>
  
@@ -8133,12 +10210,15 @@ Informations sur livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Spécifique au Brésil et à l&#x27;analyseur de fraude ClearSale.
@@ -8151,22 +10231,28 @@ Permet de préciser pour la livraison si l&#x27;acheteur est un homme ou une fem
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -8179,12 +10265,15 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Paramètre renvoyé uniquement dans la notification instantanée (également appelée IPN) en cas de don.
@@ -8197,22 +10286,28 @@ Montant du don exprimé dans la plus petite unité de la monnaie ou devise (le c
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur les transactions de don.
   </td>
  
@@ -8225,12 +10320,15 @@ Information sur les transactions de don.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Paramètre renvoyé uniquement dans la notification instantanée (également appelée IPN) en cas de don.
@@ -8243,22 +10341,28 @@ Identifiant HelloAsso de l&#x27;association qui a reçu le don.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..20
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur les transactions de don.
   </td>
  
@@ -8271,12 +10375,15 @@ Information sur les transactions de don.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre renvoyé uniquement dans la notification instantanée (également appelée IPN) en cas de don.
   <p>
 Nom de l&#x27;association qui a reçu le don.
@@ -8285,22 +10392,28 @@ Nom de l&#x27;association qui a reçu le don.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur les transactions de don.
   </td>
  
@@ -8313,12 +10426,15 @@ Information sur les transactions de don.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Paramètre renvoyé uniquement dans la notification instantanée (également appelée IPN) en cas de don.
@@ -8331,22 +10447,28 @@ Identifiant de la boutique sur laquelle le don est effectué.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n8
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur les transactions de don.
   </td>
  
@@ -8359,12 +10481,15 @@ Information sur les transactions de don.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Paramètre renvoyé uniquement dans la notification instantanée (également appelée IPN) en cas de don.
@@ -8377,22 +10502,28 @@ Montant en centimes du don exprimé dans la plus petite unité de la monnaie ou 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur les transactions de don.
   </td>
  
@@ -8405,12 +10536,15 @@ Information sur les transactions de don.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -8424,7 +10558,8 @@ Code complémentaire de réponse. Sa signification dépend de la valeur renseign
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Lorsque 
 <b>vads_result</b> vaut 30 (erreur de requête), alors 
 <b>vads_extra_result</b> contient le code numérique du champ qui comporte une erreur de valorisation ou de format. Cette valeur peut être renseignée à 99 dans le cas d’une erreur inconnue dans la requête.
@@ -8444,7 +10579,8 @@ Lorsque
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Lorsque 
 <b>vads_result</b> vaut 05 (refusée) ou 00 (acceptée), alors 
 <b>vads_extra_result</b> contient le code numérique du résultat des contrôles de risques. 
@@ -8453,137 +10589,182 @@ Lorsque
   </ul>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 vads_extra_result
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Vide
     </td>
-     <td>
+ 
+    <td>
 Pas de contrôle effectué.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 00
     </td>
-     <td>
+ 
+    <td>
 Tous les contrôles se sont déroulés avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 02
     </td>
-     <td>
+ 
+    <td>
 La carte a dépassé l’encours autorisé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 03
     </td>
-     <td>
+ 
+    <td>
 La carte appartient à la liste grise du marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 04
     </td>
-     <td>
+ 
+    <td>
 Le pays d’émission de la carte appartient à la liste grise du marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 05
     </td>
-     <td>
+ 
+    <td>
 L’adresse IP appartient à la liste grise du marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 06
     </td>
-     <td>
+ 
+    <td>
 Le code bin appartient à la liste grise du marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 07
     </td>
-     <td>
+ 
+    <td>
 Détection d’une e-carte bleue.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 08
     </td>
-     <td>
+ 
+    <td>
 Détection d’une carte commerciale nationale.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 09
     </td>
-     <td>
+ 
+    <td>
 Détection d’une carte commerciale étrangère.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 14
     </td>
-     <td>
+ 
+    <td>
 Détection d’une carte à autorisation systématique.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 20
     </td>
-     <td>
+ 
+    <td>
 Contrôle de cohérence : aucun pays ne correspond (pays IP, pays carte, pays de l’acheteur ).
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 30
     </td>
-     <td>
+ 
+    <td>
 Le pays de l’adresse IP appartient à la liste grise.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 99
     </td>
-     <td>
+ 
+    <td>
 Problème technique rencontré par le serveur lors du traitement d’un des contrôles locaux.
     </td>
  
@@ -8596,12 +10777,15 @@ Problème technique rencontré par le serveur lors du traitement d’un des cont
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -8614,32 +10798,41 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Clé unique renvoyée uniquement à l’URL de notification (IPN).
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an64
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -8652,24 +10845,29 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Identifiant unique (alias ou référence unique de mandat) associé à un moyen de paiement.
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Soit cet identifiant est généré par la plateforme.
    <p>
 Dans ce cas, ce paramètre ne doit pas être renseigné.
    </p>
 
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Soit cet identifiant est généré par le site marchand.
@@ -8689,32 +10887,41 @@ Dans ce cas, ce paramètre doit être renseigné avec la valeur de l’identifia
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..50
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 30
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -8727,12 +10934,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -8745,10 +10955,12 @@ Présent uniquement si l’action demandée correspond à la création ou à la 
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 alias (abonnement)
    </li>
-    <li>
+ 
+   <li>
 RUM ou référence unique de mandat (SEPA)
    </li>
  
@@ -8759,41 +10971,53 @@ RUM ou référence unique de mandat (SEPA)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>CREATED</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La demande d’autorisation a été acceptée.
@@ -8806,12 +11030,15 @@ L&#x27;alias ou RUM est créé avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>NOT_CREATED</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La demande d’autorisation a été refusée. 
@@ -8824,22 +11051,28 @@ L&#x27;alias ou RUM n&#x27;est pas créé et n&#x27;apparaîtra pas dans le Back
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>UPDATED</b>
     </td>
-     <td>
+ 
+    <td>
 L&#x27;alias ou RUM est mis à jour avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>ABANDONED</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Action abandonnée par l&#x27;acheteur (débiteur).
@@ -8860,12 +11093,15 @@ L&#x27;alias ou RUM n&#x27;est pas créé et n&#x27;apparaîtra pas dans le Back
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -8878,12 +11114,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Montant de l’assurance pour l’ensemble de la commande. 
@@ -8896,32 +11135,41 @@ Spécifique au moyen de paiement PayPal.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 110
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -8934,12 +11182,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 
@@ -8970,28 +11221,36 @@ Retourne la langue sélectionnée par l’acheteur si celui-ci a changé de lang
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 a2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
 
@@ -9026,143 +11285,189 @@ a2
   </p>
  
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Langue
     </td>
-     <td>
+ 
+    <td>
 Codification ISO 639-1
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Allemand
     </td>
-     <td>
+ 
+    <td>
 de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Anglais
     </td>
-     <td>
+ 
+    <td>
 en
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Chinois
     </td>
-     <td>
+ 
+    <td>
 zh
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Espagnol
     </td>
-     <td>
+ 
+    <td>
 es
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Français
     </td>
-     <td>
+ 
+    <td>
 fr
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Italien
     </td>
-     <td>
+ 
+    <td>
 it
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Japonais
     </td>
-     <td>
+ 
+    <td>
 ja
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Néerlandais
     </td>
-     <td>
+ 
+    <td>
 nl
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Polonais
     </td>
-     <td>
+ 
+    <td>
 pl
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Portugais
     </td>
-     <td>
+ 
+    <td>
 pt
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Russe
     </td>
-     <td>
+ 
+    <td>
 ru
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Suédois
     </td>
-     <td>
+ 
+    <td>
 sv
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Turc
     </td>
-     <td>
+ 
+    <td>
 tr
     </td>
  
@@ -9175,12 +11480,15 @@ tr
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Personnalisation de la page de paiement
   </td>
  
@@ -9193,32 +11501,41 @@ Personnalisation de la page de paiement
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le nombre de produits contenu dans le panier
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -9231,12 +11548,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Permet de différencier une opération de débit ou de crédit (remboursement).
@@ -9257,34 +11577,43 @@ Permet de différencier une opération de débit ou de crédit (remboursement).
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>DEBIT</b>,
 <b> CREDIT</b>
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -9297,12 +11626,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Numéro de commande. Il est également inclu dans l&#x27;e-mail de confirmation de paiement adressé à l’acheteur. 
@@ -9316,32 +11648,41 @@ S&#x27;il contient un caractère spécial (&amp;, ;, @, etc...), la plateforme d
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..32
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 13
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -9354,42 +11695,54 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Descriptif de la commande.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 14
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -9402,42 +11755,54 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Descriptif de la commande.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 14
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -9450,42 +11815,54 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Descriptif de la commande.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 14
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -9498,12 +11875,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire.
   <p>
 Définit l&#x27;opération à réaliser.
@@ -9512,59 +11892,77 @@ Définit l&#x27;opération à réaliser.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 46
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <ul>
-    <li>
+ 
+   <li>
 PAYMENT
    </li>
-    <li>
+ 
+   <li>
 REGISTER
    </li>
-    <li>
+ 
+   <li>
 REGISTER_UPDATE
    </li>
-    <li>
+ 
+   <li>
 REGISTER_PAY
    </li>
-    <li>
+ 
+   <li>
 REGISTER_SUBSCRIBE
    </li>
-    <li>
+ 
+   <li>
 REGISTER_PAY_SUBSCRIBE
    </li>
-    <li>
+ 
+   <li>
 SUBSCRIBE
    </li>
-    <li>
+ 
+   <li>
 REGISTER_UPDATE_PAY
    </li>
-    <li>
+ 
+   <li>
 ASK_REGISTER_PAY
    </li>
  
@@ -9573,12 +11971,15 @@ ASK_REGISTER_PAY
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -9591,12 +11992,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Contient la liste des moyens de paiement à proposer à l’acheteur, séparés par des &quot; 
@@ -9610,22 +12014,28 @@ Si ce paramètre est vide (conseillé) alors les moyens de paiement éligibles (
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 type1;type2;type3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 08
   <p>
 Le formulaire sera rejeté dans les cas suivants :
@@ -9634,27 +12044,32 @@ Le formulaire sera rejeté dans les cas suivants :
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 la valeur transmise n&#x27;est pas présente dans la liste ci-dessous. 
    </li>
-    <li>
+ 
+   <li>
 TOUTES, ALL ne sont pas des valeurs acceptées. Pour proposer tous les moyens de paiement ce paramètre ne doit pas être posté ou être posté à vide. 
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 la valeur transmise ne correspond pas au moyen de paiement disponible pour votre boutique.
    </p>
  
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Votre contrat e-commerce a été clôturé par votre établissement bancaire. Contactez le service client de votre plateforme de paiement.
    </p>
  
    </li>
-    <li>
+ 
+   <li>
 la valeur transmise n&#x27;est pas éligible dans le réseau associé.
    </li>
  
@@ -9665,8 +12080,10 @@ la valeur transmise n&#x27;est pas éligible dans le réseau associé.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -9674,7 +12091,8 @@ la valeur transmise n&#x27;est pas éligible dans le réseau associé.
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
@@ -9687,488 +12105,650 @@ la valeur transmise n&#x27;est pas éligible dans le réseau associé.
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 ACCORD_STORE
     </td>
-     <td>
+ 
+    <td>
 Carte de paiement Banque Accord 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ACCORD_STORE_SB
     </td>
-     <td>
+ 
+    <td>
 Carte de paiement Banque Accord - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ALINEA
     </td>
-     <td>
+ 
+    <td>
 Carte Privative Alinea
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ALINEA_CDX
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Alinea
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ALINEA_CDX_SB
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Alinea - SandBox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ALINEA_SB
     </td>
-     <td>
+ 
+    <td>
 Carte Privative Alinea - SandBox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 AMEX
     </td>
-     <td>
+ 
+    <td>
 American Express
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 AURORE-MULTI
     </td>
-     <td>
+ 
+    <td>
 Carte Aurore
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 BANCONTACT
     </td>
-     <td>
+ 
+    <td>
 Carte Maestro Bancontact Mistercash
     </td>
  
    </tr>
-     <tr>
-     <td>
+  
+   <tr>
+ 
+    <td>
 BITCOIN
     </td>
-     <td>
+ 
+    <td>
 Paiement par monnaie virtuelle
     </td>
  
    </tr>
-     <tr>
-     <td>
+  
+   <tr>
+ 
+    <td>
 BIZZBEE_CDX
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Bizzbee
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 BIZZBEE_CDX_SB
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Bizzbee - Sandbox 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 BRICE_CDX
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Brice
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 BRICE_CDX_SB
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Brice - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CB
     </td>
-     <td>
+ 
+    <td>
 CB
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CDGP
     </td>
-     <td>
+ 
+    <td>
 Carte Privilège
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COF3XCB
     </td>
-     <td>
+ 
+    <td>
 3 fois CB Cofinoga
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COF3XCB_SB
     </td>
-     <td>
+ 
+    <td>
 3 fois CB Cofinoga - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COFINOGA
     </td>
-     <td>
+ 
+    <td>
 Carte Be Smart
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CORA_BLANCHE
     </td>
-     <td>
+ 
+    <td>
 Carte Cora Blanche
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CORA_PREM
     </td>
-     <td>
+ 
+    <td>
 Carte Cora Premium
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CORA_VISA
     </td>
-     <td>
+ 
+    <td>
 Carte Cora Visa
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 DINERS
     </td>
-     <td>
+ 
+    <td>
 Carte Diners Club
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 E-CARTEBLEUE
     </td>
-     <td>
+ 
+    <td>
 E-carte bleue
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 E_CV
     </td>
-     <td>
+ 
+    <td>
 E-chèque vacance
     </td>
  
    </tr>
-     <tr>
-     <td>
+  
+   <tr>
+ 
+    <td>
 EDENRED
     </td>
-     <td>
+ 
+    <td>
 Carte &quot;Ticket Restaurant&quot;
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 GIROPAY
     </td>
-     <td>
+ 
+    <td>
 Virement bancaire
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 KLARNA
     </td>
-     <td>
+ 
+    <td>
 Paiement par facture
     </td>
  
    </tr>
-     <tr>
-     <td>
+  
+   <tr>
+ 
+    <td>
 IDEAL
     </td>
-     <td>
+ 
+    <td>
 Virement bancaire
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ILLICADO
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Illicado
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ILLICADO_SB
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Illicado - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 JCB
     </td>
-     <td>
+ 
+    <td>
 Carte JCB
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 JOUECLUB_CDX
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Jouéclub
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 JOUECLUB_CDX_SB
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Jouéclub - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 JULES_CDX
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Jules
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 JULES_CDX_SB
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Jules - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 MAESTRO
     </td>
-     <td>
+ 
+    <td>
 Maestro
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 MASTERCARD
     </td>
-     <td>
+ 
+    <td>
 MasterCard
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ONEY
     </td>
-     <td>
+ 
+    <td>
 Paiement en 3/4 fois Oney FacilyPay
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ONEY_SANDBOX
     </td>
-     <td>
+ 
+    <td>
 Paiement en 3/4 fois Oney FacilyPay - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYLIB
     </td>
-     <td>
+ 
+    <td>
 Paylib
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYPAL
     </td>
-     <td>
+ 
+    <td>
 PayPal
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYPAL_SB
     </td>
-     <td>
+ 
+    <td>
 PayPal - Sandbox
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 PAYSAFECARD
     </td>
-     <td>
+ 
+    <td>
 Carte prépayée Paysafecard
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 POSTFINANCE
     </td>
-     <td>
+ 
+    <td>
 PostFinance
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 POSTFINANCE_EFIN
     </td>
-     <td>
+ 
+    <td>
 PostFinance mode E-finance
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 RUPAY
     </td>
-     <td>
+ 
+    <td>
 Moyen de paiement Indien 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SCT
     </td>
-     <td>
+ 
+    <td>
 Virement SEPA
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SDD
     </td>
-     <td>
+ 
+    <td>
 Prélèvement SEPA
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SOFORT_BANKING
     </td>
-     <td>
+ 
+    <td>
 Sofort
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 TRUFFAUT_CDX
     </td>
-     <td>
+ 
+    <td>
 Carte cadeau Truffaut
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 VISA
     </td>
-     <td>
+ 
+    <td>
 Visa
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 VISA_ELECTRON
     </td>
-     <td>
+ 
+    <td>
 Visa Electron
     </td>
  
@@ -10213,12 +12793,15 @@ Visa Electron
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -10228,22 +12811,28 @@ Ce champ est valorisé par la plateforme de paiement dans le cas où l’autoris
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an40
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -10256,12 +12845,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -10271,22 +12863,28 @@ Ce champ est valorisé par la plateforme de paiement dans le cas où l’autoris
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an40
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -10299,12 +12897,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Désigne le type du paiement : comptant ou en plusieurs fois.
@@ -10313,11 +12914,13 @@ Désigne le type du paiement : comptant ou en plusieurs fois.
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Pour un paiement simple, la valeur doit être égale à 
 <b>SINGLE</b>. 
    </li>
-    <li>
+ 
+   <li>
 Pour un paiement en plusieurs fois avec montants et dates fixes, la valeur doit être égale à 
 <b>MULTI: </b>suivi par des paires clé=valeur séparées par des « 
 <b>;</b> ». 
@@ -10326,15 +12929,18 @@ Les paramètres sont les suivants :
    </p>
 
    <ul>
-     <li>
+ 
+    <li>
 « 
 <b>first</b> » indique le montant du premier paiement (exprimé dans la plus petite unité de la monnaie ou devise).
     </li>
-     <li>
+ 
+    <li>
 « 
 <b>count</b> » indique le nombre total d&#x27;échéances.
     </li>
-     <li>
+ 
+    <li>
 « 
 <b>period</b> » indique l’intervalle en nombre de jours entre 2 paiements.
     <p>
@@ -10346,7 +12952,8 @@ L&#x27;ordre des champs associés à MULTI est imposé.
    </ul>
 
    </li>
-    <li>
+ 
+   <li>
 Pour un paiement en plusieurs fois, avec un échéancier personnalisé, la valeur doit être égale à 
 <b>MULTI_EXT:</b> suivi par des paires date=montant séparées par des « 
 <b>;</b> ». 
@@ -10368,37 +12975,47 @@ L’utilisation de la valeur MULTI_EXT nécessite la souscription de l’option
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 07
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>SINGLE</b>
    </li>
@@ -10406,11 +13023,13 @@ string (enum)
   </ul>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>MULTI:first= montant_inital ;count= nbre_echeances ;period= intervalle_en_jours</b>
    </li>
-    <li>
+ 
+   <li>
 
 <b>MULTI_EXT:date1=montant1;date2=montant2;date3=montant3</b>
    </li>
@@ -10422,12 +13041,15 @@ string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemple 1</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 
@@ -10451,16 +13073,20 @@ En cas de reste différent de zéro, il sera reporté sur le montant de la derni
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 vads_capture_delay=2
    </li>
-    <li>
+ 
+   <li>
 vads_currency=978
    </li>
-    <li>
+ 
+   <li>
 vads_amount=20000
    </li>
-    <li>
+ 
+   <li>
 vads_payment_config=MULTI:first=10000;count=4;period=30
    </li>
  
@@ -10500,12 +13126,15 @@ Cette instruction permet de créer immédiatement 4 paiements avec le même num�
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemple 2</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 
@@ -10520,13 +13149,16 @@ Cette instruction permet de créer immédiatement 4 paiements avec le même num�
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 vads_currency=978
    </li>
-    <li>
+ 
+   <li>
 vads_amount=10000
    </li>
-    <li>
+ 
+   <li>
 vads_payment_config= MULTI_EXT
 <b>:</b>20150601 =5000; 20150701 =2500; 20150808 =2500
    </li>
@@ -10565,12 +13197,15 @@ La somme totale des montants doit être égale à la valeur du champ
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -10583,12 +13218,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Désigne le type du paiement : comptant ou en plusieurs fois.
@@ -10597,11 +13235,13 @@ Désigne le type du paiement : comptant ou en plusieurs fois.
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Pour un paiement simple, la valeur doit être égale à 
 <b>SINGLE</b>. 
    </li>
-    <li>
+ 
+   <li>
 Pour un paiement en plusieurs fois avec montants et dates fixes, la valeur doit être égale à 
 <b>MULTI: </b>suivi par des paires clé=valeur séparées par des « 
 <b>;</b> ». 
@@ -10610,15 +13250,18 @@ Les paramètres sont les suivants :
    </p>
 
    <ul>
-     <li>
+ 
+    <li>
 « 
 <b>first</b> » indique le montant du premier paiement (exprimé dans la plus petite unité de la monnaie ou devise).
     </li>
-     <li>
+ 
+    <li>
 « 
 <b>count</b> » indique le nombre total d&#x27;échéances.
     </li>
-     <li>
+ 
+    <li>
 « 
 <b>period</b> » indique l’intervalle en nombre de jours entre 2 paiements.
     <p>
@@ -10630,7 +13273,8 @@ L&#x27;ordre des champs associés à MULTI est imposé.
    </ul>
 
    </li>
-    <li>
+ 
+   <li>
 Pour un paiement en plusieurs fois, avec un échéancier personnalisé, la valeur doit être égale à 
 <b>MULTI_EXT:</b> suivi par des paires date=montant séparées par des « 
 <b>;</b> ». 
@@ -10652,37 +13296,47 @@ L’utilisation de la valeur MULTI_EXT nécessite la souscription de l’option
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 07
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>SINGLE</b>
    </li>
@@ -10690,11 +13344,13 @@ string (enum)
   </ul>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>MULTI:first= montant_inital ;count= nbre_echeances ;period= intervalle_en_jours</b>
    </li>
-    <li>
+ 
+   <li>
 
 <b>MULTI_EXT:date1=montant1;date2=montant2;date3=montant3</b>
    </li>
@@ -10706,12 +13362,15 @@ string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemple 1</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 
@@ -10735,16 +13394,20 @@ En cas de reste différent de zéro, il sera reporté sur le montant de la derni
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 vads_capture_delay=2
    </li>
-    <li>
+ 
+   <li>
 vads_currency=978
    </li>
-    <li>
+ 
+   <li>
 vads_amount=20000
    </li>
-    <li>
+ 
+   <li>
 vads_payment_config=MULTI:first=10000;count=4;period=30
    </li>
  
@@ -10784,12 +13447,15 @@ Cette instruction permet de créer immédiatement 4 paiements avec le même num�
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemple 2</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 
@@ -10804,13 +13470,16 @@ Cette instruction permet de créer immédiatement 4 paiements avec le même num�
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 vads_currency=978
    </li>
-    <li>
+ 
+   <li>
 vads_amount=10000
    </li>
-    <li>
+ 
+   <li>
 vads_payment_config= MULTI_EXT
 <b>:</b>20150601 =5000; 20150701 =2500; 20150808 =2500
    </li>
@@ -10849,12 +13518,15 @@ La somme totale des montants doit être égale à la valeur du champ
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -10867,12 +13539,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -10885,58 +13560,76 @@ Codes d&#x27;erreurs pouvant apparaître lors d&#x27;un paiement refusé.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
  
   <table>
-          <tr>
-     <td>
+       
+   <tr>
+ 
+    <td>
 Code d&#x27;erreur
     </td>
-     <td>
+ 
+    <td>
 Message d&#x27;erreur
     </td>
-     <td>
+ 
+    <td>
 Code d&#x27;erreur
     </td>
-     <td>
+ 
+    <td>
 Message d&#x27;erreur
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 La transaction n&#x27;a pas été trouvée.
     </td>
-     <td>
+ 
+    <td>
 72
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Refus d&#x27;autorisation par Cofinoga.
@@ -10945,17 +13638,22 @@ Refus d&#x27;autorisation par Cofinoga.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 2
     </td>
-     <td>
+ 
+    <td>
 La transaction n&#x27;a pas été trouvée.
     </td>
-     <td>
+ 
+    <td>
 73
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Refus de l&#x27;autorisation à 1 euro
@@ -10964,17 +13662,22 @@ Refus de l&#x27;autorisation à 1 euro
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 3
     </td>
-     <td>
+ 
+    <td>
 Cette action n&#x27;est pas autorisée sur une transaction ayant ce statut {0}. 
     </td>
-     <td>
+ 
+    <td>
 74
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Configuration de paiement invalide.
@@ -10983,32 +13686,42 @@ Configuration de paiement invalide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 4
     </td>
-     <td>
+ 
+    <td>
 Cette transaction n&#x27;est pas autorisée dans ce contexte. 
     </td>
-     <td>
+ 
+    <td>
 75
     </td>
-     <td>
+ 
+    <td>
 L&#x27;opération a été refusée par PayPal.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 5
     </td>
-     <td>
+ 
+    <td>
 La transaction existe déjà. 
     </td>
-     <td>
+ 
+    <td>
 76
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11017,17 +13730,22 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 6
     </td>
-     <td>
+ 
+    <td>
 Montant de transaction invalide. 
     </td>
-     <td>
+ 
+    <td>
 77
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11036,17 +13754,22 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 7
     </td>
-     <td>
+ 
+    <td>
 Cette action n&#x27;est plus possible pour une transaction créée à cette date. 
     </td>
-     <td>
+ 
+    <td>
 78
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Identifiant de transaction non défini.
@@ -11055,17 +13778,22 @@ Identifiant de transaction non défini.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 8
     </td>
-     <td>
+ 
+    <td>
 La date d&#x27;expiration de la carte ne permet pas cette action. 
     </td>
-     <td>
+ 
+    <td>
 79
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Identifiant de transaction déjà utilisé.
@@ -11074,17 +13802,22 @@ Identifiant de transaction déjà utilisé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 9
     </td>
-     <td>
+ 
+    <td>
 CVV obligatoire pour la carte. 
     </td>
-     <td>
+ 
+    <td>
 80
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Identifiant de transaction expiré.
@@ -11093,32 +13826,42 @@ Identifiant de transaction expiré.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 10
     </td>
-     <td>
+ 
+    <td>
 Le montant de remboursement est supérieur au montant initial. 
     </td>
-     <td>
+ 
+    <td>
 81
     </td>
-     <td>
+ 
+    <td>
 Contenu du thème config invalide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 11
     </td>
-     <td>
+ 
+    <td>
 La somme des remboursements effectués est supérieure au montant initial. 
     </td>
-     <td>
+ 
+    <td>
 82
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Le remboursement n&#x27;est pas autorisé.
@@ -11127,17 +13870,22 @@ Le remboursement n&#x27;est pas autorisé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 12
     </td>
-     <td>
+ 
+    <td>
 La duplication d&#x27;un crédit (remboursement) n&#x27;est pas autorisée. 
     </td>
-     <td>
+ 
+    <td>
 83
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Montant de transaction en dehors des valeurs permises.
@@ -11146,17 +13894,22 @@ Montant de transaction en dehors des valeurs permises.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 13
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande. 
     </td>
-     <td>
+ 
+    <td>
 84
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11165,17 +13918,22 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 14
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </td>
-     <td>
+ 
+    <td>
 85
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11184,17 +13942,22 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 15
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande. 
     </td>
-     <td>
+ 
+    <td>
 86
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11203,17 +13966,22 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 16
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande. 
     </td>
-     <td>
+ 
+    <td>
 87
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11222,32 +13990,42 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 17
     </td>
-     <td>
+ 
+    <td>
 Le téléparamétrage du contrat Aurore a échoué. 
     </td>
-     <td>
+ 
+    <td>
 88
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 18
     </td>
-     <td>
+ 
+    <td>
 L&#x27;analyse de la réponse Cetelem a échoué. 
     </td>
-     <td>
+ 
+    <td>
 89
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La modification n&#x27;est pas autorisée.
@@ -11256,17 +14034,22 @@ La modification n&#x27;est pas autorisée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 19
     </td>
-     <td>
+ 
+    <td>
 Devise inconnue.
     </td>
-     <td>
+ 
+    <td>
 90
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Une erreur est apparue lors du remboursement de cette transaction.
@@ -11275,92 +14058,122 @@ Une erreur est apparue lors du remboursement de cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 20
     </td>
-     <td>
+ 
+    <td>
 Type de carte invalide.
     </td>
-     <td>
+ 
+    <td>
 91
     </td>
-     <td>
+ 
+    <td>
 Aucune option de paiement activée pour ce contrat.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 21
     </td>
-     <td>
+ 
+    <td>
 Aucun contrat trouvé pour ce paiement. Veuillez modifier les données ou contacter votre gestionnaire en cas d&#x27;échecs répétés. 
     </td>
-     <td>
+ 
+    <td>
 92
     </td>
-     <td>
+ 
+    <td>
 Une erreur est survenue lors du calcul du canal de paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 22
     </td>
-     <td>
+ 
+    <td>
 Boutique non trouvée. 
     </td>
-     <td>
+ 
+    <td>
 93
     </td>
-     <td>
+ 
+    <td>
 Une erreur est survenue lors du retour de l&#x27;acheteur sur la page de finalisation de paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 23
     </td>
-     <td>
+ 
+    <td>
 Contrat ambigüe
     </td>
-     <td>
+ 
+    <td>
 94
     </td>
-     <td>
+ 
+    <td>
 Une erreur technique est survenue.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 24
     </td>
-     <td>
+ 
+    <td>
 Contrat invalide
     </td>
-     <td>
+ 
+    <td>
 95
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 25
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande. 
     </td>
-     <td>
+ 
+    <td>
 96
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Une erreur est apparue lors de la remise de cette transaction.
@@ -11369,77 +14182,102 @@ Une erreur est apparue lors de la remise de cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 26
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide
     </td>
-     <td>
+ 
+    <td>
 97
     </td>
-     <td>
+ 
+    <td>
 Date de remise trop éloignée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 27
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide
     </td>
-     <td>
+ 
+    <td>
 98
     </td>
-     <td>
+ 
+    <td>
 Date de transaction invalide. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 28
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide
     </td>
-     <td>
+ 
+    <td>
 99
     </td>
-     <td>
+ 
+    <td>
 Une erreur est survenue lors du calcul de l&#x27;origine du paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 29
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide
     </td>
-     <td>
+ 
+    <td>
 100
     </td>
-     <td>
+ 
+    <td>
 Contrôle carte commerciale en échec.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 30
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide (Luhn)
     </td>
-     <td>
+ 
+    <td>
 101
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Refusé car première échéance refusée.
@@ -11448,17 +14286,22 @@ Refusé car première échéance refusée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 31
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide (longueur)
     </td>
-     <td>
+ 
+    <td>
 102
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 L&#x27;opération a été refusée par Buyster.
@@ -11467,17 +14310,22 @@ L&#x27;opération a été refusée par Buyster.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 32
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide (non trouvé)
     </td>
-     <td>
+ 
+    <td>
 103
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Le statut de la transaction n&#x27;a pas pu être synchronisé avec le système externe
@@ -11486,32 +14334,42 @@ Le statut de la transaction n&#x27;a pas pu être synchronisé avec le système 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 33
     </td>
-     <td>
+ 
+    <td>
 Numéro de carte invalide (non trouvé)
     </td>
-     <td>
+ 
+    <td>
 104
     </td>
-     <td>
+ 
+    <td>
 Une erreur est apparue lors de la remise de cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 34
     </td>
-     <td>
+ 
+    <td>
 Contrôle carte à autorisation systématique en échec. 
     </td>
-     <td>
+ 
+    <td>
 105
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Une erreur de sécurité est apparue lors du processus 3DS de cette transaction.
@@ -11520,47 +14378,62 @@ Une erreur de sécurité est apparue lors du processus 3DS de cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 35
     </td>
-     <td>
+ 
+    <td>
 Contrôle e-Carte Bleue en échec. 
     </td>
-     <td>
+ 
+    <td>
 106
     </td>
-     <td>
+ 
+    <td>
 Devise non supportée pour ce contrat et/ou cette boutique.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 36
     </td>
-     <td>
+ 
+    <td>
 Le contrôle des risques a provoqué le refus de la transaction. 
     </td>
-     <td>
+ 
+    <td>
 107
     </td>
-     <td>
+ 
+    <td>
 La carte associée à l&#x27;alias n&#x27;est plus valide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 37
     </td>
-     <td>
+ 
+    <td>
 Interruption non gérée lors du processus de paiement.
     </td>
-     <td>
+ 
+    <td>
 108
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
@@ -11569,97 +14442,122 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 38
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 109
     </td>
-     <td>
+ 
+    <td>
 Délai d&#x27;attente dépassé lors de la redirection de l&#x27;acheteur.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 39
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Refus 3D Secure pour la transaction.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 110
     </td>
-     <td>
+ 
+    <td>
 Carte de paiement non supportée par le contrat.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 40
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 111
     </td>
-     <td>
+ 
+    <td>
 Refus des transactions sans transfert de responsabilité.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 41
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 112
     </td>
-     <td>
+ 
+    <td>
 L&#x27;annulation n&#x27;est pas autorisée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 42
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Une erreur interne est survenue lors de la consultation du numéro de carte.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 113
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La duplication n&#x27;est pas autorisée.
@@ -11668,21 +14566,26 @@ La duplication n&#x27;est pas autorisée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 43
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Une erreur interne est survenue lors de la consultation du numéro de carte.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 114
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Le forçage n&#x27;est pas autorisé.
@@ -11691,55 +14594,70 @@ Le forçage n&#x27;est pas autorisé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 44
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Il n&#x27;est pas possible de forcer une autorisation à 1 euro
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 115
     </td>
-     <td>
+ 
+    <td>
 Le remboursement n&#x27;est pas autorisé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 45
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Devise invalide pour la modification.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 116
     </td>
-     <td>
+ 
+    <td>
 Paiement manuel non autorisé pour cette carte.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 46
     </td>
-     <td>
+ 
+    <td>
 Le montant est supérieur au montant autorisé.
     </td>
-     <td>
+ 
+    <td>
 118
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Paiement manuel en plusieurs fois non autorisé pour cette carte.
@@ -11748,40 +14666,50 @@ Paiement manuel en plusieurs fois non autorisé pour cette carte.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 47
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La date de présentation souhaitée est postérieure à la date de validité de l&#x27;autorisation.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 119
     </td>
-     <td>
+ 
+    <td>
 La date soumise est invalide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 48
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La modification requise est invalide.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 120
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 L&#x27;option de paiement de la transaction initiale n&#x27;est pas applicable.
@@ -11790,112 +14718,142 @@ L&#x27;option de paiement de la transaction initiale n&#x27;est pas applicable.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 49
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Définition du paiement multiple invalide.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 124
     </td>
-     <td>
+ 
+    <td>
 Carte inactive.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 50
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Boutique inconnue.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 125
     </td>
-     <td>
+ 
+    <td>
 Paiement refusé par l&#x27;acquéreur.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 51
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Cours inconnu.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 126
     </td>
-     <td>
+ 
+    <td>
 Cette action n&#x27;est pas possible car la séquence de paiement n&#x27;est pas terminée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 52
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Le contrat est clos depuis le {0}.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 132
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 53
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La boutique {0} est close depuis le {1}.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 135
     </td>
-     <td>
+ 
+    <td>
 L&#x27;intégration de la page de paiement dans une iframe n&#x27;est pas autorisée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 54
     </td>
-     <td>
+ 
+    <td>
 Paramètre rejeté pouvant contenir des données sensibles {0}.
     </td>
-     <td>
+ 
+    <td>
 136
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Refus des transactions dérivées, sans transfert de responsabilité sur la transaction primaire.
@@ -11904,93 +14862,118 @@ Refus des transactions dérivées, sans transfert de responsabilité sur la tran
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 55
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 137
     </td>
-     <td>
+ 
+    <td>
 La transaction est un doublon.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 57
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Erreur lors de la récupération de l&#x27;alias.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 138
     </td>
-     <td>
+ 
+    <td>
 Le remboursement partiel n&#x27;est pas possible sur cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 58
     </td>
-     <td>
+ 
+    <td>
 Le statut de l&#x27;alias n&#x27;est pas compatible avec cette opération
     </td>
-     <td>
+ 
+    <td>
 139
     </td>
-     <td>
+ 
+    <td>
 Remboursement refusé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 59
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Erreur lors de la récupération de l&#x27;alias.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 141
     </td>
-     <td>
+ 
+    <td>
 L&#x27;analyseur de risque a rejeté cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 60
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Alias existant.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 142
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Le type de carte utilisé n&#x27;est pas valide pour le mode de paiement demandé.
@@ -11999,55 +14982,70 @@ Le type de carte utilisé n&#x27;est pas valide pour le mode de paiement demand�
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 61
     </td>
-     <td>
+ 
+    <td>
 Alias invalide
     </td>
-     <td>
+ 
+    <td>
 143
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 62
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Création d&#x27;un alias refusée.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 144
     </td>
-     <td>
+ 
+    <td>
 Une transaction en mode production a été marquée en mode test chez l&#x27;acquéreur.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 63
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Abonnement déjà existant.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 145
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Une transaction en mode test a été marquée en mode production chez l&#x27;acquéreur.
@@ -12056,55 +15054,70 @@ Une transaction en mode test a été marquée en mode production chez l&#x27;acq
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 64
     </td>
-     <td>
+ 
+    <td>
 Cet abonnement est déjà résilié.
     </td>
-     <td>
+ 
+    <td>
 146
     </td>
-     <td>
+ 
+    <td>
 Code sms invalide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 65
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Cet abonnement est invalide.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 147
     </td>
-     <td>
+ 
+    <td>
 Le module de gestion de fraudes a demandé le refus de cette transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 66
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 La règle de récurrence n&#x27;est pas valide.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 148
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande. La transaction n&#x27;a pas été créée.
@@ -12113,51 +15126,66 @@ Suite à un incident technique, nous ne sommes pas en mesure de traiter votre de
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 67
     </td>
-     <td>
+ 
+    <td>
 Création de l&#x27;abonnement refusée.
     </td>
-     <td>
+ 
+    <td>
 149
     </td>
-     <td>
+ 
+    <td>
 La durée de la session de paiement a expiré (cas de l&#x27;acheteur qui est redirigé vers l&#x27;ACS et qui ne finalise pas l&#x27;authentification 3D Secure).
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 69
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 150
     </td>
-     <td>
+ 
+    <td>
 Suite à un incident technique, nous ne sommes pas en mesure de traiter votre demande. La transaction n&#x27;a pas été créée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 70
     </td>
-     <td>
+ 
+    <td>
 Code pays invalide.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 
@@ -12166,17 +15194,22 @@ Code pays invalide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 71
     </td>
-     <td>
+ 
+    <td>
 Paramètre du service web invalide.
     </td>
-     <td>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 
@@ -12193,12 +15226,15 @@ Paramètre du service web invalide.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -12211,42 +15247,54 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le code de l&#x27;option utilisée.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 103
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -12259,22 +15307,28 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Détails des transactions réalisées.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 json 
   <p>
 
@@ -12284,11 +15338,13 @@ json
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>&quot;trans_id&quot;</b> : identifiant de la transaction global à la séquence de paiement.
    </li>
-    <li>
+ 
+   <li>
 
 <b>&quot;transaction&quot;</b> : tableau des transactions de la séquence. Il contient les éléments suivants :
    </li>
@@ -12300,38 +15356,50 @@ json
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Nom du paramètre
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 amount
     </td>
-     <td>
+ 
+    <td>
 Montant de la séquence de paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 operation_type
     </td>
-     <td>
+ 
+    <td>
 Opération de débit.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 auth_number
     </td>
-     <td>
+ 
+    <td>
 Numéro d&#x27;autorisation retourné par le serveur bancaire, si disponible (sinon vide).
     <p>
 Ce paramètre est retourné vide pour un paiement par e-Chèque-Vacances. En effet, le serveur de titres de l&#x27;ANCV ne le fourni pas.
@@ -12340,20 +15408,25 @@ Ce paramètre est retourné vide pour un paiement par e-Chèque-Vacances. En eff
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 capture_delay
     </td>
-     <td>
+ 
+    <td>
 Délai avant remise (en jours).
     <p>
  
     <ul>
-      <li>
+ 
+     <li>
 Pour un paiement par e-Chèques-Vacances, ce paramètre est valorisé à 
 <b>0</b>. En effet, les e-Chèques-Vacances sont validés en temps réel.
      </li>
-      <li>
+ 
+     <li>
 Pour un paiement par carte bancaire, la valeur de ce paramètre tient compte du délai en nombre de jours avant la remise en banque. Si ce paramètre n&#x27;est pas transmis dans le formulaire de paiement, la valeur par défaut définie dans le Back Office sera utilisée.
      </li>
  
@@ -12364,20 +15437,25 @@ Pour un paiement par carte bancaire, la valeur de ce paramètre tient compte du 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 card_brand
     </td>
-     <td>
+ 
+    <td>
 Moyen de paiement utilisé.
     <p>
  
     <ul>
-      <li>
+ 
+     <li>
 Pour un paiement par e-Chèques-Vacances, ce paramètre est valorisé à 
 <b>E_CV</b>.
      </li>
-      <li>
+ 
+     <li>
 Pour un paiement par carte bancaire (exemple CB ou cartes CB cobrandées Visa ou Mastercard), ce paramètre est valorisé à 
 <b>CB</b>.
      </li>
@@ -12389,19 +15467,24 @@ Pour un paiement par carte bancaire (exemple CB ou cartes CB cobrandées Visa ou
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 card_number
     </td>
-     <td>
+ 
+    <td>
 Numéro du moyen de paiement.
     <p>
  
     <ul>
-      <li>
+ 
+     <li>
 Pour un paiement par e-Chèques-Vacances, ce paramètre est valorisé en concaténant le numéro de chèque - numéro organisme - année d&#x27;émission en les séparant avec le caractère &quot;-&quot;.
      </li>
-      <li>
+ 
+     <li>
 Pour un paiement par carte bancaire, le numéro est masqué.
      </li>
  
@@ -12412,11 +15495,14 @@ Pour un paiement par carte bancaire, le numéro est masqué.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 expiry_month
     </td>
-     <td>
+ 
+    <td>
 Mois d&#x27;expiration de la carte bancaire.
     <p>
 Paramètre absent pour le paiement par e-Chèque-Vacances.
@@ -12425,11 +15511,14 @@ Paramètre absent pour le paiement par e-Chèque-Vacances.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 expiry_year
     </td>
-     <td>
+ 
+    <td>
 Année d&#x27;expiration de la carte bancaire.
     <p>
 Paramètre absent pour le paiement par e-Chèque-Vacances.
@@ -12438,25 +15527,32 @@ Paramètre absent pour le paiement par e-Chèque-Vacances.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 payment_certificate
     </td>
-     <td>
+ 
+    <td>
 Certificat de paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 presentation_date
     </td>
-     <td>
+ 
+    <td>
  
     <p>
  
     <ul>
-      <li>
+ 
+     <li>
 Pour un paiement par carte bancaire, ce paramètre correspond à la date de remise en banque souhaitée (au format ISO 8601).
      </li>
  
@@ -12465,7 +15561,8 @@ Pour un paiement par carte bancaire, ce paramètre correspond à la date de remi
     </p>
  
     <ul>
-      <li>
+ 
+     <li>
 Pour un paiement par e-Chèques-Vacances, ce paramètre correspond à la date du jour de la commande. En effet, les e-Chèques-Vacances sont validés en temps réel auprès du serveur de titres de l&#x27;ANCV.
      </li>
  
@@ -12474,20 +15571,26 @@ Pour un paiement par e-Chèques-Vacances, ce paramètre correspond à la date du
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 trans_id
     </td>
-     <td>
+ 
+    <td>
 Numéro de transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ext_trans_id
     </td>
-     <td>
+ 
+    <td>
 Paramètre absent pour le paiement par carte bancaire.
     <p>
 Pour un paiement par e-Chèques-Vacances, ce paramètre est un identifiant technique généré par la plateforme de paiement (référence de transaction).
@@ -12496,20 +15599,26 @@ Pour un paiement par e-Chèques-Vacances, ce paramètre est un identifiant techn
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 sequence_number
     </td>
-     <td>
+ 
+    <td>
 Numéro de séquence.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 trans_status
     </td>
-     <td>
+ 
+    <td>
 Statut de la transaction.
     </td>
  
@@ -12527,12 +15636,15 @@ Statut de la transaction.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -12545,87 +15657,114 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir l’origine du paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 60
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 EC
     </td>
-     <td>
+ 
+    <td>
 E-commerce : paiement réalisé depuis la page de paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 MOTO
     </td>
-     <td>
+ 
+    <td>
 MAIL OR TELEPHONE ORDER : paiement effectué par un opérateur suite à une commande par téléphone ou e-mail.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CC
     </td>
-     <td>
+ 
+    <td>
 Call center : paiement effectué via un centre d’appel.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 OTHER
     </td>
-     <td>
+ 
+    <td>
 Autre : paiement réalisé depuis une autre source comme le Back Office exemple.
     </td>
  
@@ -12638,12 +15777,15 @@ Autre : paiement réalisé depuis une autre source comme le Back Office exemple.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -12656,12 +15798,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -12670,22 +15815,28 @@ Code pays de l’adresse IP de l’acheteur à la norme ISO 3166.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 a2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -12698,24 +15849,29 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Date de remise en banque demandée.
    <p>
 ou
    </p>
 
    </li>
-    <li>
+ 
+   <li>
 Date de l&#x27;échéance demandée dans le cadre d&#x27;un prélèvement SEPA.
    </li>
  
@@ -12726,22 +15882,28 @@ Date de l&#x27;échéance demandée dans le cadre d&#x27;un prélèvement SEPA.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n14
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -12754,12 +15916,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le montant des différents articles contenus dans le panier.
   <p>
 N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le deuxième etc...)
@@ -12772,32 +15937,41 @@ Le montant sera exprimé dans l&#x27;unité la plus petite de la devise. Le cent
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 102
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -12810,12 +15984,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le libéllé de chacun des articles contenus dans le panier.
   <p>
 N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le deuxième etc...)
@@ -12824,12 +16001,15 @@ N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le d
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..255
   <p>
 
@@ -12847,22 +16027,28 @@ an..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 97
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -12875,12 +16061,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir la quantité de chacun des articles contenus dans le panier.
   <p>
 N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le deuxième etc...)
@@ -12889,32 +16078,41 @@ N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le d
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 101
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -12927,12 +16125,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir une référence pour chacun des articles contenus dans le panier.
   <p>
 N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le deuxième etc...)
@@ -12941,32 +16142,41 @@ N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le d
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..64
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 100
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -12979,12 +16189,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le type de l&#x27;article contenu dans le panier.
   <p>
 N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le deuxième etc...)
@@ -12993,28 +16206,36 @@ N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le d
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 98
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
 
@@ -13022,160 +16243,212 @@ string (enum)
   </p>
  
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 FOOD_AND_GROCERY
     </td>
-     <td>
+ 
+    <td>
 Produits alimentaires et d&#x27;épicerie
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 AUTOMOTIVE
     </td>
-     <td>
+ 
+    <td>
 Automobile / Moto
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 ENTERTAINMENT
     </td>
-     <td>
+ 
+    <td>
 Divertissement / Culture
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 HOME_AND_GARDEN
     </td>
-     <td>
+ 
+    <td>
 Maison et jardin
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 HOME_APPLIANCE
     </td>
-     <td>
+ 
+    <td>
 Equipement de la maison
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 AUCTION_AND_GROUP_BUYING
     </td>
-     <td>
+ 
+    <td>
 Ventes aux enchères et achats groupés
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 FLOWERS_AND_GIFTS|
     </td>
-     <td>
+ 
+    <td>
 Fleurs et cadeaux
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 COMPUTER_AND_SOFTWARE
     </td>
-     <td>
+ 
+    <td>
 Ordinateurs et logiciels
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 HEALTH_AND_BEAUTY
     </td>
-     <td>
+ 
+    <td>
 Santé et beauté
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SERVICE_FOR_INDIVIDUAL
     </td>
-     <td>
+ 
+    <td>
 Services à la personne
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SERVICE_FOR_BUSINESS
     </td>
-     <td>
+ 
+    <td>
 Services aux entreprises
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 SPORTS
     </td>
-     <td>
+ 
+    <td>
 Sports
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CLOTHING_AND_ACCESSORIES
     </td>
-     <td>
+ 
+    <td>
 Vêtements et accessoires
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 TRAVEL
     </td>
-     <td>
+ 
+    <td>
 Voyage
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 HOME_AUDIO_PHOTO_VIDEO
     </td>
-     <td>
+ 
+    <td>
 Son, image et vidéo
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 TELEPHONY
     </td>
-     <td>
+ 
+    <td>
 Téléphonie
     </td>
  
@@ -13188,12 +16461,15 @@ Téléphonie
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -13206,12 +16482,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le montant de la taxe pour chacun des articles contenu dans le panier.
   <p>
 N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le deuxième etc...)
@@ -13220,12 +16499,15 @@ N correspond à l&#x27;indice de l&#x27;article. (0 pour le premier, 1 pour le d
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 n..12 
@@ -13234,18 +16516,23 @@ n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 203
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
 
@@ -13253,10 +16540,12 @@ n..12
   </p>
  
   </td>
-   <td>
+ 
+  <td>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>Un entier sans décimal</b> 
    <p>
@@ -13274,7 +16563,8 @@ Exemple en euros
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>Un entier avec décimal inférieur à 100</b>
    <p>
@@ -13290,11 +16580,13 @@ Exemples : 20.0 ou 19.6532
 <i>
 <u>Remarques : </u></i>
    <ul>
-     <li>
+ 
+    <li>
 
 <i>La décimale est obligatoire pour exprimer un pourcentage</i>.
     </li>
-     <li>
+ 
+    <li>
 
 <i>La décimale est marquée par le caractère &quot;
 <b>.</b>&quot;</i>.
@@ -13313,12 +16605,15 @@ Exemples : 20.0 ou 19.6532
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -13331,12 +16626,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -13345,22 +16643,28 @@ Numéro de l&#x27;échéance de l&#x27;abonnement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -13373,12 +16677,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -13395,41 +16702,53 @@ Présent uniquement si l’action demandée correspond à la création d&#x27;un
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>CREATED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 L’abonnement a été créé avec succès.
@@ -13438,22 +16757,28 @@ Le détail de l’abonnement est visible dans le Back Office.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>NOT_CREATED</b>
     </td>
-     <td>
+ 
+    <td>
 L’abonnement n’a pas été créé et n’est pas visible dans le Back Office.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>ABANDONED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 La demande de création de l’abonnement a été abandonnée par l’acheteur (débiteur). 
@@ -13470,12 +16795,15 @@ L’abonnement n’a pas été créé et n’est pas visible dans le Back Office
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -13488,42 +16816,54 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de spécifier le message en cas de paiement refusé dans le cas d’une redirection automatique vers le site marchand.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 37
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -13536,42 +16876,54 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de spécifier le message en cas de paiement refusé dans le cas d’une redirection automatique vers le site marchand.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 37
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -13584,12 +16936,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir un délai en secondes avant redirection automatique vers le site marchand à la fin d’un paiement refusé. 
   <p>
 Sa valeur est comprise entre 
@@ -13607,32 +16962,41 @@ Passé ce délai, l&#x27;acheteur sera dirigé vers l&#x27;URL renseignée dans 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 36
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -13645,42 +17009,54 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de spécifier le message à la fin d’un paiement accepté dans le cas d’une redirection automatique vers le site marchand.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 35
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -13693,12 +17069,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir un délai en secondes avant redirection automatique vers le site marchand à la fin d’un paiement accepté. 
   <p>
 Sa valeur est comprise entre 0 et 600s.
@@ -13710,32 +17089,41 @@ Passé ce délai, l&#x27;acheteur sera dirigé vers l&#x27;URL renseignée dans 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 34
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -13748,12 +17136,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Code retour de l&#x27;action demandée.
@@ -13762,85 +17153,112 @@ Code retour de l&#x27;action demandée.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 00
     </td>
-     <td>
+ 
+    <td>
 Action réalisée avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 02
     </td>
-     <td>
+ 
+    <td>
 Le marchand doit contacter la banque du porteur. Déprécié.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 05
     </td>
-     <td>
+ 
+    <td>
 Action refusée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 17
     </td>
-     <td>
+ 
+    <td>
 Annulation de l&#x27;acheteur
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 30
     </td>
-     <td>
+ 
+    <td>
 Erreur de format de la requête. A mettre en rapport avec la valorisation du champ vads_extra_result.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 96
     </td>
-     <td>
+ 
+    <td>
 Erreur technique.
     </td>
  
@@ -13853,12 +17271,15 @@ Erreur technique.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -13871,38 +17292,49 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de spécifier la méthode de transmission des données utilisée lors du retour vers le site marchand.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 48
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -13910,52 +17342,67 @@ string (enum)
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Nom du champ
     </td>
-     <td>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 vads_return_mode
     </td>
-     <td>
+ 
+    <td>
 absent, vide ou 
 <b>NONE</b>
     </td>
-     <td>
+ 
+    <td>
 Aucun paramètre ne sera passé à l’URL de retour vers le site marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>GET</b>
     </td>
-     <td>
+ 
+    <td>
 Les champs de retour seront transmis à l’URL de retour sous la forme d’un formulaire HTTP GET (dans la « query string »).
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>POST</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 Les champs de retour seront transmis à l’URL de retour sous la forme d’un formulaire HTTP POST.
@@ -13973,12 +17420,15 @@ Si le retour boutique se fait sur un environnement
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -13991,12 +17441,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Retourne le résultat de l&#x27;analyse de fraude effectuée par un système externe (ClearSale, CyberSource,...).
@@ -14009,74 +17462,96 @@ Renvoyé dans l&#x27;URL de notification instantanée (également appelée IPN) 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Valeurs communes à tous les analyseurs de risques
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>INVALID_CREDENCIAL</b>
     </td>
-     <td>
+ 
+    <td>
 Problème de paramétrage du contrat d’analyse de risques.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>COMUNICATION_PROBLEM</b>
     </td>
-     <td>
+ 
+    <td>
 Impossible de communiquer avec l’analyseur de risques.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>DATA_PROCESSING_PROBLEM</b>
     </td>
-     <td>
+ 
+    <td>
 Problème lors du traitement de l’envoi ou de la réponse d’analyse de risques.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MISSING_MANDATORY_ORDER_INFO</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Des données relatives à la commande sont manquantes.
@@ -14085,12 +17560,15 @@ Des données relatives à la commande sont manquantes.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MISSING_MANDATORY_SHIPPING_INFO </b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Des données relatives à la livraison sont manquantes.
@@ -14099,12 +17577,15 @@ Des données relatives à la livraison sont manquantes.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MISSING_MANDATORY_SHIPPING_ADDRESS_INFO</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Des données relatives à l’adresse de livraison sont manquantes.
@@ -14113,18 +17594,23 @@ Des données relatives à l’adresse de livraison sont manquantes.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MISSING_MANDATORY_BILLING_INFO</b>
     </td>
-     <td>
+ 
+    <td>
 Des données relatives à la facturation sont manquantes. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
  
     <p>
 
@@ -14132,17 +17618,21 @@ Des données relatives à la facturation sont manquantes.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 Des données relatives à l’adresse de facturation sont manquantes
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MISSING_MANDATORY_CARD_INFO</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Des données concernant le moyen de paiement sont manquantes.
@@ -14151,12 +17641,15 @@ Des données concernant le moyen de paiement sont manquantes.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MISSING_MANDATORY_CUSTOMER_INFO</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Des données concernant l’acheteur sont manquantes.
@@ -14169,116 +17662,149 @@ Des données concernant l’acheteur sont manquantes.
   </table>
  
   <table>
-          <tr>
-     <td>
+       
+   <tr>
+ 
+    <td>
 ClearSale
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>APA</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Automatically approved</b>
     </td>
-     <td>
+ 
+    <td>
 La transaction est automatiquement approuvée selon les paramètres définis.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>APM</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Manually approved - order manually approved by analyst&#x27;s decision</b>
     </td>
-     <td>
+ 
+    <td>
 La transaction est manuellement approuvée par un analyste. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>RPM</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Reproved with no suspect</b>
     </td>
-     <td>
+ 
+    <td>
 La commande est refusée en raison du manque d&#x27;informations sur l&#x27;acheteur en accord avec la politique appliquée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>AMA</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Waiting for manual analysis - order is in a queue waiting for analysis</b>
     </td>
-     <td>
+ 
+    <td>
 En attente d&#x27;analyse manuelle. La commande est dans une file d&#x27;attente pour analyse.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>ERR</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Error</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>NVO</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>New order - order waiting for score</b>
     </td>
-     <td>
+ 
+    <td>
 Nouvelle commande. En attente de traitement et de classification.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SUS</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Suspended order - order suspended by fraud suspicion</b>
     </td>
-     <td>
+ 
+    <td>
 Commande suspendue manuellement. La commande est suspendue pour suspicion de fraude.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CAN</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 
@@ -14286,49 +17812,62 @@ Commande suspendue manuellement. La commande est suspendue pour suspicion de fra
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 Commande annulée. La commande est annulée par l&#x27;acheteur.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>FRD</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Order confirmed as a fraud</b>
     </td>
-     <td>
+ 
+    <td>
 Fraude confirmée avec l&#x27;opérateur de la carte de crédit ou du titulaire de la carte.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>RPA</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Automatically reproved based on parameters within risk analyzer</b>
     </td>
-     <td>
+ 
+    <td>
 Commande refusée automatiquement. La commande est refusée en application des paramètres de l&#x27;analyseur de fraude externe. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>RPP</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Automatically reproved based customer or ClearSale policy</b>
     </td>
-     <td>
+ 
+    <td>
 Commande refusée automatiquement. La commande est refusée en application de la politique client ou ClearSale.
     </td>
  
@@ -14337,116 +17876,149 @@ Commande refusée automatiquement. La commande est refusée en application de la
   </table>
  
   <table>
-          <tr>
-     <td>
+       
+   <tr>
+ 
+    <td>
 CyberSource
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>100</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>SUCCESS</b>
     </td>
-     <td>
+ 
+    <td>
 La transaction s&#x27;est effectuée avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>101</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>MISSING_FIELDS</b>
     </td>
-     <td>
+ 
+    <td>
 La transaction est refusée. Un ou plusieurs champs sont manquants. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>102</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>INVALID_FIELDS</b>
     </td>
-     <td>
+ 
+    <td>
 La transaction est refusée. Un ou plusieurs champs contient des données invalides.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>150</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>ERROR_GENERAL_SYSTEM_FAILURE</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>151</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>SERVER_TIME_OUT</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur. La requête a été reçue mais le délai a été dépassé. Cette erreur n&#x27;inclue pas les dépassements de délais entre le client et le serveur. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>152</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>SERVICE_TIME_OUT</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur. La requête a été reçue mais un service n&#x27;a pas terminé à temps.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>202</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>CARD_EXPIRED</b>
     </td>
-     <td>
+ 
+    <td>
 Refusée. Carte expirée. 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>231</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 
@@ -14454,63 +18026,80 @@ Refusée. Carte expirée.
     </p>
  
     </td>
-     <td>
+ 
+    <td>
 Refusée. Numéro de compte invalide.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>234</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>ACCOUNT_PROBLEM</b>
     </td>
-     <td>
+ 
+    <td>
 Refusé. Un problème est survenu avec la configuration CyberSource du marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>400</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>FRAUD_SCORE_TOO_HIGH</b>
     </td>
-     <td>
+ 
+    <td>
 Refusée. Le score de la fraude dépasse le seuil de tolérance.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>480</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>SUCCESS_TO_REVIEW</b>
     </td>
-     <td>
+ 
+    <td>
 La commande est marquée afin d&#x27;être examinée par le Decision Manager.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>481</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>SUCCESS_TO_REJECT</b>
     </td>
-     <td>
+ 
+    <td>
 La commande a été rejetée par le Decision Manager.
     </td>
  
@@ -14523,12 +18112,15 @@ La commande a été rejetée par le Decision Manager.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -14541,12 +18133,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Retourne le résultat de l&#x27;analyse de gestion des risques avancée effectuée par la plateforme de paiement.
@@ -14559,64 +18154,84 @@ Renvoyé dans l&#x27;URL de notification instantanée (également appelée IPN) 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
  
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Valeurs
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 ENABLE_3DS
     </td>
-     <td>
+ 
+    <td>
 3D Secure activé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 DISABLE_3DS
     </td>
-     <td>
+ 
+    <td>
 3D Secure désactivé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 MANUAL_VALIDATION
     </td>
-     <td>
+ 
+    <td>
 La transaction est créée en validation manuelle.
     <p>
 La remise du paiement est bloquée temporairement pour permettre au marchand de procéder à toutes les vérifications souhaitées.
@@ -14625,20 +18240,26 @@ La remise du paiement est bloquée temporairement pour permettre au marchand de 
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 REFUSE
     </td>
-     <td>
+ 
+    <td>
 La transaction est refusée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 RUN_RISK_ANALYSIS
     </td>
-     <td>
+ 
+    <td>
 Appel à un analyseur de risques externes sous condition que le marchand possède un contrat.
     <p>
 Se référer à la description du champ 
@@ -14648,11 +18269,14 @@ Se référer à la description du champ
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 INFORM
     </td>
-     <td>
+ 
+    <td>
 Une alerte est remontée. 
     <p>
 Le marchand est averti qu’un risque est identifié.
@@ -14673,12 +18297,15 @@ Le marchand est informé via une ou plusieurs des règles du centre de notificat
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -14691,12 +18318,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Permet de définir le résultat du contrôle des risques.
@@ -14705,141 +18335,183 @@ Permet de définir le résultat du contrôle des risques.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 contrôle1=resultat1;contrôle2=resultat2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>CARD_FRAUD </b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle la présence du numéro de carte de l&#x27;acheteur dans la liste grise de cartes.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SUSPECT_COUNTRY</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle la présence du pays émetteur de la carte de l&#x27;acheteur dans la liste de pays interdits.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>IP_FRAUD</b> 
     </td>
-     <td>
+ 
+    <td>
 Contrôle la présence de l&#x27;adresse IP de l&#x27;acheteur dans la liste grise d&#x27;IP.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CREDIT_LIMIT </b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle la fréquence et les montants d&#x27;achat d&#x27;un même numéro de carte, ou le montant maximum d&#x27;une commande.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>BIN_FRAUD</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle la présence du code BIN de la carte de l&#x27;acheteur dans la liste grise de codes BIN.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>ECB</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle si la carte de l&#x27;acheteur est de type e-carte bleue.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CARD_COMMERCIAL </b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle si la carte de l&#x27;acheteur est une carte commerciale.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SYSTEMATIC_AUTO</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle si la carte de l&#x27;acheteur est une carte à autorisation systématique.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>INCONSISTENT_COUNTRIES</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle si le pays de l&#x27;adresse IP, le pays émétteur de la carte de paiement, et le pays de l&#x27;adresse de l&#x27;acheteur sont cohérents entre eux.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>NON_WARRANTY_PAYMENT</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle le transfert de responsabilité de la transaction.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SUSPECT_IP_COUNTRY</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle la présence du pays de l&#x27;acheteur, identifié par son adresse IP, dans la liste de pays interdits.
     </td>
  
@@ -14853,41 +18525,53 @@ Contrôle la présence du pays de l&#x27;acheteur, identifié par son adresse IP
 Les différentes valeurs possibles pour ‘
 <b>résultat’</b> sont :
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>OK</b>
     </td>
-     <td>
+ 
+    <td>
 OK
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>WARNING</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle informatif échoué
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>ERROR</b>
     </td>
-     <td>
+ 
+    <td>
 Contrôle bloquant échoué
     </td>
  
@@ -14900,12 +18584,15 @@ Contrôle bloquant échoué
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -14918,12 +18605,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Spécifique au don (ou transaction secondaire).
   <p>
 
@@ -14937,68 +18627,89 @@ Permet de surcharger la configuration du contrôle de risque
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 117
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 DEFAULT ou vide
     </td>
-     <td>
+ 
+    <td>
 Valeur par défaut. Utilisation de la configuration de la boutique cible.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 IGNORE
     </td>
-     <td>
+ 
+    <td>
 Ignore la valeur du transfert de responsabilité de la transaction primaire avant de créer la transaction secondaire.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 CHECK
     </td>
-     <td>
+ 
+    <td>
 Force le contrôle du transfert de responsabilité de la transaction primaire avant de créer la transaction secondaire.
     </td>
  
@@ -15011,12 +18722,15 @@ Force le contrôle du transfert de responsabilité de la transaction primaire av
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur les transactions de don
   </td>
  
@@ -15029,12 +18743,15 @@ Information sur les transactions de don
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Champ retourné dans la réponse.
@@ -15067,12 +18784,15 @@ Pour un paiement en plusieurs fois, ce champ prendra la valeur 1 pour la premiè
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -15085,42 +18805,54 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir la ville de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..128
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 83
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15133,48 +18865,62 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le code pays de l’acheteur à la norme ISO 3166.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 a2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 86
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemples de valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
     </td>
  
@@ -15187,12 +18933,15 @@ a2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15205,42 +18954,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le nom du transporteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 96
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15253,42 +19014,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le quartier.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 115
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15301,42 +19074,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le prénom de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 106
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15349,42 +19134,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le nom de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 107
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15397,42 +19194,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Raison sociale de lieu de livraison.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..100
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 125
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15445,42 +19254,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Raison sociale de lieu de livraison.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..100
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 125
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15493,42 +19314,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le nom de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 80
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15541,42 +19374,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le numéro de téléphone de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..32
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 87
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15589,54 +19434,69 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le mode de livraison.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 95
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>STANDARD</b>, 
 <b>EXPRESS</b>
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15649,54 +19509,69 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le type d&#x27;adresse de livraison.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 93
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>PRIVATE</b>, 
 <b>COMPANY</b>
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15709,42 +19584,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir l&#x27;état de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 84
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15757,42 +19644,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir l&#x27;adresse de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 81
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15805,42 +19704,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir l&#x27;adresse de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 81
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15853,42 +19764,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir la deuxième ligne d&#x27;adresse de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 82
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15901,42 +19824,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le numéro de rue.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..5
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 114
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -15949,61 +19884,78 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le type de livraison.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 94
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <b>RECLAIM_IN_SHOP</b> pour le retrait de la marchandise en magasin.
    </li>
-    <li>
+ 
+   <li>
 
 <b>RELAY_POINT</b> pour l&#x27;utilisation d&#x27;un réseau de points de retrait tiers (Kiala, Alveol, etc).
    </li>
-    <li>
+ 
+   <li>
 
 <b>RECLAIM_IN_STATION</b> pour le retrait dans un aéroport, une garde ou une agence de voyage.
    </li>
-    <li>
+ 
+   <li>
 
 <b>PACKAGE_DELIVERY_COMPANY</b> pour la livraison par transporteur (Colissimo, UPS, etc).
    </li>
-    <li>
+ 
+   <li>
 
 <b>ETICKET</b> pour l&#x27;émission d&#x27;un billet électronique, téléchargement.
    </li>
@@ -16013,12 +19965,15 @@ string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -16031,12 +19986,15 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Information sur l’utilisateur à l’origine du paiement.
   <p>
 
@@ -16061,32 +20019,41 @@ Ce paramètre sera renvoyé dans la réponse avec la valeur transmise dans la re
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 116
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -16099,42 +20066,54 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le code postal de l&#x27;acheteur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 an..64
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 85
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la livraison.
   </td>
  
@@ -16147,12 +20126,15 @@ Informations sur la livraison.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Permet de définir le montant des frais de livraison pour l’ensemble de la commande.
@@ -16161,32 +20143,41 @@ Permet de définir le montant des frais de livraison pour l’ensemble de la com
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 109
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -16199,42 +20190,54 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Permet de définir le nom de la boutique qui apparait dans les e-mails de confirmation de paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 72
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Personnalisation de la page de paiement.
   </td>
  
@@ -16247,12 +20250,15 @@ Personnalisation de la page de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL de la boutique qui apparait sur la page de paiement et les e-mails de confirmation de paiement.
   <p>
 Ce paramètre permet de surcharger la valeur par défaut de votre boutique.
@@ -16261,32 +20267,41 @@ Ce paramètre permet de surcharger la valeur par défaut de votre boutique.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 73
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Personnalisation de la page de paiement.
   </td>
  
@@ -16299,12 +20314,15 @@ Personnalisation de la page de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Paramètre obligatoire.
@@ -16336,32 +20354,41 @@ Un e-mail d&#x27;alerte est alors envoyé au contact administratif de la boutiqu
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n8
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 02
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -16374,12 +20401,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre facultatif utilisé dans le cas de la création d&#x27;un abonnement. Il désigne l&#x27;identifiant de l&#x27;abonnement à créer.
   <p>
 Deux options sont possibles : 
@@ -16388,7 +20418,8 @@ Deux options sont possibles :
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Soit la gestion de ces identifiants est déléguée à la plateforme.
    <p>
 Dans ce cas, ce paramètre ne doit pas être renseigné.
@@ -16399,7 +20430,8 @@ En cas de succès de la création de l’abonnement, la réponse contiendra la v
    </p>
 
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Soit la gestion de ces identifiants est faite par le site marchand.
@@ -16419,32 +20451,41 @@ Dans ce cas, ce paramètre doit être renseigné avec la valeur de l’identifia
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..50
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 63
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16457,12 +20498,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire utilisé dans le cas de la création d&#x27;un abonnement. 
   <p>
 Il fait référence au montant des échéances de l’abonnement pour toutes les échéances, hormis celles éventuellement définies par 
@@ -16480,32 +20524,41 @@ Exemple : pour un montant de 10 euros et 28 centimes, la valeur du paramètre es
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 65
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16518,12 +20571,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire utilisé dans le cas de la création d&#x27;un abonnement. 
   <p>
 Il indique la monnaie à utiliser pour l’abonnement, selon la norme ISO 4217. 
@@ -16532,28 +20588,36 @@ Il indique la monnaie à utiliser pour l’abonnement, selon la norme ISO 4217.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Exemples de valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
 Les devises possibles sont les suivantes :
   <p>
  
   <table>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
     </td>
  
@@ -16566,22 +20630,28 @@ Les devises possibles sont les suivantes :
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 67
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16594,12 +20664,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire utilisé dans le cas de la création d&#x27;un abonnement. 
   <p>
 Il définit la règle de l’abonnement à appliquer.
@@ -16630,7 +20703,8 @@ Les mots clés &quot;SECONDLY&quot; / &quot;MINUTELY&quot; / &quot;HOURLY&quot; 
   <p>
 Exemples : 
   <ul>
-    <li>
+ 
+   <li>
  
    <p>
 Pour définir des échéances de paiement ayant lieu le dernier jour de chaque mois, pendant 12 mois, la règle s’écrit : 
@@ -16655,7 +20729,8 @@ Une autre version de cette règle :
    </p>
  
    </li>
-    <li>
+ 
+   <li>
 Pour définir des échéances de paiement ayant lieu le 10 de chaque mois, pendant 12 mois, alors la règle d’abonnement s’écrit de la manière suivante : 
 <b>RRULE:FREQ=MONTHLY;COUNT=12;BYMONTHDAY=10</b> 
    <p>
@@ -16663,7 +20738,8 @@ Pour définir des échéances de paiement ayant lieu le 10 de chaque mois, penda
    </p>
 
    </li>
-    <li>
+ 
+   <li>
 Pour définir des échéances de paiement ayant lieu chaque trimestre, jusqu’au 31/12/2016 : 
 <b>RRULE:FREQ=YEARLY;BYMONTHDAY=1;BYMONTH=1,4,7,10;UNTIL=20161231</b> 
    <p>
@@ -16688,32 +20764,41 @@ Pour plus de détails et d&#x27;exemples vous pouvez consulter le site <a href="
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 64
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16726,42 +20811,54 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire utilisé dans la création d&#x27;un abonnement qui permet de définir une date d&#x27;effet de l&#x27;abonnement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n8
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 69
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16774,12 +20871,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre facultatif utilisé lors de la création d&#x27;un abonnement. Représente le montant des échéances de l’abonnement pour les 
 <u>premières échéances</u>. 
   <p>
@@ -16800,32 +20900,41 @@ Exemple : pour un montant de 10 euros et 28 centimes, la valeur du paramètre es
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 66
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16838,12 +20947,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre facultatif utilisé dans le cas de la création d&#x27;un abonnement. Représente le nombre d’échéances auxquelles il faudra appliquer le montant 
 <b>vads_sub_init_amount</b>. 
   <p>
@@ -16859,16 +20971,20 @@ Une fois ce nombre d’échéances dépassé, c’est le montant
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 vads_sub_currency = 978
    </li>
-    <li>
+ 
+   <li>
 vads_sub_init_amount_number = 3 
    </li>
-    <li>
+ 
+   <li>
 vads_sub_init_amount = 2500 
    </li>
-    <li>
+ 
+   <li>
 vads_sub_amount = 3000
    </li>
  
@@ -16879,32 +20995,41 @@ vads_sub_amount = 3000
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 68
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;abonnement.
   </td>
  
@@ -16917,12 +21042,15 @@ Informations sur l&#x27;abonnement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre qui permet de définir le montant des taxes pour l’ensemble de la commande.
   <p>
 La valeur doit être exprimée dans la plus petite unité monétaire (le centime pour l&#x27;Euro).
@@ -16935,32 +21063,41 @@ Spécifique au moyen de paiement PayPal.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..12
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 108
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la commande.
   </td>
  
@@ -16973,12 +21110,15 @@ Informations sur la commande.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Permet de personnaliser certains éléments de la page de paiement : logos, bandeaux et certains messages (Certaines fonctionnalités sont 
@@ -17020,28 +21160,36 @@ Les fonctionnalités avancées (soumises à option) sont décrites dans le guide
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 Code1=Valeur1;Code2=Valeur2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 32
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -17049,46 +21197,59 @@ Code1=Valeur1;Code2=Valeur2
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Code
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>SUCCESS_FOOTER_MSG_RETURN</b>
     </td>
-     <td>
+ 
+    <td>
 Libellé remplaçant « Retour à la boutique » lors d’un paiement réalisé avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CANCEL_FOOTER_MSG_RETURN</b>
     </td>
-     <td>
+ 
+    <td>
 Libellé remplaçant « Annuler et retourner à la boutique » pendant les phases de sélection puis de saisie de carte, et en cas d’échec du paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SECURE_ MESSAGE</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Valeur par défaut : 
@@ -17098,12 +21259,15 @@ Valeur par défaut :
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SECURE_MESSAGE_REGISTER</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Valeur par défaut : 
@@ -17113,12 +21277,15 @@ Valeur par défaut :
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>SITE_ID_LABEL</b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Valeur par défaut : 
@@ -17128,8 +21295,10 @@ Valeur par défaut :
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CSS_FOR_PAYMENT</b>
     <p>
@@ -17153,18 +21322,22 @@ Valeur par défaut :
     </p>
 
     </td>
-     <td>
+ 
+    <td>
 Voir guide 
 <b>Personnalisation avancée de la page de paiement</b>.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CTRL_RISK_CARD_NOT_ACCEPTED</b>
     </td>
-     <td>
+ 
+    <td>
 Valeur par défaut : 
 <i>Votre demande de paiement a été refusée par votre établissement bancaire.</i>
     <p>
@@ -17190,12 +21363,15 @@ Permet de surcharger le libellé de refus lorsqu&#x27;une e-carte bleue est util
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Personnalisation de la page de paiement.
   </td>
  
@@ -17208,12 +21384,15 @@ Personnalisation de la page de paiement.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Désigne la vérification de l’authentification du porteur par l’ACS. Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’acheteur s’est correctement authentifié (vads_threeds_status vaut « Y » ou « A »).
@@ -17222,32 +21401,41 @@ Désigne la vérification de l’authentification du porteur par l’ACS. Il est
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..28
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 52
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -17260,12 +21448,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Algorithme utilisé par l’ACS pour générer la valeur du cavv.
@@ -17278,28 +21469,36 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’achet
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 55
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -17307,52 +21506,68 @@ n1
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 0
     </td>
-     <td>
+ 
+    <td>
 HMAC
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 CVV
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 2
     </td>
-     <td>
+ 
+    <td>
 CVV_ATN
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 3
     </td>
-     <td>
+ 
+    <td>
 MasterCard SPA
     </td>
  
@@ -17365,12 +21580,15 @@ MasterCard SPA
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -17383,12 +21601,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Désigne l’Indicateur de Commerce Electronique.
@@ -17397,66 +21618,84 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’achet
   <p>
  
   <table>
-           <tr>
-     <td>
+        
+   <tr>
+ 
+    <td>
 
     </td>
-     <td>
+ 
+    <td>
 
 <b>status</b> = 
 <b>Y</b> 
     </td>
-     <td>
+ 
+    <td>
 
 <b>status</b> = 
 <b>A</b> 
     </td>
-     <td>
+ 
+    <td>
 
 <b>status</b> = 
 <b>U</b> 
     </td>
-     <td>
+ 
+    <td>
 
 <b>status</b> = 
 <b>N</b> 
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>VISA</b>
     </td>
-     <td>
+ 
+    <td>
  5
     </td>
-     <td>
+ 
+    <td>
 6
     </td>
-     <td>
+ 
+    <td>
 7
     </td>
-     <td>
+ 
+    <td>
 -
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MasterCard</b>
     </td>
-     <td>
+ 
+    <td>
  02
     </td>
-     <td>
+ 
+    <td>
 01
     </td>
-     <td>
+ 
+    <td>
 -
     </td>
-     <td>
+ 
+    <td>
 -
     </td>
  
@@ -17469,32 +21708,41 @@ Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque l’achet
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 53
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -17507,12 +21755,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Désigne le statut de l’enrôlement du porteur. Il est valorisé par les serveurs VISA et MASTERCARD (DS) durant le processus 3D Secure.
@@ -17521,28 +21772,36 @@ Désigne le statut de l’enrôlement du porteur. Il est valorisé par les serve
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 a1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 51
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -17550,43 +21809,56 @@ a1
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Y
     </td>
-     <td>
+ 
+    <td>
 Porteur enrôlé, authentification 3DS possible.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 N
     </td>
-     <td>
+ 
+    <td>
 Porteur non enrôlé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 U
     </td>
-     <td>
+ 
+    <td>
 Impossible de vérifier le statut d’enrôlement.
     </td>
  
@@ -17599,12 +21871,15 @@ Impossible de vérifier le statut d’enrôlement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -17617,12 +21892,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Statut final du processus 3D Secure.
@@ -17635,18 +21913,23 @@ Il est valorisé par la plateforme de paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n..2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -17654,180 +21937,238 @@ n..2
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 0
     </td>
-     <td>
+ 
+    <td>
 Statut initial
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 Statut non applicable (global, raison non détaillée)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 2
     </td>
-     <td>
+ 
+    <td>
 Statut non applicable (integrator disabled)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 3
     </td>
-     <td>
+ 
+    <td>
 Paiement non e-commerce
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 4
     </td>
-     <td>
+ 
+    <td>
 Paiement sans 3DS (paiement par alias, PayPal, Cetelem, etc.)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 5
     </td>
-     <td>
+ 
+    <td>
 Marchand non enrôlé, pas de 3DS
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 6
     </td>
-     <td>
+ 
+    <td>
 Erreur technique lors du processus 3DS, pas de 3DS
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 7
     </td>
-     <td>
+ 
+    <td>
 
 <b>Porteur non enrôlé, pas de 3DS</b>
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 8
     </td>
-     <td>
+ 
+    <td>
 Signature invalide
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 9
     </td>
-     <td>
+ 
+    <td>
 Problème venant de l&#x27;ACS
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 10
     </td>
-     <td>
+ 
+    <td>
 
 <b>Le processus 3DS s&#x27;est déroulé correctement</b>
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 11
     </td>
-     <td>
+ 
+    <td>
 Le processus 3DS a été fait par l&#x27;intégrateur
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 12
     </td>
-     <td>
+ 
+    <td>
 Problème venant du DS
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 13
     </td>
-     <td>
+ 
+    <td>
 Délai dépassé (timeout) lors d&#x27;une connexion au DS
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 15
     </td>
-     <td>
+ 
+    <td>
 Canal de paiement pour lequel 3DS n&#x27;est pas disponible (paiements par fichier...)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 16
     </td>
-     <td>
+ 
+    <td>
 Type carte et réseau elligible au 3DS, mais pas de &quot;brand&quot; associée à la carte (CB pure)
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 98
     </td>
-     <td>
+ 
+    <td>
 L&#x27;initialisation du processus 3DS est OK
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 99
     </td>
-     <td>
+ 
+    <td>
 Statut inconnu
     </td>
  
@@ -17844,12 +22185,15 @@ Statut inconnu
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -17862,12 +22206,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Active / désactive le processus 3DS lors d’un paiement e-commerce.
@@ -17876,28 +22223,36 @@ Active / désactive le processus 3DS lors d’un paiement e-commerce.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 50
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -17905,25 +22260,32 @@ n1
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 absent ou vide
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Authentification 3DS gérée par la plateforme de paiement (configuration du marchand).
@@ -17932,11 +22294,14 @@ Authentification 3DS gérée par la plateforme de paiement (configuration du mar
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 0
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Authentification 3DS gérée par la plateforme de paiement (configuration du marchand).
@@ -17945,11 +22310,14 @@ Authentification 3DS gérée par la plateforme de paiement (configuration du mar
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 Authentification 3DS intégralement gérée par le marchand à condition que vads_card_number soit valorisé (saisie des données cartes chez le marchand).
@@ -17958,11 +22326,14 @@ Les données résultantes de l’authentification 3D Secure effectuée par le MP
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 2
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 Authentification 3DS désactivée pour la transaction, quelle que soit la configuration habituelle du marchand.
@@ -17979,12 +22350,15 @@ Authentification 3DS désactivée pour la transaction, quelle que soit la config
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -17997,12 +22371,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Désigne la validité de la signature du message PARes. Il est valorisé par la plateforme de paiement.
@@ -18011,18 +22388,23 @@ Désigne la validité de la signature du message PARes. Il est valorisé par la 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -18030,43 +22412,56 @@ n1
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 vide
     </td>
-     <td>
+ 
+    <td>
 Pas de 3DS.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 0
     </td>
-     <td>
+ 
+    <td>
 signature incorrecte.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 signature correcte.
     </td>
  
@@ -18079,12 +22474,15 @@ signature correcte.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -18097,12 +22495,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Désigne le statut de l’authentification du porteur. Il est valorisé par le serveur d’authentification 3DS (ACS) durant le processus 3D Secure.
@@ -18111,28 +22512,36 @@ Désigne le statut de l’authentification du porteur. Il est valorisé par le s
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 a1
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code d&#x27;erreur</b>
   </td>
-   <td>
+ 
+  <td>
 56
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -18140,52 +22549,68 @@ a1
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Y
     </td>
-     <td>
+ 
+    <td>
 Authentification réussie.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 N
     </td>
-     <td>
+ 
+    <td>
 Erreur d’authentification.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 U
     </td>
-     <td>
+ 
+    <td>
 Authentification impossible.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 A
     </td>
-     <td>
+ 
+    <td>
 Essai d’authentification.
     </td>
  
@@ -18198,12 +22623,15 @@ Essai d’authentification.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -18216,12 +22644,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Désigne la référence unique de la transaction 3DS.
@@ -18230,32 +22661,41 @@ Il est valorisé par le serveur d’authentification (ACS) durant le processus 3
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..28
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 54
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Authentification 3DS.
   </td>
  
@@ -18268,12 +22708,15 @@ Authentification 3DS.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Paramètre obligatoire. 
@@ -18293,22 +22736,28 @@ Correspond à l’horodatage au format AAAAMMJJHHMMSS.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n14
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 04
   <p>
 
@@ -18318,24 +22767,29 @@ n14
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 La date n&#x27;est pas envoyée sous le format AAAAMMJJHHMMSS (année, mois, jour, heure, minute, seconde).
    </li>
-    <li>
+ 
+   <li>
 La date n&#x27;est pas basée sur le fuseau horaire UTC (temps universel coordonné).
    <p>
 Pensez à utiliser des fonctions date dans votre langage de programmation générant une heure UTC (gmdate en PHP par exemple)
    </p>
 
    </li>
-    <li>
+ 
+   <li>
 L&#x27;heure doit être calculée sur 24h et non sur 12h.
    </li>
-    <li>
+ 
+   <li>
 L&#x27;acheteur a attendu trop longtemps avant de cliquer sur le bouton 
 <b>Payer</b>.
    </li>
-    <li>
+ 
+   <li>
 L&#x27;acheteur a utilisé l&#x27;historique de son navigateur.
    </li>
  
@@ -18346,12 +22800,15 @@ L&#x27;acheteur a utilisé l&#x27;historique de son navigateur.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -18364,12 +22821,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Paramètre obligatoire.
@@ -18390,22 +22850,28 @@ La tranche 900000 et 999999 est reservée aux remboursements et aux opérations 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 n6
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 03
   <p>
 
@@ -18415,16 +22881,20 @@ n6
   <p>
 Le formulaire est rejeté:
   <ul>
-    <li>
+ 
+   <li>
 si la valeur transmise est inférieure à 6 chiffres
    </li>
-    <li>
+ 
+   <li>
 si la valeur est nulle
    </li>
-    <li>
+ 
+   <li>
 si le champ est absent
    </li>
-    <li>
+ 
+   <li>
 si un numéro de transaction identique a déjà été envoyé le même jour.
    <p>
 Si l&#x27;acheteur clique sur le bouton « Annuler et retourner à la boutique », le numéro de transaction devra être différent pour la prochaine tentative car celui-ci est considéré comme déjà utilisé. 
@@ -18443,12 +22913,15 @@ Dans le cas contraire, le message « La transaction a été annulée » sera aff
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -18461,12 +22934,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Champ retourné dans la réponse.
@@ -18479,41 +22955,53 @@ Permet de définir le statut de la transaction.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>ABANDONED</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Abandonné</b>
     <p>
@@ -18528,12 +23016,15 @@ La transaction n’est pas créée et
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>AUTHORISED </b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18547,12 +23038,15 @@ La transaction est acceptée et sera remise en banque automatiquement à la date
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>AUTHORISED_TO_VALIDATE </b>
     </td>
-     <td>
+ 
+    <td>
  
     <p>
 
@@ -18566,12 +23060,15 @@ La transaction, créée en validation manuelle, est autorisée. Le marchand doit
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CANCELED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18581,12 +23078,15 @@ La transaction est annulée par le marchand.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>CAPTURED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18596,12 +23096,15 @@ La transaction est remise en banque.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>EXPIRED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18611,12 +23114,15 @@ La transaction est remise en banque.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>REFUSED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18626,12 +23132,15 @@ La transaction est refusée.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>WAITING_AUTHORISATION</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>En attente d’autorisation</b>
     <p>
@@ -18645,8 +23154,10 @@ La demande d’autorisation sera déclenchée automatiquement à J-1 avant la da
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>WAITING_AUTHORISATION_TO</b>
     <p>
@@ -18655,7 +23166,8 @@ La demande d’autorisation sera déclenchée automatiquement à J-1 avant la da
     </p>
 
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18669,12 +23181,15 @@ Une autorisation d’un euro
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>UNDER_VERIFICATION</b>
     </td>
-     <td>
+ 
+    <td>
 
 <b>Spécifique à PayPal</b> 
     <p>
@@ -18690,12 +23205,15 @@ PayPal retient la transaction pour suspicion de fraude . Le paiement est alors d
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>NOT_CREATED</b>
     </td>
-     <td>
+ 
+    <td>
 
     <p>
 
@@ -18705,12 +23223,15 @@ La transaction n&#x27;est pas créée et n&#x27;est pas visible dans le Back Off
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>INITIAL</b> 
     </td>
-     <td>
+ 
+    <td>
 
 <b>En attente</b>
     <p>
@@ -18722,14 +23243,16 @@ Ce statut est spécifique à tous les moyens de paiement nécessitant une intég
     <p>
 Ce statut est retourné lorsque :
     <ul>
-      <li>
+ 
+     <li>
 aucune réponse n&#x27;est renvoyée par l&#x27;acquéreur
      <p>
 ou
      </p>
 
      </li>
-      <li>
+ 
+     <li>
  
      <p>
 le délai de réponse de la part de l&#x27;acquéreur est supéreieur à la durée de session du paiement sur la plateforme de paiement. 
@@ -18756,12 +23279,15 @@ Ce statut est temporaire. Le statut définitif sera affiché dans le Back Office
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -18774,12 +23300,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 Référence unique de la transaction générée par la plateforme de paiement suite à la création d&#x27;une transaction de paiement.
@@ -18792,22 +23321,28 @@ Offre une garantie d&#x27;unicité pour chaque transaction.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans32
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -18820,43 +23355,55 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL où sera redirigé l’acheteur si celui-ci appuie sur 
 <b>Annuler et retourner à la boutique</b> avant d&#x27;avoir procédé au paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 27
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -18869,12 +23416,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dans le paramétrage des règles de notification.
   <p>
 
@@ -18889,11 +23439,13 @@ URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dan
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 
 <i>cette URL ne sera utilisée que dans l&#x27;appel de l&#x27;URL de notification de paiement (IPN) immédiat,</i>
    </li>
-    <li>
+ 
+   <li>
 
 <i>la valeur surchargée ne sera pas utilisée s&#x27;il y a un re-jeu automatique. </i>
    <p>
@@ -18910,32 +23462,41 @@ Incompatible avec l&#x27;exécution, depuis le Back Office, de la requête envoy
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 33
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -18948,12 +23509,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Ce paramètre définit l’origine de la notification (également appelée IPN).
@@ -18962,18 +23526,23 @@ Ce paramètre définit l’origine de la notification (également appelée IPN).
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -18981,76 +23550,98 @@ string (enum)
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>PAY</b>
     </td>
-     <td>
+ 
+    <td>
 Création d’un paiement par formulaire.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>BO</b>
     </td>
-     <td>
+ 
+    <td>
 Exécution de l’URL de notification depuis le Back Office.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>BATCH_AUTO</b>
     </td>
-     <td>
+ 
+    <td>
 Demande d’autorisation sur un paiement qui était en attente d’autorisation.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>REC</b>
     </td>
-     <td>
+ 
+    <td>
 Paiement résultant d&#x27;un abonnement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>MERCH_BO</b>
     </td>
-     <td>
+ 
+    <td>
 Opération réalisée depuis le Back Office.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>RETRY</b>
     </td>
-     <td>
+ 
+    <td>
 Rejeu automatique de l’URL de notification.
     </td>
  
@@ -19063,12 +23654,15 @@ Rejeu automatique de l’URL de notification.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19081,42 +23675,54 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL où sera redirigé l’acheteur en cas d&#x27;erreur de traitement interne.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 29
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19129,42 +23735,54 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL où sera redirigé l’acheteur en cas d&#x27;erreur de traitement interne.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 29
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19177,12 +23795,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
 <b>Champ déprécié</b>. Utilisez 
 <b>vads_url_refused</b>.
@@ -19195,32 +23816,41 @@ URL où sera redirigé l’acheteur en cas de refus d’autorisation (code 02
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 26
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19233,43 +23863,55 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL où sera redirigé l’acheteur en cas de refus, après appui du bouton 
 <b>Retourner à la boutique</b>.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 25
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19282,12 +23924,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 URL où sera redirigé par défaut l’acheteur après un appui sur le bouton 
@@ -19320,32 +23965,41 @@ Si aucune URL n’est définie dans le Back Office ou dans le formulaire, alors 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 28
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19358,43 +24012,55 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 URL où sera redirigé l’acheteur en cas de succès du paiement, après appui du bouton 
 <b>Retourner à la boutique</b>.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..127
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 24
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Redirection vers le site marchand.
   </td>
  
@@ -19407,12 +24073,15 @@ Redirection vers le site marchand.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 Information sur l’utilisateur à l’origine du paiement.
@@ -19441,32 +24110,41 @@ Dans le cas d’un paiement manuel depuis le Back Office, ce champ sera valoris�
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 ans..255
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 61
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur l&#x27;acheteur.
   </td>
  
@@ -19479,38 +24157,49 @@ Informations sur l&#x27;acheteur.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Précise le mode de validation de la transaction. 
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 05
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -19518,43 +24207,56 @@ string (enum)
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Absent ou vide
     </td>
-     <td>
+ 
+    <td>
 Configuration par défaut de la boutique retenue (paramétrable dans le Back Office).
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 0
     </td>
-     <td>
+ 
+    <td>
 Validation automatique par la plateforme de paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 1
     </td>
-     <td>
+ 
+    <td>
 Validation manuelle par le marchand.
     </td>
  
@@ -19567,12 +24269,15 @@ Validation manuelle par le marchand.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  
@@ -19585,12 +24290,15 @@ Informations sur la transaction.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Paramètre obligatoire. 
   <p>
 Version du protocole d’échange avec la plateforme de paiement.
@@ -19599,42 +24307,54 @@ Version du protocole d’échange avec la plateforme de paiement.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Code erreur</b>
   </td>
-   <td>
+ 
+  <td>
 01
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Valeur possible</b>
   </td>
-   <td>
+ 
+  <td>
 V2
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations techniques.
   </td>
  
@@ -19647,12 +24367,15 @@ Informations techniques.
 </h2>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 
 <b>Description</b>
   </td>
-   <td>
+ 
+  <td>
 Champ retourné dans la réponse.
   <p>
 Indique la garantie du paiement dans le cas d’un paiement accepté.
@@ -19661,18 +24384,23 @@ Indique la garantie du paiement dans le cas d’un paiement accepté.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Format</b>
   </td>
-   <td>
+ 
+  <td>
 string (enum)
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
   <p>
 
@@ -19680,52 +24408,68 @@ string (enum)
 
 <b>Valeurs possibles</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 YES
     </td>
-     <td>
+ 
+    <td>
 Le paiement est garanti.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 NO
     </td>
-     <td>
+ 
+    <td>
 Le paiement n’est pas garanti.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 UNKNOW
     </td>
-     <td>
+ 
+    <td>
 Suite à une erreur technique, le paiement ne peut pas être garanti.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 Non valorisé
     </td>
-     <td>
+ 
+    <td>
 Garantie de paiement non applicable.
     </td>
  
@@ -19742,12 +24486,15 @@ Garantie de paiement non applicable.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>Catégorie</b>
   </td>
-   <td>
+ 
+  <td>
 Informations sur la transaction.
   </td>
  

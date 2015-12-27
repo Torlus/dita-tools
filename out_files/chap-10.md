@@ -22,8 +22,10 @@ Son navigateur doit transmettre les données du formulaire de paiement.
 <p>
 L’URL de la plateforme de paiement est la suivante : 
 <table>
-     <tr>
-   <td>
+    
+ <tr>
+ 
+  <td>
 <a href="https://secure.payzen.eu/vads-payment/">https://secure.payzen.eu/vads-payment/</a>
   </td>
  
@@ -97,13 +99,16 @@ Dans les deux cas, le marchand reçoit un e-mail d&#x27;avertissement.
 <p>
 Il contient:
 <ul>
-  <li>
+ 
+ <li>
 l’origine de l’erreur
  </li>
-  <li>
+ 
+ <li>
 un lien vers la FAQ pour faciliter le diagnostic
  </li>
-  <li>
+ 
+ <li>
 l’ensemble des champs contenus dans le formulaire.
  </li>
  

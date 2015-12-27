@@ -12,8 +12,10 @@ title: chap-5
 </h2>
  Le site marchand communique avec la plateforme de paiement en redirigeant l’acheteur vers la page :
 <table>
-     <tr>
-   <td>
+    
+ <tr>
+ 
+  <td>
 <a href="https://secure.payzen.eu/vads-payment/">https://secure.payzen.eu/vads-payment/</a>
   </td>
  
@@ -32,12 +34,14 @@ Pour dialoguer avec la plateforme de paiement, le marchand a besoin de deux info
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>L’identifiant boutique</b>: permet d&#x27;identifier le site marchand durant les échanges. Sa valeur est transmise dans le champ 
 <b>vads_site_id.</b>
  </li>
-  <li>
+ 
+ <li>
 
 <b>Le certificat </b>: permet de calculer la signature numérique transmise dans le champ 
 <b>signature</b>. 
@@ -50,15 +54,18 @@ Pour dialoguer avec la plateforme de paiement, le marchand a besoin de deux info
 <p>
 Pour récupérer ces valeurs :
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Connectez-vous à votre Back Office : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Cliquez sur 
@@ -66,7 +73,8 @@ Cliquez sur
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Sélectionnez l’onglet 
@@ -94,11 +102,13 @@ Deux types de certificat sont mis à disposition :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Le 
 <b>certificat de test </b> qui permet de générer la signature d’un formulaire en mode test.
  </li>
-  <li>
+ 
+ <li>
 Le 
 <b>certificat de production </b>qui permet de générer la signature d&#x27;un formulaire en mode production.
  </li>
@@ -124,7 +134,8 @@ Le choix du mode
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Le mode 
 <b>TEST</b> permet de réaliser des paiements de test. 
  <p>
@@ -143,7 +154,8 @@ Visualiser les transactions de test
  </p>
 <img src="/docs_img/tla1437559365689.image" alt="MenuTransactionTest"/>
  </li>
-  <li>
+ 
+ <li>
 Le mode 
 <b>PRODUCTION</b> n’est disponible qu’une fois le certificat de production généré (voir chapitre 
 <b>Activer la boutique en mode PRODUCTION</b>
@@ -168,11 +180,13 @@ La gestion du dialogue vers le site marchand est réalisée grâce à deux types
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>Url de notification instantanée</b>, également appelée IPN (Instant Payment Notification),
  </li>
-  <li>
+ 
+ <li>
 
 <b>Url de retour</b> vers le site marchand.
  </li>
@@ -216,20 +230,25 @@ La plateforme est capable de contacter le site marchand quel que soit le protoco
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 analyse les données reçues en mode 
 <b>POST</b>,
  </li>
-  <li>
+ 
+ <li>
 s’assure de l’intégrité des informations reçues en calculant la signature,
  </li>
-  <li>
+ 
+ <li>
 vérifie qu’il ne s’agit pas d’un doublon de notification (renvoi de la notification depuis le Back Office par exemple),
  </li>
-  <li>
+ 
+ <li>
 déclenche la mise à jour de sa base de données (état de la commande, stock, etc…),
  </li>
-  <li>
+ 
+ <li>
 envoie des e-mails à l’acheteur (facture, suivi de commande, etc…).
  </li>
  
@@ -414,36 +433,45 @@ Diagramme mécanisme de sécurité
  </p>
 <img src="/docs_img/tla1437748696912.image" alt="DiagrammeSignature"/> 
  <ol>
-   <li>
+ 
+  <li>
 Le site marchand récolte les données du formulaire et calcule la signature.
   </li>
-   <li>
+ 
+  <li>
 Le site marchand soumet le formulaire à la plateforme.
   </li>
-   <li>
+ 
+  <li>
 La plateforme réceptionne les données du formulaire et calcule la signature.
   </li>
-   <li>
+ 
+  <li>
 La plateforme compare la signature calculée avec la signature transmise par le site marchand.
   </li>
-   <li>
+ 
+  <li>
 Si les signatures diffèrent, la demande de paiement est rejetée.
   <p>
  Sinon, la plateforme procède au paiement.
   </p>
 
   </li>
-   <li>
+ 
+  <li>
 La plateforme réceptionne les données du résultat et calcule la signature de la réponse.
   </li>
-   <li>
+ 
+  <li>
 En fonction du paramétrage de la boutique (voir chapitre 
 <b>Paramétrer les notifications</b>), la plateforme soumet le résultat du paiement au site marchand.
   </li>
-   <li>
+ 
+  <li>
 Le site marchand réceptionne les données et calcule la signature. Il compare la signature calculée avec la signature transmise par la plateforme.
   </li>
-   <li>
+ 
+  <li>
 Si les signatures diffèrent, le marchand analyse l’origine de l’erreur (erreur dans le calcul, tentative de fraude etc...) 
   <p>
 Sinon, le site marchand procède à la mise à jour de sa base de données (état du stock, état de la commande etc…).
@@ -557,16 +585,20 @@ Les fichiers de configuration peuvent contenir :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 l&#x27;URL de la page de paiement, 
  </li>
-  <li>
+ 
+ <li>
 la valeur du certificat, 
  </li>
-  <li>
+ 
+ <li>
 la valeur de l&#x27;identifiant de la boutique,
  </li>
-  <li>
+ 
+ <li>
 etc...
  </li>
  
@@ -589,10 +621,12 @@ Il incombe au marchand de s&#x27;assurer :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 des droits sur le fichier pour ne pas qu&#x27;il soit accessible de l&#x27;exterieur.
  </li>
-  <li>
+ 
+ <li>
 de répondre aux spécificités liées au langage de programmation utilisé.
  </li>
  

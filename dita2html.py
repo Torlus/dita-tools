@@ -207,7 +207,7 @@ def parse_conbody(depth, tree, **kwargs):
                 echo('</ol>', start='\n', indent=depth)
             elif nd.nodeName == 'li':
                 index = index_stack[depth]
-                echo('<li>', indent=depth)
+                echo('<li>', start='\n', indent=depth)
                 if index > 0:
                     index_stack[depth] = index + 1
                 parse_conbody(depth, nd, **kwargs)
@@ -229,13 +229,13 @@ def parse_conbody(depth, tree, **kwargs):
                 parse_conbody(depth + 1, nd, **kwargs)
                 column_stack[depth + 1] = 1
             elif nd.nodeName == 'row':
-                echo('<tr>', indent=depth)
+                echo('<tr>', start='\n', indent=depth)
                 column_stack[depth + 1] = 0
                 parse_conbody(depth + 1, nd, **kwargs)
                 column_stack[depth + 1] = 0
                 echo('</tr>', start='\n', indent=depth)
             elif nd.nodeName == 'entry':
-                echo('<td>', indent=depth)
+                echo('<td>', start='\n', indent=depth)
                 column_stack[depth] += 1
                 parse_conbody(depth, nd, **kwargs)
                 echo('</td>', start='\n', indent=depth)
@@ -243,27 +243,27 @@ def parse_conbody(depth, tree, **kwargs):
             elif nd.nodeName == 'context':
                 parse_conbody(depth, nd, **kwargs)
             elif nd.nodeName == 'steps':
-                echo('<ol>', indent=depth)
+                echo('<ol>', start='\n', indent=depth)
                 index_stack[depth + 1] = 1
                 parse_conbody(depth + 1, nd, **kwargs)
                 index_stack[depth + 1] = 0
                 echo('</ol>', start='\n', indent=depth)
             elif nd.nodeName == 'step':
                 index = index_stack[depth]
-                echo('<li>', indent=depth)
+                echo('<li>', start='\n', indent=depth)
                 if index > 0:
                     index_stack[depth] = index + 1
                 parse_conbody(depth, nd, **kwargs)
                 echo('</li>', start='\n', indent=depth)
             elif nd.nodeName == 'choices':
-                echo('<ul>', indent=depth)
+                echo('<ul>', start='\n', indent=depth)
                 index_stack[depth + 1] = 0
                 parse_conbody(depth + 1, nd, **kwargs)
                 index_stack[depth + 1] = 0
                 echo('</ul>', start='\n', indent=depth)
             elif nd.nodeName == 'choice':
                 index = index_stack[depth]
-                echo('<li>', indent=depth)
+                echo('<li>', start='\n', indent=depth)
                 if index > 0:
                     index_stack[depth] = index + 1
                 parse_conbody(depth, nd, **kwargs)

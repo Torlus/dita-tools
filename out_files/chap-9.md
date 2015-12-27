@@ -16,8 +16,10 @@ Afin de pouvoir calculer la signature vous devez être en possession de la total
 <p>
 Pour calculer la signature :
 </p>
-  <ol>
- <li>
+  
+<ol>
+ 
+<li>
  
 <p>
 Triez les champs dont le nom commence par 
@@ -25,14 +27,16 @@ Triez les champs dont le nom commence par
 </p>
  
 </li>
- <li>
+ 
+<li>
  
 <p>
 Assurez-vous que tous les champs soient encodés en UTF-8.
 </p>
  
 </li>
- <li>
+ 
+<li>
  
 <p>
 Concaténez les valeurs de ces champs en les séparant avec le caractère &quot;
@@ -40,7 +44,8 @@ Concaténez les valeurs de ces champs en les séparant avec le caractère &quot;
 </p>
  
 </li>
- <li>
+ 
+<li>
  
 <p>
 Concaténez le résultat avec le certificat de test ou de production, en les séparant avec le caractère &quot;
@@ -48,7 +53,8 @@ Concaténez le résultat avec le certificat de test ou de production, en les sé
 </p>
  
 </li>
- <li>
+ 
+<li>
  
 <p>
 Appliquez l’algorithme SHA-1 pour obtenir la valeur de la signature.
@@ -83,47 +89,59 @@ Cet exemple de formulaire s&#x27;analyse de la manière suivante:
 <p>
  
 <ol>
- <li>
+ 
+<li>
 On trie par ordre 
 <b>
 <u>alphabétique</u></b> les champs dont le nom commence par 
 <b>vads_</b> : 
 <ul>
-  <li>
+ 
+ <li>
 vads_action_mode
  </li>
-  <li>
+ 
+ <li>
 vads_amount
  </li>
-  <li>
+ 
+ <li>
 vads_ctx_mode
  </li>
-  <li>
+ 
+ <li>
 vads_currency
  </li>
-  <li>
+ 
+ <li>
 vads_page_action
  </li>
-  <li>
+ 
+ <li>
 vads_payment_config
  </li>
-  <li>
+ 
+ <li>
 vads_site_id
  </li>
-  <li>
+ 
+ <li>
 vads_trans_date
  </li>
-  <li>
+ 
+ <li>
 vads_trans_id
  </li>
-  <li>
+ 
+ <li>
 vads_version
  </li>
  
 </ul>
 
 </li>
- <li>
+ 
+<li>
 On concatène la valeur de ces champs avec le caractère &quot;
 <b>+</b>&quot; : 
 <p>
@@ -132,7 +150,8 @@ On concatène la valeur de ces champs avec le caractère &quot;
 </p>
 
 </li>
- <li>
+ 
+<li>
 On ajoute la valeur du certificat de test à la fin de la chaîne en la séparant par le caractère &quot;
 <b>+</b>&quot;). Dans cet exemple, le certificat de Test est 
 <b>1122334455667788</b> :
@@ -143,7 +162,8 @@ On ajoute la valeur du certificat de test à la fin de la chaîne en la séparan
 </p>
 
 </li>
- <li>
+ 
+<li>
 On applique l’algorithme SHA-1 à la chaîne obtenue. 
 <p>
 Le résultat à transmettre dans le champ signature est : 

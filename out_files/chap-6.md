@@ -43,50 +43,66 @@ Diagramme de flux - Paiement comptant immédiat
 <p>
  
 <table>
-        <tr>
-   <td>
+       
+ <tr>
+ 
+  <td>
 Evénement 
   </td>
-   <td>
+ 
+  <td>
 Statut notifé
   </td>
-   <td>
+ 
+  <td>
 Nom de la règle à paramétrer
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 Abandon par l&#x27;acheteur
   </td>
-   <td>
+ 
+  <td>
 ABANDONED
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur annulation
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Annulation par le marchand
   </td>
-   <td>
+ 
+  <td>
 CANCELED
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur une opération en provenance du Back Office
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Réponse à la demande d&#x27;autorisation
   </td>
-   <td>
+ 
+  <td>
 AUTHORISED_TO_VALIDATE, AUTHORISED, REFUSED 
   </td>
-   <td>
+ 
+  <td>
 URL de notification à la fin du paiement
   </td>
  
@@ -116,74 +132,98 @@ Diagramme de flux - Paiement comptant différé
 <p>
  
 <table>
-        <tr>
-   <td>
+       
+ <tr>
+ 
+  <td>
 Evénement 
   </td>
-   <td>
+ 
+  <td>
 Statut notifé
   </td>
-   <td>
+ 
+  <td>
 Nom de la règle à paramétrer
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 Abandon par l&#x27;acheteur
   </td>
-   <td>
+ 
+  <td>
 ABANDONED
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur annulation
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Annulation par le marchand
   </td>
-   <td>
+ 
+  <td>
 CANCELED
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur une opération en provenance du Back Office
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Validation par le marchand
   </td>
-   <td>
+ 
+  <td>
 WAITING_AUTHORISATION
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur une opération en provenance du Back Office
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Réponse à la demande d&#x27;autorisation à 
   </td>
-   <td>
+ 
+  <td>
 REFUSED, WAITING_AUTHORISATION, WAITING_AUTHORISATION_TO_VALIDATE
   </td>
-   <td>
+ 
+  <td>
 URL de notification à la fin du paiement
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Réponse à la demande d&#x27;autorisation
   </td>
-   <td>
+ 
+  <td>
 AUTHORISED, REFUSED, AUTHORISED_TO_VALIDATE
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur autorisation par batch
   </td>
  
@@ -213,38 +253,50 @@ Diagramme de flux - Echéances d&#x27;un paiement en plusieurs fois
 <p>
  
 <table>
-        <tr>
-   <td>
+       
+ <tr>
+ 
+  <td>
 Evénement 
   </td>
-   <td>
+ 
+  <td>
 Statut notifé
   </td>
-   <td>
+ 
+  <td>
 Nom de la règle à paramétrer
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 Annulation par le marchand
   </td>
-   <td>
+ 
+  <td>
 CANCELED
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur une opération en provenance du Back Office
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 Réponse à la demande d&#x27;autorisation
   </td>
-   <td>
+ 
+  <td>
 AUTHORISED, REFUSED 
   </td>
-   <td>
+ 
+  <td>
 URL de notification sur autorisation par batch
   </td>
  
@@ -269,10 +321,12 @@ Pour accéder à la gestion des règles de notification :
 <p>
  
 <ol>
-  <li>
+ 
+ <li>
 Connectez-vous à : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>.
  </li>
-  <li>
+ 
+ <li>
 Allez dans le menu : 
 <b>Paramétrage</b> &gt; 
 <b>Règles de notifications</b>. 
@@ -293,8 +347,10 @@ Règles de notification
  <p>
 Cette notification est indispensable pour communiquer le résultat d&#x27;une demande de paiement.
  </p>
-   <ol>
-     <li>
+  
+ <ol>
+   
+  <li>
  
   <p>
 Effectuez un clic droit sur la ligne 
@@ -302,7 +358,8 @@ Effectuez un clic droit sur la ligne
   </p>
   
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Sélectionnez 
@@ -310,7 +367,8 @@ Sélectionnez
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
  Renseignez l’URL de votre page dans les champs 
@@ -327,7 +385,8 @@ URL de notification à la fin du paiement
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Renseignez le champ 
@@ -335,7 +394,8 @@ Renseignez le champ
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Pour spécifier plusieurs adresses e-mails, séparez-les par un point-virgule.
@@ -354,16 +414,20 @@ Il contient :
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Le code HTTP de l&#x27;erreur rencontrée
   </li>
-   <li>
+ 
+  <li>
 Des éléments d&#x27;analyse en fonction de l&#x27;erreur
   </li>
-   <li>
+ 
+  <li>
 Ses conséquences 
   </li>
-   <li>
+ 
+  <li>
 La procédure à suivre depuis le Back Office 
   </li>
  
@@ -384,10 +448,12 @@ Cette notification est indispensable pour communiquer le résultat d’un paieme
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 En cas de paiement accepté.
   </li>
-   <li>
+ 
+  <li>
 En cas de paiement refusé.
   </li>
  
@@ -417,8 +483,10 @@ Cette règle est
  <p>
 Pour paramétrer cette notification :
  </p>
-  <ol>
-     <li>
+ 
+ <ol>
+   
+  <li>
  
   <p>
 Effectuez un clic droit sur la ligne 
@@ -430,7 +498,8 @@ Effectuez un clic droit sur la ligne
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Sélectionnez 
@@ -438,7 +507,8 @@ Sélectionnez
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Renseignez l’URL de votre page dans les champs 
@@ -456,7 +526,8 @@ Configurer la notification sur autorisation par batch
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Renseignez le champ 
@@ -464,14 +535,16 @@ Renseignez le champ
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Pour spécifier plusieurs adresses e-mails, séparez-les par un point-virgule.
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Configurez le 
@@ -488,14 +561,16 @@ Pour plus d&#x27;informations, reportez-vous au chapitre
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Sauvegardez vos modifications.
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Activez la règle, en effectuant un clic droit sur 
@@ -520,13 +595,16 @@ Il contient :
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 le code HTTP de l’erreur rencontrée,
   </li>
-   <li>
+ 
+  <li>
 des pistes d’analyse en fonction de l’erreur,
   </li>
-   <li>
+ 
+  <li>
 la procédure à suivre depuis le 
 <b>Back Office</b> pour renvoyer la requête vers l’URL définie à l’étape 5.
   </li>
@@ -544,11 +622,13 @@ la procédure à suivre depuis le
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 En cas d’abandon/annulation de la part de l’acheteur, via le bouton 
 <b>Annuler et retourner à la boutique</b>.
   </li>
-   <li>
+ 
+  <li>
 Lorsque l&#x27;acheteur n&#x27;a pas terminé son paiement avant l&#x27;expiration de sa session de paiement. 
   <p>
 
@@ -572,8 +652,10 @@ Lorsque l&#x27;acheteur n&#x27;a pas terminé son paiement avant l&#x27;expirati
  <p>
 Pour paramétrer cette notification:
  </p>
-  <ol>
-     <li>
+ 
+ <ol>
+   
+  <li>
  
   <p>
 Effectuez un clic droit sur la ligne 
@@ -581,7 +663,8 @@ Effectuez un clic droit sur la ligne
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Sélectionnez 
@@ -589,7 +672,8 @@ Sélectionnez
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Renseignez l’URL de votre page dans les champs 
@@ -598,7 +682,8 @@ Renseignez l’URL de votre page dans les champs
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Renseignez 
@@ -606,14 +691,16 @@ Renseignez
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Pour spécifier plusieurs adresses séparez-les par un point-virgule.
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Configurez le 
@@ -630,7 +717,8 @@ Pour plus d&#x27;informations, reportez-vous au chapitre
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Sauvegardez vos modifications.
@@ -653,13 +741,16 @@ Il contient :
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 le code HTTP de l’erreur rencontrée,
   </li>
-   <li>
+ 
+  <li>
 des éléments d’analyse en fonction de l’erreur,
   </li>
-   <li>
+ 
+  <li>
 la procédure à suivre depuis le Back Office 
   </li>
  
@@ -682,8 +773,10 @@ La plateforme de paiement peut notifier systématiquement le site marchand lorsq
  <p>
 Il est recommandé d&#x27;activer cette notification pour des transactions PayPal (mode Order) afin d&#x27;être notifié de la remise.
  </p>
-   <ol>
-     <li>
+  
+ <ol>
+   
+  <li>
  
   <p>
 Effectuez un clic droit sur la ligne 
@@ -691,7 +784,8 @@ Effectuez un clic droit sur la ligne
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Sélectionnez 
@@ -699,7 +793,8 @@ Sélectionnez
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
  Renseignez l’URL de votre page dans les champs 
@@ -708,7 +803,8 @@ Sélectionnez
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Renseignez le champ 
@@ -716,7 +812,8 @@ Renseignez le champ
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Pour spécifier plusieurs adresses e-mails, séparez-les par un point-virgule.
@@ -735,16 +832,20 @@ Il contient :
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Le code HTTP de l&#x27;erreur rencontrée
   </li>
-   <li>
+ 
+  <li>
 Des éléments d&#x27;analyse en fonction de l&#x27;erreur
   </li>
-   <li>
+ 
+  <li>
 Ses conséquences 
   </li>
-   <li>
+ 
+  <li>
 La procédure à suivre depuis le Back Office 
   </li>
  
@@ -761,15 +862,18 @@ La procédure à suivre depuis le Back Office
 <p>
 Cette option permet de renvoyer automatiquement la notification vers le site marchand en cas d&#x27;échec, et ce, jusqu&#x27;à 4 fois.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Connectez-vous à : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Allez dans le menu : 
@@ -778,14 +882,16 @@ Allez dans le menu :
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Effectuez un clic droit sur une des règles de notifications affichées.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Sélectionnez 
@@ -801,7 +907,8 @@ URL de notification à la fin du paiement
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Renseignez le champ 
@@ -809,7 +916,8 @@ Renseignez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Pour spécifier plusieurs adresses e-mails, séparez-les par un point-virgule.
@@ -838,15 +946,18 @@ Lors du rejeu automatique, certaines informations ne sont pas enregistrées en b
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>vads_page_action</b> 
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_payment_config</b> 
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_action_mode</b> 
  </li>
@@ -867,21 +978,25 @@ Lors du rejeu automatique, certaines informations ne sont pas enregistrées en b
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>vads_url_check_src</b> valorisé à 
 <b>RETRY</b>,
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_trans_status</b>. Le statut de la transaction suite à cette opération varie en fonction de son statut au moment où l&#x27;URL est appelée (voir chapitre 
 <b>Cycle de vie des transactions</b>
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_hash</b> valorisé différemment en tenant compte des nouvelles valeurs,
  </li>
-  <li>
+ 
+ <li>
 
 <b>signature</b> valorisé différemment en tenant compte des nouvelles valeurs.
  </li>
@@ -899,22 +1014,26 @@ Lors du rejeu automatique, certaines informations ne sont pas enregistrées en b
 <p>
 Cette option permet de réexécuter manuellement l&#x27;URL de notification depuis le Back Office lorsqu&#x27;une transaction est en erreur.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Connectez-vous à : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Recherchez la transaction pour laquelle vous souhaitez rejouer manuellement la notification.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Effectuez un clic droit sur la transaction et sélectionnez 
@@ -959,15 +1078,18 @@ Lorsque le rejeu est effectué manuellement depuis le Back Office, certaines inf
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>vads_page_action</b> 
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_payment_config</b> 
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_action_mode</b> 
  </li>
@@ -988,21 +1110,25 @@ Lorsque le rejeu est effectué manuellement depuis le Back Office, certaines inf
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>vads_url_check_src</b> valorisé à 
 <b>BO</b>, 
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_trans_status</b>. Le statut de la transaction suite à cette opération varie en fonction de son statut au moment où l&#x27;URL est appelée (voir chapitre 
 <b><a href="#TODO-emm1415871023015.xml">Cycle de vie des transactions</a></b>
  </li>
-  <li>
+ 
+ <li>
 
 <b>vads_hash</b> valorisé différemment en tenant compte des nouvelles valeurs,
  </li>
-  <li>
+ 
+ <li>
 
 <b>signature</b> valorisé différemment en tenant compte des nouvelles valeurs.
  </li>
@@ -1028,28 +1154,34 @@ Le Back Office offre la possibilité au marchand de configurer des e-mails à de
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 E-mail de confirmation d&#x27;abonnement.
  </li>
-  <li>
+ 
+ <li>
 E-mail de confirmation de paiement.
  </li>
-  <li>
+ 
+ <li>
 E-mail de confirmation d&#x27;inscription.
  </li>
  
 </ul>
  
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Connectez-vous à : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Allez dans le menu : 
@@ -1058,7 +1190,8 @@ Allez dans le menu :
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Sélectionnez l&#x27;onglet 
@@ -1066,7 +1199,8 @@ Sélectionnez l&#x27;onglet
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Effectuez un clic droit sur le libellé d&#x27;un e-mail et sélectionnez 
@@ -1078,7 +1212,8 @@ Pour personnaliser un e-mail :
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Effectuez un clic droit sur le libellé d&#x27;un e-mail dont la règle est activée et sélectionnez 
@@ -1092,7 +1227,8 @@ Trois onglets sont mis à disposition.
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 
 <b>Paramétrage </b>
   <p>
@@ -1100,7 +1236,8 @@ Il permet de personnaliser l&#x27;e-mail qui sera envoyéle libellé de la règl
   </p>
 
   </li>
-   <li>
+ 
+  <li>
 
 <b>Conditions de la règle</b>
   <p>
@@ -1112,7 +1249,8 @@ Exemple : &quot;mode = TEST&quot;, &quot;montant supérieur à 1000&quot;. Lors 
   </p>
 
   </li>
-   <li>
+ 
+  <li>
 
 <b>Informations</b>
   <p>
@@ -1126,7 +1264,8 @@ Il affiche un résumé de la règle.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Sélectionnez l&#x27;onglet 
@@ -1134,7 +1273,8 @@ Sélectionnez l&#x27;onglet
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Personnalisez le contenu de l&#x27;e-mail en fonction de vos besoins.
@@ -1143,25 +1283,31 @@ Personnalisez le contenu de l&#x27;e-mail en fonction de vos besoins.
  <p>
  
  <ol>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Paramétrage e-mail acheteur</b> pour afficher le contenu de l&#x27;e-mail &quot;par défaut&quot; commun à tous les marchands utilisant la plateforme de paiement.
   </li>
-   <li>
+ 
+  <li>
 Sélectionnez l&#x27;onglet correspondant à la langue de l&#x27;e-mail que vous souhaitez personnaliser.
   </li>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Personnaliser des valeurs de texte par défaut</b>.
   </li>
-   <li>
+ 
+  <li>
 Modifiez le texte de l&#x27;e-mail.
   </li>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Champs à inclure</b> pour afficher la liste des champs disponibles pour personnaliser l&#x27;e-mail.
   </li>
-   <li>
+ 
+  <li>
 Sélectionnez les champs que vous souhaitez inclure dans l&#x27;e-mail. Un récapitulatif détaillé du traitement de la demande sera ajouté au contenu de l&#x27;e-mail.
   </li>
  
@@ -1196,37 +1342,46 @@ Par défaut la plateforme de paiement peut notifier le marchand dans les cas sui
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 E-mail de confirmation de paiement 
  </li>
-  <li>
+ 
+ <li>
 E-mail de refus de paiement différé
  </li>
-  <li>
+ 
+ <li>
 E-mail de confirmation d&#x27;inscription client 
  </li>
-  <li>
+ 
+ <li>
 E-mail de refus échéance de paiement en n fois
  </li>
-  <li>
+ 
+ <li>
 E-mail de confirmation d&#x27;abonnement
  </li>
-  <li>
+ 
+ <li>
 E-mail de re-génération du certificat
  </li>
  
 </ul>
  
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Connectez-vous à : <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Allez dans le menu : 
@@ -1235,7 +1390,8 @@ Allez dans le menu :
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Sélectionnez l&#x27;onglet 
@@ -1243,7 +1399,8 @@ Sélectionnez l&#x27;onglet
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Effectuez un clic droit sur le libellé d&#x27;un e-mail et sélectionnez 
@@ -1255,7 +1412,8 @@ Pour personnaliser un e-mail :
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Effectuez un clic droit sur le libellé d&#x27;un e-mail dont la règle est activée et sélectionnez 
@@ -1273,7 +1431,8 @@ Trois onglets sont mis à disposition.
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 
 <b>Paramétrage </b>
   <p>
@@ -1281,7 +1440,8 @@ Il permet de personnaliser l&#x27;e-mail qui sera envoyé.
   </p>
 
   </li>
-   <li>
+ 
+  <li>
 
 <b>Conditions de la règle</b>
   <p>
@@ -1293,7 +1453,8 @@ Exemple : &quot;mode = TEST&quot;, &quot;montant supérieur à 1000&quot;. Lors 
   </p>
 
   </li>
-   <li>
+ 
+  <li>
 
 <b>Informations</b>
   <p>
@@ -1307,7 +1468,8 @@ Il affiche un résumé de la règle.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Sélectionnez l&#x27;onglet 
@@ -1315,7 +1477,8 @@ Sélectionnez l&#x27;onglet
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Personnalisez le contenu de l&#x27;e-mail en fonction de vos besoins.
@@ -1324,29 +1487,36 @@ Personnalisez le contenu de l&#x27;e-mail en fonction de vos besoins.
  <p>
  
  <ol>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Paramétrage général</b> pour spécifier l&#x27;adresse e-mail à notifier et facultativement, le gestionnaire de la société et/ou le contact technique de la société et/ou le gestionnaire de la boutique.
   </li>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Paramétrage e-mail</b> pour afficher le contenu de l&#x27;e-mail &quot;par défaut&quot; commun à tous les marchands utilisant la plateforme de paiement.
   </li>
-   <li>
+ 
+  <li>
 Sélectionnez l&#x27;onglet correspondant à la langue de l&#x27;e-mail que vous souhaitez personnaliser.
   </li>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Personnaliser des valeurs de texte par défaut</b>.
   </li>
-   <li>
+ 
+  <li>
 Modifiez le texte de l&#x27;e-mail.
   </li>
-   <li>
+ 
+  <li>
 Cliquez sur 
 <b>Champs à inclure</b> pour afficher la liste des champs disponibles pour personnaliser l&#x27;e-mail.
   </li>
-   <li>
+ 
+  <li>
 Sélectionnez les champs que vous souhaitez inclure dans l&#x27;e-mail. Un récapitulatif détaillé du traitement de la demande sera ajouté au contenu de l&#x27;e-mail.
   </li>
  

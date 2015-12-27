@@ -25,11 +25,13 @@ Définir le mode de remise en banque
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 
 <b>Automatique</b> : aucune action nécessaire, les paiements sont remis en banque une fois le délai de remise atteint.
  </li>
-  <li>
+ 
+ <li>
 
 <b>Manuel</b> : le marchand doit impérativement valider chaque paiement depuis son Back Office pour qu’il soit remis en banque, et ceci, avant la date de remise souhaitée.
  <p>
@@ -54,8 +56,10 @@ Il devra implémenter les critères de son choix (état du stock, délai de réa
 </ul>
  
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -63,7 +67,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez le champ 
@@ -77,41 +82,53 @@ Ce champ sera renvoyé dans la réponse avec la valeur transmise dans le formula
  <p>
  
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Valeur
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>Absent ou vide</b>
    </td>
-    <td>
+ 
+   <td>
 Prend la valeur définie dans le Back Office.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>0</b>
    </td>
-    <td>
+ 
+   <td>
 Remise en banque automatique.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>1</b>
    </td>
-    <td>
+ 
+   <td>
 Remise en banque manuelle.
    </td>
  
@@ -122,7 +139,8 @@ Remise en banque manuelle.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Calculez la valeur du champ 
@@ -207,15 +225,18 @@ Le marchand peut transmettre des informations concernant l’acheteur (adresse e
 Toutes les données qui seront transmises via le formulaire de paiement seront affichées dans le Back Office en consultant le détail de la transaction (onglet 
 <b>Acheteur</b>).
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez les champs facultatifs ci-dessous en fonction de vos besoins.
@@ -228,8 +249,10 @@ Ces champs seront renvoyés dans la réponse avec la valeur transmise dans le fo
  <p>
  
  <table>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
    </td>
  
@@ -244,7 +267,8 @@ Ces champs seront renvoyés dans la réponse avec la valeur transmise dans le fo
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 
@@ -261,15 +285,18 @@ Ces champs seront renvoyés dans la réponse avec la valeur transmise dans le fo
 <p>
 Le marchand peut transmettre les données de livraison de l&#x27;acheteur (adresse, civilité, numéro de téléphone etc…). 
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez les champs facultatifs ci-dessous en fonction de vos besoins.
@@ -282,32 +309,41 @@ Ces champs seront renvoyés dans la réponse avec la valeur transmise dans le fo
  <p>
  
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_status</b>
    </td>
-    <td>
+ 
+   <td>
 Statut (
 <b>PRIVATE</b>: pour particulier / 
 <b>COMPANY</b> pour une entreprise).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_ship_to_name
    </td>
-    <td>
+ 
+   <td>
 
 <b>Déprécié</b>. Nom de l’acheteur. Utilisez 
 <b>vads_ship_to_first_name</b> et 
@@ -315,122 +351,158 @@ vads_ship_to_name
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_first_name</b>
    </td>
-    <td>
+ 
+   <td>
 Prénom.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_last_name</b>
    </td>
-    <td>
+ 
+   <td>
 Nom.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_legal_name</b>
    </td>
-    <td>
+ 
+   <td>
 Raison sociale.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_phone_num</b>
    </td>
-    <td>
+ 
+   <td>
 Numéro de téléphone.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_street_number</b>
    </td>
-    <td>
+ 
+   <td>
 Numéro de rue.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_street</b>
    </td>
-    <td>
+ 
+   <td>
 Adresse postale.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_street2</b>
    </td>
-    <td>
+ 
+   <td>
 Deuxième ligne d’adresse.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_district</b>
    </td>
-    <td>
+ 
+   <td>
 Quartier.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_zip</b>
    </td>
-    <td>
+ 
+   <td>
 Code postal.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_city</b>
    </td>
-    <td>
+ 
+   <td>
 Ville.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_state</b>
    </td>
-    <td>
+ 
+   <td>
 Etat / Région.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_ship_to_country</b>
    </td>
-    <td>
+ 
+   <td>
 Code pays suivant la norme ISO 3166
    </td>
  
@@ -441,7 +513,8 @@ Code pays suivant la norme ISO 3166
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 
@@ -484,8 +557,10 @@ Le marchand peut indiquer dans son formulaire de paiement s’il souhaite transm
 Ces données seront affichées dans le Back Office en consultant le détail de la transaction (onglet 
 <b>Panier</b>).
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -493,7 +568,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez les champs facultatifs ci-dessous en fonction de vos besoins. Ces champs seront renvoyés dans la réponse avec la valeur transmise dans le formulaire.
@@ -502,121 +578,157 @@ Utilisez les champs facultatifs ci-dessous en fonction de vos besoins. Ces champ
  <p>
  
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>vads_order_id</b>
    </td>
-    <td>
+ 
+   <td>
 Numéro de commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_order_info</b>
    </td>
-    <td>
+ 
+   <td>
 Description de la commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_order_info2</b>
    </td>
-    <td>
+ 
+   <td>
 Description de la commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_order_info3</b>
    </td>
-    <td>
+ 
+   <td>
 Description de la commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_nb_products</b>
    </td>
-    <td>
+ 
+   <td>
 Nombre d’articles. 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_product_labelN</b>
    </td>
-    <td>
+ 
+   <td>
 Libellé de l’article. N correspond à l&#x27;indice de l&#x27;article (0 pour le premier, 1 pour le second...).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_product_amountN</b>
    </td>
-    <td>
+ 
+   <td>
 Montant de l’article. N correspond à l&#x27;indice de l&#x27;article (0 pour le premier, 1 pour le second...).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_product_typeN</b>
    </td>
-    <td>
+ 
+   <td>
 Type de l’article. N correspond à l&#x27;indice de l&#x27;article (0 pour le premier, 1 pour le second...). 
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_product_refN</b>
    </td>
-    <td>
+ 
+   <td>
 Référence de l’article. N correspond à l&#x27;indice de l&#x27;article (0 pour le premier, 1 pour le second...).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_product_qtyN</b>
    </td>
-    <td>
+ 
+   <td>
 Quantité d’article. N correspond à l&#x27;indice de l&#x27;article (0 pour le premier, 1 pour le second...).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_product_vatN</b>
    </td>
-    <td>
+ 
+   <td>
 TVA de l&#x27;article. N correspond à l&#x27;indice de l&#x27;article (0 pour le premier, 1 pour le second...).
    </td>
  
@@ -627,7 +739,8 @@ TVA de l&#x27;article. N correspond à l&#x27;indice de l&#x27;article (0 pour l
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -646,7 +759,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -658,7 +772,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -672,8 +787,10 @@ Valorisez le champ
  <p>
  
  <table>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
    </td>
  
@@ -684,7 +801,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -696,7 +814,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -708,7 +827,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -739,8 +859,10 @@ Le marchand peut indiquer dans son formulaire de paiement s’il souhaite active
 <p>
 Le marchand devra implémenter les critères de son choix (montant, pays, département de livraison etc..) permettant de décider si la transaction doit être soumise au 3DS ou non.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -748,7 +870,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez le champ 
@@ -758,8 +881,10 @@ Utilisez le champ
  <p>
  
  <table>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
    </td>
  
@@ -770,7 +895,8 @@ Utilisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Calculez la valeur du champ 
@@ -830,8 +956,10 @@ Cette fonctionnalité n&#x27;est utile que si vous possédez plusieurs contrats 
 <p>
 
 </p>
- <ol>
-  <li>
+ 
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -839,7 +967,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez le champ facultatif 
@@ -853,20 +982,26 @@ Exemple :
  <p>
  
  <table>
-       <tr>
-    <td>
+     
+  <tr>
+ 
+   <td>
 Valeur
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 Absent ou vide
    </td>
-    <td>
+ 
+   <td>
 Utilisation du contrat tel que défini par l&#x27;ordre de priorité dans le Back Office (Menu 
 <b>Paramétrage</b> &gt; 
 <b>Boutique</b> &gt; onglet 
@@ -874,11 +1009,14 @@ Utilisation du contrat tel que défini par l&#x27;ordre de priorité dans le Bac
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 CB=12312312 
    </td>
-    <td>
+ 
+   <td>
 Réseau CB 
    </td>
  
@@ -893,7 +1031,8 @@ Pour définir une liste de contrats, séparez les valeurs par un point-virgule �
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Calculez la valeur du champ 
@@ -920,10 +1059,12 @@ Vous disposez de:
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 deux contrats CB
  </li>
-  <li>
+ 
+ <li>
 deux contrats AMEX : 949400444000 et 949400444001
  </li>
  
@@ -979,26 +1120,32 @@ Dans le formulaire de paiement, le marchand peut surcharger la configuration du 
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Utiliser 4 URL différentes en fonction du résultat du paiement:
   <ul>
-    <li>
+ 
+   <li>
 Paiement accepté.
    </li>
-    <li>
+ 
+   <li>
 Paiement refusé.
    </li>
-    <li>
+ 
+   <li>
 Paiement abandonné.
    </li>
-    <li>
+ 
+   <li>
 Paiement en erreur.
    </li>
  
   </ul>
 
   </li>
-   <li>
+ 
+  <li>
 Utiliser une seule URL quel que soit le résultat du paiement.
   </li>
  
@@ -1013,8 +1160,10 @@ Utiliser une seule URL quel que soit le résultat du paiement.
   <p>
 
   </p>
-    <ol>
-    <li>
+  
+  <ol>
+ 
+   <li>
  
    <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1022,7 +1171,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
    </p>
  
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Utilisez les champs facultatifs présentés dans le tableau ci-dessous pour concevoir le formulaire de paiement adapté à vos besoins.
@@ -1035,51 +1185,66 @@ Si aucune URL n’est valorisée dans le formulaire, la valeur configurée dans 
    <p>
  
    <table>
-         <tr>
-      <td>
+     
+    <tr>
+ 
+     <td>
 Nom du champ
      </td>
-      <td>
+ 
+     <td>
 Descrition
      </td>
  
     </tr>
-       <tr>
-      <td>
+   
+    <tr>
+ 
+     <td>
 
 <b><a href="#TODO-tla1408639383258.xml">vads_url_success</a></b>
      </td>
-      <td>
+ 
+     <td>
 URL où sera redirigé l’acheteur, en cas de succès du paiement, après appui sur &quot;retourner à la boutique&quot;.
      </td>
  
     </tr>
-     <tr>
-      <td>
+ 
+    <tr>
+ 
+     <td>
 
 <b><a href="#TODO-tla1408639165197.xml">vads_url_refused</a></b>
      </td>
-      <td>
+ 
+     <td>
 URL où sera redirigé l’acheteur, en cas de refus du paiement, après appui sur &quot;retourner à la boutique&quot;.
      </td>
  
     </tr>
-     <tr>
-      <td>
+ 
+    <tr>
+ 
+     <td>
 
 <b><a href="#TODO-tla1408638742584.xml">vads_url_cancel</a></b>
      </td>
-      <td>
+ 
+     <td>
 URL où sera redirigé l’acheteur après appui sur &quot;annuler et retourner à la boutique&quot; avant d&#x27;avoir procédé au paiement.
      </td>
  
     </tr>
-     <tr>
-      <td>
+ 
+    <tr>
+ 
+     <td>
 
 <b><a href="#TODO-tla1408639045339.xml">vads_url_error</a></b>
      </td>
-      <td>
+ 
+     <td>
 URL où sera redirigé l’acheteur en cas d&#x27;erreur de traitement par la plateforme de paiement.
      </td>
  
@@ -1090,7 +1255,8 @@ URL où sera redirigé l’acheteur en cas d&#x27;erreur de traitement par la pl
    </p>
  
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Calculez la valeur du champ 
@@ -1127,8 +1293,10 @@ Calculez la valeur du champ
   <p>
 
   </p>
-    <ol>
-    <li>
+  
+  <ol>
+ 
+   <li>
  
    <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1136,7 +1304,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
    </p>
  
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Utilisez le champ facultatif <a href="#TODO-tla1408639224559.xml">
@@ -1148,7 +1317,8 @@ Si aucune URL n’est valorisée dans le formulaire, la valeur configurée dans 
    </p>
  
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 Calculez la valeur du champ 
@@ -1189,8 +1359,10 @@ Par défaut, le site marchand ne reçoit aucun paramètre.
  <p>
 Pour récupérer des informations sur la page de retour (tracking, statistiques, personnalisation des messages à destination de l’acheteur, etc..), le marchand peut surcharger cette configuration dans son formulaire de paiement.
  </p>
-   <ol>
-   <li>
+  
+ <ol>
+ 
+  <li>
  
   <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1198,7 +1370,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Utilisez le champ facultatif 
@@ -1208,41 +1381,53 @@ Utilisez le champ facultatif
   <p>
  
   <table>
-        <tr>
-     <td>
+     
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 Absent, vide ou 
 <b>NONE</b>
     </td>
-     <td>
+ 
+    <td>
 Aucune donnée n&#x27;est passée à l’URL de retour.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>GET</b>
     </td>
-     <td>
+ 
+    <td>
 Les données sont transmises dans l’URL de la page de retour
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>POST</b>
     </td>
-     <td>
+ 
+    <td>
 Les données sont transmises à la page de retour sous la forme d’un formulaire HTTP 
 <b>POST</b>.
     </td>
@@ -1260,7 +1445,8 @@ La méthode
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Calculez la valeur du champ 
@@ -1301,8 +1487,10 @@ Le marchand peut indiquer dans son formulaire s’il souhaite rediriger automati
 <p>
 Si vous utilisez un code de tracking (Google AnalyticsTM ou autre) sur votre site, vous devez implémenter cette fonctionnalité.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1310,7 +1498,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez les champs facultatifs ci-dessous en fonction de vos besoins. 
@@ -1319,21 +1508,27 @@ Utilisez les champs facultatifs ci-dessous en fonction de vos besoins.
  <p>
  
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408628074901.xml">vads_redirect_success_timeout</a></b>
    </td>
-    <td>
+ 
+   <td>
 
    <p>
  Définit le délai d’attente avant redirection après un paiement réussi. 
@@ -1342,22 +1537,28 @@ Ce délai est exprimé en seconde et doit être compris entre 0 et 300 secondes.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627992082.xml">vads_redirect_success_message</a></b>
    </td>
-    <td>
+ 
+   <td>
 Définit le message d’attente avant la redirection après un paiement réussi.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627924375.xml">vads_redirect_error_timeout</a></b>
    </td>
-    <td>
+ 
+   <td>
 
    <p>
 Définit le délai d’attente avant redirection après un paiement refusé. 
@@ -1366,12 +1567,15 @@ Ce délai est exprimé en seconde et doit être compris entre 0 et 300 secondes.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b><a href="#TODO-tla1408627821400.xml">vads_redirect_error_message</a></b>
    </td>
-    <td>
+ 
+   <td>
 Définit le message d’attente avant la redirection après un paiement refusé.
    </td>
  
@@ -1382,7 +1586,8 @@ Définit le message d’attente avant la redirection après un paiement refusé.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -1391,7 +1596,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Calculez la valeur du champ 
@@ -1432,19 +1638,24 @@ Vous pouvez personnaliser certains éléments de la page de paiement:
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 les moyens de paiement proposés au moment du paiement,
  </li>
-  <li>
+ 
+ <li>
 la langue dans laquelle seront affichées les pages de paiement,
  </li>
-  <li>
+ 
+ <li>
 les langues proposées à l’acheteur sur les pages de paiement (drapeaux),
  </li>
-  <li>
+ 
+ <li>
 le nom et l’url de la boutique,
  </li>
-  <li>
+ 
+ <li>
 le libellé du bouton 
 <b>Retourner à la boutique</b>.
  </li>
@@ -1469,8 +1680,10 @@ En souscrivant à l&#x27;option
  <p>
 Il est possible de personnaliser les moyens de paiement que vous souhaitez proposer à l’acheteur.
  </p>
-   <ol>
-   <li>
+  
+ <ol>
+ 
+  <li>
  
   <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1478,18 +1691,22 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Valorisez le champ 
 <b>vads_payment_cards</b> en utilisant le tableau ci-dessous
   </p>
-   <ul>
-    <li>
+ 
+  <ul>
+ 
+   <li>
 avec 
 <u>une</u> seule valeur si vous ne souhaitez pas afficher la page de sélection des moyens de paiement.
    </li>
-    <li>
+ 
+   <li>
 avec une liste de valeurs séparées par un &quot;;&quot; pour afficher la page de sélection des moyens de paiements.
    </li>
  
@@ -1498,8 +1715,10 @@ avec une liste de valeurs séparées par un &quot;;&quot; pour afficher la page 
   <p>
  
   <table>
-       <tr>
-     <td>
+    
+   <tr>
+ 
+    <td>
 
     </td>
  
@@ -1510,7 +1729,8 @@ avec une liste de valeurs séparées par un &quot;;&quot; pour afficher la page 
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Calculez la valeur du champ 
@@ -1547,8 +1767,10 @@ Calculez la valeur du champ
  <p>
 Vous pouvez personnaliser la langue utilisée sur les pages de paiement. 
  </p>
-   <ol>
-   <li>
+  
+ <ol>
+ 
+  <li>
  
   <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1556,7 +1778,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Valorisez le champ 
@@ -1566,8 +1789,10 @@ Valorisez le champ
   <p>
  
   <table>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
     </td>
  
@@ -1580,14 +1805,17 @@ Valorisez le champ
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 Si la valeur du champ 
 <b>vads_language</b> est erronée, le formulaire sera rejeté.
    </li>
-    <li>
+ 
+   <li>
 Si le champ n’est pas envoyé ou s’il est valorisé à vide, la page de paiement sera affichée dans la langue du navigateur de l’acheteur.
    </li>
-    <li>
+ 
+   <li>
 L’acheteur pourra à tout moment changer de langue en cliquant sur les drapeaux présents en bas de la page de paiement.
    </li>
  
@@ -1596,7 +1824,8 @@ L’acheteur pourra à tout moment changer de langue en cliquant sur les drapeau
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Calculez la valeur du champ 
@@ -1637,8 +1866,10 @@ Vous pouvez personnaliser la liste des langues proposées à l’acheteur.
  <p>
 La dernière langue sélectionnée par l&#x27;acheteur sera la langue par défaut de l&#x27;e-mail de confirmation de paiement à destination de l&#x27;acheteur.
  </p>
-   <ol>
-   <li>
+  
+ <ol>
+ 
+  <li>
  
   <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1646,14 +1877,17 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Valorisez le champ 
 <b>vads_available_languages</b> en utilisant le tableau ci-dessous:
   </p>
-   <ul>
-    <li>
+ 
+  <ul>
+ 
+   <li>
  
    <p>
 avec 
@@ -1661,7 +1895,8 @@ avec
    </p>
  
    </li>
-    <li>
+ 
+   <li>
  
    <p>
 
@@ -1675,8 +1910,10 @@ avec
   <p>
  
   <table>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
     </td>
  
@@ -1692,7 +1929,8 @@ Si la valeur du champ
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Calculez la valeur du champ 
@@ -1730,8 +1968,10 @@ Calculez la valeur du champ
  <p>
 Si vous possédez deux noms de domaines, vous pouvez modifier le nom et l’URL de la boutique pour faire apparaître le nom du domaine.
  </p>
-   <ol>
-   <li>
+  
+ <ol>
+ 
+  <li>
  
   <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1739,7 +1979,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Utilisez le champ 
@@ -1751,7 +1992,8 @@ Cette valeur sera reprise sur le ticket de transaction ainsi que dans l&#x27;e-m
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Utilisez le champ 
@@ -1768,7 +2010,8 @@ Si la valeur du champ
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Calculez la valeur du champ 
@@ -1807,8 +2050,10 @@ Vous pouvez personnaliser le texte
 <b>«</b> 
 <b>Retourner à la boutique »</b>.
  </p>
-   <ol>
-   <li>
+  
+ <ol>
+ 
+  <li>
  
   <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1816,7 +2061,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Utilisez le champ 
@@ -1824,7 +2070,8 @@ Utilisez le champ
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Utilisez le mot-clé 
@@ -1832,7 +2079,8 @@ Utilisez le mot-clé
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Utilisez le mot-clé 
@@ -1840,7 +2088,8 @@ Utilisez le mot-clé
   </p>
  
   </li>
-   <li>
+ 
+  <li>
  
   <p>
 Calculez la valeur du champ 
@@ -1891,8 +2140,10 @@ Vous pouvez surcharger l’url de notification instantanée (également appelée
 Cette fonctionnalité est incompatible avec l&#x27;exécution, depuis le Back Office, de la requête envoyée à l’url de notification instantanée. L’URL appelée sera celle configurée dans la règle de notification (voir chapitre 
 <b><a href="#TODO-emm1405085350214.xml">Paramétrer les notifications</a></b>.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir chapitre 
@@ -1900,7 +2151,8 @@ Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Utilisez le champ 
@@ -1913,7 +2165,8 @@ Si la valeur du champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Calculez la valeur du champ 
@@ -1963,13 +2216,16 @@ Cette fonctionnalité :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 est disponible si votre banque autorise la saisie des informations bancaires sur le site marchand.
  </li>
-  <li>
+ 
+ <li>
 requiert au minimum l’utilisation d’un certificat SSL sur le site marchand.
  </li>
-  <li>
+ 
+ <li>
 ne permet pas de réaliser un paiement avec l&#x27;authentification 3D Secure. 
  </li>
  
@@ -1980,21 +2236,26 @@ ne permet pas de réaliser un paiement avec l&#x27;authentification 3D Secure.
 <p>
 Cette fonctionnalité ne fonctionne pas pour les paiements avec redirection, tels que :
 <ul>
-  <li>
+ 
+ <li>
 PayPal, PayPal sandbox
  </li>
-  <li>
+ 
+ <li>
 Oney,
  </li>
-  <li>
+ 
+ <li>
 V.me by Visa,
  </li>
  
 </ul>
 
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez les champs présentés ci-dessous pour construire votre formulaire de paiement.
@@ -2003,217 +2264,285 @@ Utilisez les champs présentés ci-dessous pour construire votre formulaire de p
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
-    <td>
+ 
+   <td>
 Valeur
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 vads_site_id
    </td>
-    <td>
+ 
+   <td>
 Identifiant de la boutique
    </td>
-    <td>
+ 
+   <td>
 Ex : 12345678
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_ctx_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de fonctionnement
    </td>
-    <td>
+ 
+   <td>
 
 <b>TEST</b> ou 
 <b>PRODUCTION</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_id
    </td>
-    <td>
+ 
+   <td>
 Numéro de la transaction 
    </td>
-    <td>
+ 
+   <td>
 Ex : 123456
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_date
    </td>
-    <td>
+ 
+   <td>
 Date et heure UTC du formulaire de paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 20140129130025
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_amount
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement (dans sa plus petite unité monétaire)
    </td>
-    <td>
+ 
+   <td>
 Ex : 3000 pour 30 euros
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_currency
    </td>
-    <td>
+ 
+   <td>
 Code de la devise utilisée pour le paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 978 pour euro
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_action_mode
    </td>
-    <td>
+ 
+   <td>
 Mode d’acquisition des données de la carte
    </td>
-    <td>
+ 
+   <td>
 
 <b>SILENT</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_page_action
    </td>
-    <td>
+ 
+   <td>
 Action à réaliser
    </td>
-    <td>
+ 
+   <td>
 
 <b>PAYMENT</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_version
    </td>
-    <td>
+ 
+   <td>
 Version du protocole d’échange 
    </td>
-    <td>
+ 
+   <td>
 
 <b>V2</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_payment_config
    </td>
-    <td>
+ 
+   <td>
 Type de paiement
    </td>
-    <td>
+ 
+   <td>
 
 <b>SINGLE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_capture_delay
    </td>
-    <td>
+ 
+   <td>
 Délai avant remise en banque
    </td>
-    <td>
+ 
+   <td>
 
 <b>0 </b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_payment_cards
    </td>
-    <td>
+ 
+   <td>
 Réseau de la carte
    </td>
-    <td>
+ 
+   <td>
 
 <b>Ex : VISA</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_card_number
    </td>
-    <td>
+ 
+   <td>
 Numéro de la carte utilisée pour le paiement
    </td>
-    <td>
+ 
+   <td>
 
 <b>Ex : 4970100000000000</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_cvv
    </td>
-    <td>
+ 
+   <td>
 Cryptogramme visuel 
    </td>
-    <td>
+ 
+   <td>
 
 <b>Ex : 123</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_expiry_month
    </td>
-    <td>
+ 
+   <td>
 Mois d’expiration de la carte 
    </td>
-    <td>
+ 
+   <td>
 
 <b>Ex : 2</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_expiry_year
    </td>
-    <td>
+ 
+   <td>
 Année d’expiration 
    </td>
-    <td>
+ 
+   <td>
 
 <b>Ex : 2023</b>
    </td>
@@ -2225,7 +2554,8 @@ Année d’expiration
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez les champs 
@@ -2234,7 +2564,8 @@ Valorisez les champs
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -2243,7 +2574,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 

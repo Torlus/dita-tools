@@ -40,7 +40,8 @@ Il contient:
 <p>
  
 <ul>
- <li>
+ 
+<li>
 Les balises <code><pre>
 &lt;form&gt;
 </pre></code>
@@ -51,14 +52,16 @@ Les balises <code><pre>
  qui permettent de créer un
 					formulaire HTML.
 </li>
- <li>
+ 
+<li>
 L’attribut <code><pre>
 method=&quot;POST&quot;
 </pre></code>
  qui
 					spécifie la méthode utilisée pour envoyer les données.
 </li>
- <li>
+ 
+<li>
 L’attribut <code><pre>
 action=&quot;<a href="https://secure.payzen.eu/vads-payment/">https://secure.payzen.eu/vads-payment/</a>&quot;
 </pre></code>
@@ -82,17 +85,21 @@ action=&quot;<a href="https://secure.payzen.eu/vads-payment/">https://secure.pay
 <p>
  
 <ul>
- <li>
+ 
+<li>
 L’identifiant de la boutique,
 </li>
- <li>
+ 
+<li>
 Les caractéristiques du paiement en fonction du cas d’utilisation(voir chapitres suivants),
 </li>
- <li>
+ 
+<li>
 Les informations complémentaires en fonction de vos besoins (voir chapitre 
 <b>Utiliser des fonctions complémentaires</b> ),
 </li>
- <li>
+ 
+<li>
 La signature qui assure l&#x27;intégrité du formulaire (voir chapitre 
 <b>Calculer la signature</b>).
 </li>
@@ -186,16 +193,20 @@ Des cas d’utilisation sont présentés dans les chapitres suivants. Ils vous p
 <p>
   
 <ul>
- <li>
+ 
+<li>
 Créer un paiement comptant immédiat.
 </li>
- <li>
+ 
+<li>
 Créer un paiement comptant différé.
 </li>
- <li>
+ 
+<li>
 Créer un paiement en plusieurs fois.
 </li>
- <li>
+ 
+<li>
 Créer une autorisation sans remise.
 </li>
  
@@ -214,8 +225,10 @@ En mode paiement comptant immédiat, l’acheteur règle la totalité de son ach
 <p>
 Le paiement est remis en banque le jour même.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l&#x27;ensemble des champs présents dans le tableau ci-après pour construire votre formulaire de paiement.
@@ -224,165 +237,217 @@ Utilisez l&#x27;ensemble des champs présents dans le tableau ci-après pour con
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
-    <td>
+ 
+   <td>
 Valeur
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 vads_site_id
    </td>
-    <td>
+ 
+   <td>
 Identifiant de la boutique
    </td>
-    <td>
+ 
+   <td>
 Ex : 12345678
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_ctx_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de fonctionnement
    </td>
-    <td>
+ 
+   <td>
 
 <b>TEST</b> ou 
 <b>PRODUCTION</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_id
    </td>
-    <td>
+ 
+   <td>
 Numéro de la transaction 
    </td>
-    <td>
+ 
+   <td>
 Ex : 123456
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_date
    </td>
-    <td>
+ 
+   <td>
 Date et heure UTC du formulaire de paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 20140129130025
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_amount
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement (dans sa plus petite unité monétaire)
    </td>
-    <td>
+ 
+   <td>
 Ex : 3000 pour 30 euros
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_currency
    </td>
-    <td>
+ 
+   <td>
 Code de la devise utilisée pour le paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 978 pour euro
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_action_mode
    </td>
-    <td>
+ 
+   <td>
 Mode d’acquisition des données de la carte
    </td>
-    <td>
+ 
+   <td>
 
 <b>INTERACTIVE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_page_action
    </td>
-    <td>
+ 
+   <td>
 Action à réaliser
    </td>
-    <td>
+ 
+   <td>
 
 <b>PAYMENT</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_version
    </td>
-    <td>
+ 
+   <td>
 Version du protocole d’échange 
    </td>
-    <td>
+ 
+   <td>
 
 <b>V2</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_payment_config
    </td>
-    <td>
+ 
+   <td>
 Type de paiement
    </td>
-    <td>
+ 
+   <td>
 
 <b>SINGLE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_capture_delay
    </td>
-    <td>
+ 
+   <td>
 Délai avant remise en banque
    </td>
-    <td>
+ 
+   <td>
 
 <b>0</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_validation_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de validation
    </td>
-    <td>
+ 
+   <td>
 
 <b>0</b> (Automatique)
    </td>
@@ -394,7 +459,8 @@ Mode de validation
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -403,7 +469,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -412,7 +479,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -421,7 +489,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -461,7 +530,8 @@ Valorisez le champ
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Une demande d&#x27;autorisation sera réalisée pour le montant global si le délai de remise est inférieur ou égal à la durée de validité d&#x27;une demande d&#x27;autorisation (voir <a href="#TODO-tla1416990314409.xml">tableau</a>).
  </li>
  
@@ -472,15 +542,18 @@ Une demande d&#x27;autorisation sera réalisée pour le montant global si le dé
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Une demande d&#x27;autorisation à 1 €
  </li>
  
 </ul>
  
 </p>
- <ol>
-  <li>
+ 
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l&#x27;ensemble des champs présents dans le tableau ci-après pour construire votre formulaire de paiement.
@@ -489,165 +562,217 @@ Utilisez l&#x27;ensemble des champs présents dans le tableau ci-après pour con
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
-    <td>
+ 
+   <td>
 Valeur
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 vads_site_id
    </td>
-    <td>
+ 
+   <td>
 Identifiant de la boutique
    </td>
-    <td>
+ 
+   <td>
 Ex : 12345678
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_ctx_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de fonctionnement
    </td>
-    <td>
+ 
+   <td>
 
 <b>TEST</b> ou 
 <b>PRODUCTION</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_id
    </td>
-    <td>
+ 
+   <td>
 Numéro de la transaction 
    </td>
-    <td>
+ 
+   <td>
 Ex : 123456
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_date
    </td>
-    <td>
+ 
+   <td>
 Date et heure UTC du formulaire de paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 20140129130025
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_amount
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement (dans sa plus petite unité monétaire)
    </td>
-    <td>
+ 
+   <td>
 Ex : 3000 pour 30 euros
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_currency
    </td>
-    <td>
+ 
+   <td>
 Code de la devise utilisée pour le paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 978 pour euro
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_action_mode
    </td>
-    <td>
+ 
+   <td>
 Mode d’acquisition des données de la carte
    </td>
-    <td>
+ 
+   <td>
 
 <b>INTERACTIVE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_page_action
    </td>
-    <td>
+ 
+   <td>
 Action à réaliser
    </td>
-    <td>
+ 
+   <td>
 
 <b>PAYMENT</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_version
    </td>
-    <td>
+ 
+   <td>
 Version du protocole d’échange 
    </td>
-    <td>
+ 
+   <td>
 
 <b>V2</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_payment_config
    </td>
-    <td>
+ 
+   <td>
 Type de paiement
    </td>
-    <td>
+ 
+   <td>
 
 <b>SINGLE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_capture_delay
    </td>
-    <td>
+ 
+   <td>
 Délai avant remise en banque
    </td>
-    <td>
+ 
+   <td>
 
 <b>&gt; 0 Ex: 3</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_validation_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de validation
    </td>
-    <td>
+ 
+   <td>
 
 <b>0</b> (automatique) ou 
 <b>1</b> (manuel)
@@ -660,7 +785,8 @@ Mode de validation
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -669,7 +795,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -678,7 +805,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -688,7 +816,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -754,8 +883,10 @@ Des règles de notifications doivent être activées selon l&#x27;échéance. R�
 <p>
 Le jour du paiement, le marchand n’est pas crédité de la totalité du montant et la garantie de paiement ne peut s’appliquer sur les échéances futures.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l&#x27;ensemble des champs présents ci-dessous pour construire votre formulaire de paiement.
@@ -764,139 +895,183 @@ Utilisez l&#x27;ensemble des champs présents ci-dessous pour construire votre f
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
-    <td>
+ 
+   <td>
 Valeur
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 vads_site_id
    </td>
-    <td>
+ 
+   <td>
 Identifiant de la boutique
    </td>
-    <td>
+ 
+   <td>
 Ex : 12345678
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_ctx_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de fonctionnement
    </td>
-    <td>
+ 
+   <td>
 
 <b>TEST</b> ou 
 <b>PRODUCTION</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_id
    </td>
-    <td>
+ 
+   <td>
 Numéro de la transaction 
    </td>
-    <td>
+ 
+   <td>
 Ex : 123456
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_date
    </td>
-    <td>
+ 
+   <td>
 Date et heure UTC du formulaire de paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 20140129130025
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_amount
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement (dans sa plus petite unité monétaire)
    </td>
-    <td>
+ 
+   <td>
 Ex : 3000 pour 30 euros
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_currency
    </td>
-    <td>
+ 
+   <td>
 Code de la devise utilisée pour le paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 978 pour euro
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_action_mode
    </td>
-    <td>
+ 
+   <td>
 Mode d’acquisition des données de la carte
    </td>
-    <td>
+ 
+   <td>
 
 <b>INTERACTIVE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_page_action
    </td>
-    <td>
+ 
+   <td>
 Action à réaliser
    </td>
-    <td>
+ 
+   <td>
 
 <b>PAYMENT</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_version
    </td>
-    <td>
+ 
+   <td>
 Version du protocole d’échange 
    </td>
-    <td>
+ 
+   <td>
 
 <b>V2</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_payment_config
    </td>
-    <td>
+ 
+   <td>
 Type de paiement
    </td>
-    <td>
+ 
+   <td>
  
    <p>
 voir étape 2.
@@ -905,27 +1080,35 @@ voir étape 2.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_capture_delay
    </td>
-    <td>
+ 
+   <td>
 Délai avant remise en banque
    </td>
-    <td>
+ 
+   <td>
 
 <b>0 </b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_validation_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de validation
    </td>
-    <td>
+ 
+   <td>
 
 <b>0</b> (automatique) ou 
 <b>1</b> (manuel)
@@ -938,7 +1121,8 @@ Mode de validation
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -948,7 +1132,8 @@ Valorisez le champ
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 
 <u>Montants et dates d&#x27;échéances fixes</u> :
   <p>
@@ -969,7 +1154,8 @@ Valorisez le champ
   </p>
 
   </li>
-   <li>
+ 
+  <li>
 
 <u>Montants et dates d&#x27;échéance personnalisés</u> :
   <p>
@@ -997,7 +1183,8 @@ Les dates sont exprimées au format YYYYMMDD.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -1006,7 +1193,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -1020,7 +1208,8 @@ Le mode de validation s&#x27;applique à toutes les échéances.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -1085,18 +1274,22 @@ Au besoin, le marchand pourra débiter cette carte du montant souhaité en utili
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 le mode de validation manuelle est utilisé,
  </li>
-  <li>
+ 
+ <li>
 le marchand ne doit pas valider manuellement les transactions.
  </li>
  
 </ul>
  
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Utilisez l’ensemble des champs présents dans le tableau ci-après pour construire votre formulaire de paiement.
@@ -1105,166 +1298,218 @@ Utilisez l’ensemble des champs présents dans le tableau ci-après pour constr
  <p>
  
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
-    <td>
+ 
+   <td>
 Valeur
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 vads_site_id
    </td>
-    <td>
+ 
+   <td>
 Identifiant de la boutique
    </td>
-    <td>
+ 
+   <td>
 Ex : 12345678
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_ctx_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de fonctionnement
    </td>
-    <td>
+ 
+   <td>
 
 <b>TEST</b> ou 
 <b>PRODUCTION</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_id
    </td>
-    <td>
+ 
+   <td>
 Numéro de la transaction 
    </td>
-    <td>
+ 
+   <td>
 Ex : 123456
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_trans_date
    </td>
-    <td>
+ 
+   <td>
 Date et heure UTC du formulaire de paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 20140129130025
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_amount
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement (dans sa plus petite unité monétaire)
    </td>
-    <td>
+ 
+   <td>
 
 <b>100</b> (pour 1 euro)
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_currency
    </td>
-    <td>
+ 
+   <td>
 Code de la devise utilisée pour le paiement
    </td>
-    <td>
+ 
+   <td>
 Ex : 978 pour euro
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_action_mode
    </td>
-    <td>
+ 
+   <td>
 Mode d’acquisition des données de la carte
    </td>
-    <td>
+ 
+   <td>
 
 <b>INTERACTIVE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_page_action
    </td>
-    <td>
+ 
+   <td>
 Action à réaliser
    </td>
-    <td>
+ 
+   <td>
 
 <b>PAYMENT</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_version
    </td>
-    <td>
+ 
+   <td>
 Version du protocole d’échange 
    </td>
-    <td>
+ 
+   <td>
 
 <b>V2</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_payment_config
    </td>
-    <td>
+ 
+   <td>
 Type de paiement
    </td>
-    <td>
+ 
+   <td>
 
 <b>SINGLE</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_capture_delay
    </td>
-    <td>
+ 
+   <td>
 Délai avant remise en banque
    </td>
-    <td>
+ 
+   <td>
 
 <b>0</b>
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 vads_validation_mode
    </td>
-    <td>
+ 
+   <td>
 Mode de validation du paiement
    </td>
-    <td>
+ 
+   <td>
 1
    </td>
  
@@ -1275,7 +1520,8 @@ Mode de validation du paiement
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -1283,7 +1529,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 
@@ -1292,7 +1539,8 @@ Valorisez le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Valorisez le champ 

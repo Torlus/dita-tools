@@ -26,12 +26,14 @@ Les demandes de paiement de test adressées via le formulaire HTTP POST doivent:
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 Contenir la donnée 
 <b>vads_ctx_mode</b> valorisée à 
 <b>TEST</b>. 
  </li>
-  <li>
+ 
+ <li>
 Utiliser 
 <b>le certificat de test</b> précédemment récupéré pour le calcul de la signature. 
  </li>
@@ -51,8 +53,10 @@ Différents cas de paiements peuvent être simulés en utilisant les numéros de
 <p>
 Toutes les transactions réalisées en mode test sont consultables par les personnes habilitées à utiliser le Back Office à l’adresse suivante :
 <table>
-     <tr>
-   <td>
+    
+ <tr>
+ 
+  <td>
 <a href="https://secure.payzen.eu/vads-merchant/">https://secure.payzen.eu/vads-merchant/</a>
   </td>
  
@@ -82,40 +86,49 @@ Pour cela:
 <p>
  
 <ol>
-  <li>
+ 
+ <li>
 Effectuez un clic droit sur une transaction.
  </li>
-  <li>
+ 
+ <li>
 Sélectionnez 
 <b>Afficher le détail de la transaction</b>.
  </li>
-  <li>
+ 
+ <li>
 Vérifiez le statut de l&#x27;URL de notification instantanée (IPN). 
  <ul>
-   <li>
+ 
+  <li>
 Dans le cas où le statut est 
 <b>Envoyé</b>, cela signifie que vous avez correctement renseigné l&#x27;URL dans le Back Office. 
   </li>
-   <li>
+ 
+  <li>
 Dans le cas où le statut apparaît en 
 <b>URL non définie</b>, cela signifie que vous n&#x27;avez pas renseigné l&#x27;URL dans le Back Office. 
   <ol>
-    <li>
+ 
+   <li>
 Vérifiez l&#x27;adresse de l&#x27;URL de notification instantanée saisie en mode TEST et PRODUCTION. 
    </li>
-    <li>
+ 
+   <li>
 Cliquez sur 
 <b>Paramétrage</b> &gt; 
 <b>Règles de notification</b>.
    </li>
-    <li>
+ 
+   <li>
 Renseignez l&#x27;URL de notification de paiement instantanée (URL de notification à la fin du paiement). 
    <p>
 Ne saisissez pas une adresse en &quot;localhost&quot;. L&#x27;appel à cette l&#x27;URL se fait de serveur à serveur.
    </p>
 
    </li>
-    <li>
+ 
+   <li>
 Cliquez sur 
 <b>Sauvegarder</b>.
    </li>
@@ -127,7 +140,8 @@ Cliquez sur
  </ul>
 
  <ul>
-   <li>
+ 
+  <li>
 Dans le cas où le statut est 
 <b>Echoué</b>, se reporter au chapitre 
 <b>Traiter les erreurs</b>.

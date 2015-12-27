@@ -10,26 +10,34 @@ title: chap-1
 <p>
  
 <table>
-      <tr>
-  <td>
+      
+<tr>
+ 
+ <td>
 Version
  </td>
-  <td>
+ 
+ <td>
 Date
  </td>
-  <td>
+ 
+ <td>
 Commentaire
  </td>
  
 </tr>
-   <tr>
-  <td>
+   
+<tr>
+ 
+ <td>
 3.5
  </td>
-  <td>
+ 
+ <td>
 23/11/2015
  </td>
-  <td>
+ 
+ <td>
  
  <p>
 
@@ -37,37 +45,45 @@ Commentaire
  </p>
  
  <ul>
-   <li>
+ 
+  <li>
 vads_payment_cards et vads_contracts : ajout de valeurs.
   </li>
-   <li>
+ 
+  <li>
 Précisions apportées sur le format des champs :
   <ul>
-    <li>
+ 
+   <li>
 vads_cust_address
    </li>
  
   </ul>
 
   <ul>
-    <li>
+ 
+   <li>
 vads_ship_to_street
    </li>
-    <li>
+ 
+   <li>
 vads_ship_to_street2
    </li>
  
   </ul>
 
   </li>
-   <li>
+ 
+  <li>
 vads_trans_status : ajout du statut 
 <b>INITIAL</b> dans la liste des statuts possibles.
   </li>
-   <li>
+ 
+  <li>
 vads_change_rate
   </li>
-   <li>
+ 
+  <li>
 vads_recurrence_number
   </li>
  
@@ -76,32 +92,41 @@ vads_recurrence_number
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 3.4
  </td>
-  <td>
+ 
+ <td>
 01/10/2015
  </td>
-  <td>
+ 
+ <td>
 
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 3.3a
  </td>
-  <td>
+ 
+ <td>
 24/07/2015
  </td>
-  <td>
+ 
+ <td>
 
 <b>Chapitre supplémentaire</b>
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Configurer la notification sur modification par batch
   </li>
  
@@ -116,10 +141,12 @@ Modification des chapitres :
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Utiliser une i-frame
   </li>
-   <li>
+ 
+  <li>
 vads_trans_id
   </li>
  
@@ -130,14 +157,18 @@ vads_trans_id
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 3.3
  </td>
-  <td>
+ 
+ <td>
 07/07/2015
  </td>
-  <td>
+ 
+ <td>
 
  <p>
 
@@ -147,10 +178,12 @@ vads_trans_id
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Configurer les e-mails envoyés à l&#x27;acheteur.
   </li>
-   <li>
+ 
+  <li>
 Configurer les e-mails envoyés au marchand.
   </li>
  
@@ -174,16 +207,20 @@ Complément d&#x27;information sur l&#x27;utilisation d&#x27;une i-frame.
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Ajout des champs :
   <ul>
-    <li>
+ 
+   <li>
 vads_trans_uuid
    </li>
-    <li>
+ 
+   <li>
 vads_risk_assessment_result
    </li>
-    <li>
+ 
+   <li>
 vads_product_vatN
    </li>
  
@@ -198,13 +235,16 @@ vads_product_vatN
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 vads_bank_product : ajout des valeurs pour les cartes CB pures.
   </li>
-   <li>
+ 
+  <li>
 vads_risk_analyzis_result : ajout de valeurs.
   </li>
-   <li>
+ 
+  <li>
 vads_payment_cards : ajout de valeurs.
   </li>
  
@@ -215,14 +255,18 @@ vads_payment_cards : ajout de valeurs.
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 3.2
  </td>
-  <td>
+ 
+ <td>
 27/04/2015
  </td>
-  <td>
+ 
+ <td>
 
 <b>Dictionnaire de données</b>
  <p>
@@ -232,14 +276,18 @@ Correction d’une erreur pour le champ vads_ship_to_type
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 3.1
  </td>
-  <td>
+ 
+ <td>
 02/03/2015
  </td>
-  <td>
+ 
+ <td>
  
  <p>
 URL Serveur renommé en URL de notification
@@ -253,13 +301,16 @@ URL Serveur renommé en URL de notification
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Gérer les paramètres de votre boutique par fichier de configuration
   </li>
-   <li>
+ 
+  <li>
 Activer le rejeu automatique
   </li>
-   <li>
+ 
+  <li>
 Rejouer manuellement la notification
   </li>
  
@@ -287,16 +338,20 @@ Complément d&#x27;information sur l&#x27;utilisation d&#x27;une i-frame.
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Ajout des champs :
   <ul>
-    <li>
+ 
+   <li>
 vads_payment_seq
    </li>
-    <li>
+ 
+   <li>
 vads_cust_legal_name
    </li>
-    <li>
+ 
+   <li>
 vads_ship_to_legal_name
    </li>
  
@@ -311,10 +366,12 @@ vads_ship_to_legal_name
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Ajout de la valeur E_CV dans la liste des moyens de paiement (réseau ANCV)
   </li>
-   <li>
+ 
+  <li>
 Précision sur le champ vads_url_check
   </li>
  
@@ -325,14 +382,18 @@ Précision sur le champ vads_url_check
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 3.0
  </td>
-  <td>
+ 
+ <td>
 21/11/2014
  </td>
-  <td>
+ 
+ <td>
 Refonte globale de la documentation.
  </td>
  
@@ -389,15 +450,19 @@ Refonte globale de la documentation.
 <p>
  
 <table>
-    <tr>
-  <td>
+    
+<tr>
+ 
+ <td>
  
 <b>Confidentialité</b> 
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
  Toutes les informations contenues dans ce document sont considérées comme confidentielles. L’utilisation de celles-ci en dehors du cadre de cette consultation ou la divulgation à des personnes extérieures est soumise à l’approbation préalable de Lyra Network. 
  </td>
  

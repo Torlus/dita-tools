@@ -27,7 +27,8 @@ Cette page sera appelée automatiquement après chaque paiement (accepté ou ref
 <p>
  
 <ul>
- <li>
+ 
+<li>
 L&#x27;URL de la page qui analyse le résultat du paiement devra obligatoirement être renseignée dans le Back Office (voir chapitre 
 <b>Paramétrer les notifications</b> 
 </li>
@@ -39,7 +40,8 @@ L&#x27;URL de la page qui analyse le résultat du paiement devra obligatoirement
 <p>
  
 <ul>
- <li>
+ 
+<li>
 Le marchand doit s&#x27;assurer que cette URL soit joignable par la plateforme de paiement et ce, sans redirection. 
 <p>
 Les redirections entrainent la perte des données présentes dans le POST.
@@ -54,7 +56,8 @@ Les redirections entrainent la perte des données présentes dans le POST.
 <p>
  
 <ul>
- <li>
+ 
+<li>
 En cas de restriction mise en place du côté du site marchand, il faudra autoriser la plage d&#x27;adresses d&#x27;IP 
 <b>194.50.38.0/24</b>.
 </li>
@@ -66,7 +69,8 @@ En cas de restriction mise en place du côté du site marchand, il faudra autori
 <p>
  
 <ul>
- <li>
+ 
+<li>
 La page ne devra pas comporter d&#x27;affichage HTML. 
 <p>
 L&#x27;accès aux ressources telles que les images ou feuilles de styles peuvent ralentir les échanges entre la plateforme de paiement et le site marchand.
@@ -85,7 +89,8 @@ Ces caractères sont ensuite affichés dans l&#x27;historique des transactions.
 <p>
  
 <ul>
- <li>
+ 
+<li>
 Evitez au maximum d&#x27;intégrer des tâches consommatrices de temps comme la génération de facture ou l&#x27;envoi d&#x27;e-mail dans ce script.
 <p>
 Le temps du traitement influe directement sur le délai de l’affichage de la page de résumé du paiement. Plus le traitement de la notification est long, plus l’affichage est retardé. 
@@ -130,13 +135,16 @@ Il contient :
 <p>
  
 <ul>
- <li>
+ 
+<li>
 le code HTTP de l’erreur rencontrée,
 </li>
- <li>
+ 
+<li>
 des éléments d’analyses en fonction de l’erreur,
 </li>
- <li>
+ 
+<li>
 la procédure à suivre depuis le Back Office pour renvoyer la notification. 
 </li>
  
@@ -164,19 +172,24 @@ Le script de traitement devra comporter au moins les étapes ci-dessous:
 <p>
  
 <ul>
- <li>
+ 
+<li>
 Récupérer la liste des champs présents dans la réponse envoyée en POST
 </li>
- <li>
+ 
+<li>
 Calculer la signature
 </li>
- <li>
+ 
+<li>
 Comparer la signature calculée avec celle réceptionnée
 </li>
- <li>
+ 
+<li>
 Analyser la nature de la notification
 </li>
- <li>
+ 
+<li>
 Récupérer le résultat du paiement 
 </li>
  
@@ -236,8 +249,10 @@ Pour calculer la signature:
 <p>
 
 </p>
- <ol>
-  <li>
+ 
+<ol>
+ 
+ <li>
  
  <p>
 Prenez en considération la totalité des champs dont le nom commence par 
@@ -245,28 +260,32 @@ Prenez en considération la totalité des champs dont le nom commence par
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Triez ces champs par ordre alphabétique.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 
@@ -292,10 +311,12 @@ Pour s’assurer de l’intégrité de la réponse, vous devez comparer la valeu
 <p>
 Si les signatures correspondent, 
 <ul>
-  <li>
+ 
+ <li>
 alors vous pouvez considérer la réponse comme sûre et procéder à la suite de l’analyse.
  </li>
-  <li>
+ 
+ <li>
 sinon, le script devra lever une exception et avertir le marchand de l&#x27;anomalie (voir chapitre 
 <b>Traiter les erreurs</b>.
  </li>
@@ -315,14 +336,17 @@ Les signatures ne correspondent pas en cas :
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 d’erreur d&#x27;implémentation (erreur dans votre calcul, problème d’encodage UTF8, etc.).
  </li>
-  <li>
+ 
+ <li>
 d’erreur dans la valeur du certificat utilisé ou dans celle du champ 
 <b>vads_ctx_mode</b> (problème fréquent lors du passage en production).
  </li>
-  <li>
+ 
+ <li>
 de tentative de corruption des données. 
  </li>
  
@@ -350,21 +374,27 @@ Le champ
 <p>
 Il précise la règle de notification appliquée :
 <table>
-       <tr>
-   <td>
+      
+ <tr>
+ 
+  <td>
 Valeur
   </td>
-   <td>
+ 
+  <td>
 Règle appliquée
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 
 <b>PAY</b>
   </td>
-   <td>
+ 
+  <td>
  
   <p>
 La valeur PAY sera envoyée dans les cas suivants :
@@ -377,31 +407,39 @@ La valeur PAY sera envoyée dans les cas suivants :
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>BO</b>
   </td>
-   <td>
+ 
+  <td>
 Exécution de la notification depuis le Back Office (clic droit sur une transaction &gt; 
 <b>Executer l&#x27;url de notification</b>).
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>BATCH_AUTO</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 La valeur BATCH_AUTO sera envoyée dans les cas suivants:
   <ul>
-    <li>
+ 
+   <li>
 paiement différé à plus de 7 jours
    </li>
-    <li>
+ 
+   <li>
 échéances d&#x27;un paiement en plusieurs fois (hormis la première)
    <p>
 uniquement si le marchand a configuré la règle 
@@ -425,12 +463,15 @@ La notification sera envoyée lors de la demande d’autorisation d&#x27;un paie
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>REC</b>
   </td>
-   <td>
+ 
+  <td>
 
   <p>
 La valeur REC sera envoyée uniquement pour les paiements par abonnement si le marchand a configuré la règle 
@@ -440,21 +481,26 @@ La valeur REC sera envoyée uniquement pour les paiements par abonnement si le m
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>MERCH_BO</b>
   </td>
-   <td>
+ 
+  <td>
 La valeur MERCH_BO sera envoyée :
   <p>
  
   <ul>
-    <li>
+ 
+   <li>
 lors d&#x27;une opération réalisée depuis le Back Office (remboursement, modification, validation, duplicata), si le marchand a configuré la règle de notification : 
 <b>URL de notification sur une opération provenant du Back Office</b>
    </li>
-    <li>
+ 
+   <li>
 lors d&#x27;une annulation réalisée depuis le Back Office, si le marchand a configuré la règle de notification : 
 <b>URL de notification sur annulation</b>
    </li>
@@ -505,10 +551,12 @@ Le champ
 <p>
  
 <ul>
-  <li>
+ 
+ <li>
 une opération de débit.
  </li>
-  <li>
+ 
+ <li>
 une opération de remboursement.
  </li>
  
@@ -519,31 +567,40 @@ une opération de remboursement.
 <p>
  
 <table>
-       <tr>
-   <td>
+      
+ <tr>
+ 
+  <td>
 Valeur
   </td>
-   <td>
+ 
+  <td>
 Description
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 
 <b>DEBIT</b>
   </td>
-   <td>
+ 
+  <td>
 Opération de débit.
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 
 <b>CREDIT</b>
   </td>
-   <td>
+ 
+  <td>
 Opération de remboursement.
   </td>
  
@@ -577,8 +634,10 @@ Si
 <p>
 Ci-dessous un exemple d&#x27;analyse pour vous guider pas à pas lors du traitement des données de la réponse.
 </p>
-  <ol>
-  <li>
+  
+<ol>
+ 
+ <li>
  
  <p>
 Identifiez la commande en récupérant la valeur du champ 
@@ -590,7 +649,8 @@ Vérifiez que le statut de la commande n&#x27;a pas déja été mis à jour.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez le résultat du paiement transmis dans le champ 
@@ -604,8 +664,10 @@ Sa valeur vous permet de définir le statut de la commande.
  <p>
  
  <table>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
    </td>
  
@@ -616,7 +678,8 @@ Sa valeur vous permet de définir le statut de la commande.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez la référence du paiement transmise dans le champ 
@@ -624,7 +687,8 @@ Récupérez la référence du paiement transmise dans le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Analysez le champ 
@@ -640,27 +704,35 @@ Ce champ peut être valorisé à:
  <p>
 
  <table>
-         <tr>
-    <td>
+       
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Valeur pour un paiement comptant 
    </td>
-    <td>
+ 
+   <td>
 Valeur pour un paiement en plusieurs fois
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>vads_payment_config</b>
    </td>
-    <td>
+ 
+   <td>
 SINGLE 
    </td>
-    <td>
+ 
+   <td>
 MULTI
    <p>
 (dont la systaxe exacte est MULTI:first=X;count=Y;period=Z)
@@ -674,47 +746,62 @@ MULTI
 S&#x27;il s&#x27;agit d&#x27;un paiement en plusieurs fois, identifiez le numéro de l&#x27;échéance en récupérant la valeur du champ 
 <b>vads_sequence_number</b>.
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Valeur
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 1
    </td>
-    <td>
+ 
+   <td>
 Première échéance
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 2
    </td>
-    <td>
+ 
+   <td>
 Deuxième échéance
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 3
    </td>
-    <td>
+ 
+   <td>
 Troisième échéance
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 n
    </td>
-    <td>
+ 
+   <td>
 N échéance
    </td>
  
@@ -731,7 +818,8 @@ Pour un paiement comptant (unitaire) le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez la valeur du champ 
@@ -739,7 +827,8 @@ Récupérez la valeur du champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez la valeur du champ 
@@ -751,7 +840,8 @@ Ceci vous permettra d&#x27;identifier s&#x27;il s&#x27;agit d&#x27;un paiement i
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez le montant et la devise utilisée. Pour cela, récupérez les valeurs des champs suivants:
@@ -760,51 +850,66 @@ Récupérez le montant et la devise utilisée. Pour cela, récupérez les valeur
  <p>
  
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>vads_amount</b>
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement dans sa plus petite unité monétaire.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_currency</b>
    </td>
-    <td>
+ 
+   <td>
 Code de la devise utilisée pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_change_rate</b>
    </td>
-    <td>
+ 
+   <td>
 Taux de change utilisé pour calculer le montant réél du paiement (voir vads_effective_amount).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_effective_amount</b>
    </td>
-    <td>
+ 
+   <td>
 Montant du paiement dans la devise réellement utilisée pour effectuer la remise en banque.
    </td>
  
@@ -829,7 +934,8 @@ Montant du paiement dans la devise réellement utilisée pour effectuer la remis
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez la valeur du champ 
@@ -849,7 +955,8 @@ La liste complète des codes renvoyés est consultable dans le dictionnaire de d
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez le résultat de l&#x27;authentification 3D Secure. Pour cela:
@@ -858,55 +965,71 @@ Récupérez le résultat de l&#x27;authentification 3D Secure. Pour cela:
  <p>
  
  <ol>
-   <li>
+ 
+  <li>
 Récupérez la valeur du champ 
 <b>vads_threeds_enrolled</b> pour déterminer le statut de l’enrollement de la carte.
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>Vide</b>
     </td>
-     <td>
+ 
+    <td>
 Processus 3DS non réalisé (3DS désactivé dans la demande, marchand non enrôlé ou moyen de paiement non éligible au 3DS).
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>Y</b>
     </td>
-     <td>
+ 
+    <td>
 Authentification disponible, porteur enrôlé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>N</b>
     </td>
-     <td>
+ 
+    <td>
 Porteur non enrôlé.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>U</b>
     </td>
-     <td>
+ 
+    <td>
 Impossible d’identifier le porteur ou carte non éligible aux tentatives d’authentification (ex. Cartes commerciales ou prépayées).
     </td>
  
@@ -915,65 +1038,84 @@ Impossible d’identifier le porteur ou carte non éligible aux tentatives d’a
   </table>
 
   </li>
-   <li>
+ 
+  <li>
 Récupérez le résultat de l’authentification 3D Secure en récupérant la valeur du champ 
 <b>vads_threeds_status</b>.
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>Vide</b>
     </td>
-     <td>
+ 
+    <td>
 Authentification 3DS non réalisée (3DS désactivé dans la demande, porteur non enrôlé ou moyen de paiement non éligible au 3DS).
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>Y</b>
     </td>
-     <td>
+ 
+    <td>
 Porteur authentifié avec succès.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>N</b>
     </td>
-     <td>
+ 
+    <td>
 Erreur d’authentification du porteur.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>U</b>
     </td>
-     <td>
+ 
+    <td>
 Authentification impossible.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>A</b>
     </td>
-     <td>
+ 
+    <td>
 Tentative d’authentification mais authentification non réalisée.
     </td>
  
@@ -988,7 +1130,8 @@ Tentative d’authentification mais authentification non réalisée.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez le résultat des contrôles associés à la fraude en identifiant la valeur du champ 
@@ -998,11 +1141,13 @@ Récupérez le résultat des contrôles associés à la fraude en identifiant la
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 souscrit à l’option « 
 <b>Aide à la décision</b> »
   </li>
-   <li>
+ 
+  <li>
 activé au moins un contrôle depuis son Back Office (menu 
 <b>Paramétrage</b> &gt; 
 <b>Contrôle des risques</b>).
@@ -1021,121 +1166,157 @@ Il prend comme valeur une liste de valeurs séparées par un « ; » dont la syn
 Les différentes valeurs possibles pour 
 <b>control</b> sont :
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Valeur
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>CARD_FRAUD</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle la présence du numéro de carte de l&#x27;acheteur dans la liste grise de cartes.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>SUSPECT_COUNTRY</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle la présence du pays émetteur de la carte de l&#x27;acheteur dans la liste des pays interdits.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>IP_FRAUD</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle la présence de l&#x27;adresse IP de l&#x27;acheteur dans la liste grise d&#x27;IP.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>CREDIT_LIMIT</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle la fréquence et les montants d&#x27;achat d&#x27;un même numéro de carte, ou le montant maximum d&#x27;une commande.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>BIN_FRAUD</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle la présence du code BIN de la carte dans la liste grise des codes BIN.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>ECB</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle si la carte de l&#x27;acheteur est de type e-carte bleue.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>CARD_COMMERCIAL</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle si la carte de l&#x27;acheteur est une carte commerciale.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>SYSTEMATIC_AUTO</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle si la carte de l&#x27;acheteur est une carte à autorisation systématique.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>INCONSISTENT_COUNTRIES</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle si le pays de l&#x27;adresse IP, le pays émétteur de la carte de paiement, et le pays de l&#x27;adresse de l&#x27;acheteur sont cohérents entre eux.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>NON_WARRANTY_PAYMENT</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle le transfert de responsabilité de la transaction.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>SUSPECT_IP_COUNTRY</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle la présence du pays de l&#x27;acheteur, identifié par son adresse IP, dans la liste des pays interdits.
    </td>
  
@@ -1149,41 +1330,53 @@ Contrôle la présence du pays de l&#x27;acheteur, identifié par son adresse IP
 Les différentes valeurs possibles pour 
 <b>result</b> sont :
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Valeur
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>OK</b>
    </td>
-    <td>
+ 
+   <td>
 OK.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>WARNING</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle informatif échoué.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>ERROR</b>
    </td>
-    <td>
+ 
+   <td>
 Contrôle bloquant échoué.
    </td>
  
@@ -1194,7 +1387,8 @@ Contrôle bloquant échoué.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez le type de carte utilisé pour le paiement.
@@ -1207,7 +1401,8 @@ Deux cas de figures peuvent se présenter:
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Pour un paiement réalisé avec 
 <b>une seule carte</b>. Les champs à traiter sont les suivants:
   </li>
@@ -1219,81 +1414,105 @@ Pour un paiement réalisé avec
  <p>
  
  <table>
-        <tr>
-    <td>
+      
+  <tr>
+ 
+   <td>
 Nom du champ
    </td>
-    <td>
+ 
+   <td>
 Description
    </td>
  
   </tr>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
 <b>vads_card_brand</b>
    </td>
-    <td>
+ 
+   <td>
 Type de carte utilisée pour le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_card_number</b>
    </td>
-    <td>
+ 
+   <td>
 Numéro de la carte utilisée pour réaliser le paiement.
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_expiry_month</b>
    </td>
-    <td>
+ 
+   <td>
 Mois d’expiration entre 1 et 12 (ex: 3 pour mars, 10 pour octobre).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_expiry_year</b>
    </td>
-    <td>
+ 
+   <td>
 Année d’expiration sur 4 chiffres (ex : 2023).
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_bank_code</b>
    </td>
-    <td>
+ 
+   <td>
 Code de la banque émettrice
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_bank_product</b>
    </td>
-    <td>
+ 
+   <td>
 Code produit de la carte
    </td>
  
   </tr>
-   <tr>
-    <td>
+ 
+  <tr>
+ 
+   <td>
 
 <b>vads_card_country</b>
    </td>
-    <td>
+ 
+   <td>
 Code Pays du pays d’émission de la carte (Code alpha ISO 3166-2 ex : France=FR).
    </td>
  
@@ -1306,46 +1525,59 @@ Code Pays du pays d’émission de la carte (Code alpha ISO 3166-2 ex : France=F
  <p>
  
  <ul>
-   <li>
+ 
+  <li>
 Pour un 
 <b>paiement fractionné</b> (c&#x27;est-à-dire une transaction utilisant plusieurs moyens de paiement), les champs à traiter sont les suivants :
   <p>
  
   <table>
-         <tr>
-     <td>
+      
+   <tr>
+ 
+    <td>
 Nom du champ
     </td>
-     <td>
+ 
+    <td>
 Valeur
     </td>
-     <td>
+ 
+    <td>
 Description
     </td>
  
    </tr>
-      <tr>
-     <td>
+   
+   <tr>
+ 
+    <td>
 
 <b>vads_card_brand</b>
     </td>
-     <td>
+ 
+    <td>
 MULTI 
     </td>
-     <td>
+ 
+    <td>
 Plusieurs types de cartes sont utilisés pour le paiement.
     </td>
  
    </tr>
-    <tr>
-     <td>
+ 
+   <tr>
+ 
+    <td>
 
 <b>vads_payment_seq</b>
     </td>
-     <td>
+ 
+    <td>
 Au format json, voir détails ci-dessous.
     </td>
-     <td>
+ 
+    <td>
 Détails des transactions réalisées.
     </td>
  
@@ -1359,10 +1591,12 @@ Le champ
   <p>
  
   <ol>
-    <li>
+ 
+   <li>
 &quot;trans_id&quot; : identifiant de la transaction global à la séquence de paiement.
    </li>
-    <li>
+ 
+   <li>
 &quot;transaction&quot; : tableau des transactions de la séquence. Les éléments qui le composent sont les suivants :
    </li>
  
@@ -1381,8 +1615,10 @@ Le champ
  <p>
  
  <table>
-     <tr>
-    <td>
+   
+  <tr>
+ 
+   <td>
 
    </td>
  
@@ -1441,7 +1677,8 @@ Le champ
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Récupérez toutes les informations concernant le détail de la commande, le détail de l&#x27;acheteur et le détail de la livraison. 
@@ -1456,7 +1693,8 @@ Leur valeur est identique à celle soumise dans le formulaire.
  </p>
  
  </li>
-  <li>
+ 
+ <li>
  
  <p>
 Procédez à la mise à jour de la commande.
@@ -1507,56 +1745,74 @@ Il existe 5 catégories de codes retour :
 <p>
  
 <table>
-      <tr>
-   <td>
+     
+ <tr>
+ 
+  <td>
 Catégorie de codes 
   </td>
-   <td>
+ 
+  <td>
 Description
   </td>
  
  </tr>
-    <tr>
-   <td>
+   
+ <tr>
+ 
+  <td>
 1XX
   </td>
-   <td>
+ 
+  <td>
 Information
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 2XX
   </td>
-   <td>
+ 
+  <td>
 Succès
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 3XX
   </td>
-   <td>
+ 
+  <td>
 Redirection
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 4XX
   </td>
-   <td>
+ 
+  <td>
 Erreur du client
   </td>
  
  </tr>
-  <tr>
-   <td>
+ 
+ <tr>
+ 
+  <td>
 5XX
   </td>
-   <td>
+ 
+  <td>
 Erreur du serveur
   </td>
  

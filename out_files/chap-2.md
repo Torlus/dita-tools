@@ -26,14 +26,18 @@ Pour toute question technique ou demande d&#x27;assistance, nos services sont di
 <p>
  
 <table>
-       <tr>
-  <td>
+       
+<tr>
+ 
+ <td>
 
  </td>
-  <td>
+ 
+ <td>
 par téléphone au : 
  </td>
-  <td>
+ 
+ <td>
  0 811 708 709 depuis la France,
  <p>
 
@@ -42,14 +46,18 @@ par téléphone au :
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 
  </td>
-  <td>
+ 
+ <td>
 
  </td>
-  <td>
+ 
+ <td>
 +33 567 223 329 depuis l&#x27;étranger,
  <p>
 
@@ -62,14 +70,18 @@ par téléphone au :
  </td>
  
 </tr>
- <tr>
-  <td>
+ 
+<tr>
+ 
+ <td>
 
  </td>
-  <td>
+ 
+ <td>
 par e-mail :
  </td>
-  <td>
+ 
+ <td>
 <a href="mailto:support@payzen.eu">support@payzen.eu</a>
  </td>
  
