@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1411575961770" xml:lang="fr-fr">
+	<title ixia_locid="41">Analyser la nature de la notification</title>
+	<shortdesc ixia_locid="42"/>
+	<conbody>
+		<p ixia_locid="43">Le champ <b ixia_locid="8" translate="no">vads_url_check_src</b> permet
+			de différencier les notifications en fonction de leur évènement déclencheur :</p>
+		<p ixia_locid="44">
+			<ul id="ul_qn1_w2q_np">
+				<li doc-type="Moyens-Paiement SEPA-OneOff SEPA-Recurrent" ixia_locid="54" payment-method="SEPA-One-Off SEPA-Recurrent">l'enregistrement
+					d'un mandat (avec ou sans définition d'un abonnement).</li>
+				<li doc-type="Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil SEPA-Recurrent" ixia_locid="55" payment-method="SEPA-Recurrent">paiement d'une échéance d'un
+					abonnement.</li>
+				<li doc-type="Form Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Paylib PayPal SEPA-OneOff" ixia_locid="56" payment-method="SEPA-One-Off Paylib PayPal">création d'une
+					transaction.</li>
+				<li ixia_locid="57">renvoi de la notification depuis le <ph ixia_locid="87" translate="no">Back Office</ph> par le marchand.</li>
+			</ul>
+		</p>
+		<p ixia_locid="28">Il précise la règle de notification appliquée :<table colsep="1" frame="all" id="table_gtc_3wt_dp" rowsep="1">
+				<title ixia_locid="9">Valeurs associées au champ vads_url_check_src</title>
+				<tgroup cols="2">
+					<colspec colname="c1" colnum="1" colwidth="1*"/>
+					<colspec colname="c2" colnum="2" colwidth="4.02*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="10">Valeur</entry>
+							<entry ixia_locid="11">Règle appliquée</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="12"><b ixia_locid="36" translate="no">PAY</b></entry>
+							<entry ixia_locid="13">
+								<p ixia_locid="48">La valeur PAY sera envoyée dans les cas suivants :<ul id="ul_agb_txn_bq">
+										<li doc-type="Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil SEPA-Recurrent" ixia_locid="64">demande d'enregistrement d'un <ph doc-type="Moyens-Paiement SEPA-Recurrent" ixia_locid="102" payment-method="SEPA-Recurrent">mandat</ph><ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil" ixia_locid="103" payment-method="SEPA-Recurrent">alias</ph> (REGISTER)</li>
+										<li doc-type="Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil SEPA-Recurrent" ixia_locid="65" payment-method="SEPA-Recurrent">demande
+											d'enregistrement d'un<ph doc-type="Moyens-Paiement SEPA-Recurrent" ixia_locid="104" payment-method="SEPA-Recurrent">mandat</ph><ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil" ixia_locid="105">alias</ph> avec définition d'un
+											abonnement (REGISTER_SUBSCRIBE)</li>
+										<li doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney Paylib PayPal SEPA-OneOff Form Moyens-Paiement" ixia_locid="68" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent">paiement immédiat (paiement comptant ou
+											première échéance d'un paiement en plusieurs fois) </li>
+										<li ixia_locid="69"><ph doc-type="Form Moyens-Paiement Identifiant_Abonnement integration integration-Allemagne integration-Bresil Oney Paylib PayPal SEPA-OneOff" ixia_locid="81" payment-method="Oney PayPal Paylib SEPA-One-Off">paiement différé à moins de 7
+												jours</ph><p ixia_locid="70">uniquement si le
+												marchand a configuré la règle <b ixia_locid="71">URL
+												de notification à la fin du paiement</b>.
+											</p></li>
+										<li ixia_locid="72">
+											<p ixia_locid="73">paiement abandonné ou annulé par
+												l'acheteur </p>
+											<p ixia_locid="74">uniquement si le marchand a configuré
+												la règle <b ixia_locid="75">URL de notification sur
+												annulation</b>.</p>
+										</li>
+									</ul></p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="14"><b ixia_locid="37" translate="no">BO</b></entry>
+							<entry ixia_locid="15">Exécution de la notification depuis le <ph ixia_locid="88" translate="no">Back Office</ph> (clic droit sur
+								une transaction &gt; <b ixia_locid="58">Executer l'url de
+									notification</b>).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="16"><b ixia_locid="38" translate="no">BATCH_AUTO</b></entry>
+							<entry ixia_locid="17"><p ixia_locid="76">La valeur BATCH_AUTO sera envoyée dans les cas
+										suivants:<ul id="ul_rdc_nzn_bq">
+										<li ixia_locid="66">paiement différé à plus de 7 jours</li>
+										<li ixia_locid="67">échéances d'un paiement en plusieurs
+											fois (hormis la première)<p ixia_locid="77">uniquement
+												si le marchand a configuré la règle <b ixia_locid="78">URL de notification sur
+												autorisation par batch</b>. </p></li>
+									</ul></p><p ixia_locid="79"/><p ixia_locid="30">La notification
+									sera envoyée lors de la demande d’autorisation d'un paiement
+									dont le statut est "En attente d’autorisation".</p><ph doc-type="Moyens-Paiement SEPA-OneOff" ixia_locid="31" payment-method="SEPA-One-Off">Non applicable
+									pour le prélèvement ponctuel.</ph></entry>
+						</row>
+						<row>
+							<entry ixia_locid="18"><b ixia_locid="39" translate="no">REC</b></entry>
+							<entry ixia_locid="19"><p ixia_locid="32">La valeur REC sera envoyée
+									uniquement pour les paiements par abonnement si le marchand a
+									configuré la règle <b ixia_locid="80">URL de notification à la
+										création d'un paiement par récurrence</b>.</p><ph doc-type="SEPA-OneOff Moyens-Paiement" ixia_locid="33" payment-method="SEPA-One-Off">Non applicable pour le
+									prélèvement ponctuel.</ph></entry>
+						</row>
+						<row>
+							<entry ixia_locid="20"><b ixia_locid="40" translate="no">MERCH_BO</b></entry>
+							<entry ixia_locid="21">La valeur MERCH_BO sera envoyée :<p ixia_locid="59">
+									<ul id="ul_lv5_djn_rp">
+										<li ixia_locid="60">lors d'une opération réalisée depuis le
+												<ph ixia_locid="89" translate="no">Back Office</ph>
+											(remboursement, modification, validation, duplicata), si
+											le marchand a configuré la règle de notification : <b ixia_locid="61">URL de notification sur une
+												opération provenant du Back Office</b></li>
+										<li ixia_locid="62">lors d'une annulation réalisée depuis le
+												<ph ixia_locid="90" translate="no">Back Office</ph>,
+											si le marchand a configuré la règle de notification : <b ixia_locid="63">URL de notification sur
+												annulation</b></li>
+									</ul>
+								</p></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></p>
+		<p ixia_locid="82">En testant sa valeur, le script pourra réaliser un traitement différent
+			en fonction de la nature de la notification.</p>
+		<p ixia_locid="83"><u ixia_locid="84">Par exemple :</u></p>
+		<p ixia_locid="85">Si <b ixia_locid="91"><ph ixia_locid="92" translate="no">vads_url_check_src</ph></b> est valorisé à <ph ixia_locid="93" translate="no"><b ixia_locid="94">PAY</b></ph> ou <ph ixia_locid="95" translate="no"><b ixia_locid="96">BATCH_AUTO</b></ph> alors le script mettra à jour le statut de
+			la commande, ...</p>
+		<p ixia_locid="86">Si <ph ixia_locid="97" translate="no"><b ixia_locid="98">vads_url_check_src</b></ph> est valorisé à <b ixia_locid="99" translate="no">REC</b> alors le script récupèrera la référence de l'abonnement et incrémentera le
+			nombre d'échéances échues en cas de paiement accepté, ...</p>
+	</conbody>
+</concept><?oxy_options track_changes="on"?>

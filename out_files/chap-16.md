@@ -21,6 +21,7 @@ Ces tableaux sont présentés de la manière suivante :
  
 <p>
  
+
 <ul>
  
 <li>
@@ -160,6 +161,7 @@ Le dictionnaire de données présente ensuite le détail pour chacun des champs.
  
 <p>
  
+
 <ul>
  
 <li>
@@ -217,6 +219,7 @@ Précisions sur les
 <b>Code erreur</b> correspond au numéro de l’erreur lors de la soumission d’un formulaire de paiement incorrect. 
 </p>
  
+
 <ul>
  
 <li>
@@ -250,6 +253,7 @@ Référez-vous à la catégorie souhaitée pour obtenir la liste des paramètres
  
 <p>
  
+
 <ul>
  
  <li>
@@ -3154,6 +3158,7 @@ Sa valeur est calculée :
 
   <p>
  
+
   <ul>
  
    <li>
@@ -3211,6 +3216,7 @@ an40
 
   <p>
  
+
   <ul>
  
    <li>
@@ -6571,6 +6577,7 @@ Numéro de carte en clair (cas du paiement silencieux).
  
   <p>
  
+
   <ul>
  
    <li>
@@ -7403,6 +7410,7 @@ string (enum)
 
   <p>
  
+
   <ul>
  
    <li>
@@ -7519,6 +7527,7 @@ string (enum)
 
   <p>
  
+
   <ul>
  
    <li>
@@ -10033,6 +10042,7 @@ Identifiant unique de session.
  
   <p>
  
+
   <ul>
  
    <li>
@@ -10557,6 +10567,7 @@ Code complémentaire de réponse. Sa signification dépend de la valeur renseign
  
   <p>
  
+
   <ul>
  
    <li>
@@ -10578,6 +10589,7 @@ Lorsque
  
   <p>
  
+
   <ul>
  
    <li>
@@ -10857,6 +10869,7 @@ Informations techniques.
 Identifiant unique (alias ou référence unique de mandat) associé à un moyen de paiement.
   <p>
  
+
   <ul>
  
    <li>
@@ -10954,6 +10967,7 @@ Présent uniquement si l’action demandée correspond à la création ou à la 
  
   <p>
  
+
   <ul>
  
    <li>
@@ -11928,6 +11942,7 @@ string (enum)
  
   <td>
  
+
   <ul>
  
    <li>
@@ -12043,6 +12058,7 @@ Le formulaire sera rejeté dans les cas suivants :
 
   <p>
  
+
   <ul>
  
    <li>
@@ -12913,6 +12929,7 @@ Désigne le type du paiement : comptant ou en plusieurs fois.
  
   <p>
  
+
   <ul>
  
    <li>
@@ -12927,6 +12944,7 @@ Pour un paiement en plusieurs fois avec montants et dates fixes, la valeur doit 
    <p>
 Les paramètres sont les suivants : 
    </p>
+
 
    <ul>
  
@@ -13013,6 +13031,7 @@ string (enum)
  
   <p>
  
+
   <ul>
  
    <li>
@@ -13022,6 +13041,7 @@ string (enum)
  
   </ul>
  
+
   <ul>
  
    <li>
@@ -13072,6 +13092,7 @@ En cas de reste différent de zéro, il sera reporté sur le montant de la derni
 <u>Requête de paiement :</u>
   <p>
  
+
   <ul>
  
    <li>
@@ -13148,6 +13169,7 @@ Cette instruction permet de créer immédiatement 4 paiements avec le même num�
  
   <p>
  
+
   <ul>
  
    <li>
@@ -13234,6 +13256,7 @@ Désigne le type du paiement : comptant ou en plusieurs fois.
  
   <p>
  
+
   <ul>
  
    <li>
@@ -13248,6 +13271,7 @@ Pour un paiement en plusieurs fois avec montants et dates fixes, la valeur doit 
    <p>
 Les paramètres sont les suivants : 
    </p>
+
 
    <ul>
  
@@ -13334,6 +13358,7 @@ string (enum)
  
   <p>
  
+
   <ul>
  
    <li>
@@ -13343,6 +13368,7 @@ string (enum)
  
   </ul>
  
+
   <ul>
  
    <li>
@@ -13393,6 +13419,7 @@ En cas de reste différent de zéro, il sera reporté sur le montant de la derni
 <u>Requête de paiement :</u>
   <p>
  
+
   <ul>
  
    <li>
@@ -13469,6 +13496,7 @@ Cette instruction permet de créer immédiatement 4 paiements avec le même num�
  
   <p>
  
+
   <ul>
  
    <li>
@@ -15337,6 +15365,7 @@ json
 
   <p>
  
+
   <ul>
  
    <li>
@@ -15419,6 +15448,7 @@ capture_delay
 Délai avant remise (en jours).
     <p>
  
+
     <ul>
  
      <li>
@@ -15448,6 +15478,7 @@ card_brand
 Moyen de paiement utilisé.
     <p>
  
+
     <ul>
  
      <li>
@@ -15478,6 +15509,7 @@ card_number
 Numéro du moyen de paiement.
     <p>
  
+
     <ul>
  
      <li>
@@ -15550,6 +15582,7 @@ presentation_date
  
     <p>
  
+
     <ul>
  
      <li>
@@ -15560,6 +15593,7 @@ Pour un paiement par carte bancaire, ce paramètre correspond à la date de remi
  
     </p>
  
+
     <ul>
  
      <li>
@@ -15861,6 +15895,7 @@ Informations sur l&#x27;acheteur.
 Champ retourné dans la réponse.
   <p>
  
+
   <ul>
  
    <li>
@@ -16543,6 +16578,7 @@ n..12
  
   <td>
  
+
   <ul>
  
    <li>
@@ -16562,6 +16598,7 @@ Exemple en euros
  
   <p>
  
+
   <ul>
  
    <li>
@@ -16579,6 +16616,7 @@ Exemples : 20.0 ou 19.6532
 
 <i>
 <u>Remarques : </u></i>
+
    <ul>
  
     <li>
@@ -19933,6 +19971,7 @@ string (enum)
  
   <td>
  
+
   <ul>
  
    <li>
@@ -20417,6 +20456,7 @@ Deux options sont possibles :
 
   <p>
  
+
   <ul>
  
    <li>
@@ -20702,6 +20742,7 @@ Les mots clés &quot;SECONDLY&quot; / &quot;MINUTELY&quot; / &quot;HOURLY&quot; 
 
   <p>
 Exemples : 
+
   <ul>
  
    <li>
@@ -20970,6 +21011,7 @@ Une fois ce nombre d’échéances dépassé, c’est le montant
 
   <p>
  
+
   <ul>
  
    <li>
@@ -22766,6 +22808,7 @@ n14
 
   <p>
  
+
   <ul>
  
    <li>
@@ -22880,6 +22923,7 @@ n6
 
   <p>
 Le formulaire est rejeté:
+
   <ul>
  
    <li>
@@ -23242,6 +23286,7 @@ Ce statut est spécifique à tous les moyens de paiement nécessitant une intég
 
     <p>
 Ce statut est retourné lorsque :
+
     <ul>
  
      <li>
@@ -23438,6 +23483,7 @@ URL de la page à notifier à la fin du paiement. Surcharge la valeur saisie dan
 
   <p>
  
+
   <ul>
  
    <li>

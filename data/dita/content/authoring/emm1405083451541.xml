@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405083451541" xml:lang="fr-fr">
+	<title ixia_locid="1">Générer un formulaire de paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p id="p_uhh_cb2_y4" ixia_locid="3">Pour générer une demande de paiement, vous devez
+			construire un formulaire html comme suit
+			:<codeblock ixia_locid="4">&lt;form method="POST" action="<xref ixia_locid="57" keyref="URLpagePaiement"/>"&gt;
+	&lt;input type="hidden" name="parametre1" value="valeur1" /&gt;
+	&lt;input type="hidden" name="parametre2" value="valeur2" /&gt;
+	&lt;input type="hidden" name="parametre3" value="valeur3" /&gt;
+	&lt;input type="hidden" name="signature" value="signature"/&gt;
+	&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		<p ixia_locid="66"/>
+		<p id="p_kdx_fb2_y4" ixia_locid="5">Il contient:</p>
+		<p ixia_locid="67"/>
+		<p id="p_ptv_gb2_y4" ixia_locid="6"><u ixia_locid="7">Les éléments techniques suivants :
+			</u></p>
+		<p id="p_kdx_hb2_y4" ixia_locid="8">
+			<ul id="ul_vth_b2s_v4">
+				<li ixia_locid="9">Les balises <codeph ixia_locid="10">&lt;form&gt;</codeph> et
+						<codeph ixia_locid="11">&lt;/form&gt;</codeph> qui permettent de créer un
+					formulaire HTML.</li>
+				<li ixia_locid="12">L’attribut <codeph ixia_locid="13">method="POST"</codeph> qui
+					spécifie la méthode utilisée pour envoyer les données.</li>
+				<li ixia_locid="14">L’attribut <codeph ixia_locid="15">action="<xref ixia_locid="58" keyref="URLpagePaiement"/>"</codeph> qui spécifie où envoyer les données
+					du formulaire.</li>
+			</ul>
+		</p>
+		<p ixia_locid="16"/>
+		<p id="p_p2t_jb2_y4" ixia_locid="17"><u ixia_locid="18">Les données du formulaire :</u></p>
+		<p id="p_plz_lb2_y4" ixia_locid="19">
+			<ul id="ul_ztc_s2s_v4">
+				<li ixia_locid="20">L’identifiant de la boutique,</li>
+				<li ixia_locid="21">Les caractéristiques du paiement en fonction du cas d’utilisation<ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Form_Light Form" ixia_locid="53">(voir chapitres suivants)</ph>,</li>
+				<li ixia_locid="22">Les informations complémentaires en fonction de vos besoins<ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Form Form_Light" ixia_locid="59"> (voir chapitre <b ixia_locid="23">Utiliser des fonctions
+							complémentaires</b> )</ph>,</li>
+				<li ixia_locid="24">La signature qui assure l'intégrité du formulaire<ph doc-type="Form Form_Light Identifiant-Abonnement" ixia_locid="78"> (voir chapitre <b ixia_locid="52">Calculer la signature</b>)</ph>.</li>
+			</ul>
+		</p>
+		<p ixia_locid="60"/>
+		<p id="p_ax1_nb2_y4" ixia_locid="26">Ces données sont ajoutées au formulaire en utilisant la
+			balise <codeph ixia_locid="27">&lt;input&gt;</codeph>:</p>
+		<p id="p_pgw_nb2_y4" ixia_locid="28"><codeph ixia_locid="29">&lt;input type="hidden"
+				name="parametre1" value="valeur1" /&gt;</codeph></p>
+		<p ixia_locid="61"/>
+		<p doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" id="p_p4q_4b2_y4" ixia_locid="68" payment-method="SEPA-One-Off SEPA-Recurrent ">Pour
+			valoriser les attributs <codeph ixia_locid="70">name</codeph> et <codeph ixia_locid="72">value</codeph> , référez-vous au chapitre <b ixia_locid="77">Dictionnaire de
+				données</b>.</p>
+		<p ixia_locid="69"><ph doc-type="Moyens-Paiement ancv Oney Paylib PayPal" ixia_locid="74" payment-method="Oney PayPal Paylib ANCV Klarna">Pour valoriser les attributs <codeph ixia_locid="71">name</codeph> et <codeph ixia_locid="73">value</codeph> ,
+				référez-vous au chapitre <b ixia_locid="75">Dictionnaire de données</b> du guide
+				d'implémentation du formulaire.</ph>
+		</p>
+		<p ixia_locid="76"/>
+		<p ixia_locid="62"/>
+		<p id="p_p54_pb2_y4" ixia_locid="34">Toutes les données du formulaire doivent être encodées
+			en <b ixia_locid="35">UTF-8. </b></p>
+		<p id="p_ash_qb2_y4" ixia_locid="36">Les caractères spéciaux (accents, ponctuation etc…)
+			seront ainsi correctement interprétés par la plateforme de paiement. Dans le cas
+			contraire, le calcul de signature sera erroné et le formulaire sera rejeté.</p>
+		<p ixia_locid="37"/>
+		<p id="p_a1d_3d2_y4" ixia_locid="38"><u ixia_locid="39">Le bouton <b ixia_locid="40">Payer</b> qui va permettre l’envoi des données :</u></p>
+		<p id="p_azj_kd2_y4" ixia_locid="41"><codeph ixia_locid="42">&lt;input type="submit"
+				name="payer" value="Payer"/&gt;</codeph></p>
+		<p ixia_locid="43"/>
+		<p doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Form Form_Light" ixia_locid="44">Des cas d’utilisation sont présentés dans les chapitres suivants. Ils
+			vous permettront de construire votre formulaire de paiement en fonction de vos
+			besoins.</p>
+		<p doc-type="integration integration-Allemagne integration-Bresil Form" ixia_locid="79">
+			<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+			<ul id="ul_uhq_5fs_v4" ixia_locid="45">
+				<li ixia_locid="46"><?oxy_custom_end ?>Créer un paiement comptant immédiat.</li>
+				<li ixia_locid="47">Créer un paiement comptant différé.</li>
+				<li ixia_locid="48">Créer un paiement en plusieurs fois.</li>
+				<li ixia_locid="51">Créer une autorisation sans remise.</li>
+			</ul>
+		</p>
+	</conbody>
+</concept>

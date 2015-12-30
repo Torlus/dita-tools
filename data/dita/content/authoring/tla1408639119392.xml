@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408639119392" xml:lang="fr-fr">
+	<title ixia_locid="38" translate="no">vads_url_referral</title>
+	<shortdesc ixia_locid="39"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26"><b ixia_locid="40">Champ déprécié</b>. Utilisez <b ixia_locid="41" translate="no">vads_url_refused</b>.<p ixia_locid="42">URL où sera
+								redirigé l’acheteur en cas de refus d’autorisation (code 02
+									<b ixia_locid="43">Contacter l’émetteur de la carte</b>) après appui sur
+									<b ixia_locid="44">Retourner à la boutique</b>.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="32" translate="no">ans..127</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">26</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="37">Redirection vers le site marchand.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

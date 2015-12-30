@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1416990214312" xml:lang="fr-fr">
+	<title ixia_locid="610">Paiement comptant immédiat</title>
+	<shortdesc ixia_locid="611"/>
+	<conbody>
+		<p ixia_locid="5">Un paiement est considéré comme <b ixia_locid="609">comptant immédiat</b>
+			si :<ul id="ul_fkg_djq_cq">
+				<li ixia_locid="406">le montant est débité en une seule fois,</li>
+				<li ixia_locid="608">le délai de remise en banque est de 0 jour.</li>
+				<!--<li ixia_locid="407">et si la durée séparant la date de remise demandée de la date du jour est
+					strictement inférieure à la durée de validité de l'autorisation. </li>-->
+			</ul></p>
+		<p ixia_locid="7">Une demande d'autorisation pour le montant global est effectuée. Le
+			paiement est remis en banque dès que possible.</p>
+		<!--<p ixia_locid="24">La durée de validité d'autorisation est spécifique à chaque moyen de paiement
+			(voir section <b ixia_locid="580">Validité d'une autorisation</b> présentée plus bas). </p>-->
+	</conbody>
+</concept>

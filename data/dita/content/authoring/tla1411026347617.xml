@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411026347617" xml:lang="fr-fr">
+	<title ixia_locid="43" translate="no">vads_sub_currency</title>
+	<shortdesc ixia_locid="44"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">Paramètre obligatoire utilisé dans le cas de la
+							création d'un abonnement. <p ixia_locid="45">Il indique la monnaie à utiliser pour
+								l’abonnement, selon la norme ISO 4217. </p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="46"><b ixia_locid="37">Format</b></entry>
+						<entry ixia_locid="48" translate="no">n3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="47"><b ixia_locid="50">Exemples de valeurs possibles</b></entry>
+						<entry ixia_locid="49">Les devises possibles sont les suivantes :<p ixia_locid="51">
+								<table conref="tla1406044948454.xml#tla1406044948454/table_mcl_b31_2p" id="table_jgk_mvv_lp">
+									<tgroup cols="cols_z4j_mvv_lp">
+										<tbody>
+											<row>
+												<entry ixia_locid="52"/>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="38">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">67</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

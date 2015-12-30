@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408639754479" xml:lang="fr-fr">
+	<title ixia_locid="59" translate="no">vads_validation_mode</title>
+	<shortdesc ixia_locid="60"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Précise le mode de validation de la transaction. </entry>
+					</row>
+					<row>
+						<entry ixia_locid="61"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="63" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="62"><b ixia_locid="65">Code erreur</b></entry>
+						<entry ixia_locid="64" translate="no">05</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="66"/><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="5.04*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="50">Valeur</entry>
+												<entry align="center" ixia_locid="51">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8">Absent ou vide</entry>
+												<entry ixia_locid="9">Configuration par défaut de la
+												boutique retenue (paramétrable dans le Back
+												Office).</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10" translate="no">0</entry>
+												<entry ixia_locid="11">Validation automatique par la plateforme de paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="54" translate="no">1</entry>
+												<entry ixia_locid="58">Validation manuelle par le marchand.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406115871410" xml:lang="fr-fr">
+	<title ixia_locid="3">Définir la méthode de réception des données</title>
+	<shortdesc ixia_locid="4"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="5">
+			<p ixia_locid="149">Par défaut, le site marchand ne reçoit aucun paramètre.</p>
+			<p ixia_locid="6">Pour récupérer des informations sur la page de retour (tracking,
+				statistiques, personnalisation des messages à destination de l’acheteur, etc..), le
+				marchand peut surcharger cette configuration dans son formulaire de paiement.</p>
+		</context>
+		<steps>
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="7">
+				<cmd ixia_locid="8">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
+					chapitre <b ixia_locid="150"><xref href="emm1405083451541.xml" ixia_locid="140">Générer un formulaire de paiement</xref></b>) pour construire votre
+					formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10028_N1001C_N10011_N10001" ixia_locid="9">
+				<cmd ixia_locid="10">Utilisez le champ facultatif <b ixia_locid="152">vads_return_mode</b> pour indiquer la
+					méthode de transmission des données vers le site marchand.</cmd>
+				<info ixia_locid="53">
+					<table colsep="1" frame="all" id="table_jyf_xlz_fp" rowsep="1">
+						<tgroup cols="2">
+							<colspec colname="c2" colnum="1" colwidth="1*"/>
+							<colspec colname="c3" colnum="2" colwidth="3.33*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="44">Valeur</entry>
+									<entry ixia_locid="45">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="141" translate="no">Absent, vide ou <b ixia_locid="56" translate="no">NONE</b></entry>
+									<entry ixia_locid="143">Aucune donnée n'est passée à l’URL de
+										retour.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="142" translate="no"><b ixia_locid="145">GET</b></entry>
+									<entry ixia_locid="144">Les données sont transmises dans l’URL
+										de la page de retour</entry>
+								</row>
+								<row>
+									<entry ixia_locid="50" translate="no"><b ixia_locid="146">POST</b></entry>
+									<entry ixia_locid="51">Les données sont transmises à la page de
+										retour sous la forme d’un formulaire HTTP <b ixia_locid="52" translate="no">POST</b>.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+					<p ixia_locid="54">La méthode <b ixia_locid="147" translate="no"><ph ixia_locid="148">GET</ph></b> permet d'éviter l’affichage d’un
+						message d'avertissement lorsque le retour se fait sur un environnement<b ixia_locid="14"> non sécurisé (http).</b></p><image align="center" id="image_qmg_p4y_v4" ixia_locid="16" keyref="MessageHTTPPOST" scale="70"/>
+				</info>
+
+			</step>
+			<step id="step_N100DC_N1001C_N10011_N10001" ixia_locid="33">
+				<cmd ixia_locid="34">Calculez la valeur du champ <b ixia_locid="64" translate="no">signature</b>
+					en utilisant l’ensemble des champs de votre formulaire, dont le nom commence par
+						<b ixia_locid="66" translate="no">vads_ </b>(voir chapitre <b ixia_locid="55"><xref href="emm1405088305497.xml" ixia_locid="57">Calculer
+							la signature</xref></b>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N100EE_N10011_N10001" ixia_locid="68">
+			<p ixia_locid="70"><u ixia_locid="59">Exemple de formulaire de paiement avec définition du mode
+					de transmission des
+				données</u>:<codeblock ixia_locid="72">&lt;form method="POST" action="<xref ixia_locid="58" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+<b ixia_locid="74">&lt;input type="hidden" name="vads_return_mode" value="GET" /&gt;</b>
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140526101407" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="239848" /&gt;
+&lt;input type="hidden" name="vads_url_return" value="http://demo.com/return.php" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

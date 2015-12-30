@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1409039700472" xml:lang="fr-fr">
+	<title ixia_locid="1">Contacter l'assistance technique</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="25">En cas de problème de connexion au <ph ixia_locid="94" translate="no">Back Office</ph>, utilisez le lien « mot de passe oublié ou compte bloqué ».</p>
+		<p ixia_locid="26"/>
+		<p ixia_locid="59">Pour toute question technique ou demande d'assistance, nos services sont
+			disponibles du lundi au vendredi, <ph ixia_locid="102" location="Innopay OSB PayZen PayZen_Germany Systempay" platform="PayZen Systempay">de 9h à 18h</ph><ph ixia_locid="107" location="PayZen_Brazil">de 8h à 17h</ph>
+			:</p>
+		<p ixia_locid="74"/>
+		<p ixia_locid="60">
+			<table colsep="0" frame="none" id="table_q3m_mdh_dq" rowsep="0">
+				<tgroup cols="4">
+					<colspec colname="newCol1" colnum="1" colwidth="6.64*"/>
+					<colspec colname="c1" colnum="2" colwidth="7.22*"/>
+					<colspec colname="c2" colnum="3" colwidth="19.57*"/>
+					<colspec colname="newCol4" colnum="4" colwidth="1*"/>
+					<tbody>
+						<row>
+							<entry ixia_locid="43"/>
+							<entry ixia_locid="28">par téléphone au : </entry>
+							<entry ixia_locid="29">
+								<ph ixia_locid="87" location="PayZen PayZen_Germany PayZen_Brazil Innopay" platform="PayZen Innopay"><keyword ixia_locid="97" keyref="TelephoneSupport"/><ph ixia_locid="96"> depuis <ph ixia_locid="103" location="PayZen" platform="PayZen">la
+											France,</ph><ph ixia_locid="104" location="Innopay" platform="Innopay">la Suisse,</ph><ph ixia_locid="108" location="PayZen_Germany">l'Allemagne</ph><ph ixia_locid="106" location="PayZen_Brazil">le
+										Brésil</ph></ph></ph><p ixia_locid="99"/>
+								<ph ixia_locid="100" location="OSB" platform="OSB"><keyword ixia_locid="98" keyref="TelephoneSupport"/> Accessible 24H
+									sur 24 (Tarification de ce numéro : coût d'un appel local depuis
+									un poste fixe.)</ph>
+								<p ixia_locid="88" location="Systempay" platform="Systempay"><ph ixia_locid="89"><keyword ixia_locid="90" keyref="TelephoneSupportBP"/></ph> pour les clients
+									Banque Populaire</p>
+								<p ixia_locid="91" location="Systempay" platform="Systempay">
+									<ph ixia_locid="92"><keyword ixia_locid="93" keyref="TelephoneSupportCE"/></ph> pour les clients
+									Caisse d'Epargne</p><p ixia_locid="101"/><p ixia_locid="31" location="PayZen" platform="PayZen">(<i ixia_locid="76">Numéro
+										Azur – Coût d’un appel local depuis un poste fixe</i>)</p><p ixia_locid="78"/><p ixia_locid="82"/></entry>
+						</row>
+						<row location="PayZen Innopay" platform="PayZen Innopay">
+							<entry ixia_locid="45"/>
+							<entry ixia_locid="33"/>
+							<entry ixia_locid="34"><keyword ixia_locid="35" keyref="TelephoneSupportDepuisEtranger"/> depuis l'étranger,<p ixia_locid="83"/><p ixia_locid="85"/></entry>
+						</row>
+						<row>
+							<entry ixia_locid="47"/>
+							<entry ixia_locid="36">par e-mail :</entry>
+							<entry ixia_locid="37"><xref ixia_locid="54" keyref="EmailSupport"/></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+		<p ixia_locid="39"/>
+		<p ixia_locid="40">Pour faciliter le traitement de vos demandes, il vous sera demandé de
+			communiquer votre identifiant de boutique (numéro à 8 chiffres).</p>
+		<p ixia_locid="41">Cette information est disponible dans l'e-mail d'inscription de votre
+			boutique, ou dans le <ph ixia_locid="95" translate="no">Back Office</ph> (menu <b ixia_locid="84">Paramétrage</b> &gt; <b ixia_locid="86">Boutique</b> &gt; <b ixia_locid="81">Configuration</b>).</p>
+		<p ixia_locid="42"/>
+	</conbody>
+</concept>

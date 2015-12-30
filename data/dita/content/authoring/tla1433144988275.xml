@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<task id="tla1433144988275" xml:lang="fr-fr">
+	<title ixia_locid="61">Configurer les e-mails envoyés à l'acheteur</title>
+	<shortdesc ixia_locid="62"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="63">
+			<p ixia_locid="64">Le Back Office offre la possibilité au marchand de configurer des e-mails à
+				destination de l'acheteur :</p>
+			<p ixia_locid="66">
+				<ul id="ul_mlj_sml_fs">
+					<li ixia_locid="67">E-mail de confirmation d'abonnement.</li>
+					<li ixia_locid="68">E-mail de confirmation de paiement.</li>
+					<li ixia_locid="69">E-mail de confirmation d'inscription.</li>
+					<li doc-type="Moyens-Paiement SEPA-OneOff SEPA-Recurrent" ixia_locid="105" payment-method="SEPA-One-Off SEPA-Recurrent">E-mail de pré-notification de
+						prélèvement SEPA à destination de l'acheteur.</li>
+				</ul>
+			</p>
+			<p ixia_locid="104" location="Systempay" platform="Systempay">Pour bénéficier de ce service, contactez le
+				service client de votre plateforme de paiement pour activer les fonctions
+				nécessaires dans votre offre.</p>
+			<p ixia_locid="173"/>
+			<p ixia_locid="70">Pour paramétrer ces e-mails :</p>
+		</context>
+		<steps>
+			<step id="step_N1003D_N1003A_N10011_N10001" ixia_locid="71">
+				<cmd ixia_locid="72">Connectez-vous à : <xref ixia_locid="60" keyref="BackOfficeMarchand"/>.</cmd>
+			</step>
+			<step id="step_N1004B_N1003A_N10011_N10001" ixia_locid="73">
+				<cmd ixia_locid="74">Allez dans le menu : <b ixia_locid="29">Paramétrage</b> &gt; <b ixia_locid="58">Règles de notifications</b>.</cmd>
+			</step>
+			<step id="step_N1005E_N1003A_N10011_N10001" ixia_locid="169">
+				<cmd ixia_locid="171">Sélectionnez l'onglet <b ixia_locid="77">E-mail envoyé à
+					l'acheteur</b>.</cmd>
+			</step>
+			<step id="step_N10087_N1004F_N10013_N10001" ixia_locid="170">
+				<cmd ixia_locid="172">Effectuez un clic droit sur le libellé d'un e-mail et
+					sélectionnez <b ixia_locid="79">Activer la règle</b>.</cmd>
+				<info ixia_locid="80" location="PayZen PayZen_Germany PayZen_Brazil OSB Innopay" platform="Innopay OSB PayZen">Pour personnaliser un e-mail :</info>
+			</step>
+			<step id="step_N10077_N1003A_N10011_N10001" ixia_locid="81">
+				<cmd ixia_locid="82">Effectuez un clic droit sur le libellé d'un e-mail dont la règle est
+					activée et sélectionnez <b ixia_locid="83">Gérer la règle</b>.</cmd>
+				<info ixia_locid="84" location="Innopay OSB PayZen PayZen_Germany PayZen_Brazil" platform="Innopay OSB PayZen">Trois onglets sont mis à disposition. </info>
+				<info ixia_locid="85" location="Innopay OSB PayZen PayZen_Germany PayZen_Brazil" platform="Innopay OSB PayZen">
+					<ul id="ul_t1z_hjm_fs">
+						<li ixia_locid="86"><b ixia_locid="87">Paramétrage </b><p ixia_locid="88">Il permet de
+								personnaliser <ph ixia_locid="174">l'e-mail qui sera envoyé</ph><ph ixia_locid="175">le libellé de la règle</ph>.</p></li>
+						<li ixia_locid="89"><b ixia_locid="90">Conditions de la règle</b><p ixia_locid="91">Il permet
+								de créer une liste (éventuellement vide) de conditions d'exécution
+								de la règle (dépend de l'évènement déclencheur). Une condition est
+								constituée d'une variable, d'un opérateur de comparaison et d'une
+								valeur de référence. </p><p ixia_locid="92">Exemple : "mode = TEST",
+								"montant supérieur à 1000". Lors de l'exécution d'une règle, la
+								valeur de la variable est récupérée et comparée à la valeur de
+								référence. Toutes les conditions doivent être validées pour que la
+								règle soit
+								exécutée.<!--<table colsep="1" frame="all" id="table_wh4_chh_gs" rowsep="1"><tgroup cols="3"><colspec colname="c1" colnum="1" colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1.1*"/><colspec colname="c3" colnum="3" colwidth="1.89*"/><thead><row><entry ixia_locid="122">Variable</entry><entry ixia_locid="123">Opérateur</entry><entry ixia_locid="124">Valeur</entry></row></thead><tbody><row><entry ixia_locid="125">Montant (en centimes)</entry><entry ixia_locid="126">Valeurs disponibles :<p ixia_locid="127"><ul id="ul_hms_fhh_gs"><li ixia_locid="128">égal à</li><li ixia_locid="129">différent de</li><li ixia_locid="130">supérieur à</li><li ixia_locid="131">supérieur ou égal à</li><li ixia_locid="132">inférieur à</li><li ixia_locid="133">inférieur ou égal à</li></ul></p></entry><entry ixia_locid="134">Entrez une valeur pour exécuter la règle.</entry></row><row><entry ixia_locid="135">Mode (Test/Prod)</entry><entry ixia_locid="136">Valeurs disponibles :<p ixia_locid="137"><ul id="ul_s4t_mhh_gs"><li ixia_locid="138">égal à</li><li ixia_locid="139">différent de</li></ul></p></entry><entry ixia_locid="140">Sélectionnez <b ixia_locid="141">Test</b> ou <b ixia_locid="142">Production</b>.</entry></row><row><entry ixia_locid="143">Moyen de paiement</entry><entry ixia_locid="144">Valeurs disponibles :<p ixia_locid="145"><ul id="ul_xw1_qhh_gs"><li ixia_locid="146">est dans la liste</li><li ixia_locid="147">n'est pas dans la liste</li></ul></p></entry><entry ixia_locid="148">Sélectionnez une ou plusieurs des valeurs proposées.</entry></row><row><entry ixia_locid="149">Source de l'évènement</entry><entry ixia_locid="150">Valeurs disponibles :<p ixia_locid="151"><ul id="ul_spn_5hh_gs"><li ixia_locid="152">est dans la liste</li><li ixia_locid="153">n'est pas dans la liste</li></ul></p></entry><entry ixia_locid="154">Sélectionnez une ou plusieurs des valeurs proposées.</entry></row><row><entry ixia_locid="155">Paiement en n fois</entry><entry ixia_locid="156">Valeur disponible :<p ixia_locid="157"><ul id="ul_cx5_whh_gs"><li ixia_locid="158">égal à</li></ul></p></entry><entry ixia_locid="159">Sélectionnez <b ixia_locid="160">Oui</b> ou <b ixia_locid="161">Non</b>.</entry></row><row><entry ixia_locid="162">Contrôle des risques informatifs</entry><entry ixia_locid="163">Valeur disponible :<p ixia_locid="164"><ul id="ul_iyr_zhh_gs"><li ixia_locid="165">égal à</li></ul></p></entry><entry ixia_locid="166">Sélectionnez <b ixia_locid="167">Echoués</b> ou <b ixia_locid="168">Réussis</b>.</entry></row></tbody></tgroup></table>--></p></li>
+						<li ixia_locid="93"><b ixia_locid="94">Informations</b><p ixia_locid="95">Il affiche un résumé
+								de la règle.</p></li>
+					</ul>
+				</info>
+			</step>
+			<step id="step_N100AF_N1003A_N10011_N10001" ixia_locid="96" location="Innopay OSB PayZen PayZen_Germany PayZen_Brazil" platform="Innopay OSB PayZen">
+				<cmd ixia_locid="97">Sélectionnez l'onglet <b ixia_locid="98">Paramétrage</b>.</cmd>
+			</step>
+			<step id="step_N100BC_N1003A_N10011_N10001" ixia_locid="99" location="Innopay OSB PayZen PayZen_Germany PayZen_Brazil" platform="Innopay OSB PayZen">
+				<cmd ixia_locid="100">Personnalisez le contenu de l'e-mail en fonction de vos
+					besoins.</cmd>
+				<info ixia_locid="106">
+					<ol id="ol_v4g_qch_gs">
+						<li ixia_locid="107">Cliquez sur <b ixia_locid="108">Paramétrage e-mail
+								acheteur</b> pour afficher le contenu de l'e-mail "par défaut"
+							commun à tous les marchands utilisant la plateforme de paiement.</li>
+						<li ixia_locid="109">Sélectionnez l'onglet correspondant à la langue de
+							l'e-mail que vous souhaitez personnaliser.</li>
+						<li ixia_locid="110">Cliquez sur <b ixia_locid="111">Personnaliser des
+								valeurs de texte par défaut</b>.</li>
+						<li ixia_locid="112">Modifiez le texte de l'e-mail.</li>
+						<li ixia_locid="113">Cliquez sur <b ixia_locid="114">Champs à inclure</b>
+							pour afficher la liste des champs disponibles pour personnaliser
+							l'e-mail.</li>
+						<li ixia_locid="115">Sélectionnez les champs que vous souhaitez inclure dans
+							l'e-mail. Un récapitulatif détaillé du traitement de la demande sera
+							ajouté au contenu de l'e-mail.</li>
+					</ol>
+				</info>
+				<info ixia_locid="116" outputclass="break"><i ixia_locid="117"><u ixia_locid="118">Remarque
+					:</u></i></info>
+				<info ixia_locid="119"><i ixia_locid="120">Pour visualiser au préalable les
+						modifications effectuées, cliquez sur <b ixia_locid="121">Prévisualiser
+							l'e-mail</b> situé en bas de la boîte de dialogue.</i></info>
+			</step>
+			<step id="step_N1015E_N1004E_N10013_N10001" ixia_locid="176" location="Systempay" platform="Systempay">
+				<cmd ixia_locid="177">Personnalisez le libellé de la règle.</cmd>
+			</step>
+			<step id="step_N100C5_N1003A_N10011_N10001" ixia_locid="101">
+				<cmd ixia_locid="102">Cliquez sur <b ixia_locid="103">Sauvegarder</b>.</cmd>
+			</step>
+		</steps>
+	</taskbody>
+</task>

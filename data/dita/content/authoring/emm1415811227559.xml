@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1415811227559" xml:lang="fr-fr">
+	<title ixia_locid="1">Traiter les erreurs</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="6"><u ixia_locid="7">Mise en place d'un fichier de log</u></p>
+		<p ixia_locid="4">Durant la phase d'implémentation, il sera utile de disposer de logs notamment en cas de
+			difficultés pour calculer la signature.</p>
+		<p ixia_locid="30">Nous conseillons toutefois de mettre en place un fichier de log journalier même
+			après la mise en production du site marchand. </p>
+		<p ixia_locid="31">Cela vous permettra d'analyser les données en cas de problèmes.</p>
+		<p ixia_locid="8">Idéalement le fichier de log devra contenir les données envoyées ou reçues, la chaîne
+			obtenue lors du calcul de signature, avant l'application de l'algorithme SHA-1.</p>
+		<p ixia_locid="10"><u ixia_locid="11">Code d'erreur HTTP</u>
+		</p>
+		<p ixia_locid="12">En cas d'erreur durant les notifications, l'e-mail d'avertissement envoyé précise le code
+			retour du protocole HTTP.</p>
+		<p ixia_locid="14">Il existe 5 catégories de codes retour :</p>
+		<p ixia_locid="15">
+			<table colsep="1" frame="all" id="table_ktf_rgp_bq" rowsep="1">
+				<tgroup cols="2">
+					<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+					<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="16">Catégorie de codes </entry>
+							<entry ixia_locid="17">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="18">1XX</entry>
+							<entry ixia_locid="19">Information</entry>
+						</row>
+						<row>
+							<entry ixia_locid="20">2XX</entry>
+							<entry ixia_locid="21">Succès</entry>
+						</row>
+						<row>
+							<entry ixia_locid="22">3XX</entry>
+							<entry ixia_locid="23">Redirection</entry>
+						</row>
+						<row>
+							<entry ixia_locid="24">4XX</entry>
+							<entry ixia_locid="25">Erreur du client</entry>
+						</row>
+						<row>
+							<entry ixia_locid="26">5XX</entry>
+							<entry ixia_locid="27">Erreur du serveur</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+		<p ixia_locid="28">Les codes d'erreur les plus fréquemment retournés sont décrits dans la FAQ <ph ixia_locid="36" location="Systempay">de notre site documentaire</ph><ph ixia_locid="37" location="Innopay OSB PayZen PayZen_Brazil PayZen_Germany">
+				<xref ixia_locid="29" keyref="FAQServerUrlError"/></ph></p>
+		<p ixia_locid="32"><b ixia_locid="33">Erreur fréquente</b> : </p>
+		<p ixia_locid="34">Un fichier htaccess peut bloquer l'appel à l'URL de notification instantanée. </p>
+		<p ixia_locid="35">Les fichiers .htaccess sont des fichiers de configuration des serveurs web Apache. Ils
+			peuvent être placés dans n'importe quel répertoire du site marchand (la configuration
+			s'applique au répertoire et à tous ceux qu'il contient n'ayant pas de tel fichier à
+			l'intérieur).</p>
+	</conbody>
+</concept>

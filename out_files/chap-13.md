@@ -25,6 +25,7 @@ Les demandes de paiement de test adressées via le formulaire HTTP POST doivent:
  
 <p>
  
+
 <ul>
  
  <li>
@@ -85,6 +86,7 @@ Pour cela:
  
 <p>
  
+
 <ol>
  
  <li>
@@ -98,6 +100,7 @@ Sélectionnez
  
  <li>
 Vérifiez le statut de l&#x27;URL de notification instantanée (IPN). 
+
  <ul>
  
   <li>
@@ -108,6 +111,7 @@ Dans le cas où le statut est
   <li>
 Dans le cas où le statut apparaît en 
 <b>URL non définie</b>, cela signifie que vous n&#x27;avez pas renseigné l&#x27;URL dans le Back Office. 
+
   <ol>
  
    <li>
@@ -138,6 +142,7 @@ Cliquez sur
   </li>
  
  </ul>
+
 
  <ul>
  

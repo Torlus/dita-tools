@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411126075812" xml:lang="fr-fr">
+	<title ixia_locid="41" translate="no">vads_product_amountN</title>
+	<shortdesc ixia_locid="42"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Permet de définir le montant des différents articles contenus dans le
+								panier.<p ixia_locid="43">N correspond à l'indice de l'article. (0
+								pour le premier, 1 pour le deuxième etc...)</p><p ixia_locid="44">Le
+								montant sera exprimé dans l'unité la plus petite de la devise. <ph ixia_locid="597" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">Le centime pour <ph ixia_locid="596">l'euro</ph>.</ph><ph ixia_locid="598" location="Innopay" platform="Innopay">Le
+									centime pour le Franc suisse.</ph></p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="599"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="601" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="600"><b ixia_locid="603">Code d'erreur</b></entry>
+						<entry ixia_locid="602" translate="no">102</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la commande.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

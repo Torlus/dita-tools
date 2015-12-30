@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415951388962" xml:lang="fr-fr">
+	<title ixia_locid="1">Cycle de vie d’une transaction de paiement comptant différé </title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="10"><b ixia_locid="11">Délai de remise inférieur à la durée de validité de
+				l'autorisation</b>
+		</p>
+		<p ixia_locid="12">(voir diagramme cycle de vie d'une transaction de paiement comptant immédiat)</p>
+		<p ixia_locid="13"><b ixia_locid="14">Délai de remise supérieur à la durée de validité de
+				l'autorisation </b></p>
+		<p ixia_locid="3">Toute transaction de paiement comptant différé réalisée avec le mode de
+			validation manuelle et dont la demande d’autorisation à  <ph ixia_locid="27" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay" translate="no">1 euro</ph><ph ixia_locid="28" location="OSB" platform="OSB" translate="no">100 XPF</ph><ph ixia_locid="29" location="Innopay" platform="Innopay">1 CHF</ph><ph ixia_locid="36" location="PayZen_Brazil">1
+			BRL</ph><!-- (demande de renseignement)--> a été réalisée avec succès, est consultable
+			dans le <ph ixia_locid="15" translate="no">Back Office</ph> avec le statut <b ixia_locid="4">A valider et à autoriser</b>. </p>
+		<p ixia_locid="5">La demande d’autorisation est automatiquement effectuée le jour de la remise en banque
+			demandé, sous réserve que le marchand ait précédemment validé la transaction. </p>
+		<p ixia_locid="6">Dans l’attente de la remise, le marchand peut annuler la transaction ou en modifier le
+			montant et/ou la date de remise en banque. </p>
+		<p ixia_locid="7">Ces transactions suivent le diagramme d’état suivant : </p>
+		<fig id="fig_N1002F_N10013_N10001" ixia_locid="21" location="PayZen PayZen_Germany Systempay PayZen_Brazil" platform="PayZen Systempay">
+		<image href="tla1415983511186.image" ixia_locid="22" scale="50"/>
+		</fig>
+		<fig id="fig_N1002F_N10013_N10002" ixia_locid="23" location="OSB" platform="OSB">
+			<image href="tla1439902216749.image" ixia_locid="24" scale="50"/>
+		</fig>
+		<fig id="fig_N1006B_N10013_N10001" ixia_locid="19" location="Innopay" platform="Innopay">
+			<image href="tla1422372704100.image" ixia_locid="20" scale="50"/>
+		</fig>
+	</conbody>
+</concept>

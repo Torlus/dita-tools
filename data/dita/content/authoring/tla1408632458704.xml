@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408632458704" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_ship_to_country</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Permet de définir le code pays de l’acheteur à la norme ISO
+							3166.</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="35" translate="no">a2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="37">Code erreur</b></entry>
+						<entry ixia_locid="38" translate="no">86</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Exemples de valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table conref="tla1408614445899.xml#tla1408614445899/table_xxz_gg1_2p" id="table_rh1_s35_dq">
+									<tgroup cols="cols_gc1_s35_dq">
+										<tbody>
+											<row>
+												<entry ixia_locid="48"/>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Informations sur la livraison.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088387247" xml:lang="fr-fr">
+	<title ixia_locid="1">Envoyer la demande de paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Pour chaque transaction, l’acheteur doit être redirigé vers la page de paiement
+			afin de finaliser son achat.</p>
+		<p ixia_locid="4">Son navigateur doit transmettre les données du formulaire de paiement.</p>
+	</conbody>
+</concept>

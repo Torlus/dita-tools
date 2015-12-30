@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1406022036502" xml:lang="fr-fr">
+	<title ixia_locid="1">Définir les étapes d’un paiement - Vue acheteur</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p id="introcinematique1" ixia_locid="3">Le diagramme ci-dessous présente la cinématique des
+			échanges du point de vue de l'acheteur.</p>
+		<fig id="fig_m4m_3qq_v4" ixia_locid="4">
+			<title ixia_locid="5">Cinématique des échanges – Vue acheteur</title>
+			<image id="image_glc_jqq_v4" ixia_locid="6" keyref="DiagrammeFluxAcheteur" scale="50"/>
+		</fig>
+
+		<ol id="ol_jmx_rsq_v4">
+			<li id="li_e1w_qdr_x4" ixia_locid="8">L’acheteur valide son panier.</li>
+			<li id="li_nyq_5dr_x4" ixia_locid="9" outputclass="break">Le site marchand redirige l’acheteur vers la
+				plateforme de paiement. <itemgroup ixia_locid="40">Cette redirection s'effectue sous
+					la forme d'un formulaire HTML POST en HTTPS. </itemgroup><itemgroup ixia_locid="41">Les paramètres qui le composent sont décrits dans le chapitre <b ixia_locid="10"><xref href="emm1405083451541.xml" ixia_locid="38">Générer
+							une demande de paiement</xref></b>.</itemgroup></li>
+			<li id="li_ogb_vdr_x4" ixia_locid="11">La plateforme de paiement, après vérification des
+				paramètres et de leur signature, présente la page de sélection du moyen de paiement.
+				<fig id="fig_d1z_vsq_v4" ixia_locid="12">
+					<title ixia_locid="13">Sélection du moyen de paiement</title>
+					<image id="image_u5w_wsq_v4" ixia_locid="14" keyref="ChoixMoyenPaiement" scale="45"/>
+				</fig>
+				<p ixia_locid="15">Si le moyen de paiement a été spécifié dans le formulaire,
+					l’acheteur passe directement à l’étape 6.</p></li>
+			<li ixia_locid="16">L’acheteur sélectionne son moyen de paiement.</li>
+			<li ixia_locid="17">Il clique sur <b ixia_locid="18">Valider</b>.</li>
+			<li ixia_locid="19">Il renseigne le numéro et la date d'expiration de sa carte.
+					<itemgroup ixia_locid="39">Si la carte possède un cryptogramme visuel, ce
+					dernier doit obligatoirement être renseigné.</itemgroup>
+				<fig id="fig_rbp_rwq_v4" ixia_locid="21">
+					<title ixia_locid="22">Saisie des informations du moyen de paiement</title>
+					<image id="image_bq5_sdr_x4" ixia_locid="23" keyref="SaisieDonneesBancaires" scale="45"/>
+				</fig>
+			</li>
+			<li ixia_locid="24">Il confirme sa saisie en cliquant sur <b ixia_locid="25">Valider</b>.</li>
+			<li ixia_locid="26">Si le marchand et la carte de l’acheteur sont enrôlés dans le
+				programme 3D Secure, une authentification 3D Secure a lieu.</li>
+			<li ixia_locid="27">Une demande d'autorisation est effectuée auprès
+				de la banque de l’acheteur, l’émetteur, en plus des contrôles de fraudes internes de
+				la plateforme de paiement.</li>
+			<li ixia_locid="28">En cas de succès, une page de résumé est présentée à l’acheteur
+				récapitulant les informations de la transaction. <p ixia_locid="29">Un bouton
+					permettant un retour à la boutique est proposé.</p></li>
+		</ol>
+		<fig id="fig_yjw_ffr_v4" ixia_locid="30">
+			<title ixia_locid="31">Récapitulatif de la transaction</title>
+			<image id="image_nxl_gfr_v4" ixia_locid="32" keyref="DetailPaiement" scale="45"/>
+		</fig>
+		<p ixia_locid="33">En cas d’échec, un message s’affiche. L’acheteur est informé du refus de
+			la demande de paiement. Un bouton permettant d’annuler et de retourner à la boutique est
+			proposé.</p>
+		<fig id="fig_yjw_ffr_v5" ixia_locid="42">
+			<title ixia_locid="43">Page de résumé en cas d’échec de la transaction</title>
+			<image ixia_locid="44" keyref="PageResumePaiementEchec" scale="45"/>
+		</fig>
+		
+	</conbody>
+</concept>

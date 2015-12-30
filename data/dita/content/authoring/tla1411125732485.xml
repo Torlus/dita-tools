@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411125732485" xml:lang="fr-fr">
+	<title ixia_locid="41" translate="no">vads_product_labelN</title>
+	<shortdesc ixia_locid="42"/>
+	<refbody>
+			<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+				<tgroup cols="2">
+					<colspec colname="c1" colnum="1" colwidth="1*"/>
+					<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+					<tbody>
+						<row>
+							<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+							<entry ixia_locid="32">Permet de définir le libéllé de chacun des articles contenus dans le
+								panier.<p ixia_locid="43">N correspond à l'indice de l'article. (0
+								pour le premier, 1 pour le deuxième etc...)</p></entry>
+						</row>
+						<row>
+							<entry ixia_locid="44"><b ixia_locid="35">Format</b></entry>
+							<entry ixia_locid="46"><ph ixia_locid="56" translate="no">an..255</ph><p ixia_locid="49"><u ixia_locid="50"><i ixia_locid="51"><b ixia_locid="52">Remarque :
+								</b></i></u></p><p ixia_locid="53"><i ixia_locid="54">Veillez à ne
+									pas utiliser des caractères autres que alphabétiques et
+									numériques (les espaces ne sont pas autorisés par exemple) et de
+									respecter la RegEx <b ixia_locid="55">^[a-zA-Z0-9]{1,255}$</b>
+									.</i></p></entry>
+						</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="48">Code d'erreur</b></entry>
+						<entry ixia_locid="47" translate="no">97</entry>
+					</row>
+						<row>
+							<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+							<entry ixia_locid="40">Informations sur la commande.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+	</refbody>
+</reference>

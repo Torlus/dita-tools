@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408639995934" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_warranty_result</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Champ retourné dans la réponse.<p ixia_locid="55" location="PayZen PayZen_Germany PayZen_Brazil" platform="PayZen">Indique la garantie du paiement dans le cas d’un paiement
+								accepté.</p><p ixia_locid="56" location="Systempay" platform="Systempay">Indique le
+								transfert à la banque de la responsabilité du paiement.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="35" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="52"/><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" location="PayZen PayZen_Germany PayZen_Brazil" platform="PayZen" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="5.07*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="57">Valeur</entry>
+												<entry align="center" ixia_locid="59">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="61" translate="no">YES</entry>
+												<entry ixia_locid="63">Le paiement est
+												garanti.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="65" translate="no">NO</entry>
+												<entry ixia_locid="67">Le paiement n’est pas
+												garanti.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="69" translate="no">UNKNOW</entry>
+												<entry ixia_locid="71">Suite à une erreur technique,
+												le paiement ne peut pas être garanti.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="73">Non valorisé</entry>
+												<entry ixia_locid="75"><ph ixia_locid="77">Garantie de paiement non
+												applicable.</ph></entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="78">
+								<table colsep="1" frame="all" id="table_e32_l2r_2q" location="Systempay" platform="Systempay" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="5.07*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="58">Valeur</entry>
+												<entry align="center" ixia_locid="60">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="62" translate="no">YES</entry>
+												<entry ixia_locid="64">Le transfert de responsabilité
+												est garanti.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="66" translate="no">NO</entry>
+												<entry ixia_locid="68">Le transfert de
+												responsabilité n'est pas garanti.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="70" translate="no">UNKNOW</entry>
+												<entry ixia_locid="72">Suite à une erreur technique,
+												le transfert de responsabilité ne peut pas être
+												garanti.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="74">Non valorisé</entry>
+												<entry ixia_locid="76">
+												<p ixia_locid="79">Transfert de responsabilité non applicable.</p>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

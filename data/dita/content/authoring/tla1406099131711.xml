@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1406099131711" xml:lang="fr-fr">
+	<title ixia_locid="1" translate="no">vads_payment_cards</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="62">Description</b></entry>
+						<entry ixia_locid="64"><p ixia_locid="66">Contient la liste des moyens de paiement à proposer
+								à l’acheteur, séparés par des " <b ixia_locid="67">;</b>". </p><p ixia_locid="68">Si la liste ne contient qu'un moyen de paiement, la
+								page de saisie des données de ce moyen de paiement sera directement
+								présentée. Sinon la page de sélection des moyens de paiement sera
+								présentée. </p>Si ce paramètre est vide (conseillé) alors les moyens
+							de paiement éligibles (devises, contraintes techniques, etc) associés à
+							la boutique seront proposés.</entry>
+					</row>
+					<row>
+						<entry ixia_locid="70"><b ixia_locid="71">Format</b></entry>
+						<entry ixia_locid="72">type1;type2;type3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="73"><b ixia_locid="74">Code erreur</b></entry>
+						<entry ixia_locid="75">08<p ixia_locid="239">Le formulaire sera rejeté dans les cas suivants
+								:</p><p ixia_locid="240">
+								<ul id="ul_ycg_3xk_xp">
+									<li ixia_locid="241">la valeur transmise n'est pas présente dans
+										la liste ci-dessous. </li>
+									<li ixia_locid="242">TOUTES, ALL ne sont pas des valeurs
+										acceptées. Pour proposer tous les moyens de paiement ce
+										paramètre ne doit pas être posté ou être posté à vide. </li>
+									<li ixia_locid="1126">
+										<p ixia_locid="1128">la valeur transmise ne correspond pas
+											au moyen de paiement disponible pour votre boutique.</p>
+									</li>
+									<li ixia_locid="1127">
+										<p ixia_locid="1129">Votre contrat e-commerce a été clôturé
+											par votre établissement bancaire. Contactez le service
+											client de votre plateforme de paiement.</p>
+									</li>
+									<li ixia_locid="1503">la valeur transmise n'est pas éligible
+										dans le réseau associé.</li>
+								</ul>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="85"><p ixia_locid="84"/><b ixia_locid="77">Valeurs possibles</b></entry>
+						<entry id="entry_f1r_mrt_ht" ixia_locid="87">
+							<p ixia_locid="80"> </p>
+							<p ixia_locid="243">
+								<table colsep="1" doc-type="Form Moyens-Paiement Identifiant_Abonnement_Bresil integration-Bresil PayPal" frame="all" id="table_dfn_jyf_bq" location="PayZen_Brazil" payment-method="PayPal" platform="PayZen" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c3" colnum="1" colwidth="1.0*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="247">Valeur</entry>
+												<entry ixia_locid="911">Description</entry>
+											</row>
+										</thead>
+										<tbody translate="no">
+											<row>
+												<entry ixia_locid="335">AMEX</entry>
+												<entry ixia_locid="912">American Express</entry>
+											</row>
+											<row>
+												<entry ixia_locid="336">AURA</entry>
+												<entry ixia_locid="913">Aura</entry>
+											</row>
+											<row>
+												<entry ixia_locid="337">BANCODOBRASIL_IB</entry>
+												<entry ixia_locid="914">Banco Do Brasil Internet
+												Banking</entry>
+											</row>
+											<row>
+												<entry ixia_locid="338">BANRISUL_IB</entry>
+												<entry ixia_locid="915">Banrisul</entry>
+											</row>
+											<row>
+												<entry ixia_locid="339">BOLETO</entry>
+												<entry ixia_locid="916">Boleto</entry>
+											</row>
+											<row>
+												<entry ixia_locid="340">BRADESCO_IB</entry>
+												<entry ixia_locid="917">Bradesco Internet
+												Banking</entry>
+											</row>
+											<row>
+												<entry ixia_locid="341">CIELO_ELO</entry>
+												<entry ixia_locid="918">Elo</entry>
+											</row>
+											<row>
+												<entry ixia_locid="342">DINERS</entry>
+												<entry ixia_locid="919">Diners</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1586">DISCOVER</entry>
+												<entry ixia_locid="1587">Discover</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1588"><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>E_SITEF<?oxy_custom_end ?></entry>
+												<entry ixia_locid="1589"/>
+											</row>
+											<row>
+												<entry ixia_locid="350">HIPERCARD</entry>
+												<entry ixia_locid="921">Hipercard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="351">ITAU_IB</entry>
+												<entry ixia_locid="922">Itau Internet
+												Banking</entry>
+											</row>
+											<row>
+												<entry ixia_locid="256">JCB</entry>
+												<entry ixia_locid="923">Jcb</entry>
+											</row>
+											<row>
+												<entry ixia_locid="380">MAESTRO</entry>
+												<entry ixia_locid="924">Maestro</entry>
+											</row>
+											<row>
+												<entry ixia_locid="381">MASTERCARD</entry>
+												<entry ixia_locid="925">MasterCard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="384">VISA</entry>
+												<entry ixia_locid="928">Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="385">VISA_ELECTRON</entry>
+												<entry ixia_locid="929">Visa Electron</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="765">
+								<table colsep="1" doc-type="integration Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent Form Moyens-Paiement" frame="all" id="table_fbj_prn_bq" location="PayZen" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent" platform="PayZen" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c3" colnum="1" colwidth="1.0*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="1306">Valeur</entry>
+												<entry ixia_locid="1307">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="933" translate="no">ACCORD_STORE</entry>
+												<entry ixia_locid="937">Carte de paiement Banque
+												Accord </entry>
+											</row>
+											<row>
+												<entry ixia_locid="934" translate="no">ACCORD_STORE_SB</entry>
+												<entry ixia_locid="938">Carte de paiement Banque
+												Accord - Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="939" translate="no">ALINEA</entry>
+												<entry ixia_locid="941">Carte Privative
+												Alinea</entry>
+											</row>
+											<row>
+												<entry ixia_locid="942" translate="no">ALINEA_CDX</entry>
+												<entry ixia_locid="944">Carte cadeau Alinea</entry>
+											</row>
+											<row>
+												<entry ixia_locid="945" translate="no">ALINEA_CDX_SB</entry>
+												<entry ixia_locid="947">Carte cadeau Alinea -
+												SandBox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="948" translate="no">ALINEA_SB</entry>
+												<entry ixia_locid="950">Carte Privative Alinea -
+												SandBox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1308" translate="no">AMEX</entry>
+												<entry ixia_locid="1309">American Express</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1294" translate="no">AURORE-MULTI</entry>
+												<entry ixia_locid="1296">Carte Aurore</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1572" translate="no">BANCONTACT</entry>
+												<entry ixia_locid="1573">Carte Maestro Bancontact
+												Mistercash</entry>
+											</row>
+											<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+											<row>
+												<entry ixia_locid="1574" translate="no">BITCOIN</entry>
+												<entry ixia_locid="1575">Paiement par monnaie
+												virtuelle</entry>
+											</row>
+											<?oxy_custom_end ?>
+											<row>
+												<entry ixia_locid="957" translate="no">BIZZBEE_CDX</entry>
+												<entry ixia_locid="959">Carte cadeau Bizzbee</entry>
+											</row>
+											<row>
+												<entry ixia_locid="960" translate="no">BIZZBEE_CDX_SB</entry>
+												<entry ixia_locid="962">Carte cadeau Bizzbee -
+												Sandbox </entry>
+											</row>
+											<row>
+												<entry ixia_locid="963" translate="no">BRICE_CDX</entry>
+												<entry ixia_locid="965">Carte cadeau Brice</entry>
+											</row>
+											<row>
+												<entry ixia_locid="966" translate="no">BRICE_CDX_SB</entry>
+												<entry ixia_locid="968">Carte cadeau Brice -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1310" translate="no">CB</entry>
+												<entry ixia_locid="1311" translate="no">CB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="972" translate="no">CDGP</entry>
+												<entry ixia_locid="974">Carte Privilège</entry>
+											</row>
+											<row>
+												<entry ixia_locid="975" translate="no">COF3XCB</entry>
+												<entry ixia_locid="977">3 fois CB Cofinoga</entry>
+											</row>
+											<row>
+												<entry ixia_locid="978" translate="no">COF3XCB_SB</entry>
+												<entry ixia_locid="980">3 fois CB Cofinoga -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1219" translate="no">COFINOGA</entry>
+												<entry ixia_locid="1221">Carte Be Smart</entry>
+											</row>
+											<row>
+												<entry ixia_locid="984" translate="no">CORA_BLANCHE</entry>
+												<entry ixia_locid="986">Carte Cora Blanche</entry>
+											</row>
+											<row>
+												<entry ixia_locid="987" translate="no">CORA_PREM</entry>
+												<entry ixia_locid="989">Carte Cora Premium</entry>
+											</row>
+											<row>
+												<entry ixia_locid="990" translate="no">CORA_VISA</entry>
+												<entry ixia_locid="992">Carte Cora Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1312" translate="no">DINERS</entry>
+												<entry ixia_locid="1313">Carte Diners Club</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1314" translate="no">E-CARTEBLEUE</entry>
+												<entry ixia_locid="1315">E-carte bleue</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1576" translate="no">E_CV</entry>
+												<entry ixia_locid="1577">E-chèque vacance</entry>
+											</row>
+											<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+											<row>
+												<entry ixia_locid="1578" translate="no">EDENRED</entry>
+												<entry ixia_locid="1579">Carte "Ticket
+												Restaurant"</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1580" translate="no">GIROPAY</entry>
+												<entry ixia_locid="1581">Virement bancaire</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1590" translate="no">KLARNA</entry>
+												<entry ixia_locid="1591">Paiement par
+												facture</entry>
+											</row>
+											<?oxy_custom_end ?>
+											<row>
+												<entry ixia_locid="1592" translate="no">IDEAL</entry>
+												<entry ixia_locid="1593">Virement bancaire</entry>
+											</row>
+											<row>
+												<entry ixia_locid="999" translate="no">ILLICADO</entry>
+												<entry ixia_locid="1001">Carte cadeau
+												Illicado</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1002" translate="no">ILLICADO_SB</entry>
+												<entry ixia_locid="1006">Carte cadeau Illicado -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1316" translate="no">JCB</entry>
+												<entry ixia_locid="1317">Carte JCB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1008" translate="no">JOUECLUB_CDX</entry>
+												<entry ixia_locid="1010">Carte cadeau
+												Jouéclub</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1011" translate="no">JOUECLUB_CDX_SB</entry>
+												<entry ixia_locid="1013">Carte cadeau Jouéclub -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1014" translate="no">JULES_CDX</entry>
+												<entry ixia_locid="1016">Carte cadeau Jules</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1017" translate="no">JULES_CDX_SB</entry>
+												<entry ixia_locid="1019">Carte cadeau Jules -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1235" translate="no">MAESTRO</entry>
+												<entry ixia_locid="1237" translate="no">Maestro</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1318" translate="no">MASTERCARD</entry>
+												<entry ixia_locid="1319" translate="no">MasterCard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1298" translate="no">ONEY</entry>
+												<entry ixia_locid="1300">Paiement en 3/4 fois Oney
+												FacilyPay</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1302" translate="no">ONEY_SANDBOX</entry>
+												<entry ixia_locid="1304">Paiement en 3/4 fois Oney
+												FacilyPay - Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1032" translate="no">PAYLIB</entry>
+												<entry ixia_locid="1034" translate="no">Paylib</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1320" translate="no">PAYPAL</entry>
+												<entry ixia_locid="1321" translate="no">PayPal</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1322" translate="no">PAYPAL_SB</entry>
+												<entry ixia_locid="1323" translate="no">PayPal -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1041" translate="no">PAYSAFECARD</entry>
+												<entry ixia_locid="1043">Carte prépayée
+												Paysafecard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1594" translate="no">POSTFINANCE</entry>
+												<entry ixia_locid="1595" translate="no">PostFinance</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1326" translate="no">POSTFINANCE_EFIN</entry>
+												<entry ixia_locid="1327">PostFinance mode
+												E-finance</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1287" translate="no">RUPAY</entry>
+												<entry ixia_locid="1289">Moyen de paiement Indien
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1053" translate="no">SCT</entry>
+												<entry ixia_locid="1055">Virement SEPA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1328" translate="no">SDD</entry>
+												<entry ixia_locid="1329">Prélèvement SEPA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1596" translate="no">SOFORT_BANKING</entry>
+												<entry ixia_locid="1597" translate="no">Sofort</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1060" translate="no">TRUFFAUT_CDX</entry>
+												<entry ixia_locid="1064">Carte cadeau
+												Truffaut</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1330" translate="no">VISA</entry>
+												<entry ixia_locid="1331" translate="no">Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1332" translate="no">VISA_ELECTRON</entry>
+												<entry ixia_locid="1333" translate="no">Visa
+												Electron</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="1265">
+								<table colsep="1" doc-type="integration Oney PayPal SEPA-OneOff SEPA-Recurrent Form Moyens-Paiement" frame="all" id="table_uk4_l2b_xq" location="Systempay" payment-method="Oney PayPal SEPA-One-Off SEPA-Recurrent" platform="Systempay" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c3" colnum="1" colwidth="1.0*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="1370">Valeur</entry>
+												<entry ixia_locid="1371">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="1372" translate="no">AMEX</entry>
+												<entry ixia_locid="1373">American Express</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1212" translate="no">AURORE-MULTI</entry>
+												<entry ixia_locid="1214">Carte Aurore (Multi
+												enseigne)</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1374" translate="no">CB</entry>
+												<entry ixia_locid="1375" translate="no">CB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1220" translate="no">COFINOGA</entry>
+												<entry ixia_locid="1222">Cofinoga</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1376" translate="no">DINERS
+												*</entry>
+												<entry ixia_locid="1377">Carte Diners Club </entry>
+											</row>
+											<row>
+												<entry ixia_locid="1378" translate="no">E-CARTEBLEUE</entry>
+												<entry ixia_locid="1379">E-carte bleue</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1275" translate="no">E_CV</entry>
+												<entry ixia_locid="1277">E-chèque vacance</entry>
+											</row>
+											<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+											<row>
+												<entry ixia_locid="1598" translate="no">IDEAL
+												*</entry>
+												<entry ixia_locid="1599">Virement bancaire</entry>
+											</row>
+											<?oxy_custom_end ?>
+											<row>
+												<entry ixia_locid="1380" translate="no">JCB
+												*</entry>
+												<entry ixia_locid="1381">Carte JCB</entry>
+											</row>
+											<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+											<row>
+												<entry ixia_locid="1600" translate="no">KLARNA
+												*</entry>
+												<entry ixia_locid="1601">Paiement par
+												facture</entry>
+											</row>
+											<?oxy_custom_end ?>
+											<row>
+												<entry ixia_locid="1382" translate="no">MAESTRO</entry>
+												<entry ixia_locid="1383" translate="no">Maestro</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1384" translate="no">MASTERCARD</entry>
+												<entry ixia_locid="1385" translate="no">MasterCard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1299" translate="no">ONEY</entry>
+												<entry ixia_locid="1301">Paiement en 3/4 fois Oney
+												FacilyPay</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1303" translate="no">ONEY_SANDBOX</entry>
+												<entry ixia_locid="1305">Paiement en 3/4 fois Oney
+												FacilyPay - Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1386" translate="no">PAYPAL</entry>
+												<entry ixia_locid="1387" translate="no">PayPal</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1388" translate="no">PAYPAL_SB</entry>
+												<entry ixia_locid="1389" translate="no">PayPal -
+												Sandbox</entry>
+											</row>
+											<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+											<row>
+												<entry ixia_locid="1602" translate="no">POSTFINANCE
+												*</entry>
+												<entry ixia_locid="1603" translate="no">PostFinance</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1604" translate="no">SOFORT_BANKING *</entry>
+												<entry ixia_locid="1605" translate="no">Sofort</entry>
+											</row>
+											<?oxy_custom_end ?>
+											<row>
+												<entry ixia_locid="1390" translate="no">VISA</entry>
+												<entry ixia_locid="1391" translate="no">Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1392" translate="no">VISA_ELECTRON</entry>
+												<entry ixia_locid="1393" translate="no">Visa
+												Electron</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="770">
+								<table colsep="1" doc-type="Form Moyens-Paiement Identifiant_Abonnement_Allemagne integration-Allemagne PayPal Sepa-OneOff Sepa-Recurrent" frame="all" id="table_ild_q2s_cq" location="PayZen_Germany" payment-method="PayPal SEPA-One-Off SEPA-Recurrent" platform="PayZen" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c3" colnum="1" colwidth="1.0*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="931">Valeur</entry>
+												<entry ixia_locid="1074">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="935" translate="no">ACCORD_STORE</entry>
+												<entry ixia_locid="1075">Paiement carte Banque
+												accord</entry>
+											</row>
+											<row>
+												<entry ixia_locid="936" translate="no">ACCORD_STORE_SB</entry>
+												<entry ixia_locid="1076">Paiement carte Banque
+												accord - Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="940" translate="no">ALINEA</entry>
+												<entry ixia_locid="1077">Carte Privative
+												Alinea</entry>
+											</row>
+											<row>
+												<entry ixia_locid="943" translate="no">ALINEA_CDX</entry>
+												<entry ixia_locid="1078">Carte cadeau Alinea</entry>
+											</row>
+											<row>
+												<entry ixia_locid="946" translate="no">ALINEA_CDX_SB</entry>
+												<entry ixia_locid="1079">Carte cadeau Alinea -
+												SandBox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="949" translate="no">ALINEA_SB</entry>
+												<entry ixia_locid="1080">Carte Privative Alinea -
+												SandBox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="952" translate="no">AMEX</entry>
+												<entry ixia_locid="1081" translate="no">American
+												Express</entry>
+											</row>
+											<row>
+												<entry ixia_locid="955" translate="no">AURORE-MULTI</entry>
+												<entry ixia_locid="1082">Carte Aurore</entry>
+											</row>
+											<row>
+												<entry ixia_locid="958" translate="no">BIZZBEE_CDX</entry>
+												<entry ixia_locid="1083">Carte cadeau
+												Bizzbee</entry>
+											</row>
+											<row>
+												<entry ixia_locid="961" translate="no">BIZZBEE_CDX_SB</entry>
+												<entry ixia_locid="1084">Carte cadeau Bizzbee -
+												Sandbox </entry>
+											</row>
+											<row>
+												<entry ixia_locid="964" translate="no">BRICE_CDX</entry>
+												<entry ixia_locid="1085">Carte cadeau Brice</entry>
+											</row>
+											<row>
+												<entry ixia_locid="967" translate="no">BRICE_CDX_SB</entry>
+												<entry ixia_locid="1086">Carte cadeau Brice -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="970" translate="no">CB</entry>
+												<entry ixia_locid="1087" translate="no">CB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="973" translate="no">CDGP</entry>
+												<entry ixia_locid="1088">Carte Privilège</entry>
+											</row>
+											<row>
+												<entry ixia_locid="976" translate="no">COF3XCB</entry>
+												<entry ixia_locid="1089">3 fois CB Cofinoga</entry>
+											</row>
+											<row>
+												<entry ixia_locid="979" translate="no">COF3XCB_SB</entry>
+												<entry ixia_locid="1090">3 fois CB Cofinoga -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="982" translate="no">COFINOGA</entry>
+												<entry ixia_locid="1091">Carte Be Smart</entry>
+											</row>
+											<row>
+												<entry ixia_locid="985" translate="no">CORA_BLANCHE</entry>
+												<entry ixia_locid="1092">Carte Cora Blanche</entry>
+											</row>
+											<row>
+												<entry ixia_locid="988" translate="no">CORA_PREM</entry>
+												<entry ixia_locid="1093">Carte Cora Premium</entry>
+											</row>
+											<row>
+												<entry ixia_locid="991" translate="no">CORA_VISA</entry>
+												<entry ixia_locid="1094">Carte Cora Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="994" translate="no">DINERS</entry>
+												<entry ixia_locid="1095">Carte Diners Club</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1282" translate="no">E-CARTEBLEUE</entry>
+												<entry ixia_locid="1284">E-carte bleue</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1283" translate="no">IDEAL</entry>
+												<entry ixia_locid="1285">Virement bancaire</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1000" translate="no">ILLICADO</entry>
+												<entry ixia_locid="1097">Carte cadeau
+												Illicado</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1004" translate="no">ILLICADO_SB</entry>
+												<entry ixia_locid="1098">Carte cadeau Illicado -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1005" translate="no">JCB</entry>
+												<entry ixia_locid="1099">Carte JCB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1009" translate="no">JOUECLUB_CDX</entry>
+												<entry ixia_locid="1100">Carte cadeau
+												Joueclub</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1012" translate="no">JOUECLUB_CDX_SB</entry>
+												<entry ixia_locid="1101">Carte cadeau Joueclub -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1015" translate="no">JULES_CDX</entry>
+												<entry ixia_locid="1102">Carte cadeau Jules</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1290" translate="no">JULES_CDX_SB</entry>
+												<entry ixia_locid="1292">Carte cadeau Jules -
+												Sandbox</entry>
+											</row>
+											<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+											<row>
+												<entry ixia_locid="1584" translate="no">GIROPAY</entry>
+												<entry ixia_locid="1585">Virement bancaire</entry>
+											</row>
+											<?oxy_custom_end ?>
+											<row>
+												<entry ixia_locid="1291" translate="no"><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>KLARNA<?oxy_custom_end ?></entry>
+												<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+												<entry ixia_locid="1293">Paiement par
+												facture</entry>
+												<?oxy_custom_end ?>
+											</row>
+											<row>
+												<entry ixia_locid="1021" translate="no">MAESTRO</entry>
+												<entry ixia_locid="1104" translate="no">Maestro</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1024" translate="no">MASTERCARD</entry>
+												<entry ixia_locid="1105" translate="no">MasterCard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1027" translate="no">ONEY</entry>
+												<entry ixia_locid="1106">Paiement en 3/4 fois Oney
+												FaciliPay</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1030" translate="no">ONEY_SANDBOX</entry>
+												<entry ixia_locid="1107">Paiement en 3/4 fois Oney
+												FaciliPay - Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1033" translate="no">PAYLIB</entry>
+												<entry ixia_locid="1108" translate="no">Paylib</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1036" translate="no">PAYPAL</entry>
+												<entry ixia_locid="1109" translate="no">PayPal</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1039" translate="no">PAYPAL_SB</entry>
+												<entry ixia_locid="1110" translate="no">PayPal -
+												Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1042" translate="no">PAYSAFECARD</entry>
+												<entry ixia_locid="1111">Carte prépayée
+												Paysafecard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1045" translate="no">POSTFINANCE</entry>
+												<entry ixia_locid="1112" translate="no">PostFinance</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1048" translate="no">POSTFINANCE_EFIN</entry>
+												<entry ixia_locid="1113">PostFinance mode
+												E-finance</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1054" translate="no">SCT</entry>
+												<entry ixia_locid="1115">Virement SEPA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1057" translate="no">SDD</entry>
+												<entry ixia_locid="1116">Prélèvement SEPA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1061" translate="no">SOFORT_BANKING</entry>
+												<entry ixia_locid="1117" translate="no">Sofort</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1062" translate="no">TRUFFAUT_CDX</entry>
+												<entry ixia_locid="1118">Carte cadeau
+												Truffaut</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1069" translate="no">VISA</entry>
+												<entry ixia_locid="1120" translate="no">Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1072" translate="no">VISA_ELECTRON</entry>
+												<entry ixia_locid="1121" translate="no">Visa
+												Electron</entry>
+											</row>
+											<row>
+												<entry ixia_locid="905" translate="no">ECCARD</entry>
+												<entry ixia_locid="906" translate="no">eccard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1123" translate="no">IDEAL</entry>
+												<entry ixia_locid="1125" translate="no">IDEAL</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="1130">
+								<table colsep="1" doc-type="Form Identifiant_Abonnement integration" frame="all" id="table_elf_bpr_hq" location="OSB" platform="OSB" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="1161">Valeur </entry>
+												<entry ixia_locid="1163">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="1133">CB</entry>
+												<entry ixia_locid="1134">CB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1165">VISA</entry>
+												<entry ixia_locid="1167">Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1169">MASTERCARD</entry>
+												<entry ixia_locid="1171">MasterCard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1173">MAESTRO</entry>
+												<entry ixia_locid="1175">Maestro</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1177">VISA_ELECTRON</entry>
+												<entry ixia_locid="1179">Visa Electron</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1143">E-CARTEBLEUE</entry>
+												<entry ixia_locid="1144">E-carte bleue</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1181">DINERS</entry>
+												<entry ixia_locid="1183">Carte Diners Club</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1185">AMEX</entry>
+												<entry ixia_locid="1187">American Express</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1152">JCB</entry>
+												<entry ixia_locid="1154">Carte JCB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1155">DISCOVER</entry>
+												<entry ixia_locid="1158">Discover</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1189">PAYPAL</entry>
+												<entry ixia_locid="1191">PayPal</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1193">PAYPAL_SB</entry>
+												<entry ixia_locid="1198">PayPal - Sandbox</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table colsep="1" doc-type="Form Identifiant_Abonnement integration" frame="all" id="table_mwt_t2h_wq" location="Innopay" platform="Innopay" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="1162">Valeur </entry>
+												<entry ixia_locid="1164">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="1166">VISA</entry>
+												<entry ixia_locid="1168">Visa</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1170">MASTERCARD</entry>
+												<entry ixia_locid="1172">MasterCard</entry>
+												
+											</row>
+											
+											<row>
+												<entry ixia_locid="1174">MAESTRO</entry>
+												<entry ixia_locid="1176">Maestro</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1178">VISA_ELECTRON</entry>
+												<entry ixia_locid="1180">Visa Electron</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1182">DINERS</entry>
+												<entry ixia_locid="1184">Carte Diners Club</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1186">AMEX</entry>
+												<entry ixia_locid="1188">American Express</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1190">PAYPAL</entry>
+												<entry ixia_locid="1192">PayPal</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1194">PAYPAL_SB</entry>
+												<entry ixia_locid="1199">PayPal - Sandbox</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1195">PAYSAFECARD</entry>
+												<entry ixia_locid="1200">Paysafecard</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1196">POSTFINANCE</entry>
+												<entry ixia_locid="1201">PostFinance</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1197">POSTFINANCE_EFIN</entry>
+												<entry ixia_locid="1202">PostFinance -
+												virements</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="1549">
+								<table colsep="1" doc-type="Identifiant_Abonnement" frame="all" id="table_q33_ksl_jt" location="PayZen" rowsep="1">
+									<title ixia_locid="1550">Moyens de paiement compatibles avec le paiement par abonnement</title>
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<tbody>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1551">Réseau AMEX et AMEXGLOBAL</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1507">AMEX</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1508">Réseau CB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1509">
+												<ul id="ul_awg_qql_jt">
+												<li ixia_locid="1510">CB</li>
+												<li ixia_locid="1511">E-CARTEBLEUE</li>
+												<li ixia_locid="1512">MASTERCARD</li>
+												<li ixia_locid="1513">VISA</li>
+												<li ixia_locid="1514">VISA_ELECTRON</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1515">Réseau DINERS</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1516">
+												<ul id="ul_dyc_5ql_jt">
+												<li ixia_locid="1517">DINERS</li>
+												<li ixia_locid="1518">DISCOVER</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1519">Réseau GATECONEX</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1520">
+												<ul id="ul_wm2_xql_jt">
+												<li ixia_locid="1521">DINERS</li>
+												<li ixia_locid="1522">E-CARTEBLEUE</li>
+												<li ixia_locid="1523">MASTERCARD</li>
+												<li ixia_locid="1524">VISA</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1525">Réseau
+												GICC_MASTERCARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1526">MASTERCARD</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1527">Réseau GICC_VISA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1528">VISA</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1529">Réseau JCB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1530">JCB</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1531">Réseau PAYPAL</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1532">
+												<ul id="ul_zxk_grl_jt">
+												<li ixia_locid="1533">PAYPAL</li>
+												<li ixia_locid="1534">PAYPAL_SB</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1535">Réseau POSTFINANCE</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1536">
+												<ul id="ul_rdp_jrl_jt">
+												<li ixia_locid="1537">POSTFINANCE</li>
+												<li ixia_locid="1538">POSTFINANCE_EFIN</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1539">Réseau SEPA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1540">SDD</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1541">Réseau WIRECARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1542">
+												<ul id="ul_d55_nrl_jt">
+												<li ixia_locid="1543">ECCARD</li>
+												<li ixia_locid="1544">MAESTRO</li>
+												<li ixia_locid="1545">MASTERCARD</li>
+												<li ixia_locid="1546">SDD</li>
+												<li ixia_locid="1547">VISA</li>
+												<li ixia_locid="1548">VISA_ELECTRON</li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="1504"/>
+							<p ixia_locid="1334">
+								<table colsep="1" doc-type="Identifiant_Abonnement" frame="all" id="table_cst_c5l_jt" location="Systempay" rowsep="1">
+									<title ixia_locid="1552">Moyens de paiement compatibles avec le paiement par
+										abonnement</title>
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<tbody>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1553">Réseau AMEXGLOBAL</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1554">AMEX</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1555">Réseau CB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1556">
+												<ul id="ul_jpf_f5l_jt">
+												<li ixia_locid="1557">CB</li>
+												<li ixia_locid="1558">E-CARTEBLEUE</li>
+												<li ixia_locid="1559">MASTERCARD</li>
+												<li ixia_locid="1560">VISA</li>
+												<li ixia_locid="1561">VISA_ELECTRON</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1562">Réseau DINERS</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1563">DINERS *</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1564">Réseau JCB</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1565">JCB *</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1566">Réseau PAYPAL</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1567">
+												<ul id="ul_nfd_m5l_jt">
+												<li ixia_locid="1568">PAYPAL</li>
+												<li ixia_locid="1569">PAYPAL_SB</li>
+												</ul>
+												</entry>
+											</row>
+											<row outputclass="bgcolor">
+												<entry ixia_locid="1570">Réseau WIRECARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1571">MAESTRO</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row location="Systempay" platform="Systempay">
+						<entry ixia_locid="1266"/>
+						<entry ixia_locid="1268">* Sous réserve de disponibilité par votre
+							établissement financier</entry>
+					</row>
+					<row>
+						<entry ixia_locid="1267"><b ixia_locid="82">Catégorie</b></entry>
+						<entry ixia_locid="1269">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

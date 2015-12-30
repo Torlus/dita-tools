@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//LYRA//DTD DITA Map//EN" "lyra-map.dtd">
+<map id="tla1429082188905" xml:lang="fr-fr">
+    <title ixia_locid="394">Systempay Commun</title>
+    
+    <keydef ixia_locid="6" keys="platform-name" location="Systempay">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="7">Systempay</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- Telephones spécifiques à la plateforme -->
+    
+    <keydef ixia_locid="189" keys="TelephoneSupportBP" location="Systempay">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="192">0 811 363 364</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef ixia_locid="190" keys="TelephoneSupportCE" location="Systempay">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="193">0 810 004 724</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- Liens spécifiques à la plateforme -->
+    <keydef format="mail" href="supportvad@lyra-network.com" ixia_locid="171" keys="EmailSupport" location="Systempay" scope="external"/> 
+    <keydef format="html" href="https://paiement.systempay.fr/vads-merchant/" ixia_locid="26" keys="BackOfficeMarchand" location="Systempay" scope="external"/>
+    <keydef format="html" href="https://paiement.systempay.fr/vads-payment/" ixia_locid="27" keys="URLpagePaiement" location="Systempay" scope="external"/>
+    <keydef format="html" href="https://paiement.systempay.fr/html/error_code/" ixia_locid="105" keys="FAQ" location="Systempay" scope="external"/>
+    <keydef format="html" href="https://paiement.systempay.fr/html/server_url_error/" ixia_locid="183" keys="FAQServerUrlError" location="Systempay" scope="external"/>    
+    <keydef format="html" href="https://paiement.systempay.fr/html/" ixia_locid="148" keys="SiteInternetDocumentation" location="Systempay" scope="external"/>
+    
+    <!--WEB SERVICES Liens spécifiques à la plateforme -->
+    <keydef format="html" href="https://paiement.systempay.fr/vads-ws/v5?wsdl" ixia_locid="364" keys="FichierWSDL" location="Systempay" scope="external"/>
+    <keydef ixia_locid="357" keys="Host" location="Systempay">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="358">paiement.systempay.fr</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- FORMULAIRE Images standards -->
+    <keydef href="emm1405081230671.image" ixia_locid="4" keys="FORM_cinematique-echange-vue-integrateur_light" location="Systempay"/>
+    <keydef href="tla1406022869061.image" ixia_locid="398" keys="DiagrammeFluxAcheteur" location="Systempay"/>
+    <keydef href="tla1437750978885.image" ixia_locid="10" keys="ChoixMoyenPaiement" location="Systempay"/>
+    <keydef href="tla1437751043830.image" ixia_locid="399" keys="SaisieDonneesBancaires" location="Systempay"/>
+    <keydef href="tla1437751082729.image" ixia_locid="12" keys="DetailPaiement" location="Systempay"/>
+    <keydef href="tla1414143023590.image" ixia_locid="13" keys="PageResumePaiementEchec" location="Systempay"/>
+    <keydef href="tla1437751196518.image" ixia_locid="14" keys="DiagrammeFluxMarchand" location="Systempay"/>
+    <keydef href="tla1437751232605.image" ixia_locid="15" keys="DiagrammeSignature" location="Systempay"/>
+    
+    <!-- WEB SERVICES Image specifique -->
+    <keydef href="tla1438187071598.image" ixia_locid="367" keys="Requis" location="Systempay"/>
+    
+    <!--KLARNA Images spécifiques a la plateforme de paiement-->
+    <keydef format="image" href="tla1441272180248.image" ixia_locid="400" keys="PagePaiementKlarnaStep1" location="Systempay"/>
+    <keydef format="image" href="tla1441272240044.image" ixia_locid="401" keys="PagePaiementKlarnaStep2" location="Systempay"/>
+    <keydef format="image" href="tla1441272280620.image" ixia_locid="402" keys="PagePaiementKlarnaStep3" location="Systempay"/>
+    <keydef format="image" href="tla1441272324534.image" ixia_locid="403" keys="PagePaiementKlarnaStep4" location="Systempay"/>
+    
+    
+    <!-- ABONNEMENT IDENTIFIANT Images standards -->
+    <keydef href="tla1431006952255.image" ixia_locid="199" keys="REGISTER_step1" location="Systempay"/>
+    <keydef href="tla1431006994172.image" ixia_locid="200" keys="REGISTER_step2" location="Systempay"/>
+    <keydef href="tla1431007023266.image" ixia_locid="201" keys="REGISTER_step3" location="Systempay"/>
+    
+    <keydef href="tla1431012728844.image" ixia_locid="202" keys="REGISTER_PAY_step1" location="Systempay"/>
+    <keydef href="tla1431012803787.image" ixia_locid="203" keys="REGISTER_PAY_step2" location="Systempay"/>
+    <keydef href="tla1431012874611.image" ixia_locid="204" keys="REGISTER_PAY_step3" location="Systempay"/>
+    
+    <keydef href="tla1431427625363.image" ixia_locid="205" keys="REGISTER_SUBSCRIBE_step1" location="Systempay"/>
+    <keydef href="tla1431427686078.image" ixia_locid="206" keys="REGISTER_SUBSCRIBE_step2" location="Systempay"/>
+    <keydef href="tla1431427719275.image" ixia_locid="207" keys="REGISTER_SUBSCRIBE_step3" location="Systempay"/>
+    
+    <keydef href="tla1431427987823.image" ixia_locid="208" keys="REGISTER_PAY_SUBSCRIBE_step1" location="Systempay"/>
+    <keydef href="tla1431428060691.image" ixia_locid="209" keys="REGISTER_PAY_SUBSCRIBE_step2" location="Systempay"/>
+    <keydef href="tla1431428092608.image" ixia_locid="210" keys="REGISTER_PAY_SUBSCRIBE_step3" location="Systempay"/>
+    
+    <keydef href="tla1431428535775.image" ixia_locid="211" keys="PAYMENT_BY_TOKEN_step1" location="Systempay"/>
+    <keydef href="tla1431428580765.image" ixia_locid="212" keys="PAYMENT_BY_TOKEN_step2" location="Systempay"/>
+    
+    <keydef href="tla1431428955691.image" ixia_locid="213" keys="SUBSCRIBE_BY_TOKEN_step1" location="Systempay"/>
+    <keydef href="tla1431428995876.image" ixia_locid="214" keys="SUBSCRIBE_BY_TOKEN_step2" location="Systempay"/>
+    
+    <keydef href="tla1431429284498.image" ixia_locid="215" keys="ASK_REGISTER_PAY_step1" location="Systempay"/>
+    <keydef href="tla1431429319427.image" ixia_locid="216" keys="ASK_REGISTER_PAY_step2" location="Systempay"/>
+    <keydef href="tla1431429358786.image" ixia_locid="217" keys="ASK_REGISTER_PAY_step3" location="Systempay"/>
+    
+    <keydef href="tla1440770004557.image" ixia_locid="218" keys="REGISTER_UPDATE_PAY_step1" location="Systempay"/>
+    <keydef href="tla1440770064820.image" ixia_locid="219" keys="REGISTER_UPDATE_PAY_step2" location="Systempay"/>
+    <keydef href="tla1440770121947.image" ixia_locid="220" keys="REGISTER_UPDATE_PAY_step3" location="Systempay"/>
+    
+    <!--QUAND NATIXIS SERA OK Images SEPA REcurrent-->
+    <keydef format="image" href="tla1440149840946.image" ixia_locid="381" keys="ChoixMoyenDePaiement" location="Systempay"/>
+    <keydef format="image" href="tla1440149951642.image" ixia_locid="382" keys="InfoMoyenPaiement" location="Systempay"/>
+    <keydef format="image" href="tla1440150190765.image" ixia_locid="383" keys="ValidationMandat" location="Systempay"/>
+    <keydef format="image" href="tla1437557937645.image" ixia_locid="384" keys="RecapPrelevementSEPASDD" location="Systempay"/>
+    <keydef format="image" href="tla1408463220846.image" ixia_locid="385" keys="PaiementEnCours" location="Systempay"/>
+    <keydef format="image" href="tla1408464303221.image" ixia_locid="37" keys="DetailTransactionSEPAEnCours" location="Systempay"/>
+    <keydef format="image" href="tla1408464752604.image" ixia_locid="54" keys="EmailInscriptionSEPA" location="Systempay"/>
+    <keydef format="image" href="tla1408464914727.image" ixia_locid="56" keys="EmailPreNotificationSEPA" location="Systempay"/>
+    <keydef format="image" href="tla1408464979841.image" ixia_locid="22" keys="EmailPaiement" location="Systempay"/>
+    
+    <!--QUAND NATIXIS SERA OK Liens SEPA et Echanges de fichiers-->
+    <keydef format="html" href="sftp://vadftp.lyra-network.com" ixia_locid="120" keys="SFTP" location="Systempay" scope="external"/>
+    <keydef href="ftps://vadftp.lyra-network.com" ixia_locid="121" keys="FTPS" location="Systempay" scope="external"/>
+    
+    <!-- QUAND NATIXIS SERA OK Images SEPA One Off-->
+    <keydef format="image" href="tla1440163214853.image" ixia_locid="390" keys="ChoixMoyenDePaiementOneOff" location="Systempay"/>
+    <keydef format="image" href="tla1440163346517.image" ixia_locid="391" keys="InfoMoyenPaiementOneOff" location="Systempay"/>
+    <keydef format="image" href="tla1440163447689.image" ixia_locid="392" keys="ValidationMandatOneOff" location="Systempay"/>
+    <keydef format="image" href="tla1408461520949.image" ixia_locid="393" keys="RecapPrelevementSEPASDDOneOff" location="Systempay"/>
+    
+    <!--PayPal immediat-->
+    <keydef href="tla1430140691277.image" ixia_locid="404" keys="CinematiqueEchangesVueAcheteur" location="Systempay"/>
+    <keydef href="tla1430141083227.image" ixia_locid="405" keys="PayPalPageDePaiement-step1" location="Systempay"/>
+    
+    <!-- Facilipay Images -->
+    <keydef format="image" href="tla1421081481840.image" ixia_locid="234" keys="RecapFinancement" location="Systempay"/>
+    <keydef format="image" href="tla1420734218082.image" ixia_locid="395" keys="FormulaireSouscriptionFacilipay" location="Systempay"/>
+    <keydef format="image" href="tla1420734786395.image" ixia_locid="232" keys="ConditionsFacilypay" location="Systempay"/>
+    <keydef format="image" href="tla1420735157975.image" ixia_locid="233" keys="DetailTransactionFacilypay" location="Systempay"/>
+    <keydef format="image" href="tla1428047278754.image" ixia_locid="396" keys="PagePaiementStep1Facilipay" location="Systempay"/>
+    <keydef format="image" href="tla1428047320160.image" ixia_locid="230" keys="PagePaiementStep2Facilipay" location="Systempay"/>
+    <keydef format="image" href="tla1428047819132.image" ixia_locid="235" keys="RecapitulatifPaiementFacilipay" location="Systempay"/>
+    
+    <!-- Sofort Images-->
+    <keydef href="tla1428585181638.image" ixia_locid="225" keys="Cinematique" location="Systempay"/>
+    <keydef href="tla1428584754852.image" ixia_locid="226" keys="PageDePaiementStep1" location="Systempay"/>
+    <keydef href="tla1428584796245.image" ixia_locid="397" keys="PageDePaiementStep7" location="Systempay"/>
+    
+    <!--ANCV images-->
+    <keydef href="tla1426177902016.image" ixia_locid="246" keys="diagrammeANCV" location="Systempay"/>
+    <keydef href="tla1426179413136.image" ixia_locid="247" keys="SelectionMoyenDePaiementANCV" location="Systempay"/>
+    <keydef href="tla1426179482463.image" ixia_locid="248" keys="ConfirmationeCV" location="Systempay"/>
+    <keydef href="tla1426179535175.image" ixia_locid="249" keys="SaisieInfoeCV" location="Systempay"/>
+    <keydef href="tla1426179590845.image" ixia_locid="250" keys="ResumesCV" location="Systempay"/>
+    <keydef href="tla1426179671310.image" ixia_locid="251" keys="FinalSaisieeCV" location="Systempay"/>
+    <keydef href="tla1426179792695.image" ixia_locid="252" keys="SaisieCB" location="Systempay"/>
+    <keydef href="tla1426179855127.image" ixia_locid="253" keys="RecapitulatifANCV" location="Systempay"/>
+    <keydef href="tla1426177964994.image" ixia_locid="257" keys="NumeroDeRemise" location="Systempay"/>
+</map>

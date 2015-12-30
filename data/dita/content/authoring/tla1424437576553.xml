@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<task id="tla1424437576553" xml:lang="fr-fr">
+	<title ixia_locid="61">Rejouer manuellement la notification</title>
+	<shortdesc ixia_locid="62"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="63">
+			<p ixia_locid="64">Cette option permet de réexécuter manuellement l'URL de notification depuis le <ph ixia_locid="65" translate="no">Back Office</ph> lorsqu'une transaction est en erreur.</p>
+		</context>
+		<steps>
+			<step id="step_N10025_N10022_N10011_N10001" ixia_locid="66">
+				<cmd ixia_locid="67">Connectez-vous à : <xref ixia_locid="60" keyref="BackOfficeMarchand"/></cmd>
+			</step>
+			<step id="step_N10032_N10022_N10011_N10001" ixia_locid="68">
+				<cmd ixia_locid="69">Recherchez la transaction pour laquelle vous souhaitez rejouer manuellement la
+					notification.</cmd>
+			</step>
+			<step id="step_N1003B_N10022_N10011_N10001" ixia_locid="70">
+				<cmd ixia_locid="71">Effectuez un clic droit sur la transaction et sélectionnez <b ixia_locid="72">Exécuter l'URL de
+						notification</b>.</cmd>
+				<itemgroup ixia_locid="73">Un message vous informe de la bonne exécution de cette commande si votre
+					application est à nouveau disponible.</itemgroup>
+				<itemgroup ixia_locid="74">
+					<p ixia_locid="75">Vous pourrez, dans tous les cas, visualiser le résultat de votre action dans l'historique
+						des évènements de la transaction et éventuellement analyser les messages
+						d'erreur si le problème persiste.</p>
+				</itemgroup>
+			</step>
+		</steps>
+		<result id="result_N10052_N10011_N10001" ixia_locid="76">
+			<p ixia_locid="77"> </p>
+			<p ixia_locid="78">Lorsque le rejeu est effectué manuellement depuis le <ph ixia_locid="79" translate="no">Back Office</ph>, certaines informations ne sont
+				pas enregistrées en base de données ou sont modifiées.</p>
+			<p ixia_locid="80"/>
+			<p ixia_locid="81"><b ixia_locid="82">Exemples de champs non disponibles / non
+					enregistrés en base de données : </b></p>
+			<p ixia_locid="83">
+				<ul id="ul_kwl_stg_dr">
+					<li ixia_locid="84"><ph ixia_locid="85" translate="no"><b ixia_locid="86">vads_page_action</b>
+						</ph></li>
+					<li ixia_locid="87"><ph ixia_locid="88" translate="no"><b ixia_locid="89">vads_payment_config</b></ph>
+					</li>
+					<li ixia_locid="90"><ph ixia_locid="91" translate="no"><b ixia_locid="92">vads_action_mode</b></ph>
+					</li>
+				</ul>
+			</p>
+			<p ixia_locid="93"/>
+			<p ixia_locid="94"><b ixia_locid="95">Exemples de champs envoyés avec des valeurs
+					différentes : </b></p>
+			<p ixia_locid="96">
+				<ul id="ul_y3b_vxf_dr">
+					<li ixia_locid="97"><ph ixia_locid="98" translate="no"><b ixia_locid="99">vads_url_check_src</b></ph> valorisé à <ph ixia_locid="100" translate="no"><b ixia_locid="101">BO</b></ph>, </li>
+					<li ixia_locid="102"><ph ixia_locid="103" translate="no"><b ixia_locid="104">vads_trans_status</b></ph>. Le statut de la transaction suite à
+						cette opération varie en fonction de son statut au moment où l'URL est
+						appelée (voir chapitre <b ixia_locid="33"><xref href="emm1415871023015.xml" ixia_locid="56">Cycle de vie des transactions</xref></b><ph doc-type="Back-Office" ixia_locid="114"> du guide d'intégration du
+							formulaire disponible sur <xref ixia_locid="115" keyref="SiteInternetDocumentation"/></ph>).</li>
+					<li ixia_locid="107"><ph ixia_locid="108" translate="no"><b ixia_locid="109">vads_hash</b></ph> valorisé différemment en tenant compte des
+						nouvelles valeurs,</li>
+					<li ixia_locid="110"><ph ixia_locid="111" translate="no"><b ixia_locid="112">signature</b></ph> valorisé différemment en tenant compte des
+						nouvelles valeurs.</li>
+				</ul>
+			</p>
+			<p ixia_locid="113"/>
+		</result>
+	</taskbody>
+</task>

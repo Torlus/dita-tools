@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408614445899" xml:lang="fr-fr">
+	<title ixia_locid="32" translate="no">vads_cust_country</title>
+	<shortdesc ixia_locid="33"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="34">Permet de spécifier le code du pays de l’acheteur à la norme ISO
+								3166. </p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="63"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="65" translate="no">a2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="64"><b ixia_locid="67">Code d'erreur</b></entry>
+						<entry ixia_locid="66" translate="no">22</entry>
+					</row>
+					<row>
+						<entry ixia_locid="50"><b ixia_locid="28">Exemples de valeurs possibles</b></entry>
+						<entry ixia_locid="52">
+							<p ixia_locid="35">
+								<table colsep="1" frame="all" id="table_xxz_gg1_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="36">Pays</entry>
+												<entry align="center" ixia_locid="37">Code</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="55">BRESIL</entry>
+												<entry ixia_locid="57" translate="no">BR</entry>
+											</row>
+											<row>
+												<entry ixia_locid="56">CORSE</entry>
+												<entry ixia_locid="58" translate="no">FR</entry>
+											</row>
+											<row>
+												<entry ixia_locid="40">FRANCE</entry>
+												<entry ixia_locid="41" translate="no">FR</entry>
+											</row>
+											<row>
+												<entry ixia_locid="42">GUADELOUPE</entry>
+												<entry ixia_locid="43" translate="no">GP</entry>
+											</row>
+											<row>
+												<entry ixia_locid="44">MARTINIQUE</entry>
+												<entry ixia_locid="45" translate="no">MQ</entry>
+											</row>
+											<row>
+												<entry ixia_locid="46">NOUVELLE-CALÉDONIE</entry>
+												<entry ixia_locid="47" translate="no">NC</entry>
+											</row>
+											<row>
+												<entry ixia_locid="59">ST-PIERRE-ET-MIQUELON</entry>
+												<entry ixia_locid="61" translate="no">PM</entry>
+											</row>
+											<row>
+												<entry ixia_locid="60">POLYNESIE FRANCAISE</entry>
+												<entry ixia_locid="62" translate="no">PF</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="51"><b ixia_locid="54">Remarque</b></entry>
+						<entry ixia_locid="53">Paramètre obligatoire pour 3xCB Cofinoga. </entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="31">Informations sur l'acheteur.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410335135439" xml:lang="fr-fr">
+	<title ixia_locid="4">Réaliser des tests de paiement</title>
+	<shortdesc ixia_locid="5"/>
+	<conbody>
+		<p ixia_locid="6">Les demandes de paiement de test adressées via le formulaire HTTP POST
+			doivent:</p>
+		<p ixia_locid="7">
+			<ul id="ul_dp4_3sp_jp">
+				<li ixia_locid="9">Contenir la donnée <b ixia_locid="10" translate="no">vads_ctx_mode</b>
+					valorisée à <b ixia_locid="11" translate="no">TEST</b>. </li>
+				<li ixia_locid="12">Utiliser <b ixia_locid="13">le certificat de test</b> précédemment récupéré pour le calcul de la
+					signature. </li>
+			</ul>
+		</p>
+		<p ixia_locid="8">En phase de test, le marchand peut tester les configurations 3D Secure (si ce
+			dernier est enrôlé 3DS et si l’option 3DS n’est pas désactivée).</p>
+		<p ixia_locid="15">Différents cas de paiements peuvent être simulés en utilisant les numéros de
+			carte de test précisés sur la page de paiement.</p>
+		<p ixia_locid="19">Toutes les transactions réalisées en mode test sont consultables par les
+			personnes habilitées à utiliser le <ph ixia_locid="24" translate="no">Back Office</ph> à l’adresse
+			suivante :<table colsep="0" frame="none" id="table_gdv_vpp_jp" rowsep="0">
+				<tgroup align="center" cols="1">
+					<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+					<tbody>
+						<row>
+							<entry align="center" ixia_locid="20"><xref ixia_locid="21" keyref="BackOfficeMarchand"/></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></p>
+		<p ixia_locid="22">Ces transactions sont consultables depuis le menu  <b ixia_locid="23">Gestion
+				&gt;Transaction de test</b> situé en haut à gauche du <ph ixia_locid="25" translate="no">Back Office</ph>.</p>
+	</conbody>
+</concept>

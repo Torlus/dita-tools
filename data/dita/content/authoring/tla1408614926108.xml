@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408614926108" xml:lang="fr-fr">
+	<title ixia_locid="30" translate="no">vads_cust_email</title>
+	<shortdesc ixia_locid="31"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">Adresse e-mail de l’acheteur, <b ixia_locid="32">nécessaire si vous
+								souhaitez que la plateforme de paiement envoie un e-mail à
+								l’acheteur</b>.<p ixia_locid="36">Pour que l'acheteur reçoive un
+								e-mail, n'oubliez pas de poster ce paramètre dans le formulaire
+								lorsque vous générez une demande de paiement.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="8" translate="no">ans..150</entry>
+					</row>
+					<row>
+						<entry ixia_locid="27"><b ixia_locid="33">Code erreur</b></entry>
+						<entry ixia_locid="29">15</entry>
+					</row>
+					<row>
+						<entry ixia_locid="34"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="35">Informations sur l'acheteur.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

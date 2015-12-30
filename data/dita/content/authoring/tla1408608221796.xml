@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408608221796" xml:lang="fr-fr">
+	<title ixia_locid="32" translate="no">vads_ctx_mode</title>
+	<shortdesc ixia_locid="33"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26"><p ixia_locid="55">Paramètre obligatoire.</p><p ixia_locid="56">Définit
+								le mode de sollicitation de la plateforme de paiement. </p><p ixia_locid="35">Influe sur le choix du certificat à utiliser
+								(certificat de test ou certificat de production) pour le calcul de
+								la signature.</p><p ixia_locid="36">Le mode TEST est toujours
+								disponible, même après la génération du certificat de
+								production.</p>Si vous créez un nouveau site marchand (ou disposez
+							d’un environnement de recette), vous pourrez effectuer vos tests sans
+							impacter le site actuellement en production.</entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="8" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="27"><b ixia_locid="37">Code erreur</b></entry>
+						<entry ixia_locid="29">11<p ixia_locid="50"><b ixia_locid="49">Erreurs fréquentes</b>:</p><p ixia_locid="51">
+								<ul id="ul_myc_rxk_xp">
+									<li ixia_locid="52">Le mode n'a pas été envoyé à la plateforme de paiement.</li>
+									<li ixia_locid="53">Ne pas coder PROD à la place de PRODUCTION</li>
+									<li ixia_locid="54">Ne pas coder la valeur en minuscules (test ou production).
+										Ce champ attend exclusivement des valeurs en majuscules et
+										sans abréviation.</li>
+								</ul>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="38">Valeurs possibles</b></entry>
+						<entry ixia_locid="40"><b ixia_locid="41" translate="no">TEST</b>, <b ixia_locid="42" translate="no">PRODUCTION</b></entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="31">Informations techniques.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

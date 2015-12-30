@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406039141891" xml:lang="fr-fr">
+	<title ixia_locid="1">Configurer la notification en cas d'abandon/annulation</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10016_N10013_N10001" ixia_locid="3">La plateforme de paiement peut notifier
+			systématiquement le site marchand :<p ixia_locid="4">
+				<ul id="ul_z3j_rbs_v4">
+					<li ixia_locid="5">En cas d’abandon/annulation de la part de l’acheteur, via le
+						bouton <b ixia_locid="6">Annuler et retourner à la boutique</b>.</li>
+					<li ixia_locid="7">Lorsque l'acheteur n'a pas terminé son paiement avant
+						l'expiration de sa session de paiement. <p ixia_locid="52"><b ixia_locid="53">La durée maximale d'une session de paiement est de
+								10 minutes</b>. </p></li>
+				</ul>
+			</p><p ixia_locid="153"/><p ixia_locid="154"/><p ixia_locid="8">Pour paramétrer cette notification:</p></context>
+		<steps>
+			<!--<step id="step_N1003B_N10038_N10013_N10001" ixia_locid="9"><cmd ixia_locid="10">Connectez-vous à : <xref ixia_locid="49" keyref="BackOfficeMarchand"/>.</cmd></step>-->
+			<!--<step id="step_N10046_N10038_N10013_N10001" ixia_locid="11"><cmd ixia_locid="12">Allez dans le menu : <b ixia_locid="13">Paramétrage</b> &gt;<b ixia_locid="47"> Règles de notifications</b>.</cmd></step>-->
+			<step id="step_N1005F_N10038_N10013_N10001" ixia_locid="16">
+				<cmd ixia_locid="17">Effectuez un clic droit sur la ligne <b ixia_locid="18">URL de notification
+						sur annulation</b>.</cmd>
+			</step>
+			<step id="step_N1006F_N10038_N10013_N10001" ixia_locid="19">
+				<cmd ixia_locid="20">Sélectionnez <b ixia_locid="21">Gérer la règle.</b></cmd>
+			</step>
+			<step id="step_N1007E_N10038_N10013_N10001" ixia_locid="22">
+				<cmd ixia_locid="23"><ph doc-type="Back-Office Form Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="68" payment-method="SEPA-One-Off SEPA-Recurrent">Renseignez
+						l’URL de votre page dans les champs <b ixia_locid="73">URL à appeler en mode
+							TEST </b>et<b ixia_locid="59"> URL à appeler en mode
+						PRODUCTION.</b></ph><ph doc-type="Modules" ixia_locid="69">Renseignez dans
+						les champs <b ixia_locid="70">URL à appeler en mode TEST</b> et <b ixia_locid="71">URL à appeler en mode PRODUCTION</b> l'URL : <keyword ixia_locid="72" keyref="IPN"/>
+					</ph></cmd>
+			</step>
+			<step id="step_N10097_N10038_N10013_N10001" ixia_locid="27">
+				<cmd ixia_locid="28">Renseignez <b ixia_locid="29">Adresses(s) e-mail(s) à avertir en cas
+						d’échec.</b>
+				</cmd>
+			</step>
+			<step id="step_N100AB_N10038_N10013_N10001" ixia_locid="30">
+				<cmd ixia_locid="31">Pour spécifier plusieurs adresses séparez-les par un point-virgule.</cmd>
+			</step>
+			<step id="step_N100CE_N10040_N10013_N10001" ixia_locid="76">
+				<cmd ixia_locid="77">Configurez le <b ixia_locid="46">Rejeu automatique en cas d’échec</b>.</cmd>
+				<itemgroup ixia_locid="78">Cette option permet de renvoyer automatiquement la notification vers le
+					site marchand en cas d'échec, et ce, jusqu'à 4 fois.</itemgroup>
+				<info ixia_locid="79">Pour plus d'informations, reportez-vous au chapitre <b ixia_locid="149">Activer le rejeu automatique</b><ph doc-type="Moyens-Paiement SEPA-OneOff SEPA-Recurrent" ixia_locid="150" payment-method="SEPA-One-Off SEPA-Recurrent"> du guide d'implémentation du
+						formulaire disponible sur notre site documentaire <xref ixia_locid="148" keyref="SiteInternetDocumentation"/></ph>.</info>
+			</step>
+			<step id="step_N100CE_N10038_N10013_N10001" ixia_locid="35">
+				<cmd ixia_locid="36">Sauvegardez vos modifications.</cmd>
+			</step>
+		</steps>
+		<result id="result_N100D1_N10013_N10001" ixia_locid="37">
+			<!--<p ixia_locid="151" outputclass="break" product="VirtueMart"/>-->
+			<p ixia_locid="74">Si la plateforme n’arrive pas à joindre l’URL de votre page, alors un e-mail
+				est envoyé à l’adresse spécifiée à l'étape 6. </p>
+			<p ixia_locid="39">Il contient :</p>
+			<p ixia_locid="40">
+				<ul id="ul_nzq_jds_v4">
+					<li ixia_locid="41">le code HTTP de l’erreur rencontrée,</li>
+					<li ixia_locid="42">des éléments d’analyse en fonction de l’erreur,</li>
+					<li ixia_locid="152">la procédure à suivre depuis le <ph ixia_locid="54" translate="no">Back Office </ph><keyword doc-type="Modules" ixia_locid="75" keyref="platform-name"/> pour renvoyer la requête vers l’URL définie à
+						l’étape 5.</li>
+				</ul>
+			</p>
+		</result>
+	</taskbody>
+</task>

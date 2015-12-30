@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1409751437465" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_risk_control</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Champ retourné dans la réponse.<p ixia_locid="88">Permet de définir le résultat du
+								contrôle des risques.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="35">contrôle1=resultat1;contrôle2=resultat2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry align="left" ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.55*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="50">Valeur</entry>
+												<entry align="center" ixia_locid="51">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8"><b ixia_locid="74" translate="no">CARD_FRAUD </b></entry>
+												<entry ixia_locid="9">Contrôle la présence du numéro de carte de l'acheteur dans la
+												liste grise de cartes.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10"><b ixia_locid="75" translate="no">SUSPECT_COUNTRY</b></entry>
+												<entry ixia_locid="11">Contrôle la présence du pays émetteur de la carte de l'acheteur
+												dans la liste de pays interdits.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="14"><b ixia_locid="76" translate="no">IP_FRAUD</b>
+												</entry>
+												<entry ixia_locid="15">Contrôle la présence de l'adresse IP de l'acheteur dans la liste
+												grise d'IP.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="42"><b ixia_locid="77" translate="no">CREDIT_LIMIT </b></entry>
+												<entry ixia_locid="30">Contrôle la fréquence et les
+												montants d'achat d'un même numéro de carte, ou le
+												montant maximum d'une commande.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="43"><b ixia_locid="78" translate="no">BIN_FRAUD</b></entry>
+												<entry ixia_locid="31">Contrôle la présence du code BIN de la carte de l'acheteur dans
+												la liste grise de codes BIN.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="52"><b ixia_locid="79" translate="no">ECB</b></entry>
+												<entry ixia_locid="58">Contrôle si la carte de l'acheteur est de type e-carte
+												bleue.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="53"><b ixia_locid="80" translate="no">CARD_COMMERCIAL </b></entry>
+												<entry ixia_locid="59">Contrôle si la carte de l'acheteur est une carte
+												commerciale.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="54"><b ixia_locid="81" translate="no">SYSTEMATIC_AUTO</b></entry>
+												<entry ixia_locid="60">Contrôle si la carte de l'acheteur est une carte à autorisation
+												systématique.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="55"><b ixia_locid="82" translate="no">INCONSISTENT_COUNTRIES</b></entry>
+												<entry ixia_locid="61">Contrôle si le pays de l'adresse IP, le pays émétteur de la carte
+												de paiement, et le pays de l'adresse de l'acheteur
+												sont cohérents entre eux.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="56"><b ixia_locid="83" translate="no">NON_WARRANTY_PAYMENT</b></entry>
+												<entry ixia_locid="62">Contrôle le transfert de
+												responsabilité de la transaction.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="57"><b ixia_locid="84" translate="no">SUSPECT_IP_COUNTRY</b></entry>
+												<entry ixia_locid="63">Contrôle la présence du pays de l'acheteur, identifié par son
+												adresse IP, dans la liste de pays
+												interdits.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="64">Les différentes valeurs possibles pour ‘<b ixia_locid="65">résultat’</b> sont :<table colsep="1" frame="all" id="table_jxv_wns_hp" rowsep="1">
+									<tgroup align="center" cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.53*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="66">Valeur</entry>
+												<entry align="center" ixia_locid="67">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry align="left" ixia_locid="68"><b ixia_locid="85" translate="no">OK</b></entry>
+												<entry align="left" ixia_locid="69" translate="no">OK</entry>
+											</row>
+											<row>
+												<entry align="left" ixia_locid="70"><b ixia_locid="86" translate="no">WARNING</b></entry>
+												<entry align="left" ixia_locid="71">Contrôle informatif échoué</entry>
+											</row>
+											<row>
+												<entry align="left" ixia_locid="72"><b ixia_locid="87" translate="no">ERROR</b></entry>
+												<entry align="left" ixia_locid="73">Contrôle bloquant échoué</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table></p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

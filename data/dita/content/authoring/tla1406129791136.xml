@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406129791136" xml:lang="fr-fr">
+	<title ixia_locid="1">Modifier le libellé du bouton "Retourner à la boutique"</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4">Vous pouvez personnaliser le texte <b ixia_locid="5">«</b>
+				<b ixia_locid="6">Retourner à la boutique »</b>.</p>
+		</context>
+		<steps>
+			<step id="step_N10028_N10025_N10011_N10001" ixia_locid="7">
+				<cmd ixia_locid="8">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
+					chapitre <b ixia_locid="173"><xref href="emm1405083451541.xml" ixia_locid="175">Générer un formulaire de paiement</xref></b>) pour construire votre
+					formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10031_N10025_N10011_N10001" ixia_locid="9">
+				<cmd ixia_locid="10">Utilisez le champ <b ixia_locid="11" translate="no">vads_theme_config</b> pour modifier le
+					libellé des boutons « Retourner à la boutique ».</cmd>
+			</step>
+			<step id="step_N1003E_N10025_N10011_N10001" ixia_locid="12">
+				<cmd ixia_locid="13">Utilisez le mot-clé <b ixia_locid="176" translate="no">SUCCESS_FOOTER_MSG_RETURN</b> pour
+					modifier le libellé du bouton « Retour à la boutique » affiché en cas de
+					paiement accepté.</cmd>
+			</step>
+			<step id="step_N1004B_N10025_N10011_N10001" ixia_locid="178">
+				<cmd ixia_locid="643">Utilisez le mot-clé <b ixia_locid="644" translate="no">CANCEL_FOOTER_MSG_RETURN</b> pour modifier le libellé du
+					bouton « Annuler et retourner à la boutique » affiché sur les différentes pages
+					de paiement.</cmd>
+			</step>
+			<step id="step_N10058_N10025_N10011_N10001" ixia_locid="645">
+				<cmd ixia_locid="19">Calculez la valeur du champ <b ixia_locid="20" translate="no">signature</b> en utilisant
+					l’ensemble des champs de votre formulaire, dont le nom commence par <b ixia_locid="155" translate="no">vads_</b>
+					(voir chapitre <b ixia_locid="32"><xref href="emm1405088305497.xml" ixia_locid="154">Calculer la signature</xref></b>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N10065_N10011_N10001" ixia_locid="22">
+			<p ixia_locid="180">En souscrivant à l'option <b ixia_locid="177">personnalisation avancée</b>,
+				vous pourrez modifier des libéllés (exemple : boutique) affichés sur la page de
+					paiement.<ph ixia_locid="646" location="OSB PayZen PayZen_Brazil PayZen_Germany Systempay" platform="OSB PayZen"> Référez-vous au "manuel utilisateur de la
+					personnalisation avancée" disponible sur le site documentaire<ph ixia_locid="647" location="OSB PayZen PayZen_Brazil PayZen_Germany">
+						<xref ixia_locid="15" keyref="SiteInternetDocumentation"/></ph>.</ph><ph ixia_locid="648" location="Innopay" platform="Innopay"> Pour plus d'informations,
+					veuillez vous adresser au support technique.</ph></p>
+			<p ixia_locid="23"><u ixia_locid="24">Exemple de formulaire de paiement qui modifie le libellé du
+					bouton "Retourner à la
+				boutique":</u><codeblock ixia_locid="25">&lt;form method="POST" action="<xref ixia_locid="87" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="4000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_order_id" value="CD100000858" /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+<b ixia_locid="26">&lt;input type="hidden" name="vads_theme_config"
+value="CANCEL_FOOTER_MSG_RETURN=Annuler;SUCCESS_FOOTER_MSG_RETURN=Retour" /&gt;</b>
+&lt;input type="hidden" name="vads_trans_date" value="20140331092024" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="408248" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value=" a88c7380d165e49d5cb61c3408e0800c697b03fd "/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+			
+		</result>
+	</taskbody>
+</task>

@@ -98,6 +98,7 @@ Dans les deux cas, le marchand reçoit un e-mail d&#x27;avertissement.
  
 <p>
 Il contient:
+
 <ul>
  
  <li>

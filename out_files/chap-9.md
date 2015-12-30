@@ -88,6 +88,7 @@ Cet exemple de formulaire s&#x27;analyse de la manière suivante:
  
 <p>
  
+
 <ol>
  
 <li>
@@ -95,6 +96,7 @@ On trie par ordre
 <b>
 <u>alphabétique</u></b> les champs dont le nom commence par 
 <b>vads_</b> : 
+
 <ul>
  
  <li>

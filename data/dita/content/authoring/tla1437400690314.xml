@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<concept id="tla1437400690314" xml:lang="fr-fr">
+	<title ixia_locid="61">Configurer les notifications</title>
+	<shortdesc ixia_locid="62"/>
+	<conbody>
+		<p ixia_locid="63">Plusieurs types de notifications sont mises à disposition dans le Back Office. Elle
+			permettent de gérer les évènements (abandon par l'acheteur, annulation par le marchand,
+			validation par le marchand...) qui génèreront un appel vers le site marchand et de
+			configurer l'URL de la page à contacter.</p>
+		<p ixia_locid="64">Pour accéder à la gestion des règles de notification : </p>
+		<p ixia_locid="65">
+			<ol id="ol_smm_wqf_ts">
+				<li ixia_locid="66">Connectez-vous à : <xref ixia_locid="60" keyref="BackOfficeMarchand"/>.</li>
+				<li ixia_locid="67">Allez dans le menu : <b ixia_locid="29">Paramétrage</b> &gt; <b ixia_locid="58">Règles de notifications</b>. <fig id="fig_N10039_N1002C_N1001F_N1001C_N10011_N10001" ixia_locid="68">
+						<title ixia_locid="69">Règles de notification</title>
+						<image doc-type="Back-Office Form Form_Light Identifiant_Abonnement Modules" ixia_locid="70" keyref="ListeURLNotification" scale="60"/>
+					<image doc-type="Moyens-Paiement" ixia_locid="71" keyref="ListeURLNotificationSepaAll" payment-method="SEPA-One-Off SEPA-Recurrent"/>
+					</fig></li>
+			</ol>
+		</p>
+	</conbody>
+</concept>

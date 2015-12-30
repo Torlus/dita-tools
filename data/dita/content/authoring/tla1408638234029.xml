@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408638234029" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_threeds_sign_valid</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Champ retourné dans la réponse.<p ixia_locid="54">Désigne la validité de la signature
+								du message PARes. Il est valorisé par la plateforme de
+							paiement.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="35" translate="no">n1</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="53"/><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="7.55*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="51">Valeur</entry>
+												<entry align="center" ixia_locid="52">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8">vide</entry>
+												<entry ixia_locid="9">Pas de 3DS.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10">0</entry>
+												<entry ixia_locid="11">signature incorrecte.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="14">1</entry>
+												<entry ixia_locid="15">signature correcte.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Authentification 3DS.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

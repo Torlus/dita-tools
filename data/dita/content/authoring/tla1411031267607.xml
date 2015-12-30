@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1411031267607" xml:lang="fr-fr">
+	<title ixia_locid="93">Informations sur la transaction</title>
+	<shortdesc ixia_locid="94"/>
+	<conbody>
+		<p ixia_locid="95">
+			<table colsep="1" frame="all" id="table_qc5_kbr_jp" rowsep="1">
+				<title ixia_locid="283">Liste des paramètres - Informations sur la transaction</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="1.42*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="2.58*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="55">Nom du champ</entry>
+							<entry ixia_locid="56">Format</entry>
+							<entry ixia_locid="57">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="58"><b ixia_locid="96" translate="no"><xref href="tla1408546768429.xml" ixia_locid="97">vads_amount</xref></b></entry>
+							<entry ixia_locid="60" translate="no">n..12</entry>
+							<entry ixia_locid="61">Montant de la transaction exprimé dans la plus petite unité de la
+								devise <ph ixia_locid="323" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour l'euro)</ph>
+								<ph ixia_locid="324" location="Innopay" platform="Innopay">(le
+									centime pour le CHF)</ph>.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="67"><b ixia_locid="98" translate="no"><xref href="tla1408547832760.xml" ixia_locid="99">vads_auth_mode</xref></b></entry>
+							<entry ixia_locid="70" translate="no">string (enum)</entry>
+							<entry ixia_locid="282">Spécifie de quelle manière est réalisée la
+								demande d’autorisation. </entry>
+						</row>
+						<row>
+							<entry ixia_locid="75"><b ixia_locid="100" translate="no"><xref href="tla1408547832760.xml" ixia_locid="101">vads_auth_number</xref></b></entry>
+							<entry ixia_locid="78" translate="no">an..6</entry>
+							<entry ixia_locid="79">Numéro d'autorisation retourné par le serveur
+								bancaire.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="83"><b ixia_locid="102" translate="no"><xref href="tla1408548356588.xml" ixia_locid="103">vads_auth_result</xref></b></entry>
+							<entry ixia_locid="86" translate="no">n2</entry>
+							<entry ixia_locid="87">Code retour de la demande d'autorisation
+								retournée par la banque émettrice.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="327"><b ixia_locid="135" translate="no"><xref href="tla1408604690440.xml" ixia_locid="136">vads_capture_delay</xref></b></entry>
+							<entry ixia_locid="328" translate="no">n..3</entry>
+							<entry ixia_locid="329">Délai en nombre de jours avant remise en
+								banque.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="330"><xref href="tla1447857764792.xml" ixia_locid="335"><b ixia_locid="336">vads_change_rate</b></xref></entry>
+							<entry ixia_locid="333" translate="no">string</entry>
+							<entry ixia_locid="334">Taux de change utilisé pour calculer le montant
+								réél du paiement (paiement multi-devise).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="106"><b ixia_locid="196" translate="no"><xref href="tla1408607837994.xml" ixia_locid="197">vads_contract_used</xref></b></entry>
+							<entry ixia_locid="139" translate="no">ans..250</entry>
+							<entry ixia_locid="170">Contrat commerçant utilisé.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="105"><b ixia_locid="194" translate="no"><xref href="tla1408607561985.xml" ixia_locid="195">vads_contracts</xref></b></entry>
+							<entry ixia_locid="138">RESEAU1=contrat1;<p ixia_locid="260">RESEAU2=contrat2</p></entry>
+							<entry ixia_locid="169">Contrat commerçant à utiliser.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="108"><b ixia_locid="200" translate="no"><xref href="tla1406044948454.xml" ixia_locid="201">vads_currency</xref></b></entry>
+							<entry ixia_locid="141" translate="no">n3</entry>
+							<entry ixia_locid="172">Code numérique de la monnaie à utiliser pour le
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="284"><b ixia_locid="202" translate="no"><xref href="tla1408616823195.xml" ixia_locid="203">vads_effective_amount</xref></b></entry>
+							<entry ixia_locid="286" translate="no">n..12</entry>
+							<entry ixia_locid="288">Montant du paiement exprimé dans la plus petite unité de la devise
+								utilisée pour effectuer la remise en banque<ph ixia_locid="325" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour l'euro)</ph>
+								<ph ixia_locid="326" location="Innopay" platform="Innopay">(le
+									centime pour le CHF)</ph>.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="110"><b ixia_locid="204" translate="no"><xref href="tla1408623011853.xml" ixia_locid="205">vads_effective_creation_date</xref></b></entry>
+							<entry ixia_locid="143" translate="no">n14</entry>
+							<entry ixia_locid="174">Date d'enregistrement de la transaction, dans le
+								fuseau UTC (ou GMT+0) au format horaire 24h
+								(AAAAMMJJHHMMSS).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="112"><b ixia_locid="208" translate="no"><xref href="tla1408625891261.xml" ixia_locid="209">vads_operation_type</xref></b></entry>
+							<entry ixia_locid="145" translate="no">string (enum)</entry>
+							<entry ixia_locid="176">Permet de différencier une opération de débit ou
+								de crédit (remboursement).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="113"><b ixia_locid="210" translate="no"><xref href="tla1406099131711.xml" ixia_locid="211">vads_payment_cards </xref></b></entry>
+							<entry ixia_locid="146" translate="no">type1;type2</entry>
+							<entry ixia_locid="177">Liste des moyens de paiement à proposer à
+								l’acheteur.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="114"><b ixia_locid="212" translate="no"><xref href="tla1408626891430.xml" ixia_locid="213">vads_payment_certificate</xref></b></entry>
+							<entry ixia_locid="147" translate="no">an40</entry>
+							<entry ixia_locid="178">Champ valorisé par la plateforme de paiement
+								dans le cas où l’autorisation a été réalisée <b ixia_locid="34">avec
+									succès</b>.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="270"><b ixia_locid="214" translate="no"><xref href="tla1408627002482.xml" ixia_locid="215">vads_payment_config</xref></b></entry>
+							<entry ixia_locid="272" translate="no">string (enum)</entry>
+							<entry ixia_locid="274">Type du paiement : comptant ou en plusieurs
+								fois.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="298"><b ixia_locid="290" translate="no"><xref href="tla1415797825296.xml" ixia_locid="291">vads_payment_option_code</xref></b></entry>
+							<entry ixia_locid="300" translate="no">string</entry>
+							<entry ixia_locid="302">Permet de définir le code de l'option
+								utilisée.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="299"><xref href="tla1424076095539.xml" ixia_locid="304"><b ixia_locid="305">vads_payment_seq</b></xref></entry>
+							<entry ixia_locid="301" translate="no">json</entry>
+							<entry ixia_locid="303">Décrit la séquence d'un paiement
+								fractionné.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="116"><b ixia_locid="216" translate="no"><xref href="tla1408627133271.xml" ixia_locid="217">vads_payment_src</xref></b></entry>
+							<entry ixia_locid="149" translate="no">string (enum)</entry>
+							<entry ixia_locid="180">Origine du paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="315"><xref href="tla1413811527238.xml" ixia_locid="268"><b ixia_locid="269" translate="no">vads_risk_analyzer_result</b></xref></entry>
+							<entry ixia_locid="317" translate="no">ans</entry>
+							<entry ixia_locid="319">Retourne le résultat de l'analyse de fraude
+								effectué par un système externe (ClearSale,
+								CyberSource,...).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="316"><b ixia_locid="321"><xref href="tla1436276953870.xml" ixia_locid="322"><ph ixia_locid="235" translate="no">vads_risk_assessment_result</ph></xref></b></entry>
+							<entry ixia_locid="318" translate="no">ans</entry>
+							<entry ixia_locid="320">Retourne le résultat de l'analyse de gestion des
+								risques avancée effectuée par la plateforme de paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="118"><b ixia_locid="220" translate="no"><xref href="tla1409751437465.xml" ixia_locid="221">vads_risk_control</xref></b></entry>
+							<entry ixia_locid="151">contrôle1=resultat1;<p ixia_locid="261">contrôle2=resultat2</p></entry>
+							<entry ixia_locid="182">Résultat des contrôles associés à la
+								fraude.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="119"><b ixia_locid="222" translate="no"><xref href="tla1408631717602.xml" ixia_locid="223">vads_sequence_number</xref></b></entry>
+							<entry ixia_locid="152" translate="no">n</entry>
+							<entry ixia_locid="183">Numéro de séquence de la transaction (numéro
+								d'échéance).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="121"><b ixia_locid="226" translate="no"><xref href="tla1408638544413.xml" ixia_locid="227">vads_trans_date</xref></b></entry>
+							<entry ixia_locid="154" translate="no">n14</entry>
+							<entry ixia_locid="185">
+								<p ixia_locid="228">Date et heure, dans le fuseau UTC (ou GMT+0) au
+									format horaire 24h (AAAAMMJJHHMMSS).</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="122"><b ixia_locid="229" translate="no"><xref href="tla1408638607923.xml" ixia_locid="230">vads_trans_id</xref></b></entry>
+							<entry ixia_locid="155" translate="no">n6</entry>
+							<entry ixia_locid="186">Identifiant unique d'une transaction.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="306"><b ixia_locid="231" translate="no"><xref href="tla1408638657026.xml" ixia_locid="232">vads_trans_status</xref></b></entry>
+							<entry ixia_locid="308" translate="no">string (enum)</entry>
+							<entry ixia_locid="310">Statut de la transaction.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="307"><b ixia_locid="312"><xref href="tla1432730650747.xml" ixia_locid="313"><ph ixia_locid="314" translate="no">vads_trans_uuid</ph></xref></b></entry>
+							<entry ixia_locid="309" translate="no">ans32</entry>
+							<entry ixia_locid="311">Référence unique de la transaction générée par la plateforme de
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="131"><b ixia_locid="278" translate="no"><xref href="tla1408639754479.xml" ixia_locid="249">vads_validation_mode</xref></b></entry>
+							<entry ixia_locid="164" translate="no">string (enum)</entry>
+							<entry ixia_locid="250">Mode de validation de la transaction.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="133"><b ixia_locid="254" translate="no"><xref href="tla1408639995934.xml" ixia_locid="255">vads_warranty_result</xref></b></entry>
+							<entry ixia_locid="166" translate="no">string (enum)</entry>
+							<entry ixia_locid="256"><ph ixia_locid="280" location="Systempay" platform="Systempay">Garantie du paiement</ph>
+								<ph ixia_locid="281" location="PayZen PayZen_Germany PayZen_Brazil OSB Innopay" platform="PayZen Innopay">Transfert de
+									responsabilité</ph> dans le cas d’un paiement accepté.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

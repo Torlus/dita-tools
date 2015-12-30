@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410339647667" xml:lang="fr-fr">
+	<title ixia_locid="1">Tester l'URL de notification instantanée (IPN)</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Vérifiez tout d'abord l'état de l'URL de notification instantanée (également
+			appelée IPN) dans le <ph ixia_locid="29" translate="no">Back Office</ph>.</p>
+		<p ixia_locid="4">Pour cela:</p>
+		<p ixia_locid="5">
+			<ol id="ol_hdf_4dq_jp">
+				<li ixia_locid="6">Effectuez un clic droit sur une transaction.</li>
+				<li ixia_locid="7">Sélectionnez <b ixia_locid="8">Afficher le détail de la transaction</b>.</li>
+				<li ixia_locid="9">Vérifiez le statut de l'URL de notification instantanée (IPN). <ul id="ul_dzz_pk2_fq">
+						<li ixia_locid="41">Dans le cas où le statut est <b ixia_locid="42">Envoyé</b>, cela signifie
+							que vous avez correctement renseigné l'URL dans le <ph ixia_locid="43" translate="no">Back Office</ph>. </li>
+						<li ixia_locid="31">Dans le cas où le statut apparaît en <b ixia_locid="11">URL non
+								définie</b>, cela signifie que vous n'avez pas renseigné l'URL dans
+							le <ph ixia_locid="44" translate="no">Back Office</ph>. <ol id="ol_eg5_xk2_fq">
+								<li ixia_locid="32">Vérifiez l'adresse de l'URL de notification
+									instantanée saisie en mode <ph ixia_locid="25" translate="no">TEST</ph> et <ph ixia_locid="26" translate="no">PRODUCTION</ph>. </li>
+								<li ixia_locid="33">Cliquez sur <b ixia_locid="15">Paramétrage</b>
+									&gt; <b ixia_locid="16">Règles de notification</b>.</li>
+								<li ixia_locid="34">Renseignez l'URL de notification de paiement
+									instantanée (URL de notification à la fin du paiement). <p ixia_locid="35">Ne saisissez pas une adresse en "localhost".
+										L'appel à cette l'URL se fait de serveur à serveur.</p></li>
+								<li ixia_locid="36">Cliquez sur <b ixia_locid="23">Sauvegarder</b>.</li>
+							</ol></li>
+					</ul><ul id="ul_td3_gm2_fq">
+						<li ixia_locid="37">Dans le cas où le statut est <b ixia_locid="38">Echoué</b>, se reporter au
+							chapitre <b ixia_locid="46">Traiter les erreurs</b><ph ixia_locid="149"><ph doc-type="Form_Light Moyens-Paiement integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="151" payment-method="SEPA-One-Off SEPA-Recurrent"> du guide d'implémentation du formulaire
+									disponible sur notre site documentaire <xref ixia_locid="148" keyref="SiteInternetDocumentation"/></ph>)</ph>.</li>
+					</ul></li>
+			</ol>
+			
+						
+		</p>	
+																
+		
+	</conbody>
+</concept>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1408546261318" xml:lang="fr-fr">
+	<title ixia_locid="1">Dictionnaire de données</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="42">Le dictionnaire de données présente la liste complète des champs pouvant être
+			utilisés dans le formulaire de paiement.</p>
+		<p ixia_locid="43">Il détaille tout d'abord les principales catégories (telles que les
+			informations techniques, les informations sur la commande...). L'ensemble des champs
+			appartenant à une catégorie sont présentés. </p>
+		<p ixia_locid="44">Ces tableaux sont présentés de la manière suivante :</p>
+		<p ixia_locid="4">
+			<ul id="ul_dwt_ybv_dp">
+				<li ixia_locid="5"><b ixia_locid="6">Nom du champ</b> : nom du paramètre, tel qu'il sera utilisé
+					dans une requête HTTP.</li>
+				<li ixia_locid="7"><b ixia_locid="45">Format</b> : format des données, selon la codification
+						suivante:<table colsep="1" frame="all" id="table_e55_2cv_dp" rowsep="1">
+						<title ixia_locid="9">Liste champs et formats</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="4.88*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="10">Notation</entry>
+									<entry ixia_locid="11">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="12" translate="no">a</entry>
+									<entry ixia_locid="13">Caractères alphabétiques (de ‘A’ à ‘Z’ et
+										de ‘a’ à ‘z’)</entry>
+								</row>
+								<row>
+									<entry ixia_locid="14" translate="no">n</entry>
+									<entry ixia_locid="15">Caractères numériques</entry>
+								</row>
+								<row>
+									<entry ixia_locid="16" translate="no">s</entry>
+									<entry ixia_locid="17">Caractères spéciaux</entry>
+								</row>
+								<row>
+									<entry ixia_locid="18" translate="no">an</entry>
+									<entry ixia_locid="19">Caractères alphanumériques</entry>
+								</row>
+								<row>
+									<entry ixia_locid="20" translate="no">ans</entry>
+									<entry ixia_locid="21">Caractères alphanumériques et
+										spéciaux</entry>
+								</row>
+								<row>
+									<entry ixia_locid="22" translate="no">3</entry>
+									<entry ixia_locid="23">Longueur fixe de 3 caractères</entry>
+								</row>
+								<row>
+									<entry ixia_locid="24" translate="no">..12</entry>
+									<entry ixia_locid="25">Longueur variable jusqu’à 12
+										caractères</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table></li>
+				<li ixia_locid="47"><b ixia_locid="48">Description</b> : description du champ.</li></ul>
+		</p>
+		<p ixia_locid="31"/>
+		<p ixia_locid="49"/>
+		<p ixia_locid="50"/>
+		<p ixia_locid="51">Le dictionnaire de données présente ensuite le détail pour chacun des champs. Chaque
+			champ est décrit de la manière suivante :</p>
+		<p ixia_locid="52">
+			<ul id="ul_ltm_c2p_sq">
+				<li ixia_locid="53"><b ixia_locid="54">Description</b> : description du champ.</li>
+				<li ixia_locid="55"><b ixia_locid="46">Format</b> : format des données (voir tableau <b ixia_locid="56">Liste champs
+						et formats</b> ci-dessus).</li>
+				<li ixia_locid="57"><b ixia_locid="58">Valeurs possibles</b> : valeurs attendues lorsque le champ doit être valorisé
+					avec des valeurs spécifiques.</li>
+				<li ixia_locid="59"><b ixia_locid="27">Exemple</b> : exemple de codage correct des données. </li>
+				<li ixia_locid="60"><b ixia_locid="29">Code erreur</b> : en cas d’erreur dans l’interfaçage entre le
+					site marchand et la plateforme de paiement, cette dernière indiquera par un code
+					numérique le paramètre fautif dans le champ <b ixia_locid="30" translate="no">vads_extra_result</b>.</li>
+				<li ixia_locid="61"><b ixia_locid="62">Remarque</b> : information complémentaire, précision.</li>
+				<li ixia_locid="63"><b ixia_locid="64">Catégorie</b> : catégorie à laquelle est affilié le champ.<p ixia_locid="65"/></li>
+			</ul>
+		</p>
+		<p ixia_locid="32">Précisions sur les <b ixia_locid="33">codes erreur :</b></p>
+		<p ixia_locid="34"><b ixia_locid="66">Code erreur</b> correspond au numéro de l’erreur lors de la soumission d’un
+			formulaire de paiement incorrect. </p>
+		<ul id="ul_lxp_ncv_dp">
+			<li ixia_locid="35"> En mode test ce code sera affiché sur la page de paiement.</li>
+			<li ixia_locid="36"> En mode production un e-mail d’alerte sera envoyé en précisant le
+				code erreur et le nom du paramètre incorrect.</li>
+		</ul>
+		<p ixia_locid="37"/>
+		<p ixia_locid="38"><b ixia_locid="39"><u ixia_locid="40">Exemple</u> :</b><b ixia_locid="41">
+				Erreur 09 correspond à une erreur sur le montant. Le montant envoyé ne respecte donc
+				pas le format requis</b></p>
+	</conbody>
+</concept>

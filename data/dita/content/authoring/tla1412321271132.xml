@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1412321271132" xml:lang="fr-fr">
+	<title ixia_locid="38" translate="no">vads_shipping_amount</title>
+	<shortdesc ixia_locid="39"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="40">Permet de définir le montant des frais de livraison pour l’ensemble de la
+								commande.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="43" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="42"><b ixia_locid="45">Code d'erreur</b></entry>
+						<entry ixia_locid="44" translate="no">109</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="37">Informations sur la commande.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

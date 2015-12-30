@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//LYRA//DTD DITA Map//EN" "lyra-map.dtd">
+<map id="tla1429082208715" xml:lang="fr-fr">
+    <title ixia_locid="192">OSB Commun</title>
+    <keydef ixia_locid="6" keys="platform-name" location="OSB">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="7">PayZen by OSB</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    
+    <!-- Telephones spécifiques à la plateforme -->
+    <keydef ixia_locid="188" keys="TelephoneSupport" location="OSB">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="191">(689) 46 09 09</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef ixia_locid="185" keys="TelephoneSupportDepuisEtranger" location="OSB">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="187">+33 567 223 329</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- Liens spécifiques à la plateforme -->
+    <keydef format="mail" href="support@osb.pf" ixia_locid="171" keys="EmailSupport" location="OSB" scope="external"/>
+    <keydef format="html" href="https://secure.osb.pf/vads-merchant/" ixia_locid="154" keys="BackOfficeMarchand" location="OSB" scope="external"/>
+    <keydef format="html" href="https://secure.osb.pf/vads-payment/" ixia_locid="157" keys="URLpagePaiement" location="OSB" scope="external"/>
+    <keydef format="html" href="https://secure.osb.pf/html/error_code/" ixia_locid="160" keys="FAQ" location="OSB" scope="external"/>
+    <keydef format="html" href="https://secure.osb.pf/html/server_url_error/" ixia_locid="196" keys="FAQServerUrlError" location="OSB" scope="external"/>    
+    <keydef format="html" href="https://www.osb.pf/payzen/support/docs/" ixia_locid="163" keys="SiteInternetDocumentation" location="OSB" scope="external"/>
+   
+    
+    <!--WEB SERVICES Liens spécifiques à la plateforme -->
+    <keydef format="html" href="https://secure.osb.pf/vads-ws/v5?wsdl" ixia_locid="364" keys="FichierWSDL" location="OSB" scope="external"/>
+    <keydef ixia_locid="357" keys="Host" location="OSB">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="358">secure.osb.pf</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!--WEB SERVICES Image specifique -->
+    <keydef href="tla1438186599554.image" ixia_locid="367" keys="Requis" location="OSB"/>
+    
+    <!--FORMULAIRE Images standards -->
+    <keydef href="emm1405081230671.image" ixia_locid="4" keys="FORM_cinematique-echange-vue-integrateur_light" location="OSB"/>
+    <keydef href="tla1437989606815.image" ixia_locid="368" keys="DiagrammeFluxAcheteur" location="OSB"/>
+    <keydef href="tla1437990427725.image" ixia_locid="10" keys="ChoixMoyenPaiement" location="OSB"/>
+    <keydef href="tla1437990470017.image" ixia_locid="369" keys="SaisieDonneesBancaires" location="OSB"/>
+    <keydef href="tla1437990510266.image" ixia_locid="12" keys="DetailPaiement" location="OSB"/>
+    <keydef href="tla1437990552840.image" ixia_locid="13" keys="PageResumePaiementEchec" location="OSB"/>
+    <keydef href="tla1437989766348.image" ixia_locid="14" keys="DiagrammeFluxMarchand" location="OSB"/>
+    <keydef href="tla1437989962503.image" ixia_locid="15" keys="DiagrammeSignature" location="OSB"/>
+    
+    <!-- ABONNEMENT IDENTIFIANT Images -->
+    
+    <keydef href="tla1431433229046.image" ixia_locid="199" keys="REGISTER_step1" location="OSB"/>
+    <keydef href="tla1431433267063.image" ixia_locid="200" keys="REGISTER_step2" location="OSB"/>
+    <keydef href="tla1431433294574.image" ixia_locid="201" keys="REGISTER_step3" location="OSB"/>
+    
+    <keydef href="tla1431433327802.image" ixia_locid="202" keys="REGISTER_PAY_step1" location="OSB"/>
+    <keydef href="tla1431433361564.image" ixia_locid="203" keys="REGISTER_PAY_step2" location="OSB"/>
+    <keydef href="tla1431433391220.image" ixia_locid="204" keys="REGISTER_PAY_step3" location="OSB"/>
+    
+    <keydef href="tla1431433704104.image" ixia_locid="205" keys="REGISTER_SUBSCRIBE_step1" location="OSB"/>
+    <keydef href="tla1431433739251.image" ixia_locid="206" keys="REGISTER_SUBSCRIBE_step2" location="OSB"/>
+    <keydef href="tla1431433769442.image" ixia_locid="207" keys="REGISTER_SUBSCRIBE_step3" location="OSB"/>
+    
+    <keydef href="tla1431435351555.image" ixia_locid="208" keys="REGISTER_PAY_SUBSCRIBE_step1" location="OSB"/>
+    <keydef href="tla1431435395514.image" ixia_locid="209" keys="REGISTER_PAY_SUBSCRIBE_step2" location="OSB"/>
+    <keydef href="tla1431435422112.image" ixia_locid="210" keys="REGISTER_PAY_SUBSCRIBE_step3" location="OSB"/>
+    
+    <keydef href="tla1431436179370.image" ixia_locid="211" keys="PAYMENT_BY_TOKEN_step1" location="OSB"/>
+    <keydef href="tla1431436233813.image" ixia_locid="212" keys="PAYMENT_BY_TOKEN_step2" location="OSB"/>
+    
+    <keydef href="tla1431436262985.image" ixia_locid="213" keys="SUBSCRIBE_BY_TOKEN_step1" location="OSB"/>
+    <keydef href="tla1431436293358.image" ixia_locid="214" keys="SUBSCRIBE_BY_TOKEN_step2" location="OSB"/>
+    
+    <keydef href="tla1431436320533.image" ixia_locid="215" keys="ASK_REGISTER_PAY_step1" location="OSB"/>
+    <keydef href="tla1431436351686.image" ixia_locid="216" keys="ASK_REGISTER_PAY_step2" location="OSB"/>
+    <keydef href="tla1431436379860.image" ixia_locid="217" keys="ASK_REGISTER_PAY_step3" location="OSB"/>
+    
+    <keydef href="tla1440777375508.image" ixia_locid="218" keys="REGISTER_UPDATE_PAY_step1" location="OSB"/>
+    <keydef href="tla1440777435117.image" ixia_locid="219" keys="REGISTER_UPDATE_PAY_step2" location="OSB"/>
+    <keydef href="tla1440777474164.image" ixia_locid="220" keys="REGISTER_UPDATE_PAY_step3" location="OSB"/>
+    
+   <!-- PayPal immediat-->
+    <keydef href="tla1430142352838.image" ixia_locid="370" keys="CinematiqueEchangesVueAcheteur" location="OSB"/>
+    <keydef href="tla1430145087719.image" ixia_locid="371" keys="PayPalPageDePaiement-step1" location="OSB"/>
+   
+   
+</map>

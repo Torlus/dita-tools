@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084721287" xml:lang="fr-fr">
+	<title ixia_locid="1">Établir le dialogue avec la plateforme de paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p doc-type="Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Oney Paylib PayPal" ixia_locid="14" location="PayZen PayZen_Germany PayZen_Brazil Systempay OSB" payment-method="Klarna Oney PayPal Paylib" platform="PayZen Systempay OSB">Le dialogue
+			avec la plateforme de paiement est décrit dans le guide d'implémentation du formulaire
+			de paiement disponible ici: <xref ixia_locid="17" keyref="SiteInternetDocumentation"/></p>
+			
+		<p doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil" ixia_locid="20">Il fonctionne de la même manière que pour le paiement unitaire
+			classique, à savoir sur la base d’échange de formulaires HTTP. </p>
+		<p doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="9" location="PayZen PayZen_Germany PayZen_Brazil OSB Systempay Innopay" payment-method="SEPA-One-Off SEPA-Recurrent" platform="PayZen Systempay OSB Innopay">Le
+			dialogue entre le site marchand et la plateforme de paiement s’effectue par un échange
+			de données. </p>
+		<p doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="10" location="PayZen PayZen_Germany PayZen_Brazil Innopay OSB Systempay" payment-method="SEPA-One-Off SEPA-Recurrent" platform="PayZen Systempay OSB Innopay">Pour créer un paiement, ces données sont envoyées au moyen d'un formulaire HTML via le
+			navigateur de l’acheteur. </p>
+		<p doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="11" location="PayZen PayZen_Germany PayZen_Brazil Innopay OSB Systempay" payment-method="SEPA-One-Off SEPA-Recurrent" platform="PayZen Systempay OSB Innopay">A
+			la fin du paiement, le résultat est transmis au site marchand de deux manières:<ul id="ul_il3_2mr_v4">
+				<li ixia_locid="16">automatiquement au moyen de notifications appelées URL de
+					notification instantanée (également appelée IPN pour Instant Payment
+						Notification),<ph doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="18" location="PayZen PayZen_Germany PayZen_Brazil" payment-method="SEPA-One-Off SEPA-Recurrent"> voir chapitre <b ixia_locid="5">Paramétrer les notifications</b>,</ph></li>
+				<li ixia_locid="6">par le navigateur lorsque l’acheteur clique sur le bouton pour
+					revenir au site marchand<ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Form_Light Form" features="Identifiant_Abonnement" ixia_locid="19" location="PayZen PayZen_Germany PayZen_Brazil"> , voir chapitre <b ixia_locid="7">Gérer le retour vers le site marchand</b></ph>.</li>
+			</ul></p>
+		<p doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight SEPA-OneOff SEPA-Recurrent" features="Identifiant_Abonnement" ixia_locid="8" location="PayZen PayZen_Germany PayZen_Brazil Systempay OSB Innopay" payment-method="SEPA-One-Off SEPA-Recurrent" platform="PayZen Systempay OSB Innopay">Pour assurer la sécurité des échanges, les données sont signées au moyen d’un
+			certificat connu uniquement du marchand et de la plateforme de paiement.</p>
+	</conbody>
+</concept>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408638657026" xml:lang="fr-fr">
+	<title ixia_locid="38" translate="no">vads_trans_status</title>
+	<shortdesc ixia_locid="39"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="483">Champ retourné dans la réponse.</p>
+							<p ixia_locid="484">Permet de définir le statut de la transaction. </p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="32" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Valeurs possibles</b></entry>
+						<entry ixia_locid="35">
+							<p ixia_locid="476">
+								<table colsep="1" frame="all" id="table_bpt_sl5_dp" rowsep="1">
+									<title ixia_locid="111">Valeurs associées au champ <ph ixia_locid="485" translate="no">vads_trans_status</ph></title>
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.7*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="114">Valeur</entry>
+												<entry ixia_locid="116">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="119"><b ixia_locid="123" translate="no">ABANDONED</b></entry>
+												<entry ixia_locid="126"><b ixia_locid="515">Abandonné</b><p ixia_locid="516">Le paiement a été abandonné par l’acheteur.
+												</p><p ixia_locid="517">La transaction n’est pas créée et <b ixia_locid="129">n’est donc pas visible dans le
+												Back Office.</b></p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="132"><b ixia_locid="135" translate="no">AUTHORISED </b></entry>
+												<entry ixia_locid="138"><p doc-type="Form Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney PayPal" ixia_locid="141" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="Oney PayPal" platform="PayZen Systempay OSB Innopay"><b ixia_locid="145">En attente de remise</b></p><ph doc-type="Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight Oney PayPal" ixia_locid="149" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="Oney PayPal" platform="PayZen Systempay OSB Innopay">La
+												transaction est acceptée et sera remise en banque
+												automatiquement à la date prévue.</ph><p ixia_locid="153"><ph doc-type="SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="157" payment-method="SEPA-One-Off SEPA-Recurrent">La pré-notification est envoyée.
+												Le prélèvement est en attente de présentation à la
+												banque.</ph>
+												</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="161"><b ixia_locid="164" translate="no">AUTHORISED_TO_VALIDATE
+												</b></entry>
+												<entry ixia_locid="168">
+												<p doc-type="Form Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney PayPal" ixia_locid="172" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="Oney PayPal" platform="PayZen Systempay OSB Innopay"><b ixia_locid="175">A valider</b></p>
+													<p doc-type="Form Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney PayPal" ixia_locid="178" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="Oney PayPal" platform="PayZen Systempay OSB Innopay">La
+												transaction, créée en validation manuelle, est
+												autorisée. Le marchand doit valider manuellement
+												la transaction afin qu'elle soit remise en
+												banque.</p>
+												<p doc-type="Moyens-Paiement SEPA-OneOff SEPA-Recurrent" ixia_locid="183" payment-method="SEPA-One-Off SEPA-Recurrent">La demande de
+												prélèvement a été réalisée en mode "validation
+												manuelle". Le marchand doit valider la transaction
+												manuellement dans son Back Office pour autoriser
+												l’envoi du mandat à la banque. La pré-notification
+												ne sera envoyée qu’après validation de la
+												transaction.</p>
+												<p doc-type="SEPA-OneOff SEPA-Recurrent" ixia_locid="193">Un processus automatique d’envoi
+												d’e-mail s’opère tous les jours et ce, plusieurs
+												fois par jour (toutes les 3 heures) sans aucune
+												intervention de votre part.</p>
+												<p ixia_locid="196">La transaction peut être validée tant que la date de remise n’est
+												pas dépassée. Si cette date est dépassée alors le
+												paiement prend le statut <b ixia_locid="518" translate="no">EXPIRED</b>. Le statut <b ixia_locid="487">Expiré</b> est définitif.</p>
+												</entry>
+											</row>
+											<row doc-type="integration integration-Allemagne integration-Bresil PayPal Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="202"><b ixia_locid="204" translate="no">CANCELED</b></entry>
+												<entry ixia_locid="207"><p ixia_locid="209"><b ixia_locid="211">Annulée</b></p>La transaction est
+												annulée par le marchand.</entry>
+											</row>
+											<row doc-type="integration integration-Allemagne integration-Bresil PayPal Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="214"><b ixia_locid="217" translate="no">CAPTURED</b></entry>
+												<entry ixia_locid="220"><p ixia_locid="223"><b ixia_locid="226">Remisée</b></p>La transaction est
+												remise en banque.</entry>
+											</row>
+											<row doc-type="integration integration-Allemagne integration-Bresil PayPal Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="229"><b ixia_locid="519" translate="no">EXPIRED</b></entry>
+												<entry ixia_locid="234"><p ixia_locid="237"><b ixia_locid="240">Expirée</b></p> La date
+												de remise est atteinte et le marchand n’a pas
+												validé la transaction.</entry>
+											</row>
+											<row doc-type="integration integration-Allemagne integration-Bresil PayPal Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="243"><b ixia_locid="246" translate="no">REFUSED</b></entry>
+												<entry ixia_locid="249"><p ixia_locid="252"><b ixia_locid="520">Refusée</b></p>La transaction est
+												refusée.</entry>
+											</row>
+											<row doc-type="SEPA-OneOff SEPA-Recurrent integration integration-Allemagne integration-Bresil PayPal Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Oney Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal Oney SEPA-One-Off SEPA-Recurrent" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="258"><b ixia_locid="261" translate="no">WAITING_AUTHORISATION</b></entry>
+												<entry ixia_locid="265"><b doc-type="Form Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney PayPal" ixia_locid="269" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal Oney" platform="PayZen Systempay OSB Innopay">En attente
+												d’autorisation</b><p doc-type="Identifiant_Abonnement integration integration-Allemagne integration-Bresil Form" ixia_locid="272" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" platform="PayZen Systempay OSB Innopay">Le délai
+												de remise en banque est supérieur à la durée de
+												validité de l'autorisation
+												<!--(voir <xref href="tla1416990314409.xml" ixia_locid="498">tableau</xref>)-->.</p><p doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney PayPal Form Moyens-Paiement" ixia_locid="275" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="Oney PayPal" platform="PayZen Systempay OSB Innopay">Une
+												autorisation <ph ixia_locid="491" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">d’un euro</ph><ph ixia_locid="492" location="OSB" platform="OSB">de 100 XPF</ph><ph ixia_locid="496" location="Innopay" platform="Innopay">d'un
+												CHF</ph><ph ixia_locid="499" location="PayZen_Brazil">d'un BRL</ph><!-- (demande de renseignement)--> est
+												réalisée et acceptée par la banque
+												émettrice.</p><ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney PayPal Form Moyens-Paiement" ixia_locid="488" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="Oney PayPal" platform="PayZen Systempay OSB Innopay">La demande
+												d’autorisation sera déclenchée automatiquement à
+												J-1 avant la date de remise en banque. Le paiement
+												pourra être accepté ou refusé. La remise en banque
+												est automatique.</ph><ph ixia_locid="489"> </ph><p doc-type="SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="498" payment-method="SEPA-One-Off SEPA-Recurrent">La pré-notification n’est pas
+												encore envoyée.</p><p doc-type="SEPA-OneOff Moyens-Paiement" ixia_locid="281" payment-method="SEPA-One-Off">La demande de prélèvement est
+												réalisée avec un délai de remise supérieur ou égal
+												à 7 jours pour un paiement ponctuel lorsque le
+												contrat a un délai de pré-notification de 14
+												jours.</p><p doc-type="SEPA-Recurrent Moyens-Paiement" ixia_locid="284" payment-method="SEPA-Recurrent"> La demande de prélèvement a été
+												réalisée avec un délai de remise supérieur
+												(strictement) à 14 jours lorsque le contrat a un
+												délai de pré-notification de 14 jours
+												.</p></entry>
+											</row>
+											<row doc-type="integration integration-Allemagne integration-Bresil PayPal Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="463"><b ixia_locid="477" translate="no">WAITING_AUTHORISATION_TO</b><p ixia_locid="478"><b ixia_locid="479" translate="no">_VALIDATE</b></p></entry>
+												<entry ixia_locid="465"><p ixia_locid="300"><b ixia_locid="303">A valider et autoriser
+												</b></p><p ixia_locid="306">Le délai de remise en
+												banque est supérieur à la durée de validité de
+												l'autorisation
+												<!--<ph doc-type="integration integration-Allemagne integration-Bresil" ixia_locid="495">(voir <xref href="tla1416990314409.xml" ixia_locid="499">tableau</xref>)</ph>-->.</p>Une
+												autorisation <ph ixia_locid="493" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">d’un euro</ph><ph ixia_locid="494" location="OSB" platform="OSB">de 100 XPF</ph><ph ixia_locid="497" location="Innopay" platform="Innopay">d'un
+												CHF</ph><ph ixia_locid="500" location="PayZen_Brazil">d'un BRL</ph><!-- (demande de renseignement)--> a été
+												acceptée.<p ixia_locid="308">Le marchand doit
+												valider manuellement la transaction afin que la
+												demande d’autorisation et la remise aient
+												lieu.</p></entry>
+											</row>
+											<row doc-type="PayPal integration integration-Allemagne Form Moyens-Paiement" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay OSB" payment-method="PayPal" platform="PayZen Systempay OSB Innopay">
+												<entry ixia_locid="471"><b ixia_locid="467" translate="no">UNDER_VERIFICATION</b></entry>
+												<entry ixia_locid="473"><b ixia_locid="480">Spécifique à PayPal</b>
+												<p ixia_locid="481"><b ixia_locid="482">En attente
+												de vérification par PayPal</b></p><p ixia_locid="469">PayPal retient la transaction
+												pour suspicion de fraude . Le paiement est alors
+												dans l’onglet <b ixia_locid="470">Paiement en
+												cours</b>.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="501"><b ixia_locid="475" translate="no">NOT_CREATED</b></entry>
+												<entry ixia_locid="502"><p ixia_locid="521"><b ixia_locid="522">Transaction non créée</b></p>La
+												transaction n'est pas créée et n'est pas visible
+												dans le Back Office.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="503"><ph ixia_locid="313" translate="no"><b ixia_locid="314">INITIAL</b></ph>
+												</entry>
+												<entry ixia_locid="504"><b ixia_locid="523">En attente</b><p ixia_locid="524">Ce statut est spécifique à
+												tous les moyens de paiement nécessitant une
+												intégration par formulaire de paiement en
+												redirection, notamment <ph ixia_locid="505" translate="no"><b ixia_locid="506">SOFORT
+												BANKING</b></ph> et <ph ixia_locid="507" translate="no"><b ixia_locid="508">3xCB
+												COFINOGA</b></ph>.</p><p ixia_locid="509">Ce
+												statut est retourné lorsque :<ul id="ul_tfv_5bw_5t">
+												<li ixia_locid="510">aucune réponse n'est renvoyée
+												par l'acquéreur<p ixia_locid="511">ou</p></li>
+												<li ixia_locid="512">
+												<p ixia_locid="513">le délai de réponse de la part
+												de l'acquéreur est supéreieur à la durée de
+												session du paiement sur la plateforme de paiement. </p>
+												<p ixia_locid="514">Ce statut est temporaire. Le
+												statut définitif sera affiché dans le Back Office
+												aussitôt la synchronisation réalisée.</p>
+												</li>
+												</ul></p></entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="37">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

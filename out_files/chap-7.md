@@ -39,14 +39,17 @@ Il contient:
  
 <p>
  
+
 <ul>
  
 <li>
-Les balises <code><pre>
+Les balises 
+<code><pre>
 &lt;form&gt;
 </pre></code>
  et
-						<code><pre>
+						
+<code><pre>
 &lt;/form&gt;
 </pre></code>
  qui permettent de créer un
@@ -54,7 +57,8 @@ Les balises <code><pre>
 </li>
  
 <li>
-L’attribut <code><pre>
+L’attribut 
+<code><pre>
 method=&quot;POST&quot;
 </pre></code>
  qui
@@ -62,7 +66,8 @@ method=&quot;POST&quot;
 </li>
  
 <li>
-L’attribut <code><pre>
+L’attribut 
+<code><pre>
 action=&quot;<a href="https://secure.payzen.eu/vads-payment/">https://secure.payzen.eu/vads-payment/</a>&quot;
 </pre></code>
  qui spécifie où envoyer les données
@@ -84,6 +89,7 @@ action=&quot;<a href="https://secure.payzen.eu/vads-payment/">https://secure.pay
  
 <p>
  
+
 <ul>
  
 <li>
@@ -113,13 +119,15 @@ La signature qui assure l&#x27;intégrité du formulaire (voir chapitre
 </p>
  
 <p>
-Ces données sont ajoutées au formulaire en utilisant la balise <code><pre>
+Ces données sont ajoutées au formulaire en utilisant la balise 
+<code><pre>
 &lt;input&gt;
 </pre></code>
 :
 </p>
  
 <p>
+
 <code><pre>
 &lt;input type=&quot;hidden&quot;
 				name=&quot;parametre1&quot; value=&quot;valeur1&quot; /&gt;
@@ -132,10 +140,12 @@ Ces données sont ajoutées au formulaire en utilisant la balise <code><pre>
 </p>
  
 <p>
-Pour valoriser les attributs <code><pre>
+Pour valoriser les attributs 
+<code><pre>
 name
 </pre></code>
- et <code><pre>
+ et 
+<code><pre>
 value
 </pre></code>
  , référez-vous au chapitre 
@@ -175,6 +185,7 @@ Les caractères spéciaux (accents, ponctuation etc…) seront ainsi correctemen
 </p>
  
 <p>
+
 <code><pre>
 &lt;input type=&quot;submit&quot;
 				name=&quot;payer&quot; value=&quot;Payer&quot;/&gt;
@@ -192,6 +203,7 @@ Des cas d’utilisation sont présentés dans les chapitres suivants. Ils vous p
  
 <p>
   
+
 <ul>
  
 <li>
@@ -529,6 +541,7 @@ Valorisez le champ
  Un paiement comptant différé est un paiement débité en une seule fois dont le délai de remise en banque est strictement supérieur à 0 jour.
 <p>
  
+
 <ul>
  
  <li>
@@ -541,6 +554,7 @@ Une demande d&#x27;autorisation sera réalisée pour le montant global si le dé
 
 <p>
  
+
 <ul>
  
  <li>
@@ -1131,6 +1145,7 @@ Valorisez le champ
  
  <p>
  
+
  <ul>
  
   <li>
@@ -1273,6 +1288,7 @@ Au besoin, le marchand pourra débiter cette carte du montant souhaité en utili
  
 <p>
  
+
 <ul>
  
  <li>

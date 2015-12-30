@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1406110787965" xml:lang="fr-fr">
+	<title ixia_locid="1">Définir les URL de retour</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<!--<p ixia_locid="33">Les URL de retour ne doivent pas être confondues avec l'URL de notification
+			instantanée (également appelée IPN ou URL serveur):<ul id="ul_hyp_qp5_dp">
+				<li ixia_locid="34">l'acheteur est redirigé vers le site marchand à la fin du
+					paiement sur la page appelée URL de retour.</li>
+				<li ixia_locid="35">l'URL de notification instantanée permet à la plateforme de
+					paiement de notifier automatiquement au site marchand le résultat du paiement
+					(requête HTTP en mode POST).</li>
+			</ul></p>
+		<p ixia_locid="3"/>-->
+		<p ixia_locid="23">Dans le formulaire de paiement, le marchand peut surcharger la configuration du
+				<ph ixia_locid="63" translate="no">Back Office</ph>. Pour cela il peut:</p>
+		<p ixia_locid="25">
+			<ul id="ul_wfx_wdy_v4">
+				<li ixia_locid="26">Utiliser 4 URL différentes en fonction du résultat du paiement:<ul id="ul_lbz_1kz_fp">
+						<li ixia_locid="36">Paiement accepté.</li>
+						<li ixia_locid="37">Paiement refusé.</li>
+						<li ixia_locid="38">Paiement abandonné.</li>
+						<li ixia_locid="39">Paiement en erreur.</li>
+					</ul></li>
+				<li ixia_locid="62">Utiliser une seule URL quel que soit le résultat du paiement.</li>
+			</ul>
+		</p>
+	</conbody>
+</concept>

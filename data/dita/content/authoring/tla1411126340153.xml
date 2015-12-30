@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411126340153" xml:lang="fr-fr">
+	<title ixia_locid="41" translate="no">vads_product_typeN</title>
+	<shortdesc ixia_locid="42"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Permet de définir le type de l'article contenu dans
+							le panier.<p ixia_locid="43">N correspond à l'indice de l'article. (0 pour le premier, 1
+								pour le deuxième etc...)</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="86"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="88" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="87"><b ixia_locid="90">Code d'erreur</b></entry>
+						<entry ixia_locid="89" translate="no">98</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45">
+							<p ixia_locid="91"><b ixia_locid="49">Valeurs possibles</b></p>
+						</entry>
+						<entry ixia_locid="47">
+							<p ixia_locid="50">
+								<table colsep="1" frame="all" id="table_dp5_wlr_tp" rowsep="1">
+									<title ixia_locid="51">Valeurs associées à vads_product-type0</title>
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="52">Valeur</entry>
+												<entry ixia_locid="53">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="54" translate="no">FOOD_AND_GROCERY</entry>
+												<entry ixia_locid="55">Produits alimentaires et d'épicerie</entry>
+											</row>
+											<row>
+												<entry ixia_locid="56" translate="no">AUTOMOTIVE</entry>
+												<entry ixia_locid="57">Automobile / Moto</entry>
+											</row>
+											<row>
+												<entry ixia_locid="58" translate="no">ENTERTAINMENT</entry>
+												<entry ixia_locid="59">Divertissement / Culture</entry>
+											</row>
+											<row>
+												<entry ixia_locid="60" translate="no">HOME_AND_GARDEN</entry>
+												<entry ixia_locid="61">Maison et jardin</entry>
+											</row>
+											<row>
+												<entry ixia_locid="62" translate="no">HOME_APPLIANCE</entry>
+												<entry ixia_locid="63">Equipement de la maison</entry>
+											</row>
+											<row>
+												<entry ixia_locid="64" translate="no">AUCTION_AND_GROUP_BUYING</entry>
+												<entry ixia_locid="65">Ventes aux enchères et achats groupés</entry>
+											</row>
+											<row>
+												<entry ixia_locid="66" translate="no">FLOWERS_AND_GIFTS|</entry>
+												<entry ixia_locid="67">Fleurs et cadeaux</entry>
+											</row>
+											<row>
+												<entry ixia_locid="68" translate="no">COMPUTER_AND_SOFTWARE</entry>
+												<entry ixia_locid="69">Ordinateurs et logiciels</entry>
+											</row>
+											<row>
+												<entry ixia_locid="70" translate="no">HEALTH_AND_BEAUTY</entry>
+												<entry ixia_locid="71">Santé et beauté</entry>
+											</row>
+											<row>
+												<entry ixia_locid="72" translate="no">SERVICE_FOR_INDIVIDUAL</entry>
+												<entry ixia_locid="73">Services à la personne</entry>
+											</row>
+											<row>
+												<entry ixia_locid="74" translate="no">SERVICE_FOR_BUSINESS</entry>
+												<entry ixia_locid="75">Services aux entreprises</entry>
+											</row>
+											<row>
+												<entry ixia_locid="76" translate="no">SPORTS</entry>
+												<entry ixia_locid="77">Sports</entry>
+											</row>
+											<row>
+												<entry ixia_locid="78" translate="no">CLOTHING_AND_ACCESSORIES</entry>
+												<entry ixia_locid="79">Vêtements et accessoires</entry>
+											</row>
+											<row>
+												<entry ixia_locid="80" translate="no">TRAVEL</entry>
+												<entry ixia_locid="81">Voyage</entry>
+											</row>
+											<row>
+												<entry ixia_locid="82" translate="no">HOME_AUDIO_PHOTO_VIDEO</entry>
+												<entry ixia_locid="83">Son, image et vidéo</entry>
+											</row>
+											<row>
+												<entry ixia_locid="84" translate="no">TELEPHONY</entry>
+												<entry ixia_locid="85">Téléphonie</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

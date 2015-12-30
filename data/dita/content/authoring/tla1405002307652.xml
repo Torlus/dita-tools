@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1405002307652" xml:lang="fr-fr">
+	<title ixia_locid="1" translate="no">vads_action_mode</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<section id="section_N10016_N10013_N10001" ixia_locid="3">
+			<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+				<tgroup align="left" cols="2">
+					<colspec colname="c1" colnum="1" colwidth="1*"/>
+					<colspec colname="c2" colnum="2" colwidth="4.29*"/>
+					<tbody>
+						<row>
+							<entry ixia_locid="48"><b ixia_locid="50">Description</b></entry>
+							<entry ixia_locid="52">
+								<p ixia_locid="82">Paramètre obligatoire.</p>
+								<p ixia_locid="83">Mode d’acquisition des informations de la carte. </p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="58"><b ixia_locid="60">Format</b></entry>
+							<entry ixia_locid="62" translate="no">string (enum)</entry>
+						</row>
+						<row>
+							<entry ixia_locid="64"><b ixia_locid="66">Code erreur</b></entry>
+							<entry ixia_locid="68">47</entry>
+						</row>
+						<row>
+							<entry ixia_locid="70"><b ixia_locid="72">Valeurs possibles</b></entry>
+							<entry ixia_locid="73">
+								<p ixia_locid="13"><b ixia_locid="21" translate="no">INTERACTIVE</b>: saisie des informations de la carte
+									sur la page de paiement.</p>
+								<p ixia_locid="22"><b ixia_locid="23" translate="no">SILENT</b>: saisie des informations de la carte sur le
+									site marchand (soumis à option commerciale délivrée par votre
+									banque).</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="77"><b ixia_locid="78">Catégorie</b></entry>
+							<entry ixia_locid="80">Informations techniques.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section>
+	</refbody>
+</reference>

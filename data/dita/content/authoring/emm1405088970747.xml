@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088970747" xml:lang="fr-fr">
+	<title ixia_locid="1">Activer la boutique en mode production</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Ce chapitre vous détaille de quelle manière vous pouvez :</p>
+		<ul id="ul_ghf_hz5_dp">
+			<li ixia_locid="4">Générer le certificat de production.</li>
+			<li ixia_locid="5">Basculer votre site marchand en production.</li>
+			<li ixia_locid="6">Réaliser un premier paiement en production.</li>
+			<li ixia_locid="7">Régénérer le certificat de production (en cas de problème).</li>
+		</ul>
+	</conbody>
+</concept>

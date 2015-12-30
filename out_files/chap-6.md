@@ -320,6 +320,7 @@ Pour accéder à la gestion des règles de notification :
  
 <p>
  
+
 <ol>
  
  <li>
@@ -413,6 +414,7 @@ Il contient :
 
  <p>
  
+
  <ul>
  
   <li>
@@ -447,6 +449,7 @@ Cette notification est indispensable pour communiquer le résultat d’un paieme
 
  <p>
  
+
  <ul>
  
   <li>
@@ -594,6 +597,7 @@ Il contient :
  
  <p>
  
+
  <ul>
  
   <li>
@@ -621,6 +625,7 @@ la procédure à suivre depuis le
  La plateforme de paiement peut notifier systématiquement le site marchand :
  <p>
  
+
  <ul>
  
   <li>
@@ -740,6 +745,7 @@ Il contient :
  
  <p>
  
+
  <ul>
  
   <li>
@@ -831,6 +837,7 @@ Il contient :
 
  <p>
  
+
  <ul>
  
   <li>
@@ -945,6 +952,7 @@ Lors du rejeu automatique, certaines informations ne sont pas enregistrées en b
 
 <p>
  
+
 <ul>
  
  <li>
@@ -977,6 +985,7 @@ Lors du rejeu automatique, certaines informations ne sont pas enregistrées en b
 
 <p>
  
+
 <ul>
  
  <li>
@@ -1077,6 +1086,7 @@ Lorsque le rejeu est effectué manuellement depuis le Back Office, certaines inf
  
 <p>
  
+
 <ul>
  
  <li>
@@ -1109,6 +1119,7 @@ Lorsque le rejeu est effectué manuellement depuis le Back Office, certaines inf
  
 <p>
  
+
 <ul>
  
  <li>
@@ -1153,6 +1164,7 @@ Le Back Office offre la possibilité au marchand de configurer des e-mails à de
  
 <p>
  
+
 <ul>
  
  <li>
@@ -1226,6 +1238,7 @@ Trois onglets sont mis à disposition.
  
  <p>
  
+
  <ul>
  
   <li>
@@ -1282,6 +1295,7 @@ Personnalisez le contenu de l&#x27;e-mail en fonction de vos besoins.
  
  <p>
  
+
  <ol>
  
   <li>
@@ -1341,6 +1355,7 @@ Par défaut la plateforme de paiement peut notifier le marchand dans les cas sui
  
 <p>
  
+
 <ul>
  
  <li>
@@ -1430,6 +1445,7 @@ Trois onglets sont mis à disposition.
  
  <p>
  
+
  <ul>
  
   <li>
@@ -1486,6 +1502,7 @@ Personnalisez le contenu de l&#x27;e-mail en fonction de vos besoins.
  
  <p>
  
+
  <ol>
  
   <li>

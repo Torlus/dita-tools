@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088418431" xml:lang="fr-fr">
+	<title ixia_locid="1">Rediriger l'acheteur vers la page de paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4">L’URL de la plateforme de paiement est la suivante : <table colsep="0" frame="none" id="table_g4x_3bs_hp" rowsep="0">
+				<tgroup align="center" cols="1">
+					<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+					<tbody>
+						<row>
+							<entry align="center" ixia_locid="20"><xref ixia_locid="22" keyref="URLpagePaiement"/></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></p>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil" ixia_locid="6" payment-method="ANCV Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent Sofort"><u ixia_locid="21">Exemple de paramètres envoyés à la plateforme de
+			paiement</u>:<codeblock ixia_locid="7" translate="no"><b ixia_locid="8">&lt;form method="POST" action="<xref ixia_locid="23" keyref="URLpagePaiement"/>"&gt;</b>
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt; 
+&lt;input type="hidden" name="vads_amount" value="<ph doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent" ixia_locid="139" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent Sofort">2990</ph><ph doc-type="ancv Moyens-Paiement" ixia_locid="140" payment-method="ANCV">17800</ph>" /&gt; 
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt; 
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt; 
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="105" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="106" location="OSB" platform="OSB">953</ph><ph ixia_locid="113" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="123" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_cust_country" value=<ph ixia_locid="133" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"FR"</ph><ph ixia_locid="135" location="OSB" platform="OSB">"PF"</ph><ph ixia_locid="525" location="PayZen_Brazil">BR</ph><ph ixia_locid="526" location="Innopay" platform="Innopay">CH</ph> /&gt;
+&lt;input type="hidden" name="vads_cust_email" value="nom.prenom@exemple.com" /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt; 
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt; 
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt; 
+&lt;input type="hidden" name="vads_trans_date" value="20140526101407" /&gt; 
+&lt;input type="hidden" name="vads_trans_id" value="<ph doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Modules Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent Moyens-Paiement Form" ixia_locid="141" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent Sofort">362812</ph><ph doc-type="Moyens-Paiement ancv" ixia_locid="142" payment-method="ANCV">913509</ph>" /&gt; 
+&lt;input type="hidden" name="vads_validation_mode" value="0" /&gt; 
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+	</conbody>
+</concept>

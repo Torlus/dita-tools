@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1406131496729" xml:lang="fr-fr">
+	<title ixia_locid="1">Exemple d'implémentation en JAVA</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<section id="section_N10014_N10011_N10001" ixia_locid="3">Définition d’une classe utilitaire Sha
+                  qui contiendra ce qui est nécessaire au traitement de l’algorithme
+                  SHA1.<codeblock ixia_locid="4" translate="no">import java.security.MessageDigest; 
+import java.security.SecureRandom; 
+public class Sha {
+       static public final String SEPARATOR =  "+" ;
+       public static String encode(String src) {
+             try {                   
+          		MessageDigest md;
+                    md = MessageDigest.getInstance( "SHA-1" );                  
+            	   byte bytes[] = src.getBytes( "UTF-8" );                          
+				md.update(bytes, 0, bytes. length );                   
+            	   byte[] sha1hash = md.digest();                
+            	   return convertToHex(sha1hash);
+             } catch(Exception e) {                   
+            	  throw new RuntimeException(e);
+             }       
+	   }        	   
+        private static String convertToHex(byte[] sha1hash) {
+              StringBuilder builder = new StringBuilder(); 
+              for (int i = 0; i &lt; sha1hash. length ; i++) {                   
+            		byte c = sha1hash[i];                 
+            		addHex(builder, (c &gt;&gt; 4) &amp; 0xf);                   
+            		addHex(builder, c &amp; 0xf);
+              }             
+		    return builder.toString();
+       }        
+	  private static void addHex(StringBuilder builder, int c) { 
+            if (c &lt; 10)                   
+          	   builder.append((char) (c +  '0' ));
+            else                   
+          	   builder.append((char) (c +  'a' - 10));
+       }
+}</codeblock>
+            </section>
+		<section id="section_N1001E_N10011_N10001" ixia_locid="5">
+			<p ixia_locid="6">Fonction qui calcule la signature:</p>
+			<p ixia_locid="7">
+				<codeblock ixia_locid="8" translate="no">public    ActionForward performCheck(ActionMapping actionMapping, Basivoirorm form, HttpServletRequest request, HttpServletResponse response){
+          SortedSet&lt;String&gt; vadsFields = new TreeSet&lt;String&gt;();
+          Enumeration&lt;String&gt; paramNames = request.getParameterNames(); 
+          // Recupere et trie les noms des champs vads_* par ordre alphabetique
+          while (paramNames.hasMoreElements()) {
+                String paramName = paramNames.nextElement();
+                if (paramName.startsWith( "vads_" )) {
+                       vadsFields.add(paramName);
+                }
+          }
+          // Calcule la signature
+          String sep = Sha.SEPARATOR;
+          StringBuilder sb = new StringBuilder();
+          for (String vadsParamName : vadsFields) {
+                String vadsParamValue = request.getParameter(vadsParamName);
+                if (vadsParamValue != null) {                   
+                      sb.append(vadsParamValue);
+                }
+	           sb.append(sep);
+           } 
+           sb.append( shaKey );
+           String c_sign = Sha.encode(sb.toString());
+           return c_sign;}</codeblock>
+			</p>
+		</section>
+	</refbody>
+</reference>

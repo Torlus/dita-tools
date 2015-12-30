@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408624287246" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_extra_result</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="77"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="79">
+							<p ixia_locid="87">Champ retourné dans la réponse.</p>
+							<p ixia_locid="88">Code complémentaire de réponse. Sa signification
+								dépend de la valeur renseignée dans <b ixia_locid="30" translate="no">vads_result</b>.</p>
+							<p ixia_locid="32">
+								<ul id="ul_bxb_db5_dq">
+									<li ixia_locid="81">Lorsque <b ixia_locid="34" translate="no">vads_result</b> vaut 30
+										(erreur de requête), alors <b ixia_locid="75" translate="no">vads_extra_result</b> contient le code numérique du
+										champ qui comporte une erreur de valorisation ou de format.
+										Cette valeur peut être renseignée à 99 dans le cas d’une
+										erreur inconnue dans la requête.<p ixia_locid="82"><b ixia_locid="83">Exemple</b> : si <b ixia_locid="37" translate="no">vads_extra_result</b> contient la
+											valeur 09, cela signifie que le montant spécifié dans <b ixia_locid="38" translate="no">vads_amount</b> est
+												incorrect<ph ixia_locid="89" location="PayZen PayZen_Germany Systempay Innopay" platform="PayZen Systempay Innopay"> (par
+												exemple, si le montant contient des décimales, car
+												il n’aurait pas été converti préalablement en
+												centimes)</ph>.</p></li>
+								</ul>
+							</p>
+							<p ixia_locid="40">
+								<ul id="ul_xgj_gb5_dq">
+									<li ixia_locid="84">Lorsque <b ixia_locid="42" translate="no">vads_result</b> vaut 05 (refusée) ou 00
+										(acceptée), alors <b ixia_locid="76" translate="no">vads_extra_result</b>
+										contient le code numérique du résultat des contrôles de
+											risques.
+										</li>
+								</ul>
+								<table frame="all" id="table_ezn_1rb_2p" outputclass="break" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colsep="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="2.07*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="43" translate="no">vads_extra_result</entry>
+												<entry align="center" ixia_locid="44">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="45">Vide</entry>
+												<entry ixia_locid="46">Pas de contrôle
+												effectué.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="47" translate="no">00</entry>
+												<entry ixia_locid="48">Tous les contrôles se sont
+												déroulés avec succès.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="49" translate="no">02</entry>
+												<entry ixia_locid="50">La carte a dépassé l’encours
+												autorisé.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="51" translate="no">03</entry>
+												<entry ixia_locid="52">La carte appartient à la
+												liste grise du marchand.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="53" translate="no">04</entry>
+												<entry ixia_locid="54">Le pays d’émission de la
+												carte appartient à la liste grise du
+												marchand.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="55" translate="no">05</entry>
+												<entry ixia_locid="56">L’adresse IP appartient à la
+												liste grise du marchand.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="57" translate="no">06</entry>
+												<entry ixia_locid="58">Le code bin appartient à la
+												liste grise du marchand.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="59" translate="no">07</entry>
+												<entry ixia_locid="60">Détection d’une e-carte
+												bleue.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="61" translate="no">08</entry>
+												<entry ixia_locid="62">Détection d’une carte
+												commerciale nationale.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="63" translate="no">09</entry>
+												<entry ixia_locid="64">Détection d’une carte
+												commerciale étrangère.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="65" translate="no">14</entry>
+												<entry ixia_locid="66">Détection d’une carte à
+												autorisation systématique.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="67" translate="no">20</entry>
+												<entry ixia_locid="68">Contrôle de cohérence : aucun
+												pays ne correspond (pays IP, pays carte, pays de
+												l’acheteur ).</entry>
+											</row>
+											<row>
+												<entry ixia_locid="69" translate="no">30</entry>
+												<entry ixia_locid="70">Le pays de l’adresse IP
+												appartient à la liste grise.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="71" translate="no">99</entry>
+												<entry ixia_locid="72">Problème technique rencontré
+												par le serveur lors du traitement d’un des
+												contrôles locaux.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="78"><b ixia_locid="85">Catégorie</b></entry>
+						<entry ixia_locid="80">Informations techniques.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

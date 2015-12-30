@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408547056236" xml:lang="fr-fr">
+	<title ixia_locid="16" translate="no">vads_auth_mode</title>
+	<shortdesc ixia_locid="17"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="4.29*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="48"><b ixia_locid="50">Description</b></entry>
+						<entry id="entry_nwp_z5q_cq" ixia_locid="52">Champ retourné dans la réponse.<p ixia_locid="82">Spécifie de
+								quelle manière est réalisée la demande d’autorisation. </p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="58"><b ixia_locid="60">Format</b></entry>
+						<entry ixia_locid="62" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="70"><p ixia_locid="81"/><b ixia_locid="72">Valeurs possibles</b></entry>
+						<entry ixia_locid="73">
+							<p ixia_locid="83"><b ixia_locid="25" translate="no">FULL</b> : correspond à une autorisation du montant
+								total de la transaction.</p>
+							<p ixia_locid="84">Valeur utilisée dans le cas d’un paiement comptant,
+								si la durée séparant la date de remise demandée de la date du jour
+								est strictement inférieure à la durée de validité de l'autorisation. </p>
+							<p ixia_locid="85"><b ixia_locid="27" translate="no">MARK</b> : correspond à une autorisation
+								de <ph ixia_locid="87" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">1 euro</ph><ph ixia_locid="88" location="OSB" platform="OSB">100 XPF</ph><ph ixia_locid="89" location="Innopay" platform="Innopay">1
+								CHF</ph><ph ixia_locid="90" location="PayZen_Brazil">1 BRL</ph><!-- (demande de renseignement)-->.</p>
+							<p ixia_locid="86">Valeur utilisée dans le cas d'un paiement différé, si
+								la durée séparant la date de remise demandée de la date du jour est
+								strictement supérieure à la durée de validité de l'autorisation. </p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="77"><b ixia_locid="78">Catégorie</b></entry>
+						<entry ixia_locid="80">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

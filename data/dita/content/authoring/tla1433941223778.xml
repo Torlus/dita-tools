@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<reference doc-type="Form Moyens-Paiement integration SEPA-OneOff SEPA-Recurrent" id="tla1433941223778" location="PayZen PayZen_Germany" payment-method="SEPA-One-Off SEPA-Recurrent" platform="PayZen" xml:lang="fr-fr">
+	<title ixia_locid="51">vads_product_vatN</title>
+	<shortdesc ixia_locid="52"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Permet de définir le montant de la taxe pour chacun
+							des articles contenu dans le panier.<p ixia_locid="43">N correspond à
+								l'indice de l'article. (0 pour le premier, 1 pour le deuxième
+								etc...)</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="44"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="46" translate="no">
+							<p ixia_locid="53">n..12 </p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="77"><b ixia_locid="80">Code d'erreur</b></entry>
+						<entry ixia_locid="79">203</entry>
+					</row>
+					<row>
+						<entry ixia_locid="76">
+							<p ixia_locid="48"><b ixia_locid="49">Valeurs possibles</b></p>
+						</entry>
+						<entry ixia_locid="78">
+							<ul id="ul_d3h_sv1_3s">
+								<li ixia_locid="54"><b ixia_locid="55">Un entier sans décimal</b>
+									<p ixia_locid="56">Pour exprimer un montant en centime appliqué
+										sur le produit concerné. </p><p ixia_locid="57">Exemple en
+											<ph ixia_locid="172" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="173" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="174" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="175" location="PayZen_Brazil">BRL</ph> : 14520 (pour un
+										montant de <ph ixia_locid="61" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">145 euros</ph><ph ixia_locid="62" location="Innopay" platform="Innopay">145 CHF</ph><ph ixia_locid="63" location="OSB" platform="OSB">14500 XPF</ph><ph ixia_locid="176" location="PayZen_Brazil">145 BRL</ph><ph ixia_locid="177" location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay"> et 20
+											centimes</ph>)</p></li>
+							</ul>
+							<p ixia_locid="50">
+								<ul id="ul_qmf_sm1_3s">
+									<li ixia_locid="64"><b ixia_locid="65">Un entier avec décimal
+											inférieur à 100</b><p ixia_locid="66">Pour exprimer un
+											pourcentage appliqué sur le montant du produit concerné
+											avec maximum 4 chiffres après la virgule. </p><p ixia_locid="67">Exemples : 20.0 ou 19.6532 </p><p ixia_locid="68"><i ixia_locid="69"><u ixia_locid="70">Remarques : </u></i><ul id="ul_h1s_t1b_3s">
+												<li ixia_locid="71"><i ixia_locid="72">La décimale
+												est obligatoire pour exprimer un
+												pourcentage</i>.</li>
+												<li ixia_locid="73"><i ixia_locid="74">La décimale
+												est marquée par le caractère "<b ixia_locid="75">.</b>"</i>.</li>
+											</ul></p></li>
+								</ul>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la commande.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

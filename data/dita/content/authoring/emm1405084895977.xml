@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="emm1405084895977" xml:lang="fr-fr">
+	<title ixia_locid="1">S'identifier lors des échanges</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4">Pour dialoguer avec la plateforme de paiement, le marchand a besoin de deux
+				informations :</p>
+			<p ixia_locid="7">
+				<ul id="ul_jzf_xmr_v4">
+					<li ixia_locid="8"><b ixia_locid="9">L’identifiant boutique</b>: permet d'identifier le site
+						marchand durant les échanges. Sa valeur est transmise dans le champ <b ixia_locid="10">vads_site_id.</b></li>
+					<li ixia_locid="11"><b ixia_locid="12">Le certificat </b>: permet de calculer la signature
+						numérique transmise dans le champ <b ixia_locid="45">signature</b>. </li>
+				</ul>
+			</p>
+			<p ixia_locid="13">Pour récupérer ces valeurs :</p>
+		</context>
+		<steps id="steps_z2j_t3r_2r">
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="14">
+				<cmd ixia_locid="17">Connectez-vous à votre <ph ixia_locid="46" translate="no">Back Office</ph> : <xref ixia_locid="44" keyref="BackOfficeMarchand"/></cmd>
+			</step>
+			<step id="step_N1004D_N1003F_N10013_N10001" ixia_locid="15">
+				<cmd ixia_locid="18">Cliquez sur <b ixia_locid="20">Paramétrage &gt;
+					Boutique</b>.</cmd>
+			</step>
+			<step id="step_N1005C_N1003F_N10013_N10001" ixia_locid="16">
+				<cmd ixia_locid="19">Sélectionnez l’onglet <b ixia_locid="21">Certificats</b>.</cmd>
+				<itemgroup ixia_locid="41">
+					<fig id="fig_mrh_mpr_v4" ixia_locid="23">
+						<title ixia_locid="24">Visualiser l’identifiant de la boutique et le
+							certificat</title>
+						<image id="image_hwt_mpr_v4" ixia_locid="25" keyref="OngletCertificat" scale="60"/>
+					</fig>
+				</itemgroup>
+			</step>
+		</steps>
+		<postreq id="postreq_N1007F_N10013_N10001" ixia_locid="26">
+			<p ixia_locid="27">Deux types de certificat sont mis à disposition :</p>
+			<p ixia_locid="42">
+				<ul>
+					<li ixia_locid="29">Le <b ixia_locid="30">certificat de test </b> qui permet de générer la
+						signature d’un formulaire en mode test.</li>
+					<li ixia_locid="31">Le <b ixia_locid="32">certificat de production </b>qui permet de générer la
+						signature d'un formulaire en mode production.</li>
+				</ul>
+			</p>
+		</postreq>
+	</taskbody>
+</task>

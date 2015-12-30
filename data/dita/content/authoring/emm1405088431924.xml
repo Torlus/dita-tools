@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088431924" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer les erreurs</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Si la plateforme détecte une anomalie lors de la réception du formulaire, un message
+			d’erreur sera affiché et l’acheteur ne pourra pas procéder au paiement. </p>
+		<p ixia_locid="4"/>
+		<p ixia_locid="18"/>
+		<p ixia_locid="5"><u ixia_locid="6">En mode TEST</u></p>
+		<p ixia_locid="7">Le message indique l’origine de l’erreur et propose un lien vers la FAQ pour vous aider à
+			la corriger.  </p>
+		<p ixia_locid="8"/>
+		<p ixia_locid="19"/>
+		<p ixia_locid="9"><u ixia_locid="10">En mode PRODUCTION</u></p>
+		<p ixia_locid="11">Le message indique simplement à l’acheteur qu’un problème technique est survenu.</p>
+		<p ixia_locid="21"/>
+		<p ixia_locid="12">Dans les deux cas, le marchand reçoit un e-mail d'avertissement.</p>
+		<p ixia_locid="14">Il contient:<ul id="ul_o12_wph_bq">
+				<li ixia_locid="22">l’origine de l’erreur</li>
+				<li ixia_locid="23">un lien vers la FAQ pour faciliter le diagnostic</li>
+				<li ixia_locid="24">l’ensemble des champs contenus dans le formulaire.</li>
+			</ul></p>
+		<p ixia_locid="16"> </p>
+		<p ixia_locid="17" location="Innopay OSB PayZen PayZen_Brazil PayZen_Germany">La FAQ est
+			disponible à cette adresse : <xref ixia_locid="20" keyref="FAQ"/></p>
+		<p ixia_locid="25" location="Systempay">Une FAQ est disponible sur notre site documentaire.</p>
+	</conbody>
+</concept>

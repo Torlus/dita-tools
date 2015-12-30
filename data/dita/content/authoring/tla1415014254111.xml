@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1415014254111" xml:lang="fr-fr">
+	<title ixia_locid="479" translate="no">vads_payment_error</title>
+	<shortdesc ixia_locid="480"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colsep="0" colwidth="1*" rowsep="0"/>
+				<colspec colname="c2" colnum="2" colsep="0" colwidth="3.81*" rowsep="0"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="594">Champ retourné dans la réponse.</p>
+							<p ixia_locid="595">Codes d'erreurs pouvant apparaître lors d'un paiement
+								refusé.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="582"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="584" translate="no">n..3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="586"><b ixia_locid="30">Valeurs possibles</b></entry>
+						<entry ixia_locid="588"/>
+					</row>
+					<row>
+						<entry ixia_locid="590" nameend="c2" namest="c1">
+							<p ixia_locid="592">
+								<table colsep="1" frame="all" id="table_pkx_hd5_dq" rowsep="1">
+									<tgroup cols="4">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="4.16*"/>
+										<colspec colname="c3" colnum="3" colwidth="1.03*"/>
+										<colspec colname="c4" colnum="4" colwidth="4.53*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="199">Code d'erreur</entry>
+												<entry ixia_locid="200">Message d'erreur</entry>
+												<entry ixia_locid="201">Code d'erreur</entry>
+												<entry ixia_locid="202">Message d'erreur</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="203" translate="no">1</entry>
+												<entry ixia_locid="204">La transaction n'a pas été
+												trouvée.</entry>
+												<entry ixia_locid="205" translate="no">72</entry>
+												<entry ixia_locid="206">
+												<p ixia_locid="483">Refus d'autorisation par
+												Cofinoga.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="207" translate="no">2</entry>
+												<entry ixia_locid="208">La transaction n'a pas été
+												trouvée.</entry>
+												<entry ixia_locid="209" translate="no">73</entry>
+												<entry ixia_locid="210">
+												<p ixia_locid="484">Refus de l'autorisation à <ph ixia_locid="596" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">1 euro</ph><ph ixia_locid="598" location="OSB" platform="OSB">100
+												XPF</ph><ph ixia_locid="600" location="Innopay" platform="Innopay">1 CHF</ph><ph ixia_locid="602" location="PayZen_Brazil">1 BRL</ph>.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="211" translate="no">3</entry>
+												<entry ixia_locid="212">Cette action n'est pas
+												autorisée sur une transaction ayant ce statut {0}. </entry>
+												<entry ixia_locid="213" translate="no">74</entry>
+												<entry ixia_locid="214">
+												<p ixia_locid="485">Configuration de paiement
+												invalide.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="215" translate="no">4</entry>
+												<entry ixia_locid="216">Cette transaction n'est pas
+												autorisée dans ce contexte. </entry>
+												<entry ixia_locid="217" translate="no">75</entry>
+												<entry ixia_locid="218">L'opération a été refusée
+												par PayPal.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="219" translate="no">5</entry>
+												<entry ixia_locid="220">La transaction existe déjà. </entry>
+												<entry ixia_locid="221" translate="no">76</entry>
+												<entry ixia_locid="222">
+												<p ixia_locid="486">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="223" translate="no">6</entry>
+												<entry ixia_locid="224">Montant de transaction
+												invalide. </entry>
+												<entry ixia_locid="225" translate="no">77</entry>
+												<entry ixia_locid="226">
+												<p ixia_locid="487">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="227" translate="no">7</entry>
+												<entry ixia_locid="228">Cette action n'est plus
+												possible pour une transaction créée à cette date. </entry>
+												<entry ixia_locid="229" translate="no">78</entry>
+												<entry ixia_locid="230">
+												<p ixia_locid="488">Identifiant de transaction non
+												défini.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="231" translate="no">8</entry>
+												<entry ixia_locid="232">La date d'expiration de la
+												carte ne permet pas cette action. </entry>
+												<entry ixia_locid="233" translate="no">79</entry>
+												<entry ixia_locid="234">
+												<p ixia_locid="489">Identifiant de transaction
+												déjà utilisé.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="235" translate="no">9</entry>
+												<entry ixia_locid="236">CVV obligatoire pour la
+												carte. </entry>
+												<entry ixia_locid="237" translate="no">80</entry>
+												<entry ixia_locid="238">
+												<p ixia_locid="490">Identifiant de transaction
+												expiré.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="239" translate="no">10</entry>
+												<entry ixia_locid="240">Le montant de remboursement
+												est supérieur au montant initial. </entry>
+												<entry ixia_locid="241" translate="no">81</entry>
+												<entry ixia_locid="242">Contenu du thème config
+												invalide.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="243" translate="no">11</entry>
+												<entry ixia_locid="244">La somme des remboursements
+												effectués est supérieure au montant initial. </entry>
+												<entry ixia_locid="245" translate="no">82</entry>
+												<entry ixia_locid="246">
+												<p ixia_locid="491">Le remboursement n'est pas
+												autorisé.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="247" translate="no">12</entry>
+												<entry ixia_locid="248">La duplication d'un crédit
+												(remboursement) n'est pas autorisée. </entry>
+												<entry ixia_locid="249" translate="no">83</entry>
+												<entry ixia_locid="250">
+												<p ixia_locid="492">Montant de transaction en
+												dehors des valeurs permises.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="251" translate="no">13</entry>
+												<entry ixia_locid="252">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande. </entry>
+												<entry ixia_locid="253" translate="no">84</entry>
+												<entry ixia_locid="254">
+												<p ixia_locid="493">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="255" translate="no">14</entry>
+												<entry ixia_locid="256">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande.</entry>
+												<entry ixia_locid="257" translate="no">85</entry>
+												<entry ixia_locid="258">
+												<p ixia_locid="494">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="259" translate="no">15</entry>
+												<entry ixia_locid="260">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande. </entry>
+												<entry ixia_locid="261" translate="no">86</entry>
+												<entry ixia_locid="262">
+												<p ixia_locid="495">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="263" translate="no">16</entry>
+												<entry ixia_locid="264">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande. </entry>
+												<entry ixia_locid="265" translate="no">87</entry>
+												<entry ixia_locid="266">
+												<p ixia_locid="496">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="267" translate="no">17</entry>
+												<entry ixia_locid="268">Le téléparamétrage du
+												contrat Aurore a échoué. </entry>
+												<entry ixia_locid="269" translate="no">88</entry>
+												<entry ixia_locid="270">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="271" translate="no">18</entry>
+												<entry ixia_locid="272">L'analyse de la réponse
+												Cetelem a échoué. </entry>
+												<entry ixia_locid="273" translate="no">89</entry>
+												<entry ixia_locid="274">
+												<p ixia_locid="579">La modification n'est pas
+												autorisée.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="275" translate="no">19</entry>
+												<entry ixia_locid="276">Devise inconnue.</entry>
+												<entry ixia_locid="277" translate="no">90</entry>
+												<entry ixia_locid="278">
+												<p ixia_locid="499">Une erreur est apparue lors du
+												remboursement de cette transaction.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="279" translate="no">20</entry>
+												<entry ixia_locid="280">Type de carte
+												invalide.</entry>
+												<entry ixia_locid="281" translate="no">91</entry>
+												<entry ixia_locid="282">Aucune option de paiement
+												activée pour ce contrat.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="283" translate="no">21</entry>
+												<entry ixia_locid="284">Aucun contrat trouvé pour ce
+												paiement. Veuillez modifier les données ou
+												contacter votre gestionnaire en cas d'échecs
+												répétés. </entry>
+												<entry ixia_locid="285" translate="no">92</entry>
+												<entry ixia_locid="286">Une erreur est survenue lors
+												du calcul du canal de paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="287" translate="no">22</entry>
+												<entry ixia_locid="288">Boutique non trouvée. </entry>
+												<entry ixia_locid="289" translate="no">93</entry>
+												<entry ixia_locid="290">Une erreur est survenue lors
+												du retour de l'acheteur sur la page de
+												finalisation de paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="291" translate="no">23</entry>
+												<entry ixia_locid="292">Contrat ambigüe</entry>
+												<entry ixia_locid="293" translate="no">94</entry>
+												<entry ixia_locid="294">Une erreur technique est
+												survenue.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="295" translate="no">24</entry>
+												<entry ixia_locid="296">Contrat invalide</entry>
+												<entry ixia_locid="297" translate="no">95</entry>
+												<entry ixia_locid="298">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="299" translate="no">25</entry>
+												<entry ixia_locid="300">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande. </entry>
+												<entry ixia_locid="301" translate="no">96</entry>
+												<entry ixia_locid="302">
+												<p ixia_locid="504">Une erreur est apparue lors de
+												la remise de cette transaction.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="303" translate="no">26</entry>
+												<entry ixia_locid="304">Numéro de carte
+												invalide</entry>
+												<entry ixia_locid="305" translate="no">97</entry>
+												<entry ixia_locid="306">Date de remise trop
+												éloignée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="307" translate="no">27</entry>
+												<entry ixia_locid="308">Numéro de carte
+												invalide</entry>
+												<entry ixia_locid="309">98</entry>
+												<entry ixia_locid="310">Date de transaction
+												invalide. </entry>
+											</row>
+											<row>
+												<entry ixia_locid="311" translate="no">28</entry>
+												<entry ixia_locid="312">Numéro de carte
+												invalide</entry>
+												<entry ixia_locid="313" translate="no">99</entry>
+												<entry ixia_locid="314">Une erreur est survenue lors
+												du calcul de l'origine du paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="315" translate="no">29</entry>
+												<entry ixia_locid="316">Numéro de carte
+												invalide</entry>
+												<entry ixia_locid="317" translate="no">100</entry>
+												<entry ixia_locid="318">Contrôle carte commerciale
+												en échec.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="319" translate="no">30</entry>
+												<entry ixia_locid="320">Numéro de carte invalide
+												(Luhn)</entry>
+												<entry ixia_locid="321" translate="no">101</entry>
+												<entry ixia_locid="322">
+												<p ixia_locid="505">Refusé car première échéance
+												refusée.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="323" translate="no">31</entry>
+												<entry ixia_locid="324">Numéro de carte invalide
+												(longueur)</entry>
+												<entry ixia_locid="325" translate="no">102</entry>
+												<entry ixia_locid="326">
+												<p ixia_locid="506">L'opération a été refusée par
+												Buyster.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="583" translate="no">32</entry>
+												<entry ixia_locid="587">Numéro de carte invalide
+												(non trouvé)</entry>
+												<entry ixia_locid="591" translate="no">103</entry>
+												<entry ixia_locid="585">
+												<p ixia_locid="507">Le statut de la transaction
+												n'a pas pu être synchronisé avec le système
+												externe</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="589" translate="no">33</entry>
+												<entry ixia_locid="593">Numéro de carte invalide
+												(non trouvé)</entry>
+												<entry ixia_locid="333" translate="no">104</entry>
+												<entry ixia_locid="334">Une erreur est apparue lors
+												de la remise de cette transaction.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="335" translate="no">34</entry>
+												<entry ixia_locid="336">Contrôle carte à
+												autorisation systématique en échec. </entry>
+												<entry ixia_locid="337" translate="no">105</entry>
+												<entry ixia_locid="338">
+												<p ixia_locid="580">Une erreur de sécurité est
+												apparue lors du processus 3DS de cette
+												transaction.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="339" translate="no">35</entry>
+												<entry ixia_locid="340">Contrôle e-Carte Bleue en
+												échec. </entry>
+												<entry ixia_locid="341" translate="no">106</entry>
+												<entry ixia_locid="342">Devise non supportée pour ce
+												contrat et/ou cette boutique.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="343" translate="no">36</entry>
+												<entry ixia_locid="344">Le contrôle des risques a
+												provoqué le refus de la transaction. </entry>
+												<entry ixia_locid="345" translate="no">107</entry>
+												<entry ixia_locid="346">La carte associée à l'alias
+												n'est plus valide.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="347" translate="no">37</entry>
+												<entry ixia_locid="348">Interruption non gérée lors
+												du processus de paiement.</entry>
+												<entry ixia_locid="349" translate="no">108</entry>
+												<entry ixia_locid="350">
+												<p ixia_locid="512">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="351" translate="no">38</entry>
+												<entry ixia_locid="352">
+												<p ixia_locid="513">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+												<entry ixia_locid="353" translate="no">109</entry>
+												<entry ixia_locid="354">Délai d'attente dépassé lors
+												de la redirection de l'acheteur.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="355" translate="no">39</entry>
+												<entry ixia_locid="356">
+												<p ixia_locid="514">Refus 3D Secure pour la
+												transaction.</p>
+												</entry>
+												<entry ixia_locid="357" translate="no">110</entry>
+												<entry ixia_locid="358">Carte de paiement non
+												supportée par le contrat.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="359" translate="no">40</entry>
+												<entry ixia_locid="360">
+												<p ixia_locid="515">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+												<entry ixia_locid="361" translate="no">111</entry>
+												<entry ixia_locid="362">Refus des transactions sans
+												transfert de responsabilité.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="363" translate="no">41</entry>
+												<entry ixia_locid="364">
+												<p ixia_locid="516">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+												<entry ixia_locid="365" translate="no">112</entry>
+												<entry ixia_locid="366">L'annulation n'est pas
+												autorisée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="367" translate="no">42</entry>
+												<entry ixia_locid="368">
+												<p ixia_locid="517">Une erreur interne est
+												survenue lors de la consultation du numéro de
+												carte.</p>
+												</entry>
+												<entry ixia_locid="369" translate="no">113</entry>
+												<entry ixia_locid="370">
+												<p ixia_locid="518">La duplication n'est pas
+												autorisée.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="371" translate="no">43</entry>
+												<entry ixia_locid="372">
+												<p ixia_locid="519">Une erreur interne est
+												survenue lors de la consultation du numéro de
+												carte.</p>
+												</entry>
+												<entry ixia_locid="373" translate="no">114</entry>
+												<entry ixia_locid="374">
+												<p ixia_locid="520">Le forçage n'est pas
+												autorisé.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="375" translate="no">44</entry>
+												<entry ixia_locid="376">
+												<p ixia_locid="521">Il n'est pas possible de forcer une autorisation à <ph ixia_locid="597" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">1 euro</ph><ph ixia_locid="599" location="OSB" platform="OSB">100
+												XPF</ph><ph ixia_locid="601" location="Innopay" platform="Innopay">1 CHF</ph><ph ixia_locid="603" location="PayZen_Brazil">1
+												BRL</ph>.</p>
+												</entry>
+												<entry ixia_locid="377" translate="no">115</entry>
+												<entry ixia_locid="378">Le remboursement n'est pas
+												autorisé.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="379" translate="no">45</entry>
+												<entry ixia_locid="380">
+												<p ixia_locid="522">Devise invalide pour la
+												modification.</p>
+												</entry>
+												<entry ixia_locid="381" translate="no">116</entry>
+												<entry ixia_locid="382">Paiement manuel non autorisé
+												pour cette carte.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="383" translate="no">46</entry>
+												<entry ixia_locid="384">Le montant est supérieur au
+												montant autorisé.</entry>
+												<entry ixia_locid="385" translate="no">118</entry>
+												<entry ixia_locid="386">
+												<p ixia_locid="524">Paiement manuel en plusieurs
+												fois non autorisé pour cette carte.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="387" translate="no">47</entry>
+												<entry ixia_locid="388">
+												<p ixia_locid="526">La date de présentation
+												souhaitée est postérieure à la date de validité de
+												l'autorisation.</p>
+												</entry>
+												<entry ixia_locid="389" translate="no">119</entry>
+												<entry ixia_locid="390">La date soumise est
+												invalide.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="391" translate="no">48</entry>
+												<entry ixia_locid="392">
+												<p ixia_locid="528">La modification requise est
+												invalide.</p>
+												</entry>
+												<entry ixia_locid="393" translate="no">120</entry>
+												<entry ixia_locid="394">
+												<p ixia_locid="529">L'option de paiement de la
+												transaction initiale n'est pas applicable.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="395" translate="no">49</entry>
+												<entry ixia_locid="396">
+												<p ixia_locid="531">Définition du paiement
+												multiple invalide.</p>
+												</entry>
+												<entry ixia_locid="397" translate="no">124</entry>
+												<entry ixia_locid="398">Carte inactive.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="399" translate="no">50</entry>
+												<entry ixia_locid="400">
+												<p ixia_locid="533">Boutique inconnue.</p>
+												</entry>
+												<entry ixia_locid="401" translate="no">125</entry>
+												<entry ixia_locid="581">Paiement refusé par
+												l'acquéreur.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="403" translate="no">51</entry>
+												<entry ixia_locid="404">
+												<p ixia_locid="534">Cours inconnu.</p>
+												</entry>
+												<entry ixia_locid="405" translate="no">126</entry>
+												<entry ixia_locid="406">Cette action n'est pas
+												possible car la séquence de paiement n'est pas
+												terminée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="407" translate="no">52</entry>
+												<entry ixia_locid="408">
+												<p ixia_locid="536">Le contrat est clos depuis le
+												{0}.</p>
+												</entry>
+												<entry ixia_locid="409" translate="no">132</entry>
+												<entry ixia_locid="410">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="411" translate="no">53</entry>
+												<entry ixia_locid="412">
+												<p ixia_locid="538">La boutique {0} est close
+												depuis le {1}.</p>
+												</entry>
+												<entry ixia_locid="413" translate="no">135</entry>
+												<entry ixia_locid="414">L'intégration de la page de
+												paiement dans une iframe n'est pas
+												autorisée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="415" translate="no">54</entry>
+												<entry ixia_locid="416">Paramètre rejeté pouvant
+												contenir des données sensibles {0}.</entry>
+												<entry ixia_locid="417" translate="no">136</entry>
+												<entry ixia_locid="418">
+												<p ixia_locid="540">Refus des transactions
+												dérivées, sans transfert de responsabilité sur la
+												transaction primaire.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="419" translate="no">55</entry>
+												<entry ixia_locid="420">
+												<p ixia_locid="542">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+												<entry ixia_locid="421" translate="no">137</entry>
+												<entry ixia_locid="422">La transaction est un
+												doublon.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="423" translate="no">57</entry>
+												<entry ixia_locid="424">
+												<p ixia_locid="543">Erreur lors de la récupération
+												de l'alias.</p>
+												</entry>
+												<entry ixia_locid="425" translate="no">138</entry>
+												<entry ixia_locid="426">Le remboursement partiel
+												n'est pas possible sur cette transaction.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="427" translate="no">58</entry>
+												<entry ixia_locid="428">Le statut de l'alias n'est
+												pas compatible avec cette opération</entry>
+												<entry ixia_locid="429" translate="no">139</entry>
+												<entry ixia_locid="430">Remboursement
+												refusé.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="431" translate="no">59</entry>
+												<entry ixia_locid="432">
+												<p ixia_locid="546">Erreur lors de la récupération
+												de l'alias.</p>
+												</entry>
+												<entry ixia_locid="433" translate="no">141</entry>
+												<entry ixia_locid="434">L'analyseur de risque a
+												rejeté cette transaction.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="435" translate="no">60</entry>
+												<entry ixia_locid="436">
+												<p ixia_locid="547">Alias existant.</p>
+												</entry>
+												<entry ixia_locid="437" translate="no">142</entry>
+												<entry ixia_locid="438">
+												<p ixia_locid="548">Le type de carte utilisé n'est
+												pas valide pour le mode de paiement demandé.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="439" translate="no">61</entry>
+												<entry ixia_locid="440">Alias invalide</entry>
+												<entry ixia_locid="441" translate="no">143</entry>
+												<entry ixia_locid="442">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="443" translate="no">62</entry>
+												<entry ixia_locid="444">
+												<p ixia_locid="549">Création d'un alias
+												refusée.</p>
+												</entry>
+												<entry ixia_locid="445" translate="no">144</entry>
+												<entry ixia_locid="446">Une transaction en mode
+												production a été marquée en mode test chez
+												l'acquéreur.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="447" translate="no">63</entry>
+												<entry ixia_locid="448">
+												<p ixia_locid="550">Abonnement déjà existant.</p>
+												</entry>
+												<entry ixia_locid="449" translate="no">145</entry>
+												<entry ixia_locid="450">
+												<p ixia_locid="551">Une transaction en mode test a
+												été marquée en mode production chez
+												l'acquéreur.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="451" translate="no">64</entry>
+												<entry ixia_locid="452">Cet abonnement est déjà
+												résilié.</entry>
+												<entry ixia_locid="453" translate="no">146</entry>
+												<entry ixia_locid="454">Code sms invalide.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="455" translate="no">65</entry>
+												<entry ixia_locid="456">
+												<p ixia_locid="554">Cet abonnement est
+												invalide.</p>
+												</entry>
+												<entry ixia_locid="457" translate="no">147</entry>
+												<entry ixia_locid="458">Le module de gestion de
+												fraudes a demandé le refus de cette
+												transaction.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="459" translate="no">66</entry>
+												<entry ixia_locid="460">
+												<p ixia_locid="555">La règle de récurrence n'est
+												pas valide.</p>
+												</entry>
+												<entry ixia_locid="461" translate="no">148</entry>
+												<entry ixia_locid="462">
+												<p ixia_locid="556">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande. La transaction n'a pas été créée.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="463" translate="no">67</entry>
+												<entry ixia_locid="464">Création de l'abonnement
+												refusée.</entry>
+												<entry ixia_locid="465" translate="no">149</entry>
+												<entry ixia_locid="466">La durée de la session de
+												paiement a expiré (cas de l'acheteur qui est
+												redirigé vers l'ACS et qui ne finalise pas
+												l'authentification 3D Secure).</entry>
+											</row>
+											<row>
+												<entry ixia_locid="467" translate="no">69</entry>
+												<entry ixia_locid="468">
+												<p ixia_locid="557">Suite à un incident technique,
+												nous ne sommes pas en mesure de traiter votre
+												demande.</p>
+												</entry>
+												<entry ixia_locid="469" translate="no">150</entry>
+												<entry ixia_locid="470">Suite à un incident
+												technique, nous ne sommes pas en mesure de traiter
+												votre demande. La transaction n'a pas été
+												créée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="471" translate="no">70</entry>
+												<entry ixia_locid="472">Code pays invalide.</entry>
+												<entry ixia_locid="473"/>
+												<entry ixia_locid="474">
+												<p ixia_locid="558"/>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="559" translate="no">71</entry>
+												<entry ixia_locid="564">Paramètre du service web
+												invalide.</entry>
+												<entry ixia_locid="569"/>
+												<entry ixia_locid="574">
+												<p ixia_locid="578"/>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="32"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="33">Informations techniques.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+	</refbody>
+</reference>

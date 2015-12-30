@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1411030317713" xml:lang="fr-fr">
+	<title ixia_locid="93">Informations techniques</title>
+	<shortdesc ixia_locid="94"/>
+	<conbody>
+		<p ixia_locid="95">
+			<table colsep="1" frame="all" id="table_qc5_kbr_jp" rowsep="1">
+				<title ixia_locid="278">Liste des paramètres - Informations techniques</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="2.34*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="5.06*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="226">Nom du champ</entry>
+							<entry ixia_locid="228">Format</entry>
+							<entry ixia_locid="57">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="134"><b ixia_locid="257" translate="no"><xref href="tla1408640166705.xml" ixia_locid="258">signature</xref></b></entry>
+							<entry ixia_locid="167" translate="no">an40</entry>
+							<entry ixia_locid="259">Permet de vérifier l’intégrité des requêtes.
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="58"><b ixia_locid="96" translate="no"><xref href="tla1405002307652.xml" ixia_locid="97">vads_action_mode</xref></b></entry>
+							<entry ixia_locid="60" translate="no">string (enum)</entry>
+							<entry ixia_locid="61">Définit le mode d'acquisition des informations de
+								la carte.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="67"><b ixia_locid="98" translate="no"><xref href="tla1408607954033.xml" ixia_locid="99">vads_contrib</xref></b></entry>
+							<entry ixia_locid="70" translate="no">ans..128</entry>
+							<entry ixia_locid="71">Indique le nom de la contribution utilisée lors
+								du paiement (Joomla, osCommerce...). </entry>
+						</row>
+						<row>
+							<entry ixia_locid="230"><b ixia_locid="198" translate="no"><xref href="tla1408608221796.xml" ixia_locid="199">vads_ctx_mode</xref></b></entry>
+							<entry ixia_locid="140" translate="no">string (enum)</entry>
+							<entry ixia_locid="171">Mode de communication de la plateforme de
+								paiement</entry>
+						</row>
+						<row>
+							<entry ixia_locid="231"><b ixia_locid="115" translate="no"><xref href="tla1408624287246.xml" ixia_locid="116">vads_extra_result</xref></b></entry>
+							<entry ixia_locid="110" translate="no">n2</entry>
+							<entry ixia_locid="113">Code complémentaire de réponse. Sa signification
+								dépend de la valeur renseignée dans <b ixia_locid="30" translate="no">vads_result</b>.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="232"><b ixia_locid="117" translate="no"><xref href="tla1408625090595.xml" ixia_locid="118">vads_hash</xref></b></entry>
+							<entry ixia_locid="234" translate="no">an64</entry>
+							<entry ixia_locid="236">
+								<p ixia_locid="119">Clé unique renvoyée uniquement à l’URL de
+									notification (IPN).</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="75"><b ixia_locid="100" translate="no"><xref href="tla1408626371544.xml" ixia_locid="101">vads_page_action</xref></b></entry>
+							<entry ixia_locid="78" translate="no">string (enum)</entry>
+							<entry ixia_locid="79">Définit l'opération à réaliser.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="271"><xref href="tla1415014254111.xml" ixia_locid="276"><b ixia_locid="277" translate="no">vads_payment_error</b></xref></entry>
+							<entry ixia_locid="273" translate="no">n..3</entry>
+							<entry ixia_locid="275">Codes d'erreur sur un paiement refusé.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="262"><b ixia_locid="218" translate="no"><xref href="tla1408628157713.xml" ixia_locid="219">vads_result</xref></b></entry>
+							<entry ixia_locid="264" translate="no">n2</entry>
+							<entry ixia_locid="266">Code retour général du résultat du
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="120"><b ixia_locid="224" translate="no"><xref href="tla1408636137772.xml" ixia_locid="225">vads_site_id</xref></b></entry>
+							<entry ixia_locid="153" translate="no">n8</entry>
+							<entry ixia_locid="184">Identifiant du site.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="39"><xref href="tla1408638807307.xml" ixia_locid="238"><b ixia_locid="68" translate="no">vads_url_check</b></xref></entry>
+							<entry ixia_locid="47" translate="no">ans..127</entry>
+							<entry ixia_locid="227">URL de la page à notifier à la fin du paiement.
+								Surcharge la valeur saisie dans le paramétrage des règles de
+								notification.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="40"><xref href="tla1408638858037.xml" ixia_locid="239"><b ixia_locid="69" translate="no">vads_url_check_src</b></xref></entry>
+							<entry ixia_locid="48" translate="no">string (enum)</entry>
+							<entry ixia_locid="229">Ce paramètre définit l’origine de l’appel URL de
+								notification (IPN Server).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="233"><xref href="tla1408639900969.xml" ixia_locid="240"><b ixia_locid="241" translate="no">vads_version</b></xref></entry>
+							<entry ixia_locid="235" translate="no">string</entry>
+							<entry ixia_locid="237">Version du protocole d’échange avec la
+								plateforme de paiement.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

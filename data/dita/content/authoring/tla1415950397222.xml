@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415950397222" xml:lang="fr-fr">
+	<title ixia_locid="1">Cycle de vie d’une transaction de paiement comptant différé</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="19"><b ixia_locid="20">Délai de remise inférieur à la durée de validité de
+				l'autorisation</b>
+		</p>
+		<p ixia_locid="21">(voir diagramme cycle de vie d'une transaction de paiement comptant
+			immédiat).</p>
+		<p ixia_locid="22"><b ixia_locid="23">Délai de remise supérieur à la durée de validité de
+				l'autorisation </b></p>
+		<p ixia_locid="3">Toute transaction de paiement comptant différé réalisée avec le mode de
+			validation automatique, et dont la demande d’autorisation à <ph ixia_locid="27" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay" translate="no">1 euro</ph><ph ixia_locid="28" location="OSB" platform="OSB" translate="no">100 XPF</ph><ph ixia_locid="29" location="Innopay" platform="Innopay">1
+				CHF</ph><ph ixia_locid="36" location="PayZen_Brazil">1 BRL</ph><!-- (demande de renseignement)--> a été réalisée avec succès, est
+			consultable dans le <ph ixia_locid="25" translate="no">Back Office</ph> avec le statut
+				<b ixia_locid="4">En attente d’autorisation</b>. </p>
+		<p ixia_locid="5">La demande d’autorisation est automatiquement effectuée : </p>
+		<p ixia_locid="6">
+			<ul id="ul_e22_pg5_bq">
+				<li ixia_locid="7">fonctionnement par défaut : le jour de la date de remise en banque
+					souhaitée,</li>
+				<li ixia_locid="8">fonctionnement avec autorisation anticipée : selon le moyen de paiement
+					sélectionné, à J-Δ (voir <xref href="tla1415949281462.xml" ixia_locid="18">tableau</xref> illustrant la validité d'une autorisation) avant la date de
+					remise en banque souhaitée. <p ixia_locid="10">Le mode par autorisation
+						anticipée doit faire l'objet d'une demande auprès du Service Client. </p><p ixia_locid="24">En cas de refus de type non frauduleux (voir <xref href="tla1408548356588.xml" ixia_locid="26">tableau</xref>),
+						l'autorisation sera réitérée chaque jour jusqu'à J-2 avant la date de remise
+						en banque</p>Dans l’attente, le marchand peut annuler la transaction ou en
+					modifier le montant (à la baisse uniquement) et/ou la date de remise. </li>
+			</ul>
+		</p>
+		<p ixia_locid="11"/>
+		<p ixia_locid="12">Le diagramme suivant résume les différents statuts pouvant être pris par ce type de
+			transaction (cas d'une demande d'autorisation non rejouée) : </p>
+		<fig id="fig_N10042_N10011_N10001" ixia_locid="32" location="PayZen PayZen_Germany Systempay PayZen_Brazil" platform="PayZen Systempay">
+			
+			<image href="tla1415956296508.image" ixia_locid="33" scale="48"/>
+			
+		</fig>
+		<fig id="fig_N10042_N10011_N10002" ixia_locid="34" location="OSB" platform="OSB">
+			
+			<image href="tla1439901884436.image" ixia_locid="35" scale="48"/>
+			
+		</fig>
+		<fig id="fig_N10093_N10013_N10001" ixia_locid="30">
+			<image href="tla1422372362304.image" ixia_locid="31" location="Innopay" platform="Innopay" scale="48"/>
+		</fig>
+	</conbody>
+</concept>

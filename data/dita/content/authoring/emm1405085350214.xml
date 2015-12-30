@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405085350214" xml:lang="fr-fr">
+	<title ixia_locid="1">Paramétrer les notifications</title>
+	<shortdesc ixia_locid="2"> </shortdesc>
+	<conbody>
+		<p ixia_locid="3">Le <ph ixia_locid="116" translate="no">Back Office</ph> permet de gérer
+			les événements qui génèreront un appel vers le site marchand et de configurer l’URL de
+			la page à contacter.</p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" ixia_locid="26">Les schémas suivants illustrent, pour chaque événement, le statut de la
+			transaction envoyé dans la notification.</p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" ixia_locid="10">La légende adoptée pour chacun est la suivante : </p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" ixia_locid="114"><image href="tla1415957306283.image" id="image_fxc_nln_dq" ixia_locid="7"/> Action du marchand nécessaire - manuelle (<ph ixia_locid="117" translate="no">Back Office</ph>) ou automatique (webservice)</p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" ixia_locid="115"><image href="tla1415980623200.image" id="image_ljr_nln_dq" ixia_locid="27" scale="50"/> Action de l'acheteur</p>
+		<p doc-type="integration-Allemagne integration-Bresil" ixia_locid="12"/>
+	</conbody>
+</concept>

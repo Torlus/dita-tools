@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084935055" xml:lang="fr-fr">
+	<title ixia_locid="1">Choisir le mode Test ou Production</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Le choix du mode <b ixia_locid="27">TEST</b> ou <b ixia_locid="28">PRODUCTION</b> s'effectue en utilisant le champ <b ixia_locid="4">vads_ctx_mode</b>
+			(Voir chapitre <b ixia_locid="5"><xref href="emm1405083451541.xml" ixia_locid="26">Générer un formulaire de paiement</xref></b>).</p>
+		<p ixia_locid="6">
+			<ul id="ul_vpf_hqr_v4">
+				<li ixia_locid="7">Le mode <b ixia_locid="8">TEST</b> permet de réaliser des paiements de test.
+						<p ixia_locid="9"><b ixia_locid="30">Il est toujours disponible</b>, même
+						après la génération du certificat de production.</p>Si vous créez un nouveau
+					site marchand (ou disposez d’un environnement de recette), vous pourrez
+					effectuer vos tests sans impacter le site actuellement en production. <p ixia_locid="25">Les transactions de TEST sont visibles dans le <ph ixia_locid="32" translate="no">Back Office</ph> depuis le menu <b ixia_locid="10">Gestion</b> &gt; <b ixia_locid="11">Transactions de Test</b></p>
+					<fig id="fig_mfd_4qr_v4" ixia_locid="12">
+						<title ixia_locid="13">Visualiser les transactions de test</title>
+						<image id="image_nb1_pqr_v4" ixia_locid="14" keyref="MenuTransactionTest" scale="70"/>
+					</fig></li>
+				<li ixia_locid="15">Le mode <b ixia_locid="16">PRODUCTION</b> n’est disponible qu’une fois le
+					certificat de production généré (voir chapitre <b ixia_locid="17">Activer la
+						boutique en mode PRODUCTION</b><ph doc-type="Identifiant_Abonnement" ixia_locid="34"> du guide d'implémentation du formulaire disponible sur
+						notre site documentaire<ph ixia_locid="36" location="Innopay PayZen PayZen_Brazil PayZen_Germany"> : <xref ixia_locid="35" keyref="SiteInternetDocumentation"/>
+						</ph></ph>).<p ixia_locid="18">Il permet de réaliser des paiements
+						réels.</p>Les transactions de PRODUCTION sont visibles dans le <ph ixia_locid="33" translate="no">Back Office</ph> depuis le menu <b ixia_locid="19">Gestion</b> &gt; <b ixia_locid="20">Transactions</b>.<p ixia_locid="31"/><fig id="fig_c45_3sr_v4" ixia_locid="21">
+						<title ixia_locid="22">Visualiser les transactions de production</title>
+						<image id="image_zgc_jsr_v4" ixia_locid="23" keyref="MenuTransaction" scale="70"/>
+					</fig></li>
+			</ul>
+		</p>
+		<p ixia_locid="24"/>
+	</conbody>
+</concept>

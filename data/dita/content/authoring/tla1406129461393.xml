@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406129461393" xml:lang="fr-fr">
+	<title ixia_locid="1">Modifier le nom et l'URL de la boutique</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4">Si vous possédez deux noms de domaines, vous pouvez modifier le nom et l’URL de
+				la boutique pour faire apparaître le nom du domaine.</p>
+		</context>
+		<steps>
+			<step id="step_N10020_N1001D_N10011_N10001" ixia_locid="5">
+				<cmd ixia_locid="6">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
+					chapitre <b ixia_locid="173"><xref href="emm1405083451541.xml" ixia_locid="175">Générer un formulaire de paiement</xref></b>) pour construire votre
+					formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10029_N1001D_N10011_N10001" ixia_locid="7">
+				<cmd ixia_locid="8">Utilisez le champ <b ixia_locid="9" translate="no">vads_shop_name</b> pour
+					surcharger le nom de la boutique affiché sur la page de paiement.</cmd>
+				<info ixia_locid="176">Cette valeur sera reprise sur le ticket de transaction ainsi que dans l'e-mail
+					de confirmation.</info>
+			</step>
+			<step id="step_N10036_N1001D_N10011_N10001" ixia_locid="10">
+				<cmd ixia_locid="11">Utilisez le champ <b ixia_locid="12" translate="no">vads_shop_url</b> pour
+					modifier l’URL de la boutique affichée sur les pages de paiement. </cmd>
+				<info ixia_locid="177">Cette valeur sera reprise dans l' e-mail de confirmation.</info>
+				<info ixia_locid="178">Si la valeur du champ <b ixia_locid="15" translate="no">vads_shop_url</b> est
+					erronée, le formulaire ne sera pas rejeté. Cependant, sa valeur est utilisée
+					pour le 3D Secure. Le paiement pourra être refusé si l’URL n’est pas
+					valide.</info>
+			</step>
+			<step id="step_N10050_N1001D_N10011_N10001" ixia_locid="16">
+				<cmd ixia_locid="17">Calculez la valeur du champ <b ixia_locid="18" translate="no">signature</b> en utilisant
+					l’ensemble des champs de votre formulaire, dont le nom commence par <b ixia_locid="155" translate="no">vads_</b>
+					(voir chapitre <b ixia_locid="32"><xref href="emm1405088305497.xml" ixia_locid="154">Calculer la signature</xref></b>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N1005D_N10011_N10001" ixia_locid="20">
+			<p ixia_locid="21"><u ixia_locid="22">Exemple de formulaire de paiement avec modification du nom
+					et de l'URL de la
+				boutique:</u><codeblock ixia_locid="23">&lt;form method="POST" action="<xref ixia_locid="87" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+<b ixia_locid="24">&lt;input type="hidden" name="vads_shop_name" value="Ma Boutique" /&gt;
+&lt;input type="hidden" name="vads_shop_url" value="http://www.maboutique.fr" /&gt;</b>
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140526101407" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="239848" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

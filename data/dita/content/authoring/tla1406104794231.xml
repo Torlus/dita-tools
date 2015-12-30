@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406104794231" xml:lang="fr-fr">
+	<title ixia_locid="64">Définir le mode de remise en banque (automatique / manuel)</title>
+	<shortdesc ixia_locid="65"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="66">
+			<p ixia_locid="67">Le marchand peut paramétrer dans le <ph ixia_locid="118" translate="no">Back Office</ph> la
+				manière dont sont envoyés les paiements à la banque (Menu <b ixia_locid="68">Paramétrage</b> &gt; <b ixia_locid="69">Boutique</b> &gt; onglet <b ixia_locid="70">Configuration</b>) :</p>
+				<fig id="fig_i2g_gqx_v4" ixia_locid="72">
+					<title ixia_locid="73">Définir le mode de remise en banque</title>
+					<image align="center" id="image_yfz_gqx_v4" ixia_locid="74" keyref="DefinirModeRemiseBanque" scale="60"/>
+				</fig>
+			<p ixia_locid="75">
+				<ul id="ul_qqx_yqx_v4">
+					<li ixia_locid="76"><b ixia_locid="77">Automatique</b> : aucune action nécessaire, les
+						paiements sont remis en banque une fois le délai de remise atteint.</li>
+					<li ixia_locid="78"><b ixia_locid="79">Manuel</b> : le marchand doit impérativement valider
+						chaque paiement depuis son <ph ixia_locid="119" translate="no">Back Office</ph> pour qu’il
+						soit remis en banque, et ceci, avant la date de remise souhaitée.<p ixia_locid="103"/><p ixia_locid="82"><b ixia_locid="102">Toute
+								transaction qui n’a pas été validée dans les délais impartis est
+								considérée comme expirée et ne sera jamais remise en
+						banque.</b></p>Par défaut, le <ph ixia_locid="120" translate="no">Back Office</ph> est
+						configuré pour remettre automatiquement en banque tous les paiements.<p ixia_locid="83"/>Le marchand peut surcharger cette configuration dans
+						son formulaire de paiement. <p ixia_locid="101">Il devra implémenter les
+							critères de son choix (état du stock, délai de réapprovisionnement,
+							etc...) permettant de décider si la transaction doit être remise en
+							banque automatiquement ou non.</p></li>
+				</ul>
+			</p>
+		</context>
+		<steps>
+			<step id="step_N10062_N1005F_N10011_N10001" ixia_locid="84">
+				<cmd ixia_locid="85">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
+					chapitre <b ixia_locid="109"><xref href="emm1405083451541.xml" ixia_locid="110">Générer un formulaire de
+							paiement</xref></b>) pour construire votre formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N1006B_N1005F_N10011_N10001" ixia_locid="86">
+				<cmd ixia_locid="87">Utilisez le champ <b ixia_locid="117" translate="no">vads_validation_mode</b> pour configurer le mode de
+					remise en banque de la transaction (manuel ou automatique).</cmd>
+				<itemgroup ixia_locid="98">Ce champ sera renvoyé dans la réponse avec la valeur
+					transmise dans le formulaire.</itemgroup>
+				<info ixia_locid="63">
+					<table colsep="1" frame="all" id="table_kvq_rrx_v4" rowsep="1">
+						<title ixia_locid="5">Valeurs associées au champ vads_validation_mode</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="1.74*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="6">Valeur</entry>
+									<entry ixia_locid="7">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="111" valign="middle"><b ixia_locid="114">Absent ou
+										vide</b></entry>
+									<entry ixia_locid="9">Prend la valeur définie dans le <ph ixia_locid="121" translate="no">Back
+										Office</ph>.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="112" valign="middle"><b ixia_locid="115" translate="no">0</b></entry>
+									<entry ixia_locid="10">Remise en banque automatique.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="113" valign="middle"><b ixia_locid="116" translate="no">1</b></entry>
+									<entry ixia_locid="11">Remise en banque manuelle.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N10090_N1005F_N10011_N10001" ixia_locid="88">
+				<cmd ixia_locid="89">Calculez la valeur du champ <b ixia_locid="90" translate="no">signature</b> en utilisant
+					l’ensemble des champs de votre formulaire, dont le nom commence par <b ixia_locid="91" translate="no">vads_</b> (voir chapitre <xref href="emm1405088305497.xml" ixia_locid="99"><b ixia_locid="92">Calculer la signature</b></xref>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N100C3_N10013_N10001" ixia_locid="93">
+			<p ixia_locid="94" outputclass="break"><u ixia_locid="139">Exemple de formulaire de paiement avec
+					définition du mode de remise en banque en mode
+				SILENT:</u><codeblock ixia_locid="96">&lt;form method="POST" action="<xref ixia_locid="140" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="SILENT" /&gt;
+&lt;input type="hidden" name="vads_amount" value="4000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_card_number" value="4970100000000000" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="643" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="644" location="OSB" platform="OSB">953</ph><ph ixia_locid="645" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="646" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_cvv" value="123" /&gt;
+&lt;input type="hidden" name="vads_expiry_month" value="5" /&gt;
+&lt;input type="hidden" name="vads_expiry_year" value="2017" /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_payment_cards" value="VISA" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140326164147" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="164147" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+<b ixia_locid="144">&lt;input type="hidden" name="vads_validation_mode" value="1" /&gt;</b>
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+			<p ixia_locid="145"><u ixia_locid="146">Exemple de formulaire de paiement avec définition du mode
+					de remise en banque en mode
+				INTERACTIVE:</u><codeblock ixia_locid="147">&lt;form method="POST" action="<xref ixia_locid="148" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="4000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="647" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="648" location="OSB" platform="OSB">953</ph><ph ixia_locid="649" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="650" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140326164147" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="164147" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+<b ixia_locid="152">&lt;input type="hidden" name="vads_validation_mode" value="1" /&gt;</b>
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+			<p ixia_locid="153"/>
+			<p ixia_locid="154"><i ixia_locid="155"><b ixia_locid="156"><u ixia_locid="157">Remarque :</u></b></i></p>
+			<p ixia_locid="158"><i ixia_locid="159">Les champs requis diffèrent selon le mode d’acquisition des informations du moyen de
+					paiement (<ph ixia_locid="160" translate="no"><b ixia_locid="161">SILENT</b></ph> ou <ph ixia_locid="162" translate="no"><b ixia_locid="163">INTERACTIVE</b></ph>).</i></p>
+			<p ixia_locid="164"><i ixia_locid="165">Lorsque le champ <b ixia_locid="166"><ph ixia_locid="167" translate="no">vads_action_mode</ph></b> est valorisé à <ph ixia_locid="168" translate="no"><b ixia_locid="169">SILENT</b></ph>, les informations du moyen de paiement
+					deviennent obligatoires.</i></p>
+		</result>
+	</taskbody>
+</task>

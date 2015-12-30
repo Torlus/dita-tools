@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415951899582" xml:lang="fr-fr">
+	<title ixia_locid="1">Spécificités liées aux autorisations anticipées</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="24">Pour activer les autorisations anticipées, veuillez contacter le service clients de la
+			plateforme de paiement.</p>
+		<p ixia_locid="3">Ce processus s'applique uniquement pour les demandes d’autorisation : <ul id="ul_urb_rj5_bq">
+				<li ixia_locid="4">du paiement comptant différé, </li>
+				<li ixia_locid="5">des échéances, autres que la première, pour le paiement en plusieurs fois. </li>
+			</ul></p>
+		<p ixia_locid="6">Le déclenchement de l'autorisation s'effectuera à J-Δ (voir durée de validité
+			d'une autorisation pour chaque moyen de paiement) avant la date de remise en banque
+			souhaitée.</p>
+		<p ixia_locid="7">En cas de refus par le serveur d'autorisation de la banque de l'acheteur,
+			exclusivement pour un motif non frauduleux (voir <xref href="tla1408548356588.xml" ixia_locid="27">tableau</xref>), un processus réitère automatiquement les demandes
+			d'autorisation jusqu'à J-2.</p>
+		<!--<p ixia_locid="9">Une demande d'autorisation est ainsi effectuée quotidiennement, de J-Δ (voir
+				<xref href="tla1415949281462.xml" ixia_locid="24">tableau</xref> illustrant la
+			validité d'une autorisation pour chaque moyen de paiement) avant la date souhaitée de
+			présentation en remise, jusqu'à l'autorisation donnée par la banque de l'acheteur, à
+			défaut jusqu'au plus tard 3 jours avant la date souhaitée de présentation en remise. </p>-->
+		<!--<p ixia_locid="10">En cas de refus pour un motif frauduleux, ou en cas de refus à J-3 avant la
+			date souhaitée de présentation en remise, le processus de réinitialisation automatique
+			s'interrompt : la transaction est considérée comme définitivement refusée.</p>-->
+		<p ixia_locid="25">En cas de refus pour un motif frauduleux  la transaction est considérée comme
+			définitivement refusée.</p>
+	</conbody>
+</concept>

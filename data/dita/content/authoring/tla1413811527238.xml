@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1413811527238" xml:lang="fr-fr">
+	<title ixia_locid="75" translate="no">vads_risk_analyzis_result</title>
+	<shortdesc ixia_locid="76"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="4.47*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Champ retourné dans la réponse.<p ixia_locid="356">Retourne le résultat de l'analyse de fraude effectuée par un
+								système externe (ClearSale, CyberSource,...).</p><p ixia_locid="122">Renvoyé dans l'URL de notification instantanée (également appelée
+								IPN) et dans les paramètres de retour.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="234"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="237" translate="no">ans</entry>
+					</row>
+					<row>
+						<entry ixia_locid="235"><b ixia_locid="49">Valeurs possibles</b></entry>
+						<entry ixia_locid="238"/>
+					</row>
+					<row>
+						<entry ixia_locid="236" nameend="c2" namest="c1">
+							<p ixia_locid="239">
+								<table colsep="1" frame="all" id="table_hdw_6lf_dq" rowsep="1">
+									<title ixia_locid="1110">Valeurs associées à <ph ixia_locid="1112" translate="no">vads_risk_analyzis_result</ph> communes à tous les
+										types d'analyseurs de risques</title>
+									<tgroup cols="2">
+										<colspec colname="newCol2" colnum="1" colwidth="4.08*"/>
+										<colspec colname="newCol3" colnum="2" colwidth="5.61*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="1114" nameend="newCol3" namest="newCol2">Valeurs
+												communes à tous les analyseurs de risques</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="1116"><b ixia_locid="1118" translate="no">INVALID_CREDENCIAL</b></entry>
+												<entry ixia_locid="1120">Problème de paramétrage du
+												contrat d’analyse de risques.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1122"><b ixia_locid="1124" translate="no">COMUNICATION_PROBLEM</b></entry>
+												<entry ixia_locid="1126">Impossible de communiquer
+												avec l’analyseur de risques.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1128"><b ixia_locid="1130" translate="no">DATA_PROCESSING_PROBLEM</b></entry>
+												<entry ixia_locid="1132">Problème lors du traitement
+												de l’envoi ou de la réponse d’analyse de
+												risques.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1134"><b ixia_locid="1136" translate="no">MISSING_MANDATORY_ORDER_INFO</b></entry>
+												<entry ixia_locid="1138">
+												<p ixia_locid="1177">Des données relatives à la
+												commande sont manquantes.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1140"><b ixia_locid="1142" translate="no">MISSING_MANDATORY_SHIPPING_INFO
+												</b></entry>
+												<entry ixia_locid="1144">
+												<p ixia_locid="1178">Des données relatives à la
+												livraison sont manquantes.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1146"><b ixia_locid="1148" translate="no">MISSING_MANDATORY_SHIPPING_ADDRESS_INFO</b></entry>
+												<entry ixia_locid="1150">
+												<p ixia_locid="1179">Des données relatives à
+												l’adresse de livraison sont manquantes.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1152"><b ixia_locid="1154" translate="no">MISSING_MANDATORY_BILLING_INFO</b></entry>
+												<entry ixia_locid="1156">Des données relatives à la
+												facturation sont manquantes. </entry>
+											</row>
+											<row>
+												<entry ixia_locid="1158">
+												<p ixia_locid="1160"><b ixia_locid="1162" translate="no">MISSING_MANDATORY_BILLING_ADDRESS_INFO</b></p>
+												</entry>
+												<entry ixia_locid="1164">Des données relatives à
+												l’adresse de facturation sont manquantes</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1166"><b ixia_locid="1168" translate="no">MISSING_MANDATORY_CARD_INFO</b></entry>
+												<entry ixia_locid="1170">
+												<p ixia_locid="1180">Des données concernant le
+												moyen de paiement sont manquantes.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1172"><b ixia_locid="1174" translate="no">MISSING_MANDATORY_CUSTOMER_INFO</b></entry>
+												<entry ixia_locid="1176">
+												<p ixia_locid="1181">Des données concernant
+												l’acheteur sont manquantes.</p>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table colsep="1" frame="all" id="table_q2l_5lf_dq" rowsep="1">
+									<title ixia_locid="240">Valeurs associées à <ph ixia_locid="357" translate="no">vads_risk_analyzis_result -
+											ClearSale</ph></title>
+									<tgroup cols="3">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="4.25*"/>
+										<colspec colname="newCol3" colnum="3" colwidth="5.89*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="242" nameend="newCol3" namest="c1">ClearSale</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="244"><b ixia_locid="246" translate="no">APA</b></entry>
+												<entry ixia_locid="248"><b ixia_locid="250" translate="no">Automatically approved</b></entry>
+												<entry ixia_locid="252">La transaction est
+												automatiquement approuvée selon les paramètres
+												définis.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="254"><b ixia_locid="256" translate="no">APM</b></entry>
+												<entry ixia_locid="258"><b ixia_locid="260" translate="no">Manually approved - order manually
+												approved by analyst's decision</b></entry>
+												<entry ixia_locid="262">La transaction est
+												manuellement approuvée par un analyste. </entry>
+											</row>
+											<row>
+												<entry ixia_locid="264"><b ixia_locid="266" translate="no">RPM</b></entry>
+												<entry ixia_locid="268"><b ixia_locid="270" translate="no">Reproved with no
+												suspect</b></entry>
+												<entry ixia_locid="272">La commande est refusée en
+												raison du manque d'informations sur l'acheteur en
+												accord avec la politique appliquée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="274"><b ixia_locid="276" translate="no">AMA</b></entry>
+												<entry ixia_locid="278"><b ixia_locid="280" translate="no">Waiting for manual analysis - order
+												is in a queue waiting for analysis</b></entry>
+												<entry ixia_locid="282">En attente d'analyse
+												manuelle. La commande est dans une file d'attente
+												pour analyse.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="284"><b ixia_locid="286" translate="no">ERR</b></entry>
+												<entry ixia_locid="288"><b ixia_locid="290" translate="no">Error</b></entry>
+												<entry ixia_locid="292">Erreur</entry>
+											</row>
+											<row>
+												<entry ixia_locid="294"><b ixia_locid="296" translate="no">NVO</b></entry>
+												<entry ixia_locid="298"><b ixia_locid="300" translate="no">New order - order waiting for
+												score</b></entry>
+												<entry ixia_locid="302">Nouvelle commande. En
+												attente de traitement et de
+												classification.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="304"><b ixia_locid="306" translate="no">SUS</b></entry>
+												<entry ixia_locid="308"><b ixia_locid="310" translate="no">Suspended order - order suspended
+												by fraud suspicion</b></entry>
+												<entry ixia_locid="312">Commande suspendue
+												manuellement. La commande est suspendue pour
+												suspicion de fraude.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="314"><b ixia_locid="316" translate="no">CAN</b></entry>
+												<entry ixia_locid="318">
+												<p ixia_locid="320"><b ixia_locid="322" translate="no">Canceled - order canceled by
+												user</b></p>
+												</entry>
+												<entry ixia_locid="324">Commande annulée. La
+												commande est annulée par l'acheteur.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="326"><b ixia_locid="328" translate="no">FRD</b></entry>
+												<entry ixia_locid="330"><b ixia_locid="332" translate="no">Order confirmed as a
+												fraud</b></entry>
+												<entry ixia_locid="334">Fraude confirmée avec
+												l'opérateur de la carte de crédit ou du titulaire
+												de la carte.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="336"><b ixia_locid="338" translate="no">RPA</b></entry>
+												<entry ixia_locid="340"><b ixia_locid="342">Automatically reproved based on parameters within
+												risk analyzer</b></entry>
+												<entry ixia_locid="344">Commande refusée
+												automatiquement. La commande est refusée en
+												application des paramètres de l'analyseur de
+												fraude externe. </entry>
+											</row>
+											<row>
+												<entry ixia_locid="346"><b ixia_locid="348">RPP</b></entry>
+												<entry ixia_locid="350"><b ixia_locid="352" translate="no">Automatically reproved based
+												customer or ClearSale policy</b></entry>
+												<entry ixia_locid="354">Commande refusée
+												automatiquement. La commande est refusée en
+												application de la politique client ou
+												ClearSale.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table colsep="1" frame="all" id="table_hdw_5lf_dq" rowsep="1">
+									<title ixia_locid="1109">Valeurs associées à <ph ixia_locid="1111" translate="no">vads_risk_analyzis_result - Cybersource</ph></title>
+									<tgroup cols="3">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="4.08*"/>
+										<colspec colname="newCol3" colnum="3" colwidth="5.61*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="1113" nameend="newCol3" namest="c1">CyberSource</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="245"><b ixia_locid="247" translate="no">100</b></entry>
+												<entry ixia_locid="1115"><b ixia_locid="1117" translate="no">SUCCESS</b></entry>
+												<entry ixia_locid="1119">La transaction s'est
+												effectuée avec succès.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="255"><b ixia_locid="257" translate="no">101</b></entry>
+												<entry ixia_locid="1121"><b ixia_locid="1123" translate="no">MISSING_FIELDS</b></entry>
+												<entry ixia_locid="1125">La transaction est refusée.
+												Un ou plusieurs champs sont manquants. </entry>
+											</row>
+											<row>
+												<entry ixia_locid="265"><b ixia_locid="267" translate="no">102</b></entry>
+												<entry ixia_locid="1127"><b ixia_locid="1129" translate="no">INVALID_FIELDS</b></entry>
+												<entry ixia_locid="1131">La transaction est refusée.
+												Un ou plusieurs champs contient des données
+												invalides.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="275"><b ixia_locid="277" translate="no">150</b></entry>
+												<entry ixia_locid="1133"><b ixia_locid="1135" translate="no">ERROR_GENERAL_SYSTEM_FAILURE</b></entry>
+												<entry ixia_locid="1137">Erreur.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="285"><b ixia_locid="287" translate="no">151</b></entry>
+												<entry ixia_locid="1139"><b ixia_locid="1141" translate="no">SERVER_TIME_OUT</b></entry>
+												<entry ixia_locid="1143">Erreur. La requête a été
+												reçue mais le délai a été dépassé. Cette erreur
+												n'inclue pas les dépassements de délais entre le
+												client et le serveur. </entry>
+											</row>
+											<row>
+												<entry ixia_locid="295"><b ixia_locid="297" translate="no">152</b></entry>
+												<entry ixia_locid="1145"><b ixia_locid="1147" translate="no">SERVICE_TIME_OUT</b></entry>
+												<entry ixia_locid="1149">Erreur. La requête a été
+												reçue mais un service n'a pas terminé à
+												temps.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="305"><b ixia_locid="307" translate="no">202</b></entry>
+												<entry ixia_locid="1151"><b ixia_locid="1153" translate="no">CARD_EXPIRED</b></entry>
+												<entry ixia_locid="1155">Refusée. Carte expirée.
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="315"><b ixia_locid="317" translate="no">231</b></entry>
+												<entry ixia_locid="1157">
+												<p ixia_locid="1159"><b ixia_locid="1161" translate="no">ACCOUNT_NUMBER_INVALID</b></p>
+												</entry>
+												<entry ixia_locid="1163">Refusée. Numéro de compte
+												invalide.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="327"><b ixia_locid="329" translate="no">234</b></entry>
+												<entry ixia_locid="1165"><b ixia_locid="1167" translate="no">ACCOUNT_PROBLEM</b></entry>
+												<entry ixia_locid="1169">Refusé. Un problème est
+												survenu avec la configuration CyberSource du
+												marchand.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="337"><b ixia_locid="339" translate="no">400</b></entry>
+												<entry ixia_locid="1171"><b ixia_locid="1173" translate="no">FRAUD_SCORE_TOO_HIGH</b></entry>
+												<entry ixia_locid="1175">Refusée. Le score de la
+												fraude dépasse le seuil de tolérance.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1101"><b ixia_locid="349" translate="no">480</b></entry>
+												<entry ixia_locid="1103"><b ixia_locid="353" translate="no">SUCCESS_TO_REVIEW</b></entry>
+												<entry ixia_locid="1105">La commande est marquée
+												afin d'être examinée par le Decision
+												Manager.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1102"><b ixia_locid="1107">481</b></entry>
+												<entry ixia_locid="1104"><b ixia_locid="1108">SUCCESS_TO_REJECT</b></entry>
+												<entry ixia_locid="1106">La commande a été rejetée
+												par le Decision Manager.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408627133271" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_payment_src</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Permet de définir l’origine du paiement.</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="32">Format</b></entry>
+						<entry ixia_locid="33" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="34"><b ixia_locid="35">Code erreur</b></entry>
+						<entry ixia_locid="36">60</entry>
+					</row>
+					<row>
+						<entry ixia_locid="37"><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="38">
+							<p ixia_locid="39">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="5.9*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="6">Valeur</entry>
+												<entry align="center" ixia_locid="7">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8" translate="no">EC</entry>
+												<entry ixia_locid="9">E-commerce : paiement réalisé
+												depuis la page de paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10" translate="no">MOTO</entry>
+												<entry ixia_locid="11"><ph ixia_locid="43" translate="no">MAIL OR TELEPHONE ORDER</ph> :
+												paiement effectué par un opérateur suite à une
+												commande par téléphone ou e-mail.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="14" translate="no">CC</entry>
+												<entry ixia_locid="15"><ph ixia_locid="44" translate="no">Call center</ph> : paiement
+												effectué via un centre d’appel.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="18" translate="no">OTHER</entry>
+												<entry ixia_locid="30">Autre : paiement réalisé
+												depuis une autre source comme le Back Office
+												exemple.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="40"><b ixia_locid="41">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

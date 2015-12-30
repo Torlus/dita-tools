@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1408545933061" xml:lang="fr-fr">
+	<title ixia_locid="1">Regénérer le certificat de production</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">En cas de perte ou de corruption du
+			certificat de production, le marchand a la possibilité de générer un nouveau certificat
+			depuis son <ph ixia_locid="12" translate="no">Back Office</ph>. Pour cela:</context>
+		<steps>
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="5">
+				<cmd ixia_locid="6">Dans le <ph ixia_locid="13" translate="no">Back Office</ph>, sélectionnez <b ixia_locid="7">Paramétrage &gt; Boutique &gt; </b>onglet <b ixia_locid="8">Certificats.</b></cmd>
+			</step>
+			<step id="step_N1002F_N1001C_N10011_N10001" ixia_locid="9">
+				<cmd ixia_locid="10">Cliquez sur <b ixia_locid="11">Générer à nouveau</b>.</cmd>
+			</step>
+		</steps>
+	</taskbody>
+</task>

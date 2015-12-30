@@ -33,6 +33,7 @@ Pour dialoguer avec la plateforme de paiement, le marchand a besoin de deux info
  
 <p>
  
+
 <ul>
  
  <li>
@@ -101,6 +102,7 @@ Deux types de certificat sont mis à disposition :
  
 <p>
  
+
 <ul>
  
  <li>
@@ -133,6 +135,7 @@ Le choix du mode
  
 <p>
  
+
 <ul>
  
  <li>
@@ -179,6 +182,7 @@ La gestion du dialogue vers le site marchand est réalisée grâce à deux types
  
 <p>
  
+
 <ul>
  
  <li>
@@ -229,6 +233,7 @@ La plateforme est capable de contacter le site marchand quel que soit le protoco
  
 <p>
  
+
 <ul>
  
  <li>
@@ -432,6 +437,7 @@ SHA1( &quot; a &quot;) = 86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
 Diagramme mécanisme de sécurité
  </p>
 <img src="/docs_img/tla1437748696912.image" alt="DiagrammeSignature"/> 
+
  <ol>
  
   <li>
@@ -584,6 +590,7 @@ Les fichiers de configuration peuvent contenir :
  
 <p>
  
+
 <ul>
  
  <li>
@@ -620,6 +627,7 @@ Il incombe au marchand de s&#x27;assurer :
  
 <p>
  
+
 <ul>
  
  <li>

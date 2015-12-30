@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="emm1405088825989" xml:lang="fr-fr">
+	<title ixia_locid="1">Calculer la signature</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">La signature se calcule selon la même
+			logique utilisée lors de la création du formulaire de paiement. <p ixia_locid="20"/>Tous
+			les champs reçus doivent être pris en compte. <p ixia_locid="21"/>Pour calculer la
+				signature:<p ixia_locid="22"/></context>
+		<steps>
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="9">
+				<cmd ixia_locid="11">Prenez en considération la totalité des champs dont le nom
+					commence par <b ixia_locid="13" translate="no">vads_</b>.</cmd>
+			</step>
+			<step id="step_N10034_N10022_N10013_N10001" ixia_locid="10">
+				<cmd ixia_locid="12">Triez ces champs par ordre alphabétique.</cmd>
+			</step>
+			<step conref="emm1405088305497.xml#emm1405088305497/step_N1005C_N10043_N10013_N10001" id="step_N1003F_N10022_N10013_N10001" ixia_locid="14">
+				<cmd ixia_locid="15"/>
+			</step>
+			<step conref="emm1405088305497.xml#emm1405088305497/step_N1006B_N10043_N10013_N10001" id="step_N10048_N10022_N10013_N10001" ixia_locid="16">
+				<cmd ixia_locid="17"/>
+			</step>
+			<step conref="emm1405088305497.xml#emm1405088305497/step_N10076_N10043_N10013_N10001" id="step_N10051_N10022_N10013_N10001" ixia_locid="18">
+				<cmd ixia_locid="19"/>
+			</step>
+		</steps>
+	</taskbody>
+</task><?oxy_options track_changes="on"?>

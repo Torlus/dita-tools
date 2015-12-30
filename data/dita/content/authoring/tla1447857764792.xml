@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<reference id="tla1447857764792" xml:lang="fr-fr">
+	<title ixia_locid="41">vads_change_rate</title>
+	<shortdesc ixia_locid="42"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="43">Champ retourné dans la réponse.</p>
+							<p ixia_locid="40">Taux de change utilisé pour calculer le montant réél
+								du paiement (lors d'un paiement multi-devise).</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="8" translate="no">string</entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="31">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

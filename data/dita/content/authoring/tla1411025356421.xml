@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411025356421" xml:lang="fr-fr">
+	<title ixia_locid="43" translate="no">vads_subscription</title>
+	<shortdesc ixia_locid="44"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">Paramètre facultatif utilisé dans le cas de la
+							création d'un abonnement. Il désigne l'identifiant de l'abonnement à
+								créer.<p ixia_locid="45">Deux options sont possibles :  </p><p ixia_locid="46">
+								<ul id="ul_qhq_gtv_lp">
+									<li ixia_locid="47">Soit la gestion de ces identifiants est déléguée à la
+											plateforme.<p ixia_locid="48">Dans ce cas, ce paramètre ne doit pas être
+											renseigné.</p><p ixia_locid="49">En cas de succès de la création de
+											l’abonnement, la réponse contiendra la valeur générée
+											par la plateforme.   </p></li>
+									<li ixia_locid="50">
+										<p ixia_locid="51">Soit la gestion de ces identifiants est faite par le site
+											marchand.</p>
+										<p ixia_locid="52">Dans ce cas, ce paramètre doit être renseigné avec la
+											valeur de l’identifiant d’abonnement souhaité.
+												<b ixia_locid="53">Attention, il incombe au site marchand de
+												s’assurer de l’unicité des identifiants
+												d’abonnement</b>. Toute demande de souscription à un
+											abonnement contenant un identifiant d’abonnement déjà
+											existant, sera rejetée, et provoquera l’affichage d’un
+											message d’erreur.</p>
+									</li>
+								</ul>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="37">Format</b></entry>
+						<entry ixia_locid="34" translate="no">ans..50</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="38">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">63</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

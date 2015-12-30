@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406043754066" xml:lang="fr-fr">
+	<title ixia_locid="1">Créer un paiement en plusieurs fois</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="647">Ce mode de paiement permet au marchand de proposer une facilité de paiement à
+				l’acheteur. </p>
+			<p ixia_locid="95">Le formulaire de paiement définit le nombre d’échéances et
+				l’intervalle qui les sépare. </p>
+			<p ixia_locid="624">La première échéance fonctionne de la même manière qu'un paiement
+				comptant immédiat.</p>
+			<p ixia_locid="626">La ou les échéance(s) suivante(s) s'apparente(nt) à un ou des paiement(s) comptant(s)
+				différé(s).</p>
+			<p ixia_locid="627"><u ixia_locid="628">Rappel</u> : </p>
+			<p ixia_locid="629">Des règles de notifications doivent être activées selon l'échéance. Référez-vous au
+				chapitre <xref href="emm1405085350214.xml" ixia_locid="630"><b ixia_locid="631">Paramétrer les
+					notifications</b></xref> pour plus de détails.</p>
+			<p ixia_locid="632"><u ixia_locid="633">Précisions</u> :</p>
+			<p ixia_locid="5" location="PayZen PayZen_Germany PayZen_Brazil Innopay" platform="PayZen Innopay">Le jour du paiement, le marchand n’est pas crédité de la totalité du montant et
+				la garantie de paiement ne peut s’appliquer sur les échéances futures.</p>
+			<p ixia_locid="634" location="Systempay" platform="Systempay">Le jour du paiement, le marchand n’est pas crédité de la totalité du montant et le
+				transfert de responsabilité ne peut s’appliquer sur les échéances futures.</p>
+			<p ixia_locid="125">La date de la dernière échéance ne peut être supérieure à 1 an par rapport à la date
+				de soumission du formulaire. Dans le cas contraire, un message d’erreur est affiché
+				et le formulaire rejeté.</p>
+		</context>
+		<steps>
+			<step id="step_N10028_N10025_N10011_N10001" ixia_locid="7">
+				<cmd ixia_locid="8">Utilisez l'ensemble des champs présents ci-dessous pour construire votre
+					formulaire de paiement.</cmd>
+				<info ixia_locid="9">
+					<table colsep="1" frame="all" id="table_al1_qgs_v4" rowsep="1">
+						<title ixia_locid="10">Liste des champs - Paiement en plusieurs fois</title>
+						<tgroup cols="3">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="2.56*"/>
+							<colspec colname="c3" colnum="3" colwidth="1.4*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="11">Nom du champ</entry>
+									<entry ixia_locid="12">Description</entry>
+									<entry ixia_locid="13">Valeur</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="14" translate="no">vads_site_id</entry>
+									<entry ixia_locid="15">Identifiant de la boutique</entry>
+									<entry ixia_locid="16">Ex : 12345678</entry>
+								</row>
+								<row>
+									<entry ixia_locid="17" translate="no">vads_ctx_mode</entry>
+									<entry ixia_locid="18">Mode de fonctionnement</entry>
+									<entry ixia_locid="19"><b ixia_locid="20" translate="no">TEST</b> ou <b ixia_locid="21">PRODUCTION</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="22" translate="no">vads_trans_id</entry>
+									<entry ixia_locid="23">Numéro de la transaction </entry>
+									<entry ixia_locid="24">Ex : 123456</entry>
+								</row>
+								<row>
+									<entry ixia_locid="25" translate="no">vads_trans_date</entry>
+									<entry ixia_locid="26">Date et heure UTC du formulaire de
+										paiement</entry>
+									<entry ixia_locid="27">Ex : 20140129130025</entry>
+								</row>
+								<row>
+									<entry ixia_locid="28" translate="no">vads_amount</entry>
+									<entry ixia_locid="29">Montant du paiement  <ph ixia_locid="126" location="PayZen PayZen_Germany Systempay Innopay PayZen_Brazil" platform="PayZen Systempay Innopay">(dans sa plus petite
+											unité monétaire)</ph></entry>
+									<entry ixia_locid="30">Ex : 3000 <ph ixia_locid="143" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">pour 30 euros</ph><ph ixia_locid="144" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="145" location="Innopay" platform="Innopay"> pour 30 CHF</ph><ph ixia_locid="635" location="PayZen_Brazil">pour 30 BRL</ph></entry>
+								</row>
+								<row>
+									<entry ixia_locid="31" translate="no">vads_currency</entry>
+									<entry ixia_locid="32">Code de la devise utilisée pour le
+										paiement</entry>
+									<entry ixia_locid="33">Ex : <ph ixia_locid="146" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978 pour euro</ph><ph ixia_locid="147" location="OSB" platform="OSB">953 pour
+											le XPF</ph><ph ixia_locid="148" location="Innopay" platform="Innopay">756 pour le Franc suisse</ph><ph ixia_locid="636" location="PayZen_Brazil">986</ph></entry>
+								</row>
+								<row>
+									<entry ixia_locid="34" translate="no">vads_action_mode</entry>
+									<entry ixia_locid="35">Mode d’acquisition des données de la
+										carte</entry>
+									<entry ixia_locid="36"><b ixia_locid="37" translate="no">INTERACTIVE</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="38" translate="no">vads_page_action</entry>
+									<entry ixia_locid="39">Action à réaliser</entry>
+									<entry ixia_locid="40"><b ixia_locid="41" translate="no">PAYMENT</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="42" translate="no">vads_version</entry>
+									<entry ixia_locid="43">Version du protocole d’échange </entry>
+									<entry ixia_locid="44"><b ixia_locid="45" translate="no">V2</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="46" translate="no">vads_payment_config</entry>
+									<entry ixia_locid="47">Type de paiement</entry>
+									<entry ixia_locid="48">
+										<p ixia_locid="49">voir étape 2.</p>
+									</entry>
+								</row>
+								<row>
+									<entry ixia_locid="128" translate="no">vads_capture_delay</entry>
+									<entry ixia_locid="130">Délai avant remise en banque</entry>
+									<entry ixia_locid="132"><b ixia_locid="55" translate="no">0 </b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="129" translate="no">vads_validation_mode</entry>
+									<entry ixia_locid="131">Mode de validation</entry>
+									<entry ixia_locid="133"><b ixia_locid="134">0</b> (automatique) ou <b ixia_locid="135">1</b>
+										(manuel)</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N10135_N10025_N10011_N10001" ixia_locid="56">
+				<cmd ixia_locid="57">Valorisez le champ <b ixia_locid="58" translate="no">vads_payment_config</b> en respectant
+					la syntaxe suivante:</cmd>
+				<info ixia_locid="97">
+					<ul id="ul_zql_5hx_zp">
+						<li ixia_locid="98"><u ixia_locid="99">Montants et dates d'échéances fixes</u> :<p ixia_locid="100"><b ixia_locid="101">MULTI:first=1000;count=3;
+									period=30</b> où :</p><itemgroup ixia_locid="102"><ph ixia_locid="606" translate="no">"first"</ph>
+								correspond au montant (dans la plus petite unité de la devise) du
+								premier paiement réalisé le jour du paiement,</itemgroup><itemgroup ixia_locid="648"><ph ixia_locid="607" translate="no">"count"</ph> représente le nombre total
+								d'échéances,</itemgroup><itemgroup ixia_locid="104"><ph ixia_locid="608" translate="no">"period"</ph>
+								détermine l'intervalle entre chaque échéance.</itemgroup></li>
+						<li ixia_locid="637"><u ixia_locid="106">Montants et dates d'échéance personnalisés</u> :<p ixia_locid="107"><b ixia_locid="108">MULTI_EXT:date1=montant1;date2=montant2;date3=montant3</b> où
+								:</p><itemgroup ixia_locid="109">date1=montant1 définit la date et
+								le montant du premier versement.</itemgroup><itemgroup ixia_locid="110">Les montants sont exprimés dans la plus petite
+								unité de la devise. La somme de tous les montants doit être égale à
+								la valeur du champ <b ixia_locid="638" translate="no">vads_amount</b>.</itemgroup><itemgroup ixia_locid="111">Les dates sont exprimées au format YYYYMMDD.
+							</itemgroup></li>
+					</ul>
+				</info>
+			</step>
+			<step id="step_N10145_N10025_N10011_N10001" ixia_locid="136">
+				<cmd ixia_locid="138">Valorisez le champ <b ixia_locid="649" translate="no">vads_capture_delay</b> à <b ixia_locid="63">0</b>. Le 1er paiement sera
+					remis en banque le jour même.</cmd>
+			</step>
+			<step id="step_N1021E_N10037_N10013_N10001" ixia_locid="137">
+				<cmd ixia_locid="139">Valorisez le champ <b ixia_locid="124" translate="no">vads_validation_mode</b> à <b ixia_locid="127" translate="no">0</b> pour une
+					validation automatique (le paiement sera remis de manière automatique à la
+					banque) ou à <b ixia_locid="140">1</b> pour une validation manuelle (opération manuelle effectuée
+					depuis le Back Office).</cmd>
+				<info ixia_locid="141">Le mode de validation s'applique à toutes les échéances.</info>
+			</step>
+			<step id="step_N101CA_N10026_N10013_N10001" ixia_locid="650" location="PayZen PayZen_Germany Systempay Innopay" platform="PayZen Systempay Innopay">
+				<cmd ixia_locid="651">Valorisez le champ <b ixia_locid="652" translate="no">vads_currency</b> avec le code de la devise souhaitée en utilisant <xref href="tla1406044948454.xml" ixia_locid="84">le tableau des devises</xref>
+					(exemple: <ph ixia_locid="653" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978 pour l'euro;</ph><ph ixia_locid="654" location="Innopay" platform="Innopay">756 pour le Franc suisse;</ph><ph ixia_locid="655" location="PayZen_Brazil">986</ph> 840 pour le dollar
+					américain).</cmd>
+			</step>
+			<step id="step_N101CA_N10026_N10013_N10002" ixia_locid="656" location="OSB" platform="OSB">
+				<cmd ixia_locid="657">Valorisez le champ <b ixia_locid="658" translate="no">vads_currency</b> avec le code 953.</cmd>
+			</step>
+			<step id="step_N1017D_N10025_N10011_N10001" ixia_locid="69">
+				<cmd ixia_locid="70">Ajoutez les champs optionnels en fonction de vos besoins (voir chapitre <b ixia_locid="67"><xref href="tla1406101932153.xml" ixia_locid="87">Utiliser
+							des fonctions complémentaires</xref></b>).</cmd>
+			</step>
+			<step id="step_N1018A_N10025_N10011_N10001" ixia_locid="659">
+				<cmd ixia_locid="73">Calculez la valeur du champ <b ixia_locid="74" translate="no">signature</b> en utilisant
+					l’ensemble des champs de votre formulaire, dont le nom commence par<b ixia_locid="75" translate="no"> vads_</b><i ixia_locid="76"> (</i>voir chapitre <b ixia_locid="90"><xref href="emm1405088305497.xml" ixia_locid="91">Calculer
+							la signature</xref></b>)</cmd>
+			</step>
+		</steps>
+		<result id="result_N1019D_N10011_N10001" ixia_locid="78">
+			<p ixia_locid="79"><u ixia_locid="88">Exemple de formulaire de paiement en plusieurs fois
+					(Montants et dates d'échéances fixes):
+				</u><codeblock ixia_locid="92">&lt;form method="POST" action="<xref ixia_locid="93" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="MULTI:first=1000;count=3;period=30"/&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140129180150" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="180150" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value= "180b93e173b16d90b47099482ce9ed05325b33bb"/&gt;
+&lt;input type="submit" name="payer" value="Payer" /&gt;
+&lt;/form&gt;</codeblock></p>
+			<p ixia_locid="660"/>
+			<p ixia_locid="661"/>		
+	
+				<p ixia_locid="662"><u ixia_locid="663">Exemple de formulaire de paiement en plusieurs fois
+					(Montants et dates d'échéances personnalisés)
+				:</u><codeblock ixia_locid="664">&lt;form method="POST" action="<xref ixia_locid="113" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="643" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="644" location="OSB" platform="OSB">953</ph><ph ixia_locid="645" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="646" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value=" 
+MULTI_EXT:20140201=1000;20140301=1000;20140401=1000" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140129130025" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="130025" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+			</result>
+		</taskbody>	
+</task>

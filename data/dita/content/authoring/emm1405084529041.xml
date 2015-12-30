@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084529041" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer les données sensibles</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Des règles strictes régissent les transactions de paiement en ligne
+			(Certification PCI-DSS).</p>
+		<p ixia_locid="4"/>
+		<p ixia_locid="5">En tant que marchand, vous devez vous assurer de ne jamais retranscrire en clair des
+			données qui pourraient s’apparenter à un numéro de carte bancaire. Votre formulaire
+			serait rejeté (code 999 - Sensitive data detected).</p>
+		<p ixia_locid="6"/>
+		<p ixia_locid="7">Evitez notamment les numéros de commandes de longueur comprise entre 13 et 16 caractères
+			numériques et commençant par 3, 4 ou 5.</p>
+	</conbody>
+</concept>

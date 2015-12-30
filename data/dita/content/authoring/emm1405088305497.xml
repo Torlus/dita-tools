@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="emm1405088305497" xml:lang="fr-fr">
+	<title ixia_locid="1">Calculer la signature</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4">Afin de pouvoir calculer la signature vous devez être en possession de la
+				totalité des champs dont le nom commence par <b ixia_locid="63" translate="no">vads_</b> et du <b ixia_locid="88">certificat</b> (la valeur du certificat
+				permet de calculer la signature numérique.<ph doc-type="Form_Light Identifiant_Abonnement integrationLight" ixia_locid="146">
+					Cette valeur est disponible dans votre Back Office depuis le menu <b ixia_locid="143">Paramétrage</b> &gt; <b ixia_locid="144">Boutique</b> &gt;
+					onglet <b ixia_locid="145">Certificats</b>.</ph>).</p>
+			<p ixia_locid="14">Pour calculer la signature :</p>
+		</context>
+		<steps>
+			<step id="step_N10051_N10043_N10013_N10001" ixia_locid="16">
+				<cmd ixia_locid="21">Triez les champs dont le nom commence par <b ixia_locid="64" translate="no">vads_</b> par ordre alphabétique.</cmd>
+			</step>
+			<step id="step_N1005C_N10043_N10013_N10001" ixia_locid="84">
+				<cmd ixia_locid="86">Assurez-vous que tous les champs soient encodés en UTF-8.</cmd>
+			</step>
+			<step id="step_N10063_N10044_N10013_N10001" ixia_locid="85">
+				<cmd ixia_locid="87">Concaténez les valeurs de ces champs en les séparant avec le
+					caractère "<b ixia_locid="79" translate="no">+</b>".</cmd>
+			</step>
+			<step id="step_N1006B_N10043_N10013_N10001" ixia_locid="18">
+				<cmd ixia_locid="23">Concaténez le résultat avec le certificat de test ou de production, en les
+					séparant avec le caractère "<b ixia_locid="80" translate="no">+</b>".</cmd>
+			</step>
+			<step id="step_N10076_N10043_N10013_N10001" ixia_locid="19">
+				<cmd ixia_locid="24">Appliquez l’algorithme SHA-1 pour obtenir la valeur de la signature.</cmd>
+			</step>
+		</steps>
+		<result id="result_N1007E_N10013_N10001" ixia_locid="26">
+			<p ixia_locid="27"><u ixia_locid="28">Exemple de paramètres envoyés à la plateforme de
+					paiement</u>:<codeblock ixia_locid="29" translate="no">&lt;form method="POST" action="<xref ixia_locid="78" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="1524" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=value=<ph ixia_locid="105" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="106" location="OSB" platform="OSB">953</ph><ph ixia_locid="113" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="123" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20090501193530" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="<ph ixia_locid="142">654321</ph>" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="606b369759fac4f0864144c803c73676cbe470ff"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+		<postreq id="postreq_N1008E_N10013_N10001" ixia_locid="30">
+			<p ixia_locid="31">Cet exemple de formulaire s'analyse de la manière suivante:</p>
+			<p ixia_locid="32">
+				<ol id="ol_lz5_t5z_v4">
+					<li ixia_locid="35">On trie par ordre <b ixia_locid="36"><u ixia_locid="37">alphabétique</u></b> les champs dont le nom commence par <b ixia_locid="38" translate="no">vads_</b> : <ul id="ul_rd5_zwr_hp" translate="no">
+							<li ixia_locid="66">vads_action_mode</li>
+							<li ixia_locid="67">vads_amount</li>
+							<li ixia_locid="68">vads_ctx_mode</li>
+							<li ixia_locid="69">vads_currency</li>
+							<li ixia_locid="70">vads_page_action</li>
+							<li ixia_locid="71">vads_payment_config</li>
+							<li ixia_locid="72">vads_site_id</li>
+							<li ixia_locid="73">vads_trans_date</li>
+							<li ixia_locid="74">vads_trans_id</li>
+							<li ixia_locid="75">vads_version</li>
+						</ul></li>
+					<li ixia_locid="49">On concatène la valeur de ces champs avec le caractère "<b ixia_locid="50" translate="no">+</b>" : <p ixia_locid="76"><b ixia_locid="77" translate="no">INTERACTIVE+1524+TEST+<ph ixia_locid="132" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978+</ph><ph ixia_locid="139" location="OSB" platform="OSB">953+</ph><ph ixia_locid="140" location="Innopay" platform="Innopay">756+</ph>PAYMENT+SINGLE+12345678+20090501193530+654321+V2</b></p></li>
+					<li ixia_locid="52">On ajoute la valeur du certificat de test à la fin de la chaîne en la
+						séparant par le caractère "<b ixia_locid="54" translate="no">+</b>"). Dans
+						cet exemple, le certificat de Test est <b ixia_locid="81" translate="no">1122334455667788</b> :<p ixia_locid="82"><b ixia_locid="57" translate="no">INTERACTIVE+1524+TEST+<ph ixia_locid="134" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978+</ph><ph ixia_locid="135" location="OSB" platform="OSB">953+</ph><ph ixia_locid="141" location="Innopay" platform="Innopay">756+</ph><ph ixia_locid="526" location="PayZen_Brazil">986+</ph>PAYMENT+SINGLE+12345678+</b><b ixia_locid="58" translate="no">20090501193530+654321+V2+1122334455667788</b></p></li>
+					<li ixia_locid="55" outputclass="break">On applique l’algorithme SHA-1 à la
+						chaîne obtenue. <p ixia_locid="83">Le résultat à transmettre dans le champ
+							signature est : <b ixia_locid="61" translate="no">606b369759fac4f0864144c803c73676cbe470ff</b>.</p></li>
+				</ol>
+			</p>
+		</postreq>
+	</taskbody>
+
+</task>

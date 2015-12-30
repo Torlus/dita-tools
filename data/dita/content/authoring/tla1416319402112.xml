@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1416319402112" xml:lang="fr-fr">
+	<title ixia_locid="37" translate="no">vads_ext_info_donation</title>
+	<shortdesc ixia_locid="38"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="31">
+							<p ixia_locid="39">Paramètre renvoyé uniquement dans la notification instantanée (également
+								appelée IPN) en cas de don.</p>
+							<p ixia_locid="40">Montant du don exprimé dans la plus petite unité de la monnaie ou devise
+									<ph ixia_locid="45" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour
+									l'Euro)</ph><ph ixia_locid="46" location="Innopay" platform="Innopay">(le
+									centime pour le Franc suisse)</ph>.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="43" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="35"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="36">Information sur les transactions de don.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1406127047143" xml:lang="fr-fr">
+	<title ixia_locid="1" translate="no">vads_available_languages</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<section id="section_N10014_N10011_N10001" ixia_locid="3">
+		<p ixia_locid="46">
+				<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+					<tgroup align="left" cols="2">
+						<colspec colname="c1" colnum="1" colwidth="1*"/>
+						<colspec colname="c2" colnum="2" colwidth="4.29*"/>
+						<tbody>
+							<row>
+								<entry ixia_locid="48"><b ixia_locid="50">Description</b></entry>
+								<entry ixia_locid="52">
+									<p ixia_locid="54">Permet de spécifier les langues disponibles
+										sur la page de paiement sous forme de liste. </p>
+									<p ixia_locid="55">Chaque élément de la liste doit être séparé
+										par un point-virgule « ; ».</p>
+									<p ixia_locid="57">Est matérialisé par l’affichage de drapeaux
+										sur la page de paiement . </p>
+								</entry>
+							</row>
+							<row>
+								<entry ixia_locid="58"><b ixia_locid="60">Format</b></entry>
+								<entry ixia_locid="62">langue1;langue2;langue3</entry>
+							</row>
+							<row>
+								<entry ixia_locid="64"><b ixia_locid="66">Code erreur</b></entry>
+								<entry ixia_locid="68">71</entry>
+							</row>
+							<row>
+								<entry ixia_locid="70"><p ixia_locid="81"/><b ixia_locid="72">Valeurs possibles</b></entry>
+								<entry ixia_locid="73">
+									<p ixia_locid="75">
+										<table colsep="1" frame="all" id="table_jpq_5c5_fp" rowsep="1">
+											<tgroup cols="3">
+												<colspec colname="c1" colnum="1" colwidth="1*"/>
+												<colspec colname="c2" colnum="2" colwidth="1.05*"/>
+												<colspec colname="c3" colnum="3" colwidth="1.11*"/>
+												<thead>
+												<row>
+												<entry ixia_locid="82">Langue</entry>
+												<entry ixia_locid="83">Valeur</entry>
+												<entry ixia_locid="84">Drapeau affiché par défaut</entry>
+												</row>
+												</thead>
+												<tbody>
+												<row>
+												<entry ixia_locid="85">Allemand</entry>
+													<entry ixia_locid="86" translate="no">de</entry>
+													<entry ixia_locid="87" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="88">Anglais</entry>
+													<entry ixia_locid="89" translate="no">en</entry>
+													<entry ixia_locid="90" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="91">Chinois</entry>
+													<entry ixia_locid="92" translate="no">zh</entry>
+													<entry ixia_locid="93" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="94">Espagnol</entry>
+													<entry ixia_locid="95" translate="no">es</entry>
+													<entry ixia_locid="96" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="97">Français</entry>
+													<entry ixia_locid="98" translate="no">fr</entry>
+													<entry ixia_locid="99" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="100">Italien</entry>
+													<entry ixia_locid="101" translate="no">it</entry>
+													<entry ixia_locid="102" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="103">Japonais</entry>
+													<entry ixia_locid="104" translate="no">ja</entry>
+													<entry ixia_locid="105" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="106">Néerlandais</entry>
+													<entry ixia_locid="107" translate="no">nl</entry>
+													<entry ixia_locid="108" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="109">Polonais</entry>
+													<entry ixia_locid="110" translate="no">pl</entry>
+												<entry ixia_locid="111"/>
+												</row>
+												<row>
+												<entry ixia_locid="112">Portugais</entry>
+													<entry ixia_locid="113" translate="no">pt</entry>
+													<entry ixia_locid="114" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="115">Russe</entry>
+													<entry ixia_locid="116" translate="no">ru</entry>
+													<entry ixia_locid="117" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="121">Suédois</entry>
+													<entry ixia_locid="123" translate="no">sv</entry>
+													<entry ixia_locid="125" translate="no">x</entry>
+												</row>
+												<row>
+												<entry ixia_locid="122">Turc</entry>
+												<entry ixia_locid="124" translate="no">tr</entry>
+												<entry ixia_locid="126" translate="no">x</entry>
+												</row>
+												</tbody>
+											</tgroup>
+										</table>
+									</p>
+									<p ixia_locid="76">Exemple : pour afficher les drapeaux des
+										langues français et anglais, il faut poster
+										vads_available_languages=fr ;en</p>
+								</entry>
+							</row>
+							<row>
+								<entry ixia_locid="77"><b ixia_locid="78">Catégorie</b></entry>
+								<entry ixia_locid="80">Personnalisation de la page de
+									paiement.</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</p>
+		</section>
+	</refbody>
+</reference>

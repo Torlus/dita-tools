@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406109756086" xml:lang="fr-fr">
+	<title ixia_locid="65">Définir le contrat commerçant</title>
+	<shortdesc ixia_locid="66"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="67">Le marchand peut spécifier dans son
+			formulaire de paiement la valeur du contrat commerçant à utiliser.<p ixia_locid="69">Cette fonctionnalité n'est utile que si vous possédez plusieurs contrats sur un
+				même réseau d’acceptation.  </p><p ixia_locid="70"/></context>
+		<steps>
+			<step id="step_N1003B_N10038_N10011_N10001" ixia_locid="76">
+				<cmd ixia_locid="77">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation  (voir
+					chapitre <b ixia_locid="167"><xref href="emm1405083451541.xml" ixia_locid="140">Générer un formulaire de paiement</xref></b>) pour construire votre
+					formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10044_N10038_N10011_N10001" ixia_locid="78">
+				<cmd ixia_locid="79">Utilisez le champ facultatif <b ixia_locid="141" translate="no">vads_contracts</b> pour définir le contrat
+					commençant utilisé.</cmd>
+				<info ixia_locid="163">Exemple :</info>
+				<info ixia_locid="63">
+					<table colsep="1" frame="all" id="table_css_41y_v4" rowsep="1">
+						<tgroup cols="2">
+							<colspec colname="c3" colnum="1" colwidth="1.41*"/>
+							<colspec colname="c2" colnum="2" colwidth="1.43*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="7">Valeur</entry>
+									<entry ixia_locid="6">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="144">Absent ou vide</entry>
+									<entry ixia_locid="148">Utilisation du contrat tel que défini par l'ordre de priorité dans
+										le <ph ixia_locid="162" translate="no">Back Office</ph> (Menu <b ixia_locid="152">Paramétrage</b> &gt; <b ixia_locid="153">Boutique</b> &gt; onglet <b ixia_locid="154">Contrats</b>).</entry>
+								</row>
+								<row doc-type="integration Form" location="PayZen Systempay" platform="PayZen Systempay">
+									<entry ixia_locid="169"><ph ixia_locid="99">CB=12312312 </ph></entry>
+									<entry ixia_locid="171"><ph ixia_locid="97">Réseau CB</ph>
+									</entry>
+								</row>
+								<row location="Innopay" platform="Innopay">
+									<entry ixia_locid="170">POSTFINANCE=contrat_yp</entry>
+									<entry ixia_locid="172">Réseau PostFinance</entry>
+								</row>
+								<row doc-type="integration-Allemagne integration-Bresil Form" location="PayZen_Germany PayZen_Brazil OSB Innopay" platform="Innopay OSB">
+									<entry ixia_locid="164" translate="no">VISA=1231231</entry>
+									<entry ixia_locid="150">Acquéreur Visa</entry>
+								</row>
+								<row doc-type="integration-Allemagne integration-Bresil Form" location="PayZen_Germany PayZen_Brazil Innopay" platform="PayZen Innopay">
+									<entry ixia_locid="166" translate="no">MASTERCARD=2323123</entry>
+									<entry ixia_locid="151">Acquéreur MasterCard</entry>
+								</row>
+								<row>
+									<entry ixia_locid="12" translate="no">AMEX=949400444000</entry>
+									<entry ixia_locid="11">Réseau American Express</entry>
+								</row>
+								<row doc-type="integration integration-Allemagne Form" location="PayZen PayZen_Germany">
+									<entry ixia_locid="14">PAYPAL=nom@paypal.com</entry>
+									<entry ixia_locid="13" translate="no">PayPal</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+					<p ixia_locid="80">Pour définir une liste de contrats, séparez les valeurs par
+						un point-virgule « ; ».</p>
+				</info>
+			</step>
+			<step id="step_N1006D_N10038_N10011_N10001" ixia_locid="81">
+				<cmd ixia_locid="82">Calculez la valeur du champ <b ixia_locid="83" translate="no">signature</b> en
+					utilisant l’ensemble des champs de votre formulaire, dont le nom commence par <b ixia_locid="106" translate="no">vads_</b> (voir chapitre <xref href="emm1405088305497.xml" ixia_locid="93"><b ixia_locid="84">Calculer la signature</b></xref>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N1007C_N10011_N10001" ixia_locid="85">
+			<p ixia_locid="86"><u ixia_locid="95">Exemple</u>:</p>
+			<p ixia_locid="155">Vous disposez de:</p>
+			<p ixia_locid="156">
+				<ul id="ul_kpx_mpt_1q">
+					<li ixia_locid="157">deux contrats <ph doc-type="Form integration" ixia_locid="142" location="PayZen Systempay OSB" platform="OSB PayZen Systempay">CB</ph><ph doc-type="integration-Allemagne integration-Bresil Form" ixia_locid="143" location="Innopay PayZen_Brazil PayZen_Germany" platform="PayZen Systempay OSB Innopay">VISA</ph> : 1231230 et
+						1231231</li>
+					<li ixia_locid="158">deux contrats AMEX : 949400444000 et 949400444001</li>
+				</ul>
+			</p>
+			<p ixia_locid="88">Pour spécifier le contrat à utiliser pour ces deux réseaux, <b ixia_locid="159" translate="no">vads_contracts</b> devra être valorisé de la
+				manière suivante : <ph ixia_locid="103" translate="no">vads_contracts=<ph doc-type="Form integration" ixia_locid="113" location="PayZen Systempay OSB" platform="OSB PayZen Systempay">CB</ph><ph doc-type="integration-Allemagne integration-Bresil Form" ixia_locid="114" location="PayZen_Germany PayZen_Brazil Innopay" platform="PayZen Systempay OSB Innopay">VISA</ph>=1231231;AMEX=949400444000</ph></p>
+			<p ixia_locid="90"><u ixia_locid="96">Exemple de formulaire de paiement définissant le contrat
+					commerçant
+				utilisé</u>:<codeblock ixia_locid="91">&lt;form method="POST" action="<xref ixia_locid="94" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="4000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+<b ixia_locid="108">&lt;input type="hidden" name="vads_contracts" <ph doc-type="integration Form" ixia_locid="160" location="PayZen Systempay OSB" platform="OSB PayZen Systempay">value="<ph ixia_locid="110">CB=1231231</ph>;AMEX=949400444000"</ph><ph doc-type="integration-Allemagne integration-Bresil Form" ixia_locid="161" location="PayZen_Germany Innopay PayZen_Brazil" platform="Innopay">value="<ph ixia_locid="111">VISA=1231231</ph>;AMEX=949400444000"</ph> /&gt;</b>
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140327145218" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="571381" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="7896adcaaf7336839030db9715afa12353313f42"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1406044948454" xml:lang="fr-fr">
+	<title ixia_locid="1" translate="no">vads_currency</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<section id="section_N10016_N10013_N10001" ixia_locid="34">
+			<p ixia_locid="3">
+				<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+					<tgroup align="left" cols="2">
+						<colspec colname="c1" colnum="1" colwidth="1*"/>
+						<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+						<tbody>
+							<row>
+								<entry ixia_locid="35"><b ixia_locid="37">Description</b></entry>
+								<entry ixia_locid="39"><p ixia_locid="118">Code numérique de la monnaie à utiliser pour le
+										paiement, selon la norme ISO 4217 (code numérique).</p><ph doc-type="Form integration integration-Allemagne" ixia_locid="119" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">Pour utiliser
+										une devise différente de l’euro (978), il est nécessaire de
+										demander l’activation de l’option « multi devise
+									».</ph></entry>
+							</row>
+							<row>
+								<entry ixia_locid="42"><b ixia_locid="45">Format</b></entry>
+								<entry ixia_locid="47" translate="no">n3</entry>
+							</row>
+							<row>
+								<entry ixia_locid="43"><b ixia_locid="50">Code erreur</b></entry>
+								<entry ixia_locid="48">10</entry>
+							</row>
+							<row location="PayZen PayZen_Germany PayZen_Brazil Systempay Innopay" platform="PayZen Systempay Innopay">
+								<entry ixia_locid="124"><p ixia_locid="64"/><b ixia_locid="53">Valeurs possibles</b></entry>
+								<entry id="entry_px3_tf5_fp" ixia_locid="126">
+									<p id="p_wvt_mf5_fp" ixia_locid="57">
+										<table colsep="1" frame="all" id="table_mcl_b31_2p" rowsep="1">
+											<tgroup cols="4">
+												<colspec colname="c1" colnum="1" colwidth="1.54*"/>
+												<colspec align="center" colname="newCol2" colnum="2" colwidth="1*"/>
+												<colspec colname="newCol3" colnum="3" colwidth="1.58*"/>
+												<colspec align="center" colname="c2" colnum="4" colwidth="1.09*"/>
+												<thead>
+												<row>
+												<entry ixia_locid="36">Devise</entry>
+												<entry ixia_locid="65">Codification ISO
+												4217</entry>
+												<entry ixia_locid="66">Devise</entry>
+												<entry ixia_locid="6">Codification ISO
+												4217</entry>
+												</row>
+												</thead>
+												<tbody>
+												<row>
+												<entry ixia_locid="67">Baht thailandais</entry>
+												<entry ixia_locid="70" translate="no">764</entry>
+												<entry ixia_locid="71">Moroccan Dirham</entry>
+												<entry ixia_locid="72" translate="no">504</entry>
+												</row>
+												<row>
+												<entry ixia_locid="68">Couronne danoise</entry>
+												<entry ixia_locid="75" translate="no">208</entry>
+												<entry ixia_locid="76">Nouveau dollar de
+												Taïwan</entry>
+												<entry ixia_locid="73" translate="no">901</entry>
+												</row>
+												<row>
+												<entry ixia_locid="69">Couronne islandaise</entry>
+												<entry ixia_locid="77" translate="no">352</entry>
+												<entry ixia_locid="78">Nouvelle Livre
+												turque</entry>
+												<entry ixia_locid="74" translate="no">949</entry>
+												</row>
+												<row>
+												<entry ixia_locid="9">Couronne norvégienne</entry>
+												<entry ixia_locid="79" translate="no">578</entry>
+												<entry ixia_locid="80">Kuwaiti Dinar</entry>
+												<entry ixia_locid="10" translate="no">414</entry>
+												</row>
+												<row>
+												<entry ixia_locid="11">Couronne suédoise</entry>
+												<entry ixia_locid="81" translate="no">752</entry>
+												<entry ixia_locid="82">Dinar Tunisien </entry>
+												<entry ixia_locid="12" translate="no">788</entry>
+												</row>
+												<row>
+												<entry ixia_locid="13">Couronne tchèque</entry>
+												<entry ixia_locid="83" translate="no">203</entry>
+												<entry ixia_locid="84">Peso argentin</entry>
+												<entry ixia_locid="14" translate="no">032</entry>
+												</row>
+												<row>
+												<entry ixia_locid="15">Dollar australien</entry>
+												<entry ixia_locid="85" translate="no">036</entry>
+												<entry ixia_locid="86">Peso mexicain</entry>
+												<entry ixia_locid="16" translate="no">484</entry>
+												</row>
+												<row>
+												<entry ixia_locid="87">Dollar canadien</entry>
+												<entry ixia_locid="91" translate="no">124</entry>
+												<entry ixia_locid="92">Peso philippin</entry>
+												<entry ixia_locid="93" translate="no">608</entry>
+												</row>
+												<row>
+												<entry ixia_locid="88">Dollar de Hong Kong</entry>
+												<entry ixia_locid="97" translate="no">344</entry>
+												<entry ixia_locid="98">Rand sud-africain</entry>
+												<entry ixia_locid="94" translate="no">710</entry>
+												</row>
+												<row>
+												<entry ixia_locid="89">Dollar de Singapour</entry>
+												<entry ixia_locid="99" translate="no">702</entry>
+												<entry ixia_locid="100">Real de Brésil</entry>
+												<entry ixia_locid="95" translate="no">986</entry>
+												</row>
+												<row>
+												<entry ixia_locid="90">Dollar des
+												États-Unis</entry>
+												<entry ixia_locid="101" translate="no">840</entry>
+												<entry ixia_locid="102">Renminbi yuan
+												chinois</entry>
+												<entry ixia_locid="96" translate="no">156</entry>
+												</row>
+												<row>
+												<entry ixia_locid="38">Dollar
+												néo-zélandais</entry>
+												<entry ixia_locid="103" translate="no">554</entry>
+												<entry ixia_locid="104">Ringgit malais</entry>
+												<entry ixia_locid="20" translate="no">458</entry>
+												</row>
+												<row>
+												<entry ixia_locid="46">Euro</entry>
+												<entry ixia_locid="105" translate="no">978</entry>
+												<entry ixia_locid="106">Rouble russe</entry>
+												<entry ixia_locid="22" translate="no">643</entry>
+												</row>
+												<row>
+												<entry ixia_locid="58">Forint hongrois</entry>
+												<entry ixia_locid="107" translate="no">348</entry>
+												<entry ixia_locid="108">Rupiah
+												indonésienne</entry>
+												<entry ixia_locid="24" translate="no">360</entry>
+												</row>
+												<row>
+												<entry ixia_locid="25">Franc CFP</entry>
+												<entry ixia_locid="109" translate="no">953</entry>
+												<entry ixia_locid="110">Won de Corée du
+												Sud</entry>
+												<entry ixia_locid="40" translate="no">410</entry>
+												</row>
+												<row>
+												<entry ixia_locid="52">Franc suisse</entry>
+												<entry ixia_locid="111" translate="no">756</entry>
+												<entry ixia_locid="112">Yen</entry>
+												<entry ixia_locid="54" translate="no">392</entry>
+												</row>
+												<row>
+												<entry ixia_locid="56">Indian rupee</entry>
+												<entry ixia_locid="113" translate="no">356</entry>
+												<entry ixia_locid="114">Zloty polonais</entry>
+												<entry ixia_locid="60" translate="no">985</entry>
+												</row>
+												<row>
+												<entry ixia_locid="62">Livre sterling</entry>
+												<entry ixia_locid="115" translate="no">826</entry>
+												<entry ixia_locid="116"/>
+												<entry ixia_locid="32"/>
+												</row>
+												</tbody>
+											</tgroup>
+										</table>
+									</p>
+								</entry>
+							</row>
+							<row location="OSB" platform="OSB">
+								<entry ixia_locid="125"><b ixia_locid="128">Valeur possible</b></entry>
+								<entry ixia_locid="127">
+									<p ixia_locid="129">
+										<table colsep="1" frame="all" id="table_y33_ncl_1r" rowsep="1">
+											<tgroup cols="2">
+												<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+												<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+												<thead>
+												<row>
+												<entry ixia_locid="120">Devise</entry>
+												<entry ixia_locid="121">Codification ISO
+												4217</entry>
+												</row>
+												</thead>
+												<tbody>
+												<row>
+												<entry ixia_locid="122">Franc CFP</entry>
+												<entry ixia_locid="123">953</entry>
+												</row>
+												</tbody>
+											</tgroup>
+										</table>
+									</p>
+								</entry>
+							</row>
+							<row>
+								<entry ixia_locid="61"><b ixia_locid="59">Catégorie</b></entry>
+								<entry ixia_locid="63">Informations sur la transaction.</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</p>
+		</section>
+	</refbody>
+</reference>

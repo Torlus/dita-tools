@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405089000731" xml:lang="fr-fr">
+	<title ixia_locid="1">Générer le certificat de production</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Vous pouvez générer le certificat de production depuis le menu <b ixia_locid="4">Paramétrage</b> &gt; <b ixia_locid="5">Boutique</b> &gt; Onglet <b ixia_locid="6">Certificats</b> &gt; bouton <b ixia_locid="7">Générer le certificat de
+				production</b>.</p>
+		<p ixia_locid="8">Une fois le certificat de production généré, sa valeur apparaît sous l'onglet
+				<b ixia_locid="9">Certificats</b>.</p>
+		<p ixia_locid="10">Un e-mail est envoyé à l'interlocuteur en charge du dossier (responsable
+			administratif de la société) pour lui confirmer la génération du certificat de
+			production.</p>
+	</conbody>
+</concept>

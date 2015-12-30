@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<concept doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" id="tla1426244313840" xml:lang="fr-fr">
+	<title ixia_locid="600">Notifications des différents statuts pour un paiement comptant
+		différé</title>
+	<shortdesc ixia_locid="601"/>
+	<conbody>
+		<fig doc-type="Back-Office Form Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" id="fig_N10083_N10013_N10001" ixia_locid="19" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<title ixia_locid="20">Diagramme de flux - Paiement comptant différé</title>
+			<image href="tla1437643280219.image" id="image_krn_4qc_jr" ixia_locid="21" scale="40"/>
+		</fig>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="22" payment-method="SEPA-One-Off SEPA-Recurrent">Δ : durée de validité d'autorisation.</p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="80" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<table colsep="1" frame="all" id="table_tfd_kjs_cq" rowsep="1">
+				<title ixia_locid="81">Règles de notification à activer pour un paiement comptant
+					différé</title>
+				<tgroup cols="3">
+					<colspec colname="newCol1" colnum="1" colwidth="1*"/>
+					<colspec colname="c1" colnum="2" colwidth="1.45*"/>
+					<colspec colname="c2" colnum="3" colwidth="1.1*"/>
+					<thead>
+						<row valign="middle">
+							<entry ixia_locid="82">Evénement </entry>
+							<entry ixia_locid="83">Statut notifé</entry>
+							<entry ixia_locid="84">Nom de la règle à paramétrer</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row valign="middle">
+							<entry ixia_locid="85">Abandon par l'acheteur</entry>
+							<entry ixia_locid="86">ABANDONED</entry>
+							<entry ixia_locid="87">URL de notification sur annulation</entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="88">Annulation par le marchand</entry>
+							<entry ixia_locid="89">CANCELED</entry>
+							<entry ixia_locid="90">URL de notification sur une opération en
+								provenance du <ph ixia_locid="119" translate="no">Back
+								Office</ph></entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="91">Validation par le marchand</entry>
+							<entry ixia_locid="92">WAITING_AUTHORISATION</entry>
+							<entry ixia_locid="93">URL de notification sur une opération en
+								provenance du <ph ixia_locid="120" translate="no">Back
+								Office</ph></entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="94">Réponse à la demande d'autorisation à <ph ixia_locid="602" location="PayZen_Brazil">1 BRL</ph><ph ixia_locid="596" location="PayZen Systempay PayZen_Germany" platform="PayZen Systempay">1 euro</ph><ph ixia_locid="598" location="OSB" platform="OSB">100 XPF</ph><ph ixia_locid="599" location="Innopay" platform="Innopay">1 CHF</ph></entry>
+							<entry ixia_locid="95">REFUSED, WAITING_AUTHORISATION,
+								WAITING_AUTHORISATION_TO_VALIDATE</entry>
+							<entry ixia_locid="96">URL de notification à la fin du paiement</entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="97">Réponse à la demande d'autorisation</entry>
+							<entry ixia_locid="98">AUTHORISED, REFUSED,
+								AUTHORISED_TO_VALIDATE</entry>
+							<entry ixia_locid="99">URL de notification sur autorisation par
+								batch</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408550125294" xml:lang="fr-fr">
+	<title ixia_locid="24" translate="no">vads_bank_product</title>
+	<shortdesc ixia_locid="25"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colsep="0" colwidth="1*" rowsep="0"/>
+				<colspec colname="c2" colnum="2" colsep="0" colwidth="3.81*" rowsep="0"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="333">Champ retourné dans la réponse.</p>
+							<p ixia_locid="334">Code produit de la carte utilisée pour le
+								paiement.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="327"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="330" translate="no">an..3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="328"><b ixia_locid="30">Valeurs possibles</b></entry>
+						<entry ixia_locid="331"/>
+					</row>
+					<row>
+						<entry ixia_locid="329" nameend="c2" namest="c1">
+							<p ixia_locid="332">
+								<table colsep="1" frame="all" id="table_syv_cjf_dq" rowsep="1" translate="no">
+									<tgroup cols="2">
+										<colspec colname="col1" colnum="1" colwidth="1*" rowsep="1"/>
+										<colspec colname="col2" colnum="2" colwidth="3.57*" rowsep="1"/>
+										<thead>
+											<row>
+												<entry ixia_locid="34"><b ixia_locid="35" translate="no">VISA</b></entry>
+												<entry ixia_locid="36"><b ixia_locid="37">Désignation</b></entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="45"><b ixia_locid="46" translate="no">A</b></entry>
+												<entry ixia_locid="47">Visa Traditional</entry>
+											</row>
+											<row>
+												<entry ixia_locid="51"><b ixia_locid="52" translate="no">B</b></entry>
+												<entry ixia_locid="53">Visa Traditional
+												Rewards</entry>
+											</row>
+											<row>
+												<entry ixia_locid="57"><b ixia_locid="58" translate="no">C</b></entry>
+												<entry ixia_locid="59">Visa Signature</entry>
+											</row>
+											<row>
+												<entry ixia_locid="63"><b ixia_locid="64" translate="no">D</b></entry>
+												<entry ixia_locid="65">Visa Signature
+												Preferred</entry>
+											</row>
+											<row>
+												<entry ixia_locid="69"><b ixia_locid="70" translate="no">E</b></entry>
+												<entry ixia_locid="71" translate="no">Proprietary
+												ATM</entry>
+											</row>
+											<row>
+												<entry ixia_locid="75"><b ixia_locid="76" translate="no">F</b></entry>
+												<entry ixia_locid="77" translate="no">Visa
+												Classic</entry>
+											</row>
+											<row>
+												<entry ixia_locid="81"><b ixia_locid="82">G</b></entry>
+												<entry ixia_locid="83">Visa Business</entry>
+											</row>
+											<row>
+												<entry ixia_locid="87"><b ixia_locid="88">G1</b></entry>
+												<entry ixia_locid="89">Visa Signature
+												Business</entry>
+											</row>
+											<row>
+												<entry ixia_locid="93"><b ixia_locid="94">G2</b></entry>
+												<entry ixia_locid="95">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="99"><b ixia_locid="100">G3</b></entry>
+												<entry ixia_locid="101">Visa Business
+												Enhanced</entry>
+											</row>
+											<row>
+												<entry ixia_locid="105"><b ixia_locid="106">H</b></entry>
+												<entry ixia_locid="107">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="111"><b ixia_locid="112">I</b></entry>
+												<entry ixia_locid="113">Visa Infinite</entry>
+											</row>
+											<row>
+												<entry ixia_locid="117"><b ixia_locid="118">J</b></entry>
+												<entry ixia_locid="119">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="123"><b ixia_locid="124">J1</b></entry>
+												<entry ixia_locid="125">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="129"><b ixia_locid="130">J2</b></entry>
+												<entry ixia_locid="131">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="135"><b ixia_locid="136">J3</b></entry>
+												<entry ixia_locid="137">Visa Healthcare</entry>
+											</row>
+											<row>
+												<entry ixia_locid="141"><b ixia_locid="142">J4</b></entry>
+												<entry ixia_locid="143">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="147"><b ixia_locid="148">K</b></entry>
+												<entry ixia_locid="149">Visa Corporate
+												T&amp;E</entry>
+											</row>
+											<row>
+												<entry ixia_locid="153"><b ixia_locid="154">K1</b></entry>
+												<entry ixia_locid="155">Visa GSA Corporate
+												T&amp;E</entry>
+											</row>
+											<row>
+												<entry ixia_locid="159"><b ixia_locid="160">L</b></entry>
+												<entry ixia_locid="161">Electron</entry>
+											</row>
+											<row>
+												<entry ixia_locid="165"><b ixia_locid="166">N</b></entry>
+												<entry ixia_locid="167">Visa Platinium</entry>
+											</row>
+											<row>
+												<entry ixia_locid="171"><b ixia_locid="172">N1</b></entry>
+												<entry ixia_locid="173">TBA</entry>
+											</row>
+											<row>
+												<entry ixia_locid="177"><b ixia_locid="178">P</b></entry>
+												<entry ixia_locid="179">Visa Gold</entry>
+											</row>
+											<row>
+												<entry ixia_locid="183"><b ixia_locid="184">Q</b></entry>
+												<entry ixia_locid="185">Private Label</entry>
+											</row>
+											<row>
+												<entry ixia_locid="189"><b ixia_locid="190">Q1</b></entry>
+												<entry ixia_locid="191">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="195"><b ixia_locid="196">R</b></entry>
+												<entry ixia_locid="197">Proprietary</entry>
+											</row>
+											<row>
+												<entry ixia_locid="201"><b ixia_locid="202">S</b></entry>
+												<entry ixia_locid="203">Visa Purchasing</entry>
+											</row>
+											<row>
+												<entry ixia_locid="207"><b ixia_locid="208">S1</b></entry>
+												<entry ixia_locid="209">Visa Purchasing</entry>
+											</row>
+											<row>
+												<entry ixia_locid="213"><b ixia_locid="214">S2</b></entry>
+												<entry ixia_locid="215">Visa Purchasing</entry>
+											</row>
+											<row>
+												<entry ixia_locid="219"><b ixia_locid="220">S3</b></entry>
+												<entry ixia_locid="221">Visa Purchasing</entry>
+											</row>
+											<row>
+												<entry ixia_locid="225"><b ixia_locid="226">S4</b></entry>
+												<entry ixia_locid="227">Government Services
+												Loan</entry>
+											</row>
+											<row>
+												<entry ixia_locid="231"><b ixia_locid="232">S5</b></entry>
+												<entry ixia_locid="233">Commercial Transport
+												EBT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="237"><b ixia_locid="238">S6</b></entry>
+												<entry ixia_locid="239">Business Loan</entry>
+											</row>
+											<row>
+												<entry ixia_locid="243"><b ixia_locid="244">S7</b></entry>
+												<entry ixia_locid="245">Visa Distribution</entry>
+											</row>
+											<row>
+												<entry ixia_locid="249"><b ixia_locid="250">T</b></entry>
+												<entry ixia_locid="251">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="255"><b ixia_locid="256">U</b></entry>
+												<entry ixia_locid="257">Visa TravelMoney</entry>
+											</row>
+											<row>
+												<entry ixia_locid="261"><b ixia_locid="262">V</b></entry>
+												<entry ixia_locid="263">Visa VPay</entry>
+											</row>
+											<row>
+												<entry ixia_locid="267"><b ixia_locid="268">W</b></entry>
+												<entry ixia_locid="269">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="273"><b ixia_locid="274">X</b></entry>
+												<entry ixia_locid="275">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="279"><b ixia_locid="280">Y</b></entry>
+												<entry ixia_locid="281">Reserved</entry>
+											</row>
+											<row>
+												<entry ixia_locid="285" rowsep="0"><b ixia_locid="286">Z</b></entry>
+												<entry ixia_locid="287" rowsep="0">Reserved</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="352" outputclass="break"/>
+							<p ixia_locid="335">
+								<table colsep="1" frame="all" id="table_wb2_sxp_2s" rowsep="1">
+									
+									<tgroup cols="2">
+										<colspec colname="col3" colnum="1" colwidth="1*"/>
+										<colspec colname="col4" colnum="2" colwidth="3.5*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="38">
+												<p ixia_locid="39">MASTERCARD</p>
+												</entry>
+												<entry ixia_locid="43"><b ixia_locid="336">Désignation</b></entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="48"><b ixia_locid="49" translate="no">MPN</b></entry>
+												<entry ixia_locid="50" translate="no">MASTERCARD
+												PREPAID DEBIT STANDARD-INSURANCE</entry>
+											</row>
+											<row>
+												<entry ixia_locid="54"><b ixia_locid="55" translate="no">MPO</b></entry>
+												<entry ixia_locid="56" translate="no">MASTERCARD
+												PREPAID DEBIT STANDARD-OTHER</entry>
+											</row>
+											<row>
+												<entry ixia_locid="60"><b ixia_locid="61" translate="no">MPP</b></entry>
+												<entry ixia_locid="62" translate="no">MASTERCARD
+												PREPAID CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="66"><b ixia_locid="67" translate="no">MPR</b></entry>
+												<entry ixia_locid="68" translate="no">MASTERCARD
+												PREPAID DEBIT STANDARD-TRAVEL</entry>
+											</row>
+											<row>
+												<entry ixia_locid="72"><b ixia_locid="73" translate="no">MPT</b></entry>
+												<entry ixia_locid="74" translate="no">MASTERCARD
+												PREPAID DEBIT STANDARD-TEEN</entry>
+											</row>
+											<row>
+												<entry ixia_locid="78"><b ixia_locid="79" translate="no">MPV</b></entry>
+												<entry ixia_locid="80" translate="no">MASTERCARD
+												PREPAID DEBIT STANDARD-VERNMENT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="84"><b ixia_locid="85">MPW</b></entry>
+												<entry ixia_locid="86">DEBIT MASTERCARD BUSINESS
+												CARD PREPAID WORK B2B</entry>
+											</row>
+											<row>
+												<entry ixia_locid="90"><b ixia_locid="91">MPX</b></entry>
+												<entry ixia_locid="92">MASTERCARD PREPAID DEBIT
+												STANDARD-FLEX BENEFIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="96"><b ixia_locid="97">MPY</b></entry>
+												<entry ixia_locid="98">MASTERCARD PREPAID DEB
+												STANDARD-EMPLOYEE INCENTIVE</entry>
+											</row>
+											<row>
+												<entry ixia_locid="102"><b ixia_locid="103">MRG</b></entry>
+												<entry ixia_locid="104">MASTERCARD PREPAID
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="108"><b ixia_locid="109">MRH</b></entry>
+												<entry ixia_locid="110">MASTERCARD UNKNOWN
+												PRODUCT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="114"><b ixia_locid="115">MRW</b></entry>
+												<entry ixia_locid="116">PREPAID MASTERCARD BUSINESS
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="120"><b ixia_locid="121">MSG</b></entry>
+												<entry ixia_locid="122">PREPAID MAESTRO CONSUMER
+												RELOADABLE CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="126"><b ixia_locid="127">MSI</b></entry>
+												<entry ixia_locid="128">MAESTRO CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="132"><b ixia_locid="133">MWB</b></entry>
+												<entry ixia_locid="134">WORLD MASTERCARD FOR
+												BUSINESS CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="138"><b ixia_locid="139">MWE</b></entry>
+												<entry ixia_locid="140">WORLD ELITE MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="144"><b ixia_locid="145">DLS</b></entry>
+												<entry ixia_locid="146">DEBIT MASTERCARD
+												CARD-DELAYED DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="150"><b ixia_locid="151">MCB</b></entry>
+												<entry ixia_locid="152">MASTERCARD BUSINESSCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="156"><b ixia_locid="157">MCC</b></entry>
+												<entry ixia_locid="158">MASTERCARD CREDIT CARD
+												(MIXED BIN)</entry>
+											</row>
+											<row>
+												<entry ixia_locid="162"><b ixia_locid="163">MVOIR</b></entry>
+												<entry ixia_locid="164">MASTERCARD FLEET
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="168"><b ixia_locid="169">MCG</b></entry>
+												<entry ixia_locid="170">LD MASTERCARD CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="174"><b ixia_locid="175">MCO</b></entry>
+												<entry ixia_locid="176">MASTERCARD CORPORATE
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="180"><b ixia_locid="181">MCP</b></entry>
+												<entry ixia_locid="182">MASTERCARD PURCHASING
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="186"><b ixia_locid="187">MCS</b></entry>
+												<entry ixia_locid="188">STANDARD MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="192"><b ixia_locid="193">MCW</b></entry>
+												<entry ixia_locid="194">WORLD MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="198"><b ixia_locid="199">MDG</b></entry>
+												<entry ixia_locid="200">LD DEBIT MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="204"><b ixia_locid="205">MDH</b></entry>
+												<entry ixia_locid="206">WORLD DEBIT EMBOSSED
+												MASTERCARD CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="210"><b ixia_locid="211">MDP</b></entry>
+												<entry ixia_locid="212">PLATINUM DEBIT MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="216"><b ixia_locid="217">MDS</b></entry>
+												<entry ixia_locid="218">DEBIT MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="222"><b ixia_locid="223">MIU</b></entry>
+												<entry ixia_locid="224">DEBIT MASTERCARD
+												UNEMBOSSED</entry>
+											</row>
+											<row>
+												<entry ixia_locid="228"><b ixia_locid="229">MNW</b></entry>
+												<entry ixia_locid="230">MASTERCARD WORLD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="234"><b ixia_locid="235">MOC</b></entry>
+												<entry ixia_locid="236">MASTERCARD UNKNOWN
+												PRODUCT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="240"><b ixia_locid="241">MPG</b></entry>
+												<entry ixia_locid="242">DEBIT MASTERCARD STANDARD
+												PREPAID-GENERAL SPEND</entry>
+											</row>
+											<row>
+												<entry ixia_locid="246"><b ixia_locid="247">MPL</b></entry>
+												<entry ixia_locid="248">PLATINUM MASTERCARD
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="252"><b ixia_locid="253">MPP</b></entry>
+												<entry ixia_locid="254">MASTERCARD PREPAID
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="258"><b ixia_locid="259">MRG</b></entry>
+												<entry ixia_locid="260">MASTERCARD PREPAID
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="264"><b ixia_locid="265">MRO</b></entry>
+												<entry ixia_locid="266">MASTERCARD REWARDS
+												ONLY</entry>
+											</row>
+											<row>
+												<entry ixia_locid="270"><b ixia_locid="271">MRW</b></entry>
+												<entry ixia_locid="272">PREPAID MASTERCARD BUSINESS
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="276"><b ixia_locid="277">MSB</b></entry>
+												<entry ixia_locid="278">MAESTRO SMALL BUSINESS
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="282"><b ixia_locid="283">MSI</b></entry>
+												<entry ixia_locid="284">MAESTRO CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="288"><b ixia_locid="289">MSO</b></entry>
+												<entry ixia_locid="290">MAESTRO PREPAID OTHER
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="292" rowsep="1"><b ixia_locid="293">MSW</b></entry>
+												<entry ixia_locid="294">PREPAID MAESTRO CORPORATE
+												CARD</entry>
+											</row>
+											<row>
+												<entry ixia_locid="295"><b ixia_locid="296">OLS</b></entry>
+												<entry ixia_locid="297">MAESTRO-DELAYED
+												DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="298"><b ixia_locid="299">TCB</b></entry>
+												<entry ixia_locid="300">MASTERCARD BUSINESS
+												CARD-IMMEDIATE DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="301"><b ixia_locid="302">TCC</b></entry>
+												<entry ixia_locid="303">MASTERCARD (MIXED
+												BIN)-IMMEDIATE DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="304"><b ixia_locid="305">TCG</b></entry>
+												<entry ixia_locid="306">LD MASTERCARD CARD-IMMEDIATE
+												DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="307"><b ixia_locid="308">TCS</b></entry>
+												<entry ixia_locid="309">MASTERCARD STANDARD
+												CARD-IMMEDIATE DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="310"><b ixia_locid="311">TCW</b></entry>
+												<entry ixia_locid="312">WORLD SIGNIA MASTERCARD
+												CARD-IMMEDIATE DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="313"><b ixia_locid="314">TNW</b></entry>
+												<entry ixia_locid="315">MASTERCARD NEW
+												WORLD-IMMEDIATE DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="316"><b ixia_locid="317">TPL</b></entry>
+												<entry ixia_locid="318">PLATINUM
+												MASTERCARD-IMMEDIATE DEBIT</entry>
+											</row>
+											<row>
+												<entry ixia_locid="319"><b ixia_locid="320">WBE</b></entry>
+												<entry ixia_locid="321">MASTERCARD UNKNOWN
+												PRODUCT</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="338">
+								<table colsep="1" frame="all" id="table_wlj_zxp_2s" location="PayZen Systempay OSB" platform="OSB PayZen Systempay" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="3.44*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="339"><b ixia_locid="340">CB</b></entry>
+												<entry ixia_locid="341"><b ixia_locid="337">Désignation</b></entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="342">1</entry>
+												<entry ixia_locid="343">Carte nationale de
+												retrait</entry>
+											</row>
+											<row>
+												<entry ixia_locid="344">2</entry>
+												<entry ixia_locid="345">Carte nationale de retrait
+												et de paiement</entry>
+											</row>
+											<row>
+												<entry ixia_locid="346">3</entry>
+												<entry ixia_locid="347">Carte nationale de
+												paiement</entry>
+											</row>
+											<row>
+												<entry ixia_locid="348">4</entry>
+												<entry ixia_locid="349">Carte nationale de paiement
+												et de retrait à autorisation systématique</entry>
+											</row>
+											<row>
+												<entry ixia_locid="350">5</entry>
+												<entry ixia_locid="351">Carte nationale de paiement
+												à autorisation systématique</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="32"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="33">Informations sur le moyen de paiement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

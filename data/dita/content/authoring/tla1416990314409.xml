@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1416990314409" xml:lang="fr-fr">
+	<title ixia_locid="593">Demande d'autorisation</title>
+	<shortdesc ixia_locid="594"/>
+	<conbody>
+		<p ixia_locid="589">Message adressé par la plateforme de paiement à l'émetteur de la
+				carte afin d'obtenir son accord pour le paiement de la transaction.</p>
+			<p ixia_locid="590">De manière générale, le débit n'est effectif qu'après la remise en
+				banque de la transaction. </p>
+			<p ixia_locid="591">Certains émetteurs de carte prépayées ou d'origine espagnole et
+				canadienne débitent le montant de l'autorisation en temps réel et le re-creditent
+				lorsque l'autorisation est échue (voir tableau ci-après).</p>
+			<p ixia_locid="592"/>
+			<p ixia_locid="412"><b ixia_locid="413">Validité d'une
+					autorisation</b></p>
+			<p ixia_locid="414">Ci-dessous la liste des moyens de paiement dont la validité de l'autorisation
+			est supérieure à 0 jour. <table colsep="1" doc-type="Form integration integration-Allemagne" frame="all" id="table_kl3_2nq_cq" location="PayZen PayZen_Germany" platform="PayZen" rowsep="1">
+				<tgroup cols="4">
+					<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+					<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+					<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+					<colspec align="center" colname="c4" colnum="4" colwidth="1.0*"/>
+					<thead>
+						<row valign="middle">
+							<entry align="center" ixia_locid="812" valign="middle">Moyen de
+								paiement</entry>
+							<entry align="center" ixia_locid="814" valign="middle">Type de cartes
+								(vads_payment_cards)</entry>
+							<entry align="center" ixia_locid="816" valign="middle">Réseau</entry>
+							<entry align="center" ixia_locid="818" valign="middle">Durée de validité
+								d'une autorisation (en jours)</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="820">American Express</entry>
+							<entry ixia_locid="822">AMEX</entry>
+							<entry ixia_locid="824">AMEX</entry>
+							<entry ixia_locid="826">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="828">Carte Aurore</entry>
+							<entry ixia_locid="830">AURORE-MULTI</entry>
+							<entry ixia_locid="832">AURORE</entry>
+							<entry ixia_locid="834">29</entry>
+						</row>
+						<row>
+							<entry ixia_locid="427">Carte Cora</entry>
+							<entry ixia_locid="428">CORA_BLANCHE</entry>
+							<entry ixia_locid="429">AURORE</entry>
+							<entry ixia_locid="430">29</entry>
+						</row>
+						<row>
+							<entry ixia_locid="431">Carte Cora Premium</entry>
+							<entry ixia_locid="432">CORA_PREM</entry>
+							<entry ixia_locid="433">AURORE</entry>
+							<entry ixia_locid="434">29</entry>
+						</row>
+						<row>
+							<entry ixia_locid="435">Carte Cora Visa</entry>
+							<entry ixia_locid="436">CORA_VISA</entry>
+							<entry ixia_locid="437">AURORE</entry>
+							<entry ixia_locid="438">29</entry>
+						</row>
+						<row>
+							<entry ixia_locid="836">CB</entry>
+							<entry ixia_locid="838">CB</entry>
+							<entry ixia_locid="840">CB</entry>
+							<entry ixia_locid="842">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="844">Visa</entry>
+							<entry ixia_locid="846">VISA</entry>
+							<entry ixia_locid="848">CB</entry>
+							<entry ixia_locid="850">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="852">MasterCard</entry>
+							<entry ixia_locid="854">MASTERCARD</entry>
+							<entry ixia_locid="856">CB</entry>
+							<entry ixia_locid="858">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="929">Maestro</entry>
+							<entry ixia_locid="931">MAESTRO</entry>
+							<entry ixia_locid="933">CB</entry>
+							<entry ixia_locid="935">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="930">Bancontact Mistercash</entry>
+							<entry ixia_locid="932">BANCONTACT</entry>
+							<entry ixia_locid="934">CB</entry>
+							<entry ixia_locid="936">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="868">Visa Electron</entry>
+							<entry ixia_locid="870">VISA_ELECTRON</entry>
+							<entry ixia_locid="872">CB</entry>
+							<entry ixia_locid="874">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="876">E-carte bleue</entry>
+							<entry ixia_locid="878">E-CARTEBLEUE</entry>
+							<entry ixia_locid="880">CB</entry>
+							<entry ixia_locid="882">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="467">Carte Privilège</entry>
+							<entry ixia_locid="468">CDGP</entry>
+							<entry ixia_locid="469">CDGP</entry>
+							<entry ixia_locid="470">30</entry>
+						</row>
+						<row location="PayZen" platform="PayZen">
+							<entry ixia_locid="471">Carte cadeau Truffaut</entry>
+							<entry ixia_locid="472">TRUFFAUT_CDX</entry>
+							<entry ixia_locid="473">CERIDIAN</entry>
+							<entry ixia_locid="474">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="475">3 fois CB Cofinoga</entry>
+							<entry ixia_locid="476">COF3XCB</entry>
+							<entry ixia_locid="477">COF3XCB</entry>
+							<entry ixia_locid="478">21</entry>
+						</row>
+						<row>
+							<entry ixia_locid="884">Carte Be Smart</entry>
+							<entry ixia_locid="886">COFINOGA</entry>
+							<entry ixia_locid="888">COFINOGA</entry>
+							<entry ixia_locid="890">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="483">Carte Soficarte</entry>
+							<entry ixia_locid="484">SOFICARTE</entry>
+							<entry ixia_locid="485">COFINOGA</entry>
+							<entry ixia_locid="486">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="487">Carte Sygma</entry>
+							<entry ixia_locid="488">SYGMA</entry>
+							<entry ixia_locid="489">COFINOGA</entry>
+							<entry ixia_locid="490">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="937">Carte Diners Club</entry>
+							<entry ixia_locid="939">DINERS</entry>
+							<entry ixia_locid="941">GATECONEX</entry>
+							<entry ixia_locid="943">3</entry>
+						</row>
+						<row>
+							<entry ixia_locid="938">Bancontact Mistercash</entry>
+							<entry ixia_locid="940">BANCONTACT</entry>
+							<entry ixia_locid="942">GATECONEX</entry>
+							<entry ixia_locid="944">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="945">Carte JCB</entry>
+							<entry ixia_locid="947">JCB</entry>
+							<entry ixia_locid="949">JCB</entry>
+							<entry ixia_locid="951">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="946">Bancontact Mistercash</entry>
+							<entry ixia_locid="948">BANCONTACT</entry>
+							<entry ixia_locid="950">GICC</entry>
+							<entry ixia_locid="952">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="499">Paylib</entry>
+							<entry ixia_locid="500">PAYLIB</entry>
+							<entry ixia_locid="501">PAYLIB</entry>
+							<entry ixia_locid="502">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="908">PayPal</entry>
+							<entry ixia_locid="911">PAYPAL</entry>
+							<entry ixia_locid="914">PAYPAL</entry>
+							<entry ixia_locid="917">3</entry>
+						</row>
+						<row doc-type="integration integration-Allemagne Form" location="PayZen PayZen_Germany" platform="PayZen">
+							<entry ixia_locid="953">POSTFINANCE</entry>
+							<entry ixia_locid="954">POSTFINANCE</entry>
+							<entry ixia_locid="955">POSTFINANCE</entry>
+							<entry ixia_locid="956">1</entry>
+						</row>
+						<row>
+							<entry ixia_locid="511">Virement SEPA</entry>
+							<entry ixia_locid="512">SCT</entry>
+							<entry ixia_locid="513">SEPA</entry>
+							<entry ixia_locid="514">13</entry>
+						</row>
+						<row>
+							<entry ixia_locid="515">Prélèvement SEPA</entry>
+							<entry ixia_locid="516">SDD</entry>
+							<entry ixia_locid="517">SEPA</entry>
+							<entry ixia_locid="518">13</entry>
+						</row>
+						<row doc-type="integration-Allemagne">
+							<entry ixia_locid="523">Carte Eccard</entry>
+							<entry ixia_locid="524">ECCARD</entry>
+							<entry ixia_locid="525">WIRECARD</entry>
+							<entry ixia_locid="526">13</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></p>
+		<table colsep="1" doc-type="Form integration" frame="all" id="table_hjh_2zc_xq" location="Systempay" platform="Systempay" rowsep="1">
+			<tgroup cols="4">
+				<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+				<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+				<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+				<colspec align="center" colname="c4" colnum="4" colwidth="1.0*"/>
+				<thead>
+					<row valign="middle">
+						<entry align="center" ixia_locid="813" valign="middle">Moyen de
+							paiement</entry>
+						<entry align="center" ixia_locid="815" valign="middle">Type de cartes
+							(vads_payment_cards)</entry>
+						<entry align="center" ixia_locid="817" valign="middle">Réseau</entry>
+						<entry align="center" ixia_locid="819" valign="middle">Durée de validité
+							d'une autorisation (en jours)</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry ixia_locid="821">American Express</entry>
+						<entry ixia_locid="823">AMEX</entry>
+						<entry ixia_locid="825">AMEX</entry>
+						<entry ixia_locid="827">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="829">Carte Aurore</entry>
+						<entry ixia_locid="831">AURORE-MULTI</entry>
+						<entry ixia_locid="833">AURORE</entry>
+						<entry ixia_locid="835">29</entry>
+					</row>
+					<row>
+						<entry ixia_locid="837">CB</entry>
+						<entry ixia_locid="839">CB</entry>
+						<entry ixia_locid="841">CB</entry>
+						<entry ixia_locid="843">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="845">Visa</entry>
+						<entry ixia_locid="847">VISA</entry>
+						<entry ixia_locid="849">CB</entry>
+						<entry ixia_locid="851">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="853">MasterCard</entry>
+						<entry ixia_locid="855">MASTERCARD</entry>
+						<entry ixia_locid="857">CB</entry>
+						<entry ixia_locid="859">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="861">Maestro</entry>
+						<entry ixia_locid="863">MAESTRO</entry>
+						<entry ixia_locid="865">CB</entry>
+						<entry ixia_locid="867">30</entry>
+					</row>
+					<row>
+						<entry ixia_locid="869">Visa Electron</entry>
+						<entry ixia_locid="871">VISA_ELECTRON</entry>
+						<entry ixia_locid="873">CB</entry>
+						<entry ixia_locid="875">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="877">E-carte bleue</entry>
+						<entry ixia_locid="879">E-CARTEBLEUE</entry>
+						<entry ixia_locid="881">CB</entry>
+						<entry ixia_locid="883">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="885">Carte Cofinoga</entry>
+						<entry ixia_locid="887">COFINOGA</entry>
+						<entry ixia_locid="889">COFINOGA</entry>
+						<entry ixia_locid="891">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="893">Carte Diners Club *</entry>
+						<entry ixia_locid="895">DINERS</entry>
+						<entry ixia_locid="897">GATECONEX</entry>
+						<entry ixia_locid="899">3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="901">Carte JCB *</entry>
+						<entry ixia_locid="903">JCB</entry>
+						<entry ixia_locid="905">JCB</entry>
+						<entry ixia_locid="907">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="909">PayPal</entry>
+						<entry ixia_locid="912">PAYPAL</entry>
+						<entry ixia_locid="915">PAYPAL</entry>
+						<entry ixia_locid="918">3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="957">POSTFINANCE *</entry>
+						<entry ixia_locid="958">POSTFINANCE</entry>
+						<entry ixia_locid="959">POSTFINANCE</entry>
+						<entry ixia_locid="960">1</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+			<p ixia_locid="527">
+				<table colsep="1" doc-type="Form integration-Bresil" frame="all" id="table_dfn_jyf_bq" location="PayZen_Brazil" platform="PayZen" rowsep="1">
+				<tgroup cols="4">
+					<colspec colname="newCol1" colnum="1" colwidth="1*"/>
+					<colspec colname="c1" colnum="2" colwidth="1.0*"/>
+					<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+					<colspec align="center" colname="newCol4" colnum="4" colwidth="1*"/>
+					<thead>
+						<row valign="middle">
+							<entry align="center" ixia_locid="528" valign="middle">Moyen de
+								paiement</entry>
+							<entry align="center" ixia_locid="245" valign="middle">Type de
+								carte</entry>
+							<entry align="center" ixia_locid="247" valign="middle">Réseau</entry>
+							<entry align="center" ixia_locid="529" valign="middle">Durée de validité
+								d'une autorisation (en jours)</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="530">Boleto Bancário</entry>
+							<entry ixia_locid="321">BOLETO</entry>
+							<entry ixia_locid="337">BOLETO</entry>
+							<entry ixia_locid="531">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="532">American Express</entry>
+							<entry ixia_locid="323">AMEX</entry>
+							<entry ixia_locid="339">CIELO</entry>
+							<entry ixia_locid="533">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="534">Aura</entry>
+							<entry ixia_locid="324">AURA</entry>
+							<entry ixia_locid="340">CIELO</entry>
+							<entry ixia_locid="535">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="536">Elo</entry>
+							<entry ixia_locid="325">CIELO_ELO</entry>
+							<entry ixia_locid="341">CIELO</entry>
+							<entry ixia_locid="537">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="538">Diners</entry>
+							<entry ixia_locid="326">DINERS</entry>
+							<entry ixia_locid="342">CIELO</entry>
+							<entry ixia_locid="539">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="540">Discover</entry>
+							<entry ixia_locid="343">DISCOVER</entry>
+							<entry ixia_locid="349">CIELO</entry>
+							<entry ixia_locid="541">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="542">JCB</entry>
+							<entry ixia_locid="344">JCB</entry>
+							<entry ixia_locid="350">CIELO</entry>
+							<entry ixia_locid="543">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="546">MasterCard</entry>
+							<entry ixia_locid="254">MASTERCARD</entry>
+							<entry ixia_locid="256">CIELO</entry>
+							<entry ixia_locid="547">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="548">Visa</entry>
+							<entry ixia_locid="352">VISA</entry>
+							<entry ixia_locid="380">CIELO</entry>
+							<entry ixia_locid="549">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="552">Diners</entry>
+							<entry ixia_locid="354">DINERS</entry>
+							<entry ixia_locid="382">ELAVONBR</entry>
+							<entry ixia_locid="553">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="554">Discover</entry>
+							<entry ixia_locid="355">DISCOVER</entry>
+							<entry ixia_locid="383">ELAVONBR</entry>
+							<entry ixia_locid="555">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="558">Mastercard</entry>
+							<entry ixia_locid="357">MASTERCARD</entry>
+							<entry ixia_locid="385">ELAVONBR</entry>
+							<entry ixia_locid="559">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="560">Visa</entry>
+							<entry ixia_locid="358">VISA</entry>
+							<entry ixia_locid="386">ELAVONBR</entry>
+							<entry ixia_locid="561">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="566">Diners</entry>
+							<entry ixia_locid="363">DINERS</entry>
+							<entry ixia_locid="391">REDECARD</entry>
+							<entry ixia_locid="567">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="568">Hipercard</entry>
+							<entry ixia_locid="364">HIPERCARD</entry>
+							<entry ixia_locid="392">REDECARD</entry>
+							<entry ixia_locid="569">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="572">Mastercard</entry>
+							<entry ixia_locid="260">MASTERCARD</entry>
+							<entry ixia_locid="262">REDECARD</entry>
+							<entry ixia_locid="573">4</entry>
+						</row>
+						<row>
+							<entry ixia_locid="574">Visa</entry>
+							<entry ixia_locid="263">VISA</entry>
+							<entry ixia_locid="265">REDECARD</entry>
+							<entry ixia_locid="575">4</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			</p>
+		<p ixia_locid="691">
+			<table colsep="1" doc-type="Form" frame="all" id="table_jtb_ffw_3q" location="OSB" platform="OSB" rowsep="1">
+				<tgroup cols="4">
+					<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+					<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+					<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+					<colspec align="center" colname="c4" colnum="4" colwidth="1.0*"/>
+					<thead>
+						<row valign="middle">
+							<entry align="center" ixia_locid="696" valign="middle">Moyen de
+								paiement</entry>
+							<entry align="center" ixia_locid="698" valign="middle">Type de cartes
+								(vads_payment_cards)</entry>
+							<entry align="center" ixia_locid="700" valign="middle">Réseau</entry>
+							<entry align="center" ixia_locid="702" valign="middle">Durée de validité
+								d'une autorisation (en jours)</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="704">American Express</entry>
+							<entry ixia_locid="706">AMEX</entry>
+							<entry ixia_locid="708">AMEX</entry>
+							<entry ixia_locid="710">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="712">CB</entry>
+							<entry ixia_locid="714">CB</entry>
+							<entry ixia_locid="716">CB</entry>
+							<entry ixia_locid="718">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="720">Visa</entry>
+							<entry ixia_locid="722">VISA</entry>
+							<entry ixia_locid="724">CB</entry>
+							<entry ixia_locid="726">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="728">MasterCard</entry>
+							<entry ixia_locid="730">MASTERCARD</entry>
+							<entry ixia_locid="732">CB</entry>
+							<entry ixia_locid="734">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="736">Maestro</entry>
+							<entry ixia_locid="738">MAESTRO</entry>
+							<entry ixia_locid="740">CB</entry>
+							<entry ixia_locid="742">30</entry>
+						</row>
+						<row>
+							<entry ixia_locid="744">Visa Electron</entry>
+							<entry ixia_locid="746">VISA_ELECTRON</entry>
+							<entry ixia_locid="748">CB</entry>
+							<entry ixia_locid="750">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="752">E-carte bleue</entry>
+							<entry ixia_locid="754">E-CARTEBLEUE</entry>
+							<entry ixia_locid="756">CB</entry>
+							<entry ixia_locid="758">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="760">Discover</entry>
+							<entry ixia_locid="762">DINERS</entry>
+							<entry ixia_locid="764">DINERS</entry>
+							<entry ixia_locid="766"><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>3<?oxy_custom_end ?></entry>
+						</row>
+						<row>
+							<entry ixia_locid="768">Diners</entry>
+							<entry ixia_locid="770">DINERS</entry>
+							<entry ixia_locid="772">DINERS</entry>
+							<entry ixia_locid="774"><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>3<?oxy_custom_end ?></entry>
+						</row>
+						<row>
+							<entry ixia_locid="676">Carte JCB</entry>
+							<entry ixia_locid="678">JCB</entry>
+							<entry ixia_locid="680">JCB</entry>
+							<entry ixia_locid="682">7</entry>
+						</row>
+						<row>
+							<entry ixia_locid="684">PayPal</entry>
+							<entry ixia_locid="686">PAYPAL</entry>
+							<entry ixia_locid="688">PAYPAL</entry>
+							<entry ixia_locid="690">3</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+		<table colsep="1" doc-type="Form" frame="all" id="table_fmw_b5h_wq" location="Innopay" platform="Innopay" rowsep="1">
+			<tgroup cols="4">
+				<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+				<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+				<colspec colname="c3" colnum="3" colwidth="1.0*"/>
+				<colspec align="center" colname="c4" colnum="4" colwidth="1.0*"/>
+				<thead>
+					<row valign="middle">
+						<entry align="center" ixia_locid="697" valign="middle">Moyen de
+							paiement</entry>
+						<entry align="center" ixia_locid="699" valign="middle">Type de cartes
+							(vads_payment_cards)</entry>
+						<entry align="center" ixia_locid="701" valign="middle">Réseau</entry>
+						<entry align="center" ixia_locid="703" valign="middle">Durée de validité
+							d'une autorisation (en jours)</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry ixia_locid="705">American Express</entry>
+						<entry ixia_locid="707">AMEX</entry>
+						<entry ixia_locid="709">AMEXGLOBAL</entry>
+						<entry ixia_locid="711">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="776">Carte Diners Club</entry>
+						<entry ixia_locid="781">DINERS</entry>
+						<entry ixia_locid="786">GATECONEX</entry>
+						<entry ixia_locid="791">3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="777">e-carte bleue</entry>
+						<entry ixia_locid="782">E-CARTEBLEUE</entry>
+						<entry ixia_locid="787">GATECONEX</entry>
+						<entry ixia_locid="792">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="778">Maestro</entry>
+						<entry ixia_locid="783">MAESTRO</entry>
+						<entry ixia_locid="788">GATECONEX</entry>
+						<entry ixia_locid="793">30</entry>
+					</row>
+					<row>
+						<entry ixia_locid="779">MasterCard</entry>
+						<entry ixia_locid="784">MASTERCARD</entry>
+						<entry ixia_locid="789">GATECONEX</entry>
+						<entry ixia_locid="794">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="780">Visa</entry>
+						<entry ixia_locid="785">VISA</entry>
+						<entry ixia_locid="790">GATECONEX</entry>
+						<entry ixia_locid="795">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="796">Visa</entry>
+						<entry ixia_locid="798">VISA</entry>
+						<entry ixia_locid="800">GICC_VISA</entry>
+						<entry ixia_locid="802">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="797">Visa Electron</entry>
+						<entry ixia_locid="799">VISA_ELECTRON</entry>
+						<entry ixia_locid="801">GICC_VISA</entry>
+						<entry ixia_locid="803">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="729">MasterCard</entry>
+						<entry ixia_locid="731">MASTERCARD</entry>
+						<entry ixia_locid="733">GICC_MASTERCARD</entry>
+						<entry ixia_locid="735">7</entry>
+					</row>
+					<row>
+						<entry ixia_locid="737">Maestro</entry>
+						<entry ixia_locid="739">MAESTRO</entry>
+						<entry ixia_locid="741">GICC_MAESTRO</entry>
+						<entry ixia_locid="743">30</entry>
+					</row>
+					<row>
+						<entry ixia_locid="745">PayPal</entry>
+						<entry ixia_locid="747">PAYPAL</entry>
+						<entry ixia_locid="749">PAYPAL</entry>
+						<entry ixia_locid="751">3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="753">PayPal Sandbox</entry>
+						<entry ixia_locid="755">PAYPAL_SB</entry>
+						<entry ixia_locid="757">PAYPAL_SB</entry>
+						<entry ixia_locid="759">3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="804">PostFinance Card</entry>
+						<entry ixia_locid="806">POSTFINANCE</entry>
+						<entry ixia_locid="808">POSTFINANCE</entry>
+						<entry ixia_locid="810">1</entry>
+					</row>
+					<row>
+						<entry ixia_locid="805">PostFinance E-finance</entry>
+						<entry ixia_locid="807">POSTFINANCE_EFIN</entry>
+						<entry ixia_locid="809">POSTFINANCE</entry>
+						<entry ixia_locid="811">1</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<p doc-type="Form Back-Office_Light" ixia_locid="928" location="Systempay" platform="Systempay">* Sous réserve de disponibilité par votre établissement financier</p>
+	</conbody>
+</concept>

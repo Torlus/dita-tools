@@ -1,5 +1,5 @@
 .idea
 *.log
-data
+# data
 env
 

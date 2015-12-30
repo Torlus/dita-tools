@@ -11,6 +11,7 @@ title: chap-14
 Ce chapitre vous détaille de quelle manière vous pouvez :
 </p>
  
+
 <ul>
  
 <li>
@@ -58,6 +59,7 @@ Un e-mail est envoyé à l&#x27;interlocuteur en charge du dossier (responsable 
  
 <p>
  
+
 <ol>
  
  <li>
@@ -97,6 +99,7 @@ Nous vous conseillons de vérifier les deux points suivants :
  
 <p>
  
+
 <ul>
  
  <li>
@@ -120,6 +123,7 @@ Cette transaction pourra être annulée par la suite depuis le Back Office via l
  
 <p>
  
+
 <ul>
  
  <li>

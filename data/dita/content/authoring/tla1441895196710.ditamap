@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//LYRA//DTD DITA Map//EN" "lyra-map.dtd">
+<map id="tla1441895196710" xml:lang="fr-fr">
+	<title ixia_locid="368">PayZen_Brazil Commun</title>
+    <keydef ixia_locid="6" keys="platform-name" location="PayZen_Brazil">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="7">PayZen</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!--Telephones-->
+    <keydef ixia_locid="174" keys="TelephoneSupport" location="PayZen_Brazil">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="176">+55 (11) 3336-9217 ou +55 (11) 3336-9209</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef ixia_locid="192" keys="TelephoneSupportDepuisEtranger" location="PayZen_Brazil">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="195">+33 567 223 329</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- Liens spécifiques à la plateforme -->
+    <keydef format="mail" href="suporte@payzen.com.br" ixia_locid="178" keys="EmailSupport" location="PayZen_Brazil" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.com.br/vads-merchant/" ixia_locid="156" keys="BackOfficeMarchand" location="PayZen_Brazil" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.com.br/vads-payment/" ixia_locid="159" keys="URLpagePaiement" location="PayZen_Brazil" scope="external"/>
+    <keydef format="html" href="http://www.payzen.com.br/faq.php" ixia_locid="162" keys="FAQ" location="PayZen_Brazil" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.eu/html/server_url_error/" ixia_locid="189" keys="FAQServerUrlError" location="PayZen_Brazil" scope="external"/> 
+    <keydef format="html" href="http://payzen.com.br/suporte/desenvolvedores/" ixia_locid="165" keys="SiteInternetDocumentation" location="PayZen_Brazil" scope="external"/>
+    
+    <!--WEB SERVICES Liens spécifiques à la plateforme -->
+    <keydef format="html" href="https://secure.payzen.com.br/vads-ws/v5?wsdl" ixia_locid="364" keys="FichierWSDL" location="PayZen_Brazil" scope="external"/>
+    <keydef ixia_locid="357" keys="Host" location="PayZen_Brazil">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="358">secure.payzen.eu</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- WEB SERVICES Image specifique -->
+    <keydef href="tla1438186599554.image" ixia_locid="367" keys="Requis" location="PayZen_Brazil"/>
+    
+    <!-- FORMULAIRE Images standards -->
+    <keydef format="image" href="emm1405081230671.image" ixia_locid="4" keys="FORM_cinematique-echange-vue-integrateur_light" location="PayZen_Brazil"/>
+    <keydef href="tla1412688315001.image" ixia_locid="376" keys="DiagrammeFluxAcheteur" location="PayZen_Brazil"/>
+    <keydef format="image" href="tla1412690233682.image" ixia_locid="10" keys="ChoixMoyenPaiement" location="PayZen_Brazil"/>
+    <keydef format="image" href="tla1412690367921.image" ixia_locid="377" keys="SaisieDonneesBancaires" location="PayZen_Brazil"/>
+    <keydef format="image" href="tla1412690496716.image" ixia_locid="12" keys="DetailPaiement" location="PayZen_Brazil"/>
+    <keydef format="image" href="tla1412690680897.image" ixia_locid="13" keys="PageResumePaiementEchec" location="PayZen_Brazil"/>
+    <keydef format="image" href="tla1412688768387.image" ixia_locid="14" keys="DiagrammeFluxMarchand" location="PayZen_Brazil"/>
+    <keydef format="image" href="tla1406030665228.image" ixia_locid="15" keys="DiagrammeSignature" location="PayZen_Brazil"/>
+    
+    <!--ABONNEMENT IDENTIFIANT Images -->
+    <keydef href="tla1430222328967.image" ixia_locid="221" keys="REGISTER_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430222441056.image" ixia_locid="200" keys="REGISTER_step2" location="PayZen_Brazil"/>
+    <keydef href="tla1430222696152.image" ixia_locid="372" keys="REGISTER_step3" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1430224809985.image" ixia_locid="373" keys="REGISTER_PAY_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430224933475.image" ixia_locid="374" keys="REGISTER_PAY_step2" location="PayZen_Brazil"/>
+    <keydef href="tla1430225093952.image" ixia_locid="375" keys="REGISTER_PAY_step3" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1430227317440.image" ixia_locid="205" keys="REGISTER_SUBSCRIBE_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430227360153.image" ixia_locid="206" keys="REGISTER_SUBSCRIBE_step2" location="PayZen_Brazil"/>
+    <keydef href="tla1430227398717.image" ixia_locid="207" keys="REGISTER_SUBSCRIBE_step3" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1430229450247.image" ixia_locid="208" keys="REGISTER_PAY_SUBSCRIBE_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430229509075.image" ixia_locid="209" keys="REGISTER_PAY_SUBSCRIBE_step2" location="PayZen_Brazil"/>
+    <keydef href="tla1430229543114.image" ixia_locid="210" keys="REGISTER_PAY_SUBSCRIBE_step3" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1430234982502.image" ixia_locid="211" keys="PAYMENT_BY_TOKEN_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430235054950.image" ixia_locid="212" keys="PAYMENT_BY_TOKEN_step2" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1430236173638.image" ixia_locid="213" keys="SUBSCRIBE_BY_TOKEN_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430236241655.image" ixia_locid="214" keys="SUBSCRIBE_BY_TOKEN_step2" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1430292312852.image" ixia_locid="215" keys="ASK_REGISTER_PAY_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1430292390945.image" ixia_locid="216" keys="ASK_REGISTER_PAY_step2" location="PayZen_Brazil"/>
+    <keydef href="tla1430292432597.image" ixia_locid="217" keys="ASK_REGISTER_PAY_step3" location="PayZen_Brazil"/>
+    
+    <keydef href="tla1431443654585.image" ixia_locid="218" keys="REGISTER_UPDATE_PAY_step1" location="PayZen_Brazil"/>
+    <keydef href="tla1431443722760.image" ixia_locid="219" keys="REGISTER_UPDATE_PAY_step2" location="PayZen_Brazil"/>
+    <keydef href="tla1431443764449.image" ixia_locid="220" keys="REGISTER_UPDATE_PAY_step3" location="PayZen_Brazil"/>
+    
+    <!--Liens SEPA et Echanges de fichiers-->
+    <keydef format="html" href="sftp://vadftp.lyra-network.com" ixia_locid="120" keys="SFTP" location="PayZen_Brazil" scope="external"/>
+    <keydef href="ftps://vadftp.lyra-network.com" ixia_locid="121" keys="FTPS" location="PayZen_Brazil" scope="external"/>
+    
+    <!-- PayPal immediat-->
+    <keydef href="tla1412255432047.image" ixia_locid="378" keys="CinematiqueEchangesVueAcheteur" location="PayZen_Brazil"/>
+    <keydef href="tla1437480883653.image" ixia_locid="379" keys="PayPalPageDePaiement-step1" location="PayZen_Brazil"/>
+    
+    
+</map>

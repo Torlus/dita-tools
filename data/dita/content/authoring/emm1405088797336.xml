@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088797336" xml:lang="fr-fr">
+	<title ixia_locid="1">Récupérer les données retournées dans la réponse</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="29">Les données retournées dans la réponse dépendent des paramètres envoyés
+			dans le formulaire de paiement, du type de paiement réalisé et des options de votre
+			boutique. Ces données constituent une liste de champs. Chaque champ contient une valeur
+			réponse. La liste de champs peut être amenée à évoluer.</p>
+		<p ixia_locid="32"/>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent" ixia_locid="37" payment-method="Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent">Les
+			données sont toujours envoyées en <b ixia_locid="30" translate="no">POST</b> par la
+			plateforme de paiement.</p>
+		<p doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Modules Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="49" payment-method="Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent">La première étape consiste donc à récupérer le contenu reçu en mode
+			POST.</p>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent" ixia_locid="50" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent">Exemples
+			:</p>
+		<ul doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent" id="ul_of5_q3n_bq" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent">
+			<li ixia_locid="51">
+				<p ixia_locid="52">En PHP, les données seront stockées dans la super globale <b ixia_locid="53" translate="no">$_POST</b>.</p>
+			</li>
+			<li ixia_locid="54">
+				<p ixia_locid="55">En ASP.NET (C#), vous devez utiliser la propriété <b ixia_locid="56" translate="no">Form</b> de la classe <b ixia_locid="57" translate="no">HttpRequest</b>.</p>
+			</li>
+			<li ixia_locid="58">
+				<p ixia_locid="59">En java, vous devez utiliser la méthode <b ixia_locid="60" translate="no">getParameter</b> de l'interface <b ixia_locid="61" translate="no">HttpServletRequest</b>. </p>
+				<p ixia_locid="62">Le script devra effectuer une boucle pour récupérer la totalité
+					des champs transmis.</p>
+			</li>
+		</ul>
+		<p doc-type="Form integration" ixia_locid="46"><u ixia_locid="48">Exemple de données
+				envoyées lors de la notification d’un paiement
+			:</u><codeblock ixia_locid="8" translate="no">vads_amount = 3000
+vads_auth_mode = FULL
+vads_auth_number = 3fb0de
+vads_auth_result = 00
+vads_capture_delay = 0
+vads_card_brand = VISA
+vads_card_number = 497010XXXXXX0000
+vads_payment_certificate = a50d15063b5ec6cb140043138b8d7576470b71a9
+vads_ctx_mode = TEST
+vads_currency = <ph ixia_locid="105" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="106" location="OSB" platform="OSB">953</ph><ph ixia_locid="113" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="123" location="PayZen_Brazil">986</ph> /&gt;
+vads_effective_amount = 3000
+vads_site_id = 12345678
+vads_trans_date = 20140902094139
+vads_trans_id = 454058
+vads_validation_mode = 0
+vads_version = V2
+vads_warranty_result = YES
+vads_payment_src = EC
+vads_sequence_number = 1
+vads_contract_used = 5785350
+vads_trans_status = AUTHORISED
+vads_expiry_month = 6
+vads_expiry_year = 2015
+vads_bank_code = 17807
+vads_bank_product = A
+vads_pays_ip = FR
+vads_presentation_date = 20140902094202
+vads_effective_creation_date = 20140902094202
+vads_operation_type = DEBIT
+vads_threeds_enrolled = Y
+vads_threeds_cavv = Q2F2dkNhdnZDYXZ2Q2F2dkNhdnY= 
+vads_threeds_eci = 05
+vads_threeds_xid = WXJsVXpHVjFoMktzNmw5dTd1ekQ= 
+vads_threeds_cavvAlgorithm = 2
+vads_threeds_status = Y
+vads_threeds_sign_valid = 1
+vads_threeds_error_code = 
+vads_threeds_exit_status = 10
+vads_risk_control = CARD_FRAUD=OK;COMMERCIAL_CARD=OK
+vads_result = 00
+vads_extra_result = 00
+vads_card_country = <ph ixia_locid="133" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"FR"</ph><ph ixia_locid="135" location="OSB" platform="OSB">"PF"</ph><ph ixia_locid="525" location="PayZen_Brazil">BR</ph><ph ixia_locid="526" location="Innopay" platform="Innopay">CH</ph> /&gt;
+vads_language = fr
+vads_hash = 299d81f4b175bfb7583d904cd19ef5e38b2b79b2373d9b2b4aab74e5753b10bc
+vads_url_check_src = PAY
+vads_action_mode = INTERACTIVE
+vads_payment_config = SINGLE
+vads_page_action = PAYMENT
+signature = 3132f1e451075f2408cda41f2e647e9b4747d421</codeblock></p>
+		<p doc-type="Moyens-Paiement SEPA-OneOff" ixia_locid="25" payment-method="SEPA-One-Off"><u ixia_locid="26">Exemple de données envoyées lors de la notification d’un prélèvement
+				SEPA ponctuel
+			:</u><codeblock ixia_locid="27" translate="no">vads_amount= 2990
+vads_auth_mode= FULL
+vads_auth_number= 
+vads_auth_result= 00
+vads_capture_delay= 6
+vads_card_brand= SDD
+vads_card_number= FR7630002005701234567890158_CRLYFRPP
+vads_payment_certificate= 
+vads_ctx_mode= TEST
+vads_currency= 978
+vads_effective_amount= 2990
+vads_site_id= 91335531
+vads_trans_date= 20140812102855
+vads_trans_id= 426085
+vads_validation_mode= 0
+vads_version= V2
+vads_warranty_result= NO
+vads_payment_src= EC
+vads_cust_email= exemple@gmail.com
+vads_cust_title= M.
+vads_cust_name= Paul Juve
+vads_sequence_number= 1
+vads_contract_used= FR7630002005701234567890158
+vads_trans_status= AUTHORISED
+vads_identifier_status= CREATED
+vads_pays_ip= FR
+vads_presentation_date= 20140818103142
+vads_effective_creation_date= 20140812103104
+vads_identifier= 20140812zVNOcO
+vads_operation_type= DEBIT
+vads_threeds_enrolled= 
+vads_threeds_cavv= 
+vads_threeds_eci= 
+vads_threeds_xid= 
+vads_threeds_cavvAlgorithm= 
+vads_threeds_status= 
+vads_threeds_sign_valid= 
+vads_threeds_error_code= 4
+vads_threeds_exit_status= 4
+vads_result= 00
+vads_extra_result= 00
+vads_card_country= 
+vads_language= fr
+vads_hash= 3894b953f1ab44d70aa3a29120a0dd2ec802c1c6cbd3ffa4353b927a894dfc4f
+vads_url_check_src= PAY
+vads_action_mode= INTERACTIVE
+vads_payment_config= SINGLE
+vads_page_action= PAYMENT
+signature= 8721c5ae4772b4163b2d56bc5aa8aa760a657f67</codeblock></p>
+	</conbody>
+</concept><?oxy_options track_changes="on"?>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084278441" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer la sécurité</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Plusieurs moyens sont mis en place afin d’assurer la sécurité des transactions
+			de paiement en ligne.</p>
+	</conbody>
+</concept>

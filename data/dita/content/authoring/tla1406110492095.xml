@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1406110492095" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer le retour vers le site marchand</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">A la fin du paiement, l’acheteur a la possibilité de revenir sur le site
+			marchand sur une page appelée <b ixia_locid="6">URL de retour</b>. </p>
+		<p ixia_locid="4">A ne pas confondre avec l’<b ixia_locid="7">URL de notification instantanée
+				(également appelée IPN)</b> (voir chapitre <b ixia_locid="5"><xref href="emm1405084980499.xml" ixia_locid="8">Gérer le dialogue vers le site
+					marchand</xref></b>). </p>
+	</conbody>
+</concept>

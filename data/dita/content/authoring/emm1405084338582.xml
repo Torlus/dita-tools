@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084338582" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer la sécurité au moyen de la signature</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4"/>
+		<p ixia_locid="3">L’intégrité des informations échangées est garantie par un échange de signatures
+			numériques entre la plateforme de paiement et le site marchand. </p>
+		<p ixia_locid="5"/>
+		<p ixia_locid="6">Le dialogue entre la plateforme de paiement et le site marchand s’effectue par soumission
+			de formulaires HTML. </p>
+		<p ixia_locid="7">Un formulaire contient une liste de champs spécifiques (voir <b ixia_locid="40"><xref href="emm1405083451541.xml" ixia_locid="42">Générer un formulaire de
+					paiement</xref></b>) utilisés pour calculer sa signature numérique (voir
+			chapitre <b ixia_locid="41"><xref href="emm1405088305497.xml" ixia_locid="43">Calculer
+					la signature</xref></b>).</p>
+		<p ixia_locid="10">Le résultat de ce calcul doit être envoyé dans le champ <b ixia_locid="39">signature</b>.</p>
+		<p ixia_locid="11"/>
+		<p ixia_locid="12">Nous utilisons la fonction de hachage « SHA-1 » pour chiffrer la signature.</p>
+		<p ixia_locid="13">SHA-1 est disponible dans la plupart des langages utilisés dans le développement
+			d’applications Web.</p>
+		<p ixia_locid="14"/>
+		<p ixia_locid="15">En fonction du language choisi, vous aurez peut être à coder vous-même les fonctions de
+			hachage SHA-1 (comme en ASP par exemple). </p>
+		<p ixia_locid="16"/>
+		<p ixia_locid="17">Pour vous aider, voici le résultat du SHA-1 du caractère " a " :</p>
+		<p ixia_locid="18">SHA1( " a ") = 86f7e437faa5a7fce15d1ddcb9eaeaea377667b8</p>
+		<p ixia_locid="19"/>
+		<p ixia_locid="20"><u ixia_locid="46">Modélisation des mécanismes de sécurité :</u></p>
+		<p ixia_locid="47"/><fig id="fig_jpm_53r_v4" ixia_locid="21">
+			<title ixia_locid="22">Diagramme mécanisme de sécurité</title>
+			<image id="image_wwy_53r_v4" ixia_locid="23" keyref="DiagrammeSignature" scale="60"/>
+			<p ixia_locid="48"/>
+			</fig>
+			<ol id="ol_icb_kjr_v4">
+				<li ixia_locid="25">Le site marchand récolte les données du formulaire et calcule la signature.</li>
+				<li ixia_locid="26">Le site marchand soumet le formulaire à la plateforme.</li>
+				<li ixia_locid="27">La plateforme réceptionne les données du formulaire et calcule la
+					signature.</li>
+				<li ixia_locid="28" outputclass="break">La plateforme compare la signature calculée avec la signature transmise par le
+					site marchand.</li>
+				<li ixia_locid="29">Si les signatures diffèrent, la demande de paiement est rejetée.<p ixia_locid="30">    Sinon, la plateforme procède au paiement.</p></li>
+				<li ixia_locid="31">La plateforme réceptionne les données du résultat et calcule la signature de la
+					réponse.</li>
+				<li ixia_locid="32">En fonction du paramétrage de la boutique (voir chapitre <b ixia_locid="44">Paramétrer les notifications</b>), la plateforme soumet le résultat du paiement
+				au site marchand.</li>
+				<li ixia_locid="34">Le site marchand réceptionne les données et calcule la signature. Il compare
+				la signature calculée avec la signature transmise par la plateforme.</li>
+				<li ixia_locid="35">Si les signatures diffèrent, le marchand analyse l’origine de l’erreur
+				(erreur dans le calcul, tentative de fraude etc...) <p ixia_locid="36">Sinon, le site marchand
+					procède à la mise à jour de sa base de données (état du stock, état de la
+					commande etc…).</p></li>
+			</ol>
+		
+	</conbody>
+</concept>

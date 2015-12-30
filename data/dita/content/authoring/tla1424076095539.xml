@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1424076095539" xml:lang="fr-fr">
+	<title ixia_locid="42">vads_payment_seq</title>
+	<shortdesc ixia_locid="43"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Détails des transactions réalisées.</entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="33" translate="no">json <p ixia_locid="45"><b ixia_locid="41" translate="no">vads_payment_seq</b> (format json) décrit la
+								séquence de paiement fractionné. Il contient les éléments :</p><p ixia_locid="47">
+								<ul id="ul_nyd_kqc_cr">
+									<li id="li_rfn_1tc_cr" ixia_locid="48" translate="no"><b ixia_locid="49">"trans_id"</b> : identifiant de la
+										transaction global à la séquence de paiement.</li>
+									<li id="li_fgt_1tc_cr" ixia_locid="50" translate="no"><b ixia_locid="51">"transaction"</b> : tableau des
+										transactions de la séquence. Il contient les éléments
+										suivants :</li>
+								</ul>
+							</p><p ixia_locid="54">
+								<table colsep="1" frame="all" id="table_d4w_2rc_cr" rowsep="1">
+									<title ixia_locid="55">Contenu de l'objet JSON</title>
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="3.64*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="56">Nom du paramètre</entry>
+												<entry ixia_locid="57">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="58">amount</entry>
+												<entry ixia_locid="59">Montant de la séquence de
+												paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="60">operation_type</entry>
+												<entry ixia_locid="61">Opération de débit.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="88">auth_number</entry>
+												<entry ixia_locid="90">Numéro d'autorisation
+												retourné par le serveur bancaire, si disponible
+												(sinon vide).<p ixia_locid="99">Ce paramètre est
+												retourné vide pour un paiement par
+												e-Chèque-Vacances. En effet, le serveur de titres
+												de l'ANCV ne le fourni pas.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="89">capture_delay</entry>
+												<entry ixia_locid="91">Délai avant remise (en
+												jours).<p ixia_locid="96">
+												<ul id="ul_fjt_f2h_3r">
+												<li ixia_locid="97">Pour un paiement par
+												e-Chèques-Vacances, ce paramètre est valorisé à
+												<ph ixia_locid="100" translate="no"><b ixia_locid="101">0</b></ph>. En effet, les
+												e-Chèques-Vacances sont validés en temps
+												réel.</li>
+												<li ixia_locid="98">Pour un paiement par carte
+												bancaire, la valeur de ce paramètre tient compte
+												du délai en nombre de jours avant la remise en
+												banque. Si ce paramètre n'est pas transmis dans le
+												formulaire de paiement, la valeur par défaut
+												définie dans le Back Office sera utilisée.</li>
+												</ul>
+												</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="67">card_brand</entry>
+												<entry ixia_locid="68">Moyen de paiement utilisé.<p ixia_locid="102">
+												<ul id="ul_dkx_x2h_3r">
+												<li ixia_locid="103">Pour un paiement par
+												e-Chèques-Vacances, ce paramètre est valorisé à
+												<ph ixia_locid="104" translate="no"><b ixia_locid="105">E_CV</b></ph>.</li>
+												<li ixia_locid="106">Pour un paiement par carte
+												bancaire (exemple CB ou cartes CB cobrandées Visa
+												ou Mastercard), ce paramètre est valorisé à <ph ixia_locid="107" translate="no"><b ixia_locid="108">CB</b></ph>.</li>
+												</ul>
+												</p><p doc-type="Moyens-Paiement ancv" ixia_locid="109" payment-method="ANCV">Se référer au guide d'intégration
+												du formulaire de paiement disponible sur notre
+												site documentaire pour visualiser la liste
+												complète des types de carte.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="69">card_number</entry>
+												<entry ixia_locid="70">Numéro du moyen de
+												paiement.<p ixia_locid="110">
+												<ul id="ul_rn2_wfh_3r">
+												<li ixia_locid="111">Pour un paiement par
+												e-Chèques-Vacances, ce paramètre est valorisé en
+												concaténant le numéro de chèque - numéro organisme
+												- année d'émission en les séparant avec le
+												caractère "-".</li>
+												<li ixia_locid="112">Pour un paiement par carte
+												bancaire, le numéro est masqué.</li>
+												</ul>
+												</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="71">expiry_month</entry>
+												<entry ixia_locid="72">Mois d'expiration de la carte
+												bancaire.<p ixia_locid="92">Paramètre absent pour
+												le paiement par e-Chèque-Vacances.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="73">expiry_year</entry>
+												<entry ixia_locid="74">Année d'expiration de la
+												carte bancaire.<p ixia_locid="93">Paramètre absent
+												pour le paiement par
+												e-Chèque-Vacances.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="75">payment_certificate</entry>
+												<entry ixia_locid="76">Certificat de
+												paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="77">presentation_date</entry>
+												<entry ixia_locid="78">
+												<p ixia_locid="113">
+												<ul id="ul_e2s_kg3_3r">
+												<li ixia_locid="114">Pour un paiement par carte
+												bancaire, ce paramètre correspond à la date de
+												remise en banque souhaitée (au format ISO
+												8601).</li>
+												</ul>
+												</p>
+												<ul id="ul_igs_4g3_3r">
+												<li ixia_locid="115">Pour un paiement par
+												e-Chèques-Vacances, ce paramètre correspond à la
+												date du jour de la commande. En effet, les
+												e-Chèques-Vacances sont validés en temps réel
+												auprès du serveur de titres de l'ANCV.</li>
+												</ul>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="79">trans_id</entry>
+												<entry ixia_locid="80">Numéro de
+												transaction.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="81">ext_trans_id</entry>
+												<entry ixia_locid="82">Paramètre absent pour le
+												paiement par carte bancaire.<p ixia_locid="116">Pour un paiement par e-Chèques-Vacances, ce
+												paramètre est un identifiant technique généré par
+												la plateforme de paiement (référence de
+												transaction).</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="83">sequence_number</entry>
+												<entry ixia_locid="84">Numéro de séquence.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="85">trans_status</entry>
+												<entry ixia_locid="86">Statut de la
+												transaction.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p><p ixia_locid="87"><u ixia_locid="53">Remarque</u> : les
+								transactions annulées sont également présentes dans le tableau
+								(information donnée dans le paramètre JSON
+							trans_status).</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="46"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//LYRA//DTD DITA Map//EN" "../../system/dtd/client/lyra-map.dtd">
+<map id="tla1405002308026" otherprops="parameter" xml:lang="fr-fr">
+    <title ixia_locid="1">DICTIONNAIRE DE DONNÉES</title>
+
+
+    <topicref href="tla1408546261318.xml" ixia_locid="12">
+        <topicref href="tla1410350807080.xml" ixia_locid="118" outputclass="break">
+
+            <topicref href="tla1411030317713.xml" ixia_locid="127"/>
+            <topicref href="tla1410525874342.xml" ixia_locid="121"/>
+            <topicref href="tla1410534868650.xml" ixia_locid="125"/>
+            <topicref href="tla1410522989073.xml" ixia_locid="122"/>
+            <topicref href="tla1410533143029.xml" ixia_locid="120"/>
+            <topicref href="tla1411031267607.xml" ixia_locid="128"/>
+            <topicref href="tla1410351589465.xml" ixia_locid="119"/>
+            <topicref href="tla1416328457246.xml" ixia_locid="153"/>
+            <topicref href="tla1410518407791.xml" ixia_locid="123" outputclass="break"/>
+            <topicref href="tla1410514133139.xml" ixia_locid="124"/>
+            <topicref href="tla1411025757958.xml" ixia_locid="126"/>
+
+
+
+
+
+
+        </topicref>
+
+
+        <topicref href="tla1408640166705.xml" ixia_locid="116" outputclass="break"/>
+        <topicref href="tla1405002307652.xml" ixia_locid="2"/>
+        <topicref href="tla1408546768429.xml" ixia_locid="13" outputclass="break"/>
+        <topicref href="tla1408547056236.xml" ixia_locid="14"/>
+        <topicref href="tla1408547832760.xml" ixia_locid="15"/>
+        <topicref href="tla1408548356588.xml" ixia_locid="16" outputclass="break"/>
+        <topicref href="tla1406127047143.xml" ixia_locid="3" outputclass="break"/>
+        <topicref href="tla1408550019475.xml" ixia_locid="17"/>
+        <topicref href="tla1408550125294.xml" ixia_locid="18" outputclass="break"/>
+        <topicref href="tla1408550840170.xml" ixia_locid="19"/>
+        <topicref href="tla1408551247542.xml" ixia_locid="20"/>
+        <topicref href="tla1408551527515.xml" ixia_locid="21"/>
+        <topicref href="tla1408604690440.xml" ixia_locid="22"/>
+        <topicref href="tla1408606602420.xml" ixia_locid="172" outputclass="break"/>
+        <topicref href="tla1408607272456.xml" ixia_locid="24"/>
+        <topicref href="tla1408607355172.xml" ixia_locid="25"/>
+        <topicref href="tla1447857764792.xml" ixia_locid="199"/>
+        <topicref href="tla1408607561985.xml" ixia_locid="26" outputclass="break"/>
+        <topicref href="tla1408607837994.xml" ixia_locid="27"/>
+        <topicref href="tla1408607954033.xml" ixia_locid="178" location="PayZen PayZen_Germany PayZen_Brazil Systempay" platform="PayZen Systempay"/>
+        <topicref href="tla1408607954033.xml" ixia_locid="179" location="Innopay OSB" outputclass="break" platform="Innopay OSB"/>
+        <topicref href="tla1408608221796.xml" ixia_locid="191" location="PayZen PayZen_Germany PayZen_Brazil" outputclass="break" platform="PayZen"/>
+        <topicref href="tla1408608221796.xml" ixia_locid="192" location="Systempay Innopay OSB" platform="Systempay Innopay OSB"/>
+        <topicref href="tla1406044948454.xml" ixia_locid="5" outputclass="break"/>
+        <topicref href="tla1408608603787.xml" ixia_locid="30"/>
+        <topicref href="tla1408608675071.xml" ixia_locid="31" outputclass="break"/>
+        <topicref href="tla1408608769950.xml" ixia_locid="32"/>
+        <topicref href="tla1408614379476.xml" ixia_locid="33"/>
+        <topicref href="tla1408614445899.xml" ixia_locid="34"/>
+
+        <topicref href="tla1408614742379.xml" ixia_locid="35" outputclass="break"/>
+        <topicref href="tla1408614926108.xml" ixia_locid="36"/>
+        <topicref href="tla1408615025768.xml" ixia_locid="37"/>
+        <topicref href="tla1408615118352.xml" ixia_locid="38"/>
+        <topicref href="tla1408615176997.xml" ixia_locid="39"/>
+        <topicref href="tla1423825610581.xml" ixia_locid="180" outputclass="break"/>
+        <topicref href="tla1408615260331.xml" ixia_locid="40"/>
+        <topicref href="tla1440084630860.xml" ixia_locid="198"/>
+        <topicref href="tla1408615340066.xml" ixia_locid="41"/>
+        <topicref href="tla1408615396958.xml" ixia_locid="42"/>
+        <topicref href="tla1408615475409.xml" ixia_locid="43" outputclass="break"/>
+        <topicref href="tla1408615888267.xml" ixia_locid="44"/>
+        <topicref href="tla1408616006014.xml" ixia_locid="45"/>
+        <topicref href="tla1408616066204.xml" ixia_locid="46"/>
+        <topicref href="tla1408616823195.xml" ixia_locid="47"/>
+        <topicref href="tla1408623011853.xml" ixia_locid="48"/>
+        <topicref href="tla1408624003656.xml" ixia_locid="49" outputclass="break"/>
+        <topicref href="tla1408624118504.xml" ixia_locid="50"/>
+        <topicref href="tla1408624169447.xml" ixia_locid="51"/>
+        <topicref href="tla1418032860506.xml" ixia_locid="159"/>
+        <topicref href="tla1418036120946.xml" ixia_locid="160"/>
+        <topicref href="tla1418033120031.xml" ixia_locid="161" outputclass="break"/>
+        <topicref href="tla1418032336492.xml" ixia_locid="162"/>
+        <topicref href="tla1418037434548.xml" ixia_locid="163"/>
+        <topicref href="tla1418032955977.xml" ixia_locid="164"/>
+        <topicref href="tla1418033253071.xml" ixia_locid="165" outputclass="break"/>
+        <topicref href="tla1418032770788.xml" ixia_locid="166"/>
+        <topicref href="tla1416319402112.xml" ixia_locid="154"/>
+        <topicref href="tla1416319586041.xml" ixia_locid="155"/>
+        <topicref href="tla1416319785868.xml" ixia_locid="156" outputclass="break"/>
+        <topicref href="tla1416319856371.xml" ixia_locid="157"/>
+        <topicref href="tla1416320032761.xml" ixia_locid="158"/>
+        <topicref href="tla1408624287246.xml" ixia_locid="52"/>
+        <topicref href="tla1408625090595.xml" ixia_locid="53"/>
+        <topicref href="tla1408625202233.xml" ixia_locid="54"/>
+        <topicref href="tla1411481213747.xml" ixia_locid="142" outputclass="break"/>
+        <topicref href="tla1412321830815.xml" ixia_locid="146"/>
+        <topicref href="tla1406125864809.xml" ixia_locid="6"/>
+        <topicref href="tla1411125541878.xml" ixia_locid="136"/>
+        <topicref href="tla1408625891261.xml" ixia_locid="55"/>
+        <topicref href="tla1408626141983.xml" ixia_locid="56"/>
+        <topicref href="tla1408626234577.xml" ixia_locid="57" outputclass="break"/>
+        <topicref href="tla1408626308005.xml" ixia_locid="58"/>
+        <topicref href="tla1408626336653.xml" ixia_locid="59"/>
+        <topicref href="tla1408626371544.xml" ixia_locid="60"/>
+        <topicref href="tla1406099131711.xml" ixia_locid="7" outputclass="break"/>
+        <topicref href="tla1408626891430.xml" ixia_locid="185" location="PayZen PayZen_Germany PayZen_Brazil" platform="PayZen"/>
+        <topicref href="tla1408626891430.xml" ixia_locid="186" location="Systempay OSB Innopay" outputclass="break" platform="Systempay OSB Innopay"/>
+        <topicref href="tla1408627002482.xml" ixia_locid="193" location="PayZen PayZen_Germany PayZen_Brazil" outputclass="break" platform="PayZen"/>
+        <topicref href="tla1408627002482.xml" ixia_locid="194" location="Systempay OSB Innopay" platform="Systempay OSB Innopay"/>
+        <topicref href="tla1415014254111.xml" ixia_locid="150" outputclass="break"/>
+        <topicref href="tla1415797825296.xml" ixia_locid="151"/>
+        <topicref href="tla1424076095539.xml" ixia_locid="182" outputclass="break"/>
+        <topicref href="tla1408627133271.xml" ixia_locid="63"/>
+        <topicref href="tla1408627517688.xml" ixia_locid="64"/>
+        <topicref href="tla1411642615770.xml" ixia_locid="144"/>
+        <topicref href="tla1411126075812.xml" ixia_locid="137"/>
+        <topicref href="tla1411125732485.xml" ixia_locid="138" outputclass="break"/>
+        <topicref href="tla1411126555396.xml" ixia_locid="139"/>
+        <topicref href="tla1411126454471.xml" ixia_locid="140"/>
+        <topicref href="tla1411126340153.xml" ixia_locid="141" outputclass="break"/>
+        <topicref href="tla1433941223778.xml" ixia_locid="184"/>
+        <topicref href="tla1447863204383.xml" ixia_locid="200"/>
+        <topicref href="tla1411481506331.xml" ixia_locid="143"/>
+        <topicref href="tla1408627821400.xml" ixia_locid="201" location="PayZen PayZen_Brazil PayZen_Germany Innopay" outputclass="break"/>
+        <topicref href="tla1408627821400.xml" ixia_locid="202" location="Systempay"/>
+        <topicref href="tla1408627924375.xml" ixia_locid="66"/>
+        <topicref href="tla1408627992082.xml" ixia_locid="67"/>
+        <topicref href="tla1408628074901.xml" ixia_locid="68"/>
+        <topicref href="tla1408628157713.xml" ixia_locid="69" outputclass="break"/>
+        <topicref href="tla1406116003851.xml" ixia_locid="8"/>
+        <topicref href="tla1413811527238.xml" ixia_locid="148" outputclass="break"/>
+        <topicref href="tla1436276953870.xml" ixia_locid="195" outputclass="break"/>
+        <topicref href="tla1409751437465.xml" ixia_locid="117" outputclass="break"/>
+        <topicref href="tla1416242779600.xml" ixia_locid="152" outputclass="break"/>
+        <topicref href="tla1408631717602.xml" ixia_locid="70"/>
+        <topicref href="tla1408631826813.xml" ixia_locid="71"/>
+        <topicref href="tla1408632458704.xml" ixia_locid="72" outputclass="break"/>
+        <topicref href="tla1408632679858.xml" ixia_locid="73"/>
+        <topicref href="tla1408632864028.xml" ixia_locid="74"/>
+        <topicref href="tla1408634336065.xml" ixia_locid="75"/>
+        <topicref href="tla1408634522824.xml" ixia_locid="76"/>
+        <topicref href="tla1423827002789.xml" ixia_locid="187" location="PayZen PayZen_Germany PayZen_Brazil" platform="PayZen"/>
+        <topicref href="tla1423827002789.xml" ixia_locid="188" location="Systempay OSB Innopay" outputclass="break" platform="Systempay OSB Innopay"/>
+        <topicref href="tla1408634587110.xml" ixia_locid="77"/>
+        <topicref href="tla1408634698739.xml" ixia_locid="78"/>
+        <topicref href="tla1408634757367.xml" ixia_locid="79"/>
+        <topicref href="tla1408634859538.xml" ixia_locid="80"/>
+        <topicref href="tla1408635009448.xml" ixia_locid="81"/>
+        <topicref href="tla1408635091649.xml" ixia_locid="189" location="PayZen PayZen_Germany PayZen_Brazil Systempay" outputclass="break" platform="PayZen Systempay"/>
+        <topicref href="tla1408635091649.xml" ixia_locid="190" location="OSB Innopay" platform="OSB Innopay"/>
+        <topicref href="tla1408635139472.xml" ixia_locid="176"/>
+        <topicref href="tla1408635487312.xml" ixia_locid="84"/>
+        <topicref href="tla1408635578322.xml" ixia_locid="85"/>
+        <topicref href="tla1408635663652.xml" ixia_locid="86" outputclass="break"/>
+        <topicref href="tla1408635725582.xml" ixia_locid="87"/>
+        <topicref href="tla1412321271132.xml" ixia_locid="145"/>
+        <topicref href="tla1408635796483.xml" ixia_locid="88"/>
+        <topicref href="tla1408635865701.xml" ixia_locid="89"/>
+        <topicref href="tla1408636137772.xml" ixia_locid="90"/>
+        <topicref href="tla1411025356421.xml" ixia_locid="129"/>
+        <topicref href="tla1411026103849.xml" ixia_locid="130" outputclass="break"/>
+        <topicref href="tla1411026347617.xml" ixia_locid="131"/>
+        <topicref href="tla1411026999130.xml" ixia_locid="132" outputclass="break"/>
+        <topicref href="tla1411025901698.xml" ixia_locid="133" outputclass="break"/>
+        <topicref href="tla1411026602462.xml" ixia_locid="134"/>
+        <topicref href="tla1411026836617.xml" ixia_locid="135"/>
+        <topicref href="tla1412321592265.xml" ixia_locid="147"/>
+        <topicref href="tla1408636286614.xml" ixia_locid="91"/>
+        <topicref href="tla1408636944655.xml" ixia_locid="92"/>
+        <topicref href="tla1408637038608.xml" ixia_locid="93"/>
+        <topicref href="tla1408637200153.xml" ixia_locid="94"/>
+        <topicref href="tla1408637262343.xml" ixia_locid="95"/>
+        <topicref href="tla1408637376020.xml" ixia_locid="96"/>
+        <topicref href="tla1408638075046.xml" ixia_locid="97" outputclass="break"/>
+        <topicref href="tla1408638234029.xml" ixia_locid="98"/>
+        <topicref href="tla1408638341396.xml" ixia_locid="99" outputclass="break"/>
+        <topicref href="tla1408638445416.xml" ixia_locid="100"/>
+        <topicref href="tla1408638544413.xml" ixia_locid="101"/>
+        <topicref href="tla1408638607923.xml" ixia_locid="102" outputclass="break"/>
+        <topicref href="tla1408638657026.xml" ixia_locid="103" outputclass="break"/>
+        <topicref href="tla1432730650747.xml" ixia_locid="183"/>
+        <topicref href="tla1408638742584.xml" ixia_locid="104"/>
+        <topicref href="tla1408638807307.xml" ixia_locid="105"/>
+        <topicref href="tla1408638858037.xml" ixia_locid="106" outputclass="break"/>
+        <topicref href="tla1408639045339.xml" ixia_locid="196"/>
+        <topicref href="tla1408639045339.xml" ixia_locid="197"/>
+        <topicref href="tla1408639119392.xml" ixia_locid="108"/>
+        <topicref href="tla1408639165197.xml" ixia_locid="109"/>
+        <topicref href="tla1408639224559.xml" ixia_locid="110" outputclass="break"/>
+        <topicref href="tla1408639383258.xml" ixia_locid="111"/>
+        <topicref href="tla1408639681161.xml" ixia_locid="112"/>
+        <topicref href="tla1408639754479.xml" ixia_locid="113" outputclass="break"/>
+        <topicref href="tla1408639900969.xml" ixia_locid="114"/>
+        <topicref href="tla1408639995934.xml" ixia_locid="115"/>
+
+    </topicref>
+</map>

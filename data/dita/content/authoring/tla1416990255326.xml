@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1416990255326" xml:lang="fr-fr">
+	<title ixia_locid="619">Paiement comptant différé</title>
+	<shortdesc ixia_locid="620"/>
+	<conbody>
+		<p ixia_locid="611">Un paiement est considéré comme <b ixia_locid="610">comptant différé</b>
+			si :</p>
+		<p ixia_locid="612">
+			<ul id="ul_z3z_kfy_2q">
+				<li ixia_locid="613">le montant est débité en une seule fois,</li>
+				<li ixia_locid="614">le délai de remise en banque est strictement supérieur à 0
+						jour.<p ixia_locid="616">La date de remise ne peut être supérieure à 12 mois
+						après la date d’enregistrement du paiement.</p></li>
+			</ul>
+		</p>
+		<!--<p ixia_locid="10">Un paiement est considéré comme <b ixia_locid="11">différé</b> si la durée
+			séparant la date de remise demandée de la date du jour est strictement supérieure à la
+			durée de validité de l'autorisation. </p>-->
+		<!--<p ixia_locid="12">Ce type de paiement n’est pas garanti pour le marchand. </p>-->
+		<p ixia_locid="13"/>
+		<p ixia_locid="596">Il existe deux types de paiements comptants différés :</p>
+		<p ixia_locid="597">
+			<ul id="ul_jjs_vvx_2q">
+				<li ixia_locid="599"><b ixia_locid="600">Délai de remise inférieur à la durée de
+						validité de l'autorisation</b> (voir section <b ixia_locid="617">Validité
+						d'une autorisation</b> présentée plus bas)</li>
+			</ul>
+		</p>
+		<p ixia_locid="615">Une demande d'autorisation pour le montant global est effectuée. Sans
+			modification du marchand, le paiement est remis en banque à la date de présentation
+			demandée.</p>
+		<p ixia_locid="598">
+			<ul id="ul_t2j_wvx_2q">
+				<li ixia_locid="603"><b ixia_locid="601">Délai de remise supérieur à la durée de
+						validité de l'autorisation</b> (voir section <b ixia_locid="618">Validité
+						d'une autorisation</b> présentée plus bas)</li>
+			</ul>
+		</p>
+		<p ixia_locid="14">Une demande d'autorisation à <ph ixia_locid="626" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay" translate="no">1 euro</ph><ph ixia_locid="627" location="OSB" platform="OSB" translate="no">100
+				XPF</ph><ph ixia_locid="628" location="Innopay" platform="Innopay">1
+			CHF</ph><ph ixia_locid="629" location="PayZen_Brazil">1 BRL</ph><!-- (demande de renseignement)--> est effectuée au moment de l’enregistrement
+			du paiement pour s’assurer de la validité de la carte. </p>
+		<p ixia_locid="409">Si cette autorisation à <ph ixia_locid="630" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay" translate="no">1 euro</ph><ph ixia_locid="631" location="OSB" platform="OSB" translate="no">100
+			XPF</ph><ph ixia_locid="632" location="Innopay" platform="Innopay">1
+				CHF</ph><ph ixia_locid="633" location="PayZen_Brazil">1 BRL</ph> est acceptée, le paiement
+			est enregistré. </p>
+		<p ixia_locid="605">J-1 à la date de présentation demandée, une demande d’autorisation pour le
+			montant global est effectuée. </p>
+		<p ixia_locid="606">Le paiement peut être accepté ou refusé. Le marchand doit donc être très
+			vigilant sur ce type de paiement avant de délivrer un bien / un service à l'acheteur. </p>
+		<!--<p ixia_locid="410">En cas d’échec de la demande d’autorisation, un e-mail est adressé au
+			marchand par la plateforme. </p>-->
+		<!--<p ixia_locid="17">Dans la réponse, le fait qu’une demande d'autorisation à 1 euro ait été
+			réalisée à la place d’une demande d’autorisation est indiqué dans le paramètre <b ixia_locid="18">vads_auth_mode</b> valorisé alors à <b ixia_locid="19">MARK</b>. </p>-->
+	</conbody>
+</concept>

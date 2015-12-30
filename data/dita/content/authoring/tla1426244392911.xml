@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<concept doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" id="tla1426244392911" xml:lang="fr-fr">
+	<title ixia_locid="122">Notifications des différents statuts pour les échéances d'un paiement en
+		plusieurs fois</title>
+	<shortdesc ixia_locid="123"/>
+	<conbody>
+		<fig doc-type="Back-Office Form Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" id="fig_N10094_N10013_N10001" ixia_locid="23" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<title ixia_locid="24">Diagramme de flux - Echéances d'un paiement en plusieurs
+				fois</title>
+			<image href="tla1437643349015.image" id="image_trc_sqc_jr" ixia_locid="25" scale="40"/>
+		</fig>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="64" payment-method="SEPA-One-Off SEPA-Recurrent">Δ : durée de validité d'autorisation.</p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="113" payment-method="SEPA-One-Off SEPA-Recurrent"/>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="100" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<table colsep="1" frame="all" id="table_yfp_mks_cq" rowsep="1">
+				<title ixia_locid="101">Règles de notification à activer pour un paiement en
+					plusieurs fois</title>
+				<tgroup cols="3">
+					<colspec colname="newCol1" colnum="1" colwidth="1*"/>
+					<colspec colname="c1" colnum="2" colwidth="1.0*"/>
+					<colspec colname="c2" colnum="3" colwidth="1.0*"/>
+					<thead>
+						<row valign="middle">
+							<entry ixia_locid="102">Evénement </entry>
+							<entry ixia_locid="103">Statut notifé</entry>
+							<entry ixia_locid="104">Nom de la règle à paramétrer</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row valign="middle">
+							<entry ixia_locid="105">Annulation par le marchand</entry>
+							<entry ixia_locid="106">CANCELED</entry>
+							<entry ixia_locid="107">URL de notification sur une opération en
+								provenance du <ph ixia_locid="121" translate="no">Back
+								Office</ph></entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="108">Réponse à la demande d'autorisation</entry>
+							<entry ixia_locid="109">AUTHORISED, REFUSED </entry>
+							<entry ixia_locid="110">URL de notification sur autorisation par
+								batch</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

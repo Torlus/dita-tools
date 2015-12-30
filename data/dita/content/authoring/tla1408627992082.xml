@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408627992082" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_redirect_success_message</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Permet de spécifier le message à la fin d’un paiement accepté dans le
+							cas d’une redirection automatique vers le site marchand.</entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="33" translate="no">ans..255</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="36">Code erreur</b></entry>
+						<entry ixia_locid="34" translate="no">35</entry>
+					</row>
+					<row>
+						<entry ixia_locid="37"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="38">Redirection vers le site marchand.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

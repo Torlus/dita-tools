@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408607954033" xml:lang="fr-fr">
+	<title ixia_locid="32" translate="no">vads_contrib</title>
+	<shortdesc ixia_locid="33"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="34">Information complémentaire facultative destinée à indiquer le nom de la
+								contribution utilisée lors du paiement (Joomla, osCommerce...). Si
+								vous utilisez une implémentation propriétaire, ce champ peut
+								accueillir votre numéro de version interne du module que vous avez
+								développé par exemple.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="8" translate="no">ans..128</entry>
+					</row>
+					<row>
+						<entry ixia_locid="27"><b ixia_locid="35">Code erreur</b></entry>
+						<entry ixia_locid="29">31</entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="31">Informations techniques.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

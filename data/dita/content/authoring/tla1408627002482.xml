@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408627002482" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_payment_config</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">
+							<p ixia_locid="51">Désigne le type du paiement : comptant ou en
+								plusieurs fois.</p>
+							<p ixia_locid="111">
+								<ul>
+									<li ixia_locid="56">Pour un paiement simple, la valeur doit être
+										égale à <b ixia_locid="112" translate="no">SINGLE</b>. </li>
+									<li ixia_locid="57">Pour un paiement en plusieurs fois avec montants et dates fixes, la
+										valeur doit être égale à <b ixia_locid="113" translate="no">MULTI: </b>suivi par des paires
+										clé=valeur séparées par des « <b ixia_locid="114">;</b> ». <p ixia_locid="62">Les paramètres sont les suivants : </p><ul id="ul_iwz_z5t_dq">
+											<li ixia_locid="58">« <b ixia_locid="115" translate="no">first</b> » indique le montant
+												du premier paiement (exprimé dans la plus petite
+												unité de la monnaie ou devise).</li>
+											<li ixia_locid="59">« <b ixia_locid="116" translate="no">count</b> » indique le nombre
+												total d'échéances.</li>
+											<li ixia_locid="60">« <b ixia_locid="117" translate="no">period</b> » indique
+												l’intervalle en nombre de jours entre 2 paiements.<p ixia_locid="61">L'ordre des champs associés à
+													<ph ixia_locid="130" translate="no">MULTI</ph> est imposé. </p></li>
+										</ul></li>
+									<li ixia_locid="118">Pour un paiement en plusieurs fois, avec un échéancier personnalisé,
+										la valeur doit être égale à <b ixia_locid="119" translate="no">MULTI_EXT:</b> suivi par des paires
+										date=montant séparées par des « <b ixia_locid="120">;</b> ».
+											<p ixia_locid="136">Les dates ne doivent pas être dans le passé.</p></li>
+								</ul>
+							</p>
+							<p ixia_locid="121">L’utilisation de la valeur <ph ixia_locid="131" translate="no">MULTI_EXT</ph> nécessite la souscription de l’option <b ixia_locid="38">Paiement en plusieurs fois avancé</b>.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="39">Format</b></entry>
+						<entry ixia_locid="34" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="40">Code erreur</b></entry>
+						<entry ixia_locid="35">07</entry>
+					</row>
+					<row>
+						<entry ixia_locid="32"><b ixia_locid="41">Valeurs possibles</b></entry>
+						<entry ixia_locid="36">
+							<p ixia_locid="42">
+								<ul id="ul_y3w_3wt_dq">
+									<li ixia_locid="122"><b ixia_locid="43" translate="no">SINGLE</b></li>
+								</ul>
+								<ul id="ul_wgw_jwt_dq">
+									<li ixia_locid="123"><b ixia_locid="124">MULTI:first= montant_inital ;count= nbre_echeances
+											;period= intervalle_en_jours</b></li>
+									<li ixia_locid="125"><b ixia_locid="47">MULTI_EXT:date1=montant1;date2=montant2;date3=montant3</b></li>
+								</ul>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="64"><b ixia_locid="69">Exemple 1</b></entry>
+						<entry ixia_locid="67"><p ixia_locid="104"><b ixia_locid="105" translate="no">MULTI</b> permet
+								de définir un paiement en plusieurs fois. </p><p ixia_locid="106">Le
+								montant de chaque échéance correspond au montant total divisé par le
+								nombre d'échéances. </p><p ixia_locid="107">La valeur du premier
+								montant peut être différente et spécifiée dans le paramètre <b ixia_locid="108" translate="no">first</b>. </p><p ixia_locid="109">En cas de reste différent de zéro, il sera reporté
+								sur le montant de la dernière échéance.</p><u ixia_locid="70">Requête de paiement :</u><p ixia_locid="71">
+								<ul id="ul_pf5_14p_xp">
+									<li ixia_locid="72" translate="no">vads_capture_delay=2</li>
+									<li ixia_locid="73">vads_currency=<ph ixia_locid="168" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="169" location="OSB" platform="OSB">953</ph><ph ixia_locid="170" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="171" location="PayZen_Brazil">986</ph></li>
+									<li ixia_locid="74" translate="no">vads_amount=20000</li>
+									<li ixia_locid="75" translate="no">vads_payment_config=MULTI:first=10000;count=4;period=30</li>
+								</ul>
+							</p><p ixia_locid="76"><u ixia_locid="77">Résultat :</u></p><p ixia_locid="78">Un premier paiement de 100 <ph ixia_locid="172" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="173" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="174" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="175" location="PayZen_Brazil">BRL</ph> sera remis en banque à J+2 <ph ixia_locid="132" translate="no">(vads_capture_delay)</ph>.</p><p ixia_locid="79">Un deuxième paiement de 33.33 <ph ixia_locid="176" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="177" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="178" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="179" location="PayZen_Brazil">BRL</ph> sera effectué à J+32 (<ph ixia_locid="133" translate="no">vads_capture_delay +
+								period</ph>). </p><p ixia_locid="80">Un troisième paiement de 33.33
+									<ph ixia_locid="180" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="181" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="182" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="183" location="PayZen_Brazil">BRL</ph> sera effectué à J+62.</p><p ixia_locid="110">Un quatrième et dernier paiement de 33.34 <ph ixia_locid="184" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="185" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="186" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="187" location="PayZen_Brazil">BRL</ph> sera effectué à J+92.</p><p ixia_locid="81">Le total donne bien 200 <ph ixia_locid="188" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="189" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="190" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="191" location="PayZen_Brazil">BRL</ph> (<ph ixia_locid="134" translate="no">vads_amount= 20000</ph>). Le reste a été ajouté
+								au montant de la dernière échéance.</p><p ixia_locid="82">Cette
+								instruction permet de créer immédiatement 4 paiements avec le même
+								numéro de transaction mais un numéro d'échéance différent
+								(vads_sequence_number).</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="126"><b ixia_locid="83">Exemple 2</b></entry>
+						<entry ixia_locid="128">
+							<p ixia_locid="84"><b ixia_locid="85" translate="no">MULTI_EXT</b> permet de définir un échéancier personnalisé. Vous
+								pourrez ainsi définir la date et le montant de chaque échéance. </p>
+							<p ixia_locid="87"><u ixia_locid="88">Requête de paiement <ph ixia_locid="135" translate="no">MULTI_EXT :</ph></u></p>
+							<p ixia_locid="89">
+								<ul id="ul_hyr_p4p_xp">
+									<li ixia_locid="90" translate="no">vads_currency=<ph ixia_locid="192" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="193" location="OSB" platform="OSB">953</ph><ph ixia_locid="194" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="195" location="PayZen_Brazil">986</ph></li>
+									<li ixia_locid="91" translate="no">vads_amount=10000</li>
+									<li ixia_locid="92" translate="no">vads_payment_config= MULTI_EXT<b ixia_locid="167">:</b>20150601 =5000;
+										20150701 =2500; 20150808 =2500</li>
+								</ul>
+							</p>
+							<p ixia_locid="93"><u ixia_locid="94">Résultat :</u></p>
+							<p ixia_locid="95">Le premier paiement aura lieu le 1er juin 2015 pour un montant de 50<ph ixia_locid="196" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="197" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="198" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="199" location="PayZen_Brazil">BRL</ph>.</p>
+							<p ixia_locid="96">Le second paiement aura lieu le 1er juillet 2015 pour un montant de 25<ph ixia_locid="200" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="201" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="202" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="203" location="PayZen_Brazil">BRL</ph>.</p>
+							<p ixia_locid="97">Le dernier paiement aura lieu le 8 août 2015 pour un montant de 25<ph ixia_locid="204" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="205" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="206" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="207" location="PayZen_Brazil">BRL</ph>.</p>
+							<p ixia_locid="98"><u ixia_locid="99">Remarque :</u></p>
+							<p ixia_locid="100">La somme totale des montants doit être égale à la valeur du champ <b ixia_locid="101">vads_amount</b>. La date de la dernière
+								échéance ne peut être supérieure à 12 mois par rapport à la date de
+								soumission du formulaire. Si la date de la dernière échéance est
+								supérieure à la date de validité de la carte, aucune échéance ne
+								sera enregistrée et l’acheteur sera notifié par un message de ce
+								problème.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="127"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="129">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+	</refbody>
+</reference>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1412321592265" xml:lang="fr-fr">
+	<title ixia_locid="43" translate="no">vads_tax_amount</title>
+	<shortdesc ixia_locid="44"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">Paramètre qui permet de définir le montant des taxes pour l’ensemble de
+							la commande.<p ixia_locid="45">La valeur doit être exprimée dans la plus
+								petite unité monétaire <ph ixia_locid="602" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour l'Euro)</ph>.</p><p ixia_locid="46">Spécifique au moyen de paiement PayPal.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="603"><b ixia_locid="37">Format</b></entry>
+						<entry ixia_locid="605" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="604"><b ixia_locid="607">Code d'erreur</b></entry>
+						<entry ixia_locid="606" translate="no">108</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur la commande.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

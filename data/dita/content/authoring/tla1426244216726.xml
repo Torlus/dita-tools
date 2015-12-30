@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<concept doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" id="tla1426244216726" xml:lang="fr-fr">
+	<title ixia_locid="119">Notifications des différents statuts pour un paiement comptant
+		immédiat</title>
+	<shortdesc ixia_locid="120"/>
+	<conbody>
+		<fig doc-type="Back-Office Form Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" id="fig_N1001B_N10013_N10001" ixia_locid="4" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<title ixia_locid="5">Diagramme de flux - Paiement comptant immédiat</title>
+			<image href="tla1437643182518.image" id="image_hz1_jqc_jr" ixia_locid="15" scale="40"/>
+		</fig>
+		<p doc-type="Back-Office Form Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="65" payment-method="SEPA-One-Off SEPA-Recurrent"/>
+		<p doc-type="Back-Office Form Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="66" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<table colsep="1" frame="all" id="table_pjr_cks_cq" rowsep="1">
+				<title ixia_locid="67">Règles de notification à activer pour un paiement comptant
+					immédiat</title>
+				<tgroup cols="3">
+					<colspec colname="newCol1" colnum="1" colwidth="1*"/>
+					<colspec colname="c1" colnum="2" colwidth="1.0*"/>
+					<colspec colname="c2" colnum="3" colwidth="1.0*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="68">Evénement </entry>
+							<entry ixia_locid="69">Statut notifé</entry>
+							<entry ixia_locid="70">Nom de la règle à paramétrer</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row valign="middle">
+							<entry ixia_locid="71">Abandon par l'acheteur</entry>
+							<entry ixia_locid="72">ABANDONED</entry>
+							<entry ixia_locid="73">URL de notification sur annulation</entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="74">Annulation par le marchand</entry>
+							<entry ixia_locid="75">CANCELED</entry>
+							<entry ixia_locid="76">URL de notification sur une opération en
+								provenance du <ph ixia_locid="118" translate="no">Back
+								Office</ph></entry>
+						</row>
+						<row valign="middle">
+							<entry ixia_locid="77">Réponse à la demande d'autorisation</entry>
+							<entry ixia_locid="78">AUTHORISED_TO_VALIDATE, AUTHORISED, REFUSED </entry>
+							<entry ixia_locid="79">URL de notification à la fin du paiement</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+		<p doc-type="Back-Office Form integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="31" payment-method="SEPA-One-Off SEPA-Recurrent"/>
+	</conbody>
+</concept>

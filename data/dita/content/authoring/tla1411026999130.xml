@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411026999130" xml:lang="fr-fr">
+	<title ixia_locid="43" translate="no">vads_sub_desc</title>
+	<shortdesc ixia_locid="44"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">Paramètre obligatoire utilisé dans le cas de la création d'un
+							abonnement. <p ixia_locid="45">Il définit la règle de l’abonnement à
+								appliquer.</p><p ixia_locid="46">La valeur attendue dans ce
+								paramètre est une chaîne de caractères suivant la spécification <b ixia_locid="47">iCalendar</b>, ou Internet Calendar, décrite
+								dans la RFC5545 (voir <ph ixia_locid="70" translate="no">http://tools.ietf.org/html/rfc5545</ph>).</p><p ixia_locid="48">Cette spécification permet entre autre de définir des règles
+								complexes d’abonnement, via la propriété <b ixia_locid="49" translate="no">RRULE</b>. </p><p ixia_locid="50">Pour des
+								raisons techniques, il n’est pas possible de définir des périodes
+								d’abonnement inférieures à une journée. </p><p ixia_locid="51">Les
+								mots clés "<ph ixia_locid="71" translate="no">SECONDLY" / "MINUTELY" / "HOURLY</ph>"
+								ne sont donc pas pris en compte. </p><p ixia_locid="52"/><p ixia_locid="53">Exemples : <ul id="ul_i3g_twv_lp">
+									<li ixia_locid="65">
+										<p ixia_locid="61">Pour définir des échéances de paiement
+											ayant lieu le dernier jour de chaque mois, pendant 12
+											mois, la règle s’écrit : </p>
+										<p ixia_locid="62"><b ixia_locid="66" translate="no">RRULE:FREQ=MONTHLY;BYMONTHDAY=28,29,30,31;BYSETPOS=-1;COUNT=12</b>
+										</p>
+										<p ixia_locid="63">Cette règle signifie que si le mois
+											courant ne contient pas de 31, alors le moteur prendra
+											en compte le 30. Si le 30 n’existe pas, alors il prendra
+											en compte le 29 et ainsi de suite jusqu’au 28.</p>
+										<p ixia_locid="67">Une autre version de cette règle :
+												<b ixia_locid="72"><ph ixia_locid="73" translate="no">RRULE:FREQ=MONTHLY;COUNT=5;BYMONTHDAY=-1</ph></b></p>
+										<p ixia_locid="74"/>
+									</li>
+									<li ixia_locid="54">Pour définir des échéances de paiement ayant
+										lieu le 10 de chaque mois, pendant 12 mois, alors la règle
+										d’abonnement s’écrit de la manière suivante : <b ixia_locid="68" translate="no">RRULE:FREQ=MONTHLY;COUNT=12;BYMONTHDAY=10</b>
+										<p ixia_locid="55"/></li>
+									<li ixia_locid="56">Pour définir des échéances de paiement ayant lieu chaque trimestre,
+										jusqu’au 31/12/2016 : <b ixia_locid="69" translate="no">RRULE:FREQ=YEARLY;BYMONTHDAY=1;BYMONTH=1,4,7,10;UNTIL=20161231</b>
+										<p ixia_locid="57">Les échéances auront lieu chaque 1er de
+											janvier, avril, juillet et octobre. Leur nombre total
+											dépend de la date d’effet de l’abonnement (voir
+											paramètre <b ixia_locid="58" translate="no"><xref href="tla1411025901698.xml" ixia_locid="64">vads_sub_effect_date</xref></b>). </p><p ixia_locid="75"/><p ixia_locid="76">Pour
+											plus de détails et d'exemples vous pouvez consulter le
+											site <xref format="html" href="http://recurrance.sourceforge.net/" ixia_locid="77" scope="external">http://recurrance.sourceforge.net/</xref>.</p></li>
+								</ul></p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="37">Format</b></entry>
+						<entry ixia_locid="34" translate="no">string</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="38">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">64</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

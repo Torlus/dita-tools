@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088934849" xml:lang="fr-fr">
+	<title ixia_locid="1">Procéder à la phase de test</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4">Préalablement au passage en production de la boutique, il est nécessaire de
+			réaliser des tests pour s’assurer du bon fonctionnement entre le site marchand et la
+			plateforme de paiement.</p>
+		<p ixia_locid="5">Ces tests doivent impérativement être réalisés avant de demander le
+			passage en production. </p>
+	</conbody>
+</concept>

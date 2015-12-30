@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415951699874" xml:lang="fr-fr">
+	<title ixia_locid="1">Cycle de vie d’une transaction de paiement en plusieurs fois </title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">La première échéance du paiement en plusieurs fois se comportera exactement comme une
+			transaction de paiement comptant immédiat ou une transaction de paiement différé, selon
+			la date de remise en banque demandée. </p>
+		<p ixia_locid="4">Les échéances suivantes sont par défaut positionnées en statut <b ixia_locid="5">A valider et
+				autoriser</b> tant que la première échéance n’aura pas été validée par le marchand.
+			Leur bonne fin n’est pas garantie pour le marchand. En effet, la banque de l'acheteur
+			peut refuser la demande d’autorisation. </p>
+		<p ixia_locid="6"/>
+		<p ixia_locid="7"><b ixia_locid="8">La validation de la 1ère échéance vaut validation de toutes les échéances suivantes.
+				Par contre, l’annulation d’une échéance ne vaut pas annulation des échéances
+				ultérieures. </b></p>
+		<p ixia_locid="9"/>
+		<fig id="fig_N10034_N10013_N10001" ixia_locid="10">
+			<image href="tla1415983766360.image" ixia_locid="11" scale="50"/>
+		</fig>
+	</conbody>
+</concept>

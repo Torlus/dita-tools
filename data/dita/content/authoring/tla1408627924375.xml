@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408627924375" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_redirect_error_timeout</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Permet de définir un délai en secondes avant redirection automatique
+							vers le site marchand à la fin d’un paiement refusé. <p ixia_locid="51">Sa valeur est comprise entre <b ixia_locid="48" translate="no">0</b> et <b ixia_locid="49" translate="no">600</b>s. </p><p ixia_locid="52">Passé ce délai, l'acheteur sera dirigé vers l'URL
+								renseignée dans le champ <b ixia_locid="46" translate="no"><b ixia_locid="53">vads_url_refusal</b></b>. Si ce champ n'est pas
+								renseigné, l'acheteur sera redirigé sur l'URL de retour renseignée
+								dans le champ <b ixia_locid="47" translate="no">vads_url_return</b>
+								ou sur l’URL de retour renseignée dans le Back Office. Si l'URL de
+								retour n'est pas définie, il sera redirigé sur vers l’URL de la
+								boutique.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="33" translate="no">n..3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="36">Code erreur</b></entry>
+						<entry ixia_locid="34" translate="no">36</entry>
+					</row>
+					<row>
+						<entry ixia_locid="37"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="38">Redirection vers le site marchand.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

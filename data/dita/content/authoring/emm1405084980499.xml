@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084980499" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer le dialogue vers le site marchand</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="67">La gestion du dialogue vers le site marchand est réalisée grâce à deux
+			types d’URL :</p>
+		<p ixia_locid="69">
+			<ul id="ul_azc_ysr_v4">
+				<li ixia_locid="71"><b ixia_locid="99">Url de notification instantanée</b>, également appelée
+					IPN (Instant Payment Notification),</li>
+				<li ixia_locid="73"><b ixia_locid="100">Url de retour</b> vers le site marchand.</li>
+			</ul>
+		</p>
+		<p ixia_locid="75"/>
+		<p ixia_locid="44"/>
+		<p ixia_locid="77"><u ixia_locid="79">Url de notification instantanée - IPN (Instant Payment
+				Notification)</u></p>
+		<p ixia_locid="81">La plateforme de paiement notifie automatiquement au site marchand le
+			résultat du paiement. Les données sont envoyées en mode <b ixia_locid="47">POST</b>. </p>
+		<p ixia_locid="11">La plateforme est capable de contacter le site marchand quel que soit le
+			protocole utilisé (http ou https).</p>
+		<p ixia_locid="43"/>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="12" payment-method="SEPA-One-Off SEPA-Recurrent"><b ixia_locid="13">Pour traiter</b> ces notifications, le marchand doit
+				<b ixia_locid="14">créer une page</b> sur son site qui :</p>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="83" payment-method="SEPA-One-Off SEPA-Recurrent">
+			<ul id="ul_xsv_ctr_v4">
+				<li ixia_locid="85">analyse les données reçues en mode <b ixia_locid="48">POST</b>,</li>
+				<li ixia_locid="17">s’assure de l’intégrité des informations reçues en calculant la
+					signature,</li>
+				<li ixia_locid="18">vérifie qu’il ne s’agit pas d’un doublon de notification (renvoi
+					de la notification depuis le <ph ixia_locid="103" translate="no">Back
+						Office</ph> par exemple),</li>
+				<li ixia_locid="19">déclenche la mise à jour de sa base de données (état de la
+					commande, stock, etc…),</li>
+				<li ixia_locid="20">envoie des e-mails à l’acheteur (facture, suivi de commande,
+					etc…).</li>
+			</ul>
+		</p>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="21" payment-method="SEPA-One-Off SEPA-Recurrent">Le temps de traitement influe directement sur le délai d’affichage de la
+			page de résumé du paiement. Plus le traitement est long, plus l’affichage est
+			retardé.</p>
+		<p doc-type="Form Modules Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="22" payment-method="SEPA-One-Off SEPA-Recurrent"><b ixia_locid="23">Pour recevoir</b> les notifications, le marchand doit
+				<b ixia_locid="24">paramétrer</b> les règles de notifications depuis son <ph ixia_locid="104" translate="no">Back Office</ph> (voir chapitre <b ixia_locid="111">Paramétrer les notifications</b>). </p>
+		<p doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="26" payment-method="SEPA-One-Off SEPA-Recurrent">En cas de problème de communication vers le site marchand, la plateforme
+			de paiement envoie un e-mail à l’administrateur de la boutique, précisant la raison de
+			l’échec (erreur http, etc. …) ainsi que la procédure à suivre pour renvoyer la
+			notification depuis le <ph ixia_locid="105" translate="no">Back Office</ph>.</p>
+		<p doc-type="Form Modules Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="27" payment-method="SEPA-One-Off SEPA-Recurrent"/>
+		<p doc-type="Form Moyens-Paiement integration integration-Allemagne integration-Bresil Modules SEPA-OneOff SEPA-Recurrent" ixia_locid="45" payment-method="SEPA-One-Off SEPA-Recurrent"/>
+		<p ixia_locid="46"/>
+		<p ixia_locid="28"><u ixia_locid="29">Url de retour vers le site marchand</u></p>
+		<p ixia_locid="30"> </p>
+		<p ixia_locid="68">Le marchand peut paramétrer dans le <ph ixia_locid="106" translate="no">Back Office</ph> les URL
+			de retour "par défaut" depuis le menu <b ixia_locid="70">Paramétrage</b> &gt; <b ixia_locid="72">Boutique</b> &gt; onglet <b ixia_locid="74">Configuration</b>) :</p>
+		<p ixia_locid="91"/>
+		<fig id="fig_jqx_vcy_v4" ixia_locid="76">
+			<title ixia_locid="78">Spécification des URL de retour</title>
+			<!--<image align="center" id="image_x3r_wcy_v4" ixia_locid="80" keyref="URLRetour" scale="60"/>-->
+			<image ixia_locid="107" keyref="URLRetourV2.3"/>
+		</fig>
+		<p ixia_locid="82">Il peut configurer une URL de retour à la boutique différente en fonction
+			du mode.</p>
+		<p ixia_locid="66">Par défaut, l'acheteur est redirigé vers l'URL de retour, et ce, quel que
+			soit le résultat du paiement.</p>
+		<p ixia_locid="84">Si toutefois aucune URL n’est configurée à ce niveau, alors la redirection
+			utilisera l'URL principale de la boutique (paramètre <b ixia_locid="101">URL</b> défini dans l'encadré
+				<b ixia_locid="102">Détails</b> de la boutique). </p>
+		<p ixia_locid="92"/>
+		<p doc-type="Form Modules Moyens-Paiement integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="93" payment-method="SEPA-One-Off SEPA-Recurrent">Le marchand a la possibilité de surcharger cette configuration dans son
+			formulaire de paiement (voir chapitre <b ixia_locid="113">Définir les URL de
+			retour</b>).</p>
+		<p ixia_locid="31"> </p>
+		<p ixia_locid="96"><u ixia_locid="97">Remarque</u> :</p>
+		<p ixia_locid="98">Le statut de la règle "URL de notification à la fin du paiement" (IPN) est
+			affiché dans cet écran. Si cette dernière est non paramétrée, veillez à la renseigner<ph doc-type="Form Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="115" payment-method="SEPA-One-Off SEPA-Recurrent"> (voir chapitre <b ixia_locid="114">Paramétrer les
+					notifications</b>) </ph>. </p>
+	</conbody>
+</concept>

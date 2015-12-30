@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408635663652" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_ship_to_user_info</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">Information sur l’utilisateur à l’origine du paiement.<p ixia_locid="43"><!--L'utilisation du module de gestion de fraude ClearSale impose que ce champ soit valorisé avec le CPF/CNPJ (Identifiant légal, au format numérique, de longueur comprise entre 11 et 20 digits).--></p><p ixia_locid="49">Ce paramètre sera renvoyé dans la réponse avec la
+								valeur transmise dans la requête.</p><p ixia_locid="51"><b ixia_locid="52"><i ixia_locid="53">Remarque :</i></b>
+							</p><p ixia_locid="54"><i ixia_locid="55">Pour des raisons de rétrocompatibilité, il est possible
+									d'utiliser ce champ pour valoriser le CPF/CNPJ (Identifiant
+									légal, au format numérique, de longueur comprise entre 11 et 20
+									digits) imposé par le module de gestion de fraude ClearSale.
+									Cependant, le CPF/CNPJ peut être valorisé dans le champ <ph ixia_locid="47" translate="no"><b ixia_locid="48">vads_cust_national_id</b></ph>.</i></p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="32" translate="no">ans..255</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">116</entry>
+					</row>
+					<row>
+						<entry ixia_locid="50"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur la livraison.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

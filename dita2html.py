@@ -67,8 +67,10 @@ root_tree = parse(full_path)
 
 def expand_keydef(nd):
     key = nd.attributes['keyref'].value
+    # print('keydef:', key)
     if key in keydefs:
         val = keydefs[key]
+        # print(val)
         if 'text' in val:
             echo(val['text'], end='')
         else:
@@ -78,9 +80,12 @@ def expand_keydef(nd):
             elif fmt == 'mail':
                 echo('<a href="mailto:', val['href'], '">', val['href'], '</a>', sep='', end='')
             elif fmt == 'html':
+                # print('html', val['href'], file=sys.stderr)
                 echo('<a href="', val['href'], '">', val['href'], '</a>', sep='', end='')
             else:
                 print('expand_keydef - format:', fmt, file=sys.stderr)
+    else:
+        print(key, 'not found in keydefs', file=sys.stderr)
 
 
 def echo(*args, **kwargs):
@@ -178,6 +183,7 @@ def parse_conbody(depth, tree, **kwargs):
                 parse_conbody(depth, nd, **kwargs)
             elif nd.nodeName == 'codeph':
                 kwargs['code'] = True
+                echo()
                 echo('<code><pre>', indent=depth)
                 parse_conbody(depth, nd, **kwargs)
                 echo('</pre></code>', start='\n', indent=depth)
@@ -194,12 +200,14 @@ def parse_conbody(depth, tree, **kwargs):
                 parse_conbody(depth, nd, **kwargs)
                 echo('</i>', end='')
             elif nd.nodeName == 'ul':
+                echo()
                 echo('<ul>', start='\n', indent=depth)
                 index_stack[depth + 1] = 0
                 parse_conbody(depth + 1, nd, **kwargs)
                 index_stack[depth + 1] = 0
                 echo('</ul>', start='\n', indent=depth)
             elif nd.nodeName == 'ol':
+                echo()
                 echo('<ol>', start='\n', indent=depth)
                 index_stack[depth + 1] = 1
                 parse_conbody(depth + 1, nd, **kwargs)
@@ -307,10 +315,13 @@ def parse_concept(depth, tree, **kwargs):
             echo(text, indent=depth)
             echo('</h' + str(depth + 1) + '>')
         elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'conbody':
+            kwargs['type'] = 'concept'
             parse_conbody(depth, nd, **kwargs)
         elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'taskbody':
+            kwargs['type'] = 'task'
             parse_conbody(depth, nd, **kwargs)
         elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'refbody':
+            kwargs['type'] = 'reference'
             parse_conbody(depth, nd, **kwargs)
         elif nd.nodeType == nd.ELEMENT_NODE and nd.nodeName == 'shortdesc':
             parse_conbody(depth, nd, **kwargs)

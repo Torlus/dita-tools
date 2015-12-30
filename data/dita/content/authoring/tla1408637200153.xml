@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408637200153" xml:lang="fr-fr">
+	<title ixia_locid="38" translate="no">vads_threeds_eci</title>
+	<shortdesc ixia_locid="39"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26"><p ixia_locid="40">Désigne l’Indicateur de Commerce Electronique.</p>Il
+							est valorisé par le serveur d’authentification 3DS (ACS) lorsque
+							l’acheteur s’est correctement authentifié (vads_threeds_status vaut « Y
+							» ou « A »).<p ixia_locid="1599">
+								<table colsep="1" frame="all" id="table_p12_j5s_mt" rowsep="1">
+									<tgroup cols="5">
+										<colspec colname="newCol1" colnum="1" colwidth="1*"/>
+										<colspec colname="c1" colnum="2" colwidth="1.13*"/>
+										<colspec colname="c3" colnum="3" colwidth="1.11*"/>
+										<colspec colname="c4" colnum="4" colwidth="1.17*"/>
+										<colspec colname="newCol4" colnum="5" colwidth="1.21*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="1570"/>
+												<entry ixia_locid="1571"><b ixia_locid="1572"><ph ixia_locid="1573" translate="no">status</ph></b> =
+												<b ixia_locid="1574" translate="no">Y</b>
+												</entry>
+												<entry ixia_locid="1575" translate="no"><b ixia_locid="1576"><ph ixia_locid="1577" translate="no">status</ph></b> = <b ixia_locid="1578" translate="no">A</b>
+												</entry>
+												<entry ixia_locid="1579" translate="no"><b ixia_locid="1580"><ph ixia_locid="1581" translate="no">status</ph></b> = <b ixia_locid="1582" translate="no">U</b>
+												</entry>
+												<entry ixia_locid="1583"><b ixia_locid="1584"><ph ixia_locid="1585" translate="no">status</ph></b> =
+												<b ixia_locid="1586" translate="no">N</b>
+												</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="1587" outputclass="bgcolor"><b ixia_locid="1588">VISA</b></entry>
+												<entry ixia_locid="1589"> 5</entry>
+												<entry ixia_locid="1590" translate="no">6</entry>
+												<entry ixia_locid="1591" translate="no">7</entry>
+												<entry ixia_locid="1592">-</entry>
+											</row>
+											<row>
+												<entry ixia_locid="1593" outputclass="bgcolor"><b ixia_locid="1594">MasterCard</b></entry>
+												<entry ixia_locid="1595"> 02</entry>
+												<entry ixia_locid="1596" translate="no">01</entry>
+												<entry ixia_locid="1597" translate="no">-</entry>
+												<entry ixia_locid="1598">-</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="32" translate="no">n..2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">53</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="37">Authentification 3DS.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408636286614" xml:lang="fr-fr">
+	<title ixia_locid="38" translate="no">vads_theme_config</title>
+	<shortdesc ixia_locid="39"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colsep="0" colwidth="3.76*" rowsep="0"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26"><p ixia_locid="40">Permet de personnaliser certains éléments de la page
+								de paiement : logos, bandeaux et certains messages (Certaines
+								fonctionnalités sont <b ixia_locid="41">soumises à option
+									commerciale</b>). </p><p ixia_locid="42">Ce paramètre contient
+								une liste de mots-clés (codes) associés à des éléments des pages de
+								paiement (libellés, images), auxquels on associe une valeur. </p><p ixia_locid="95"/><p ixia_locid="96"><u ixia_locid="114">Exemple</u>:</p><p ixia_locid="115"><ph ixia_locid="117" translate="no">vads_theme_config=</ph></p><p ixia_locid="116"><ph ixia_locid="118" translate="no">SUCCESS_FOOTER_MSG_RETURN=</ph>Retour au site<ph ixia_locid="103" translate="no">;CANCEL_FOOTER_MSG_RETURN=</ph>Annuler et
+								retourner au site</p><p ixia_locid="98"/>Les fonctionnalités de base
+							sont décrites au chapitre <b ixia_locid="99">Personnaliser la page de
+								paiement</b> du <b ixia_locid="44">Guide d'implémentation du
+								formulaire de paiement</b>.<p ixia_locid="101">Les fonctionnalités
+								avancées (soumises à option) sont décrites dans le guide <b ixia_locid="100">Personnalisation avancée de la page de
+									paiement</b>. </p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="32">Code1=Valeur1;Code2=Valeur2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">32</entry>
+					</row>
+					<row rowsep="0">
+						<entry ixia_locid="46"><p ixia_locid="87"/><b ixia_locid="49">Valeurs
+								possibles</b></entry>
+						<entry colsep="0" ixia_locid="48" rowsep="0">
+							<p ixia_locid="50">
+								<table frame="all" id="table_p3r_frc_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colsep="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.43*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="52">Code</entry>
+												<entry ixia_locid="53">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="54" translate="no"><b ixia_locid="55">SUCCESS_FOOTER_MSG_RETURN</b></entry>
+												<entry ixia_locid="56">Libellé remplaçant « Retour à
+												la boutique » lors d’un paiement réalisé avec
+												succès.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="57" translate="no"><b ixia_locid="58">CANCEL_FOOTER_MSG_RETURN</b></entry>
+												<entry ixia_locid="59">Libellé remplaçant « Annuler
+												et retourner à la boutique » pendant les phases de
+												sélection puis de saisie de carte, et en cas
+												d’échec du paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="60" translate="no"><b ixia_locid="61">SECURE_
+												MESSAGE</b></entry>
+												<entry ixia_locid="62">
+												<p ixia_locid="63">Valeur par défaut : <i ixia_locid="64">L'adresse de ce site de paiement
+												préfixée par https indique que vous êtes sur un
+												site sécurisé et que vous pouvez régler votre
+												achat en toute tranquillité</i>.</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="65" translate="no"><b ixia_locid="66">SECURE_MESSAGE_REGISTER</b></entry>
+												<entry ixia_locid="67">
+												<p ixia_locid="68">Valeur par défaut : <i ixia_locid="69">L'adresse de ce site de paiement
+												préfixée par https indique que vous êtes sur un
+												site sécurisé et que vous pouvez renseigner vos
+												coordonnées bancaires en toute
+												tranquillité</i></p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="70" translate="no"><b ixia_locid="71">SITE_ID_LABEL</b></entry>
+												<entry ixia_locid="72">
+												<p ixia_locid="73">Valeur par défaut : <i ixia_locid="74">Identifiant du marchand</i></p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="104" translate="no"><b ixia_locid="76">CSS_FOR_PAYMENT</b><p ixia_locid="91"><b ixia_locid="80">CSS_FOR_PAYMENT_MOBILE</b></p><p ixia_locid="92"><b ixia_locid="82">HEADER_FOR_MAIL</b></p><p ixia_locid="93"><b ixia_locid="84">FOOTER_FOR_MAIL</b></p><p ixia_locid="94"><b ixia_locid="86">SHOP_LOGO</b></p></entry>
+												<entry align="justify" ixia_locid="106">Voir guide <b ixia_locid="78">Personnalisation avancée de la
+												page de paiement</b>.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="105" translate="no"><b ixia_locid="108">CTRL_RISK_CARD_NOT_ACCEPTED</b></entry>
+												<entry align="justify" ixia_locid="107">Valeur par défaut : <i ixia_locid="109">Votre
+												demande de paiement a été refusée par votre
+												établissement bancaire.</i><p ixia_locid="112">Ce
+												message est conditionné par le retour du service
+												de contrôle de risque.</p><p ixia_locid="113">Le
+												contrat doit supporter tous les types de cartes
+												incluses dans le contrat, et non le sous-ensemble
+												que le marchand veut accepter.</p><p ixia_locid="111">Permet de surcharger le libellé
+												de refus lorsqu'une e-carte bleue est utilisée
+												alors qu'elle n'est pas acceptée dans le contrôle
+												de risque.</p></entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="47">Personnalisation de la page de paiement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

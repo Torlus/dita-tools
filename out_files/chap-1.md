@@ -44,6 +44,7 @@ Commentaire
 <b>Dictionnaire de données</b>
  </p>
  
+
  <ul>
  
   <li>
@@ -52,6 +53,7 @@ vads_payment_cards et vads_contracts : ajout de valeurs.
  
   <li>
 Précisions apportées sur le format des champs :
+
   <ul>
  
    <li>
@@ -59,6 +61,7 @@ vads_cust_address
    </li>
  
   </ul>
+
 
   <ul>
  
@@ -124,6 +127,7 @@ vads_recurrence_number
 <b>Chapitre supplémentaire</b>
  <p>
  
+
  <ul>
  
   <li>
@@ -140,6 +144,7 @@ Modification des chapitres :
 
  <p>
  
+
  <ul>
  
   <li>
@@ -177,6 +182,7 @@ vads_trans_id
 
  <p>
  
+
  <ul>
  
   <li>
@@ -206,10 +212,12 @@ Complément d&#x27;information sur l&#x27;utilisation d&#x27;une i-frame.
 <b>Dictionnaire de données</b>
  <p>
  
+
  <ul>
  
   <li>
 Ajout des champs :
+
   <ul>
  
    <li>
@@ -234,6 +242,7 @@ vads_product_vatN
 
  <p>
  
+
  <ul>
  
   <li>
@@ -300,6 +309,7 @@ URL Serveur renommé en URL de notification
  
  <p>
  
+
  <ul>
  
   <li>
@@ -337,10 +347,12 @@ Complément d&#x27;information sur l&#x27;utilisation d&#x27;une i-frame.
  
  <p>
  
+
  <ul>
  
   <li>
 Ajout des champs :
+
   <ul>
  
    <li>
@@ -365,6 +377,7 @@ vads_ship_to_legal_name
  
  <p>
  
+
  <ul>
  
   <li>

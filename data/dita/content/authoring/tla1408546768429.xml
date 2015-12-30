@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408546768429" xml:lang="fr-fr">
+	<title ixia_locid="16" translate="no">vads_amount</title>
+	<shortdesc ixia_locid="17"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="4.29*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="48"><b ixia_locid="50">Description</b></entry>
+						<entry ixia_locid="52"><p ixia_locid="93">Montant de la transaction exprimé dans la plus
+								petite unité de la monnaie ou devise<ph ixia_locid="295" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay"> (le centime pour l'euro)</ph>
+								<ph ixia_locid="296" location="Innopay" platform="Innopay">(le
+									centime pour le CHF)</ph>.</p>Exemple : pour une transaction de
+							10 <ph ixia_locid="96" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="97" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="293" location="Innopay" platform="Innopay">CHF</ph>
+							<ph ixia_locid="98" location="PayZen PayZen_Germany Systempay Innopay" platform="PayZen Systempay Innopay">et 28
+								centimes</ph>, la valeur du paramètre est 10<ph ixia_locid="99" location="PayZen PayZen_Germany Systempay Innopay" platform="PayZen Systempay Innopay">28</ph>.<p ixia_locid="85">Le
+								formulaire de paiement sera rejeté dans les cas suivants : </p><p ixia_locid="86"><ul id="ul_vs2_4rk_xp">
+									<li ixia_locid="88">Un montant égal à zéro [vads_amount=0],</li>
+									<li ixia_locid="89">Un montant négatif [vads_amount=-100],</li>
+									<li ixia_locid="90">Un montant composé de décimales ou de points
+										[vads_amount=100.50],</li>
+									<li ixia_locid="91">Un formulaire sans le champ vads_amount
+										(absence de montant).</li>
+								</ul>Un message d’incident technique sera associé à un code retour
+									<b ixia_locid="84">09</b> (<b ixia_locid="83">vads_extra_result</b>).</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="58"><b ixia_locid="60">Format</b></entry>
+						<entry ixia_locid="62" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="64"><b ixia_locid="66">Code erreur</b></entry>
+						<entry ixia_locid="68" translate="no">09</entry>
+					</row>
+					<row>
+						<entry ixia_locid="77"><b ixia_locid="78">Catégorie</b></entry>
+						<entry ixia_locid="80">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

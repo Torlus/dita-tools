@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408638075046" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_threeds_mpi</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="50">Active / désactive le processus 3DS lors d’un paiement e-commerce.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="51"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="53" translate="no">n1</entry>
+					</row>
+					<row>
+						<entry ixia_locid="52"><b ixia_locid="55">Code erreur</b></entry>
+						<entry ixia_locid="54" translate="no">50</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="69"/><b ixia_locid="56">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec align="center" colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="9.85*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="57">Valeur</entry>
+												<entry align="center" ixia_locid="58">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8">absent ou vide</entry>
+												<entry ixia_locid="9">
+												<p ixia_locid="59">Authentification 3DS gérée par
+												la plateforme de paiement (configuration du
+												marchand).</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10" translate="no">0</entry>
+												<entry ixia_locid="11">
+												<p ixia_locid="60">Authentification 3DS gérée par
+												la plateforme de paiement (configuration du
+												marchand).</p>
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="61" translate="no">1</entry>
+												<entry ixia_locid="63"><p ixia_locid="65">Authentification 3DS intégralement gérée par le
+												marchand à condition que vads_card_number soit
+												valorisé (saisie des données cartes chez le
+												marchand).</p>Les données résultantes de
+												l’authentification 3D Secure effectuée par le MPI
+												du marchand doivent alors être transmises dans les
+												champs du formulaire prévus à cet effet
+												(vads_threeds_enrolled, vads_threeds_cavv,
+												vads_threeds_eci, vads_threeds_xid, vads_threeds_
+												cavvAlgorithm, vads_threeds_status).</entry>
+											</row>
+											<row>
+												<entry ixia_locid="62" translate="no">2</entry>
+												<entry ixia_locid="64">
+												<p ixia_locid="68">Authentification 3DS désactivée
+												pour la transaction, quelle que soit la
+												configuration habituelle du marchand.</p>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Authentification 3DS.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>		
+	</refbody>
+</reference>

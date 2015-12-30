@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408608603787" xml:lang="fr-fr">
+	<title ixia_locid="32" translate="no">vads_cust_address</title>
+	<shortdesc ixia_locid="33"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="34">Adresse postale de l’acheteur.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry id="entry_cgj_jtn_tt" ixia_locid="8" translate="no">ans..255<p ixia_locid="41"><i ixia_locid="42"><u ixia_locid="43"><b ixia_locid="44">Remarque
+										:</b></u></i>
+							</p><p ixia_locid="45"><u ixia_locid="46"><i ixia_locid="47">Les caractères <b ixia_locid="48">&gt;</b> et <b ixia_locid="49">&lt;</b> ne sont pas
+										autorisés.</i></u></p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="35">Code erreur</b></entry>
+						<entry ixia_locid="38">19</entry>
+					</row>
+					<row>
+						<entry ixia_locid="37"><b ixia_locid="40">Remarque</b></entry>
+						<entry ixia_locid="39">Paramètre obligatoire pour 3xCB Cofinoga. </entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="31">Informations sur l'acheteur.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406042467751" xml:lang="fr-fr">
+	<title ixia_locid="1">Créer un paiement comptant différé</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">Un paiement comptant différé est un
+			paiement débité en une seule fois dont le délai de remise en banque est strictement
+			supérieur à 0 jour.<p ixia_locid="155">
+				<ul id="ul_uyp_hb2_fq">
+					<li ixia_locid="104">Une demande d'autorisation sera réalisée pour le montant global si le
+						délai de remise<!-- validité de l'autorisation --> est inférieur ou égal à
+						la durée de validité d'une demande d'autorisation (voir <xref href="tla1416990314409.xml" ixia_locid="138">tableau</xref>).</li>
+				</ul>
+			</p><p ixia_locid="107">
+				<ul id="ul_ccv_fb2_fq">
+					<li ixia_locid="139">Une demande d'autorisation à <ph ixia_locid="124" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">1 €</ph><ph ixia_locid="125" location="OSB" platform="OSB">100 XPF</ph><ph ixia_locid="129" location="Innopay" platform="Innopay">1 CHF</ph><ph ixia_locid="140" location="PayZen_Brazil">1 BRL</ph> sera
+						réalisée si le délai de remise <!--validité de l'autorisation -->est
+						supérieur à la durée de validité d'une demande d'autorisation (voir <xref href="tla1416990314409.xml" ixia_locid="141">tableau</xref>).<p ixia_locid="142">La demande d'autorisation pour le montant global sera
+							réalisée à J-1 avant la date de présentation en banque.</p></li>
+				</ul>
+			</p></context>
+		<steps>
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="5">
+				<cmd ixia_locid="6">Utilisez l'ensemble des champs présents dans le tableau ci-après
+					pour construire votre formulaire de paiement.</cmd>
+				<info ixia_locid="7">
+					<table colsep="1" frame="all" id="table_al1_qgs_v4" rowsep="1">
+						<title ixia_locid="8">Liste des champs - Paiement comptant différé</title>
+						<tgroup cols="3">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="2.42*"/>
+							<colspec colname="c3" colnum="3" colwidth="1.35*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="9">Nom du champ</entry>
+									<entry ixia_locid="10">Description</entry>
+									<entry ixia_locid="11">Valeur</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row id="row_y1r_pzy_2t">
+									<entry ixia_locid="12" translate="no">vads_site_id</entry>
+									<entry ixia_locid="13">Identifiant de la boutique</entry>
+									<entry ixia_locid="14">Ex : 12345678</entry>
+								</row>
+								<row id="row_tnq_qzy_2t">
+									<entry ixia_locid="15" translate="no">vads_ctx_mode</entry>
+									<entry ixia_locid="16">Mode de fonctionnement</entry>
+									<entry ixia_locid="17"><b ixia_locid="18" translate="no">TEST</b> ou <b ixia_locid="19">PRODUCTION</b></entry>
+								</row>
+								<row id="row_yzl_rzy_2t">
+									<entry ixia_locid="20" translate="no">vads_trans_id</entry>
+									<entry ixia_locid="21">Numéro de la transaction </entry>
+									<entry ixia_locid="22">Ex : 123456</entry>
+								</row>
+								<row>
+									<entry id="entry_w3f_vzy_2t" ixia_locid="23" translate="no">vads_trans_date</entry>
+									<entry id="entry_uyb_5zy_2t" ixia_locid="24">Date et heure UTC du formulaire de
+										paiement</entry>
+									<entry ixia_locid="25">Ex : 20140129130025</entry>
+								</row>
+								<row>
+									<entry id="entry_ujz_vzy_2t" ixia_locid="26" translate="no">vads_amount</entry>
+									<entry ixia_locid="27">Montant du paiement  <ph ixia_locid="126" location="PayZen PayZen_Germany Systempay Innopay PayZen_Brazil" platform="PayZen Systempay Innopay">(dans sa plus
+											petite unité monétaire)</ph></entry>
+									<entry ixia_locid="28">Ex : 3000  <ph ixia_locid="143" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">pour 30 euros</ph><ph ixia_locid="144" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="145" location="Innopay" platform="Innopay"> pour 30 CHF</ph><ph ixia_locid="120" location="PayZen_Brazil">pour 30 BRL</ph></entry>
+								</row>
+								<row>
+									<entry ixia_locid="29" translate="no">vads_currency</entry>
+									<entry ixia_locid="30">Code de la devise utilisée pour le
+										paiement</entry>
+									<entry ixia_locid="31">Ex : <ph ixia_locid="146" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978 pour euro</ph><ph ixia_locid="147" location="OSB" platform="OSB">953 pour
+											le XPF</ph><ph ixia_locid="148" location="Innopay" platform="Innopay">756 pour le Franc suisse</ph><ph ixia_locid="121" location="PayZen_Brazil">986</ph></entry>
+								</row>
+								<row>
+									<entry ixia_locid="32" translate="no">vads_action_mode</entry>
+									<entry ixia_locid="33">Mode d’acquisition des données de la
+										carte</entry>
+									<entry ixia_locid="34"><b ixia_locid="35" translate="no">INTERACTIVE</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="36" translate="no">vads_page_action</entry>
+									<entry ixia_locid="37">Action à réaliser</entry>
+									<entry ixia_locid="38"><b ixia_locid="39" translate="no">PAYMENT</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="40" translate="no">vads_version</entry>
+									<entry ixia_locid="41">Version du protocole d’échange </entry>
+									<entry ixia_locid="42"><b ixia_locid="43" translate="no">V2</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="44" translate="no">vads_payment_config</entry>
+									<entry ixia_locid="45">Type de paiement</entry>
+									<entry ixia_locid="46"><b ixia_locid="47" translate="no">SINGLE</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="86" translate="no">vads_capture_delay</entry>
+									<entry ixia_locid="88">Délai avant remise en banque</entry>
+									<entry ixia_locid="90"><b ixia_locid="51">&gt; 0 Ex:
+										3</b></entry>
+								</row>
+								<row>
+									<entry ixia_locid="87" translate="no">vads_validation_mode</entry>
+									<entry ixia_locid="89">Mode de validation</entry>
+									<entry ixia_locid="91"><b ixia_locid="92">0</b> (automatique) ou <b ixia_locid="93">1</b>
+										(manuel)</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N10127_N1001C_N10011_N10001" ixia_locid="52">
+				<cmd ixia_locid="53">Valorisez le champ <b ixia_locid="54" translate="no">vads_payment_config</b> à <b ixia_locid="55" translate="no">SINGLE</b>.</cmd>
+			</step>
+			<step id="step_N10138_N1001C_N10011_N10001" ixia_locid="149">
+				<cmd ixia_locid="150">Valorisez le champ <b ixia_locid="156" translate="no">vads_capture_delay</b> avec une valeur <b ixia_locid="157">supérieure à
+						0</b>.</cmd>
+			</step>
+			<step id="step_N101D8_N10044_N10013_N10001" ixia_locid="158">
+				<cmd ixia_locid="159">Valorisez le champ <b ixia_locid="95" translate="no">vads_validation_mode</b> à <b ixia_locid="97" translate="no">0</b> pour une
+					validation automatique (le paiement sera remis de manière automatique à la
+					banque) ou à <b ixia_locid="151">1</b> pour une validation manuelle (le paiement
+					sera remis en banque après une validation manuelle dans le <ph ixia_locid="152" translate="no">Back Office</ph>).</cmd>
+			</step>
+			<step id="step_N101CA_N10026_N10013_N10001" ixia_locid="160" location="PayZen PayZen_Germany Systempay Innopay" platform="PayZen Systempay Innopay">
+				<cmd ixia_locid="116">Valorisez le champ <b ixia_locid="118" translate="no">vads_currency</b> avec le code de la devise souhaitée en utilisant <xref href="tla1406044948454.xml" ixia_locid="84">le tableau des devises</xref>
+					(exemple: <ph ixia_locid="161" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978 pour l'euro;</ph><ph ixia_locid="162" location="Innopay" platform="Innopay">756 pour le Franc suisse;</ph><ph ixia_locid="122" location="PayZen_Brazil">986</ph> 840 pour le dollar
+					américain).</cmd>
+			</step>
+			<step id="step_N101CA_N10026_N10013_N10002" ixia_locid="163" location="OSB" platform="OSB">
+				<cmd ixia_locid="164">Valorisez le champ <b ixia_locid="119" translate="no">vads_currency</b> avec le code 953.</cmd>
+			</step>
+			<step id="step_N101E7_N10020_N10013_N10001" ixia_locid="65">
+				<cmd ixia_locid="66">Ajoutez les champs optionnels en fonction de vos besoins (voir
+					chapitre <b ixia_locid="67"><xref href="tla1406101932153.xml" ixia_locid="80">Utiliser des fonctions complémentaires</xref></b>).</cmd>
+			</step>
+			<step id="step_N1017D_N1001C_N10011_N10001" ixia_locid="68">
+				<cmd ixia_locid="69">Calculez la valeur du champ <b ixia_locid="70" translate="no">signature</b> en utilisant l’ensemble des champs de votre formulaire, dont
+					le nom commence par <b ixia_locid="71" translate="no">vads_</b> (voir chapitre
+						<b ixia_locid="72"><xref href="emm1405088305497.xml" ixia_locid="81">Calculer la signature</xref></b>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N1018D_N10011_N10001" ixia_locid="73" outputclass="break">
+			<p ixia_locid="74"><u ixia_locid="75">Exemple de formulaire de paiement comptant différé
+				:</u><codeblock ixia_locid="76">&lt;form method="POST" action="<xref ixia_locid="85" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="3" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="105" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="153" location="OSB" platform="OSB">953</ph><ph ixia_locid="154" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="123" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140129130025" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="130025" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406108665877" xml:lang="fr-fr">
+	<title ixia_locid="1">Transmettre les données de la commande</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="133">Le marchand peut indiquer dans son formulaire de paiement s’il souhaite
+				transmettre les informations de la commande (numéro de la commande, description,
+				contenu du panier etc…).
+					<!--<ph doc-type="PayPal Moyens-Paiement" ixia_locid="168" payment-method="PayPal">Ces données doivent obligatoirement être transmises via votre formulaire de paiement si vous souhaitez bénéficier de la protection marchand.</ph>--><ph doc-type="Back-Office" ixia_locid="515"> Pour déclencher une ou plusieurs
+					actions en fonction du contenu du panier de l'acheteur, les données du panier
+					doivent obligatoirement être transmises via votre formulaire de
+				paiement.</ph></p>
+			<p ixia_locid="135">Ces données seront affichées dans le <ph ixia_locid="167" translate="no">Back Office</ph> en
+				consultant le détail de la transaction (onglet <b ixia_locid="136">Panier</b>).</p>
+		</context>
+		<steps>
+			<step id="step_N10020_N1001D_N10011_N10001" ixia_locid="148">
+				<cmd ixia_locid="150">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation <ph ixia_locid="656">(voir chapitre <b ixia_locid="664">Générer un formulaire de paiement</b><ph doc-type="Back-Office" ixia_locid="657"> du guide d'implémentation du
+							formulaire de paiement disponible sur le site <xref ixia_locid="659" keyref="SiteInternetDocumentation"/></ph>)</ph> pour construire
+					votre formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10029_N1001D_N10011_N10001" ixia_locid="152">
+				<cmd ixia_locid="154">Utilisez les champs facultatifs ci-dessous en fonction de vos
+					besoins. Ces champs seront renvoyés dans la réponse avec la valeur transmise
+					dans le formulaire.</cmd>
+				<info ixia_locid="156">
+					<table colsep="1" frame="all" id="table_myz_qzj_jp" rowsep="1">
+						<title ixia_locid="149">Liste des champs - Détails de la commande</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="3.07*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="151">Nom du champ</entry>
+									<entry ixia_locid="153">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="155"><b ixia_locid="40" translate="no">vads_order_id</b></entry>
+									<entry ixia_locid="522">Numéro de commande.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="523"><b ixia_locid="41" translate="no">vads_order_info</b></entry>
+									<entry ixia_locid="524">Description de la commande.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="525"><b ixia_locid="42" translate="no">vads_order_info2</b></entry>
+									<entry ixia_locid="13">Description de la commande.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="14"><b ixia_locid="43" translate="no">vads_order_info3</b></entry>
+									<entry ixia_locid="15">Description de la commande.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="18"><b ixia_locid="45" translate="no">vads_nb_products</b></entry>
+									<entry ixia_locid="19">Nombre d’articles. </entry>
+								</row>
+								<row>
+									<entry ixia_locid="20"><b ixia_locid="46" translate="no">vads_product_labelN</b></entry>
+									<entry ixia_locid="21">Libellé de l’article. N correspond à
+										l'indice de l'article (0 pour le premier, 1 pour le
+										second...).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="22"><b ixia_locid="47" translate="no">vads_product_amountN</b></entry>
+									<entry ixia_locid="23">Montant de l’article. N correspond à
+										l'indice de l'article (0 pour le premier, 1 pour le
+										second...).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="24"><b ixia_locid="48" translate="no">vads_product_typeN</b></entry>
+									<entry ixia_locid="25">Type de l’article. N correspond à
+										l'indice de l'article (0 pour le premier, 1 pour le
+										second...). </entry>
+								</row>
+								<row>
+									<entry ixia_locid="157"><b ixia_locid="49" translate="no">vads_product_refN</b></entry>
+									<entry ixia_locid="159">Référence de l’article. N correspond à
+										l'indice de l'article (0 pour le premier, 1 pour le
+										second...).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="516"><b ixia_locid="518" translate="no">vads_product_qtyN</b></entry>
+									<entry ixia_locid="520">Quantité d’article. N correspond à
+										l'indice de l'article (0 pour le premier, 1 pour le
+										second...).</entry>
+								</row>
+								<row doc-type="integration Form" location="PayZen PayZen_Germany" platform="PayZen">
+									<entry ixia_locid="517"><b ixia_locid="519" translate="no">vads_product_vatN</b></entry>
+									<entry ixia_locid="521">TVA de l'article. N correspond à
+										l'indice de l'article (0 pour le premier, 1 pour le
+										second...).</entry>
+								</row>
+								<row doc-type="PayPal Moyens-Paiement" payment-method="PayPal">
+									<entry ixia_locid="165"><b ixia_locid="51" translate="no">vads_shipping_amount</b></entry>
+									<entry ixia_locid="34">Montant des frais de livraison.</entry>
+								</row>
+								<row doc-type="PayPal Moyens-Paiement" payment-method="PayPal">
+									<entry ixia_locid="36"><b ixia_locid="52" translate="no">vads_tax_amount</b></entry>
+									<entry ixia_locid="38">Montant des taxes pour l'ensemble de la
+										commande.</entry>
+								</row>
+								<row doc-type="PayPal Moyens-Paiement" payment-method="PayPal">
+									<entry ixia_locid="37"><b ixia_locid="53" translate="no">vads_insurance_amount</b></entry>
+									<entry ixia_locid="39">Montant de l'assurance pour l'ensemble de
+										la commande.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+				
+			</step>
+			<step id="step_N100A7_N1001D_N10011_N10001" ixia_locid="90">
+				<cmd ixia_locid="98">Valorisez le champ <b ixia_locid="106" translate="no">vads_nb_products</b>
+					avec le nombre d'articles contenu dans le panier.</cmd>
+				<info ixia_locid="506"><u ixia_locid="507"><i ixia_locid="508">Remarque :</i></u></info>
+				<info ixia_locid="509"><i ixia_locid="510">Ce champ est obligatoire pour que le panier soit pris en compte.</i></info>
+			</step>
+			<step id="step_N1006E_N10021_N10013_N10001" ixia_locid="91">
+				<cmd ixia_locid="99">Valorisez le champ <b ixia_locid="124" translate="no">vads_product_amountN</b> avec le montant des différents articles contenus
+					dans le panier dans l'unité la plus petite de la devise.</cmd>
+				<itemgroup ixia_locid="139">0 correspond à l'indice de l'article (0 pour le premier, 1 pour le
+					second...).</itemgroup>
+			</step>
+			<step id="step_N10081_N10021_N10013_N10001" ixia_locid="126">
+				<cmd ixia_locid="128">Valorisez le champ <b ixia_locid="125" translate="no">vads_product_typeN</b> avec la valeur correspondant au type de
+					l'article.</cmd>
+				<itemgroup ixia_locid="169">0 correspond à l'indice de l'article (0 pour le premier, 1 pour le second...).</itemgroup>
+				<info ixia_locid="175">
+					<table conref="tla1411126340153.xml#tla1411126340153/table_dp5_wlr_tp" id="table_fjj_mxr_tp">
+						<tgroup cols="cols_fx3_mxr_tp">
+							<tbody>
+								<row>
+									<entry ixia_locid="177"/>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N100AE_N10021_N10013_N10001" ixia_locid="127">
+				<cmd ixia_locid="129">Valorisez le champ <b ixia_locid="141" translate="no">vads_product_labelN</b> avec le libellé de chacun des articles contenus
+					dans le panier.</cmd>
+				<itemgroup ixia_locid="111">0 correspond à l'indice de l'article (0 pour le premier,
+					1 pour le second...).</itemgroup>
+			</step>
+			<step id="step_N10094_N10021_N10013_N10001" ixia_locid="93">
+				<cmd ixia_locid="101">Valorisez le champ <b ixia_locid="137" translate="no">vads_product_qtyN</b> avec la quantité de chacun des articles contenus dans
+					le panier.</cmd>
+				<itemgroup ixia_locid="113">0 correspond à l'indice de l'article (0 pour le premier, 1 pour le
+					second...).</itemgroup>
+			</step>
+			<step id="step_N100A7_N10021_N10013_N10001" ixia_locid="94">
+				<cmd ixia_locid="114">Valorisez le champ <b ixia_locid="115" translate="no">vads_product_refN</b> avec la référence de chacun des articles contenus
+					dans le panier.</cmd>
+				<itemgroup ixia_locid="116">0 correspond à l'indice de l'article (0 pour le premier, 1 pour le
+					second...).</itemgroup>
+			</step>
+			<step doc-type="Moyens-Paiement PayPal" id="step_N100B9_N10021_N10013_N10001" ixia_locid="95" payment-method="PayPal">
+				<cmd ixia_locid="102">Valorisez le champ <b ixia_locid="117" translate="no">vads_shipping_amount</b> avec le montant des frais de livraison pour
+					l'ensemble de la commande.</cmd>
+				<itemgroup ixia_locid="118">Le montant est exprimé dans l'unité la plus petite de la
+					devise. Le centime pour <ph ixia_locid="643" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">l'euro</ph><ph ixia_locid="644" location="OSB" platform="OSB">le XPF</ph><ph ixia_locid="645" location="Innopay" platform="Innopay">le CHF</ph><ph ixia_locid="646" location="PayZen_Brazil">le real Brésilien</ph>.</itemgroup>
+			</step>
+			<step doc-type="Moyens-Paiement PayPal" id="step_N100CD_N10021_N10013_N10001" ixia_locid="96" payment-method="PayPal">
+				<cmd ixia_locid="103">Valorisez le champ <b ixia_locid="119" translate="no">vads_tax_amount</b> avec le montant des taxes pour l'ensemble de la
+					commande.</cmd>
+				<itemgroup ixia_locid="120">Le montant est exprimé dans l'unité la plus petite de la
+					devise. Le centime pour <ph ixia_locid="647" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">l'euro</ph><ph ixia_locid="648" location="OSB" platform="OSB">le
+						XPF</ph><ph ixia_locid="649" location="Innopay" platform="Innopay">le
+						CHF</ph><ph ixia_locid="650" location="PayZen_Brazil">le real Brésilien</ph>.</itemgroup>
+			</step>
+			<step doc-type="Moyens-Paiement PayPal" id="step_N100E1_N10021_N10013_N10001" ixia_locid="121" payment-method="PayPal">
+				<cmd ixia_locid="104">Valorisez le champ <b ixia_locid="122" translate="no">vads_insurance_amount</b> avec le montant de l'assurance pour l'ensemble de
+					la commande.</cmd>
+				<itemgroup ixia_locid="123">Le montant est exprimé dans l'unité la plus petite de la
+					devise. Le centime pour <ph ixia_locid="651" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">l'euro</ph><ph ixia_locid="652" location="OSB" platform="OSB">le
+						XPF</ph><ph ixia_locid="653" location="Innopay" platform="Innopay">le
+						CHF</ph><ph ixia_locid="654" location="PayZen_Brazil">le real Brésilien</ph>.</itemgroup>
+			</step>
+		
+			<step id="step_N102C8_N1003B_N10013_N10001" ixia_locid="526">
+				<cmd ixia_locid="527">Contrôlez la valeur du champ <ph ixia_locid="540" translate="no"><b ixia_locid="541">vads_amount</b></ph>. Elle doit
+					correspondre au montant total de la commande.</cmd>
+				<info doc-type="Moyens-Paiement" ixia_locid="528" payment-method="PayPal"><b ixia_locid="529"><i ixia_locid="530">Remarque
+					:</i></b></info>
+				<info doc-type="Moyens-Paiement" ixia_locid="531" payment-method="PayPal"><i ixia_locid="532">L'équation utilisée est la suivante :</i></info>
+				<info doc-type="Moyens-Paiement" ixia_locid="533" payment-method="PayPal">
+					<p ixia_locid="8"><i ixia_locid="534"><b ixia_locid="535">Somme ( vads_product_qty(N) x
+								vads_product_amount(N) ) + vads_shipping_amount + vads_tax_amount +
+								vads_insurance_amount = vads_amount</b></i></p>
+					<p ixia_locid="536"/>
+					<p ixia_locid="537"><i ixia_locid="538">Si la valeur renseignée dans le champ <b ixia_locid="539">vads_amount</b> est incorrecte, votre formulaire de paiement est
+							rejeté pour une erreur de montant.</i></p>
+				</info>
+			</step>
+			<step id="step_N100F4_N10021_N10013_N10001" ixia_locid="97">
+				<cmd ixia_locid="105">Calculez la valeur du champ <b ixia_locid="158" translate="no">signature</b> en utilisant l’ensemble des champs de votre formulaire, dont
+					le nom commence par <b ixia_locid="164">vads_</b> (voir chapitre <b ixia_locid="160">Calculer la signature</b><ph ixia_locid="660"><ph doc-type="Back-Office" ixia_locid="661"> du guide d'implémentation du
+							formulaire de paiement disponible sur le site <xref ixia_locid="663" keyref="SiteInternetDocumentation"/></ph>)</ph>).</cmd>
+			</step>
+		</steps>
+		<result doc-type="integration-Allemagne integration integration-Bresil PayPal" id="result_N100B6_N10011_N10001" ixia_locid="28">
+			<p ixia_locid="29"><u ixia_locid="162">Exemple de formulaire de paiement avec description du
+					panier</u>:<codeblock ixia_locid="166">&lt;form method="POST" action="<xref ixia_locid="87" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+<ph doc-type="Form integration integration-Allemagne integration-Bresil" ixia_locid="143">&lt;input type="hidden" name="vads_amount" value="11000" /&gt;</ph><ph doc-type="Moyens-Paiement PayPal" ixia_locid="144" payment-method="PayPal">&lt;input type="hidden" name="vads_amount" value="7500" /&gt;</ph>
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+<ph doc-type="Moyens-Paiement PayPal" ixia_locid="145" payment-method="PayPal">&lt;input type="hidden" name="vads_insurance_amount" value="500" /&gt;</ph>
+<b ixia_locid="511">&lt;input type="hidden" name="vads_nb_products" value="2"/&gt;</b>
+<b ixia_locid="142">&lt;input type="hidden" name="vads_product_amount0" value="5000" /&gt;
+&lt;input type="hidden" name="vads_product_label0" value="produit1" /&gt;</b>
+<b ixia_locid="32">&lt;input type="hidden" name="vads_product_qty0" value="2" /&gt;
+&lt;input type="hidden" name="vads_product_ref0" value="ref1" /&gt;
+&lt;input type="hidden" name="vads_product_amount1" value="1000" /&gt;
+&lt;input type="hidden" name="vads_product_label1" value="produit2" /&gt;
+&lt;input type="hidden" name="vads_product_qty1" value="1" /&gt;
+&lt;input type="hidden" name="vads_product_ref1" value="ref2" /&gt;
+&lt;input type="hidden" name="vads_order_id" value="CD100000857" /&gt;</b>
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+<ph doc-type="Moyens-Paiement PayPal" ixia_locid="172" payment-method="PayPal">&lt;input type="hidden" name="vads_shipping_amount" value="500" /&gt;
+&lt;input type="hidden" name="vads_tax_amount" value="500" /&gt;</ph>
+&lt;input type="hidden" name="vads_trans_date" value="20140327145218" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="571381" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="7896adcaaf7336839030db9715afa12353313f42"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

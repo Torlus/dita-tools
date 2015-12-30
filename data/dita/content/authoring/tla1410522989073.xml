@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410522989073" xml:lang="fr-fr">
+	<title ixia_locid="34">Informations sur la livraison</title>
+	<shortdesc ixia_locid="35"/>
+	<conbody>
+		<p ixia_locid="36">
+			<table colsep="1" frame="all" id="table_qjp_dbk_jp" rowsep="1">
+				<title ixia_locid="5">Liste des paramètres - Détails de la livraison</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="2.12*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="3.36*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="6">Nom du champ</entry>
+							<entry ixia_locid="37">Format</entry>
+							<entry ixia_locid="7">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="28"><b ixia_locid="68" translate="no"><xref href="tla1408631826813.xml" ixia_locid="69">vads_ship_to_city</xref></b></entry>
+							<entry ixia_locid="70" translate="no">an..128</entry>
+							<entry ixia_locid="29">Ville.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="74"><b ixia_locid="79" translate="no"><xref href="tla1408632458704.xml" ixia_locid="80">vads_ship_to_country</xref></b></entry>
+							<entry ixia_locid="81" translate="no">a2</entry>
+							<entry ixia_locid="82">Code pays suivant la norme ISO 3166.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="75"><b ixia_locid="87" translate="no"><xref href="tla1408632679858.xml" ixia_locid="88">vads_ship_to_delivery_company_name</xref></b></entry>
+							<entry ixia_locid="89" translate="no">ans..127</entry>
+							<entry ixia_locid="83">Nom du transporteur.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="24"><b ixia_locid="62" translate="no"><xref href="tla1408632864028.xml" ixia_locid="63">vads_ship_to_district</xref></b></entry>
+							<entry ixia_locid="64" translate="no">ans..127</entry>
+							<entry ixia_locid="25">Quartier.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="12"><b ixia_locid="44" translate="no"><xref href="tla1408634336065.xml" ixia_locid="45">vads_ship_to_first_name</xref></b></entry>
+							<entry ixia_locid="46" translate="no">ans..63</entry>
+							<entry ixia_locid="13">Prénom.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="100"><b ixia_locid="47" translate="no"><xref href="tla1408634522824.xml" ixia_locid="48">vads_ship_to_last_name</xref></b></entry>
+							<entry ixia_locid="102" translate="no">ans..63</entry>
+							<entry ixia_locid="104">Nom.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="101"><xref href="tla1423827002789.xml" ixia_locid="106"><b ixia_locid="107">vads_ship_to_legal_name</b></xref></entry>
+							<entry ixia_locid="103" translate="no">an..100</entry>
+							<entry ixia_locid="105">Raison sociale de lieu de livraison.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="10"><b ixia_locid="41" translate="no"><xref href="tla1408634587110.xml" ixia_locid="42">vads_ship_to_name</xref></b></entry>
+							<entry ixia_locid="43" translate="no">ans..63</entry>
+							<entry ixia_locid="11">Nom de l’acheteur.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="16"><b ixia_locid="50" translate="no"><xref href="tla1408634698739.xml" ixia_locid="51">vads_ship_to_phone_num</xref></b></entry>
+							<entry ixia_locid="52" translate="no">ans..32</entry>
+							<entry ixia_locid="17">Numéro de téléphone.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="76"><b ixia_locid="90" translate="no"><xref href="tla1408634757367.xml" ixia_locid="91">vads_ship_to_speed</xref></b></entry>
+							<entry ixia_locid="92" translate="no">string (enum)</entry>
+							<entry ixia_locid="84">Mode de livraison</entry>
+						</row>
+						<row>
+							<entry ixia_locid="30"><b ixia_locid="71" translate="no"><xref href="tla1408635009448.xml" ixia_locid="72">vads_ship_to_state</xref></b></entry>
+							<entry ixia_locid="73" translate="no">ans..127</entry>
+							<entry ixia_locid="31">Etat / Région.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="8"><b ixia_locid="38" translate="no"><xref href="tla1408634859538.xml" ixia_locid="99">vads_ship_to_status</xref></b></entry>
+							<entry ixia_locid="40" translate="no">string (enum)</entry>
+							<entry ixia_locid="9">Statut (particulier / entreprise).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="20"><b ixia_locid="56" translate="no"><xref href="tla1408635091649.xml" ixia_locid="57">vads_ship_to_street</xref></b></entry>
+							<entry ixia_locid="58" translate="no">ans..255</entry>
+							<entry ixia_locid="21">Adresse postale.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="18"><b ixia_locid="53" translate="no"><xref href="tla1408635487312.xml" ixia_locid="54">vads_ship_to_street_number</xref></b></entry>
+							<entry ixia_locid="55" translate="no">an..5</entry>
+							<entry ixia_locid="19">Numéro de rue.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="22"><b ixia_locid="59" translate="no"><xref href="tla1408635139472.xml" ixia_locid="60">vads_ship_to_street2</xref></b></entry>
+							<entry ixia_locid="61" translate="no">ans..255</entry>
+							<entry ixia_locid="23">Deuxième ligne d’adresse.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="77"><b ixia_locid="93" translate="no"><xref href="tla1408635578322.xml" ixia_locid="94">vads_ship_to_type</xref></b></entry>
+							<entry ixia_locid="95" translate="no">string (enum)</entry>
+							<entry ixia_locid="85">Type de livraison.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="78"><b ixia_locid="96" translate="no"><xref href="tla1408635663652.xml" ixia_locid="97">vads_ship_to_user_info</xref></b></entry>
+							<entry ixia_locid="98" translate="no">ans..255</entry>
+							<entry ixia_locid="86">Informations acheteur (Identifant légal CPF/CNPJ).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="26"><b ixia_locid="65" translate="no"><xref href="tla1408635725582.xml" ixia_locid="66">vads_ship_to_zip</xref></b></entry>
+							<entry ixia_locid="67" translate="no">an..64</entry>
+							<entry ixia_locid="27">Code postal.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

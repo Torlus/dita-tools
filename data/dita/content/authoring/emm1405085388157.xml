@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="emm1405085388157" xml:lang="fr-fr">
+	<title ixia_locid="1">Configurer la notification à la fin du paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p doc-type="Back-Office Form Form_Light Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight" ixia_locid="4">Cette notification est indispensable pour communiquer le résultat
+				d'une demande de paiement.</p>
+			
+			<p doc-type="Modules" ixia_locid="65">Dans votre Back Office <keyword ixia_locid="66" keyref="platform-name"/>, vous devez paramétrer une URL qui sera
+				systématiquement appelée après un paiement. Elle informera le site marchand du
+				résultat du paiement même si votre client n’a pas cliqué sur retour à la boutique. </p>
+			<p doc-type="Modules" ixia_locid="67">Ce paramètre s’appelle URL de notification à la fin du
+				paiement.</p>
+			<p ixia_locid="91">Pour paramétrer cette notification :</p>
+		</context>
+		<steps>
+			<!--<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="11"><cmd ixia_locid="20">Connectez-vous à : <xref ixia_locid="60" keyref="BackOfficeMarchand"/>.</cmd></step>-->
+			<!--<step id="step_N10044_N10036_N10013_N10001" ixia_locid="12"><cmd ixia_locid="21">Allez dans le menu : <b ixia_locid="29">Paramétrage</b> &gt; <b ixia_locid="58">Règles de notifications</b>.</cmd></step>-->
+			<step id="step_N1005A_N10036_N10013_N10001" ixia_locid="13">
+				<cmd ixia_locid="22">Effectuez un clic droit sur la ligne <b ixia_locid="32">URL de notification
+						à la fin du paiement.</b></cmd>
+				<!--<info ixia_locid="143">
+					<fig doc-type="Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight" id="fig_N10072_N1006E_N10060_N10038_N10013_N10001" ixia_locid="139">
+						<title ixia_locid="140">Configurer la notification à la fin du
+							paiement</title>
+						<image href="tla1425653374072.image" ixia_locid="141" scale="60"/>
+					</fig>					
+					
+					<p doc-type="Modules" ixia_locid="89"/>
+					<fig doc-type="Modules" id="fig_N10086_N1006E_N10060_N10038_N10013_N10001" ixia_locid="82">
+						<image ixia_locid="84" keyref="RegleNotificationURLServeurFinPaiement" scale="90"/>
+					</fig>
+				</info>-->
+			</step>
+			<step id="step_N1007B_N10036_N10013_N10001" ixia_locid="14">
+				<cmd ixia_locid="23">Sélectionnez <b ixia_locid="37">Gérer la règle</b>.</cmd>
+			</step>
+			<step id="step_N1008A_N10036_N10013_N10001" ixia_locid="15">
+				<cmd ixia_locid="24">
+					<ph doc-type="Back-Office Form Form_Light Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="68" payment-method="SEPA-One-Off SEPA-Recurrent">Renseignez
+						l’URL de votre page dans les champs <b ixia_locid="38">URL à appeler en mode
+							TEST </b>et<b ixia_locid="59"> URL à appeler en mode
+						PRODUCTION.</b></ph>
+					<ph doc-type="Modules" ixia_locid="76">Renseignez dans les champs <b ixia_locid="70">URL à appeler en mode TEST</b> et <b ixia_locid="71">URL
+							à appeler en mode PRODUCTION</b> l'URL : <b ixia_locid="75"><keyword ixia_locid="72" keyref="IPN"/></b></ph>
+				</cmd>
+				
+
+				<info ixia_locid="41">
+					<fig doc-type="Back-Office Form Form_Light Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil integrationLight" id="fig_jb4_bwr_v4" ixia_locid="85">
+						<title ixia_locid="153">URL de notification à la fin du paiement</title>
+						<image ixia_locid="142" keyref="GererURLNotifFinPaiement" scale="60"/>
+					</fig>
+					<p doc-type="Modules" ixia_locid="90"/>
+					<fig doc-type="Modules" id="fig_N100EE_N100D6_N100A6_N10038_N10013_N10001" ixia_locid="86">						
+						<image ixia_locid="88" keyref="GererURLServeurFinPaiement" scale="80"/>
+					</fig>
+					
+				</info>
+			</step>
+			<step id="step_N100B2_N10036_N10013_N10001" ixia_locid="16">
+				<cmd ixia_locid="25">Renseignez le champ <b ixia_locid="45">Adresse(s) e-mail(s) à
+						avertir en cas d’échec</b>. </cmd>
+			</step>
+			<step doc-type="Back-Office Form Form_Light integration integration-Allemagne integration-Bresil integrationLight" id="step_N100C1_N10036_N10013_N10002" ixia_locid="77">
+				<cmd ixia_locid="79">Pour spécifier plusieurs adresses e-mails, séparez-les par un
+					point-virgule.</cmd>
+			</step>
+			<step doc-type="Modules" id="step_N100C1_N10036_N10013_N10001" ixia_locid="78">
+				<cmd ixia_locid="80">Pour spécifier plusieurs adresses e-mails, séparez-les par un
+					point-virgule.</cmd>
+			</step>
+			<step id="step_N100CC_N10036_N10013_N10001" ixia_locid="126">
+				<cmd ixia_locid="27">Configurez le <b ixia_locid="46">Rejeu automatique en cas
+						d’échec</b>. </cmd>
+				<itemgroup ixia_locid="128">Cette option permet de renvoyer automatiquement la notification vers le
+					site marchand en cas d'échec, et ce, jusqu'à 4 fois.</itemgroup>
+				<info ixia_locid="154">Pour plus d'informations, reportez-vous au chapitre <b ixia_locid="151">Activer le rejeu automatique</b><ph doc-type="Form_Light Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="156" payment-method="SEPA-One-Off SEPA-Recurrent"> du guide
+						d'implémentation du formulaire disponible sur notre site documentaire<ph ixia_locid="158" location="Systempay">.</ph><ph ixia_locid="159" location="Innopay PayZen PayZen_Brazil PayZen_Germany">
+					:</ph></ph></info>
+				<info ixia_locid="155" location="Innopay PayZen PayZen_Brazil PayZen_Germany"><ph doc-type="Form_Light Modules Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="157" payment-method="SEPA-One-Off SEPA-Recurrent">
+						<xref ixia_locid="148" keyref="SiteInternetDocumentation"/></ph></info>
+			</step>
+			<step id="step_N10151_N10038_N10013_N10001" ixia_locid="127">
+				<cmd ixia_locid="131">Sauvegardez vos modifications.</cmd>
+			</step>
+		</steps>
+		<result id="result_N1015B_N10013_N10001" ixia_locid="132">Si la plateforme n'arrive pas à joindre
+			l'URL de votre page, alors un e-mail est envoyé à l'adresse spécifiée à l'étape 6.<p ixia_locid="133">Il contient :</p><p ixia_locid="134">
+				<ul id="ul_zf1_bbh_dr">
+					<li ixia_locid="135">Le code HTTP de l'erreur rencontrée</li>
+					<li ixia_locid="136">Des éléments d'analyse en fonction de l'erreur</li>
+					<li ixia_locid="137">Ses conséquences </li>
+					<li ixia_locid="138">La procédure à suivre depuis le <ph ixia_locid="125" translate="no">Back
+							Office </ph><keyword doc-type="Modules" ixia_locid="73" keyref="platform-name"/> pour renvoyer la requête vers l’URL définie à
+						l’étape 5.</li>
+				</ul>
+			</p></result>
+	</taskbody>
+</task>

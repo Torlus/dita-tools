@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411026602462" xml:lang="fr-fr">
+	<title ixia_locid="43" translate="no">vads_sub_init_amount</title>
+	<shortdesc ixia_locid="601"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">Paramètre facultatif utilisé lors de la création d'un abonnement.
+							Représente le montant des échéances de l’abonnement pour les <u ixia_locid="46">premières échéances</u>. <p ixia_locid="47">Le
+								nombre de ces premières échéances est défini par le paramètre <b ixia_locid="603" translate="no"><xref href="tla1411026836617.xml" ixia_locid="49">vads_sub_init_amount_number</xref></b>.
+								</p><p ixia_locid="50">Ce montant est exprimé dans la devise définie
+								par le paramètre <b ixia_locid="51" translate="no"><xref href="tla1411026347617.xml" ixia_locid="52">vads_sub_currency</xref></b> et est <u ixia_locid="53">exprimé en son unité indivisible</u>
+								<ph ixia_locid="602" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour
+									l'Euro)</ph>.</p><p ixia_locid="604" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">Exemple : pour un montant de 10 <ph ixia_locid="600">euros</ph> et
+								28 centimes, la valeur du paramètre est 1028.</p><p ixia_locid="605" location="OSB" platform="OSB">Exemple : pour un montant de 10 XPF, la valeur du paramètre est
+								10.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="37">Format</b></entry>
+						<entry ixia_locid="34" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="38">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">66</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

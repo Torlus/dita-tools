@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408616823195" xml:lang="fr-fr">
+	<title ixia_locid="1" translate="no">vads_effective_amount</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="65">Champ renvoyé dans la réponse.<p ixia_locid="67">Montant du paiement
+								dans la devise réellement utilisée pour effectuer la remise en
+								banque.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="107"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="108" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="109"/>
+						<entry ixia_locid="110" translate="no"/>
+					</row>
+					<row>
+						<entry ixia_locid="69"><b ixia_locid="73">Exemples</b></entry>
+						<entry ixia_locid="71"><b ixia_locid="6">EXEMPLE POUR UNE BOUTIQUE OU LA REMISE EST EFFECTUÉE
+								EN <ph ixia_locid="86" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">EURO</ph><ph ixia_locid="87" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="100" location="Innopay" platform="Innopay"> CHF</ph><ph ixia_locid="115" location="PayZen_Brazil">BRL</ph></b><p ixia_locid="111"/><u ixia_locid="72">Paiement
+								de <ph ixia_locid="88" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">10 euros</ph><ph ixia_locid="89" location="OSB" platform="OSB">1000 XPF</ph></u><ph ixia_locid="101" location="Innopay" platform="Innopay">10 CHF</ph><ph ixia_locid="116" location="PayZen_Brazil">10 BRL</ph><p ixia_locid="75">
+								<table frame="all" id="table_zml_rgv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="9">Paramètres
+												envoyés dans le formulaire de paiement</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="10">
+												<ul id="ul_e4l_rgv_dq">
+												<li ixia_locid="11" translate="no">vads_amount =
+												1000</li>
+												<li ixia_locid="12">vads_currency = <ph ixia_locid="117" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="118" location="OSB" platform="OSB">953</ph><ph ixia_locid="119" location="Innopay" platform="Innopay">756 </ph><ph ixia_locid="120" location="PayZen_Brazil">986</ph></li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table id="table_ell_rgv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="13">Paramètres
+												retournés</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="14">
+												<ul id="ul_ull_rgv_dq">
+												<li ixia_locid="15" translate="no">vads_amount =
+												1000</li>
+												<li ixia_locid="16">vads_currency =  <ph ixia_locid="121" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="122" location="OSB" platform="OSB">953</ph><ph ixia_locid="123" location="Innopay" platform="Innopay">756 </ph><ph ixia_locid="124" location="PayZen_Brazil">986</ph></li>
+												<li ixia_locid="17"><b ixia_locid="18">vads_effective_amount = 1000</b></li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p><p ixia_locid="112"/><p ixia_locid="76"><u ixia_locid="20">Paiement de 10 dollars
+									américains</u></p><p ixia_locid="77">
+								<table frame="all" id="table_ixw_vgv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="22">Paramètres
+												envoyés dans le formulaire de paiement</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="78">
+												<ul id="ul_dzw_vgv_dq">
+												<li ixia_locid="24" translate="no">vads_amount =
+												1000</li>
+												<li ixia_locid="25">vads_currency = 840 </li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table id="table_i5w_vgv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="66">Paramètres
+												retournés</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="27">
+												<ul id="ul_nvw_vgv_dq">
+												<li ixia_locid="28" translate="no">vads_amount =
+												1000</li>
+												<li ixia_locid="29">vads_currency = 840</li>
+												<li ixia_locid="30">vads_change_rate= 1.3118 (taux
+												utilisé) </li>
+												<li ixia_locid="31"><b ixia_locid="32">vads_effective_amount = 762 (vads_amount /
+												vads_change_rate)</b></li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p><p ixia_locid="113"/><p ixia_locid="80"><u ixia_locid="81">Paiement multiple 90 <ph ixia_locid="94" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="95" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="104" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="125" location="PayZen_Brazil">BRL</ph> en 3 fois</u></p><p ixia_locid="82">
+								<table frame="all" id="table_ik4_zgv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="36">Paramètres
+												envoyés dans le formulaire de paiement</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="37">
+												<ul id="ul_sm4_zgv_dq">
+												<li ixia_locid="38" translate="no">vads_amount =
+												9000</li>
+												<li ixia_locid="39">vads_currency = <ph ixia_locid="126" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="127" location="OSB" platform="OSB">953</ph><ph ixia_locid="128" location="Innopay" platform="Innopay">756 </ph><ph ixia_locid="129" location="PayZen_Brazil">986</ph></li>
+												<li ixia_locid="40"><b ixia_locid="41">vads_payment_config=MULTI_EXT:date1=3000;date2=2000;date3=4000</b></li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table id="table_ih4_zgv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="42">Paramètres
+												retournés pour la première échéance</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="43">
+												<ul id="ul_n34_zgv_dq">
+												<li ixia_locid="44" translate="no">vads_amount =
+												9000</li>
+												<li ixia_locid="45">vads_currency = <ph ixia_locid="130" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="131" location="OSB" platform="OSB">953</ph><ph ixia_locid="132" location="Innopay" platform="Innopay">756 </ph><ph ixia_locid="133" location="PayZen_Brazil">986</ph></li>
+												<li ixia_locid="46"><b ixia_locid="47">vads_effective_amount = 3000</b></li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="114" outputclass="break"/>
+							<p ixia_locid="83"><u ixia_locid="84">Paiement multiple 90 dollars
+									américains en 3 fois</u></p><p ixia_locid="85">
+								<table frame="all" id="table_uh3_chv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="52">Paramètres
+												envoyés dans le formulaire de paiement</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="53">
+												<ul id="ul_fk3_chv_dq">
+												<li ixia_locid="54" translate="no">vads_amount =
+												9000</li>
+												<li ixia_locid="55">vads_currency = 840 </li>
+												<li ixia_locid="56"><b ixia_locid="57">vads_payment_config=MULTI_EXT:20121025=3000;20121026=2000;20121027=4000</b></li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+								<table id="table_f23_chv_dq">
+									<tgroup cols="1">
+										<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="58">Paramètres
+												retournés pour la première échéance</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="59">
+												<ul id="ul_zf3_chv_dq">
+												<li ixia_locid="60" translate="no">vads_amount =
+												9000</li>
+												<li ixia_locid="61">vads_currency = 840</li>
+												<li ixia_locid="62">vads_change_rate= 1.3118 (taux
+												utilisé) </li>
+												<li ixia_locid="63">vads_effective_amount = 2287
+												(<b ixia_locid="64">montant 1ere échéance 30$ /
+												vads_change_rate</b>)</li>
+												</ul>
+												</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="79">Catégorie</b></entry>
+						<entry ixia_locid="34">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

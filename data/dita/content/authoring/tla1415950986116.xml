@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415950986116" xml:lang="fr-fr">
+	<title ixia_locid="15">Cycle de vie d’une transaction de paiement comptant immédiat</title>
+	<shortdesc ixia_locid="16"/>
+	<conbody>
+		<p ixia_locid="17">Suite à la demande de paiement, des contrôles sont automatiquement mis en oeuvre : </p>
+		<p ixia_locid="18">
+			<ul id="ul_bnt_135_bq">
+				<li ixia_locid="19">L’authentification 3D Secure.</li>
+			</ul>
+		</p>
+		<p ixia_locid="20">
+			<ul id="ul_b41_b35_bq">
+				<li ixia_locid="21">Différents contrôles locaux réalisés directement par la plateforme de
+					paiement (ceux-ci incluent potentiellement les contrôles liés à la souscription
+					au service additionnel du contrôle des risques).</li>
+			</ul>
+		</p>
+		<p ixia_locid="22">
+			<ul id="ul_b23_b35_bq">
+				<li ixia_locid="23">Une demande d’autorisation est effectuée auprès de la banque de l'acheteur.</li>
+			</ul>
+		</p>
+		<p ixia_locid="24">Si l’un de ces contrôles échoue, la demande de paiement n’est pas acceptée.
+			L'acheteur est informé du refus à l’écran. Dans le <ph ixia_locid="45" translate="no">Back Office</ph>,
+			la transaction est consultable avec le statut <b ixia_locid="41">Refusé</b>. </p>
+		<p ixia_locid="43"/>
+		<p ixia_locid="25">Dans le cas contraire le paiement est accepté et la transaction est consultable
+			dans le Back Office avec le statut <b ixia_locid="42">A Valider</b>.</p>
+		<p ixia_locid="44">Le marchand doit alors obligatoirement valider la transaction avant la date de remise
+			demandée. Dans le cas contraire, la transaction prend le statut <b ixia_locid="28">Expiré</b> et ne peut plus être remise en banque.</p>
+		<p ixia_locid="27"> </p>
+		<p ixia_locid="30">Dès lors qu’une transaction est validée, elle passe en statut <b ixia_locid="31">En attente de remise</b>. </p>
+		<!--<p ixia_locid="32">Cela signifie que la transaction partira automatiquement en remise le jour demandé par le
+			marchand. </p>-->
+		<!--<p ixia_locid="33">Dans l’attente de cette remise, le marchand peut modifier la date de remise ainsi que le
+			montant (modification du montant uniquement à la baisse, ce cas correspond à une
+			livraison partielle par le marchand). </p>-->
+		<p ixia_locid="34">Il peut également annuler la transaction si nécessaire. La transaction prend alors le
+			statut <b ixia_locid="35">Annulé</b>.</p>
+		<fig id="fig_N10079_N10011_N10001" ixia_locid="38">
+			
+			<image href="tla1415956574473.image" ixia_locid="40" scale="50"/>
+		</fig>
+	</conbody>
+</concept>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410525874342" xml:lang="fr-fr">
+	<title ixia_locid="18">Informations sur la commande</title>
+	<shortdesc ixia_locid="19"/>
+	<conbody>
+		<p ixia_locid="20">
+			<table colsep="1" frame="all" id="table_myz_qzj_jp" rowsep="1">
+				<title ixia_locid="5">Liste des paramètres  - Détails de la commande</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="2.35*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="5.06*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="6">Nom du champ</entry>
+							<entry ixia_locid="21">Format</entry>
+							<entry ixia_locid="7">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="37"><b ixia_locid="34" translate="no"><xref href="tla1408624169447.xml" ixia_locid="35">vads_ext_info</xref></b></entry>
+							<entry ixia_locid="44" translate="no">ans</entry>
+							<entry ixia_locid="51">Champs personnalisables permettant d'ajouter des données
+								supplémentaires dans l'e-mail de confirmation envoyé au marchand et
+								dans l'URL de notification.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="38"><xref href="tla1411125541878.xml" ixia_locid="58"><b ixia_locid="59" translate="no">vads_nb_products</b></xref></entry>
+							<entry ixia_locid="45" translate="no">n..12</entry>
+							<entry ixia_locid="52">Détail du panier. Nombre d’articles.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="8"><b ixia_locid="22" translate="no"><xref href="tla1408626141983.xml" ixia_locid="23">vads_order_id</xref></b></entry>
+							<entry ixia_locid="24" translate="no">an..32</entry>
+							<entry ixia_locid="9">Numéro de commande.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="10"><b ixia_locid="25" translate="no"><xref href="tla1408626234577.xml" ixia_locid="26">vads_order_info</xref></b></entry>
+							<entry ixia_locid="27" translate="no">an..255</entry>
+							<entry ixia_locid="11">Description de la commande.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="12"><b ixia_locid="28" translate="no"><xref href="tla1408626308005.xml" ixia_locid="29">vads_order_info2</xref></b></entry>
+							<entry ixia_locid="30" translate="no">an..255</entry>
+							<entry ixia_locid="13">Description de la commande.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="14"><b ixia_locid="31" translate="no"><xref href="tla1408626336653.xml" ixia_locid="32">vads_order_info3</xref></b></entry>
+							<entry ixia_locid="33" translate="no">an..255</entry>
+							<entry ixia_locid="15">Description de la commande.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="39"><xref href="tla1411126075812.xml" ixia_locid="60"><b ixia_locid="61" translate="no">vads_product_amountN</b></xref></entry>
+							<entry ixia_locid="46" translate="no">n..12</entry>
+							<entry ixia_locid="53">Détail du panier. Montant de l’article N</entry>
+						</row>
+						<row>
+							<entry ixia_locid="40"><xref href="tla1411125732485.xml" ixia_locid="62"><b ixia_locid="63" translate="no">vads_product_labelN</b></xref></entry>
+							<entry ixia_locid="47" translate="no">an..255</entry>
+							<entry ixia_locid="54">Détail du panier. Libellé de l’article N.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="41"><xref href="tla1411126555396.xml" ixia_locid="64"><b ixia_locid="65" translate="no">vads_product_qtyN</b></xref></entry>
+							<entry ixia_locid="48" translate="no">n..12</entry>
+							<entry ixia_locid="55">Détail du panier. Quantité d’article N.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="42"><xref href="tla1411126454471.xml" ixia_locid="66"><b ixia_locid="67" translate="no">vads_product_refN</b></xref></entry>
+							<entry ixia_locid="49" translate="no">an..64</entry>
+							<entry ixia_locid="56">Détail du panier. Référence de l’article
+								N.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="70"><xref href="tla1411126340153.xml" ixia_locid="68"><b ixia_locid="69" translate="no">vads_product_typeN</b></xref></entry>
+							<entry ixia_locid="72" translate="no">string (enum)</entry>
+							<entry ixia_locid="74">Détail du panier. Type de l’article N.</entry>
+						</row>
+						<row doc-type="integration Form" location="PayZen PayZen_Germany" platform="PayZen">
+							<entry ixia_locid="71"><xref href="tla1433941223778.xml" ixia_locid="76" translate="no"><b ixia_locid="77">vads_product_vatN</b></xref></entry>
+							<entry ixia_locid="73" translate="no">n..12</entry>
+							<entry ixia_locid="75">Détail du panier. Montant de la TVA de l'article
+								N.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

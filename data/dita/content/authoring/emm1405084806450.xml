@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="emm1405084806450" xml:lang="fr-fr">
+	<title ixia_locid="1">Définir l'URL de la page de paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">Le site marchand communique avec la
+			plateforme de paiement en redirigeant l’acheteur vers la page :<table colsep="0" frame="none" id="table_j1x_1mr_hp" rowsep="0">
+				<tgroup align="center" cols="1">
+					<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+					<tbody>
+						<row>
+							<entry align="center" ixia_locid="6"><xref ixia_locid="7" keyref="URLpagePaiement"/></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></context>
+	</taskbody>
+</task>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//LYRA//DTD DITA Map//EN" "lyra-map.dtd">
+<map id="tla1437576678558" xml:lang="fr-fr">
+	<title ixia_locid="197">PayZen Commun</title>
+    <keydef ixia_locid="6" keys="platform-name" location="PayZen">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="7">PayZen</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!--Telephones-->
+    <keydef ixia_locid="184" keys="TelephoneSupport" location="PayZen">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="186">0 811 708 709</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef ixia_locid="190" keys="TelephoneSupportDepuisEtranger" location="PayZen">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="193">+33 567 223 329</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!-- Liens spécifiques à la plateforme -->
+    <keydef format="mail" href="support@payzen.eu" ixia_locid="171" keys="EmailSupport" location="PayZen" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.eu/vads-merchant/" ixia_locid="154" keys="BackOfficeMarchand" location="PayZen" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.eu/vads-payment/" ixia_locid="157" keys="URLpagePaiement" location="PayZen" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.eu/html/error_code/" ixia_locid="160" keys="FAQ" location="PayZen" scope="external"/>
+    <keydef format="html" href="https://secure.payzen.eu/html/server_url_error/" ixia_locid="196" keys="FAQServerUrlError" location="PayZen" scope="external"/>
+    <keydef format="html" href="https://www.payzen.eu/support/integration-payzen/" ixia_locid="163" keys="SiteInternetDocumentation" location="PayZen" scope="external"/>
+    
+    <!--Back Office Connexion-->
+    <keydef format="image" href="tla1411744983124.image" ixia_locid="396" keys="ConnexionBO" location="PayZen"/>
+    
+    <!--WEB SERVICES Liens spécifiques à la plateforme -->
+    <keydef format="html" href="https://secure.payzen.eu/vads-ws/v5?wsdl" ixia_locid="364" keys="FichierWSDL" location="PayZen" scope="external"/>
+    <keydef ixia_locid="357" keys="Host" location="PayZen">
+        <topicmeta>
+            <keywords>
+                <keyword ixia_locid="358">secure.payzen.eu</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    
+    <!--KLARNA Images spécifiques a la plateforme de paiement-->
+    <keydef format="image" href="tla1441272180248.image" ixia_locid="368" keys="PagePaiementKlarnaStep1" location="PayZen"/>
+    <keydef format="image" href="tla1441272240044.image" ixia_locid="369" keys="PagePaiementKlarnaStep2" location="PayZen"/>
+    <keydef format="image" href="tla1441272280620.image" ixia_locid="370" keys="PagePaiementKlarnaStep3" location="PayZen"/>
+    <keydef format="image" href="tla1441272324534.image" ixia_locid="371" keys="PagePaiementKlarnaStep4" location="PayZen"/>
+    
+    
+    <!--WEB SERVICES Image specifique -->
+    <keydef href="tla1438186599554.image" ixia_locid="367" keys="Requis" location="PayZen"/>
+    
+    
+    <!--FORMULAIRE Images standards -->
+    <keydef format="image" href="emm1405081230671.image" ixia_locid="4" keys="FORM_cinematique-echange-vue-integrateur_light" location="PayZen"/>
+    <keydef format="image" href="tla1406022174130.image" ixia_locid="376" keys="DiagrammeFluxAcheteur" location="PayZen"/>
+    <keydef format="image" href="tla1437748433397.image" ixia_locid="377" keys="ChoixMoyenPaiement" location="PayZen"/>
+    <keydef format="image" href="tla1437748495407.image" ixia_locid="378" keys="SaisieDonneesBancaires" location="PayZen"/>
+    <keydef format="image" href="tla1437748545920.image" ixia_locid="379" keys="DetailPaiement" location="PayZen"/>
+    <keydef format="image" href="tla1437748588430.image" ixia_locid="380" keys="PageResumePaiementEchec" location="PayZen"/>
+    <keydef format="image" href="tla1437748633530.image" ixia_locid="14" keys="DiagrammeFluxMarchand" location="PayZen"/>
+    <keydef format="image" href="tla1437748696912.image" ixia_locid="15" keys="DiagrammeSignature" location="PayZen"/>
+    
+    <!--ABONNEMENT IDENTIFIANT Images -->
+    <keydef href="tla1430222328967.image" ixia_locid="221" keys="REGISTER_step1" location="PayZen"/>
+    <keydef href="tla1430222441056.image" ixia_locid="394" keys="REGISTER_step2" location="PayZen"/>
+    <keydef href="tla1430222696152.image" ixia_locid="372" keys="REGISTER_step3" location="PayZen"/>
+    
+    <keydef href="tla1430224809985.image" ixia_locid="373" keys="REGISTER_PAY_step1" location="PayZen"/>
+    <keydef href="tla1430224933475.image" ixia_locid="374" keys="REGISTER_PAY_step2" location="PayZen"/>
+    <keydef href="tla1430225093952.image" ixia_locid="375" keys="REGISTER_PAY_step3" location="PayZen"/>
+    
+    <keydef href="tla1430227317440.image" ixia_locid="205" keys="REGISTER_SUBSCRIBE_step1" location="PayZen"/>
+    <keydef href="tla1430227360153.image" ixia_locid="206" keys="REGISTER_SUBSCRIBE_step2" location="PayZen"/>
+    <keydef href="tla1430227398717.image" ixia_locid="207" keys="REGISTER_SUBSCRIBE_step3" location="PayZen"/>
+    
+    <keydef href="tla1430229450247.image" ixia_locid="208" keys="REGISTER_PAY_SUBSCRIBE_step1" location="PayZen"/>
+    <keydef href="tla1430229509075.image" ixia_locid="209" keys="REGISTER_PAY_SUBSCRIBE_step2" location="PayZen"/>
+    <keydef href="tla1430229543114.image" ixia_locid="210" keys="REGISTER_PAY_SUBSCRIBE_step3" location="PayZen"/>
+    
+    <keydef href="tla1430234982502.image" ixia_locid="211" keys="PAYMENT_BY_TOKEN_step1" location="PayZen"/>
+    <keydef href="tla1430235054950.image" ixia_locid="212" keys="PAYMENT_BY_TOKEN_step2" location="PayZen"/>
+    
+    <keydef href="tla1430236173638.image" ixia_locid="213" keys="SUBSCRIBE_BY_TOKEN_step1" location="PayZen"/>
+    <keydef href="tla1430236241655.image" ixia_locid="214" keys="SUBSCRIBE_BY_TOKEN_step2" location="PayZen"/>
+    
+    <keydef href="tla1430292312852.image" ixia_locid="215" keys="ASK_REGISTER_PAY_step1" location="PayZen"/>
+    <keydef href="tla1430292390945.image" ixia_locid="216" keys="ASK_REGISTER_PAY_step2" location="PayZen"/>
+    <keydef href="tla1430292432597.image" ixia_locid="217" keys="ASK_REGISTER_PAY_step3" location="PayZen"/>
+    
+    <keydef href="tla1431443654585.image" ixia_locid="218" keys="REGISTER_UPDATE_PAY_step1" location="PayZen"/>
+    <keydef href="tla1431443722760.image" ixia_locid="219" keys="REGISTER_UPDATE_PAY_step2" location="PayZen"/>
+    <keydef href="tla1431443764449.image" ixia_locid="220" keys="REGISTER_UPDATE_PAY_step3" location="PayZen"/>
+    
+    <!--Images SEPA Recurrent-->
+    <keydef format="image" href="tla1440149840946.image" ixia_locid="381" keys="ChoixMoyenDePaiement" location="PayZen"/>
+    <keydef format="image" href="tla1440149951642.image" ixia_locid="382" keys="InfoMoyenPaiement" location="PayZen"/>
+    <keydef format="image" href="tla1440150190765.image" ixia_locid="383" keys="ValidationMandat" location="PayZen"/>
+    <keydef format="image" href="tla1437557937645.image" ixia_locid="384" keys="RecapPrelevementSEPASDD" location="PayZen"/>
+    <keydef format="image" href="tla1408463220846.image" ixia_locid="385" keys="PaiementEnCours" location="PayZen"/>
+    <keydef format="image" href="tla1408464303221.image" ixia_locid="37" keys="DetailTransactionSEPAEnCours" location="PayZen"/>
+    <keydef format="image" href="tla1408464752604.image" ixia_locid="54" keys="EmailInscriptionSEPA" location="PayZen"/>
+    <keydef format="image" href="tla1408464914727.image" ixia_locid="56" keys="EmailPreNotificationSEPA" location="PayZen"/>
+    <keydef format="image" href="tla1408464979841.image" ixia_locid="22" keys="EmailPaiement" location="PayZen"/>
+    
+    <!--Liens SEPA Recurrent-->
+    <keydef format="html" href="sftp://vadftp.lyra-network.com" ixia_locid="120" keys="SFTP" location="PayZen" scope="external"/>
+    <keydef href="ftps://vadftp.lyra-network.com" ixia_locid="121" keys="FTPS" location="PayZen" scope="external"/>
+    
+    <!--Images SEPA One Off-->
+    <keydef format="image" href="tla1440163214853.image" ixia_locid="386" keys="ChoixMoyenDePaiementOneOff" location="PayZen"/>
+    <keydef format="image" href="tla1440163346517.image" ixia_locid="10" keys="InfoMoyenPaiementOneOff" location="PayZen"/>
+    <keydef format="image" href="tla1440163447689.image" ixia_locid="387" keys="ValidationMandatOneOff" location="PayZen"/>
+    <keydef format="image" href="tla1408461520949.image" ixia_locid="12" keys="RecapPrelevementSEPASDDOneOff" location="PayZen"/>
+    
+   <!-- PayPal immediat-->
+    <keydef href="tla1412255432047.image" ixia_locid="388" keys="CinematiqueEchangesVueAcheteur" location="PayZen"/>
+    <keydef href="tla1437480883653.image" ixia_locid="389" keys="PayPalPageDePaiement-step1" location="PayZen"/>
+    
+    <!--Paylib Images-->
+    <keydef format="image" href="tla1406792999307.image" ixia_locid="390" keys="ChoixMoyenDePaiementPaylib" location="PayZen"/>
+    <keydef format="image" href="tla1406793488461.image" ixia_locid="391" keys="RecapPaiementPaylib" location="PayZen"/>
+    
+    <!-- Facilipay Images -->
+    <keydef format="image" href="tla1421081481840.image" ixia_locid="234" keys="RecapFinancement" location="PayZen"/>
+    <keydef format="image" href="tla1420734218082.image" ixia_locid="231" keys="FormulaireSouscriptionFacilipay" location="PayZen"/>
+    <keydef format="image" href="tla1420734786395.image" ixia_locid="232" keys="ConditionsFacilypay" location="PayZen"/>
+    <keydef format="image" href="tla1420735157975.image" ixia_locid="233" keys="DetailTransactionFacilypay" location="PayZen"/>
+    <keydef format="image" href="tla1420729322184.image" ixia_locid="392" keys="PagePaiementStep1Facilipay" location="PayZen"/>
+    <keydef format="image" href="tla1420733929608.image" ixia_locid="230" keys="PagePaiementStep2Facilipay" location="PayZen"/>
+    <keydef format="image" href="tla1421082701967.image" ixia_locid="235" keys="RecapitulatifPaiementFacilipay" location="PayZen"/>
+    
+    <!--Sofort Images-->
+    <keydef format="image" href="tla1428498567821.image" ixia_locid="225" keys="Cinematique" location="PayZen"/>
+    <keydef format="image" href="tla1428499702607.image" ixia_locid="226" keys="PageDePaiementStep1" location="PayZen"/>
+    <keydef format="image" href="tla1428501811555.image" ixia_locid="393" keys="PageDePaiementStep7" location="PayZen"/>
+    
+    <!-- Perso Avancee Images -->
+    <keydef format="image" href="tla1436172836555.image" ixia_locid="198" keys="PersonnalisationUI" location="PayZen"/>
+    <keydef format="image" href="tla1436173656800.image" ixia_locid="199" keys="Elements" location="PayZen"/>
+    <keydef format="image" href="tla1436174399039.image" ixia_locid="395" keys="Police" location="PayZen"/>
+    
+    <!--ANCV images-->
+    <keydef href="tla1425575673993.image" ixia_locid="246" keys="diagrammeANCV" location="PayZen"/>
+    <keydef href="tla1425575855053.image" ixia_locid="247" keys="SelectionMoyenDePaiementANCV" location="PayZen"/>
+    <keydef href="tla1425576009587.image" ixia_locid="248" keys="ConfirmationeCV" location="PayZen"/>
+    <keydef href="tla1425576154449.image" ixia_locid="249" keys="SaisieInfoeCV" location="PayZen"/>
+    <keydef href="tla1425576459669.image" ixia_locid="250" keys="ResumesCV" location="PayZen"/>
+    <keydef href="tla1425576629101.image" ixia_locid="251" keys="FinalSaisieeCV" location="PayZen"/>
+    <keydef href="tla1425576782298.image" ixia_locid="252" keys="SaisieCB" location="PayZen"/>
+    <keydef href="tla1425576952844.image" ixia_locid="253" keys="RecapitulatifANCV" location="PayZen"/>
+    <keydef href="tla1426081199545.image" ixia_locid="397" keys="NumeroDeRemise" location="PayZen"/>
+</map>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088484151" xml:lang="fr-fr">
+	<title ixia_locid="1">Analyser le résultat du paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="58">Pour traiter le résultat des paiements, le site marchand doit disposer
+			d'un script sur une page dédiée (exemple : analyse_paiement.php).</p>
+		<p ixia_locid="97">Cette page sera appelée automatiquement après chaque paiement (accepté ou
+			refusé) : les paramètres liés au résultat du paiement sont envoyés en mode POST par la
+			plateforme de paiement.</p>
+		<p ixia_locid="106"/>
+		<p ixia_locid="107"><b ixia_locid="108">Prérequis :</b></p>
+		<p ixia_locid="60">
+			<ul id="ul_gc5_nmy_2q">
+				<li ixia_locid="109">L'URL de la page qui analyse le résultat du paiement devra
+					obligatoirement être renseignée dans le <ph ixia_locid="103" translate="no">Back
+						Office</ph> (voir chapitre <b ixia_locid="130">Paramétrer les
+						notifications</b>
+					<ph doc-type="Moyens-Paiement Oney Paylib PayPal" ixia_locid="131" payment-method="Oney Paylib PayPal">du guide
+						d'implémentation du formulaire</ph>). </li>
+			</ul>
+		</p>
+		<!--<p ixia_locid="62">Cette URL pourra être surchargée dynamiquement à chaque paiement (voir chapitre
+				<xref href="tla1406130055504.xml" ixia_locid="101"><b ixia_locid="63">Surcharger
+					l'URL de notification</b></xref>).</p>-->
+		<p ixia_locid="102">
+			<ul id="ul_gsh_4my_2q">
+				<li ixia_locid="110">Le marchand doit s'assurer que cette URL soit joignable par la
+					plateforme de paiement et ce, sans redirection. <p ixia_locid="111">Les
+						redirections entrainent la perte des données présentes dans le
+					POST.</p></li>
+			</ul>
+		</p>
+		<p ixia_locid="68">
+			<ul id="ul_nvv_qmy_2q">
+				<li ixia_locid="112">En cas de restriction mise en place du côté du site marchand,
+					il faudra autoriser la plage d'adresses d'IP <b ixia_locid="69">194.50.38.0/24</b>.</li>
+			</ul>
+		</p>
+		<p ixia_locid="72">
+			<ul id="ul_qzg_smy_2q">
+				<li ixia_locid="113">La page ne devra pas comporter d'affichage HTML. <p ixia_locid="114">L'accès aux ressources telles que les images ou feuilles de
+						styles peuvent ralentir les échanges entre la plateforme de paiement et le
+						site marchand.</p><p ixia_locid="115">De plus, la plateforme lit
+						systématiquement les 512 premiers caractères retournés par le site
+						marchand.</p>Ces caractères sont ensuite affichés dans l'historique des
+					transactions.</li>
+			</ul>
+		</p>
+		<p ixia_locid="77">
+			<ul id="ul_fdr_zmy_2q">
+				<li ixia_locid="116">Evitez au maximum d'intégrer des tâches consommatrices de temps
+					comme la génération de facture ou l'envoi d'e-mail dans ce script.<p ixia_locid="117">Le temps du traitement influe directement sur le délai de
+						l’affichage de la page de résumé du paiement. Plus le traitement de la
+						notification est long, plus l’affichage est retardé. </p><p ixia_locid="79">Au delà de 35s, la plateforme considèrera que l'appel a échoué
+						(timeout).</p></li>
+			</ul>
+		</p>
+		<p ixia_locid="80"/>
+		<p ixia_locid="118"/>
+		<p ixia_locid="119"><b ixia_locid="120">Echec de notification (IPN)</b></p>
+		<p ixia_locid="123"><ph doc-type="Form Moyens-Paiement Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil SEPA-OneOff SEPA-Recurrent" ixia_locid="125" payment-method="SEPA-One-Off SEPA-Recurrent">En cas d'échec de
+				l'appel à l’URL de notification (IPN), un e-mail d'avertissement est envoyé à
+				l’adresse spécifiée dans le <ph ixia_locid="126" translate="no">Back Office</ph>
+				(voir chapitre <b ixia_locid="82">Paramétrer les notifications</b>).</ph></p>
+		<p ixia_locid="124">
+			<ph doc-type="Moyens-Paiement Oney Paylib PayPal" ixia_locid="132" payment-method="Oney Paylib PayPal">En cas d'échec de l'appel à l’URL de notification (IPN), un e-mail
+				d'avertissement est envoyé à l’adresse spécifiée dans le <ph ixia_locid="127" translate="no">Back Office</ph> (voir chapitre <b ixia_locid="129">Paramétrer
+					les notifications</b> du guide d'implémentation du formulaire).</ph></p>
+		<p ixia_locid="57">Il contient : </p>
+		<p ixia_locid="49">
+			<ul id="ul_enj_fxr_v4">
+				<li ixia_locid="50">le code HTTP de l’erreur rencontrée,</li>
+				<li ixia_locid="51">des éléments d’analyses en fonction de l’erreur,</li>
+				<li ixia_locid="52">la procédure à suivre depuis le <ph ixia_locid="105" translate="no">Back Office</ph> pour renvoyer la notification. </li>
+			</ul>
+		</p>
+		<p ixia_locid="83"/>
+		<p ixia_locid="84"/>
+		<p ixia_locid="121"><b ixia_locid="122">Concevoir le script de traitement</b></p>
+		<p ixia_locid="85">Le script de traitement devra comporter au moins les étapes
+			ci-dessous:</p>
+		<p ixia_locid="86">
+			<ul id="ul_cdy_1yh_bq">
+				<li ixia_locid="87">Récupérer la liste des champs présents dans la réponse envoyée
+					en POST</li>
+				<li ixia_locid="88">Calculer la signature</li>
+				<li ixia_locid="89">Comparer la signature calculée avec celle réceptionnée</li>
+				<li ixia_locid="90">Analyser la nature de la notification</li>
+				<li ixia_locid="91">Récupérer le résultat du paiement </li>
+			</ul>
+		</p>
+		<p ixia_locid="94"/>
+		<p ixia_locid="95">Le script peut par exemple tester l'état de la commande (ou l'information
+			de votre choix) pour vérifier qu'elle n'ait pas déja été mise à jour.</p>
+		<p ixia_locid="93">Une fois ces étapes réalisées, le script peut mettre à jour la base de
+			données (nouvel état de la commande, mise à jour du stock, enregistrement des
+			informations du paiement etc...).</p>
+		<p ixia_locid="27"/>
+		<p ixia_locid="96"/>
+		<!--<p doc-type="integration" ixia_locid="38" platform="PayZen Systempay OSB Innopay">Un exemple de
+			traitement est proposé à la fin de ce chapitre.</p>-->
+	</conbody>
+</concept><?oxy_options track_changes="on"?>

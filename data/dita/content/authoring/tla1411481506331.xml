@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411481506331" xml:lang="fr-fr">
+	<title ixia_locid="61" translate="no">vads_recurrence_status</title>
+	<shortdesc ixia_locid="62"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="32">Description</b></entry>
+						<entry ixia_locid="34">
+							<p ixia_locid="65">Champ retourné dans la réponse.</p>
+							<p ixia_locid="66">Statut de l'abonnement.</p>
+							<p ixia_locid="64">Présent uniquement si l’action demandée correspond à la création d'un
+								abonnement (<ph ixia_locid="67" translate="no">REGISTER_SUBSCRIBE, SUBSCRIBE,
+									REGISTER_PAY_SUBSCRIBE</ph>).</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="44"><b ixia_locid="45">Format</b></entry>
+						<entry ixia_locid="46" translate="no">string</entry>
+					</row>
+					<row>
+						<entry ixia_locid="50"><b ixia_locid="51">Valeurs possibles</b></entry>
+						<entry ixia_locid="53">
+							<p ixia_locid="54">
+								<table colsep="1" frame="all" id="table_ajp_l13_np" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="2.73*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="9">Valeur</entry>
+												<entry ixia_locid="10">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="11"><b ixia_locid="12" translate="no">CREATED</b></entry>
+												<entry ixia_locid="13"><p ixia_locid="30">L’abonnement a été créé avec succès.</p>Le détail
+												de l’abonnement est visible dans le Back Office.
+												</entry>
+											</row>
+											<row>
+												<entry ixia_locid="16"><b ixia_locid="17" translate="no">NOT_CREATED</b></entry>
+												<entry ixia_locid="18">L’abonnement n’a pas été créé
+												et n’est pas visible dans le Back Office.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="24"><b ixia_locid="25" translate="no">ABANDONED</b></entry>
+												<entry ixia_locid="26"><p ixia_locid="31">La demande de création de l’abonnement a été
+												abandonnée par l’acheteur (débiteur).
+												</p>L’abonnement n’a pas été créé et n’est pas
+												visible dans le Back Office. </entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="55"><b ixia_locid="56">Catégorie</b></entry>
+						<entry ixia_locid="57">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

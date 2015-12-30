@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1406132636881" xml:lang="fr-fr">
+	<title ixia_locid="1">Exemple d'implémentation en PHP</title>
+	<shortdesc ixia_locid="2"/>
+	<refbody>
+		<section id="section_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4">
+				<codeblock ixia_locid="5">// Fonction qui calcule la signature
+// $params : tableau contentant les champs à envoyer dans le formulaire
+function getSignature($params){
+	//Initialisation de la variable qui contiendra la chaine à chiffrer
+	$contenu_signature  =  "" ;
+	
+	// tri des champs par ordre alphabétique
+	
+	ksort($params);
+     foreach ($params as $nom =&gt;$valeur)
+	{  
+	// Récupération des champs vads_ 
+
+       if (substr($nom,0,5)=='vads_') {                   
+           // Concaténation avec le séparateur "+"       
+           $contenu_signature .= $valeur."+";
+	  }
+	}
+// Ajout du certificat à la fin
+$contenu_signature .= $key;
+// Application de l’algorythme SHA-1
+$signature = sha1($contenu_signature);
+
+return $signature ;
+}</codeblock>
+			</p>
+		</section>
+	</refbody>
+</reference>

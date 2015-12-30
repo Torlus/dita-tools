@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410533143029" xml:lang="fr-fr">
+	<title ixia_locid="37">Informations sur le moyen de paiement</title>
+	<shortdesc ixia_locid="38"/>
+	<conbody>
+		<p ixia_locid="39">
+			<table colsep="1" frame="all" id="table_myz_qzj_jp" rowsep="1">
+				<title ixia_locid="5">Liste des paramètres - Information sur le moyen de paiement</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="1.95*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="3.92*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="6">Nom du champ</entry>
+							<entry ixia_locid="21">Format</entry>
+							<entry ixia_locid="7">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="40"><b ixia_locid="41" translate="no"><xref href="tla1408550019475.xml" ixia_locid="42">vads_bank_code</xref></b></entry>
+							<entry ixia_locid="43" translate="no">n5</entry>
+							<entry ixia_locid="44">Code banque associé à la banque
+								émettrice.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="10"><b ixia_locid="45" translate="no"><xref href="tla1408550125294.xml" ixia_locid="46">vads_bank_product</xref></b></entry>
+							<entry ixia_locid="27" translate="no">an..3</entry>
+							<entry ixia_locid="11">Code produit de la carte utilisée pour le
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="12"><b ixia_locid="47" translate="no"><xref href="tla1408550840170.xml" ixia_locid="48">vads_birth_day</xref></b></entry>
+							<entry ixia_locid="30" translate="no">n..2</entry>
+							<entry ixia_locid="13">Jour de naissance du porteur.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="14"><b ixia_locid="49" translate="no"><xref href="tla1408551247542.xml" ixia_locid="50">vads_birth_month</xref></b></entry>
+							<entry ixia_locid="33" translate="no">n..2</entry>
+							<entry ixia_locid="15">Mois de naissance du porteur.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="51"><b ixia_locid="59" translate="no"><xref href="tla1408551527515.xml" ixia_locid="60">vads_birth_year</xref></b></entry>
+							<entry ixia_locid="61" translate="no">n4</entry>
+							<entry ixia_locid="69">Année de naissance du porteur.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="52"><b ixia_locid="77" translate="no"><xref href="tla1408606602420.xml" ixia_locid="78">vads_card_brand</xref></b></entry>
+							<entry ixia_locid="62" translate="no">an..127</entry>
+							<entry ixia_locid="70">Type de carte utilisé pour le paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="53"><b ixia_locid="79" translate="no"><xref href="tla1408607272456.xml" ixia_locid="80">vads_card_country</xref></b></entry>
+							<entry ixia_locid="63" translate="no">ISO 3166</entry>
+							<entry ixia_locid="71">Code pays de la carte utilisée pour le
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="54"><b ixia_locid="81" translate="no"><xref href="tla1408607355172.xml" ixia_locid="82">vads_card_number</xref></b></entry>
+							<entry ixia_locid="64" translate="no">n..36</entry>
+							<entry ixia_locid="72">Numéro de carte masqué.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="55"><b ixia_locid="83" translate="no"><xref href="tla1408616066204.xml" ixia_locid="84">vads_cvv</xref></b></entry>
+							<entry ixia_locid="65" translate="no">n..4</entry>
+							<entry ixia_locid="73">Code de sécurité de la carte à 3 ou 4
+								chiffres.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="57"><b ixia_locid="87" translate="no"><xref href="tla1408624003656.xml" ixia_locid="88">vads_expiry_month</xref></b></entry>
+							<entry ixia_locid="67" translate="no">n..2</entry>
+							<entry ixia_locid="75">Mois d'expiration de la carte utilisée pour le
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="58"><b ixia_locid="89" translate="no"><xref href="tla1408624118504.xml" ixia_locid="90">vads_expiry_year</xref></b></entry>
+							<entry ixia_locid="68" translate="no">n4</entry>
+							<entry ixia_locid="76">Année d'expiration de la carte utilisée pour le
+								paiement.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

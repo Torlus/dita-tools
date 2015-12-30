@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406112532368" xml:lang="fr-fr">
+	<title ixia_locid="1">Définir une URL de retour unique quelque soit le résultat du paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4"/>
+		</context>
+		<steps>
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="5">
+				<cmd ixia_locid="6">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
+					chapitre <b ixia_locid="142"><xref href="emm1405083451541.xml" ixia_locid="140">Générer un formulaire de paiement</xref></b>)  pour construire votre
+					formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10028_N1001C_N10011_N10001" ixia_locid="7">
+				<cmd ixia_locid="8">Utilisez le champ facultatif <xref href="tla1408639224559.xml" ixia_locid="22"><b ixia_locid="9" translate="no">vads_url_return</b></xref>
+					pour définir l’url de redirection à la fin du paiement.</cmd>
+				<itemgroup ixia_locid="19">Si aucune URL n’est valorisée dans le formulaire, la valeur
+					configurée dans le <ph ixia_locid="141" translate="no">Back Office</ph> sera prise en compte. </itemgroup>
+			</step>
+			<step id="step_N10035_N1001C_N10011_N10001" ixia_locid="10">
+				<cmd ixia_locid="11">Calculez la valeur du champ <b ixia_locid="12" translate="no">signature</b>
+					en utilisant l’ensemble des champs de votre formulaire, dont le nom commence par
+						<b ixia_locid="18" translate="no">vads_</b> (voir chapitre <b ixia_locid="13"><xref href="emm1405088305497.xml" ixia_locid="20">Calculer
+							la signature</xref></b>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N10044_N10011_N10001" ixia_locid="14">
+			<p ixia_locid="15"><u ixia_locid="23">Exemple de formulaire de paiement avec une URL de retour
+					unique quelque soit le résultat du
+				paiement</u>:<codeblock ixia_locid="16">&lt;form method="POST" action="<xref ixia_locid="21" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140526101407" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="239848" /&gt;
+<b ixia_locid="17">&lt;input type="hidden" name="vads_url_return" value="http://demo.com/return.php" /&gt;</b>
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

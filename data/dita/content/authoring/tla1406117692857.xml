@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1406117692857" xml:lang="fr-fr">
+	<title ixia_locid="1">Personnaliser la page de paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4">Vous pouvez personnaliser certains éléments de la page de paiement:</p>
+		<p ixia_locid="5">
+			<ul id="ul_j1b_nry_v4">
+				<li ixia_locid="6">les moyens de paiement proposés au moment du paiement,</li>
+				<li ixia_locid="7">la langue dans laquelle seront affichées les pages de paiement,</li>
+				<li ixia_locid="8">les langues proposées à l’acheteur sur les pages de paiement (drapeaux),</li>
+				<li ixia_locid="9">le nom et l’url de la boutique,</li>
+				<li ixia_locid="10">le libellé du bouton <b ixia_locid="11">Retourner à la boutique</b>.</li>
+			</ul>
+		</p>
+		<p ixia_locid="12"/>
+		<p ixia_locid="13">En souscrivant à l'option <b ixia_locid="14">personnalisation avancée</b>, vous
+			pourrez modifier la page de paiement afin de la rendre visuellement proche de votre site
+			marchand. Ceci aura pour effet de conforter l’acheteur et d’instaurer une confiance lors
+			de la redirection pour procéder au paiement.<ph ixia_locid="16" location="OSB PayZen PayZen_Brazil PayZen_Germany Systempay" platform="OSB PayZen">
+				Référez-vous au "manuel utilisateur de la personnalisation avancée" disponible sur
+				le site documentaire<ph ixia_locid="18" location="OSB PayZen PayZen_Brazil PayZen_Germany">
+					<xref ixia_locid="15" keyref="SiteInternetDocumentation"/></ph>.</ph><ph ixia_locid="17" location="Innopay" platform="Innopay"> Pour plus d'informations,
+				veuillez vous adresser au support technique.</ph></p>
+	</conbody>
+</concept>

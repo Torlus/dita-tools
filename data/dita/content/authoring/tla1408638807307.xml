@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408638807307" xml:lang="fr-fr">
+	<title ixia_locid="38" translate="no">vads_url_check</title>
+	<shortdesc ixia_locid="39"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">URL de la page à notifier à la fin du paiement. Surcharge la valeur
+							saisie dans le paramétrage des règles de
+								notification.<p ixia_locid="164"><i ixia_locid="165">Remarque</i></p><p ixia_locid="166"><i ixia_locid="167">Ce champ doit être utilisé
+									de manière exceptionelle car :</i></p><p ixia_locid="168">
+								<ul id="ul_lfc_3jr_vr">
+									<li ixia_locid="169"><i ixia_locid="170">cette URL ne sera utilisée que dans l'appel de l'URL de
+											notification de paiement (IPN) immédiat,</i></li>
+									<li ixia_locid="171"><i ixia_locid="172">la valeur surchargée ne sera pas utilisée s'il y a
+											un re-jeu automatique. </i><p ixia_locid="173">Incompatible avec l'exécution, depuis le <ph ixia_locid="163" translate="no">Back Office</ph>, de
+											la requête envoyée à l’url de notification instantanée.
+											L’URL appelée sera celle configurée dans la règle de
+											notification (voir chapitre <b ixia_locid="161">Paramétrer les notifications</b><ph doc-type="Moyens-Paiement SEPA-OneOff SEPA-Recurrent" ixia_locid="174" payment-method="SEPA-One-Off SEPA-Recurrent"> du guide d'implémentation du
+												formulaire de paiement</ph>).</p></li>
+								</ul>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="30">Format</b></entry>
+						<entry ixia_locid="32" translate="no">ans..127</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">33</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="31">Catégorie</b></entry>
+						<entry ixia_locid="37">Redirection vers le site marchand.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

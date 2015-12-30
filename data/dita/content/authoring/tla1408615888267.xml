@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408615888267" xml:lang="fr-fr">
+	<title ixia_locid="30" translate="no">vads_cust_title</title>
+	<shortdesc ixia_locid="31"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">Civilité de l’acheteur (Exemple Mr, Mme,
+							Melle).</entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="8" translate="no">an..63</entry>
+					</row>
+					<row>
+						<entry ixia_locid="32"><b ixia_locid="34">Code erreur</b></entry>
+						<entry ixia_locid="35" translate="no">17</entry>
+					</row>
+					<row doc-type="SEPA-OneOff SEPA-Recurrent Moyens-Paiement" payment-method="SEPA-One-Off SEPA-Recurrent">
+						<entry ixia_locid="42"><b ixia_locid="28">Valeurs possibles</b></entry>
+						<entry ixia_locid="44"><b ixia_locid="37">M.</b>, <b ixia_locid="38">Mme</b>,<b ixia_locid="39"> Mlle</b></entry>
+					</row>
+					<row>
+						<entry ixia_locid="43"><b ixia_locid="46">Remarque</b></entry>
+						<entry ixia_locid="45">Paramètre obligatoire pour 3xCB Cofinoga. </entry>
+					</row>
+					<row>
+						<entry ixia_locid="40"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="47">Informations sur l'acheteur.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

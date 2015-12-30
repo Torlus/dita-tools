@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1416242779600" xml:lang="fr-fr">
+	<title ixia_locid="37" translate="no">vads_risk_primary_warranty</title>
+	<shortdesc ixia_locid="38"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="31">Spécifique au don (ou transaction secondaire).<p ixia_locid="39"/><p ixia_locid="44">Permet de surcharger la configuration du contrôle de
+								risque <b ixia_locid="64">Contrôle du transfert de responsabilité de la transaction
+									primaire</b>. </p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="46"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="49" translate="no">string (enum)</entry>
+					</row>
+					<row>
+						<entry ixia_locid="47"><b ixia_locid="52">Code d'erreur</b></entry>
+						<entry ixia_locid="50" translate="no">117</entry>
+					</row>
+					<row>
+						<entry ixia_locid="48"><b ixia_locid="53">Valeurs possibles</b></entry>
+						<entry ixia_locid="51"><p ixia_locid="54">
+								<table colsep="1" frame="all" id="table_ogr_tws_cq" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="3.08*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="55">Valeur</entry>
+												<entry ixia_locid="56">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="57"><ph ixia_locid="65" translate="no">DEFAULT</ph> ou vide</entry>
+												<entry ixia_locid="58">Valeur par défaut. Utilisation de la
+												configuration de la boutique cible.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="59" translate="no">IGNORE</entry>
+												<entry ixia_locid="60">Ignore la valeur du transfert de responsabilité de la transaction
+												primaire avant de créer la transaction
+												secondaire.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="62" translate="no">CHECK</entry>
+												<entry ixia_locid="63">Force le contrôle du transfert de responsabilité de la
+												transaction primaire avant de créer la transaction
+												secondaire.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="35"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="36">Information sur les transactions de don</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1412687664291" xml:lang="fr-fr">
+	<title ixia_locid="49">Historique du document</title>
+	<shortdesc ixia_locid="50"/>
+	<conbody>
+			<p ixia_locid="15">
+				<table colsep="1" frame="all" id="table_tpt_crj_1p" rowsep="1">
+					<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="1*"/>
+					<colspec colname="c3" colnum="2" colwidth="1.23*"/>
+					<colspec colname="c4" colnum="3" colwidth="4.21*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="5">Version</entry>
+							<entry ixia_locid="7">Date</entry>
+							<entry ixia_locid="8">Commentaire</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="288">3.5</entry>
+							<entry ixia_locid="289">23/11/2015</entry>
+							<entry ixia_locid="290">
+								<p ixia_locid="308"><b ixia_locid="309">Dictionnaire de données</b></p>
+								<ul id="ul_jzn_gct_tt">
+									<li ixia_locid="316" location="PayZen PayZen_Germany PayZen_Brazil Systempay"><ph ixia_locid="298"><ph ixia_locid="296" translate="no">vads_payment_cards</ph> et <ph ixia_locid="299" translate="no">vads_contracts</ph> : ajout de
+											valeurs.</ph></li>
+									<li ixia_locid="317">Précisions apportées sur le format des
+										champs :<ul id="ul_ctz_ydt_tt">
+											<li ixia_locid="319"><ph ixia_locid="320" translate="no">vads_cust_address</ph></li>
+										</ul><ul id="ul_lzj_3ct_tt">
+											<li ixia_locid="313"><ph ixia_locid="305" translate="no">vads_ship_to_street</ph></li>
+											<li ixia_locid="314"><ph ixia_locid="307" translate="no">vads_ship_to_street2</ph></li>
+										</ul></li>
+									<li ixia_locid="321"><ph ixia_locid="325" translate="no">vads_trans_status</ph> : ajout du statut <ph ixia_locid="323" translate="no"><b ixia_locid="238">INITIAL</b></ph> dans la liste des statuts
+										possibles.</li>
+									<li ixia_locid="326"><ph ixia_locid="328" translate="no">vads_change_rate</ph></li>
+									<li ixia_locid="329"><ph ixia_locid="330" translate="no">vads_recurrence_number</ph></li>
+								</ul>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="292">3.4</entry>
+							<entry ixia_locid="293">01/10/2015</entry>
+							<entry ixia_locid="294"><p ixia_locid="261" location="OSB" platform="OSB">Correction du
+									montant pour une pré autorisation</p><b ixia_locid="315">Dictionnaire de données</b><p ixia_locid="263">
+									<ul id="ul_i1f_jrx_bt">
+										<li ixia_locid="272">Correction du format du champ <ph ixia_locid="274" translate="no">vads_product_labelN</ph></li>
+										<li ixia_locid="275">Correction du nom du champ <ph ixia_locid="276" translate="no">vads_product_vatN</ph></li>
+										<li ixia_locid="264">Ajout du champ :<ul id="ul_j1f_jrx_bt">
+												<li ixia_locid="265"><ph ixia_locid="266" translate="no">vads_cust_national_id</ph></li>
+											</ul></li>
+									</ul>
+								</p></entry>
+						</row>
+						<row>
+							<entry ixia_locid="258">3.3a</entry>
+							<entry ixia_locid="259">24/07/2015</entry>
+							<entry ixia_locid="260"><b ixia_locid="240">Chapitre supplémentaire</b><p ixia_locid="241">
+									<ul id="ul_vks_fpf_ts">
+										<li ixia_locid="242">Configurer la notification sur
+											modification par batch</li>
+									</ul>
+								</p><p ixia_locid="248">Modification des chapitres :</p><p ixia_locid="249">
+									<ul id="ul_kwr_dv3_5s">
+										<li ixia_locid="250">Utiliser une i-frame</li>
+										<li ixia_locid="251"><ph ixia_locid="252" translate="no">vads_trans_id</ph></li>
+									</ul>
+								</p></entry>
+						</row>
+						<row>
+							<entry ixia_locid="244">3.3</entry>
+							<entry ixia_locid="245">07/07/2015</entry>
+							<entry ixia_locid="246"><p ixia_locid="217"><b ixia_locid="324">Chapitres
+									supplémentaires</b></p><p ixia_locid="220">
+									<ul id="ul_n1v_qlc_gs">
+										<li ixia_locid="221">Configurer les e-mails envoyés à
+											l'acheteur.</li>
+										<li ixia_locid="225">Configurer les e-mails envoyés au marchand.</li>
+									</ul>
+								</p><p ixia_locid="226"/><p ixia_locid="227">Complément d'information sur l'utilisation d'une
+									i-frame.</p><p ixia_locid="228"/><b ixia_locid="267">Dictionnaire de
+									données</b><p ixia_locid="268">
+									<ul id="ul_wyd_2lc_gs">
+										<li ixia_locid="269">Ajout des champs :<ul id="ul_aqw_rhb_3s">
+												<li ixia_locid="270"><ph ixia_locid="271" translate="no">vads_trans_uuid</ph></li>
+												<li ixia_locid="236"><ph ixia_locid="235" translate="no">vads_risk_assessment_result</ph></li>
+												<li doc-type="integration Form" ixia_locid="232" location="PayZen PayZen_Germany" platform="PayZen"><ph ixia_locid="233" translate="no">vads_product_vatN</ph></li>
+											</ul></li>
+									</ul>
+								</p><p ixia_locid="209">
+									<ul id="ul_akp_2lc_gs">
+										<li ixia_locid="213" location="PayZen PayZen_Germany Systempay OSB" platform="OSB PayZen Systempay"><ph ixia_locid="210"><ph ixia_locid="214" translate="no">vads_bank_product</ph> : ajout des valeurs pour
+												les cartes CB pures</ph>.</li>
+										<li ixia_locid="216"><ph ixia_locid="234" translate="no">vads_risk_analyzis_result</ph> :
+											ajout de valeurs.</li>
+										<li ixia_locid="224"><ph ixia_locid="295" translate="no">vads_payment_cards</ph> : ajout
+											de valeurs.</li>
+									</ul>
+								</p></entry>
+						</row>
+						<row>
+							<entry ixia_locid="200">3.2</entry>
+							<entry ixia_locid="202">27/04/2015</entry>
+							<entry ixia_locid="204"><b ixia_locid="206">Dictionnaire de données</b><p ixia_locid="191">Correction d’une erreur pour le champ
+										<ph ixia_locid="192" translate="no">vads_ship_to_type</ph></p></entry>
+						</row>
+						<row>
+							<entry ixia_locid="184">3.1</entry>
+							<entry ixia_locid="186">02/03/2015</entry>
+							<entry ixia_locid="188">
+								<p ixia_locid="180">URL Serveur renommé en URL de notification</p>
+								<p ixia_locid="159"><b ixia_locid="219">Chapitres supplémentaires</b></p>
+								<p ixia_locid="161">
+									<ul id="ul_l1n_hcb_gr">
+										<li ixia_locid="162">Gérer les paramètres de votre boutique par fichier de
+											configuration</li>
+										<li ixia_locid="163">Activer le rejeu automatique</li>
+										<li ixia_locid="164">Rejouer manuellement la notification</li>
+									</ul>
+								</p>
+								<p ixia_locid="181"/>
+								<p ixia_locid="182">Complément d'information sur l'utilisation d'une i-frame.</p>
+								<p ixia_locid="165"/>
+								<p ixia_locid="166"><b ixia_locid="190">Dictionnaire de données</b></p>
+								<p ixia_locid="167">
+									<ul id="ul_rpv_ccb_gr">
+										<li ixia_locid="169">Ajout des champs :<ul id="ul_hrx_dcb_gr">
+												<li ixia_locid="170"><ph ixia_locid="171" translate="no">vads_payment_seq</ph></li>
+												<li ixia_locid="172"><ph ixia_locid="173" translate="no">vads_cust_legal_name</ph></li>
+												<li ixia_locid="174"><ph ixia_locid="175" translate="no">vads_ship_to_legal_name</ph></li>
+											</ul></li>
+									</ul>
+								</p>
+								<p ixia_locid="155">
+									<ul id="ul_fs1_fcb_gr">
+										<li ixia_locid="176">Ajout de la valeur <ph ixia_locid="177" translate="no">E_CV</ph> dans la liste des moyens de paiement (réseau
+											ANCV)</li>
+										<li ixia_locid="178">Précision sur le champ <ph ixia_locid="179" translate="no">vads_url_check</ph></li>
+									</ul>
+								</p>
+								<!--<p ixia_locid="157">Précision sur le
+									<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>vads_payment_error
+									TO DO<?oxy_custom_end ?></p>-->
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="147">3.0</entry>
+							<entry ixia_locid="149">21/11/2014</entry>
+							<entry ixia_locid="151">Refonte globale de la documentation.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+				</table>
+			</p>
+		<p ixia_locid="277"/>
+		<p ixia_locid="278"/>
+		<p ixia_locid="279"/>
+		<p ixia_locid="280"/>
+		<p ixia_locid="281"/>
+		<p ixia_locid="283"/>
+		<p ixia_locid="284"/>
+		<p ixia_locid="285"/>
+		<p ixia_locid="286"/>
+		<p ixia_locid="287"/>
+		<p ixia_locid="282"/>
+		
+		
+			<p ixia_locid="25">
+				<table colsep="0" frame="none" id="table_bz1_jjl_fp" rowsep="0">
+					<tgroup align="center" cols="1">
+						<colspec colname="c1" colnum="1" colsep="0" colwidth="1.0*" rowsep="0"/>
+						<tbody>
+							<row rowsep="0">
+								<entry align="center" colsep="0" ixia_locid="27" rowsep="0">
+									<b ixia_locid="28">Confidentialité</b>
+								</entry>
+							</row>
+							<row>
+								<entry align="center" ixia_locid="29"> Toutes les informations
+									contenues dans ce document sont considérées comme
+									confidentielles. L’utilisation de celles-ci en dehors du cadre
+									de cette consultation ou la divulgation à des personnes
+									extérieures est soumise à l’approbation préalable de Lyra
+									Network. </entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</p>
+	</conbody>
+</concept>

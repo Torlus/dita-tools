@@ -26,6 +26,7 @@ Cette page sera appelée automatiquement après chaque paiement (accepté ou ref
  
 <p>
  
+
 <ul>
  
 <li>
@@ -39,6 +40,7 @@ L&#x27;URL de la page qui analyse le résultat du paiement devra obligatoirement
   
 <p>
  
+
 <ul>
  
 <li>
@@ -55,6 +57,7 @@ Les redirections entrainent la perte des données présentes dans le POST.
  
 <p>
  
+
 <ul>
  
 <li>
@@ -68,6 +71,7 @@ En cas de restriction mise en place du côté du site marchand, il faudra autori
  
 <p>
  
+
 <ul>
  
 <li>
@@ -88,6 +92,7 @@ Ces caractères sont ensuite affichés dans l&#x27;historique des transactions.
  
 <p>
  
+
 <ul>
  
 <li>
@@ -134,6 +139,7 @@ Il contient :
  
 <p>
  
+
 <ul>
  
 <li>
@@ -171,6 +177,7 @@ Le script de traitement devra comporter au moins les étapes ci-dessous:
  
 <p>
  
+
 <ul>
  
 <li>
@@ -310,6 +317,7 @@ Pour s’assurer de l’intégrité de la réponse, vous devez comparer la valeu
  
 <p>
 Si les signatures correspondent, 
+
 <ul>
  
  <li>
@@ -335,6 +343,7 @@ Les signatures ne correspondent pas en cas :
  
 <p>
  
+
 <ul>
  
  <li>
@@ -365,6 +374,7 @@ Le champ
  
 <p>
  
+
 <ul>
  
 </ul>
@@ -398,6 +408,7 @@ Règle appliquée
  
   <p>
 La valeur PAY sera envoyée dans les cas suivants :
+
   <ul>
  
   </ul>
@@ -433,6 +444,7 @@ Exécution de la notification depuis le Back Office (clic droit sur une transact
 
   <p>
 La valeur BATCH_AUTO sera envoyée dans les cas suivants:
+
   <ul>
  
    <li>
@@ -493,6 +505,7 @@ La valeur REC sera envoyée uniquement pour les paiements par abonnement si le m
 La valeur MERCH_BO sera envoyée :
   <p>
  
+
   <ul>
  
    <li>
@@ -550,6 +563,7 @@ Le champ
  
 <p>
  
+
 <ul>
  
  <li>
@@ -964,6 +978,7 @@ Récupérez le résultat de l&#x27;authentification 3D Secure. Pour cela:
  
  <p>
  
+
  <ol>
  
   <li>
@@ -1140,6 +1155,7 @@ Récupérez le résultat des contrôles associés à la fraude en identifiant la
  
  <p>
  
+
  <ul>
  
   <li>
@@ -1400,6 +1416,7 @@ Deux cas de figures peuvent se présenter:
  
  <p>
  
+
  <ul>
  
   <li>
@@ -1524,6 +1541,7 @@ Code Pays du pays d’émission de la carte (Code alpha ISO 3166-2 ex : France=F
  
  <p>
  
+
  <ul>
  
   <li>
@@ -1590,6 +1608,7 @@ Le champ
 <b>vads_payment_seq</b> (format json) décrit la séquence de paiement fractionné. Il contient les éléments :
   <p>
  
+
   <ol>
  
    <li>

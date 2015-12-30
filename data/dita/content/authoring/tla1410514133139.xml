@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410514133139" xml:lang="fr-fr">
+	<title ixia_locid="1">Redirection vers le site marchand</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">
+			<table colsep="1" frame="all" id="table_edb_ns2_kp" rowsep="1">
+				<title ixia_locid="4">Liste des paramètres - Redirection vers le site marchand</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="2.39*"/>
+					<colspec colname="c2" colnum="2" colwidth="1*"/>
+					<colspec colname="c4" colnum="3" colwidth="4.2*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="5">Nom du champ</entry>
+							<entry ixia_locid="6">Format</entry>
+							<entry ixia_locid="7">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="23"><b ixia_locid="24"><xref href="tla1408627821400.xml" ixia_locid="25" translate="no">vads_redirect_error_message</xref></b></entry>
+							<entry ixia_locid="26" translate="no">ans..255</entry>
+							<entry ixia_locid="27">
+								<p ixia_locid="63"><u ixia_locid="64">Redirection automatique</u>
+									:</p>
+								<p ixia_locid="81">Message affiché sur la page de paiement avant redirection vers le
+									site marchand dans le cas d'un paiement refusé / accepté.</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="18"><b ixia_locid="19"><xref href="tla1408627924375.xml" ixia_locid="20" translate="no">vads_redirect_error_timeout</xref></b></entry>
+							<entry ixia_locid="21" translate="no">n..3</entry>
+							<entry ixia_locid="22">
+								<p ixia_locid="65"><u ixia_locid="66">Redirection automatique</u>
+									:</p>
+								<p ixia_locid="82">Délai ( en secondes ) avant redirection vers le site marchand
+									après un paiement refusé / accepté. </p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="13"><b ixia_locid="14"><xref href="tla1408627992082.xml" ixia_locid="15" translate="no">vads_redirect_success_message</xref></b></entry>
+							<entry ixia_locid="16" translate="no">ans..255</entry>
+							<entry ixia_locid="17"><p ixia_locid="35"><u ixia_locid="36">Redirection
+										automatique</u> :</p>Spécifie le message à la fin d’un
+								paiement accepté dans le cas d’une redirection automatique vers le
+								site marchand.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="37"><b ixia_locid="9"><xref href="tla1408628074901.xml" ixia_locid="10" translate="no">vads_redirect_success_timeout</xref></b></entry>
+							<entry ixia_locid="45" translate="no">n..3</entry>
+							<entry ixia_locid="53"><p ixia_locid="61"><u ixia_locid="62">Redirection
+										automatique</u> :</p>Délai en secondes avant redirection
+								vers le site marchand à la fin d’un paiement accepté. Sa valeur est
+								comprise entre 0 et 600s.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="28"><b ixia_locid="29"><xref href="tla1406116003851.xml" ixia_locid="30" translate="no">vads_return_mode</xref></b></entry>
+							<entry ixia_locid="31" translate="no">GET/POST/<p ixia_locid="34" translate="no">NONE</p></entry>
+							<entry ixia_locid="32">Permet de spécifier le mode de transmission des données aux URLs de
+								retour vers le site marchand.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="38"><xref href="tla1408638742584.xml" ixia_locid="74"><b ixia_locid="67" translate="no">vads_url_cancel</b></xref></entry>
+							<entry ixia_locid="46" translate="no">ans..127</entry>
+							<entry ixia_locid="54">URL où sera redirigé l’acheteur si celui-ci
+								appuie sur " annuler et retourner à la boutique " avant d'avoir
+								procédé au paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="39"><xref href="tla1408638807307.xml" ixia_locid="75"><b ixia_locid="68" translate="no">vads_url_check</b></xref></entry>
+							<entry ixia_locid="47" translate="no">ans..127</entry>
+							<entry ixia_locid="55">URL de la page à notifier à la fin du paiement.
+								Surcharge la valeur saisie dans le paramétrage des règles de
+								notification.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="40"><xref href="tla1408638858037.xml" ixia_locid="76"><b ixia_locid="69" translate="no">vads_url_check_src</b></xref></entry>
+							<entry ixia_locid="48" translate="no">string (enum)</entry>
+							<entry ixia_locid="56">Ce paramètre définit l'évènement déclencheur de la notification
+								instantanée (aussi appelée IPN ou URL de notification).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="41"><xref href="tla1408639045339.xml" ixia_locid="77"><b ixia_locid="70" translate="no">vads_url_error</b></xref></entry>
+							<entry ixia_locid="49" translate="no">ans..127</entry>
+							<entry ixia_locid="57">URL où sera redirigé l’acheteur en cas d'erreur
+								de traitement interne.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="42"><xref href="tla1408639165197.xml" ixia_locid="78"><b ixia_locid="71" translate="no">vads_url_refused</b></xref></entry>
+							<entry ixia_locid="50" translate="no">ans..127</entry>
+							<entry ixia_locid="58">URL où sera redirigé l’acheteur en cas de refus
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="43"><xref href="tla1408639224559.xml" ixia_locid="79"><b ixia_locid="72" translate="no">vads_url_return</b></xref></entry>
+							<entry ixia_locid="51" translate="no">ans..127</entry>
+							<entry ixia_locid="59">URL par défaut où sera redirigé l'acheteur si celui-ci appuie sur
+								"retourner à la boutique".</entry>
+						</row>
+						<row>
+							<entry ixia_locid="44"><xref href="tla1408639383258.xml" ixia_locid="80"><b ixia_locid="73" translate="no">vads_url_success</b></xref></entry>
+							<entry ixia_locid="52" translate="no">ans..127</entry>
+							<entry ixia_locid="60">URL où sera redirigé l’acheteur en cas de
+								succès.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408637376020" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_threeds_exit_status</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">Champ retourné dans la réponse.<p ixia_locid="108">Statut final du processus 3D
+								Secure.</p><p ixia_locid="51">Il est valorisé par la plateforme de
+								paiement.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="35" translate="no">n..2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="107"/><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec align="center" colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="newCol2" colnum="2" colwidth="3.81*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="52">Valeur</entry>
+												<entry align="center" ixia_locid="54">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry align="center" ixia_locid="8" translate="no">0</entry>
+												<entry ixia_locid="56">Statut initial</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="10" translate="no">1</entry>
+												<entry ixia_locid="58">Statut non applicable
+												(global, raison non détaillée)</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="60" translate="no">2</entry>
+												<entry ixia_locid="71">Statut non applicable
+												(integrator disabled)</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="61" translate="no">3</entry>
+												<entry ixia_locid="84">Paiement non
+												e-commerce</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="62" translate="no">4</entry>
+												<entry ixia_locid="86">Paiement sans 3DS (paiement par alias, PayPal, Cetelem,
+												etc.)</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="63" translate="no">5</entry>
+												<entry ixia_locid="88">Marchand non enrôlé, pas de
+												3DS</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="64" translate="no">6</entry>
+												<entry ixia_locid="90">Erreur technique lors du
+												processus 3DS, pas de 3DS</entry>
+											</row>
+											<row>
+												<entry align="center" ixia_locid="65" translate="no">7</entry>
+												<entry ixia_locid="92"><b ixia_locid="93">Porteur
+												non enrôlé, pas de 3DS</b></entry>
+											</row>
+											<row>
+												<entry ixia_locid="66" translate="no">8</entry>
+												<entry ixia_locid="95">Signature invalide</entry>
+											</row>
+											<row>
+												<entry ixia_locid="67" translate="no">9</entry>
+												<entry ixia_locid="97">Problème venant de
+												l'ACS</entry>
+											</row>
+											<row>
+												<entry ixia_locid="68" translate="no">10</entry>
+												<entry ixia_locid="99"><b ixia_locid="100">Le
+												processus 3DS s'est déroulé
+												correctement</b></entry>
+											</row>
+											<row>
+												<entry ixia_locid="69" translate="no">11</entry>
+												<entry ixia_locid="102">Le processus 3DS a été fait
+												par l'intégrateur</entry>
+											</row>
+											<row>
+												<entry ixia_locid="109" translate="no">12</entry>
+												<entry ixia_locid="115">Problème venant du
+												DS</entry>
+											</row>
+											<row>
+												<entry ixia_locid="110" translate="no">13</entry>
+												<entry ixia_locid="116">Délai dépassé (timeout) lors d'une connexion au DS</entry>
+											</row>
+											<row>
+												<entry ixia_locid="111" translate="no">15</entry>
+												<entry ixia_locid="117">Canal de paiement pour
+												lequel 3DS n'est pas disponible (paiements par
+												fichier...)</entry>
+											</row>
+											<row>
+												<entry ixia_locid="112" translate="no">16</entry>
+												<entry ixia_locid="118">Type carte et réseau elligible au 3DS, mais pas de "brand"
+												associée à la carte (CB pure)</entry>
+											</row>
+											<row>
+												<entry ixia_locid="113" translate="no">98</entry>
+												<entry ixia_locid="119">L'initialisation du processus 3DS est
+												OK</entry>
+											</row>
+											<row>
+												<entry ixia_locid="114" translate="no">99</entry>
+												<entry ixia_locid="120">Statut inconnu</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+							<p ixia_locid="106">* Ces statuts concernent les paiements pour lesquels 3DS a eu lieu mais
+								sans saisie de carte (par alias).</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Authentification 3DS.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

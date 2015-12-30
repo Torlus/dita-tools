@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408548356588" xml:lang="fr-fr">
+	<title ixia_locid="16" translate="no">vads_auth_result</title>
+	<shortdesc ixia_locid="17"/>
+		<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">Champ retourné dans la réponse.<p ixia_locid="55">Code retour de la demande d'autorisation retournée par la banque
+								émettrice, si disponible.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="264"><b ixia_locid="56">Format</b></entry>
+						<entry ixia_locid="266" translate="no">n2</entry>
+					</row>
+					<row>
+						<entry ixia_locid="265"><b ixia_locid="28">Valeurs possibles</b></entry>
+						<entry ixia_locid="267"/>
+					</row>
+					<row>
+						<entry ixia_locid="36" nameend="c2" namest="c1">
+							<p ixia_locid="57">
+								<table colsep="1" frame="all" id="table_ddg_k21_2p" rowsep="1">
+									<tgroup cols="6">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="4.24*"/>
+										<colspec colname="newCol5" colnum="3" colwidth="1.51*"/>
+										<colspec colname="newCol3" colnum="4" colwidth="1*"/>
+										<colspec colname="newCol4" colnum="5" colwidth="4.24*"/>
+										<colspec colname="newCol6" colnum="6" colwidth="1.63*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="47">Valeur</entry>
+												<entry ixia_locid="48">Description</entry>
+												<entry ixia_locid="214">Motif frauduleux</entry>
+												<entry ixia_locid="117">Valeur</entry>
+												<entry ixia_locid="118">Description</entry>
+												<entry ixia_locid="215">Motif
+												frauduleux</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="49"><b ixia_locid="167" translate="no">00</b></entry>
+												<entry ixia_locid="50">Transaction approuvée ou
+												traitée avec succès.</entry>
+												<entry ixia_locid="216"/>
+												<entry ixia_locid="119"><b ixia_locid="168" translate="no">38</b></entry>
+												<entry ixia_locid="120">Date de validité de la carte
+												dépassée.</entry>
+												<entry ixia_locid="217"/>
+											</row>
+											<row>
+												<entry ixia_locid="51"><b ixia_locid="169" translate="no">02</b></entry>
+												<entry ixia_locid="52">Contacter l’émetteur de
+												carte.</entry>
+												<entry ixia_locid="218"/>
+												<entry ixia_locid="121"><b ixia_locid="170" translate="no">41</b></entry>
+												<entry ixia_locid="122">Carte perdue.</entry>
+												<entry ixia_locid="219">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="53"><b ixia_locid="171" translate="no">03</b></entry>
+												<entry ixia_locid="54">Accepteur invalide.</entry>
+												<entry ixia_locid="220">OUI</entry>
+												<entry ixia_locid="123"><b ixia_locid="172" translate="no">43</b></entry>
+												<entry ixia_locid="124">Carte volée.</entry>
+												<entry ixia_locid="221">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="37"><b ixia_locid="173" translate="no">04</b></entry>
+												<entry ixia_locid="42">Conserver la carte.</entry>
+												<entry ixia_locid="222">OUI</entry>
+												<entry ixia_locid="125"><b ixia_locid="174" translate="no">51</b></entry>
+												<entry ixia_locid="126">Provision insuffisante ou
+												crédit dépassé.</entry>
+												<entry ixia_locid="223"/>
+											</row>
+											<row>
+												<entry ixia_locid="38"><b ixia_locid="175" translate="no">05</b></entry>
+												<entry ixia_locid="43">Ne pas honorer.</entry>
+												<entry ixia_locid="224">OUI</entry>
+												<entry ixia_locid="127"><b ixia_locid="176" translate="no">54</b></entry>
+												<entry ixia_locid="128">Date de validité de la carte
+												dépassée.</entry>
+												<entry ixia_locid="225">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="39"><b ixia_locid="177" translate="no">07</b></entry>
+												<entry ixia_locid="44">Conserver la carte,
+												conditions spéciales.</entry>
+												<entry ixia_locid="226">OUI</entry>
+												<entry ixia_locid="129"><b ixia_locid="178" translate="no">55</b></entry>
+												<entry ixia_locid="130">Code confidentiel
+												erroné.</entry>
+												<entry ixia_locid="227"/>
+											</row>
+											<row>
+												<entry ixia_locid="58"><b ixia_locid="179" translate="no">08</b></entry>
+												<entry ixia_locid="99">Approuver après
+												identification.</entry>
+												<entry ixia_locid="228"/>
+												<entry ixia_locid="131"><b ixia_locid="180" translate="no">56</b></entry>
+												<entry ixia_locid="132">Carte absente du
+												fichier.</entry>
+												<entry ixia_locid="229">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="59"><b ixia_locid="181" translate="no">12</b></entry>
+												<entry ixia_locid="100">Transaction
+												invalide.</entry>
+												<entry ixia_locid="230">OUI</entry>
+												<entry ixia_locid="133"><b ixia_locid="182" translate="no">57</b></entry>
+												<entry ixia_locid="134">Transaction non permise à ce
+												porteur.</entry>
+												<entry ixia_locid="231">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="60"><b ixia_locid="183" translate="no">13</b></entry>
+												<entry ixia_locid="101">Montant invalide</entry>
+												<entry ixia_locid="232">OUI</entry>
+												<entry ixia_locid="135"><b ixia_locid="184" translate="no">58</b></entry>
+												<entry ixia_locid="136">Transaction non permise à ce
+												porteur.</entry>
+												<entry ixia_locid="233"/>
+											</row>
+											<row>
+												<entry ixia_locid="61"><b ixia_locid="185" translate="no">14</b></entry>
+												<entry ixia_locid="102">Numéro de porteur
+												invalide.</entry>
+												<entry ixia_locid="234">OUI</entry>
+												<entry ixia_locid="137"><b ixia_locid="186" translate="no">59</b></entry>
+												<entry ixia_locid="138">Suspicion de fraude.</entry>
+												<entry ixia_locid="235">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="62"><b ixia_locid="187" translate="no">15</b></entry>
+												<entry ixia_locid="103">Emetteur de carte
+												inconnu.</entry>
+												<entry ixia_locid="236">OUI</entry>
+												<entry ixia_locid="139"><b ixia_locid="188" translate="no">60</b></entry>
+												<entry ixia_locid="140">L’accepteur de carte doit
+												contacter l’acquéreur.</entry>
+												<entry ixia_locid="237"/>
+											</row>
+											<row>
+												<entry ixia_locid="63"><b ixia_locid="189" translate="no">17</b></entry>
+												<entry ixia_locid="104">Annulation acheteur.</entry>
+												<entry ixia_locid="238"/>
+												<entry ixia_locid="141"><b ixia_locid="190" translate="no">61</b></entry>
+												<entry ixia_locid="142">Montant de retrait hors
+												limite.</entry>
+												<entry ixia_locid="239"/>
+											</row>
+											<row>
+												<entry ixia_locid="64"><b ixia_locid="191" translate="no">19</b></entry>
+												<entry ixia_locid="105">Répéter la transaction
+												ultérieurement.</entry>
+												<entry ixia_locid="240"/>
+												<entry ixia_locid="143"><b ixia_locid="192" translate="no">63</b></entry>
+												<entry ixia_locid="144">Règles de sécurité non
+												respectées.</entry>
+												<entry ixia_locid="241">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="65"><b ixia_locid="193" translate="no">20</b></entry>
+												<entry ixia_locid="106">Réponse erronée (erreur dans
+												le domaine serveur).</entry>
+												<entry ixia_locid="242"/>
+												<entry ixia_locid="145"><b ixia_locid="194" translate="no">68</b></entry>
+												<entry ixia_locid="146">Réponse non parvenue ou
+												reçue trop tard.</entry>
+												<entry ixia_locid="243"/>
+											</row>
+											<row>
+												<entry ixia_locid="66"><b ixia_locid="195" translate="no">24</b></entry>
+												<entry ixia_locid="107">Mise à jour de fichier non
+												supportée</entry>
+												<entry ixia_locid="244"/>
+												<entry ixia_locid="147"><b ixia_locid="196" translate="no">75</b></entry>
+												<entry ixia_locid="148">Nombre d’essais code
+												confidentiel dépassé.</entry>
+												<entry ixia_locid="245"/>
+											</row>
+											<row>
+												<entry ixia_locid="67"><b ixia_locid="197" translate="no">25</b></entry>
+												<entry ixia_locid="108">Impossible de localiser
+												l’enregistrement dans le fichier.</entry>
+												<entry ixia_locid="246"/>
+												<entry ixia_locid="149"><b ixia_locid="198" translate="no">76</b></entry>
+												<entry ixia_locid="150">Porteur déjà en opposition,
+												ancien enregistrement conservé.</entry>
+												<entry ixia_locid="247">OUI</entry>
+											</row>
+											<row>
+												<entry ixia_locid="68"><b ixia_locid="199" translate="no">26</b></entry>
+												<entry ixia_locid="109">Enregistrement dupliqué,
+												ancien enregistrement remplacé.</entry>
+												<entry ixia_locid="248"/>
+												<entry ixia_locid="151"><b ixia_locid="200" translate="no">90</b></entry>
+												<entry ixia_locid="152">Arrêt momentané du
+												système.</entry>
+												<entry ixia_locid="249"/>
+											</row>
+											<row>
+												<entry ixia_locid="69"><b ixia_locid="201" translate="no">27</b></entry>
+												<entry ixia_locid="110">Erreur en « edit » sur champ
+												de liste à jour fichier.</entry>
+												<entry ixia_locid="250"/>
+												<entry ixia_locid="153"><b ixia_locid="202" translate="no">91</b></entry>
+												<entry ixia_locid="154">Émetteur de cartes
+												inaccessible.</entry>
+												<entry ixia_locid="251"/>
+											</row>
+											<row>
+												<entry ixia_locid="70"><b ixia_locid="203" translate="no">28</b></entry>
+												<entry ixia_locid="111">Accès interdit au
+												fichier.</entry>
+												<entry ixia_locid="252"/>
+												<entry ixia_locid="155"><b ixia_locid="204" translate="no">94</b></entry>
+												<entry ixia_locid="156">Transaction
+												dupliquée.</entry>
+												<entry ixia_locid="253"/>
+											</row>
+											<row>
+												<entry ixia_locid="71"><b ixia_locid="205" translate="no">29</b></entry>
+												<entry ixia_locid="112">Mise à jour
+												impossible.</entry>
+												<entry ixia_locid="254"/>
+												<entry ixia_locid="157"><b ixia_locid="206" translate="no">96</b></entry>
+												<entry ixia_locid="158">Mauvais fonctionnement du
+												système.</entry>
+												<entry ixia_locid="255"/>
+											</row>
+											<row>
+												<entry ixia_locid="72"><b ixia_locid="207" translate="no">30</b></entry>
+												<entry ixia_locid="113">Erreur de format.</entry>
+												<entry ixia_locid="256"/>
+												<entry ixia_locid="159"><b ixia_locid="208" translate="no">97</b></entry>
+												<entry ixia_locid="160">Échéance de la temporisation
+												de surveillance globale.</entry>
+												<entry ixia_locid="257"/>
+											</row>
+											<row>
+												<entry ixia_locid="73"><b ixia_locid="209" translate="no">31</b></entry>
+												<entry ixia_locid="114">Identifiant de l’organisme
+												acquéreur inconnu.</entry>
+												<entry ixia_locid="258">OUI</entry>
+												<entry ixia_locid="161"><b ixia_locid="210" translate="no">98</b></entry>
+												<entry ixia_locid="162">Serveur indisponible routage
+												réseau demandé à nouveau.</entry>
+												<entry ixia_locid="259"/>
+											</row>
+											<row>
+												<entry ixia_locid="74"><b ixia_locid="211" translate="no">33</b></entry>
+												<entry ixia_locid="115">Date de validité de la carte
+												dépassée.</entry>
+												<entry ixia_locid="260">OUI</entry>
+												<entry ixia_locid="163"><b ixia_locid="212" translate="no">99</b></entry>
+												<entry ixia_locid="164">Incident domaine
+												initiateur.</entry>
+												<entry ixia_locid="261"/>
+											</row>
+											<row>
+												<entry ixia_locid="75"><b ixia_locid="213" translate="no">34</b></entry>
+												<entry ixia_locid="116">Suspicion de fraude.</entry>
+												<entry ixia_locid="262">OUI</entry>
+												<entry ixia_locid="165"/>
+												<entry ixia_locid="166"/>
+												<entry ixia_locid="263"/>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="31">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		</refbody>
+</reference>

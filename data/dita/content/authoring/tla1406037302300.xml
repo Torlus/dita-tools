@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406037302300" xml:lang="fr-fr">
+	<title ixia_locid="1">Configurer la notification du résultat final d’un paiement différé</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3"><p ixia_locid="4">Cette notification est
+				indispensable pour communiquer le résultat d’un paiement différé :</p><p ixia_locid="5">
+				<ul id="ul_zqz_4xr_v4">
+					<li ixia_locid="6">En cas de paiement accepté.</li>
+					<li ixia_locid="7">En cas de paiement refusé.</li>
+				</ul>
+			</p><p ixia_locid="8">Elle permet au site marchand d’être notifié lors d’une demande
+				d’autorisation. </p><p ixia_locid="9"><b ixia_locid="10">Exemple</b>:</p>Pour un
+			paiement différé avec un délai de remise à 60 jours, la demande d’autorisation n’est pas
+			faite lors du paiement. Le site marchand sera contacté lors de la demande d’autorisation
+			par la règle <b ixia_locid="71">URL de notification sur autorisation par batch</b>.<p ixia_locid="11">Cette règle est <b ixia_locid="12">désactivée par
+				défaut.</b></p><p ixia_locid="91"/><p ixia_locid="13">Pour paramétrer cette notification
+			:</p></context>
+		<steps>
+			<!--<step id="step_N10041_N1003E_N10011_N10001" ixia_locid="14"><cmd ixia_locid="15">Connectez-vous à <xref ixia_locid="61" keyref="BackOfficeMarchand"/></cmd></step>-->
+			<!--<step id="step_N1004A_N1003E_N10011_N10001" ixia_locid="16"><cmd ixia_locid="17">Allez dans le menu : <b ixia_locid="18">Paramétrage</b> &gt; <b ixia_locid="67">Règles de notifications</b>.</cmd></step>-->
+			<step id="step_N1005E_N1003E_N10011_N10001" ixia_locid="21">
+				<cmd ixia_locid="22">Effectuez un clic droit sur la ligne <b ixia_locid="72">URL de notification
+						sur autorisation par batch</b>.</cmd>
+				<itemgroup ixia_locid="24">
+					<fig id="fig_N1008A_N10086_N10077_N10050_N10013_N10001" ixia_locid="80"><!--<title ixia_locid="81">Configurer la notification à la fin du paiement</title>--><!--<image href="tla1425653374072.image" ixia_locid="82" scale="60"/>--></fig>	
+				</itemgroup>
+			</step>
+			<step id="step_N1007E_N1003E_N10011_N10001" ixia_locid="28">
+				<cmd ixia_locid="29">Sélectionnez <b ixia_locid="30">Gérer la règle</b>.</cmd>
+			</step>
+			<step id="step_N1008B_N1003E_N10011_N10001" ixia_locid="31">
+				<cmd ixia_locid="32">Renseignez l’URL de votre page dans les champs <b ixia_locid="86">URL à
+						appeler en mode TEST </b> et<b ixia_locid="34"> URL à appeler en mode </b><b ixia_locid="35">PRODUCTION</b>.</cmd>
+				<info ixia_locid="69">
+					<!--<fig id="fig_zyq_2zr_v4" ixia_locid="37">
+						<title ixia_locid="38">Configurer la notification sur autorisation par batch </title>
+						<image id="image_evx_2zr_v4" ixia_locid="39" keyref="GererURLServeurSurAutoParBatch" scale="55"/>
+					</fig>-->
+					<fig id="fig_N100C9_N100C3_N100AB_N10050_N10013_N10001" ixia_locid="83">
+						<title ixia_locid="84">Configurer la notification sur autorisation par batch</title>
+						<image ixia_locid="85" keyref="GererURLNotifSurAutoParBatch" scale="55"/>
+					</fig>
+				</info>
+			</step>
+			<step id="step_N100B2_N1003E_N10011_N10001" ixia_locid="40">
+				<cmd ixia_locid="41">Renseignez le champ <b ixia_locid="42">Adresses(s) e-mail(s) à avertir en
+						cas d’échec</b>.</cmd>
+			</step>
+			<step id="step_N100BF_N1003E_N10011_N10001" ixia_locid="43">
+				<cmd ixia_locid="44">Pour spécifier plusieurs adresses e-mails, séparez-les par un
+					point-virgule.</cmd>
+			</step>
+			<step id="step_N100FC_N10050_N10013_N10001" ixia_locid="74">
+				<cmd ixia_locid="75">Configurez le <b ixia_locid="46">Rejeu automatique en cas d’échec</b>.</cmd>
+				<itemgroup ixia_locid="76">Cette option permet de renvoyer automatiquement la notification vers le
+					site marchand en cas d'échec, et ce, jusqu'à 4 fois.</itemgroup>
+				<info ixia_locid="77">Pour plus d'informations, reportez-vous au chapitre <b ixia_locid="90">Activer le rejeu
+						automatique</b>.</info>
+			</step>
+			
+			<step id="step_N100D5_N1003E_N10011_N10001" ixia_locid="48">
+				<cmd ixia_locid="49">Sauvegardez vos modifications.</cmd>
+			</step>
+			<step id="step_N100DE_N1003E_N10011_N10001" ixia_locid="50">
+				<cmd ixia_locid="51">Activez la règle, en effectuant un clic droit sur <b ixia_locid="52">URL de
+						notification sur autorisation par batch</b> et sélectionnez <b ixia_locid="53">Activer la règle</b>.</cmd>
+			</step>
+		</steps>
+		<result id="result_N100E6_N10011_N10001" ixia_locid="54">
+			<p ixia_locid="55">Si la plateforme n’arrive pas à joindre l’URL de votre page, alors un e-mail
+				est envoyé à l’adresse spécifiée à l'étape 6. </p>
+			<p ixia_locid="89">Il contient :</p>
+			<p ixia_locid="57">
+				<ul id="ul_wzz_fbs_v4">
+					<li ixia_locid="58">le code HTTP de l’erreur rencontrée,</li>
+					<li ixia_locid="59">des pistes d’analyse en fonction de l’erreur,</li>
+					<li ixia_locid="62">la procédure à suivre depuis le <b ixia_locid="73"><ph ixia_locid="70" translate="no">Back
+								Office</ph></b> pour renvoyer la requête vers l’URL définie à
+						l’étape 5.</li>
+				</ul>
+			</p>
+		</result>
+	</taskbody>
+</task>

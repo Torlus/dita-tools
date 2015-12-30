@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1418037434548" xml:lang="fr-fr">
+	<title ixia_locid="45" translate="no">vads_ext_info_fingerprint_id</title>
+	<shortdesc ixia_locid="46"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="43">Spécifique au Brésil et à l'analyseur de fraude
+								ClearSale.</p>
+							<p ixia_locid="44">Identifiant unique de session.</p>
+							<p ixia_locid="47">
+								<ul id="ul_qbk_yxn_3q">
+									<li ixia_locid="48">Soit cet identifiant de session est généré par la plateforme
+										de paiement<p ixia_locid="49">Dans ce cas, ce paramètre ne doit pas être
+											renseigné.</p></li>
+									<li ixia_locid="50">
+										<p ixia_locid="51">Soit cet identifiant de session est généré par le site
+											marchand</p>
+										<p ixia_locid="52">Dans ce cas, ce paramètre doit être renseigné avec la
+											valeur de l’identifiant souhaité. Attention, il incombe
+											au site marchand de s’assurer de l’unicité des
+											identifiants. Toute demande d'enregistrement contenant
+											un identifiant déjà existant, sera rejetée, et
+											provoquera l’affichage d’un message d’erreur</p>
+									</li>
+								</ul>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="7"><b ixia_locid="21">Format</b></entry>
+						<entry ixia_locid="8">string<p ixia_locid="53">Codé sur 128 octets, peut être
+								composé de majuscules ou de minuscules, chiffres ou tiret ([A-Z]
+								[a-z], 0-9, _, -).</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur l'acheteur.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

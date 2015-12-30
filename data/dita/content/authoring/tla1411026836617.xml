@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411026836617" xml:lang="fr-fr">
+	<title ixia_locid="43" translate="no">vads_sub_init_amount_number</title>
+	<shortdesc ixia_locid="44"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="33">Paramètre facultatif utilisé dans le cas de la création d'un
+							abonnement. Représente le nombre d’échéances auxquelles il faudra
+							appliquer le montant <b ixia_locid="46" translate="no">vads_sub_init_amount</b>. <p ixia_locid="47">Une fois ce nombre
+								d’échéances dépassé, c’est le montant <b ixia_locid="48" translate="no">vads_sub_amount</b> qui sera utilisé.</p><p ixia_locid="50"><b ixia_locid="55">Exemple</b> : pour définir un
+								abonnement dont les 3 premières échéances sont à 25 <ph ixia_locid="176" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="177" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="178" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="179" location="PayZen_Brazil">BRL</ph>, et le reste
+								des échéances à 30 <ph ixia_locid="180" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">euros</ph><ph ixia_locid="181" location="OSB" platform="OSB">XPF</ph><ph ixia_locid="182" location="Innopay" platform="Innopay">CHF</ph><ph ixia_locid="183" location="PayZen_Brazil">BRL</ph>, les valeurs
+								suivantes seront utilisées : </p><p ixia_locid="56">
+								<ul id="ul_axg_f3q_xp" translate="no">
+									<li ixia_locid="57" translate="no">vads_sub_currency = <ph ixia_locid="117" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">978</ph><ph ixia_locid="118" location="OSB" platform="OSB">953</ph><ph ixia_locid="119" location="Innopay" platform="Innopay">756 </ph><ph ixia_locid="120" location="PayZen_Brazil">986</ph></li>
+									<li ixia_locid="58" translate="no">vads_sub_init_amount_number =
+										3 </li>
+									<li ixia_locid="59" translate="no">vads_sub_init_amount = 2500 </li>
+									<li ixia_locid="60" translate="no">vads_sub_amount = 3000</li>
+								</ul>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="30"><b ixia_locid="37">Format</b></entry>
+						<entry ixia_locid="34" translate="no">n..3</entry>
+					</row>
+					<row>
+						<entry ixia_locid="31"><b ixia_locid="38" translate="no">Code erreur</b></entry>
+						<entry ixia_locid="35">68</entry>
+					</row>
+					<row>
+						<entry ixia_locid="41"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="42">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

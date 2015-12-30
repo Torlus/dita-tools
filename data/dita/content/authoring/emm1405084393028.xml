@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084393028" xml:lang="fr-fr">
+	<title ixia_locid="1">Conserver le certificat de production</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="16">Dès le premier paiement réalisé avec une carte réelle, le certificat de
+			production est masqué pour des raisons de sécurité.</p>
+		<p ixia_locid="17"/>
+		<p ixia_locid="18">Nous vous conseillons fortement de conserver ce certificat en lieu sûr (fichier
+			chiffré, base de données etc…).</p>
+		<p ixia_locid="19"/>
+		<p ixia_locid="20">En cas de perte, le marchand aura la possibilité d’en générer un nouveau depuis
+			son <ph ixia_locid="24" translate="no">Back Office</ph>.</p>
+		<p ixia_locid="21">Pour rappel, le certificat de production est visible dans le <ph ixia_locid="25" translate="no">Back Office</ph> depuis le menu <b ixia_locid="22">Paramétrage</b> &gt; <b ixia_locid="23">Boutique</b> &gt; onglet <b ixia_locid="14">Certificats</b>. </p>
+	</conbody>
+</concept>

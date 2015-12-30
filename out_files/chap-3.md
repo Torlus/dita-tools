@@ -14,6 +14,7 @@ title: chap-3
 <p>
 Un paiement est considéré comme 
 <b>comptant immédiat</b> si :
+
 <ul>
  
  <li>
@@ -43,6 +44,7 @@ Un paiement est considéré comme
  
 <p>
  
+
 <ul>
  
  <li>
@@ -71,6 +73,7 @@ Il existe deux types de paiements comptants différés :
  
 <p>
  
+
 <ul>
  
  <li>
@@ -89,6 +92,7 @@ Une demande d&#x27;autorisation pour le montant global est effectuée. Sans modi
  
 <p>
  
+
 <ul>
  
  <li>

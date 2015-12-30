@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408637038608" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_threeds_cavvAlgorithm</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="50">Algorithme utilisé par l’ACS pour générer la valeur du cavv.</p>
+							<p ixia_locid="51">Il est valorisé par le serveur d’authentification 3DS (ACS) lorsque
+								l’acheteur s’est correctement authentifié (<ph ixia_locid="55" translate="no">vads_threeds_status</ph> vaut
+								« <ph ixia_locid="56" translate="no">Y</ph> » ou « <ph ixia_locid="57" translate="no">A</ph> »).</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="33"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="35" translate="no">n1</entry>
+					</row>
+					<row>
+						<entry ixia_locid="36"><b ixia_locid="37">Code erreur</b></entry>
+						<entry ixia_locid="38" translate="no">55</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="54"/><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.84*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="52">Valeur</entry>
+												<entry align="center" ixia_locid="53">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8" translate="no">0</entry>
+												<entry ixia_locid="9" translate="no">HMAC</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10" translate="no">1</entry>
+												<entry ixia_locid="11" translate="no">CVV</entry>
+											</row>
+											<row>
+												<entry ixia_locid="14" translate="no">2</entry>
+												<entry ixia_locid="15" translate="no">CVV_ATN</entry>
+											</row>
+											<row>
+												<entry ixia_locid="42" translate="no">3</entry>
+												<entry ixia_locid="30" translate="no">MasterCard SPA</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Authentification 3DS.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

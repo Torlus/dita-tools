@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1411126555396" xml:lang="fr-fr">
+	<title ixia_locid="41" translate="no">vads_product_qtyN</title>
+	<shortdesc ixia_locid="42"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Permet de définir la quantité de chacun des articles
+							contenus dans le panier.<p ixia_locid="43">N correspond à l'indice de l'article. (0 pour
+								le premier, 1 pour le deuxième etc...)</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="49"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="51" translate="no">n..12</entry>
+					</row>
+					<row>
+						<entry ixia_locid="50"><b ixia_locid="48">Code d'erreur</b></entry>
+						<entry ixia_locid="52" translate="no">101</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la commande.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

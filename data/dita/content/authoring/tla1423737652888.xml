@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1423737652888" xml:lang="fr-fr">
+	<title ixia_locid="1">Gérer les paramètres de votre boutique par fichier de configuration</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">L'utilisation d'un fichier de configuration permet d'éviter de mettre des valeurs en dur dans
+			le code.</p>
+		<p ixia_locid="4">Les fichiers de configuration peuvent contenir :</p>
+		<p ixia_locid="5">
+			<ul id="ul_aym_lsz_1r">
+				<li ixia_locid="6">l'URL de la page de paiement, </li>
+				<li ixia_locid="7">la valeur du certificat, </li>
+				<li ixia_locid="8">la valeur de l'identifiant de la boutique,</li>
+				<li ixia_locid="9">etc...</li>
+			</ul>
+		</p>
+		<p ixia_locid="10">Ces fichiers permettent de typer les données à sauvegarder.</p>
+		<p ixia_locid="11">Le programme qui génère le formulaire de paiement appelera le fichier de
+			configuration avec le paramètre pour utiliser la valeur.</p>
+		<p ixia_locid="12">Il incombe au marchand de s'assurer :</p>
+		<p ixia_locid="13">
+			<ul id="ul_inn_yn1_br">
+				<li ixia_locid="14">des droits sur le fichier pour ne pas qu'il soit accessible de l'exterieur.</li>
+				<li ixia_locid="15">de répondre aux spécificités liées au langage de programmation utilisé.</li>
+			</ul>
+		</p>
+		<p ixia_locid="16"><u ixia_locid="17">Exemple de fichier de configuration "conf.txt"</u>
+			:<codeblock ixia_locid="18">vads_site_id = 11111111
+TEST_key = 2222222222222222
+PROD_key = 3333333333333333
+vads_ctx_mode = TEST</codeblock></p>
+		<p ixia_locid="19"><u ixia_locid="20">Exemple d'appel de fichier de configuration dans le
+				formulaire de paiement</u>
+			:<codeblock ixia_locid="21">$conf_txt = parse_ini_file("conf.txt");
+	if ($conf_txt['vads_ctx_mode'] == "TEST") $conf_txt['key'] = $conf_txt['TEST_key'];
+	if ($conf_txt['vads_ctx_mode'] == "PRODUCTION") $conf_txt['key'] = $conf_txt['PROD_key'];</codeblock></p>
+	</conbody>
+</concept>

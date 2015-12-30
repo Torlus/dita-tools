@@ -23,6 +23,7 @@ Le diagramme ci-dessous présente la cinématique des échanges du point de vue 
 Cinématique des échanges – Vue acheteur
 </p>
 <img src="/docs_img/tla1406022174130.image" alt="DiagrammeFluxAcheteur"/> 
+
 <ol>
  
  <li>
@@ -124,6 +125,7 @@ Cinématique des échanges – Vue marchand
 <img src="/docs_img/tla1437748633530.image" alt="DiagrammeFluxMarchand"/> 
 <p>
  
+
 <ol>
  
  <li>
@@ -194,6 +196,7 @@ Suite à la demande de paiement, plusieurs contrôles sont automatiquement mis e
  
   <p>
  
+
   <ul>
  
    <li>
@@ -259,6 +262,7 @@ La demande d’autorisation est automatiquement effectuée :
  
   <p>
  
+
   <ul>
  
    <li>
@@ -304,6 +308,7 @@ Les échéances suivantes sont par défaut positionnées en statut
  
   <p>
 Les demandes d’autorisation des échéances suivantes sont automatiquement effectuées comme une transaction de paiement différé, donc avec deux dates possibles : 
+
   <ul>
  
    <li>
@@ -352,6 +357,7 @@ Suite à la demande de paiement, des contrôles sont automatiquement mis en oeuv
  
   <p>
  
+
   <ul>
  
    <li>
@@ -364,6 +370,7 @@ L’authentification 3D Secure.
  
   <p>
  
+
   <ul>
  
    <li>
@@ -376,6 +383,7 @@ Différents contrôles locaux réalisés directement par la plateforme de paieme
  
   <p>
  
+
   <ul>
  
    <li>
@@ -489,6 +497,7 @@ Pour activer les autorisations anticipées, veuillez contacter le service client
  
  <p>
 Ce processus s&#x27;applique uniquement pour les demandes d’autorisation : 
+
  <ul>
  
   <li>

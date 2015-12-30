@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408638341396" xml:lang="fr-fr">
+	<title ixia_locid="48" translate="no">vads_threeds_status</title>
+	<shortdesc ixia_locid="49"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.81*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="29">Description</b></entry>
+						<entry ixia_locid="26">
+							<p ixia_locid="50">Désigne le statut de l’authentification du porteur. Il est valorisé par le
+								serveur d’authentification 3DS (ACS) durant le processus 3D
+								Secure.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="59"><b ixia_locid="34">Format</b></entry>
+						<entry ixia_locid="61" translate="no">a1</entry>
+					</row>
+					<row>
+						<entry ixia_locid="60"><b ixia_locid="63">Code d'erreur</b></entry>
+						<entry ixia_locid="62" translate="no">56</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><p ixia_locid="58"/><b ixia_locid="23">Valeurs possibles</b></entry>
+						<entry ixia_locid="40">
+							<p ixia_locid="41">
+								<table colsep="1" frame="all" id="table_rnd_qtb_2p" rowsep="1">
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="7.84*"/>
+										<thead>
+											<row>
+												<entry align="center" ixia_locid="52">Valeur</entry>
+												<entry align="center" ixia_locid="53">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="8" translate="no">Y</entry>
+												<entry ixia_locid="9">Authentification
+												réussie.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="10" translate="no">N</entry>
+												<entry ixia_locid="11">Erreur
+												d’authentification.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="54" translate="no">U</entry>
+												<entry ixia_locid="56">Authentification
+												impossible.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="55" translate="no">A</entry>
+												<entry ixia_locid="57">Essai
+												d’authentification.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="45"><b ixia_locid="46">Catégorie</b></entry>
+						<entry ixia_locid="47">Authentification 3DS.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

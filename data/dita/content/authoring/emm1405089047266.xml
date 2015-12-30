@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405089047266" xml:lang="fr-fr">
+	<title ixia_locid="1">Réaliser un premier paiement de production</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4">Nous vous conseillons de vérifier les deux points suivants :</p>
+		<p ixia_locid="5">
+			<ul id="ul_smc_wwg_pp">
+				<li ixia_locid="7">Le bon fonctionnement en environnement de production de bout-en-bout. <p ixia_locid="13">Pour
+						ce faire, effectuez une transaction réelle.</p><p ixia_locid="14">Cette transaction pourra
+						être annulée par la suite depuis le <ph ixia_locid="15" translate="no">Back Office</ph> via le menu <b ixia_locid="8">Gestion</b> &gt; <b ixia_locid="9">Transaction</b> &gt;
+						onglet <b ixia_locid="10">Paiements en cours</b>. Cette transaction ne sera
+						donc pas remise en banque.</p></li>
+			</ul>
+		</p>
+		<p ixia_locid="11">
+			<ul id="ul_yxn_wwg_pp">
+				<li ixia_locid="12">Le bon fonctionnement de l'URL de notification de paiement instantanée (Url
+					de notification à la fin du paiement) renseignée dans le <ph ixia_locid="16" translate="no">Back Office</ph>. <p ixia_locid="17">Pour ce faire, ne
+						cliquez pas sur le bouton <b ixia_locid="18">Retour à la boutique</b> après
+						un paiement. </p><p ixia_locid="19">Affichez le détail de la transaction
+						dans le <ph ixia_locid="20" translate="no">Back Office</ph> et vérifiez que
+						le statut de l'URL de notification instantanée (Statut URL de notification)
+						est bien <b ixia_locid="21">Envoyé.</b></p></li>
+			</ul>
+		</p>
+	</conbody>
+</concept>

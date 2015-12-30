@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//LYRA//DTD DITA Map//EN" "lyra-map.dtd">
+<map id="tla1441965696194" xml:lang="fr-fr">
+	<title ixia_locid="216">Images Communes</title>
+    
+    <!--Images communes-->
+    
+    <keydef format="image" href="tla1411745219959.image" ixia_locid="238" keys="AuthentificationPersoMotDePasse"/>
+    <keydef format="image" href="tla1440516316397.image" ixia_locid="220" keys="CreationAbonnementWizard1"/>
+    <keydef format="image" href="tla1440516400567.image" ixia_locid="221" keys="CreationAbonnementWizard2"/>
+    <keydef format="image" href="tla1440516442609.image" ixia_locid="222" keys="CreationAbonnementWizard3"/>
+    <keydef format="image" href="tla1412755027294.image" ixia_locid="219" keys="DefinirModeRemiseBanque"/>
+    <keydef format="image" href="tla1437480052791.image" ixia_locid="119" keys="DetailTransaction"/>
+    <keydef format="image" href="tla1443704282926.image" ixia_locid="242" keys="DetailTransactionEnCours"/>
+    <keydef format="image" href="tla1437480052791.image" ixia_locid="236" keys="DetailTransactionPayPalImmediat"/>
+    <keydef format="image" href="tla1442842202342.image" ixia_locid="237" keys="DetailTransactionEnCoursPayPalDiffere"/>
+    <keydef format="image" href="tla1413275402398.image" ixia_locid="167" keys="DupliquerTransaction"/>
+    <keydef format="image" href="tla1437480383865.image" ixia_locid="124" keys="EditerRefCommande"/>
+    <keydef format="image" href="tla1432738538834.image" ixia_locid="226" keys="GestionRisquesAvancee3DSecure"/>
+    <keydef format="image" href="tla1434359184284.image" ixia_locid="223" keys="GestionRisquesAvanceeAccueil"/>
+    <keydef format="image" href="tla1432729292488.image" ixia_locid="224" keys="GestionRisquesAvanceeConfiguration"/>
+    <keydef format="image" href="tla1432822156661.image" ixia_locid="247" keys="GestionRisquesAvanceeFrequenceUtilisation"/>
+    <keydef format="image" href="tla1412693175172.image" ixia_locid="248" keys="GererURLServeurFinPaiement"/>
+    <keydef format="image" href="tla1425654122255.image" ixia_locid="200" keys="GererURLNotifFinPaiement"/>
+    <keydef format="image" href="tla1412693861857.image" ixia_locid="218" keys="GererURLServeurSurAutoParBatch"/>
+    <keydef format="image" href="tla1425654452351.image" ixia_locid="201" keys="GererURLNotifSurAutoParBatch"/>
+    <keydef format="image" href="tla1432801169005.image" ixia_locid="227" keys="GestionRisquesAvanceeMontant"/>
+    <keydef format="image" href="tla1432801890606.image" ixia_locid="228" keys="GestionRisquesAvanceeMoyenDePaiement"/>
+    <keydef format="image" href="tla1432804103765.image" ixia_locid="229" keys="GestionRisquesAvanceePanier"/>
+    <keydef format="image" href="tla1432807316238.image" ixia_locid="230" keys="GestionRisquesAvanceePays"/>
+    <keydef format="image" href="tla1443704076786.image" ixia_locid="241" keys="ListeTransactionsEnCours"/>
+    <keydef format="image" href="tla1425653374072.image" ixia_locid="198" keys="ListeURLNotification"/>
+    <keydef format="image" href="tla1444725978675.image" ixia_locid="255" keys="ListeURLNotificationSepaAll"/>
+    <keydef format="image" href="tla1437559365689.image" ixia_locid="256" keys="MenuTransactionTest"/>
+    <keydef format="image" href="tla1437559461141.image" ixia_locid="18" keys="MenuTransaction"/>
+    <keydef format="image" href="tla1406116471544.image" ixia_locid="257" keys="MessageHTTPPOST"/>
+    <keydef format="image" href="tla1442927306033.image" ixia_locid="235" keys="ModificationTransaction"/>
+    <keydef format="image" href="tla1413904451582.image" ixia_locid="209" keys="OngletCertificat"/>
+    <keydef format="image" href="tla1434113757838.image" ixia_locid="249" keys="OngletInformationTransactionCycleDeVie"/>
+    <keydef format="image" href="tla1434113868537.image" ixia_locid="250" keys="OngletGestionDesRisquesAvancee"/>
+    <keydef format="image" href="tla1437479935376.image" ixia_locid="115" keys="OngletPaiementsRemisPayPal"/>
+    <keydef format="image" href="tla1442842033625.image" ixia_locid="153" keys="OngletPaiementsEnCoursPayPalDiffere"/>
+    <keydef format="image" href="tla1443707740458.image" ixia_locid="244" keys="OperationSurLesTransactionsBarreDeTitre"/>
+    <keydef format="image" href="tla1443707949249.image" ixia_locid="245" keys="OperationSurLesTransactionsClicDroit"/>
+    <keydef format="image" href="tla1443708056546.image" ixia_locid="246" keys="OperationSurLesTransactionsDetailTransaction"/>
+    <keydef format="image" href="tla1412350875705.image" ixia_locid="137" keys="PaiementManuelNFoisStep1"/>
+    <keydef format="image" href="tla1412351187233.image" ixia_locid="140" keys="PaiementManuelNFoisStep2"/>
+    <keydef format="image" href="tla1412351589601.image" ixia_locid="142" keys="PaiementManuelNFoisStep3"/>
+    <keydef format="image" href="tla1412351786694.image" ixia_locid="143" keys="PaiementManuelNFoisStep4"/>
+    <keydef format="image" href="tla1412348488408.image" ixia_locid="146" keys="PaiementManuelStep1"/>
+    <keydef format="image" href="tla1412350132426.image" ixia_locid="135" keys="PaiementManuelStep2"/>
+    <keydef format="image" href="tla1412350513962.image" ixia_locid="136" keys="PaiementManuelStep3"/>
+    <keydef format="image" href="tla1432736352169.image" ixia_locid="225" keys="PrincipeAuthentification3DSecure"/>
+    <keydef format="image" href="tla1408545448012.image" ixia_locid="75" keys="PVdeRecette"/>
+    <keydef format="image" href="tla1437480581988.image" ixia_locid="128" keys="RapprochementManuelStep1"/>
+    <keydef format="image" href="tla1437480634208.image" ixia_locid="131" keys="RapprochementManuelStep2"/>
+    <keydef format="image" href="tla1437480683100.image" ixia_locid="132" keys="RapprochementManuelStep3"/>
+    <keydef format="image" href="tla1443707092563.image" ixia_locid="243" keys="RechercheRapideTransaction"/>
+    <keydef format="image" href="tla1443702232578.image" ixia_locid="240" keys="RechercheTransactionEnCours"/>
+    <keydef format="image" href="tla1412691819919.image" ixia_locid="19" keys="RegleNotificationURLServeurFinPaiement"/>
+    <keydef format="image" href="tla1411745395842.image" ixia_locid="239" keys="ReinitialiserMotDePasseConnexionBO"/>
+    <keydef format="image" href="tla1437480184868.image" ixia_locid="120" keys="Rembourser"/>
+    <keydef format="image" href="tla1437480476392.image" ixia_locid="126" keys="SaisieEmailAcheteur"/>
+    <keydef format="image" href="tla1412760425637.image" ixia_locid="258" keys="URLRedirection"/>
+    <keydef format="image" href="tla1412759030630.image" ixia_locid="215" keys="URLRetour"/>
+    <keydef format="image" href="tla1437559683519.image" ixia_locid="202" keys="URLRetourV2.3"/>
+    
+    <!-- Klarna Images communes -->
+    <keydef format="image" href="tla1421081481840.image" ixia_locid="251" keys="RecapFinancement"/>
+    <keydef format="image" href="tla1420734218082.image" ixia_locid="252" keys="FormulaireSouscriptionFacilipay"/>
+    <keydef format="image" href="tla1420734786395.image" ixia_locid="253" keys="ConditionsFacilypay"/>
+    <keydef format="image" href="tla1420735157975.image" ixia_locid="254" keys="DetailTransactionFacilypay"/>
+    
+    <!-- Sofort Images communes -->
+    <keydef format="image" href="tla1428506326303.image" ixia_locid="259" keys="SelectionTypeProjetSofort"/>
+    <keydef format="image" href="tla1428500136998.image" ixia_locid="210" keys="PageDePaiementStep2Sofort"/>
+    <keydef format="image" href="tla1428500496642.image" ixia_locid="211" keys="PageDePaiementStep3Sofort"/>
+    <keydef format="image" href="tla1428501120798.image" ixia_locid="212" keys="PageDePaiementStep4Sofort"/>
+    <keydef format="image" href="tla1428501467708.image" ixia_locid="260" keys="PageDePaiementStep5Sofort"/>
+    <keydef format="image" href="tla1428502442251.image" ixia_locid="261" keys="DetailsTransactionSofort"/>
+</map>

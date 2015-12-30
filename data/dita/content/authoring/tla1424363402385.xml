@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<task id="tla1424363402385" xml:lang="fr-fr">
+	<title ixia_locid="132">Activer le rejeu automatique</title>
+	<shortdesc ixia_locid="133"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="134">
+			<p ixia_locid="135">Cette option permet de renvoyer automatiquement la notification vers le site marchand
+				en cas d'échec, et ce, jusqu'à 4 fois.</p>
+		</context>
+		<steps>
+			<step id="step_N10020_N1001D_N10011_N10001" ixia_locid="136">
+				<cmd ixia_locid="137">Connectez-vous à : <xref ixia_locid="60" keyref="BackOfficeMarchand"/>.</cmd>
+			</step>
+			<step id="step_N1002E_N1001D_N10011_N10001" ixia_locid="138">
+				<cmd ixia_locid="139">Allez dans le menu : <b ixia_locid="29">Paramétrage</b> &gt; <b ixia_locid="58">Règles de notifications</b>.</cmd>
+			</step>
+			<step id="step_N10041_N1001D_N10011_N10001" ixia_locid="140">
+				<cmd ixia_locid="141">Effectuez un clic droit sur une des règles de notifications affichées.</cmd>
+			</step>
+			<step id="step_N1004A_N1001D_N10011_N10001" ixia_locid="193">
+				<cmd ixia_locid="143">Sélectionnez <b ixia_locid="37">Gérer la règle</b>.</cmd>
+				<info ixia_locid="41">
+					<fig doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" id="fig_jb4_bwr_v4" ixia_locid="85">
+						<title ixia_locid="43">URL de notification à la fin du paiement</title>
+						<image ixia_locid="194" keyref="GererURLNotifFinPaiement" scale="60"/>
+					</fig>
+					<p doc-type="Modules" ixia_locid="158"/>
+					<fig doc-type="Modules" id="fig_N100EE_N100D6_N100A6_N10038_N10013_N10001" ixia_locid="160">
+						<image id="image_rm1_2wf_dr" ixia_locid="162" keyref="GererURLServeurFinPaiement" scale="60"/>
+					</fig>
+				</info>
+			</step>
+			<step id="step_N100B2_N10036_N10013_N10001" ixia_locid="16">
+				<cmd ixia_locid="25">Renseignez le champ <b ixia_locid="45">Adresse(s) e-mail(s) à
+						avertir en cas d’échec</b>. </cmd>
+			</step>
+			<step doc-type="Back-Office Form integration integration-Allemagne integration-Bresil" id="step_N100C1_N10036_N10013_N10002" ixia_locid="77">
+				<cmd ixia_locid="79">Pour spécifier plusieurs adresses e-mails, séparez-les par un
+					point-virgule.</cmd>
+			</step>
+			<step doc-type="Modules" id="step_N100C1_N10036_N10013_N10001" ixia_locid="78">
+				<cmd ixia_locid="80">Pour spécifier plusieurs adresses e-mails, séparez-les par un
+					point-virgule.</cmd>
+			</step>
+			<step id="step_N100CC_N10036_N10013_N10001" ixia_locid="144">
+				<cmd ixia_locid="27">Configurez le <b ixia_locid="46">Rejeu automatique en cas
+						d’échec</b>. </cmd>
+				<info ixia_locid="146"/>
+				<info ixia_locid="164">Les tentatives d'appel sont programmées à heures fixes toutes
+					les 15 minutes (00, 15, 30, 45). Après chaque tentative infructueuse, un e-mail
+					d'alerte est envoyé à l'adresse saisie précédemment.</info>
+				<info ixia_locid="166">L'e-mail envoyé dans un tel cas de figure comporte dans son
+					objet le numéro correspondant à la tentative d'envoi de la notification. Il est
+					présenté sous la forme <codeph ixia_locid="168">attempt #</codeph> suivi du
+					numéro de tentative.</info>
+				<info ixia_locid="170"><u ixia_locid="172">Exemple de nom d'objet d'un e-mail reçu suite au
+						premier échec de notification à la fin d'un paiement</u>
+					:<codeblock ixia_locid="174">[MODE TEST] Ma Boutique - Tr. réf. 067925 / ECHEC lors de l'appel de votre URL de notification [unsuccessful <b ixia_locid="100">attempt #1</b>]</codeblock></info>
+				<info ixia_locid="101">Dans le cas de rejets multiples, l'objet de l'e-mail
+					contiendra le numéro de la tentative. </info>
+				<info ixia_locid="176"><u ixia_locid="178">Exemple d'objet d'e-mail reçu lors d'un deuxième
+						échec</u>
+					:<codeblock ixia_locid="114">[MODE TEST] Ma Boutique - Tr. réf. 067925 / ECHEC lors de l'appel de votre URL de notification [unsuccessful <b ixia_locid="116">attempt #2</b>]</codeblock></info>
+				<info ixia_locid="106"><u ixia_locid="113">Exemple d'objet d'e-mail reçu lors d'un troisième
+						échec</u>
+					:<codeblock ixia_locid="115">[MODE TEST] Ma Boutique - Tr. réf. 067925 / ECHEC lors de l'appel de votre URL de notification [unsuccessful <b ixia_locid="117">attempt #3</b>]</codeblock>Pour
+					notifier au site marchand l'échec de la dernière tentative de notification,
+					l'objet de l'e-mail comportera la mention <codeph ixia_locid="93">attempt
+						#last</codeph>.</info>
+				<info ixia_locid="180"><u ixia_locid="182">Exemple d'objet d'e-mail reçu lors de la dernière
+						tentative</u>
+					:<codeblock ixia_locid="184">[MODE TEST] Ma Boutique - Tr. réf. 067925 / ECHEC lors de l'appel de votre URL de notification [unsuccessful <b ixia_locid="186">attempt #last</b>]</codeblock></info>
+				<info ixia_locid="188">Pour chacun des e-mails reçus, le contenu de l'e-mail
+					détaillera :</info>
+				<info ixia_locid="120">
+					<ul id="ul_sqd_t3d_xq">
+						<li ixia_locid="121">Le problème rencontré</li>
+						<li ixia_locid="122">Des éléments d'analyse en fonction de l'erreur</li>
+						<li ixia_locid="123">Ses conséquences </li>
+						<li ixia_locid="124">La procédure à suivre depuis le <ph ixia_locid="125" translate="no">Back Office </ph><keyword doc-type="Modules" ixia_locid="73" keyref="platform-name"/> pour renvoyer la requête
+							vers l’URL définie à l’étape 5</li>
+					</ul>
+				</info>
+				<info ixia_locid="127"><b ixia_locid="128">Remarque</b> :</info>
+				<info ixia_locid="129">Après la quatrième tentative, il est toujours possible de
+					rejouer l'URL de notification. Ceci peut être effectué <b ixia_locid="130">manuellement</b> depuis votre <ph ixia_locid="126" translate="no">Back
+						Office</ph>.</info>
+				<info ixia_locid="131">Attention, pendant la période de rejeu automatique, tout
+					appel manuel à l'URL de notification influera sur le nombre de tentatives
+					automatiques.</info>
+			</step>
+			<step id="step_N10173_N1001D_N10011_N10001" ixia_locid="145">
+				<cmd ixia_locid="28">Sauvegardez vos modifications.</cmd>
+			</step>
+		</steps>
+		<result id="result_N1017A_N10011_N10001" ixia_locid="147"><b ixia_locid="148">Remarque :
+				</b><p ixia_locid="190">Lors du rejeu automatique, certaines informations ne sont pas enregistrées en
+				base de données ou sont modifiées.</p><p ixia_locid="191"/><p ixia_locid="81"><b ixia_locid="82">Exemples de champs non disponibles / non enregistrés en base de données :
+				</b></p><p ixia_locid="83">
+				<ul id="ul_kwl_stg_dr">
+					<li ixia_locid="84"><ph ixia_locid="155" translate="no"><b ixia_locid="161">vads_page_action</b>
+						</ph></li>
+					<li ixia_locid="157"><ph ixia_locid="163" translate="no"><b ixia_locid="89">vads_payment_config</b></ph>
+					</li>
+					<li ixia_locid="159"><ph ixia_locid="91" translate="no"><b ixia_locid="169">vads_action_mode</b></ph>
+					</li>
+				</ul>
+			</p><p ixia_locid="192"/><p ixia_locid="94"><b ixia_locid="165">Exemples de champs envoyés avec des
+					valeurs différentes : </b></p><p ixia_locid="167">
+				<ul id="ul_y3b_vxf_dr">
+					<li ixia_locid="171"><ph ixia_locid="173" translate="no"><b ixia_locid="175">vads_url_check_src</b></ph> valorisé à <ph ixia_locid="152" translate="no"><b ixia_locid="153">RETRY</b></ph>,</li>
+					<li ixia_locid="177"><ph ixia_locid="195" translate="no"><b ixia_locid="197">vads_trans_status</b></ph>. Le statut de la transaction suite à
+						cette opération varie en fonction de son statut au moment où l'URL est
+						appelée (voir chapitre <b ixia_locid="198">Cycle de vie des
+							transactions</b><ph doc-type="Back-Office" ixia_locid="199"> du guide
+							d'intégration du formulaire disponible sur <xref ixia_locid="200" keyref="SiteInternetDocumentation"/></ph>).</li>
+					<li ixia_locid="181"><ph ixia_locid="183" translate="no"><b ixia_locid="185">vads_hash</b></ph> valorisé différemment en tenant compte des
+						nouvelles valeurs,</li>
+					<li ixia_locid="110"><ph ixia_locid="111" translate="no"><b ixia_locid="179">signature</b></ph> valorisé différemment en tenant compte des
+						nouvelles valeurs.</li>
+				</ul>
+			</p></result>
+	</taskbody>
+</task>

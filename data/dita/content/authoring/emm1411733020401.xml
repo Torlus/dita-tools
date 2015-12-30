@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="emm1411733020401" xml:lang="fr-fr">
+	<title ixia_locid="1">Traiter les données de la réponse</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="341">Ci-dessous un exemple d'analyse pour vous guider pas à pas lors du traitement
+				des données de la réponse.</p>
+		</context>
+		<steps>
+			<step id="step_N10115_N10020_N10013_N10001" ixia_locid="517">
+				<cmd ixia_locid="519">Identifiez la commande en récupérant la valeur du champ <b ixia_locid="350" translate="no">vads_order_id</b> si vous l'avez transmis
+					dans le formulaire de paiement.</cmd>
+				<info ixia_locid="521">Vérifiez que le statut de la commande n'a pas déja été mis à
+					jour.</info>
+			</step>
+			<step id="step_N10038_N10021_N10013_N10001" ixia_locid="518">
+				<cmd ixia_locid="520">Récupérez le résultat du paiement transmis dans le champ <b ixia_locid="109" translate="no">vads_trans_status</b>.</cmd>
+				<info ixia_locid="522">Sa valeur vous permet de définir le statut de la
+					commande.</info>
+				<info ixia_locid="110">
+					<table conref="tla1408638657026.xml#tla1408638657026/table_bpt_sl5_dp" id="table_ihj_hnm_rp">
+						<tgroup cols="cols_vr3_hnm_rp">
+							<tbody>
+								<row>
+									<entry ixia_locid="463"/>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N1005F_N10020_N10013_N10001" ixia_locid="465">
+				<cmd ixia_locid="467" outputclass="break">Récupérez la référence du paiement transmise dans le
+					champ <b ixia_locid="383" translate="no">vads_trans_id</b>.</cmd>
+			</step>
+			<step id="step_N1006F_N10020_N10013_N10001" ixia_locid="539">
+				<cmd ixia_locid="446">Analysez le champ <b ixia_locid="541" translate="no">vads_payment_config</b> pour déterminer s'il s'agit d'un <b ixia_locid="450">paiement comptant</b> (unitaire) ou d'un <b ixia_locid="451">paiement en plusieurs fois</b>.</cmd>
+				<info ixia_locid="452">Ce champ peut être valorisé à:</info>
+				<info ixia_locid="355"><table colsep="1" frame="all" id="table_ysf_zpn_rp" rowsep="1">
+						<title ixia_locid="564">Analyse du champ vads_payment_config</title>
+						<tgroup cols="3">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="newCol2" colnum="2" colwidth="1.42*"/>
+							<colspec colname="c2" colnum="3" colwidth="2.01*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="356">Nom du champ</entry>
+									<entry ixia_locid="357">Valeur pour un paiement comptant </entry>
+									<entry ixia_locid="358">Valeur pour un paiement en plusieurs
+										fois</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="359"><b ixia_locid="360" translate="no">vads_payment_config</b></entry>
+									<entry ixia_locid="361" translate="no">SINGLE </entry>
+									<entry ixia_locid="362" translate="no">MULTI<p ixia_locid="453">(dont la systaxe exacte est <ph ixia_locid="526" translate="no">MULTI:first=X;count=Y;period=Z</ph>)</p></entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>S'il s'agit d'un paiement en plusieurs fois, identifiez le numéro de
+					l'échéance en récupérant la valeur du champ <b ixia_locid="364" translate="no">vads_sequence_number</b>.<table colsep="1" frame="all" id="table_w5f_zpn_rp" rowsep="1">
+						<title ixia_locid="565">Analyse du champ vads_sequence_number</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="3.39*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="365">Valeur</entry>
+									<entry ixia_locid="366">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="367" translate="no">1</entry>
+									<entry ixia_locid="368">Première échéance</entry>
+								</row>
+								<row>
+									<entry ixia_locid="369" translate="no">2</entry>
+									<entry ixia_locid="370">Deuxième échéance</entry>
+								</row>
+								<row>
+									<entry ixia_locid="371" translate="no">3</entry>
+									<entry ixia_locid="372">Troisième échéance</entry>
+								</row>
+								<row>
+									<entry ixia_locid="373">n</entry>
+									<entry ixia_locid="374">N échéance</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table></info>
+				<itemgroup ixia_locid="454">Pour un paiement comptant (unitaire) le champ <b ixia_locid="455" translate="no">vads_sequence_number</b> est valorisé à <b ixia_locid="456" translate="no">1</b>.</itemgroup>
+			</step>
+			<step id="step_N10171_N1002B_N10013_N10001" ixia_locid="473">
+				<cmd ixia_locid="474">Récupérez la valeur du champ <b ixia_locid="475" translate="no">vads_trans_date</b> pour identifier la date du paiement.
+				</cmd>
+			</step>
+			<step id="step_N10166_N10020_N10013_N10001" ixia_locid="344">
+				<cmd ixia_locid="348">Récupérez la valeur du champ <b ixia_locid="375" translate="no">vads_capture_delay</b> pour identifier le nombre de jours
+					avant la remise en banque.</cmd>
+				<itemgroup ixia_locid="376">Ceci vous permettra d'identifier s'il s'agit d'un
+					paiement immédiat ou différé.</itemgroup>
+			</step>
+			<step id="step_N102A8_N10020_N10013_N10001" ixia_locid="378">
+				<cmd ixia_locid="381">Récupérez le montant et la devise utilisée. Pour cela,
+					récupérez les valeurs des champs suivants:</cmd>
+				<info ixia_locid="384">
+					<table colsep="1" frame="all" id="table_bqc_qgn_pp" rowsep="1">
+						<title ixia_locid="557">Analyse du montant et de la devise utilisée</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="3.43*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="385">Nom du champ</entry>
+									<entry ixia_locid="386">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="387"><b ixia_locid="486" translate="no">vads_amount</b></entry>
+									<entry ixia_locid="388">Montant du paiement dans sa plus petite
+										unité monétaire.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="457"><b ixia_locid="487" translate="no">vads_currency</b></entry>
+									<entry ixia_locid="460">Code de la devise utilisée pour le
+										paiement.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="458"><b ixia_locid="488" translate="no">vads_change_rate</b></entry>
+									<entry ixia_locid="461">Taux de change utilisé pour calculer le
+										montant réél du paiement (voir
+										vads_effective_amount).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="459"><b ixia_locid="489" translate="no">vads_effective_amount</b></entry>
+									<entry ixia_locid="462">Montant du paiement dans la devise
+										réellement utilisée pour effectuer la remise en
+										banque.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+				<info ixia_locid="571"><i ixia_locid="572">Remarque : </i></info>
+				<info ixia_locid="573"><i ixia_locid="574">Lorsque le champ <ph ixia_locid="575" translate="no"><b ixia_locid="576">vads_page_action</b></ph> est valorisé à <ph ixia_locid="577" translate="no"><b ixia_locid="578">REGISTER_SUBSCRIBE</b></ph>, le champ <ph ixia_locid="579" translate="no"><b ixia_locid="580">vads_amount</b></ph> est valorisé à
+							<ph ixia_locid="581" translate="no"><b ixia_locid="582">0</b></ph>, même
+						si aucun paiement a été réalisé.</i></info>
+			</step>
+			<step id="step_N102FC_N10020_N10013_N10001" ixia_locid="379" outputclass="break">
+				<cmd ixia_locid="529">Récupérez la valeur du champ <b ixia_locid="266" translate="no">vads_auth_result</b> pour connaître le résultat de la demande
+					d'autorisation.</cmd>
+				<info ixia_locid="568"/>
+				<info ixia_locid="538"/>
+				<info doc-type="Form integration integration-Allemagne integration-Bresil" ixia_locid="530">La
+					liste complète des codes renvoyés est consultable dans le dictionnaire de
+					données.</info>
+				<info doc-type="Form_Light Moyens-Paiement integrationLight Oney Paylib PayPal SEPA-OneOff SEPA-Recurrent" ixia_locid="531" payment-method="Oney Paylib PayPal SEPA-One-Off SEPA-Recurrent">
+					<p ixia_locid="534">La liste des codes renvoyés est disponible dans le guide
+						d'implémentation du formulaire de paiement.</p>
+				</info>
+				<info ixia_locid="537"/>
+				<info ixia_locid="535">Pour vous aider à comprendre le motif du refus, voici une
+					liste des codes fréquemment retournés :</info>
+				<info ixia_locid="569"/>
+				<info ixia_locid="312">
+					<table colsep="1" frame="all" id="table_uc3_p3d_jp" rowsep="1">
+						<title ixia_locid="289">Valeurs associées au champ vads_auth_result</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="11.21*"/>
+							<thead>
+								<row>
+									<entry align="center" ixia_locid="142">Valeur</entry>
+									<entry ixia_locid="146">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry align="center" ixia_locid="150"><b ixia_locid="492">03</b></entry>
+									<entry ixia_locid="154"><p ixia_locid="158"><b ixia_locid="173">Accepteur
+											invalide</b></p><p ixia_locid="176">Ce code est émis par
+											la banque du marchand.  Il correspond à un problème de
+											configuration sur les serveurs d’autorisation. (ex:
+											contrat clos, mauvais code MCC déclaré, etc..). </p><b ixia_locid="210">Contactez le service client pour
+											régulariser la situation.</b></entry>
+								</row>
+								<row>
+									<entry align="center" ixia_locid="215"><b ixia_locid="493">05</b></entry>
+									<entry ixia_locid="218"><b ixia_locid="224">Ne pas honorer</b><p ixia_locid="227">Ce code
+											est émis par la banque émettrice de la carte. Il peut
+											être obtenu en général dans les cas suivants : </p><ul id="ul_a4y_s3d_jp">
+											<li ixia_locid="235"> Date d’expiration invalide, </li>
+											<li ixia_locid="238"> CVV invalide, </li>
+											<li ixia_locid="241"> crédit dépassé, </li>
+											<li ixia_locid="244"> solde insuffisant (etc...)</li>
+										</ul><b ixia_locid="250">Pour connaître la raison précise du
+											refus, l’acheteur doit contacter sa banque.</b></entry>
+								</row>
+								<row>
+									<entry align="center" ixia_locid="253"><b ixia_locid="494">51</b></entry>
+									<entry ixia_locid="256"><b ixia_locid="273">Provision insuffisante ou crédit dépassé</b><p ixia_locid="276">Ce code est émis par la banque
+											émettrice de la carte. Il peut être obtenu si l’acheteur
+											ne dispose pas d’un solde suffisant pour réaliser son
+											achat. </p><b ixia_locid="295">Pour connaître la raison
+											précise du refus, l’acheteur doit contacter sa
+											banque.</b></entry>
+								</row>
+								<row>
+									<entry align="center" ixia_locid="298"><b ixia_locid="495">56</b></entry>
+									<entry ixia_locid="301"><b ixia_locid="307">Carte absente du
+											fichier</b><p ixia_locid="309">Ce code est émis par la
+											banque émettrice de la carte.</p>Le numéro de carte
+										saisi est erroné ou le couple numéro de carte + date
+										d'expiration n'existe pas.</entry>
+								</row>
+								<row>
+									<entry align="center" ixia_locid="72"><b ixia_locid="496">57</b></entry>
+									<entry ixia_locid="73"><b ixia_locid="75">Transaction non permise à ce porteur</b><p ixia_locid="76">Ce code est émis par la banque émettrice
+											de la carte. Il peut être obtenu en général dans les cas
+											suivants : </p><p ixia_locid="79">
+											<ul id="ul_psl_jq3_jp">
+												<li ixia_locid="107">L’acheteur tente d’effectuer un
+												paiement sur internet avec une carte de
+												retrait,</li>
+											</ul>
+										</p><p ixia_locid="80">
+											<ul id="ul_t32_kq3_jp">
+												<li ixia_locid="108">Le plafond d’autorisation de la
+												carte est dépassé.</li>
+											</ul>
+										</p><b ixia_locid="81">Pour connaître la raison précise du
+											refus, l’acheteur doit contacter sa banque.</b></entry>
+								</row>
+								<row>
+									<entry align="center" ixia_locid="82"><b ixia_locid="497">59</b></entry>
+									<entry ixia_locid="83"><b ixia_locid="85">Suspicion de fraude</b><p ixia_locid="86">Ce code
+											est émis par la banque émettrice de la carte. Il peut
+											être obtenu en général suite à une saisie répétée de CVV
+											ou de date d’expiration erronée.</p><b ixia_locid="89">Pour connaître la raison précise du refus, l’acheteur
+											doit contacter sa banque.</b></entry>
+								</row>
+								<row>
+									<entry align="center" ixia_locid="90"><b ixia_locid="498">60</b></entry>
+									<entry ixia_locid="91"><p ixia_locid="92"><b ixia_locid="93">L’accepteur de carte doit
+												contacter l’acquéreur</b></p><p ixia_locid="94">Ce
+											code est émis par la banque du marchand. Il correspond à
+											un problème de configuration sur les serveurs
+											d’autorisation. Il est émis en général lorsque le
+											contrat commerçant ne correspond pas au canal de vente
+											utilisé. (ex : une transaction e-commerce avec un
+											contrat VAD-saisie manuelle). </p><b ixia_locid="102">Contactez le service client pour régulariser la
+											situation.</b></entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N1003A_N1001C_N10011_N10001" ixia_locid="124">
+				<cmd ixia_locid="127">Récupérez le résultat de l'authentification 3D Secure. Pour
+					cela:</cmd>
+				<info ixia_locid="313">
+					<ol id="ol_j5b_gnz_4p">
+						<li ixia_locid="314">Récupérez la valeur du champ <b ixia_locid="118" translate="no">vads_threeds_enrolled</b> pour déterminer le statut
+							de l’enrollement de la carte.<table colsep="1" frame="all" id="table_qx5_2jd_jp" rowsep="1">
+								<title ixia_locid="121">Valeurs du champ
+									vads_threeds_enrolled</title>
+								<tgroup cols="2">
+									<colspec colname="c1" colnum="1" colwidth="1*"/>
+									<colspec colname="c2" colnum="2" colwidth="11.1*"/>
+									<thead>
+										<row>
+											<entry align="center" ixia_locid="125">Valeur</entry>
+											<entry ixia_locid="128">Description</entry>
+										</row>
+									</thead>
+									<tbody>
+										<row>
+											<entry align="center" ixia_locid="130"><b ixia_locid="499">Vide</b></entry>
+											<entry ixia_locid="133">Processus 3DS non réalisé (3DS
+												désactivé dans la demande, marchand non enrôlé ou
+												moyen de paiement non éligible au 3DS).</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="137"><b ixia_locid="500" translate="no">Y</b></entry>
+											<entry ixia_locid="140">Authentification disponible,
+												porteur enrôlé.</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="163"><b ixia_locid="501" translate="no">N</b></entry>
+											<entry ixia_locid="166">Porteur non enrôlé.</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="170"><b ixia_locid="502" translate="no">U</b></entry>
+											<entry ixia_locid="185">Impossible d’identifier le
+												porteur ou carte non éligible aux tentatives
+												d’authentification (ex. Cartes commerciales ou
+												prépayées).</entry>
+										</row>
+									</tbody>
+								</tgroup>
+							</table></li>
+						<li ixia_locid="315">Récupérez le résultat de l’authentification 3D Secure
+							en récupérant la valeur du champ <b ixia_locid="194" translate="no">vads_threeds_status</b>.<table colsep="1" frame="all" id="table_lfy_jjd_jp" rowsep="1">
+								<title ixia_locid="197">Valeurs du champ vads_threeds_status</title>
+								<tgroup cols="2">
+									<colspec colname="c1" colnum="1" colwidth="1*"/>
+									<colspec colname="c2" colnum="2" colwidth="11.05*"/>
+									<thead>
+										<row>
+											<entry align="center" ixia_locid="200">Valeur</entry>
+											<entry ixia_locid="259">Description</entry>
+										</row>
+									</thead>
+									<tbody>
+										<row>
+											<entry align="center" ixia_locid="263"><b ixia_locid="503">Vide</b></entry>
+											<entry ixia_locid="267">Authentification 3DS non
+												réalisée (3DS désactivé dans la demande, porteur non
+												enrôlé ou moyen de paiement non éligible au
+												3DS).</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="282"><b ixia_locid="504" translate="no">Y</b></entry>
+											<entry ixia_locid="286">Porteur authentifié avec
+												succès.</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="290"><b ixia_locid="505" translate="no">N</b></entry>
+											<entry ixia_locid="143">Erreur d’authentification du
+												porteur.</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="147"><b ixia_locid="506" translate="no">U</b></entry>
+											<entry ixia_locid="151">Authentification
+												impossible.</entry>
+										</row>
+										<row>
+											<entry align="center" ixia_locid="155"><b ixia_locid="507" translate="no">A</b></entry>
+											<entry ixia_locid="159">Tentative d’authentification
+												mais authentification non réalisée.</entry>
+										</row>
+									</tbody>
+								</tgroup>
+							</table></li>
+					</ol>
+				</info>
+			</step>
+			<step id="step_N10043_N1001C_N10011_N10001" ixia_locid="131">
+				<cmd ixia_locid="134">Récupérez le résultat des contrôles associés à la fraude en
+					identifiant la valeur du champ <b ixia_locid="113" translate="no">vads_risk_control</b>. Ce champ est envoyé uniquement si le marchand
+					a:</cmd>
+				<info ixia_locid="316">
+					<ul id="ul_ltj_zhf_pp">
+						<li ixia_locid="334">souscrit à l’option « <b ixia_locid="122">Aide à la
+								décision</b> »</li>
+						<li ixia_locid="335">activé au moins un contrôle depuis son <ph ixia_locid="528" translate="no">Back Office</ph> (menu <b ixia_locid="336">Paramétrage</b> &gt; <b ixia_locid="337">Contrôle
+								des risques</b>).</li>
+					</ul>
+				</info>
+				<info ixia_locid="317">Il prend comme valeur une liste de valeurs séparées par un « ; » dont la
+					syntaxe est: <b ixia_locid="570"><ph ixia_locid="527" translate="no">vads_risk_control =
+							control1=result1;control2=result2</ph></b></info>
+				<info ixia_locid="318">Les différentes valeurs possibles pour <b ixia_locid="167">control</b> sont :<table colsep="1" frame="all" id="table_awl_dkd_jp" rowsep="1">
+						<title ixia_locid="171">Liste des contrôles associés à la fraude</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="2.72*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="186">Valeur</entry>
+									<entry ixia_locid="189">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="192"><b ixia_locid="245" translate="no">CARD_FRAUD</b></entry>
+									<entry ixia_locid="195">Contrôle la présence du numéro de carte
+										de l'acheteur dans la liste grise de cartes.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="198"><b ixia_locid="248" translate="no">SUSPECT_COUNTRY</b></entry>
+									<entry ixia_locid="201">Contrôle la présence du pays émetteur de
+										la carte de l'acheteur dans la liste des pays
+										interdits.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="260"><b ixia_locid="251" translate="no">IP_FRAUD</b></entry>
+									<entry ixia_locid="264">Contrôle la présence de l'adresse IP de
+										l'acheteur dans la liste grise d'IP.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="268"><b ixia_locid="254" translate="no">CREDIT_LIMIT</b></entry>
+									<entry ixia_locid="283">Contrôle la fréquence et les montants
+										d'achat d'un même numéro de carte, ou le montant maximum
+										d'une commande.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="287"><b ixia_locid="257" translate="no">BIN_FRAUD</b></entry>
+									<entry ixia_locid="291">Contrôle la présence du code BIN de la
+										carte dans la liste grise des codes BIN.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="144"><b ixia_locid="271" translate="no">ECB</b></entry>
+									<entry ixia_locid="148">Contrôle si la carte de l'acheteur est
+										de type e-carte bleue.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="152"><b ixia_locid="274" translate="no">CARD_COMMERCIAL</b></entry>
+									<entry ixia_locid="156">Contrôle si la carte de l'acheteur est
+										une carte commerciale.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="160"><b ixia_locid="277" translate="no">SYSTEMATIC_AUTO</b></entry>
+									<entry ixia_locid="174">Contrôle si la carte de l'acheteur est
+										une carte à autorisation systématique.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="177"><b ixia_locid="280" translate="no">INCONSISTENT_COUNTRIES</b></entry>
+									<entry ixia_locid="179">Contrôle si le pays de l'adresse IP, le
+										pays émétteur de la carte de paiement, et le pays de
+										l'adresse de l'acheteur sont cohérents entre eux.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="182"><b ixia_locid="293" translate="no">NON_WARRANTY_PAYMENT</b></entry>
+									<entry ixia_locid="203">Contrôle le transfert de responsabilité
+										de la transaction.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="206"><b ixia_locid="296" translate="no">SUSPECT_IP_COUNTRY</b></entry>
+									<entry ixia_locid="208">Contrôle la présence du pays de
+										l'acheteur, identifié par son adresse IP, dans la liste des
+										pays interdits.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table></info>
+				<info ixia_locid="319">Les différentes valeurs possibles pour <b ixia_locid="213">result</b> sont :<table colsep="1" frame="all" id="table_x1d_jld_jp" rowsep="1">
+						<title ixia_locid="216">Liste des contrôles associés à la fraude</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="3.89*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="219">Valeur</entry>
+									<entry ixia_locid="222">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="225"><b ixia_locid="299" translate="no">OK</b></entry>
+									<entry ixia_locid="228">OK.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="231"><b ixia_locid="302" translate="no">WARNING</b></entry>
+									<entry ixia_locid="233">Contrôle informatif échoué.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="236"><b ixia_locid="305" translate="no">ERROR</b></entry>
+									<entry ixia_locid="239">Contrôle bloquant échoué.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table></info>
+			</step>
+			<step id="step_N107A8_N10020_N10013_N10001" ixia_locid="392">
+				<cmd ixia_locid="393">Récupérez le type de carte utilisé pour le
+					paiement.<!-- Les
+					champs à traiter sont les suivants :--></cmd>
+				<info ixia_locid="394">Deux cas de figures peuvent se présenter:</info>
+				<info ixia_locid="395">
+					<ul id="ul_kln_ckn_pp">
+						<li ixia_locid="396">Pour un paiement réalisé avec <b ixia_locid="397">une
+								seule carte</b>. Les champs à traiter sont les suivants:</li>
+					</ul>
+				</info>
+				<info ixia_locid="398">
+					<table colsep="1" frame="all" id="table_hmq_gln_pp" rowsep="1">
+						<title ixia_locid="558">Analyse de la carte utilisée pour le paiement</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="3.9*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="399">Nom du champ</entry>
+									<entry ixia_locid="400">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="401"><b ixia_locid="508" translate="no">vads_card_brand</b></entry>
+									<entry ixia_locid="402">Type de carte utilisée pour le
+										paiement.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="403"><b ixia_locid="509" translate="no">vads_card_number</b></entry>
+									<entry ixia_locid="404">Numéro de la carte utilisée pour
+										réaliser le paiement.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="405"><b ixia_locid="510" translate="no">vads_expiry_month</b></entry>
+									<entry ixia_locid="406">Mois d’expiration entre 1 et 12 (ex: 3
+										pour mars, 10 pour octobre).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="407"><b ixia_locid="511" translate="no">vads_expiry_year</b></entry>
+									<entry ixia_locid="408">Année d’expiration sur 4 chiffres (ex :
+										2023).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="409"><b ixia_locid="512" translate="no">vads_bank_code</b></entry>
+									<entry ixia_locid="410">Code de la banque émettrice</entry>
+								</row>
+								<row>
+									<entry ixia_locid="411"><b ixia_locid="513" translate="no">vads_bank_product</b></entry>
+									<entry ixia_locid="412">Code produit de la carte</entry>
+								</row>
+								<row>
+									<entry ixia_locid="413"><b ixia_locid="514" translate="no">vads_card_country</b></entry>
+									<entry ixia_locid="414">Code Pays du pays d’émission de la carte
+										(Code alpha ISO 3166-2 ex : France=FR).</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+				<info ixia_locid="415">
+					<ul id="ul_et2_gln_pp">
+						<li ixia_locid="416">Pour un <b ixia_locid="559">paiement fractionné</b> (c'est-à-dire une transaction
+							utilisant plusieurs moyens de paiement), les champs à traiter sont les
+							suivants :<p ixia_locid="560">
+								<table colsep="1" frame="all" id="table_rbq_53n_pp" rowsep="1">
+									<tgroup cols="3">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="1.84*"/>
+										<colspec colname="newCol3" colnum="3" colwidth="2.64*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="419">Nom du champ</entry>
+												<entry ixia_locid="420">Valeur</entry>
+												<entry ixia_locid="421">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="422"><b ixia_locid="515" translate="no">vads_card_brand</b></entry>
+												<entry ixia_locid="423" translate="no">MULTI </entry>
+												<entry ixia_locid="424">Plusieurs types de cartes
+												sont utilisés pour le paiement.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="425"><b ixia_locid="516" translate="no">vads_payment_seq</b></entry>
+												<entry ixia_locid="426">Au format json, voir détails
+												ci-dessous.</entry>
+												<entry ixia_locid="427">Détails des transactions
+												réalisées.</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>Le champ <b ixia_locid="545">vads_payment_seq</b> (format json)
+							décrit la séquence de paiement fractionné. Il contient les éléments :<p ixia_locid="561">
+								<ol id="ol_owc_d2y_cr">
+									<li ixia_locid="562">"trans_id" : identifiant de la transaction global à la
+										séquence de paiement.</li>
+									<li ixia_locid="563">"transaction" : tableau des transactions de la séquence. Les éléments qui le composent
+										sont les suivants :</li>
+								</ol>
+							</p></li>
+					</ul>
+				</info>
+				<info ixia_locid="552">
+					<p ixia_locid="553">
+						<table conref="tla1424076095539.xml#tla1424076095539/table_d4w_2rc_cr" id="table_rh1_p5d_cr">
+							<tgroup cols="cols_rc1_p5d_cr">
+								<tbody>
+									<row>
+										<entry ixia_locid="554"/>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</p>
+				</info>
+				<itemgroup ixia_locid="566"><u ixia_locid="567">Remarque</u> : les transactions annulées sont également présentes dans le
+					tableau.</itemgroup>
+				<info ixia_locid="477"><u ixia_locid="479"> Exemple d'un paiement réalisé avec une
+						carte prépayée et le complément en carte VISA:</u><p ixia_locid="480">
+						<codeblock ixia_locid="481" translate="no">{"trans_id":"599495",
+"transactions":       
+  {"amount":"1000",   
+	"operation_type":"DEBIT",   
+	"capture_delay":"0",   
+	"card_brand":"ILLICADO_SB",      
+	"card_number":"925000XXXXXXXXX1581",      
+	"payment_certificate":"5d49440418b44cf957ee509cccdefeb6ebaa3b23",   
+	"presentation_date":"2015-01-26T14:39:10Z",   
+	"trans_id":"599495",    
+	"ext_trans_id":"123456",   
+	"sequence_number":"1",   
+	"trans_status":"CAPTURED"
+  },    
+  {"amount":"9000",       
+	"operation_type":"DEBIT",       
+	"auth_number":"3fee2a",       
+	"capture_delay":"0",       
+	"card_brand":"VISA",      
+	"card_number":"497010XXXXXX0000",       
+	"expiry_month":"6",       
+	"expiry_year":"2015",      
+	"payment_certificate":"7696aeeb76444595a6c027fa050aa6657764178c",        
+	"presentation_date":"2015-01-26T14:39:30Z",       
+	"trans_id":"599495",        
+	"sequence_number":"2",       
+	"trans_status":"AUTHORISED"
+  }        
+]}</codeblock>
+					</p></info>
+			</step>
+			<step id="step_N10804_N1002B_N10013_N10001" ixia_locid="523">
+				<cmd ixia_locid="483">Récupérez toutes les informations concernant le détail de la
+					commande, le détail de l'acheteur et le détail de la livraison. </cmd>
+				<info ixia_locid="485">Ces données sont présentes dans la réponse que si elles ont
+					été envoyées dans le formulaire de paiement.</info>
+				<info ixia_locid="484">Leur valeur est identique à celle soumise dans le
+					formulaire.</info>
+			</step>
+			<step id="step_N1085F_N10021_N10013_N10001" ixia_locid="524">
+				<cmd ixia_locid="525">Procédez à la mise à jour de la commande.</cmd>
+			</step>
+		</steps>
+	</taskbody>
+</task>

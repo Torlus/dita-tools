@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415949868132" xml:lang="fr-fr">
+	<title ixia_locid="1">Cycle de vie d’une transaction de paiement comptant immédiat</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<fig id="fig_N10017_N10011_N10001" ixia_locid="4">
+			
+			<image href="tla1415956040247.image" ixia_locid="6" scale="45"/>
+			
+		</fig>
+		<p ixia_locid="8">Suite à la demande de paiement, plusieurs contrôles sont automatiquement mis en oeuvre : </p>
+		<p ixia_locid="9">
+			<ul id="ul_dt2_lf5_bq">
+				<li ixia_locid="10">L’authentification 3D Secure.</li>
+				<li ixia_locid="11">Différents contrôles locaux réalisés directement par la plateforme de
+					paiement (ceux-ci incluent potentiellement les contrôles liés à la souscription
+					au service additionnel de contrôles anti-fraude).</li>
+				<li ixia_locid="12">Une demande d’autorisation est également effectuée auprès de la banque de
+					l'acheteur, le jour même de la date de paiement, quelle que soit la date de
+					remise en banque demandée. <p ixia_locid="13">Si l’un de ces contrôles échoue,
+						la demande de paiement n’est pas acceptée. L'acheteur est informé du refus à
+						l’écran. Dans le <ph ixia_locid="22" translate="no">Back Office</ph>, la
+						transaction est consultable avec le statut <b ixia_locid="14">Refusé</b>.
+						</p><p ixia_locid="16">Dans le cas contraire, la transaction prend le statut
+							<b ixia_locid="17">En attente de remise</b>. </p>L'acheteur est informé
+					de l’acceptation de sa demande de paiement et est destinataire d’un e-mail de
+					confirmation. La transaction partira automatiquement en remise le jour demandé
+					par le marchand. <p ixia_locid="20">Dans l’attente de cette remise, le marchand
+						peut modifier la date de remise ainsi que le montant (modification du
+						montant uniquement à la baisse, ce cas correspond à une livraison partielle
+						par le marchand). </p><p ixia_locid="21">Si nécessaire, il peut également
+						annuler la transaction : celle-ci prend alors le statut <b ixia_locid="18">Annulé</b>. </p></li>
+			</ul>
+		</p>
+	</conbody>
+</concept>

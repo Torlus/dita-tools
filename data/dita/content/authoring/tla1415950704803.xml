@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1415950704803" xml:lang="fr-fr">
+	<title ixia_locid="7">Cycle de vie d’une transaction de paiement en plusieurs fois</title>
+	<shortdesc ixia_locid="8"/>
+	<conbody>
+		<p ixia_locid="9">La première échéance du paiement en plusieurs fois se comportera exactement comme une
+			transaction de paiement comptant immédiat ou une transaction de paiement différé selon
+			sa date de remise en banque. </p>
+		<p ixia_locid="10">Les échéances suivantes sont par défaut positionnées en statut <b ixia_locid="11">En attente
+			d’autorisation</b>. La banque de l'acheteur pourra refuser la demande d’autorisation. La
+			plateforme de paiement informe alors le marchand du refus de la transaction par e-mail. </p>
+		<p ixia_locid="12">Les demandes d’autorisation des échéances suivantes sont automatiquement effectuées comme
+			une transaction de paiement différé, donc avec deux dates possibles : <ul id="ul_gcx_hh5_bq">
+				<li ixia_locid="13">fonctionnement par défaut : le jour de la date de remise en banque
+					souhaitée,</li>
+				<li ixia_locid="21">fonctionnement avec autorisation anticipée : selon le moyen de paiement
+					sélectionné, à J-Δ (voir <xref href="tla1415949281462.xml" ixia_locid="18">tableau</xref> illustrant la validité d'une autorisation) avant la date de
+					remise en banque souhaitée. </li>
+			</ul></p>
+		<p ixia_locid="19"/>
+		<p ixia_locid="15">Les échéances ultérieures suivent le diagramme d’état suivant (cas d'une demande d'autorisation
+			non rejouée) :</p>
+		<p ixia_locid="16"/>
+		<fig id="fig_N10037_N10011_N10001" ixia_locid="17">
+			
+			<image href="tla1415956443007.image" ixia_locid="6" scale="50"/>
+		</fig>
+		<p ixia_locid="23">L’annulation d’une échéance n’implique en aucun cas l’annulation des échéances
+			suivantes restant à remettre en banque. </p>
+	</conbody>
+</concept>

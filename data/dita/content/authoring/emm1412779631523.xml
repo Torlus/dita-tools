@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1412779631523" xml:lang="fr-fr">
+	<title ixia_locid="9">Identifier le type d'opération</title>
+	<shortdesc ixia_locid="10"/>
+	<conbody>
+		<p ixia_locid="11">Le champ <b ixia_locid="8" translate="no">vads_operation_type</b> permet de différencier :</p>
+		<p ixia_locid="12">
+			<ul id="ul_tyh_hkn_rp">
+				<li ixia_locid="13">une opération de débit.</li>
+				<li ixia_locid="14">une opération de remboursement.</li>
+			</ul>
+		</p>
+		<p ixia_locid="15">
+			<table colsep="1" frame="all" id="table_ogs_nkn_rp" rowsep="1">
+				<title ixia_locid="16">Valeur du champ vads_operation_type</title>
+				<tgroup cols="2">
+					<colspec colname="c1" colnum="1" colwidth="1*"/>
+					<colspec colname="c2" colnum="2" colwidth="4*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="17">Valeur</entry>
+							<entry ixia_locid="18">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="19"><b ixia_locid="20" translate="no">DEBIT</b></entry>
+							<entry ixia_locid="21">Opération de débit.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="22"><b ixia_locid="23" translate="no">CREDIT</b></entry>
+							<entry ixia_locid="24">Opération de remboursement.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+		<p ixia_locid="25"><u ixia_locid="26">Par exemple :</u></p>
+		<p ixia_locid="27">Si <ph ixia_locid="29" translate="no"><b ixia_locid="30">vads_operation_type</b></ph> est valorisé à <ph ixia_locid="31" translate="no"><b ixia_locid="32">DEBIT</b></ph>, le script met à jour la commande et enregistre les
+			informations de la transaction.</p>
+		<p ixia_locid="28">Si <ph ixia_locid="33" translate="no"><b ixia_locid="34">vads_operation_type</b></ph> est valorisé à <ph ixia_locid="35" translate="no"><b ixia_locid="36">CREDIT</b></ph>, le script met à jour le montant payé ou ajoute
+			une nouvelle ligne de transaction dans la commande.</p>
+	</conbody>
+</concept><?oxy_options track_changes="on"?>

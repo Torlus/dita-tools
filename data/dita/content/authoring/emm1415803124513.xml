@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1415803124513" xml:lang="fr-fr">
+	<title ixia_locid="1">Traiter le retour à la boutique</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="52">Par défaut, lorsque l'acheteur revient sur le site marchand, aucun paramètre n'est
+			transmis par son navigateur.</p>
+		<p ixia_locid="53">Néanmoins si le champ <b ixia_locid="54" translate="no">vads_return_mode</b> a
+			été transmis dans le formulaire de paiement (voir chapitre <ph ixia_locid="152"><b ixia_locid="69">Gérer le retour vers le site marchand</b></ph>
+			<ph doc-type="Form_Light Moyens-Paiement integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="151" payment-method="SEPA-One-Off SEPA-Recurrent"> du guide d'implémentation du formulaire disponible sur notre site
+				documentaire <xref ixia_locid="148" keyref="SiteInternetDocumentation"/></ph>) il
+			sera possible de récupérer les données :</p>
+		<ul id="ul_wb1_txt_dp">
+			<li ixia_locid="45">soit en GET : données présentes dans l’url sous la forme :
+					?param1=valeur1&amp;param2=valeur2.</li>
+			<li ixia_locid="47">soit en POST : données envoyées dans un formulaire POST.</li>
+		</ul>
+		<p ixia_locid="57"/>
+		<p ixia_locid="58">Les données transmises au navigateur sont les mêmes que lors des
+			notifications (IPN).</p>
+		<p ixia_locid="59">Seuls les champs <b ixia_locid="9" translate="no">vads_url_check_src</b> et <b ixia_locid="10" translate="no">vads_hash</b> ne seront envoyés que dans la
+			notification instantanée.</p>
+		<p ixia_locid="60"/>
+		<p ixia_locid="61">Vous pouvez vous référer au chapitre <b ixia_locid="153">Analyser le résultat du paiement</b>
+			pour analyser ces données.</p>
+		<p ixia_locid="65"/>
+		<p ixia_locid="66"/>
+		<p ixia_locid="67"><b ixia_locid="68">Remarque</b> : le retour à la boutique doit vous permettre uniquement d'afficher un
+			contexte visuel à l'acheteur. N'utilisez pas les données reçues pour effectuer le
+			traitement en base de données. </p>
+	</conbody>
+</concept>

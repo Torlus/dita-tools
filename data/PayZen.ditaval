@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?ixiasoft.ditaval.title Formulaire de paiement - PayZen ?><?ixiasoft.ditaval.description ?><val>
+	<prop action="exclude" att="location"/>
+	<prop action="include" att="location" val="PayZen"/>
+	<prop action="exclude" att="doc-type"/>
+	<prop action="include" att="doc-type" val="Form"/>
+</val>

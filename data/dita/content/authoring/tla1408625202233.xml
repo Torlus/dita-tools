@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408625202233" xml:lang="fr-fr">
+	<title ixia_locid="27" translate="no">vads_identifier</title>
+	<shortdesc ixia_locid="28"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="3.76*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="5"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="26">Identifiant unique (alias ou référence unique de mandat) associé à un
+							moyen de paiement.<p ixia_locid="54">
+								<ul>
+									<li ixia_locid="47">Soit cet identifiant est généré par la
+											plateforme.<p ixia_locid="48">Dans ce cas, ce paramètre
+											ne doit pas être renseigné.</p></li>
+									<li ixia_locid="50">
+										<p ixia_locid="51">Soit cet identifiant est généré par le
+											site marchand.</p>
+										<p ixia_locid="52">Dans ce cas, ce paramètre doit être renseigné avec la
+											valeur de l’identifiant souhaité. <b ixia_locid="53">Attention, il incombe au site marchand de s’assurer
+												de l’unicité des identifiants</b>. Toute demande
+											d'enregistrement contenant un identifiant déjà existant,
+											sera rejetée, et provoquera l’affichage d’un message
+											d’erreur.</p>
+									</li>
+								</ul>
+							</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="55"><b ixia_locid="23">Format</b></entry>
+						<entry ixia_locid="57" translate="no">ans..50</entry>
+					</row>
+					<row>
+						<entry ixia_locid="56"><b ixia_locid="59">Code d'erreur</b></entry>
+						<entry ixia_locid="58" translate="no">30</entry>
+					</row>
+					<row>
+						<entry ixia_locid="32"><b ixia_locid="35">Catégorie</b></entry>
+						<entry ixia_locid="34">Informations sur l'abonnement.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

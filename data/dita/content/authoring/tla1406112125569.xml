@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406112125569" xml:lang="fr-fr">
+	<title ixia_locid="1">Définir les URL de retour en fonction du résultat du paiement</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4"/>
+		</context>
+		<steps>
+			<step id="step_N1001F_N1001C_N10011_N10001" ixia_locid="5">
+				<cmd ixia_locid="6">Utilisez l’ensemble des champs nécessaires à votre cas d’utilisation (voir
+					chapitre <b ixia_locid="143"><xref href="emm1405083451541.xml" ixia_locid="140">Générer un formulaire de paiement</xref></b>) pour construire votre
+					formulaire de paiement.</cmd>
+			</step>
+			<step id="step_N10028_N1001C_N10011_N10001" ixia_locid="7">
+				<cmd ixia_locid="8">Utilisez les champs facultatifs présentés dans le tableau ci-dessous pour
+					concevoir le formulaire de paiement adapté à vos besoins.</cmd>
+				<itemgroup ixia_locid="141">Si aucune URL n’est valorisée dans le formulaire, la valeur
+					configurée dans le <ph ixia_locid="142" translate="no">Back Office</ph> sera prise en
+					compte.</itemgroup>
+				<info ixia_locid="9">
+					<table colsep="1" frame="all" id="table_syz_kfy_v4" rowsep="1">
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="3*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="10">Nom du champ</entry>
+									<entry ixia_locid="11">Descrition</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="12"><b ixia_locid="35" translate="no"><xref href="tla1408639383258.xml" ixia_locid="36">vads_url_success</xref></b></entry>
+									<entry ixia_locid="13">URL où sera redirigé l’acheteur, en cas de succès du paiement, après
+										appui sur  "retourner à la boutique".</entry>
+								</row>
+								<row>
+									<entry ixia_locid="14"><b ixia_locid="37" translate="no"><xref href="tla1408639165197.xml" ixia_locid="38">vads_url_refused</xref></b></entry>
+									<entry ixia_locid="15">URL où sera redirigé l’acheteur, en cas de refus du paiement, après
+										appui sur "retourner à la boutique".</entry>
+								</row>
+								<row>
+									<entry ixia_locid="16"><b ixia_locid="39" translate="no"><xref href="tla1408638742584.xml" ixia_locid="40">vads_url_cancel</xref></b></entry>
+									<entry ixia_locid="17">URL où sera redirigé l’acheteur après appui sur "annuler et
+										retourner à la boutique" avant d'avoir procédé au
+										paiement.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="18"><b ixia_locid="41" translate="no"><xref href="tla1408639045339.xml" ixia_locid="42">vads_url_error</xref></b></entry>
+									<entry ixia_locid="19">URL où sera redirigé l’acheteur en cas d'erreur de traitement par la
+										plateforme de paiement.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</info>
+			</step>
+			<step id="step_N10092_N1001C_N10011_N10001" ixia_locid="20">
+				<cmd ixia_locid="21">Calculez la valeur du champ <b ixia_locid="22" translate="no">signature</b>
+					en utilisant l’ensemble des champs de votre formulaire, dont le nom commence par
+						<b ixia_locid="29" translate="no">vads_</b> (voir chapitre <b ixia_locid="34"><xref href="emm1405088305497.xml" ixia_locid="30">Calculer
+							la signature</xref></b>).</cmd>
+			</step>
+		</steps>
+		<result id="result_N100A1_N10011_N10001" ixia_locid="24">
+			<p ixia_locid="25"><u ixia_locid="26">Exemple de formulaire de paiement avec définition d'URL de
+					retour en fonction du résultat du
+				paiement:</u><codeblock ixia_locid="27">&lt;form method="POST" action="<xref ixia_locid="31" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="3000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="639" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="640" location="OSB" platform="OSB">953</ph><ph ixia_locid="641" location="Innopay" platform="Innopay">756</ph><ph ixia_locid="642" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140526101407" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="239848" /&gt;
+<b ixia_locid="28">&lt;input type="hidden" name="vads_url_cancel" value="http://demo.com/cancel.php" /&gt;
+&lt;input type="hidden" name="vads_url_error" value="http://demo.com/error.php" /&gt;
+&lt;input type="hidden" name="vads_url_refused" value="http://demo.com/refused.php" /&gt;
+&lt;input type="hidden" name="vads_url_success" value="http://demo.com/success.php" /&gt;</b>
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="86b2a17b9a5fcefb6c0120c57b25ec86ad1704ee"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

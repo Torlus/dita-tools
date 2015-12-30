@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<task id="tla1406107961818" xml:lang="fr-fr">
+	<title ixia_locid="1">Transmettre les données de livraison</title>
+	<shortdesc ixia_locid="2"/>
+	<taskbody>
+		<context id="context_N10014_N10011_N10001" ixia_locid="3">
+			<p ixia_locid="4">Le marchand peut transmettre les données de livraison de l'acheteur (adresse,
+				civilité, numéro de téléphone etc…). <ph doc-type="Moyens-Paiement PayPal" ixia_locid="54" payment-method="PayPal">Pour bénéficier de la protection des
+					marchands PayPal, ces données doivent obligatoirement être transmises via le
+					formulaire de paiement. La protection ne concerne que les commandes donnant lieu
+					à une expédition. L'adresse de livraison connue chez PayPal doit être exactement
+					celle à laquelle est envoyée le colis.</ph><ph doc-type="Back-Office" ixia_locid="515">Pour déclencher une ou plusieurs actions en fonction du pays de
+					l'acheteur, le champ <ph ixia_locid="516" translate="no"><b ixia_locid="517">vads_ship_to_country</b></ph> doit obligatoirement être transmis via
+					votre formulaire de paiement.</ph></p>
+			<p doc-type="Moyens-Paiement" ixia_locid="518" payment-method="Klarna">Si ces données ne sont pas envoyées dans le formulaire de paiement, les données de
+				facturation seront utilisées.</p>
+			<p ixia_locid="111">Ces données seront affichées dans le <ph ixia_locid="113" translate="no">Back Office</ph> en consultant le détail de la transaction
+				(onglet <b ixia_locid="112">Livraison</b>).</p>
+		</context>
+		<steps id="steps_e1w_lwx_v4">
+			<step conref="tla1406108665877.xml#tla1406108665877/step_N10020_N1001D_N10011_N10001" id="step_N10046_N10043_N10013_N10001" ixia_locid="643">
+				<cmd ixia_locid="644"/>
+			</step>
+			<step id="step_N1002A_N1001D_N10011_N10001" ixia_locid="529">
+				<cmd ixia_locid="530">Utilisez les champs facultatifs ci-dessous en fonction de vos
+					besoins.</cmd>
+				<itemgroup ixia_locid="49">Ces champs seront renvoyés dans la réponse avec la valeur
+					transmise dans le formulaire.</itemgroup>
+				<info ixia_locid="531">
+					<table colsep="1" frame="all" id="table_qjp_dbk_jp" rowsep="1">
+						<title ixia_locid="532">Liste des champs - Détails de la livraison</title>
+						<tgroup cols="2">
+							<colspec colname="c1" colnum="1" colwidth="1*"/>
+							<colspec colname="c2" colnum="2" colwidth="2.72*"/>
+							<thead>
+								<row>
+									<entry ixia_locid="533">Nom du champ</entry>
+									<entry ixia_locid="534">Description</entry>
+								</row>
+							</thead>
+							<tbody>
+								<row>
+									<entry ixia_locid="535"><b ixia_locid="34">vads_ship_to_status</b></entry>
+									<entry ixia_locid="536">Statut (<b ixia_locid="57">PRIVATE</b>:
+										pour particulier / <b ixia_locid="58">COMPANY</b> pour une
+										entreprise).</entry>
+								</row>
+								<row>
+									<entry ixia_locid="10">vads_ship_to_name</entry>
+									<entry ixia_locid="11"><b ixia_locid="56">Déprécié</b>. Nom de
+										l’acheteur. Utilisez <b ixia_locid="62">vads_ship_to_first_name</b> et <b ixia_locid="63">vads_ship_to_last_name</b>.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="12"><b ixia_locid="36">vads_ship_to_first_name</b><ph doc-type="Moyens-Paiement" ixia_locid="537" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="13">Prénom.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="64"><b ixia_locid="65">vads_ship_to_last_name</b><ph doc-type="Moyens-Paiement" ixia_locid="538" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="66">Nom.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="67"><b ixia_locid="68">vads_ship_to_legal_name</b><ph doc-type="Moyens-Paiement" ixia_locid="565" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="69">Raison sociale.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="16"><b ixia_locid="38">vads_ship_to_phone_num</b><ph doc-type="Moyens-Paiement" ixia_locid="566" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="17">Numéro de téléphone.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="18"><b ixia_locid="540">vads_ship_to_street_number</b></entry>
+									<entry ixia_locid="19">Numéro de rue.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="20"><b ixia_locid="40">vads_ship_to_street</b><ph doc-type="Moyens-Paiement" ixia_locid="541" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="21">Adresse postale.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="22"><b ixia_locid="542">vads_ship_to_street2</b><ph doc-type="Moyens-Paiement" ixia_locid="543" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="23">Deuxième ligne d’adresse.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="544"><b ixia_locid="545">vads_ship_to_district</b></entry>
+									<entry ixia_locid="546">Quartier.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="26"><b ixia_locid="43">vads_ship_to_zip</b><ph doc-type="Moyens-Paiement" ixia_locid="547" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="27">Code postal.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="28"><b ixia_locid="44">vads_ship_to_city</b><ph doc-type="Moyens-Paiement" ixia_locid="548" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="29">Ville.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="30"><b ixia_locid="549">vads_ship_to_state</b><ph doc-type="Moyens-Paiement" ixia_locid="550" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="31">Etat / Région.</entry>
+								</row>
+								<row>
+									<entry ixia_locid="32"><b ixia_locid="46">vads_ship_to_country</b><ph doc-type="Moyens-Paiement" ixia_locid="551" payment-method="PayPal">*</ph></entry>
+									<entry ixia_locid="33">Code pays suivant la norme ISO 3166<ph doc-type="Back-Office" ixia_locid="61"> (obligatoire
+											pour déclencher une ou plusieurs actions si le profil <b ixia_locid="60">Contrôle du pays de la livraison</b>
+											est activé).</ph></entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+					
+				</info>
+				<info doc-type="Moyens-Paiement" ixia_locid="555" payment-method="PayPal"><i ixia_locid="556"><b ixia_locid="557">Remarque :</b></i></info>
+				<info doc-type="Moyens-Paiement" ixia_locid="558" payment-method="PayPal"><i ixia_locid="559">Les champs marqués d'une astérisque (*) sont obligatoires et doivent être
+						correctement renseignés pour bénéficier de la protection des marchands
+						PayPal. Cette liste est donnée à titre inficatif et peut faire l'objet d'une
+						évolution chez PayPal. Veuillez lire les Conditions d’Utilisation de PayPal
+						pour bénéficier de cette protection des marchands.</i></info>
+				<info doc-type="Moyens-Paiement" ixia_locid="519" payment-method="Klarna"><i ixia_locid="520"><b ixia_locid="521">Remarque :</b></i></info>
+				<info doc-type="Moyens-Paiement" ixia_locid="522" payment-method="Klarna"><i ixia_locid="523">En ce qui concerne la TVA appliquée à la livraison, la
+						valeur utilisée est celle définie lors de la création du contrat auprès de
+						l'interlocuteur de votre plateforme de paiement. Si aucune valeur n'a été
+						spécifiée, la valeur de la TVA par défaut du pays de la boutique est
+						utilisée.</i></info>
+			</step>
+			<step conref="tla1406108665877.xml#tla1406108665877/step_N100F4_N10021_N10013_N10001" id="step_N1007F_N10043_N10013_N10001" ixia_locid="645">
+				<cmd ixia_locid="646"/>
+			</step>
+		</steps>
+		<result doc-type="Form Identifiant_Abonnement Identifiant_Abonnement_Allemagne Identifiant_Abonnement_Bresil integration integration-Allemagne integration-Bresil" id="result_N10113_N10011_N10001" ixia_locid="156">
+			<p ixia_locid="53"/>
+			<p ixia_locid="152"><u ixia_locid="564">Exemple de formulaire de paiement avec
+					informations sur la
+				livraison</u><codeblock ixia_locid="160">&lt;form method="POST" action="<xref ixia_locid="51" keyref="URLpagePaiement"/>"&gt;
+&lt;input type="hidden" name="vads_action_mode" value="INTERACTIVE" /&gt;
+&lt;input type="hidden" name="vads_amount" value="4000" /&gt;
+&lt;input type="hidden" name="vads_capture_delay" value="0" /&gt;
+&lt;input type="hidden" name="vads_ctx_mode" value="TEST" /&gt;
+&lt;input type="hidden" name="vads_currency" value=<ph ixia_locid="130" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"978"</ph><ph ixia_locid="131" location="OSB" platform="OSB">"953"</ph><ph ixia_locid="138" location="Innopay" platform="Innopay">"756"</ph><ph ixia_locid="524" location="PayZen_Brazil">986</ph> /&gt;
+&lt;input type="hidden" name="vads_page_action" value="PAYMENT" /&gt;
+&lt;input type="hidden" name="vads_payment_config" value="SINGLE" /&gt;
+<b ixia_locid="47">&lt;input type="hidden" name="vads_ship_to_city" value="la ville de livraison" /&gt;
+&lt;input type="hidden" name="vads_ship_to_country" value=<ph ixia_locid="133" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">"FR"</ph><ph ixia_locid="135" location="OSB" platform="OSB">"PF"</ph><ph ixia_locid="525" location="PayZen_Brazil">BR</ph><ph ixia_locid="526" location="Innopay" platform="Innopay">CH</ph> /&gt;
+&lt;input type="hidden" name="vads_ship_to_name" value="le nom du lieu de livraison" /&gt;
+&lt;input type="hidden" name="vads_ship_to_street" value="la rue pour effectuer la livraison" /&gt;
+&lt;input type="hidden" name="vads_ship_to_street_number" value="10" /&gt;
+&lt;input type="hidden" name="vads_ship_to_zip" value="31670" /&gt;</b>
+&lt;input type="hidden" name="vads_site_id" value="12345678" /&gt;
+&lt;input type="hidden" name="vads_trans_date" value="20140327143509" /&gt;
+&lt;input type="hidden" name="vads_trans_id" value="561095" /&gt;
+&lt;input type="hidden" name="vads_version" value="V2" /&gt;
+&lt;input type="hidden" name="signature" value="52a8c87ec10b35e6fd1769e7189c26a6e279566e"/&gt;
+&lt;input type="submit" name="payer" value="Payer"/&gt;
+&lt;/form&gt;</codeblock></p>
+		</result>
+	</taskbody>
+</task>

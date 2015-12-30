@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1416328457246" xml:lang="fr-fr">
+	<title ixia_locid="65">Information sur les transactions de don</title>
+	<shortdesc ixia_locid="66"/>
+	<conbody>
+		<p ixia_locid="67">
+			<table colsep="1" frame="all" id="table_qlf_yb1_dq" rowsep="1">
+				<title ixia_locid="101">Liste des paramètres - Informations sur les transactions de don</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="2.88*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="4.59*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="68">Nom du champ</entry>
+							<entry ixia_locid="69">Format</entry>
+							<entry ixia_locid="70">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="71"><b ixia_locid="95"><xref href="tla1416319402112.xml" ixia_locid="72" translate="no">vads_ext_info_donation</xref></b></entry>
+							<entry ixia_locid="73" translate="no">n..12</entry>
+							<entry ixia_locid="74">Montant du don exprimé dans la plus petite unité de la monnaie ou
+									devise<ph ixia_locid="297" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour l'euro)</ph>
+								<ph ixia_locid="298" location="Innopay" platform="Innopay">(le
+									centime pour le CHF)</ph>.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="87"><b ixia_locid="99"><xref href="tla1416320032761.xml" ixia_locid="88" translate="no">vads_ext_info_donation_contribution</xref></b></entry>
+							<entry ixia_locid="89" translate="no">n..12</entry>
+							<entry ixia_locid="90">Montant <ph ixia_locid="105" location="Innopay PayZen PayZen_Brazil PayZen_Germany Systempay" platform="PayZen Systempay Innopay">en centimes</ph> de la
+								contribution exprimé dans la plus petite unité de la monnaie ou
+								devise <ph ixia_locid="299" location="PayZen PayZen_Germany Systempay" platform="PayZen Systempay">(le centime pour l'euro)</ph>
+								<ph ixia_locid="300" location="Innopay" platform="Innopay">(le
+									centime pour le CHF)</ph>.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="83"><b ixia_locid="98"><xref href="tla1416319856371.xml" ixia_locid="84" translate="no">vads_ext_info_donation_merchant</xref></b></entry>
+							<entry ixia_locid="85" translate="no">n8</entry>
+							<entry ixia_locid="86">Identifiant de la boutique sur laquelle le don
+								est effectué.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="75"><b ixia_locid="96"><xref href="tla1416319586041.xml" ixia_locid="76" translate="no">vads_ext_info_donation_recipient</xref></b></entry>
+							<entry ixia_locid="77" translate="no">n..20</entry>
+							<entry ixia_locid="78">Identifiant HelloAsso de l'association qui a reçu
+								le don.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="79"><b ixia_locid="97"><xref href="tla1416319785868.xml" ixia_locid="80" translate="no">vads_ext_info_donation_recipient_name</xref></b></entry>
+							<entry ixia_locid="81" translate="no">string</entry>
+							<entry ixia_locid="82">Nom de l'association qui a reçu le don.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="91"><b ixia_locid="100"><xref href="tla1416242779600.xml" ixia_locid="92" translate="no">vads_risk_primery_warranty</xref></b></entry>
+							<entry ixia_locid="93" translate="no">string (enum)</entry>
+							<entry ixia_locid="94">Permet de surcharger la configuration du contrôle de risque <b ixia_locid="64">Contrôle du transfert de responsabilité de la
+									transaction primaire</b>.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

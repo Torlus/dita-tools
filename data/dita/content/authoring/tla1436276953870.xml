@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "lyra-ditabase.dtd">
+<reference id="tla1436276953870" xml:lang="fr-fr">
+	<title ixia_locid="357">vads_risk_assessment_result</title>
+	<shortdesc ixia_locid="358"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_knn_swz_r4" rowsep="0">
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="4.47*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="29"><b ixia_locid="19">Description</b></entry>
+						<entry ixia_locid="32">Champ retourné dans la réponse.<p ixia_locid="356">Retourne le résultat
+								de l'analyse de gestion des risques avancée effectuée par la
+								plateforme de paiement.</p><p ixia_locid="122">Renvoyé dans l'URL de
+								notification instantanée (également appelée IPN) et dans les
+								paramètres de retour.</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="234"><b ixia_locid="35">Format</b></entry>
+						<entry ixia_locid="237" translate="no">ans</entry>
+					</row>
+					<row>
+						<entry ixia_locid="235"><b ixia_locid="49">Valeurs possibles</b></entry>
+						<entry ixia_locid="238"/>
+					</row>
+					<row>
+						<entry ixia_locid="236" nameend="c2" namest="c1">
+							<p ixia_locid="239">
+								<table colsep="1" frame="all" id="table_wwg_wsm_ms" rowsep="1">
+									<!--<title ixia_locid="359">Liste des valeurs possibles pour le champ <b ixia_locid="360"><ph ixia_locid="361" translate="no">vads_risk_assessment_result</ph></b></title>-->
+									<tgroup cols="2">
+										<colspec colname="c1" colnum="1" colwidth="1*"/>
+										<colspec colname="c2" colnum="2" colwidth="2.28*"/>
+										<thead>
+											<row>
+												<entry ixia_locid="362">Valeurs</entry>
+												<entry ixia_locid="363">Description</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry ixia_locid="364"><ph ixia_locid="365" translate="no">ENABLE_3DS</ph></entry>
+												<entry ixia_locid="366">3D Secure activé.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="367"><ph ixia_locid="368" translate="no">DISABLE_3DS</ph></entry>
+												<entry ixia_locid="369">3D Secure désactivé.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="370"><ph ixia_locid="371" translate="no">MANUAL_VALIDATION</ph></entry>
+												<entry ixia_locid="372">La transaction est créée en validation
+													manuelle.<p ixia_locid="373">La remise du paiement est bloquée
+														temporairement pour permettre au marchand de
+														procéder à toutes les vérifications
+														souhaitées.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="374"><ph ixia_locid="375" translate="no">REFUSE</ph></entry>
+												<entry ixia_locid="376">La transaction est refusée.</entry>
+											</row>
+											<row>
+												<entry ixia_locid="377"><ph ixia_locid="378" translate="no">RUN_RISK_ANALYSIS</ph></entry>
+												<entry ixia_locid="379">Appel à un analyseur de risques externes sous condition que le
+												marchand possède un contrat.<p ixia_locid="380">Se
+												référer à la description du champ <b ixia_locid="386"><ph ixia_locid="387" translate="no">vads_risk_analysis_result</ph></b>
+												pour identifier la liste des valeurs possibles et
+												leur description.</p></entry>
+											</row>
+											<row>
+												<entry ixia_locid="381"><ph ixia_locid="382" translate="no">INFORM</ph></entry>
+												<entry ixia_locid="383">Une alerte est remontée. <p ixia_locid="384">Le marchand est
+													averti qu’un risque est identifié.</p><p ixia_locid="385">Le
+														marchand est informé via une ou plusieurs des
+														règles du centre de notification (URL de
+														notification, e-mail ou SMS).</p></entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="39"><b ixia_locid="23">Catégorie</b></entry>
+						<entry ixia_locid="40">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

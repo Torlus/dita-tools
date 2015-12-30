@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410518407791" xml:lang="fr-fr">
+	<title ixia_locid="43">Personnalisation de la page de paiement</title>
+	<shortdesc ixia_locid="44"/>
+	<conbody>
+		<p ixia_locid="45"/>
+		<p ixia_locid="91">
+			<table colsep="1" frame="all" id="table_qlf_yb1_dq" rowsep="1">
+				<title ixia_locid="92">Liste des paramètres - Personnalisation de la page de paiement</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="1.01*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="1.59*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="68">Nom du champ</entry>
+							<entry ixia_locid="69">Format</entry>
+							<entry ixia_locid="70">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="71"><xref href="tla1406127047143.xml" ixia_locid="93"><b ixia_locid="94" translate="no">vads_available_languages</b></xref></entry>
+							<entry ixia_locid="73">langue1;langue2;langue3</entry>
+							<entry ixia_locid="74">Permet de spécifier les langues disponibles sur
+								la page de paiement sous forme de liste.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="75"><xref href="tla1406125864809.xml" ixia_locid="95"><b ixia_locid="96" translate="no">vads_language</b></xref></entry>
+							<entry ixia_locid="77" translate="no">a2</entry>
+							<entry ixia_locid="78">Définit la langue dans laquelle est affichée la
+								page de paiement (norme ISO 639-1).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="79"><xref href="tla1408635796483.xml" ixia_locid="97"><b ixia_locid="98" translate="no">vads_shop_name</b></xref></entry>
+							<entry ixia_locid="81" translate="no">ans..127</entry>
+							<entry ixia_locid="82">Permet de définir le nom de la boutique qui apparait dans les e-mails
+								de confirmation de paiement et sur le récapitulatif de la
+								transaction.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="83"><xref href="tla1408635865701.xml" ixia_locid="99"><b ixia_locid="100" translate="no">vads_shop_url</b></xref></entry>
+							<entry ixia_locid="85" translate="no">ans..127</entry>
+							<entry ixia_locid="86">Permet de surcharger l'URL de la boutique qui
+								apparait sur la page de paiement et les e-mails de confirmation de
+								paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="87"><xref href="tla1408636286614.xml" ixia_locid="101"><b ixia_locid="102" translate="no">vads_theme_config</b></xref></entry>
+							<entry ixia_locid="89">code1=valeur1;code2=valeur2</entry>
+							<entry ixia_locid="90">Permet de personnaliser certains éléments de la
+								page de paiement.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

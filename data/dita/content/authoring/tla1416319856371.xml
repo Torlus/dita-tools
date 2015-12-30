@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1416319856371" xml:lang="fr-fr">
+	<title ixia_locid="87" translate="no">vads_ext_info_donation_merchant </title>
+	<shortdesc ixia_locid="88"/>
+	<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="4.29*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="48"><b ixia_locid="50">Description</b></entry>
+						<entry ixia_locid="52">
+							<p ixia_locid="89">Paramètre renvoyé uniquement dans la notification instantanée (également
+								appelée IPN) en cas de don.</p>
+							<p ixia_locid="86">Identifiant de la boutique sur laquelle le don est
+								effectué.</p>
+						</entry>
+					</row>
+					<row>
+						<entry ixia_locid="58"><b ixia_locid="60">Format</b></entry>
+						<entry ixia_locid="62" translate="no">n8</entry>
+					</row>
+					<row>
+						<entry ixia_locid="77"><b ixia_locid="78">Catégorie</b></entry>
+						<entry ixia_locid="80">Information sur les transactions de don.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

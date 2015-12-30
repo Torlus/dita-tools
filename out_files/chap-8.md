@@ -24,6 +24,7 @@ Définir le mode de remise en banque
 <img src="/docs_img/tla1412755027294.image" alt="DefinirModeRemiseBanque"/> 
 <p>
  
+
 <ul>
  
  <li>
@@ -1058,6 +1059,7 @@ Vous disposez de:
  
 <p>
  
+
 <ul>
  
  <li>
@@ -1119,10 +1121,12 @@ Dans le formulaire de paiement, le marchand peut surcharger la configuration du 
  
  <p>
  
+
  <ul>
  
   <li>
 Utiliser 4 URL différentes en fonction du résultat du paiement:
+
   <ul>
  
    <li>
@@ -1637,6 +1641,7 @@ Vous pouvez personnaliser certains éléments de la page de paiement:
  
 <p>
  
+
 <ul>
  
  <li>
@@ -1804,6 +1809,7 @@ Valorisez le champ
  
   <p>
  
+
   <ul>
  
    <li>
@@ -2215,6 +2221,7 @@ Cette fonctionnalité :
 
 <p>
  
+
 <ul>
  
  <li>
@@ -2235,6 +2242,7 @@ ne permet pas de réaliser un paiement avec l&#x27;authentification 3D Secure.
  
 <p>
 Cette fonctionnalité ne fonctionne pas pour les paiements avec redirection, tels que :
+
 <ul>
  
  <li>

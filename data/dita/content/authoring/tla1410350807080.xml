@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410350807080" xml:lang="fr-fr">
+	<title ixia_locid="1">Visualiser les paramètres classés par catégorie</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Référez-vous à la catégorie souhaitée pour obtenir la liste des paramètres sous-jacents.</p>
+		<p ixia_locid="4">
+			<ul id="ul_ukj_gzq_jp">
+				<li ixia_locid="5"><xref href="tla1410351589465.xml" ixia_locid="6">Informations sur
+						l'authentification 3DS</xref>.</li>
+				<li ixia_locid="30"><xref href="tla1411025757958.xml" ixia_locid="27">Informations sur
+						l'abonnement</xref>.</li>
+				<li ixia_locid="31"><xref href="tla1410534868650.xml" ixia_locid="21">Informations sur
+						l'acheteur</xref>.</li>
+				<li ixia_locid="7"><xref href="tla1410533143029.xml" ixia_locid="19">Informations sur le moyen
+						de paiement</xref>.</li>
+				<li ixia_locid="8"><xref href="tla1410525874342.xml" ixia_locid="20">Informations sur la commande</xref>.</li>
+				<li ixia_locid="10"><xref href="tla1410522989073.xml" ixia_locid="22">Informations sur la livraison</xref>.</li>
+				<li ixia_locid="32"><xref href="tla1411030317713.xml" ixia_locid="24">Informations
+					techniques</xref>.</li>
+				<li ixia_locid="17"><xref href="tla1411031267607.xml" ixia_locid="23">Informations sur la
+					transaction</xref>.</li>
+				<li ixia_locid="14"><xref href="tla1416328457246.xml" ixia_locid="29">Informations sur les
+						transactions de don</xref>.</li>
+				<li ixia_locid="15"><xref href="tla1410518407791.xml" ixia_locid="25">Personnalisation de la page de la page de
+						paiement</xref>.</li>
+				<li ixia_locid="16"><xref href="tla1410514133139.xml" ixia_locid="18">Redirection automatique</xref>.</li>
+			</ul>
+		</p>
+	</conbody>
+</concept>

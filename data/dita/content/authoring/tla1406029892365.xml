@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1406029892365" xml:lang="fr-fr">
+	<title ixia_locid="1">Définir les étapes d'un paiement - Vue marchand</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="3">Le paiement en ligne, côté marchand, se déroule de la manière suivante:</p>
+		<fig id="fig_x2y_3hr_v4" ixia_locid="4">
+			<title ixia_locid="5">Cinématique des échanges – Vue marchand</title>
+			<image id="image_lyl_jhr_v4" ixia_locid="6" keyref="DiagrammeFluxMarchand" scale="60"/>	
+			<!--<image href="tla1412698334734.image" ixia_locid="21" scale="100"/>-->
+		</fig>
+		<p ixia_locid="7">
+			<ol id="ol_z4h_d3r_v4">
+				<li ixia_locid="8">L’acheteur valide son panier.</li>
+				<li ixia_locid="9">Le site marchand construit le formulaire à partir des données du panier de
+					l’acheteur.</li>
+				<li ixia_locid="10">Le site marchand redirige l’acheteur vers la plateforme de paiement. Cette
+					redirection se fait sous la forme d'un formulaire HTML POST en HTTPS. Les
+					paramètres qui le composent sont décrits dans le chapitre <b ixia_locid="11"><xref href="emm1405083451541.xml" ixia_locid="19">Générer un formulaire
+							de paiement</xref></b>.</li>
+				<li ixia_locid="12">Après saisie des données du moyen de paiement par l’acheteur, la plateforme
+					procède au paiement.</li>
+				<li ixia_locid="13">En fonction du paramétrage de la boutique <ph doc-type="integration Form" ixia_locid="18">(voir chapitre <b ixia_locid="14">Paramétrer les
+							notifications</b>)</ph>, un appel est automatiquement réalisé afin de
+					transmettre le résultat au site marchand. </li>
+				<li ixia_locid="15">Le site marchand analyse et traite le résultat du paiement. </li>
+				<li ixia_locid="16">Il met à jour la base de données (état de la commande, état du stock etc…).</li>
+				<li ixia_locid="17">L’acheteur est informé du résultat du paiement sur la plateforme. S’il décide de
+					retourner sur le site marchand, ce dernier le remercie et lui affiche l’état de
+					sa commande.</li>
+			</ol>
+		</p>
+	</conbody>
+</concept>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405084624469" xml:lang="fr-fr">
+	<title ixia_locid="1">Utiliser une i-frame</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4">Une i-frame (in line frame) est utilisée pour afficher une page web dans une
+			autre page web.</p>
+		<!--<p ixia_locid="14">Par défaut et pour des raisons de sécurité, l’utilisation d'une i-frame pour afficher la page de paiement n'est pas activée.</p><p ixia_locid="16">Cependant, il est possible d'activer son utilisation. Veuillez contacter l'interlocuteur de votre plateforme de paiement si vous souhaitez utiliser une i-frame.</p>-->
+		<!--<p ixia_locid="17"><u ixia_locid="22"><i ixia_locid="18">Remarque :</i></u></p>--><p ixia_locid="11"><!--<i ixia_locid="19">L'utilisation d'une i-frame est soumise à la condition d'obtenir un certificat de conformité au standard PCI.</i>--></p><p ixia_locid="12"><!--<i ixia_locid="20">Le PCI DSS est un standard de sécurité international auquel doivent se conformer tous les marchands qui vendent des biens ou des services en ligne. Cet agrément est un gage de sécurité indispensable pour le marchand et l'acheteur (sécurité des informations bancaires).</i>--></p>
+		<!--<p ixia_locid="23"><i ixia_locid="24">Selon le volume de transactions du site marchand, cette conformité s'évalue soit par un audit effectué par un auditeur agréé ou soit par un questionnaire d’auto-évaluation à remplir par le marchand et à transmettre à sa banque. Il existe 5 types de questionnaires d'auto-évaluation (SAQ pour Self Assessment Questionnaire suivi d'un identifiant A ou B ou C-VT ou C ou D). Chacun est adapté à l'activité du site marchand. Cette conformité doit être vérifiée annuellement ainsi que par des tests techniques validant la bonne protection du site marchand.</i></p>-->
+		<p ixia_locid="21"/>
+		<p ixia_locid="6"><u ixia_locid="13">Exemples de codes</u>
+			:<codeblock ixia_locid="7">&lt;FRAMESET&gt;     
+	&lt;FRAME SRC="<xref ixia_locid="9" keyref="URLpagePaiement"/>"&gt;  
+&lt;/FRAMESET&gt;</codeblock></p>
+		<codeblock ixia_locid="8">&lt;iframe src="<xref ixia_locid="10" keyref="URLpagePaiement"/>"&gt;&lt;/iframe&gt;</codeblock>
+	</conbody>
+</concept>

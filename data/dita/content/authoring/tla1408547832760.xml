@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<reference id="tla1408547832760" xml:lang="fr-fr">
+	<title ixia_locid="16" translate="no">vads_auth_number</title>
+	<shortdesc ixia_locid="17"/>
+		<refbody>
+		<table colsep="0" frame="none" id="table_N10018_N10014_N10011_N10001" rowsep="0">
+			<tgroup align="left" cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="c2" colnum="2" colwidth="4.29*"/>
+				<tbody>
+					<row>
+						<entry ixia_locid="48"><b ixia_locid="50">Description</b></entry>
+						<entry ixia_locid="52">Champ retourné dans la réponse.<p ixia_locid="20">Numéro d'autorisation
+								retourné par le serveur bancaire, si disponible (sinon
+							vide).</p></entry>
+					</row>
+					<row>
+						<entry ixia_locid="58"><b ixia_locid="60">Format</b></entry>
+						<entry ixia_locid="62" translate="no">an..6</entry>
+					</row>
+					<row>
+						<entry ixia_locid="77"><b ixia_locid="78">Catégorie</b></entry>
+						<entry ixia_locid="80">Informations sur la transaction.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		</refbody>
+</reference>

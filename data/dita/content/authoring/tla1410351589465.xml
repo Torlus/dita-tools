@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1410351589465" xml:lang="fr-fr">
+	<title ixia_locid="52">Authentification 3DS</title>
+	<shortdesc ixia_locid="53"/>
+	<conbody>
+		<p ixia_locid="54">
+			<table colsep="1" frame="all" id="table_qc5_kbr_jp" rowsep="1">
+				<title ixia_locid="113">Liste des paramètres - Authentification 3DS</title>
+				<tgroup cols="3">
+					<colspec colname="c1" colnum="1" colwidth="1.99*"/>
+					<colspec colname="newCol2" colnum="2" colwidth="1*"/>
+					<colspec colname="c2" colnum="3" colwidth="4.01*"/>
+					<thead>
+						<row>
+							<entry ixia_locid="55">Nom du champ</entry>
+							<entry ixia_locid="56">Format</entry>
+							<entry ixia_locid="57">Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry ixia_locid="75"><b ixia_locid="76"><xref href="tla1408636944655.xml" ixia_locid="77" translate="no">vads_threeds_cavv</xref></b></entry>
+							<entry ixia_locid="78" translate="no">ans..28</entry>
+							<entry ixia_locid="79"><p ixia_locid="80">Désigne la vérification de
+									l’authentification du porteur par l’ACS.</p>Il est valorisé par
+								le serveur d’authentification 3DS (ACS) lorsque l’acheteur s’est
+								correctement authentifié (vads_threeds_status vaut « Y » ou « A
+								»).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="83"><b ixia_locid="84"><xref href="tla1408637038608.xml" ixia_locid="85" translate="no">vads_threeds_cavvAlgorithm</xref></b></entry>
+							<entry ixia_locid="86" translate="no">n1</entry>
+							<entry ixia_locid="87">
+								<p ixia_locid="64">Algorithme utilisé par l’ACS pour générer la
+									valeur du cavv.</p>
+								<p ixia_locid="73">Il est valorisé par le serveur d’authentification
+									3DS (ACS) lorsque l’acheteur s’est correctement authentifié
+									(vads_threeds_status vaut « Y » ou « A »).</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="88"><b ixia_locid="89"><xref href="tla1408637200153.xml" ixia_locid="90" translate="no">vads_threeds_eci</xref></b></entry>
+							<entry ixia_locid="91" translate="no">n..2</entry>
+							<entry ixia_locid="92"><p ixia_locid="81">Désigne l’Indicateur de
+									Commerce Electronique.</p>Il est valorisé par le serveur
+								d’authentification 3DS (ACS) lorsque l’acheteur s’est correctement
+								authentifié (vads_threeds_status vaut « Y » ou « A »).</entry>
+						</row>
+						<row>
+							<entry ixia_locid="58"><b ixia_locid="9"><xref href="tla1408637262343.xml" ixia_locid="59" translate="no">vads_threeds_enrolled</xref></b></entry>
+							<entry ixia_locid="60" translate="no">a1</entry>
+							<entry ixia_locid="61"><p ixia_locid="62">Désigne le statut de
+									l’enrôlement du porteur.</p>Il est valorisé par les serveurs
+								VISA et MASTERCARD (DS) durant le processus 3D Secure</entry>
+						</row>
+						<row>
+							<entry ixia_locid="93"><b ixia_locid="94"><xref href="tla1408637376020.xml" ixia_locid="95" translate="no">vads_threeds_exit_status</xref></b></entry>
+							<entry ixia_locid="96" translate="no">n..2</entry>
+							<entry ixia_locid="97">
+								<p ixia_locid="65">Désigne le statut final du processus 3D
+									Secure.</p>
+								<p ixia_locid="74">Il est valorisé par la plateforme de
+									paiement.</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="98"><b ixia_locid="99"><xref href="tla1408638075046.xml" ixia_locid="100" translate="no">vads_threeds_mpi</xref></b></entry>
+							<entry ixia_locid="101" translate="no">n1</entry>
+							<entry ixia_locid="102">Active / désactive le processus 3DS lors d’un
+								paiement e-commerce</entry>
+						</row>
+						<row>
+							<entry ixia_locid="103"><b ixia_locid="104"><xref href="tla1408638234029.xml" ixia_locid="105" translate="no">vads_threeds_sign_valid</xref></b></entry>
+							<entry ixia_locid="106" translate="no">n1</entry>
+							<entry ixia_locid="107"><p ixia_locid="66">Désigne la validité de la
+									signature du message PARes.</p>Il est valorisé par la plateforme
+								de paiement.</entry>
+						</row>
+						<row>
+							<entry ixia_locid="67"><b ixia_locid="68"><xref href="tla1408638341396.xml" ixia_locid="69" translate="no">vads_threeds_status</xref></b></entry>
+							<entry ixia_locid="70" translate="no">a1</entry>
+							<entry ixia_locid="71">
+								<p ixia_locid="63">Désigne le statut de l’authentification du
+									porteur.</p>
+								<p ixia_locid="72">Il est valorisé par le serveur d’authentification
+									3DS (ACS) durant le processus 3D Secure.</p>
+							</entry>
+						</row>
+						<row>
+							<entry ixia_locid="108"><b ixia_locid="109"><xref href="tla1408638445416.xml" ixia_locid="110" translate="no">vads_threeds_xid</xref></b></entry>
+							<entry ixia_locid="111" translate="no">ans..28</entry>
+							<entry ixia_locid="112"><p ixia_locid="82">Désigne la référence unique
+									de la transaction 3DS.</p>Il est valorisé par le serveur
+								d’authentification (ACS) durant le processus 3D Secure.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+	</conbody>
+</concept>

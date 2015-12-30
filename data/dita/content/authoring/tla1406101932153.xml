@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="tla1406101932153" xml:lang="fr-fr">
+	<title ixia_locid="1">Utiliser des fonctions complémentaires</title>
+	<shortdesc ixia_locid="2"/>
+	
+		<conbody id="conbody_jcm_dnt_dp">
+		<p doc-type="Moyens-Paiement" ixia_locid="27" payment-method="PayPal"><ph ixia_locid="46" translate="no">PayPal</ph> a
+			mis en place un programme de protection des marchands qui permet de protéger un marchand
+			en cas de litige avec son acheteur.</p>
+			<p doc-type="Moyens-Paiement" ixia_locid="38" payment-method="PayPal">Afin de bénéficier de cette protection lors de la
+			vente d'objets physiques, il faut <b ixia_locid="29">impérativement</b> transmettre <b ixia_locid="30">la description des produits</b> et <b ixia_locid="31">l'adresse de
+				livraison</b> à la plateforme de paiement afin que celle-ci les transmette à son
+			tour à <ph ixia_locid="47" translate="no">PayPal</ph>. </p>
+		<p doc-type="Moyens-Paiement" ixia_locid="40" payment-method="PayPal">Les données de livraison correspondent à tous les
+			champs qui commencent par <b ixia_locid="41">vads_ship_</b>. Pour plus de détails,
+			veuillez vous référer au chapitre <b ixia_locid="42">Transmettre les données de la
+				livraison</b>.</p>
+		<p doc-type="Moyens-Paiement" ixia_locid="39" payment-method="PayPal">Si ces informations ne sont pas transmises à <ph ixia_locid="48" translate="no">PayPal</ph>, le marchand ne pourra bénéficier
+			d'aucune protection.</p>
+		<p doc-type="Moyens-Paiement" ixia_locid="32" payment-method="PayPal">La protection n’est pas automatiquement attribuée
+			à tous les marchands. Pour plus de renseignements, veuillez contacter <ph ixia_locid="49" translate="no">PayPal</ph> ou rendez-vous sur leur site internet à
+			l'adresse <ph ixia_locid="50"><xref format="html" href="https://www.paypal.com/fr/webapps/mpp/paypal-safety-and-security" ixia_locid="37" scope="external"/></ph>.</p>
+		<p ixia_locid="3">Pour obtenir un formulaire personnalisé et adapté à vos besoins, vous
+			pouvez utiliser des fonctions complémentaires parmi la liste ci-dessous :</p>
+		<ul id="ul_ar1_lhm_ht">
+			<li doc-type="Moyens-Paiement" ixia_locid="22" payment-method="PayPal Paylib">Gérer les moyens de paiement proposés
+				à l'acheteur sur la page de paiement</li>
+			<li doc-type="Moyens-Paiement" ixia_locid="44" payment-method="Oney">Gérer la sélection de l'option de
+				paiement</li>
+			<li doc-type="Form" ixia_locid="5">Definir le mode de remise en banque (mode de
+				validation) </li>
+			<li doc-type="Form Identifiant_Abonnement Moyens-Paiement" ixia_locid="6" payment-method="Paylib PayPal">Transmettre des informations sur l’acheteur
+				(civilité, adresse e-mail..)</li>
+			<li doc-type="Form Moyens-Paiement Identifiant_Abonnement" ixia_locid="7" payment-method="Paylib PayPal Klarna">Transmettre des informations sur la livraison
+				(adresse…)</li>
+			<li doc-type="Form Identifiant_Abonnement Moyens-Paiement" ixia_locid="8" payment-method="Paylib PayPal">Transmettre des informations sur la commande
+				(référence, contenu du panier…)</li>
+			<li doc-type="Form" ixia_locid="9">Activer ou désactiver 3D Secure</li>
+			<li doc-type="Form" ixia_locid="10">Définir le contrat commerçant à utiliser pour le
+				paiement</li>
+			<li doc-type="Form Identifiant_Abonnement" ixia_locid="13">Personnaliser des
+				élements de la page de paiement</li>
+			<li doc-type="Form" ixia_locid="14">Surcharger l’url de notification instantanée
+				(également appelée IPN)</li>
+			<li doc-type="SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="17" payment-method="SEPA-One-Off SEPA-Recurrent">Pré-remplir le formulaire de
+				saisie</li>
+			<li doc-type="SEPA-OneOff SEPA-Recurrent Moyens-Paiement" ixia_locid="18" payment-method="SEPA-One-Off SEPA-Recurrent">Personnaliser la RUM</li>
+			<li doc-type="SEPA-OneOff Moyens-Paiement" ixia_locid="19" payment-method="SEPA-One-Off">Modifier la
+				date d'échéance d'un prélèvement</li>
+			<li doc-type="Identifiant_Abonnement Moyens-Paiement" ixia_locid="26" payment-method="SEPA-Recurrent">Définir un
+				montant différent pour la ou les première(s) échéance(s)</li>
+			<li doc-type="Form Identifiant_Abonnement Moyens-Paiement" ixia_locid="11" payment-method="SEPA-One-Off">Gérer les URL de retour vers le site marchand</li>
+			<li doc-type="Form integration-Bresil SEPA-OneOff Identifiant_Abonnement Moyens-Paiement" ixia_locid="12" payment-method="SEPA-One-Off">Activer le retour automatique vers le
+				site marchand à la fin du paiement</li>
+			<li doc-type="Form" ixia_locid="25">Réaliser un paiement sans rediriger l'acheteur vers la page
+				de paiement</li>
+			<li doc-type="Identifiant_Abonnement" ixia_locid="51">Créer des champs spécifiques en fonction de
+				vos besoins</li>
+			
+		</ul>
+		<p ixia_locid="45"/>
+		<p doc-type="Form" ixia_locid="15">Ces fonctionnalités sont présentées dans les chapitres
+			suivants. Ces chapitres vous permettront de construire facilement votre formulaire de
+			paiement.</p>
+			<p doc-type="SEPA-OneOff SEPA-Recurrent Identifiant_Abonnement Moyens-Paiement" ixia_locid="21" payment-method="Oney Paylib SEPA-One-Off SEPA-Recurrent Klarna">D’autres fonctionnalités
+			sont présentées dans le guide d’implémentation du formulaire de paiement. Elles vous
+			permettront de construire facilement votre formulaire de paiement.</p>
+	</conbody>
+	
+</concept>

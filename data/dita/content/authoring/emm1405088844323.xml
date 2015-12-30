@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//LYRA//DTD DITA Composite//EN" "../../system/dtd/client/lyra-ditabase.dtd">
+<concept id="emm1405088844323" xml:lang="fr-fr">
+	<title ixia_locid="1">Comparer les signatures</title>
+	<shortdesc ixia_locid="2"/>
+	<conbody>
+		<p ixia_locid="4">Pour s’assurer de l’intégrité de la réponse, vous devez comparer la valeur
+			du champ <b ixia_locid="12">signature</b> reçue dans la réponse, avec celle calculée à
+			l’étape précédente. </p>
+		<p ixia_locid="11"/>
+		<p ixia_locid="7">Si les signatures correspondent, <ul id="ul_owr_cd4_bq">
+				<li ixia_locid="14">alors vous pouvez considérer la réponse comme sûre et procéder à la suite de
+					l’analyse.</li>
+				<li ixia_locid="15">sinon, le script devra lever une exception et avertir le marchand de
+					l'anomalie (voir chapitre <ph ixia_locid="149"><b ixia_locid="150">Traiter les
+							erreurs</b><ph doc-type="Form_Light Moyens-Paiement integrationLight SEPA-OneOff SEPA-Recurrent" ixia_locid="151" payment-method="SEPA-One-Off SEPA-Recurrent"> du guide
+							d'implémentation du formulaire disponible sur notre site documentaire
+								<xref ixia_locid="148" keyref="SiteInternetDocumentation"/></ph>)</ph>.</li>
+			</ul></p>
+		<p ixia_locid="18"/>
+		<p ixia_locid="5">Les signatures ne correspondent pas en cas : </p>
+		<p ixia_locid="6">
+			<ul id="ul_yt4_kd4_bq">
+				<li ixia_locid="8">d’erreur d'implémentation (erreur dans votre calcul, problème
+					d’encodage UTF8, etc.).</li>
+				<li ixia_locid="9">d’erreur dans la valeur du certificat utilisé ou dans celle du
+					champ <b ixia_locid="13">vads_ctx_mode</b> (problème fréquent lors du passage en
+					production).</li>
+				<li ixia_locid="10">de tentative de corruption des données. </li>
+			</ul>
+		</p>
+	</conbody>
+</concept><?oxy_options track_changes="on"?>
